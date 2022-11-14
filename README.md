@@ -7,7 +7,9 @@
 <br>
   
 # LinuxCNC
-  
+
+*Partially forged into a cmake project.
+*Forge process still going on.
 *Controlling CNC Machines*
 
 <br>

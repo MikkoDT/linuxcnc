@@ -1,0 +1,1 @@
+/usr/bin/gcc -rdynamic CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.o CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.o -o pci_read 

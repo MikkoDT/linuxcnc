@@ -1,7 +1,7 @@
 ﻿cmake_minimum_required(VERSION 3.0)
 # Project name.
 set(PROJECT "linuxcnchal" ) # The name of the file excluding .c or .h
-project(${PROJECT} LANGUAGES CXX C ) # Asm is optional.
+project(${PROJECT} VERSION 0 LANGUAGES CXX C ) # Asm is optional.
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -22,7 +22,10 @@ include_directories(${RTAPI_DIR})
 include_directories(${PYTHON_DIR})
 include_directories(${CONFIG_DIR})
 
+# Prefix
 set(CMAKE_SHARED_LIBRARY_PREFIX "lib")
+
+# Defenitions
 add_definitions(-D_FORTIFY_SOURCE=2 -DULAPI)
 
 ADD_LIBRARY(${PROJECT} SHARED
@@ -30,6 +33,11 @@ ADD_LIBRARY(${PROJECT} SHARED
     ${HAL_DIR}/hal_lib.c
 )
 
+# Add verion nr. .so.0.0.0
+set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION}
+)
+
+# Link.
 target_link_libraries(${PROJECT_NAME} -pthread -lrt -fPIC)
 
 # make install

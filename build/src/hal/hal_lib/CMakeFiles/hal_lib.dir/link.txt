@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC -shared -Wl,-soname,hal_lib.so -o hal_lib.so CMakeFiles/hal_lib.dir/__/hal_lib.c.o  -fno-fast-math -mieee-fp -fno-unsafe-math-optimizations -Werror=frame-larger-than=2560 -Wno-declaration-after-statement -fwrapv -fno-builtin-sin -fno-builtin-cos -fno-builtin-sincos -fPIC -Os 

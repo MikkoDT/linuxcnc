@@ -1,0 +1,227 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.18.4/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.18.4/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.18.4/CMakeCCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Platform/Linux-GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "src/rtapi/CMakeLists.txt"
+		},
+		{
+			"path" : "src/module_helper/CMakeLists.txt"
+		},
+		{
+			"path" : "src/hal/hal_lib/CMakeLists.txt"
+		},
+		{
+			"path" : "src/hal/linuxcnchal/CMakeLists.txt"
+		},
+		{
+			"path" : "src/libnml/CMakeLists.txt"
+		},
+		{
+			"path" : "src/libnml/inifile/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/tooldata/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/pythonplugin/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/rs274ngc/CMakeLists.txt"
+		},
+		{
+			"path" : "src/libnml/posemath/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/kinematics/python/lineardeltakins/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/kinematics/python/rotarydeltakins/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/canterp/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/rs274ngc/python/CMakeLists.txt"
+		},
+		{
+			"path" : "src/hal/linuxcnchal/python/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/nml_intf/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/usr_intf/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeLists.txt"
+		},
+		{
+			"path" : "src/emc/usr_intf/axis/extensions/python/togl/CMakeLists.txt"
+		},
+		{
+			"path" : "src/bin/milltask/CMakeLists.txt"
+		},
+		{
+			"path" : "src/hal/utils/hal/CMakeLists.txt"
+		},
+		{
+			"path" : "src/bin/halcmd/CMakeLists.txt"
+		},
+		{
+			"path" : "src/bin/halrmt/CMakeLists.txt"
+		},
+		{
+			"path" : "src/bin/halmeter/CMakeLists.txt"
+		},
+		{
+			"path" : "src/bin/halscope/CMakeLists.txt"
+		},
+		{
+			"path" : "src/bin/pci_write/CMakeLists.txt"
+		},
+		{
+			"path" : "src/bin/pci_read/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/user/linuxcnc/build",
+		"source" : "/home/user/linuxcnc"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

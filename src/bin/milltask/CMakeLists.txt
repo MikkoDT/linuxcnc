@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.0)
 # Component name. ~/linuxcnc/src/emc/task/
 set(PROJECT "milltask") # The name of the file excluding .c or .h
-project(${PROJECT} C)
+project(${PROJECT} LANGUAGES C CXX)
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -56,7 +56,6 @@ set(SOURCES
     ${EMC_DIR}/task/taskclass.cc
     ${EMC_DIR}/task/backtrace.cc
 )
-
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 # liblinuxcnchal.so
@@ -84,7 +83,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal linuxcncini linuxcnc n
 )
 
 # make install
-install(TARGETS ${PROJECT} DESTINATION ${BIN_DIR})
+install(TARGETS ${PROJECT} DESTINATION ${SCR_DIR}/../../../bin)
 
 # Notes: No ULAPIE is defined in original make process.
 #

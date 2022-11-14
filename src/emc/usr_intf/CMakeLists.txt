@@ -1,6 +1,7 @@
 ﻿cmake_minimum_required(VERSION 3.0)
 # Project name, should be linuxcnc.so, but name already excists in the cmake hierarchy.
-set(PROJECT "linuxcnc_tcl_lib" ) # The name of the file excluding .c or .h
+# ~/linuxcnc/tlc/
+set(PROJECT "linuxcnc_tcl" ) # The name of the file excluding .c or .h
 project(${PROJECT} LANGUAGES CXX C ) # Asm is optional.
 
 # Set variables.
