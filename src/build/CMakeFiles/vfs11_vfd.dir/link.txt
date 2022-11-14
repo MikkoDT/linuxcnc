@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,vfs11_vfd.so -o vfs11_vfd.so CMakeFiles/vfs11_vfd.dir/hal/user_comps/vfs11_vfd/vfs11_vfd.c.o  -lpthread -lrt -llinuxcnchal 

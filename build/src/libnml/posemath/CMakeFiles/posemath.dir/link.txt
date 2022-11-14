@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libposemath.so -o libposemath.so CMakeFiles/posemath.dir/_posemath.c.o CMakeFiles/posemath.dir/posemath.cc.o CMakeFiles/posemath.dir/gomath.c.o CMakeFiles/posemath.dir/sincos.c.o 

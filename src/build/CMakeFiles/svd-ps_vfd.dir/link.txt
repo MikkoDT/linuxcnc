@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,svd-ps_vfd.so -o svd-ps_vfd.so CMakeFiles/svd-ps_vfd.dir/hal/user_comps/svd-ps_vfd.c.o  -lpthread -lrt -llinuxcnchal 

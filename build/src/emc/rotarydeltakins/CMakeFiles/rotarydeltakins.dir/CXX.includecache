@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/emc/nml_intf/emcpos.h
+posemath.h
+../src/emc/nml_intf/posemath.h
+
+../src/libnml/posemath/posemath.h
+
+/home/user/linuxcnc/src/emc/kinematics/rotarydeltakins-common.h
+emcpos.h
+/home/user/linuxcnc/src/emc/kinematics/emcpos.h
+
+/home/user/linuxcnc/src/emc/kinematics/rotarydeltakins.cc
+cmath
+-
+rotarydeltakins-common.h
+/home/user/linuxcnc/src/emc/kinematics/rotarydeltakins-common.h
+boost/python.hpp
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,gs2_vfd.so -o gs2_vfd.so CMakeFiles/gs2_vfd.dir/hal/user_comps/gs2_vfd.c.o  -lpthread -lrt -llinuxcnchal 

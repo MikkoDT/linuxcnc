@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,shuttle.so -o shuttle.so CMakeFiles/shuttle.dir/hal/user_comps/shuttle.c.o  -lpthread -lrt -llinuxcnchal 

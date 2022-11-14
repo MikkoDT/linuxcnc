@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libpyplugin.so -o libpyplugin.so CMakeFiles/pyplugin.dir/python_plugin.cc.o  -Wl,-rpath,/home/user/linuxcnc/build/src/libnml/inifile: -fPIC ../../libnml/inifile/liblinuxcncini.so -lstdc++ -lboost_python39 -L/usr/lib -lpython3.9 -lcrypt -lpthread -ldl -lutil -lm -lm -fPIC 

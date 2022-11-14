@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,halstreamer.so -o halstreamer.so CMakeFiles/halstreamer.dir/hal/components/streamer_usr.c.o  -lpthread -lrt -llinuxcnchal 

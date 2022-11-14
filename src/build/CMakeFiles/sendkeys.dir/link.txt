@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,sendkeys.so -o sendkeys.so CMakeFiles/sendkeys.dir/hal/user_comps/sendkeys.c.o  -lpthread -lrt -llinuxcnchal 
