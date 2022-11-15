@@ -1,5 +1,8 @@
-﻿cmake_minimum_required(VERSION 3.0)
-# Project name, should be linuxcnc.so, but name already used by other lib in this cmake hierarchy.
+﻿# Name          : linuxcnc.so
+# Submakefile   : ~/linuxcnc/src/emc/usr_intf/axis
+# Install       : ~/linuxcnc/lib/python
+# Cmake         : ~/src/emc/usr_intf/axis/extensions/python/linuxcnc
+cmake_minimum_required(VERSION 3.0)
 set(PROJECT "linuxcnc_axis_extension" ) # The name of the file excluding .c or .h
 project(${PROJECT} LANGUAGES CXX C ) # Asm is optional.
 
@@ -55,8 +58,11 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/nml_intf
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/tooldata)
 
 # Link to :
-target_link_libraries(${PROJECT_NAME} PRIVATE linuxcncini -L/usr/X11R6/lib -lm -lepoxy
+target_link_libraries(${PROJECT_NAME} PRIVATE linuxcncini nml linuxcnc tooldata -L/usr/X11R6/lib -lm -lepoxy
 )
+
+# Set custom output name :
+set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME linuxcnc)
 
 # make install
 install(TARGETS ${PROJECT} DESTINATION ${LIB_DIR}/python)

@@ -1,5 +1,8 @@
-﻿cmake_minimum_required(VERSION 3.0)
-# Project name.
+﻿# Name          : libposemath.so
+# Submakefile   : ~/linuxcnc/src/libnml/posemath
+# Install       : ~/linuxcnc/lib
+# Cmake         : ~/src/libnml/posemath
+cmake_minimum_required(VERSION 3.0)
 set(PROJECT "posemath" ) # The name of the file excluding .c or .h
 project(${PROJECT} VERSION 0 LANGUAGES CXX C ) # Asm is optional.
 
@@ -13,8 +16,6 @@ set(NML_DIR "${SRC_DIR}/../../nml")
 set(EMC_DIR "${SRC_DIR}/../../emc")
 set(RTAPI_DIR "${SRC_DIR}/../../rtapi")
 set(CONFIG_DIR "${SRC_DIR}/../../")
-set(LIB_DIR "${SRC_DIR}/../../../lib")
-set(RT_DIR "${SRC_DIR}/../../../rtlib")
 set(PYTHON_DIR "/usr/include/python3.9")
 
 # Set includepaths.
@@ -45,11 +46,11 @@ ADD_LIBRARY(${PROJECT} SHARED
 add_definitions(-DULAPI)
 
 # Add verion nr. .so.0.0.0
-set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION}
+set_target_properties(${PROJECT} PROPERTIES VERSION ${PROJECT_VERSION}
 )
 
 # make install
-install(TARGETS ${PROJECT} DESTINATION ${LIB_DIR})
+install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR}/../../../lib)
 
 # Notes
 

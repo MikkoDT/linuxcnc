@@ -1,5 +1,7 @@
 ﻿cmake_minimum_required(VERSION 3.0)
-# Project name.
+# Name          : _hal.so
+# Submakefile   : ~/linuxcnc/src/hal
+# Install       : ../lib/python/_hal.so
 set(PROJECT "_hal" ) # The name of the file excluding .c or .h
 project(${PROJECT} LANGUAGES CXX C ) # Asm is optional.
 

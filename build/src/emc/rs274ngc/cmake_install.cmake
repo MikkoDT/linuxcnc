@@ -43,57 +43,57 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so.0" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so.0")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so.0" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so.0")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so.0"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so.0"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so.0")
+   "/home/user/linuxcnc/src/emc/rs274ngc/librs274.so.0")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/linuxcnc/src/emc/rs274ngc/../../../lib" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/build/src/emc/rs274ngc/librs274.so.0")
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so.0" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so.0")
+file(INSTALL DESTINATION "/home/user/linuxcnc/src/emc/rs274ngc" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/build/src/emc/rs274ngc/librs274.so.0")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so.0" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so.0")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so.0"
-         OLD_RPATH "/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/libnml/inifile:"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so.0"
+         OLD_RPATH "/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/hal/hal_lib:/home/user/linuxcnc/build/src/libnml/inifile:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so.0")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so.0")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so")
+   "/home/user/linuxcnc/src/emc/rs274ngc/librs274.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/linuxcnc/src/emc/rs274ngc/../../../lib" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/build/src/emc/rs274ngc/librs274.so")
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so")
+file(INSTALL DESTINATION "/home/user/linuxcnc/src/emc/rs274ngc" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/build/src/emc/rs274ngc/librs274.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so"
-         OLD_RPATH "/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/libnml/inifile:"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so"
+         OLD_RPATH "/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/hal/hal_lib:/home/user/linuxcnc/build/src/libnml/inifile:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/../../../lib/librs274.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/librs274.so")
     endif()
   endif()
 endif()

@@ -176,19 +176,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/rule:
-	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/rule
-.PHONY : src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/rule
+src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/rule:
+	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/rule
+.PHONY : src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/rule
 
 # Convenience name for target.
-linuxcnc_tcl: src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/rule
+linuxcnc_tcl_dir: src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/rule
 
-.PHONY : linuxcnc_tcl
+.PHONY : linuxcnc_tcl_dir
 
 # fast build rule for target.
-linuxcnc_tcl/fast:
-	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build
-.PHONY : linuxcnc_tcl/fast
+linuxcnc_tcl_dir/fast:
+	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build
+.PHONY : linuxcnc_tcl_dir/fast
 
 emcsh.o: emcsh.cc.o
 
@@ -196,7 +196,7 @@ emcsh.o: emcsh.cc.o
 
 # target to build an object file
 emcsh.cc.o:
-	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.o
+	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/emcsh.cc.o
 .PHONY : emcsh.cc.o
 
 emcsh.i: emcsh.cc.i
@@ -205,7 +205,7 @@ emcsh.i: emcsh.cc.i
 
 # target to preprocess a source file
 emcsh.cc.i:
-	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.i
+	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/emcsh.cc.i
 .PHONY : emcsh.cc.i
 
 emcsh.s: emcsh.cc.s
@@ -214,7 +214,7 @@ emcsh.s: emcsh.cc.s
 
 # target to generate assembly for a file
 emcsh.cc.s:
-	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.s
+	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/emcsh.cc.s
 .PHONY : emcsh.cc.s
 
 shcom.o: shcom.cc.o
@@ -223,7 +223,7 @@ shcom.o: shcom.cc.o
 
 # target to build an object file
 shcom.cc.o:
-	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/shcom.cc.o
+	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/shcom.cc.o
 .PHONY : shcom.cc.o
 
 shcom.i: shcom.cc.i
@@ -232,7 +232,7 @@ shcom.i: shcom.cc.i
 
 # target to preprocess a source file
 shcom.cc.i:
-	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/shcom.cc.i
+	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/shcom.cc.i
 .PHONY : shcom.cc.i
 
 shcom.s: shcom.cc.s
@@ -241,7 +241,7 @@ shcom.s: shcom.cc.s
 
 # target to generate assembly for a file
 shcom.cc.s:
-	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/shcom.cc.s
+	cd /home/user/linuxcnc/build && $(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/shcom.cc.s
 .PHONY : shcom.cc.s
 
 # Help Target
@@ -256,7 +256,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... linuxcnc_tcl"
+	@echo "... linuxcnc_tcl_dir"
 	@echo "... emcsh.o"
 	@echo "... emcsh.i"
 	@echo "... emcsh.s"

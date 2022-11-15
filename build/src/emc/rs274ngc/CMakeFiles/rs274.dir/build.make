@@ -534,8 +534,9 @@ src/emc/rs274ngc/librs274.so.0: src/emc/rs274ngc/CMakeFiles/rs274.dir/rs274ngc_p
 src/emc/rs274ngc/librs274.so.0: src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inspection.cc.o
 src/emc/rs274ngc/librs274.so.0: src/emc/rs274ngc/CMakeFiles/rs274.dir/build.make
 src/emc/rs274ngc/librs274.so.0: src/hal/linuxcnchal/liblinuxcnchal.so.0
-src/emc/rs274ngc/librs274.so.0: src/emc/tooldata/libtooldata.so.0
 src/emc/rs274ngc/librs274.so.0: src/emc/pythonplugin/libpyplugin.so.0
+src/emc/rs274ngc/librs274.so.0: src/emc/tooldata/libtooldata.so.0
+src/emc/rs274ngc/librs274.so.0: src/hal/hal_lib/hal_lib.so
 src/emc/rs274ngc/librs274.so.0: src/libnml/inifile/liblinuxcncini.so.0
 src/emc/rs274ngc/librs274.so.0: src/emc/rs274ngc/CMakeFiles/rs274.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX shared library librs274.so"

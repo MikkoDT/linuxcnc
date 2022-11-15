@@ -1,8 +1,8 @@
 ﻿cmake_minimum_required(VERSION 3.0)
-# Project name, should be linuxcnc.so, but name already excists in the cmake hierarchy.
+# Project name, should be linuxcnc, renamed target, see below.
 # ~/linuxcnc/tlc/
-set(PROJECT "linuxcnc_tcl" ) # The name of the file excluding .c or .h
-project(${PROJECT} LANGUAGES CXX C ) # Asm is optional.
+set(PROJECT "linuxcnc_tcl_dir" ) # The name of the file excluding .c or .h
+project(${PROJECT} LANGUAGES CXX ) # Asm is optional.
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -56,11 +56,18 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/libnml)
 # liblinuxcnc.so, linking to liblinuxcnc.a gives error.
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/nml_intf)
 
+#add_library(lcnc SHARED IMPORTED)
+#set_target_properties(lcnc PROPERTIES IMPORTED_LOCATION ${BUILD_DIR}/src/emc/nml_intf/liblinuxcnc.a)
+
 # Link to :
-target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC linuxcncini nml linuxcnc
-     -ltclstub8.6 -lX11 -lXss -lXext -lXft -lfontconfig -lfreetype
-     -lfontconfig -lpthread -ldl -lz -lpthread -lm -ltk8.6 -fPIC
+target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnc -fPIC
+    # linuxcncini nml
+    # -ltclstub8.6 -lX11 -lXss -lXext -lXft -lfontconfig -lfreetype
+    # -lfontconfig -lpthread -ldl -lz -lpthread -lm -ltk8.6 -fPIC
 )
+
+# Set custom output name :
+#set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME linuxcnc)
 
 # make install
 install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR}/../../../tcl)

@@ -62,7 +62,7 @@ file(INSTALL DESTINATION "/home/user/linuxcnc/src/emc/canterp/../../../lib" TYPE
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/canterp/../../../lib/libcanterp.so.0")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/canterp/../../../lib/libcanterp.so.0"
-         OLD_RPATH "/home/user/linuxcnc/build/src/emc/rs274ngc:/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/libnml/inifile:"
+         OLD_RPATH "/home/user/linuxcnc/build/src/emc/rs274ngc:/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/libnml/inifile:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/hal/hal_lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/canterp/../../../lib/libcanterp.so.0")
@@ -90,7 +90,7 @@ file(INSTALL DESTINATION "/home/user/linuxcnc/src/emc/canterp/../../../lib" TYPE
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/canterp/../../../lib/libcanterp.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/canterp/../../../lib/libcanterp.so"
-         OLD_RPATH "/home/user/linuxcnc/build/src/emc/rs274ngc:/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/libnml/inifile:"
+         OLD_RPATH "/home/user/linuxcnc/build/src/emc/rs274ngc:/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/libnml/inifile:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/hal/hal_lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/canterp/../../../lib/libcanterp.so")

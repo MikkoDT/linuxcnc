@@ -1,0 +1,519 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src/hal/hal_lib",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src/hal/hal_lib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src/hal/linuxcnchal",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "src/hal/linuxcnchal",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "src/libnml",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "src/libnml",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "src/libnml/inifile",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "src/libnml/inifile",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "src/emc/tooldata",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "src/emc/tooldata",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "src/libnml/posemath",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "src/libnml/posemath",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "src/emc/kinematics/python/lineardeltakins",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "src/emc/kinematics/python/lineardeltakins",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src/emc/kinematics/python/rotarydeltakins",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "src/emc/kinematics/python/rotarydeltakins",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "src/hal/linuxcnchal/python",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 9,
+					"source" : "src/hal/linuxcnchal/python",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/emc/nml_intf",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 10,
+					"source" : "src/emc/nml_intf",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src/emc/usr_intf",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 11,
+					"source" : "src/emc/usr_intf",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/emc/pythonplugin",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 12,
+					"source" : "src/emc/pythonplugin",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "src/emc/rs274ngc",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 13,
+					"source" : "src/emc/rs274ngc",
+					"targetIndexes" : 
+					[
+						11
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "- LINUX_CNC -"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "hal_lib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "linuxcnchal",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "nml",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "linuxcncini",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "tooldata",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "posemath",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "lineardeltakins",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "rotarydeltakins",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "_hal",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "linuxcnc",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						11
+					],
+					"name" : "linuxcnc_tcl_dir",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "pyplugin",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "rs274",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 9,
+					"id" : "_hal::@31e64db328bd8f07e360",
+					"jsonFile" : "target-_hal-63e8d36c084a4c68da2b.json",
+					"name" : "_hal",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "hal_lib::@1e2fa2d2d8a75fb0f948",
+					"jsonFile" : "target-hal_lib-49d7b25b4d63664f9506.json",
+					"name" : "hal_lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "lineardeltakins::@25224d2f96a1fc374049",
+					"jsonFile" : "target-lineardeltakins-89e62c6923110ce9b511.json",
+					"name" : "lineardeltakins",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "linuxcnc::@f467794db3278dde9bbe",
+					"jsonFile" : "target-linuxcnc-85749585514daeefe5eb.json",
+					"name" : "linuxcnc",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "linuxcnc_tcl_dir::@10cdee7379d03e12d63e",
+					"jsonFile" : "target-linuxcnc_tcl_dir-b67ae054619e1f723d5e.json",
+					"name" : "linuxcnc_tcl_dir",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "linuxcnchal::@fe1c7574120cd1d48f59",
+					"jsonFile" : "target-linuxcnchal-e75912dc335733789e24.json",
+					"name" : "linuxcnchal",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "linuxcncini::@6e603237c1fabd7fc687",
+					"jsonFile" : "target-linuxcncini-363103276893a5598d37.json",
+					"name" : "linuxcncini",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "nml::@3c375794c46971530ddc",
+					"jsonFile" : "target-nml-f20b12eb089f1bc308a3.json",
+					"name" : "nml",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "posemath::@545ed9d3f0259e6e8b08",
+					"jsonFile" : "target-posemath-1df64c9d5fd551f9b503.json",
+					"name" : "posemath",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "pyplugin::@c2e8f63acbde5e9e3cd9",
+					"jsonFile" : "target-pyplugin-a446bf8548df520f7c51.json",
+					"name" : "pyplugin",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "rotarydeltakins::@2ceddb74b1b653454a81",
+					"jsonFile" : "target-rotarydeltakins-b49d8ece02a3f77d146b.json",
+					"name" : "rotarydeltakins",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "rs274::@15ffa07ab1146e7acb3a",
+					"jsonFile" : "target-rs274-aab30dfa55ceb3cc9961.json",
+					"name" : "rs274",
+					"projectIndex" : 13
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "tooldata::@ebc248405ba7531a74db",
+					"jsonFile" : "target-tooldata-4c97e50ebd15c3795471.json",
+					"name" : "tooldata",
+					"projectIndex" : 5
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/linuxcnc/build",
+		"source" : "/home/user/linuxcnc"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

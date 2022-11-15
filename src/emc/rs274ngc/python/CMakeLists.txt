@@ -1,7 +1,7 @@
 ﻿cmake_minimum_required(VERSION 3.0)
 # Project name.
 set(PROJECT "gcode" ) # The name of the file excluding .c or .h
-project(${PROJECT} LANGUAGES CXX C ) # Asm is optional.
+project(${PROJECT} LANGUAGES CXX) # Asm is optional.
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -46,7 +46,8 @@ add_definitions(-DULAPI)
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/rs274ngc)
 
 # Link to :
-target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC rs274)
+target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC rs274  -lstdc++
+)
 
 # make install
 install(TARGETS ${PROJECT} DESTINATION ${LIB_DIR}/python)

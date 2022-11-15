@@ -1,7 +1,7 @@
 ﻿cmake_minimum_required(VERSION 3.0)
 # Project name.
 set(PROJECT "linuxcncini" ) # The name of the file excluding .c or .h
-project(${PROJECT} VERSION 0 LANGUAGES CXX C ) # Asm is optional.
+project(${PROJECT} VERSION 0 LANGUAGES CXX C) # Asm is optional.
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")

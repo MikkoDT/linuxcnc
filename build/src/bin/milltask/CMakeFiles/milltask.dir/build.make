@@ -263,13 +263,13 @@ src/bin/milltask/milltask: src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/ta
 src/bin/milltask/milltask: src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.o
 src/bin/milltask/milltask: src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.o
 src/bin/milltask/milltask: src/bin/milltask/CMakeFiles/milltask.dir/build.make
-src/bin/milltask/milltask: src/emc/nml_intf/liblinuxcnc.so.0
+src/bin/milltask/milltask: src/emc/rs274ngc/librs274.so.0
 src/bin/milltask/milltask: src/libnml/libnml.so.0
 src/bin/milltask/milltask: src/libnml/posemath/libposemath.so.0
-src/bin/milltask/milltask: src/emc/rs274ngc/librs274.so.0
-src/bin/milltask/milltask: src/emc/pythonplugin/libpyplugin.so.0
 src/bin/milltask/milltask: src/hal/linuxcnchal/liblinuxcnchal.so.0
+src/bin/milltask/milltask: src/emc/pythonplugin/libpyplugin.so.0
 src/bin/milltask/milltask: src/emc/tooldata/libtooldata.so.0
+src/bin/milltask/milltask: src/emc/nml_intf/liblinuxcnc.so
 src/bin/milltask/milltask: src/libnml/inifile/liblinuxcncini.so.0
 src/bin/milltask/milltask: src/bin/milltask/CMakeFiles/milltask.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable milltask"

@@ -1,7 +1,8 @@
 ﻿cmake_minimum_required(VERSION 3.0)
 # Project name.
 set(PROJECT "linuxcnc" ) # The name of the file excluding .c or .h
-project(${PROJECT} VERSION 0 LANGUAGES CXX C ) # Asm is optional.
+project(${PROJECT} LANGUAGES CXX C) # Asm is optional.
+# project(${PROJECT} VERSION 0 LANGUAGES CXX C) # Asm is optional.
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -58,11 +59,11 @@ ADD_LIBRARY(${PROJECT} SHARED
 add_definitions(-DULAPI)
 
 # Link to :
-target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC)
+target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC )
 
 # Add verion nr. .so.0.0.0
-set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION}
-)
+# set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION}
+# )
 
 # make install
 install(TARGETS ${PROJECT} DESTINATION ${LIB_DIR})

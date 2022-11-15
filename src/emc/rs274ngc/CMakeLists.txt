@@ -1,7 +1,7 @@
 ﻿cmake_minimum_required(VERSION 3.0)
 # Project name.
 set(PROJECT "rs274" ) # The name of the file excluding .c or .h
-project(${PROJECT} VERSION 0 LANGUAGES CXX C ) # Asm is optional.
+project(${PROJECT} VERSION 0 LANGUAGES CXX ) # Asm is optional.
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -37,37 +37,44 @@ set(CMAKE_SHARED_LIBRARY_PREFIX "lib")
 # add_definitions()
 
 ADD_LIBRARY(${PROJECT} SHARED
-        ${SRC_DIR}/interp_arc.cc
-	${SRC_DIR}/interp_array.cc 
-	${SRC_DIR}/interp_base.cc 
-	${SRC_DIR}/interp_check.cc
-	${SRC_DIR}/interp_convert.cc 
-	${SRC_DIR}/interp_queue.cc 
-	${SRC_DIR}/interp_cycles.cc 
-	${SRC_DIR}/interp_execute.cc 
-	${SRC_DIR}/interp_find.cc 
-	${SRC_DIR}/interp_internal.cc 
-	${SRC_DIR}/interp_inverse.cc 
-	${SRC_DIR}/interp_read.cc 
-	${SRC_DIR}/interp_write.cc 
-	${SRC_DIR}/interp_o_word.cc 
-	${SRC_DIR}/interp_g7x.cc 
-	${SRC_DIR}/modal_state.cc 
-	${SRC_DIR}/nurbs_additional_functions.cc 
-	${SRC_DIR}/interp_namedparams.cc 
-	${SRC_DIR}/interp_python.cc 
-	${SRC_DIR}/interp_remap.cc 
-	${SRC_DIR}/interp_setup.cc 
-	${SRC_DIR}/canonmodule.cc 
-	${SRC_DIR}/pyparamclass.cc 
-	${SRC_DIR}/pyemctypes.cc 
-	${SRC_DIR}/pyinterp1.cc 
-	${SRC_DIR}/pyblock.cc 
-	${SRC_DIR}/pyarrays.cc 
-	${SRC_DIR}/interpmodule.cc 
-	${SRC_DIR}/rs274ngc_pre.cc 
-	${SRC_DIR}/interp_inspection.cc
-)
+    ${SRC_DIR}/interp_arc.cc
+    ${SRC_DIR}/interp_array.cc
+    ${SRC_DIR}/interp_base.cc
+    ${SRC_DIR}/interp_check.cc
+    ${SRC_DIR}/interp_convert.cc
+    ${SRC_DIR}/interp_queue.cc
+    ${SRC_DIR}/interp_cycles.cc
+    ${SRC_DIR}/interp_execute.cc
+    ${SRC_DIR}/interp_find.cc
+    ${SRC_DIR}/interp_internal.cc
+    ${SRC_DIR}/interp_inverse.cc
+    ${SRC_DIR}/interp_read.cc
+    ${SRC_DIR}/interp_write.cc
+    ${SRC_DIR}/interp_o_word.cc
+    ${SRC_DIR}/interp_g7x.cc
+    ${SRC_DIR}/modal_state.cc
+    ${SRC_DIR}/nurbs_additional_functions.cc
+    ${SRC_DIR}/interp_namedparams.cc
+    ${SRC_DIR}/interp_python.cc
+    ${SRC_DIR}/interp_remap.cc
+    ${SRC_DIR}/interp_setup.cc
+    ${SRC_DIR}/canonmodule.cc
+    ${SRC_DIR}/pyparamclass.cc
+    ${SRC_DIR}/pyemctypes.cc
+    ${SRC_DIR}/pyinterp1.cc
+    ${SRC_DIR}/pyblock.cc
+    ${SRC_DIR}/pyarrays.cc
+    ${SRC_DIR}/interpmodule.cc
+    ${SRC_DIR}/rs274ngc_pre.cc
+    ${SRC_DIR}/interp_inspection.cc
+
+    # ${SRC_DIR}/pyinterp1.cc
+    # ${SRC_DIR}/pyparamclass.cc
+    # ${SRC_DIR}/pyinterp1.cc
+    # ${SRC_DIR}/pyblock.cc
+    # ${SRC_DIR}/pyarrays.cc
+    # ${SRC_DIR}/interpmodule.cc
+    )
 
 add_definitions(-DULAPI)
 # liblinuxcnchal.so
@@ -78,16 +85,21 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/libnml/inifi
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/pythonplugin)
 # libtooldata.so
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/tooldata)
+# including the one did the job !
+# hal_lib.so
+target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/hal/hal_lib)
 
 # Link to :
-target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC linuxcnchal linuxcncini tooldata pyplugin -lstdc++ -lboost_python39 -L/usr/lib -lpython3.9)
+target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal linuxcncini pyplugin tooldata hal_lib
+ -lstdc++ -lboost_python39 -L/usr/lib -lpython3.9 -lcrypt -lpthread -ldl  -lutil -lm -lm
+    )
 
 # Add verion nr. .so.0.0.0
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION}
-)
+    )
 
 # make install
-install(TARGETS ${PROJECT} DESTINATION ${LIB_DIR})
+install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
 
 # Notes from above also a libpyplugin.so is made.
 # Has to be linked to multiple libs, see below.

@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+- LINUX_CNC -_BINARY_DIR:STATIC=/home/user/linuxcnc/build
+
+//Value Computed by CMake
+- LINUX_CNC -_SOURCE_DIR:STATIC=/home/user/linuxcnc
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -145,7 +151,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=_linuxcnc_axis
+CMAKE_PROJECT_NAME:STATIC=- LINUX_CNC -
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0
@@ -234,12 +240,6 @@ _hal_LIB_DEPENDS:STATIC=general;-pthread;general;-lrt;general;-fPIC;general;linu
 _hal_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/hal/linuxcnchal/python
 
 //Value Computed by CMake
-_linuxcnc_axis_BINARY_DIR:STATIC=/home/user/linuxcnc/build
-
-//Value Computed by CMake
-_linuxcnc_axis_SOURCE_DIR:STATIC=/home/user/linuxcnc
-
-//Value Computed by CMake
 canterp_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/emc/canterp
 
 //Dependencies for the target
@@ -252,7 +252,7 @@ canterp_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/emc/canterp
 gcode_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/emc/rs274ngc/python
 
 //Dependencies for the target
-gcode_LIB_DEPENDS:STATIC=general;-fPIC;general;rs274;
+gcode_LIB_DEPENDS:STATIC=general;-fPIC;general;rs274;general;-lstdc++;
 
 //Value Computed by CMake
 gcode_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/emc/rs274ngc/python
@@ -318,22 +318,13 @@ linuxcnc_LIB_DEPENDS:STATIC=general;-fPIC;
 linuxcnc_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/emc/nml_intf
 
 //Value Computed by CMake
-linuxcnc_axis_extension_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/linuxcnc
+linuxcnc_tcl_dir_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/emc/usr_intf
 
 //Dependencies for the target
-linuxcnc_axis_extension_LIB_DEPENDS:STATIC=general;linuxcncini;general;-L/usr/X11R6/lib;general;-lm;general;-lepoxy;
+linuxcnc_tcl_dir_LIB_DEPENDS:STATIC=general;linuxcnc;general;-fPIC;
 
 //Value Computed by CMake
-linuxcnc_axis_extension_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/emc/usr_intf/axis/extensions/python/linuxcnc
-
-//Value Computed by CMake
-linuxcnc_tcl_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/emc/usr_intf
-
-//Dependencies for the target
-linuxcnc_tcl_LIB_DEPENDS:STATIC=general;-fPIC;general;linuxcncini;general;nml;general;linuxcnc;general;-ltclstub8.6;general;-lX11;general;-lXss;general;-lXext;general;-lXft;general;-lfontconfig;general;-lfreetype;general;-lfontconfig;general;-lpthread;general;-ldl;general;-lz;general;-lpthread;general;-lm;general;-ltk8.6;general;-fPIC;
-
-//Value Computed by CMake
-linuxcnc_tcl_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/emc/usr_intf
+linuxcnc_tcl_dir_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/emc/usr_intf
 
 //Value Computed by CMake
 linuxcnchal_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/hal/linuxcnchal
@@ -358,12 +349,6 @@ milltask_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/bin/milltask
 
 //Value Computed by CMake
 milltask_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/bin/milltask
-
-//Value Computed by CMake
-module_helper_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/module_helper
-
-//Value Computed by CMake
-module_helper_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/module_helper
 
 //Value Computed by CMake
 nml_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/libnml
@@ -396,7 +381,7 @@ posemath_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/libnml/posemath
 pyplugin_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/emc/pythonplugin
 
 //Dependencies for the target
-pyplugin_LIB_DEPENDS:STATIC=general;-fPIC;general;linuxcncini;general;-lstdc++;general;-lboost_python39;general;-L/usr/lib;general;-lpython3.9;general;-lcrypt;general;-lpthread;general;-ldl;general;-lutil;general;-lm;general;-lm;
+pyplugin_LIB_DEPENDS:STATIC=general;-fPIC;general;linuxcncini;general;-lstdc++;general;-lboost_python39;general;-L/usr/lib;general;-lpython3.9;general;-lcrypt;general;-lpthread;general;-ldl;general;-lutil;general;-lm;general;-Xlinker;general;-export-dynamic;general;-Wl,-O1;general;-Wl,-Bsymbolic-functions;general;-Wl,-soname;
 
 //Value Computed by CMake
 pyplugin_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/emc/pythonplugin
@@ -414,16 +399,10 @@ rotarydeltakins_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/emc/kinematics/python/
 rs274_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/emc/rs274ngc
 
 //Dependencies for the target
-rs274_LIB_DEPENDS:STATIC=general;-fPIC;general;linuxcnchal;general;linuxcncini;general;tooldata;general;pyplugin;general;-lstdc++;general;-lboost_python39;general;-L/usr/lib;general;-lpython3.9;
+rs274_LIB_DEPENDS:STATIC=general;linuxcnchal;general;linuxcncini;general;pyplugin;general;tooldata;general;hal_lib;general;-lstdc++;general;-lboost_python39;general;-L/usr/lib;general;-lpython3.9;general;-lcrypt;general;-lpthread;general;-ldl;general;-lutil;general;-lm;general;-lm;
 
 //Value Computed by CMake
 rs274_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/emc/rs274ngc
-
-//Value Computed by CMake
-rtapi_app_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/rtapi
-
-//Value Computed by CMake
-rtapi_app_SOURCE_DIR:STATIC=/home/user/linuxcnc/src/rtapi
 
 //Value Computed by CMake
 togl_BINARY_DIR:STATIC=/home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl
@@ -548,7 +527,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=28
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

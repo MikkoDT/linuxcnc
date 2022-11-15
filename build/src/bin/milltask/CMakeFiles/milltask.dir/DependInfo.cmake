@@ -45,12 +45,12 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/bin/milltask/../../libnml/../../enc/rs274ngc"
   "src/bin/milltask/src/hal/linuxcnchal"
   "src/bin/milltask/src/libnml/inifile"
-  "src/bin/milltask/src/emc/nml_intf"
   "src/bin/milltask/src/libnml"
   "src/bin/milltask/src/libnml/posemath"
   "src/bin/milltask/src/emc/tooldata"
   "src/bin/milltask/src/emc/pyplugin"
   "src/bin/milltask/src/emc/rs274ngc"
+  "src/bin/milltask/src/emc/nml_intf"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/user/linuxcnc/src/emc/motion/usrmotintf.cc" "/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.o"
@@ -97,23 +97,23 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/bin/milltask/../../libnml/../../enc/rs274ngc"
   "src/bin/milltask/src/hal/linuxcnchal"
   "src/bin/milltask/src/libnml/inifile"
-  "src/bin/milltask/src/emc/nml_intf"
   "src/bin/milltask/src/libnml"
   "src/bin/milltask/src/libnml/posemath"
   "src/bin/milltask/src/emc/tooldata"
   "src/bin/milltask/src/emc/pyplugin"
   "src/bin/milltask/src/emc/rs274ngc"
+  "src/bin/milltask/src/emc/nml_intf"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/user/linuxcnc/build/src/emc/nml_intf/CMakeFiles/linuxcnc.dir/DependInfo.cmake"
+  "/home/user/linuxcnc/build/src/emc/rs274ngc/CMakeFiles/rs274.dir/DependInfo.cmake"
   "/home/user/linuxcnc/build/src/libnml/CMakeFiles/nml.dir/DependInfo.cmake"
   "/home/user/linuxcnc/build/src/libnml/posemath/CMakeFiles/posemath.dir/DependInfo.cmake"
-  "/home/user/linuxcnc/build/src/emc/rs274ngc/CMakeFiles/rs274.dir/DependInfo.cmake"
-  "/home/user/linuxcnc/build/src/emc/pythonplugin/CMakeFiles/pyplugin.dir/DependInfo.cmake"
   "/home/user/linuxcnc/build/src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/DependInfo.cmake"
+  "/home/user/linuxcnc/build/src/emc/pythonplugin/CMakeFiles/pyplugin.dir/DependInfo.cmake"
   "/home/user/linuxcnc/build/src/emc/tooldata/CMakeFiles/tooldata.dir/DependInfo.cmake"
+  "/home/user/linuxcnc/build/src/emc/nml_intf/CMakeFiles/linuxcnc.dir/DependInfo.cmake"
   "/home/user/linuxcnc/build/src/libnml/inifile/CMakeFiles/linuxcncini.dir/DependInfo.cmake"
   )
 

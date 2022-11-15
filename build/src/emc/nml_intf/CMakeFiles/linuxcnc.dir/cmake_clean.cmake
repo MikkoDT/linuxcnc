@@ -15,7 +15,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/linuxcnc.dir/interpl.cc.o"
   "liblinuxcnc.pdb"
   "liblinuxcnc.so"
-  "liblinuxcnc.so.0"
 )
 
 # Per-language clean rules from dependency scanning.

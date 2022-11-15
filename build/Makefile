@@ -176,32 +176,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rtapi_app
-
-# Build rule for target.
-rtapi_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi_app
-.PHONY : rtapi_app
-
-# fast build rule for target.
-rtapi_app/fast:
-	$(MAKE) $(MAKESILENT) -f src/rtapi/CMakeFiles/rtapi_app.dir/build.make src/rtapi/CMakeFiles/rtapi_app.dir/build
-.PHONY : rtapi_app/fast
-
-#=============================================================================
-# Target rules for targets named module_helper
-
-# Build rule for target.
-module_helper: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper
-.PHONY : module_helper
-
-# fast build rule for target.
-module_helper/fast:
-	$(MAKE) $(MAKESILENT) -f src/module_helper/CMakeFiles/module_helper.dir/build.make src/module_helper/CMakeFiles/module_helper.dir/build
-.PHONY : module_helper/fast
-
-#=============================================================================
 # Target rules for targets named hal_lib
 
 # Build rule for target.
@@ -267,32 +241,6 @@ tooldata/fast:
 .PHONY : tooldata/fast
 
 #=============================================================================
-# Target rules for targets named pyplugin
-
-# Build rule for target.
-pyplugin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pyplugin
-.PHONY : pyplugin
-
-# fast build rule for target.
-pyplugin/fast:
-	$(MAKE) $(MAKESILENT) -f src/emc/pythonplugin/CMakeFiles/pyplugin.dir/build.make src/emc/pythonplugin/CMakeFiles/pyplugin.dir/build
-.PHONY : pyplugin/fast
-
-#=============================================================================
-# Target rules for targets named rs274
-
-# Build rule for target.
-rs274: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs274
-.PHONY : rs274
-
-# fast build rule for target.
-rs274/fast:
-	$(MAKE) $(MAKESILENT) -f src/emc/rs274ngc/CMakeFiles/rs274.dir/build.make src/emc/rs274ngc/CMakeFiles/rs274.dir/build
-.PHONY : rs274/fast
-
-#=============================================================================
 # Target rules for targets named posemath
 
 # Build rule for target.
@@ -332,32 +280,6 @@ rotarydeltakins/fast:
 .PHONY : rotarydeltakins/fast
 
 #=============================================================================
-# Target rules for targets named canterp
-
-# Build rule for target.
-canterp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 canterp
-.PHONY : canterp
-
-# fast build rule for target.
-canterp/fast:
-	$(MAKE) $(MAKESILENT) -f src/emc/canterp/CMakeFiles/canterp.dir/build.make src/emc/canterp/CMakeFiles/canterp.dir/build
-.PHONY : canterp/fast
-
-#=============================================================================
-# Target rules for targets named gcode
-
-# Build rule for target.
-gcode: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gcode
-.PHONY : gcode
-
-# fast build rule for target.
-gcode/fast:
-	$(MAKE) $(MAKESILENT) -f src/emc/rs274ngc/python/CMakeFiles/gcode.dir/build.make src/emc/rs274ngc/python/CMakeFiles/gcode.dir/build
-.PHONY : gcode/fast
-
-#=============================================================================
 # Target rules for targets named _hal
 
 # Build rule for target.
@@ -384,147 +306,43 @@ linuxcnc/fast:
 .PHONY : linuxcnc/fast
 
 #=============================================================================
-# Target rules for targets named linuxcnc_tcl
+# Target rules for targets named linuxcnc_tcl_dir
 
 # Build rule for target.
-linuxcnc_tcl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_tcl
-.PHONY : linuxcnc_tcl
+linuxcnc_tcl_dir: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_tcl_dir
+.PHONY : linuxcnc_tcl_dir
 
 # fast build rule for target.
-linuxcnc_tcl/fast:
-	$(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/build
-.PHONY : linuxcnc_tcl/fast
+linuxcnc_tcl_dir/fast:
+	$(MAKE) $(MAKESILENT) -f src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build.make src/emc/usr_intf/CMakeFiles/linuxcnc_tcl_dir.dir/build
+.PHONY : linuxcnc_tcl_dir/fast
 
 #=============================================================================
-# Target rules for targets named linuxcnc_axis_extension
+# Target rules for targets named pyplugin
 
 # Build rule for target.
-linuxcnc_axis_extension: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_axis_extension
-.PHONY : linuxcnc_axis_extension
+pyplugin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pyplugin
+.PHONY : pyplugin
 
 # fast build rule for target.
-linuxcnc_axis_extension/fast:
-	$(MAKE) $(MAKESILENT) -f src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axis_extension.dir/build.make src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axis_extension.dir/build
-.PHONY : linuxcnc_axis_extension/fast
+pyplugin/fast:
+	$(MAKE) $(MAKESILENT) -f src/emc/pythonplugin/CMakeFiles/pyplugin.dir/build.make src/emc/pythonplugin/CMakeFiles/pyplugin.dir/build
+.PHONY : pyplugin/fast
 
 #=============================================================================
-# Target rules for targets named togl
+# Target rules for targets named rs274
 
 # Build rule for target.
-togl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 togl
-.PHONY : togl
+rs274: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs274
+.PHONY : rs274
 
 # fast build rule for target.
-togl/fast:
-	$(MAKE) $(MAKESILENT) -f src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/build.make src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/build
-.PHONY : togl/fast
-
-#=============================================================================
-# Target rules for targets named hal
-
-# Build rule for target.
-hal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal
-.PHONY : hal
-
-# fast build rule for target.
-hal/fast:
-	$(MAKE) $(MAKESILENT) -f src/hal/utils/hal/CMakeFiles/hal.dir/build.make src/hal/utils/hal/CMakeFiles/hal.dir/build
-.PHONY : hal/fast
-
-#=============================================================================
-# Target rules for targets named halcmd
-
-# Build rule for target.
-halcmd: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd
-.PHONY : halcmd
-
-# fast build rule for target.
-halcmd/fast:
-	$(MAKE) $(MAKESILENT) -f src/bin/halcmd/CMakeFiles/halcmd.dir/build.make src/bin/halcmd/CMakeFiles/halcmd.dir/build
-.PHONY : halcmd/fast
-
-#=============================================================================
-# Target rules for targets named halrmt
-
-# Build rule for target.
-halrmt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halrmt
-.PHONY : halrmt
-
-# fast build rule for target.
-halrmt/fast:
-	$(MAKE) $(MAKESILENT) -f src/bin/halrmt/CMakeFiles/halrmt.dir/build.make src/bin/halrmt/CMakeFiles/halrmt.dir/build
-.PHONY : halrmt/fast
-
-#=============================================================================
-# Target rules for targets named halmeter
-
-# Build rule for target.
-halmeter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter
-.PHONY : halmeter
-
-# fast build rule for target.
-halmeter/fast:
-	$(MAKE) $(MAKESILENT) -f src/bin/halmeter/CMakeFiles/halmeter.dir/build.make src/bin/halmeter/CMakeFiles/halmeter.dir/build
-.PHONY : halmeter/fast
-
-#=============================================================================
-# Target rules for targets named halscope
-
-# Build rule for target.
-halscope: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope
-.PHONY : halscope
-
-# fast build rule for target.
-halscope/fast:
-	$(MAKE) $(MAKESILENT) -f src/bin/halscope/CMakeFiles/halscope.dir/build.make src/bin/halscope/CMakeFiles/halscope.dir/build
-.PHONY : halscope/fast
-
-#=============================================================================
-# Target rules for targets named pci_write
-
-# Build rule for target.
-pci_write: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pci_write
-.PHONY : pci_write
-
-# fast build rule for target.
-pci_write/fast:
-	$(MAKE) $(MAKESILENT) -f src/bin/pci_write/CMakeFiles/pci_write.dir/build.make src/bin/pci_write/CMakeFiles/pci_write.dir/build
-.PHONY : pci_write/fast
-
-#=============================================================================
-# Target rules for targets named pci_read
-
-# Build rule for target.
-pci_read: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pci_read
-.PHONY : pci_read
-
-# fast build rule for target.
-pci_read/fast:
-	$(MAKE) $(MAKESILENT) -f src/bin/pci_read/CMakeFiles/pci_read.dir/build.make src/bin/pci_read/CMakeFiles/pci_read.dir/build
-.PHONY : pci_read/fast
-
-#=============================================================================
-# Target rules for targets named milltask
-
-# Build rule for target.
-milltask: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 milltask
-.PHONY : milltask
-
-# fast build rule for target.
-milltask/fast:
-	$(MAKE) $(MAKESILENT) -f src/bin/milltask/CMakeFiles/milltask.dir/build.make src/bin/milltask/CMakeFiles/milltask.dir/build
-.PHONY : milltask/fast
+rs274/fast:
+	$(MAKE) $(MAKESILENT) -f src/emc/rs274ngc/CMakeFiles/rs274.dir/build.make src/emc/rs274ngc/CMakeFiles/rs274.dir/build
+.PHONY : rs274/fast
 
 # Help Target
 help:
@@ -539,31 +357,17 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... _hal"
-	@echo "... canterp"
-	@echo "... gcode"
-	@echo "... hal"
 	@echo "... hal_lib"
-	@echo "... halcmd"
-	@echo "... halmeter"
-	@echo "... halrmt"
-	@echo "... halscope"
 	@echo "... lineardeltakins"
 	@echo "... linuxcnc"
-	@echo "... linuxcnc_axis_extension"
-	@echo "... linuxcnc_tcl"
+	@echo "... linuxcnc_tcl_dir"
 	@echo "... linuxcnchal"
 	@echo "... linuxcncini"
-	@echo "... milltask"
-	@echo "... module_helper"
 	@echo "... nml"
-	@echo "... pci_read"
-	@echo "... pci_write"
 	@echo "... posemath"
 	@echo "... pyplugin"
 	@echo "... rotarydeltakins"
 	@echo "... rs274"
-	@echo "... rtapi_app"
-	@echo "... togl"
 	@echo "... tooldata"
 .PHONY : help
 

@@ -44,7 +44,10 @@ add_definitions(-DULAPI)
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/libnml/inifile)
 
 # Link to :
-target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC linuxcncini -lstdc++ -lboost_python39 -L/usr/lib -lpython3.9 -lcrypt -lpthread -ldl -lutil -lm -lm)
+target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC linuxcncini
+ -lstdc++ -lboost_python39 -L/usr/lib -lpython3.9 -lcrypt -lpthread -ldl -lutil -lm
+ -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-soname
+ )
 
 # Add verion nr. .so.0.0.0
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION}
@@ -61,6 +64,7 @@ install(TARGETS ${PROJECT} DESTINATION ${LIB_DIR}/python)
 # -shared -o ../lib/libpyplugin.so.0 objects/emc/pythonplugin/python_plugin.o ../lib/liblinuxcncini.so
 # -lstdc++ -lboost_python39 -L/usr/lib -lpython3.9 -lcrypt -lpthread -ldl  -lutil -lm -lm
 # ln -sf libpyplugin.so.0 ../lib/libpyplugin.so
+
 
 
 

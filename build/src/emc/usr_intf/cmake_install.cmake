@@ -43,29 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl_dir.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl_dir.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl.so"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl_dir.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl.so")
+   "/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl_dir.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/linuxcnc/src/emc/usr_intf/../../../tcl" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/build/src/emc/usr_intf/linuxcnc_tcl.so")
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl.so")
+file(INSTALL DESTINATION "/home/user/linuxcnc/src/emc/usr_intf/../../../tcl" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/build/src/emc/usr_intf/linuxcnc_tcl_dir.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl_dir.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl_dir.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl.so"
-         OLD_RPATH "/home/user/linuxcnc/build/src/libnml/inifile:/home/user/linuxcnc/build/src/libnml:/home/user/linuxcnc/build/src/emc/nml_intf:/home/user/linuxcnc/build/src/hal/linuxcnchal:"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl_dir.so"
+         OLD_RPATH "/home/user/linuxcnc/build/src/emc/nml_intf:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/usr_intf/../../../tcl/linuxcnc_tcl_dir.so")
     endif()
   endif()
 endif()

@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.0)
 # Component name. ~/linuxcnc/src/emc/task/
 set(PROJECT "milltask") # The name of the file excluding .c or .h
-project(${PROJECT} LANGUAGES C CXX)
+project(${PROJECT} LANGUAGES CXX)
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -62,8 +62,6 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/hal/linuxcnchal)
 # liblinuxcncini.so
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/libnml/inifile)
-# liblinuxcnc.so - .a
-target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/nml_intf)
 # libnml.so
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/libnml)
 # libposemath.so
@@ -74,12 +72,14 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/tooldata
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/pyplugin)
 # librs274.so
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/rs274ngc)
+# liblinuxcnc.so - .a
+target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/nml_intf)
 
 # To link in future : liblinuxcnc.a
 
-target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal linuxcncini linuxcnc nml posemath tooldata rs274 pyplugin
-    -Bsymbolic-functions -Xlinker -export-dynamic -lstdc++ -lboost_python39 -L/usr/lib -lpython3.9
-    -lcrypt -lpthread -ldl -lutil -lm
+target_link_libraries(${PROJECT_NAME} PRIVATE  rs274 nml linuxcncini posemath linuxcnchal  pyplugin tooldata linuxcnc
+    -Bsymbolic-functions -Xlinker -export-dynamic -lstdc++ -lboost_python39 -lpython3.9
+    -lcrypt -lpthread -ldl -lutil -lm -std=gnu++17
 )
 
 # make install
@@ -102,7 +102,6 @@ install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR}/../../../bin)
 # ../lib/liblinuxcncini.so ../lib/libpyplugin.so ../lib/liblinuxcnchal.so.0 ../lib/libtooldata.so.0
 # -lstdc++ -lboost_python39 -L/usr/lib -lpython3.9 -lcrypt -lpthread -ldl  -lutil -lm -lm
 # Linking milltask
-
 
 
 
