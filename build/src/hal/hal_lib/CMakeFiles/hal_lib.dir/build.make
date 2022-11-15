@@ -79,15 +79,15 @@ include src/hal/hal_lib/CMakeFiles/hal_lib.dir/flags.make
 src/hal/hal_lib/CMakeFiles/hal_lib.dir/__/hal_lib.c.o: src/hal/hal_lib/CMakeFiles/hal_lib.dir/flags.make
 src/hal/hal_lib/CMakeFiles/hal_lib.dir/__/hal_lib.c.o: ../src/hal/hal_lib.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/hal/hal_lib/CMakeFiles/hal_lib.dir/__/hal_lib.c.o"
-	cd /home/user/linuxcnc/build/src/hal/hal_lib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hal_lib.dir/__/hal_lib.c.o -c /home/user/linuxcnc/src/hal/hal_lib.c
+	cd /home/user/linuxcnc/build/src/hal/hal_lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hal_lib.dir/__/hal_lib.c.o -c /home/user/linuxcnc/src/hal/hal_lib.c
 
 src/hal/hal_lib/CMakeFiles/hal_lib.dir/__/hal_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hal_lib.dir/__/hal_lib.c.i"
-	cd /home/user/linuxcnc/build/src/hal/hal_lib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/hal_lib.c > CMakeFiles/hal_lib.dir/__/hal_lib.c.i
+	cd /home/user/linuxcnc/build/src/hal/hal_lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/hal_lib.c > CMakeFiles/hal_lib.dir/__/hal_lib.c.i
 
 src/hal/hal_lib/CMakeFiles/hal_lib.dir/__/hal_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hal_lib.dir/__/hal_lib.c.s"
-	cd /home/user/linuxcnc/build/src/hal/hal_lib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/hal_lib.c -o CMakeFiles/hal_lib.dir/__/hal_lib.c.s
+	cd /home/user/linuxcnc/build/src/hal/hal_lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/hal_lib.c -o CMakeFiles/hal_lib.dir/__/hal_lib.c.s
 
 # Object files for target hal_lib
 hal_lib_OBJECTS = \

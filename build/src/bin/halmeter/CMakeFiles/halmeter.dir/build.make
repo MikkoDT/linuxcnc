@@ -79,28 +79,28 @@ include src/bin/halmeter/CMakeFiles/halmeter.dir/flags.make
 src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.o: src/bin/halmeter/CMakeFiles/halmeter.dir/flags.make
 src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.o: ../src/hal/utils/meter.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.o -c /home/user/linuxcnc/src/hal/utils/meter.c
+	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.o -c /home/user/linuxcnc/src/hal/utils/meter.c
 
 src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/meter.c > CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.i
+	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/meter.c > CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.i
 
 src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/meter.c -o CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.s
+	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/meter.c -o CMakeFiles/halmeter.dir/__/__/hal/utils/meter.c.s
 
 src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.o: src/bin/halmeter/CMakeFiles/halmeter.dir/flags.make
 src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.o: ../src/hal/utils/miscgtk.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.o -c /home/user/linuxcnc/src/hal/utils/miscgtk.c
+	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.o -c /home/user/linuxcnc/src/hal/utils/miscgtk.c
 
 src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/miscgtk.c > CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.i
+	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/miscgtk.c > CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.i
 
 src/bin/halmeter/CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/miscgtk.c -o CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.s
+	cd /home/user/linuxcnc/build/src/bin/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/miscgtk.c -o CMakeFiles/halmeter.dir/__/__/hal/utils/miscgtk.c.s
 
 # Object files for target halmeter
 halmeter_OBJECTS = \

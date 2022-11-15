@@ -82,7 +82,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal -pthread -lgtk-3 -lgdk
 )
 
 # make install
-install(TARGETS ${PROJECT} DESTINATION ${SCR_DIR}/../../../bin)
+install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR}/../../../bin)
 
 # Notes: 
 

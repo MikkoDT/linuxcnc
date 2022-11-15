@@ -589,7 +589,7 @@
 		[
 			{
 				"backtrace" : 2,
-				"path" : "/../../../bin"
+				"path" : "/home/user/linuxcnc/src/bin/milltask/../../../bin"
 			}
 		],
 		"prefix" : 

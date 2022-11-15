@@ -87,7 +87,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/emc/usr_intf/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/bin/milltask/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/hal/utils/hal/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/bin/halcmd/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/bin/halrmt/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -95,6 +94,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/bin/halscope/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/bin/pci_write/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/bin/pci_read/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/bin/milltask/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -118,7 +118,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/DependInfo.cmake"
   "src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axis_extension.dir/DependInfo.cmake"
   "src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/DependInfo.cmake"
-  "src/bin/milltask/CMakeFiles/milltask.dir/DependInfo.cmake"
   "src/hal/utils/hal/CMakeFiles/hal.dir/DependInfo.cmake"
   "src/bin/halcmd/CMakeFiles/halcmd.dir/DependInfo.cmake"
   "src/bin/halrmt/CMakeFiles/halrmt.dir/DependInfo.cmake"
@@ -126,4 +125,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/bin/halscope/CMakeFiles/halscope.dir/DependInfo.cmake"
   "src/bin/pci_write/CMakeFiles/pci_write.dir/DependInfo.cmake"
   "src/bin/pci_read/CMakeFiles/pci_read.dir/DependInfo.cmake"
+  "src/bin/milltask/CMakeFiles/milltask.dir/DependInfo.cmake"
   )

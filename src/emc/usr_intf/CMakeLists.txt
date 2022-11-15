@@ -63,7 +63,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC linuxcncini nml linuxcnc
 )
 
 # make install
-install(TARGETS ${PROJECT} DESTINATION ${LIB_DIR}/tcl)
+install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR}/../../../tcl)
 
 # Notes, linking to liblinuxcnc.a gives reallocation error. Solution compile liblinuxcnc shared .so
 # Linking to liblinuxcnc.so gives no error.

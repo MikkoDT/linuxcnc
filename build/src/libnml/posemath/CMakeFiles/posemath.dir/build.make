@@ -79,54 +79,54 @@ include src/libnml/posemath/CMakeFiles/posemath.dir/flags.make
 src/libnml/posemath/CMakeFiles/posemath.dir/_posemath.c.o: src/libnml/posemath/CMakeFiles/posemath.dir/flags.make
 src/libnml/posemath/CMakeFiles/posemath.dir/_posemath.c.o: ../src/libnml/posemath/_posemath.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/libnml/posemath/CMakeFiles/posemath.dir/_posemath.c.o"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/posemath.dir/_posemath.c.o -c /home/user/linuxcnc/src/libnml/posemath/_posemath.c
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/posemath.dir/_posemath.c.o -c /home/user/linuxcnc/src/libnml/posemath/_posemath.c
 
 src/libnml/posemath/CMakeFiles/posemath.dir/_posemath.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/posemath.dir/_posemath.c.i"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/libnml/posemath/_posemath.c > CMakeFiles/posemath.dir/_posemath.c.i
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/libnml/posemath/_posemath.c > CMakeFiles/posemath.dir/_posemath.c.i
 
 src/libnml/posemath/CMakeFiles/posemath.dir/_posemath.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/posemath.dir/_posemath.c.s"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/libnml/posemath/_posemath.c -o CMakeFiles/posemath.dir/_posemath.c.s
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/libnml/posemath/_posemath.c -o CMakeFiles/posemath.dir/_posemath.c.s
 
 src/libnml/posemath/CMakeFiles/posemath.dir/posemath.cc.o: src/libnml/posemath/CMakeFiles/posemath.dir/flags.make
 src/libnml/posemath/CMakeFiles/posemath.dir/posemath.cc.o: ../src/libnml/posemath/posemath.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/libnml/posemath/CMakeFiles/posemath.dir/posemath.cc.o"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/posemath.dir/posemath.cc.o -c /home/user/linuxcnc/src/libnml/posemath/posemath.cc
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/posemath.dir/posemath.cc.o -c /home/user/linuxcnc/src/libnml/posemath/posemath.cc
 
 src/libnml/posemath/CMakeFiles/posemath.dir/posemath.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/posemath.dir/posemath.cc.i"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/libnml/posemath/posemath.cc > CMakeFiles/posemath.dir/posemath.cc.i
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/libnml/posemath/posemath.cc > CMakeFiles/posemath.dir/posemath.cc.i
 
 src/libnml/posemath/CMakeFiles/posemath.dir/posemath.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/posemath.dir/posemath.cc.s"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/libnml/posemath/posemath.cc -o CMakeFiles/posemath.dir/posemath.cc.s
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/libnml/posemath/posemath.cc -o CMakeFiles/posemath.dir/posemath.cc.s
 
 src/libnml/posemath/CMakeFiles/posemath.dir/gomath.c.o: src/libnml/posemath/CMakeFiles/posemath.dir/flags.make
 src/libnml/posemath/CMakeFiles/posemath.dir/gomath.c.o: ../src/libnml/posemath/gomath.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/libnml/posemath/CMakeFiles/posemath.dir/gomath.c.o"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/posemath.dir/gomath.c.o -c /home/user/linuxcnc/src/libnml/posemath/gomath.c
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/posemath.dir/gomath.c.o -c /home/user/linuxcnc/src/libnml/posemath/gomath.c
 
 src/libnml/posemath/CMakeFiles/posemath.dir/gomath.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/posemath.dir/gomath.c.i"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/libnml/posemath/gomath.c > CMakeFiles/posemath.dir/gomath.c.i
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/libnml/posemath/gomath.c > CMakeFiles/posemath.dir/gomath.c.i
 
 src/libnml/posemath/CMakeFiles/posemath.dir/gomath.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/posemath.dir/gomath.c.s"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/libnml/posemath/gomath.c -o CMakeFiles/posemath.dir/gomath.c.s
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/libnml/posemath/gomath.c -o CMakeFiles/posemath.dir/gomath.c.s
 
 src/libnml/posemath/CMakeFiles/posemath.dir/sincos.c.o: src/libnml/posemath/CMakeFiles/posemath.dir/flags.make
 src/libnml/posemath/CMakeFiles/posemath.dir/sincos.c.o: ../src/libnml/posemath/sincos.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/libnml/posemath/CMakeFiles/posemath.dir/sincos.c.o"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/posemath.dir/sincos.c.o -c /home/user/linuxcnc/src/libnml/posemath/sincos.c
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/posemath.dir/sincos.c.o -c /home/user/linuxcnc/src/libnml/posemath/sincos.c
 
 src/libnml/posemath/CMakeFiles/posemath.dir/sincos.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/posemath.dir/sincos.c.i"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/libnml/posemath/sincos.c > CMakeFiles/posemath.dir/sincos.c.i
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/libnml/posemath/sincos.c > CMakeFiles/posemath.dir/sincos.c.i
 
 src/libnml/posemath/CMakeFiles/posemath.dir/sincos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/posemath.dir/sincos.c.s"
-	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/libnml/posemath/sincos.c -o CMakeFiles/posemath.dir/sincos.c.s
+	cd /home/user/linuxcnc/build/src/libnml/posemath && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/libnml/posemath/sincos.c -o CMakeFiles/posemath.dir/sincos.c.s
 
 # Object files for target posemath
 posemath_OBJECTS = \

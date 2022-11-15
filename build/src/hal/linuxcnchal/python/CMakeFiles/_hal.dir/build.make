@@ -79,15 +79,15 @@ include src/hal/linuxcnchal/python/CMakeFiles/_hal.dir/flags.make
 src/hal/linuxcnchal/python/CMakeFiles/_hal.dir/__/__/halmodule.cc.o: src/hal/linuxcnchal/python/CMakeFiles/_hal.dir/flags.make
 src/hal/linuxcnchal/python/CMakeFiles/_hal.dir/__/__/halmodule.cc.o: ../src/hal/halmodule.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/hal/linuxcnchal/python/CMakeFiles/_hal.dir/__/__/halmodule.cc.o"
-	cd /home/user/linuxcnc/build/src/hal/linuxcnchal/python && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_hal.dir/__/__/halmodule.cc.o -c /home/user/linuxcnc/src/hal/halmodule.cc
+	cd /home/user/linuxcnc/build/src/hal/linuxcnchal/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_hal.dir/__/__/halmodule.cc.o -c /home/user/linuxcnc/src/hal/halmodule.cc
 
 src/hal/linuxcnchal/python/CMakeFiles/_hal.dir/__/__/halmodule.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_hal.dir/__/__/halmodule.cc.i"
-	cd /home/user/linuxcnc/build/src/hal/linuxcnchal/python && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/hal/halmodule.cc > CMakeFiles/_hal.dir/__/__/halmodule.cc.i
+	cd /home/user/linuxcnc/build/src/hal/linuxcnchal/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/hal/halmodule.cc > CMakeFiles/_hal.dir/__/__/halmodule.cc.i
 
 src/hal/linuxcnchal/python/CMakeFiles/_hal.dir/__/__/halmodule.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_hal.dir/__/__/halmodule.cc.s"
-	cd /home/user/linuxcnc/build/src/hal/linuxcnchal/python && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/hal/halmodule.cc -o CMakeFiles/_hal.dir/__/__/halmodule.cc.s
+	cd /home/user/linuxcnc/build/src/hal/linuxcnchal/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/hal/halmodule.cc -o CMakeFiles/_hal.dir/__/__/halmodule.cc.s
 
 # Object files for target _hal
 _hal_OBJECTS = \

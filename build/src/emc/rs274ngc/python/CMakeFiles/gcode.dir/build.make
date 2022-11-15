@@ -79,15 +79,15 @@ include src/emc/rs274ngc/python/CMakeFiles/gcode.dir/flags.make
 src/emc/rs274ngc/python/CMakeFiles/gcode.dir/__/gcodemodule.cc.o: src/emc/rs274ngc/python/CMakeFiles/gcode.dir/flags.make
 src/emc/rs274ngc/python/CMakeFiles/gcode.dir/__/gcodemodule.cc.o: ../src/emc/rs274ngc/gcodemodule.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/emc/rs274ngc/python/CMakeFiles/gcode.dir/__/gcodemodule.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc/python && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gcode.dir/__/gcodemodule.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/gcodemodule.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gcode.dir/__/gcodemodule.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/gcodemodule.cc
 
 src/emc/rs274ngc/python/CMakeFiles/gcode.dir/__/gcodemodule.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gcode.dir/__/gcodemodule.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc/python && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/gcodemodule.cc > CMakeFiles/gcode.dir/__/gcodemodule.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/gcodemodule.cc > CMakeFiles/gcode.dir/__/gcodemodule.cc.i
 
 src/emc/rs274ngc/python/CMakeFiles/gcode.dir/__/gcodemodule.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gcode.dir/__/gcodemodule.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc/python && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/gcodemodule.cc -o CMakeFiles/gcode.dir/__/gcodemodule.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc/python && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/gcodemodule.cc -o CMakeFiles/gcode.dir/__/gcodemodule.cc.s
 
 # Object files for target gcode
 gcode_OBJECTS = \

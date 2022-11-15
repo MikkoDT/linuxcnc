@@ -49,7 +49,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/src/emc/rs274ngc
 target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC rs274)
 
 # make install
-install(TARGETS ${PROJECT} DESTINATION ${LIB_DIR/python})
+install(TARGETS ${PROJECT} DESTINATION ${LIB_DIR}/python)
 
 # Notes 
 

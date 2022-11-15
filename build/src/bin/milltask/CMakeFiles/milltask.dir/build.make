@@ -79,158 +79,158 @@ include src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.o: ../src/emc/motion/emcmotglb.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.o -c /home/user/linuxcnc/src/emc/motion/emcmotglb.c
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.o -c /home/user/linuxcnc/src/emc/motion/emcmotglb.c
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/motion/emcmotglb.c > CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/motion/emcmotglb.c > CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/motion/emcmotglb.c -o CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/motion/emcmotglb.c -o CMakeFiles/milltask.dir/__/__/emc/motion/emcmotglb.c.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.o: ../src/emc/task/emctask.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.o -c /home/user/linuxcnc/src/emc/task/emctask.cc
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.o -c /home/user/linuxcnc/src/emc/task/emctask.cc
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/emctask.cc > CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/emctask.cc > CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/emctask.cc -o CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/emctask.cc -o CMakeFiles/milltask.dir/__/__/emc/task/emctask.cc.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.o: ../src/emc/task/emccanon.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.o -c /home/user/linuxcnc/src/emc/task/emccanon.cc
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.o -c /home/user/linuxcnc/src/emc/task/emccanon.cc
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/emccanon.cc > CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/emccanon.cc > CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/emccanon.cc -o CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/emccanon.cc -o CMakeFiles/milltask.dir/__/__/emc/task/emccanon.cc.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.o: ../src/emc/task/emctaskmain.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.o -c /home/user/linuxcnc/src/emc/task/emctaskmain.cc
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.o -c /home/user/linuxcnc/src/emc/task/emctaskmain.cc
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/emctaskmain.cc > CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/emctaskmain.cc > CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/emctaskmain.cc -o CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/emctaskmain.cc -o CMakeFiles/milltask.dir/__/__/emc/task/emctaskmain.cc.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.o: ../src/emc/motion/usrmotintf.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.o -c /home/user/linuxcnc/src/emc/motion/usrmotintf.cc
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.o -c /home/user/linuxcnc/src/emc/motion/usrmotintf.cc
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/motion/usrmotintf.cc > CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/motion/usrmotintf.cc > CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/motion/usrmotintf.cc -o CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/motion/usrmotintf.cc -o CMakeFiles/milltask.dir/__/__/emc/motion/usrmotintf.cc.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.o: ../src/emc/motion/emcmotutil.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.o -c /home/user/linuxcnc/src/emc/motion/emcmotutil.c
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.o -c /home/user/linuxcnc/src/emc/motion/emcmotutil.c
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/motion/emcmotutil.c > CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/motion/emcmotutil.c > CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/motion/emcmotutil.c -o CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/motion/emcmotutil.c -o CMakeFiles/milltask.dir/__/__/emc/motion/emcmotutil.c.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.o: ../src/emc/task/taskintf.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.o -c /home/user/linuxcnc/src/emc/task/taskintf.cc
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.o -c /home/user/linuxcnc/src/emc/task/taskintf.cc
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/taskintf.cc > CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/taskintf.cc > CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/taskintf.cc -o CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/taskintf.cc -o CMakeFiles/milltask.dir/__/__/emc/task/taskintf.cc.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.o: ../src/emc/motion/dbuf.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.o -c /home/user/linuxcnc/src/emc/motion/dbuf.c
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.o -c /home/user/linuxcnc/src/emc/motion/dbuf.c
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/motion/dbuf.c > CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/motion/dbuf.c > CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/motion/dbuf.c -o CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/motion/dbuf.c -o CMakeFiles/milltask.dir/__/__/emc/motion/dbuf.c.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.o: ../src/emc/motion/stashf.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.o -c /home/user/linuxcnc/src/emc/motion/stashf.c
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.o -c /home/user/linuxcnc/src/emc/motion/stashf.c
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/motion/stashf.c > CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/motion/stashf.c > CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/motion/stashf.c -o CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/motion/stashf.c -o CMakeFiles/milltask.dir/__/__/emc/motion/stashf.c.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.o: ../src/emc/task/taskmodule.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.o -c /home/user/linuxcnc/src/emc/task/taskmodule.cc
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.o -c /home/user/linuxcnc/src/emc/task/taskmodule.cc
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/taskmodule.cc > CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/taskmodule.cc > CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/taskmodule.cc -o CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/taskmodule.cc -o CMakeFiles/milltask.dir/__/__/emc/task/taskmodule.cc.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.o: ../src/emc/task/taskclass.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.o -c /home/user/linuxcnc/src/emc/task/taskclass.cc
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.o -c /home/user/linuxcnc/src/emc/task/taskclass.cc
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/taskclass.cc > CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/taskclass.cc > CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/taskclass.cc -o CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/taskclass.cc -o CMakeFiles/milltask.dir/__/__/emc/task/taskclass.cc.s
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.o: src/bin/milltask/CMakeFiles/milltask.dir/flags.make
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.o: ../src/emc/task/backtrace.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.o"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.o -c /home/user/linuxcnc/src/emc/task/backtrace.cc
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.o -c /home/user/linuxcnc/src/emc/task/backtrace.cc
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.i"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/backtrace.cc > CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.i
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/task/backtrace.cc > CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.i
 
 src/bin/milltask/CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.s"
-	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/backtrace.cc -o CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.s
+	cd /home/user/linuxcnc/build/src/bin/milltask && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/task/backtrace.cc -o CMakeFiles/milltask.dir/__/__/emc/task/backtrace.cc.s
 
 # Object files for target milltask
 milltask_OBJECTS = \

@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Build")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -43,21 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gcode.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gcode.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python/gcode.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python/gcode.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gcode.so"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python/gcode.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/build/src/emc/rs274ngc/python/gcode.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gcode.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gcode.so")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python/gcode.so")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/build/src/emc/rs274ngc/python/gcode.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python/gcode.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python/gcode.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gcode.so"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python/gcode.so"
          OLD_RPATH "/home/user/linuxcnc/build/src/emc/rs274ngc:/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/libnml/inifile:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gcode.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python/gcode.so")
     endif()
   endif()
 endif()

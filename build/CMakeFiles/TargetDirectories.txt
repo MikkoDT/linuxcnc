@@ -137,13 +137,6 @@
 /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/rebuild_cache.dir
 /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/edit_cache.dir
 /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir
-/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/install/strip.dir
-/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/install/local.dir
-/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/install.dir
-/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/list_install_components.dir
-/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/rebuild_cache.dir
-/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/edit_cache.dir
-/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/milltask.dir
 /home/user/linuxcnc/build/src/hal/utils/hal/CMakeFiles/install/strip.dir
 /home/user/linuxcnc/build/src/hal/utils/hal/CMakeFiles/install/local.dir
 /home/user/linuxcnc/build/src/hal/utils/hal/CMakeFiles/install.dir
@@ -193,3 +186,10 @@
 /home/user/linuxcnc/build/src/bin/pci_read/CMakeFiles/rebuild_cache.dir
 /home/user/linuxcnc/build/src/bin/pci_read/CMakeFiles/edit_cache.dir
 /home/user/linuxcnc/build/src/bin/pci_read/CMakeFiles/pci_read.dir
+/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/install/strip.dir
+/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/install/local.dir
+/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/install.dir
+/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/list_install_components.dir
+/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/rebuild_cache.dir
+/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/edit_cache.dir
+/home/user/linuxcnc/build/src/bin/milltask/CMakeFiles/milltask.dir

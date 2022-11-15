@@ -79,15 +79,15 @@ include src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/flags.m
 src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/__/__/_toglmodule.c.o: src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/flags.make
 src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/__/__/_toglmodule.c.o: ../src/emc/usr_intf/axis/extensions/_toglmodule.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/__/__/_toglmodule.c.o"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/togl.dir/__/__/_toglmodule.c.o -c /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/_toglmodule.c
+	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/togl.dir/__/__/_toglmodule.c.o -c /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/_toglmodule.c
 
 src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/__/__/_toglmodule.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/togl.dir/__/__/_toglmodule.c.i"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/_toglmodule.c > CMakeFiles/togl.dir/__/__/_toglmodule.c.i
+	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/_toglmodule.c > CMakeFiles/togl.dir/__/__/_toglmodule.c.i
 
 src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/__/__/_toglmodule.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/togl.dir/__/__/_toglmodule.c.s"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/_toglmodule.c -o CMakeFiles/togl.dir/__/__/_toglmodule.c.s
+	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/togl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/_toglmodule.c -o CMakeFiles/togl.dir/__/__/_toglmodule.c.s
 
 # Object files for target togl
 togl_OBJECTS = \

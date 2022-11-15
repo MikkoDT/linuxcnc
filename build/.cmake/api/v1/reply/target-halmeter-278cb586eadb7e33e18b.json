@@ -541,7 +541,7 @@
 		[
 			{
 				"backtrace" : 2,
-				"path" : "/../../../bin"
+				"path" : "/home/user/linuxcnc/src/bin/halmeter/../../../bin"
 			}
 		],
 		"prefix" : 

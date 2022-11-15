@@ -79,93 +79,93 @@ include src/bin/halscope/CMakeFiles/halscope.dir/flags.make
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.o: src/bin/halscope/CMakeFiles/halscope.dir/flags.make
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.o: ../src/hal/utils/scope.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.o -c /home/user/linuxcnc/src/hal/utils/scope.c
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.o -c /home/user/linuxcnc/src/hal/utils/scope.c
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.i
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.i
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.s
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope.c.s
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.o: src/bin/halscope/CMakeFiles/halscope.dir/flags.make
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.o: ../src/hal/utils/scope_horiz.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.o -c /home/user/linuxcnc/src/hal/utils/scope_horiz.c
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.o -c /home/user/linuxcnc/src/hal/utils/scope_horiz.c
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_horiz.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.i
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_horiz.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.i
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_horiz.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.s
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_horiz.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_horiz.c.s
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.o: src/bin/halscope/CMakeFiles/halscope.dir/flags.make
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.o: ../src/hal/utils/scope_vert.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.o -c /home/user/linuxcnc/src/hal/utils/scope_vert.c
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.o -c /home/user/linuxcnc/src/hal/utils/scope_vert.c
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_vert.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.i
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_vert.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.i
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_vert.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.s
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_vert.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_vert.c.s
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.o: src/bin/halscope/CMakeFiles/halscope.dir/flags.make
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.o: ../src/hal/utils/scope_trig.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.o -c /home/user/linuxcnc/src/hal/utils/scope_trig.c
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.o -c /home/user/linuxcnc/src/hal/utils/scope_trig.c
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_trig.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.i
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_trig.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.i
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_trig.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.s
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_trig.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_trig.c.s
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.o: src/bin/halscope/CMakeFiles/halscope.dir/flags.make
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.o: ../src/hal/utils/scope_disp.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.o -c /home/user/linuxcnc/src/hal/utils/scope_disp.c
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.o -c /home/user/linuxcnc/src/hal/utils/scope_disp.c
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_disp.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.i
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_disp.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.i
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_disp.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.s
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_disp.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_disp.c.s
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.o: src/bin/halscope/CMakeFiles/halscope.dir/flags.make
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.o: ../src/hal/utils/scope_files.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.o -c /home/user/linuxcnc/src/hal/utils/scope_files.c
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.o -c /home/user/linuxcnc/src/hal/utils/scope_files.c
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_files.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.i
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/scope_files.c > CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.i
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_files.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.s
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/scope_files.c -o CMakeFiles/halscope.dir/__/__/hal/utils/scope_files.c.s
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.o: src/bin/halscope/CMakeFiles/halscope.dir/flags.make
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.o: ../src/hal/utils/miscgtk.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.o -c /home/user/linuxcnc/src/hal/utils/miscgtk.c
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.o -c /home/user/linuxcnc/src/hal/utils/miscgtk.c
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/miscgtk.c > CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.i
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/miscgtk.c > CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.i
 
 src/bin/halscope/CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/miscgtk.c -o CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.s
+	cd /home/user/linuxcnc/build/src/bin/halscope && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/miscgtk.c -o CMakeFiles/halscope.dir/__/__/hal/utils/miscgtk.c.s
 
 # Object files for target halscope
 halscope_OBJECTS = \

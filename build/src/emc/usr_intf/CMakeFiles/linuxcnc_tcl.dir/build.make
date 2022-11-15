@@ -79,28 +79,28 @@ include src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/flags.make
 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.o: src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/flags.make
 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.o: ../src/emc/usr_intf/emcsh.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.o -c /home/user/linuxcnc/src/emc/usr_intf/emcsh.cc
+	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.o -c /home/user/linuxcnc/src/emc/usr_intf/emcsh.cc
 
 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/usr_intf/emcsh.cc > CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.i
+	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/usr_intf/emcsh.cc > CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.i
 
 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/usr_intf/emcsh.cc -o CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.s
+	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/usr_intf/emcsh.cc -o CMakeFiles/linuxcnc_tcl.dir/emcsh.cc.s
 
 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/shcom.cc.o: src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/flags.make
 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/shcom.cc.o: ../src/emc/usr_intf/shcom.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/shcom.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc_tcl.dir/shcom.cc.o -c /home/user/linuxcnc/src/emc/usr_intf/shcom.cc
+	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc_tcl.dir/shcom.cc.o -c /home/user/linuxcnc/src/emc/usr_intf/shcom.cc
 
 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/shcom.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc_tcl.dir/shcom.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/usr_intf/shcom.cc > CMakeFiles/linuxcnc_tcl.dir/shcom.cc.i
+	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/usr_intf/shcom.cc > CMakeFiles/linuxcnc_tcl.dir/shcom.cc.i
 
 src/emc/usr_intf/CMakeFiles/linuxcnc_tcl.dir/shcom.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc_tcl.dir/shcom.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/usr_intf/shcom.cc -o CMakeFiles/linuxcnc_tcl.dir/shcom.cc.s
+	cd /home/user/linuxcnc/build/src/emc/usr_intf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/usr_intf/shcom.cc -o CMakeFiles/linuxcnc_tcl.dir/shcom.cc.s
 
 # Object files for target linuxcnc_tcl
 linuxcnc_tcl_OBJECTS = \

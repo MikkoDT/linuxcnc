@@ -189,9 +189,6 @@
 			"path" : "src/emc/usr_intf/axis/extensions/python/togl/CMakeLists.txt"
 		},
 		{
-			"path" : "src/bin/milltask/CMakeLists.txt"
-		},
-		{
 			"path" : "src/hal/utils/hal/CMakeLists.txt"
 		},
 		{
@@ -211,6 +208,9 @@
 		},
 		{
 			"path" : "src/bin/pci_read/CMakeLists.txt"
+		},
+		{
+			"path" : "src/bin/milltask/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

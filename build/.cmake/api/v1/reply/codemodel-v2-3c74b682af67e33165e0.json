@@ -330,21 +330,6 @@
 					]
 				},
 				{
-					"build" : "src/bin/milltask",
-					"hasInstallRule" : true,
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.0"
-					},
-					"parentIndex" : 0,
-					"projectIndex" : 20,
-					"source" : "src/bin/milltask",
-					"targetIndexes" : 
-					[
-						15
-					]
-				},
-				{
 					"build" : "src/hal/utils/hal",
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -352,7 +337,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 21,
+					"projectIndex" : 20,
 					"source" : "src/hal/utils/hal",
 					"targetIndexes" : 
 					[
@@ -367,7 +352,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 22,
+					"projectIndex" : 21,
 					"source" : "src/bin/halcmd",
 					"targetIndexes" : 
 					[
@@ -382,7 +367,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 23,
+					"projectIndex" : 22,
 					"source" : "src/bin/halrmt",
 					"targetIndexes" : 
 					[
@@ -397,7 +382,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 24,
+					"projectIndex" : 23,
 					"source" : "src/bin/halmeter",
 					"targetIndexes" : 
 					[
@@ -412,7 +397,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 25,
+					"projectIndex" : 24,
 					"source" : "src/bin/halscope",
 					"targetIndexes" : 
 					[
@@ -427,7 +412,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 26,
+					"projectIndex" : 25,
 					"source" : "src/bin/pci_write",
 					"targetIndexes" : 
 					[
@@ -442,15 +427,30 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 27,
+					"projectIndex" : 26,
 					"source" : "src/bin/pci_read",
 					"targetIndexes" : 
 					[
 						18
 					]
+				},
+				{
+					"build" : "src/bin/milltask",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 27,
+					"source" : "src/bin/milltask",
+					"targetIndexes" : 
+					[
+						15
+					]
 				}
 			],
-			"name" : "Build",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -723,18 +723,6 @@
 					[
 						20
 					],
-					"name" : "milltask",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						15
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						21
-					],
 					"name" : "hal",
 					"parentIndex" : 0,
 					"targetIndexes" : 
@@ -745,7 +733,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						22
+						21
 					],
 					"name" : "halcmd",
 					"parentIndex" : 0,
@@ -757,7 +745,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						23
+						22
 					],
 					"name" : "halrmt",
 					"parentIndex" : 0,
@@ -769,7 +757,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						24
+						23
 					],
 					"name" : "halmeter",
 					"parentIndex" : 0,
@@ -781,7 +769,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						25
+						24
 					],
 					"name" : "halscope",
 					"parentIndex" : 0,
@@ -793,7 +781,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						26
+						25
 					],
 					"name" : "pci_write",
 					"parentIndex" : 0,
@@ -805,13 +793,25 @@
 				{
 					"directoryIndexes" : 
 					[
-						27
+						26
 					],
 					"name" : "pci_read",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						27
+					],
+					"name" : "milltask",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						15
 					]
 				}
 			],
@@ -820,189 +820,189 @@
 				{
 					"directoryIndex" : 15,
 					"id" : "_hal::@31e64db328bd8f07e360",
-					"jsonFile" : "target-_hal-Build-14109cd08ebcfedd1e24.json",
+					"jsonFile" : "target-_hal-14109cd08ebcfedd1e24.json",
 					"name" : "_hal",
 					"projectIndex" : 15
 				},
 				{
 					"directoryIndex" : 13,
 					"id" : "canterp::@5e852c171708bc5846e0",
-					"jsonFile" : "target-canterp-Build-89aca7a1ce528ea2ec44.json",
+					"jsonFile" : "target-canterp-89aca7a1ce528ea2ec44.json",
 					"name" : "canterp",
 					"projectIndex" : 13
 				},
 				{
 					"directoryIndex" : 14,
 					"id" : "gcode::@bfbe9201389c103b695f",
-					"jsonFile" : "target-gcode-Build-19878eed8e8dcc873a8a.json",
+					"jsonFile" : "target-gcode-dd9feee1b3b65cbd268a.json",
 					"name" : "gcode",
 					"projectIndex" : 14
 				},
 				{
-					"directoryIndex" : 21,
+					"directoryIndex" : 20,
 					"id" : "hal::@27875b4523ec67324ff6",
-					"jsonFile" : "target-hal-Build-17d6e6388d84be3ac283.json",
+					"jsonFile" : "target-hal-17d6e6388d84be3ac283.json",
 					"name" : "hal",
-					"projectIndex" : 21
+					"projectIndex" : 20
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "hal_lib::@1e2fa2d2d8a75fb0f948",
-					"jsonFile" : "target-hal_lib-Build-49d7b25b4d63664f9506.json",
+					"jsonFile" : "target-hal_lib-49d7b25b4d63664f9506.json",
 					"name" : "hal_lib",
 					"projectIndex" : 3
 				},
 				{
-					"directoryIndex" : 22,
+					"directoryIndex" : 21,
 					"id" : "halcmd::@a79abe2ef6daee35698b",
-					"jsonFile" : "target-halcmd-Build-d76ad5dbed2e590b5045.json",
+					"jsonFile" : "target-halcmd-d76ad5dbed2e590b5045.json",
 					"name" : "halcmd",
+					"projectIndex" : 21
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "halmeter::@90cd16c7875591407e85",
+					"jsonFile" : "target-halmeter-278cb586eadb7e33e18b.json",
+					"name" : "halmeter",
+					"projectIndex" : 23
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "halrmt::@a518b2cf53365d36c1bd",
+					"jsonFile" : "target-halrmt-26b353bf40373753e1e0.json",
+					"name" : "halrmt",
 					"projectIndex" : 22
 				},
 				{
 					"directoryIndex" : 24,
-					"id" : "halmeter::@90cd16c7875591407e85",
-					"jsonFile" : "target-halmeter-Build-6312e0af5972c03e76fb.json",
-					"name" : "halmeter",
-					"projectIndex" : 24
-				},
-				{
-					"directoryIndex" : 23,
-					"id" : "halrmt::@a518b2cf53365d36c1bd",
-					"jsonFile" : "target-halrmt-Build-26b353bf40373753e1e0.json",
-					"name" : "halrmt",
-					"projectIndex" : 23
-				},
-				{
-					"directoryIndex" : 25,
 					"id" : "halscope::@227fdf37467bfd61d821",
-					"jsonFile" : "target-halscope-Build-aff075c33fddffec4587.json",
+					"jsonFile" : "target-halscope-aff075c33fddffec4587.json",
 					"name" : "halscope",
-					"projectIndex" : 25
+					"projectIndex" : 24
 				},
 				{
 					"directoryIndex" : 11,
 					"id" : "lineardeltakins::@25224d2f96a1fc374049",
-					"jsonFile" : "target-lineardeltakins-Build-89e62c6923110ce9b511.json",
+					"jsonFile" : "target-lineardeltakins-89e62c6923110ce9b511.json",
 					"name" : "lineardeltakins",
 					"projectIndex" : 11
 				},
 				{
 					"directoryIndex" : 16,
 					"id" : "linuxcnc::@f467794db3278dde9bbe",
-					"jsonFile" : "target-linuxcnc-Build-9be349ce44720ca8da63.json",
+					"jsonFile" : "target-linuxcnc-9be349ce44720ca8da63.json",
 					"name" : "linuxcnc",
 					"projectIndex" : 16
 				},
 				{
 					"directoryIndex" : 18,
 					"id" : "linuxcnc_axis_extension::@09e536bcd97e61bd2ca3",
-					"jsonFile" : "target-linuxcnc_axis_extension-Build-3f908f30e21ac7130359.json",
+					"jsonFile" : "target-linuxcnc_axis_extension-3f908f30e21ac7130359.json",
 					"name" : "linuxcnc_axis_extension",
 					"projectIndex" : 18
 				},
 				{
 					"directoryIndex" : 17,
 					"id" : "linuxcnc_tcl::@10cdee7379d03e12d63e",
-					"jsonFile" : "target-linuxcnc_tcl-Build-b0611e949890a36c8be2.json",
+					"jsonFile" : "target-linuxcnc_tcl-31eff83293e7e3d8c357.json",
 					"name" : "linuxcnc_tcl",
 					"projectIndex" : 17
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "linuxcnchal::@fe1c7574120cd1d48f59",
-					"jsonFile" : "target-linuxcnchal-Build-e75912dc335733789e24.json",
+					"jsonFile" : "target-linuxcnchal-e75912dc335733789e24.json",
 					"name" : "linuxcnchal",
 					"projectIndex" : 4
 				},
 				{
 					"directoryIndex" : 6,
 					"id" : "linuxcncini::@6e603237c1fabd7fc687",
-					"jsonFile" : "target-linuxcncini-Build-363103276893a5598d37.json",
+					"jsonFile" : "target-linuxcncini-363103276893a5598d37.json",
 					"name" : "linuxcncini",
 					"projectIndex" : 6
 				},
 				{
-					"directoryIndex" : 20,
+					"directoryIndex" : 27,
 					"id" : "milltask::@2d0154dce71989d21f4d",
-					"jsonFile" : "target-milltask-Build-5536bbc1c95163189d18.json",
+					"jsonFile" : "target-milltask-de1b54d2d80100dbe594.json",
 					"name" : "milltask",
-					"projectIndex" : 20
+					"projectIndex" : 27
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "module_helper::@1283df4eed0604c5eaa6",
-					"jsonFile" : "target-module_helper-Build-86b959c54ce1a44e1207.json",
+					"jsonFile" : "target-module_helper-86b959c54ce1a44e1207.json",
 					"name" : "module_helper",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "nml::@3c375794c46971530ddc",
-					"jsonFile" : "target-nml-Build-f20b12eb089f1bc308a3.json",
+					"jsonFile" : "target-nml-f20b12eb089f1bc308a3.json",
 					"name" : "nml",
 					"projectIndex" : 5
 				},
 				{
-					"directoryIndex" : 27,
+					"directoryIndex" : 26,
 					"id" : "pci_read::@dc55f9d8b4b1ebafde99",
-					"jsonFile" : "target-pci_read-Build-260512a34f83815bb4f5.json",
+					"jsonFile" : "target-pci_read-260512a34f83815bb4f5.json",
 					"name" : "pci_read",
-					"projectIndex" : 27
+					"projectIndex" : 26
 				},
 				{
-					"directoryIndex" : 26,
+					"directoryIndex" : 25,
 					"id" : "pci_write::@fa55dad38e5dacd5d827",
-					"jsonFile" : "target-pci_write-Build-d0347c3ee651d75fdc7b.json",
+					"jsonFile" : "target-pci_write-d0347c3ee651d75fdc7b.json",
 					"name" : "pci_write",
-					"projectIndex" : 26
+					"projectIndex" : 25
 				},
 				{
 					"directoryIndex" : 10,
 					"id" : "posemath::@545ed9d3f0259e6e8b08",
-					"jsonFile" : "target-posemath-Build-cbc224644faf1dfc6b8d.json",
+					"jsonFile" : "target-posemath-cbc224644faf1dfc6b8d.json",
 					"name" : "posemath",
 					"projectIndex" : 10
 				},
 				{
 					"directoryIndex" : 8,
 					"id" : "pyplugin::@c2e8f63acbde5e9e3cd9",
-					"jsonFile" : "target-pyplugin-Build-67ffbdfddb07e2dd9da1.json",
+					"jsonFile" : "target-pyplugin-67ffbdfddb07e2dd9da1.json",
 					"name" : "pyplugin",
 					"projectIndex" : 8
 				},
 				{
 					"directoryIndex" : 12,
 					"id" : "rotarydeltakins::@2ceddb74b1b653454a81",
-					"jsonFile" : "target-rotarydeltakins-Build-b49d8ece02a3f77d146b.json",
+					"jsonFile" : "target-rotarydeltakins-b49d8ece02a3f77d146b.json",
 					"name" : "rotarydeltakins",
 					"projectIndex" : 12
 				},
 				{
 					"directoryIndex" : 9,
 					"id" : "rs274::@15ffa07ab1146e7acb3a",
-					"jsonFile" : "target-rs274-Build-d328fed6c7b81dc45ba3.json",
+					"jsonFile" : "target-rs274-d328fed6c7b81dc45ba3.json",
 					"name" : "rs274",
 					"projectIndex" : 9
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "rtapi_app::@84c35410116682210bb7",
-					"jsonFile" : "target-rtapi_app-Build-67a4a44f9415af0c8f97.json",
+					"jsonFile" : "target-rtapi_app-67a4a44f9415af0c8f97.json",
 					"name" : "rtapi_app",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 19,
 					"id" : "togl::@cf0cd24f3ecb33a31118",
-					"jsonFile" : "target-togl-Build-df0a96829ad2c04d97c0.json",
+					"jsonFile" : "target-togl-df0a96829ad2c04d97c0.json",
 					"name" : "togl",
 					"projectIndex" : 19
 				},
 				{
 					"directoryIndex" : 7,
 					"id" : "tooldata::@ebc248405ba7531a74db",
-					"jsonFile" : "target-tooldata-Build-4c97e50ebd15c3795471.json",
+					"jsonFile" : "target-tooldata-4c97e50ebd15c3795471.json",
 					"name" : "tooldata",
 					"projectIndex" : 7
 				}

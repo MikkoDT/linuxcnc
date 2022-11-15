@@ -1,1 +1,1 @@
-/usr/bin/gcc -fPIC -shared -Wl,-soname,togl.so -o togl.so CMakeFiles/togl.dir/__/__/_toglmodule.c.o  -lX11 -lepoxy -lXmu -lX11 -lepoxy -lXmu -ltclstub8.6 -lXss -lXext -lXft -lfontconfig -lfreetype -lpthread -ldl -lz -lm -ltk8.6 
+/usr/bin/cc -fPIC -shared -Wl,-soname,togl.so -o togl.so CMakeFiles/togl.dir/__/__/_toglmodule.c.o  -lX11 -lepoxy -lXmu -lX11 -lepoxy -lXmu -ltclstub8.6 -lXss -lXext -lXft -lfontconfig -lfreetype -lpthread -ldl -lz -lm -ltk8.6 

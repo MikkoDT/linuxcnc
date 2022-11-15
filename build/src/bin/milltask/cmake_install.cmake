@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Build")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -43,29 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/../../../bin/milltask" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/../../../bin/milltask")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/bin/milltask/../../../bin/milltask" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/bin/milltask/../../../bin/milltask")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/../../../bin/milltask"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/bin/milltask/../../../bin/milltask"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/../../../bin/milltask")
+   "/home/user/linuxcnc/src/bin/milltask/../../../bin/milltask")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/../../../bin" TYPE EXECUTABLE FILES "/home/user/linuxcnc/build/src/bin/milltask/milltask")
-  if(EXISTS "$ENV{DESTDIR}/../../../bin/milltask" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/../../../bin/milltask")
+file(INSTALL DESTINATION "/home/user/linuxcnc/src/bin/milltask/../../../bin" TYPE EXECUTABLE FILES "/home/user/linuxcnc/build/src/bin/milltask/milltask")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/src/bin/milltask/../../../bin/milltask" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/src/bin/milltask/../../../bin/milltask")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/../../../bin/milltask"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/src/bin/milltask/../../../bin/milltask"
          OLD_RPATH "/home/user/linuxcnc/build/src/emc/nml_intf:/home/user/linuxcnc/build/src/libnml:/home/user/linuxcnc/build/src/libnml/posemath:/home/user/linuxcnc/build/src/emc/rs274ngc:/home/user/linuxcnc/build/src/emc/pythonplugin:/home/user/linuxcnc/build/src/hal/linuxcnchal:/home/user/linuxcnc/build/src/emc/tooldata:/home/user/linuxcnc/build/src/libnml/inifile:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/../../../bin/milltask")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/src/bin/milltask/../../../bin/milltask")
     endif()
   endif()
 endif()

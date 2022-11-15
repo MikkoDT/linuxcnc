@@ -91,7 +91,6 @@ all: src/emc/nml_intf/all
 all: src/emc/usr_intf/all
 all: src/emc/usr_intf/axis/extensions/python/linuxcnc/all
 all: src/emc/usr_intf/axis/extensions/python/togl/all
-all: src/bin/milltask/all
 all: src/hal/utils/hal/all
 all: src/bin/halcmd/all
 all: src/bin/halrmt/all
@@ -99,6 +98,7 @@ all: src/bin/halmeter/all
 all: src/bin/halscope/all
 all: src/bin/pci_write/all
 all: src/bin/pci_read/all
+all: src/bin/milltask/all
 
 .PHONY : all
 
@@ -122,7 +122,6 @@ preinstall: src/emc/nml_intf/preinstall
 preinstall: src/emc/usr_intf/preinstall
 preinstall: src/emc/usr_intf/axis/extensions/python/linuxcnc/preinstall
 preinstall: src/emc/usr_intf/axis/extensions/python/togl/preinstall
-preinstall: src/bin/milltask/preinstall
 preinstall: src/hal/utils/hal/preinstall
 preinstall: src/bin/halcmd/preinstall
 preinstall: src/bin/halrmt/preinstall
@@ -130,6 +129,7 @@ preinstall: src/bin/halmeter/preinstall
 preinstall: src/bin/halscope/preinstall
 preinstall: src/bin/pci_write/preinstall
 preinstall: src/bin/pci_read/preinstall
+preinstall: src/bin/milltask/preinstall
 
 .PHONY : preinstall
 
@@ -153,7 +153,6 @@ clean: src/emc/nml_intf/clean
 clean: src/emc/usr_intf/clean
 clean: src/emc/usr_intf/axis/extensions/python/linuxcnc/clean
 clean: src/emc/usr_intf/axis/extensions/python/togl/clean
-clean: src/bin/milltask/clean
 clean: src/hal/utils/hal/clean
 clean: src/bin/halcmd/clean
 clean: src/bin/halrmt/clean
@@ -161,6 +160,7 @@ clean: src/bin/halmeter/clean
 clean: src/bin/halscope/clean
 clean: src/bin/pci_write/clean
 clean: src/bin/pci_read/clean
+clean: src/bin/milltask/clean
 
 .PHONY : clean
 
@@ -1170,40 +1170,6 @@ src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/clean:
 .PHONY : src/emc/usr_intf/axis/extensions/python/togl/CMakeFiles/togl.dir/clean
 
 #=============================================================================
-# Target rules for target src/bin/milltask/CMakeFiles/milltask.dir
-
-# All Build rule for target.
-src/bin/milltask/CMakeFiles/milltask.dir/all: src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/all
-src/bin/milltask/CMakeFiles/milltask.dir/all: src/libnml/CMakeFiles/nml.dir/all
-src/bin/milltask/CMakeFiles/milltask.dir/all: src/libnml/inifile/CMakeFiles/linuxcncini.dir/all
-src/bin/milltask/CMakeFiles/milltask.dir/all: src/emc/tooldata/CMakeFiles/tooldata.dir/all
-src/bin/milltask/CMakeFiles/milltask.dir/all: src/emc/pythonplugin/CMakeFiles/pyplugin.dir/all
-src/bin/milltask/CMakeFiles/milltask.dir/all: src/emc/rs274ngc/CMakeFiles/rs274.dir/all
-src/bin/milltask/CMakeFiles/milltask.dir/all: src/libnml/posemath/CMakeFiles/posemath.dir/all
-src/bin/milltask/CMakeFiles/milltask.dir/all: src/emc/nml_intf/CMakeFiles/linuxcnc.dir/all
-	$(MAKE) $(MAKESILENT) -f src/bin/milltask/CMakeFiles/milltask.dir/build.make src/bin/milltask/CMakeFiles/milltask.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/bin/milltask/CMakeFiles/milltask.dir/build.make src/bin/milltask/CMakeFiles/milltask.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42 "Built target milltask"
-.PHONY : src/bin/milltask/CMakeFiles/milltask.dir/all
-
-# Build rule for subdir invocation for target.
-src/bin/milltask/CMakeFiles/milltask.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/build/CMakeFiles 68
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/bin/milltask/CMakeFiles/milltask.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/build/CMakeFiles 0
-.PHONY : src/bin/milltask/CMakeFiles/milltask.dir/rule
-
-# Convenience name for target.
-milltask: src/bin/milltask/CMakeFiles/milltask.dir/rule
-
-.PHONY : milltask
-
-# clean rule for target.
-src/bin/milltask/CMakeFiles/milltask.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/bin/milltask/CMakeFiles/milltask.dir/build.make src/bin/milltask/CMakeFiles/milltask.dir/clean
-.PHONY : src/bin/milltask/CMakeFiles/milltask.dir/clean
-
-#=============================================================================
 # Target rules for target src/hal/utils/hal/CMakeFiles/hal.dir
 
 # All Build rule for target.
@@ -1393,6 +1359,40 @@ pci_read: src/bin/pci_read/CMakeFiles/pci_read.dir/rule
 src/bin/pci_read/CMakeFiles/pci_read.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/bin/pci_read/CMakeFiles/pci_read.dir/build.make src/bin/pci_read/CMakeFiles/pci_read.dir/clean
 .PHONY : src/bin/pci_read/CMakeFiles/pci_read.dir/clean
+
+#=============================================================================
+# Target rules for target src/bin/milltask/CMakeFiles/milltask.dir
+
+# All Build rule for target.
+src/bin/milltask/CMakeFiles/milltask.dir/all: src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/all
+src/bin/milltask/CMakeFiles/milltask.dir/all: src/libnml/CMakeFiles/nml.dir/all
+src/bin/milltask/CMakeFiles/milltask.dir/all: src/libnml/inifile/CMakeFiles/linuxcncini.dir/all
+src/bin/milltask/CMakeFiles/milltask.dir/all: src/emc/tooldata/CMakeFiles/tooldata.dir/all
+src/bin/milltask/CMakeFiles/milltask.dir/all: src/emc/pythonplugin/CMakeFiles/pyplugin.dir/all
+src/bin/milltask/CMakeFiles/milltask.dir/all: src/emc/rs274ngc/CMakeFiles/rs274.dir/all
+src/bin/milltask/CMakeFiles/milltask.dir/all: src/libnml/posemath/CMakeFiles/posemath.dir/all
+src/bin/milltask/CMakeFiles/milltask.dir/all: src/emc/nml_intf/CMakeFiles/linuxcnc.dir/all
+	$(MAKE) $(MAKESILENT) -f src/bin/milltask/CMakeFiles/milltask.dir/build.make src/bin/milltask/CMakeFiles/milltask.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/bin/milltask/CMakeFiles/milltask.dir/build.make src/bin/milltask/CMakeFiles/milltask.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42 "Built target milltask"
+.PHONY : src/bin/milltask/CMakeFiles/milltask.dir/all
+
+# Build rule for subdir invocation for target.
+src/bin/milltask/CMakeFiles/milltask.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/build/CMakeFiles 68
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/bin/milltask/CMakeFiles/milltask.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/build/CMakeFiles 0
+.PHONY : src/bin/milltask/CMakeFiles/milltask.dir/rule
+
+# Convenience name for target.
+milltask: src/bin/milltask/CMakeFiles/milltask.dir/rule
+
+.PHONY : milltask
+
+# clean rule for target.
+src/bin/milltask/CMakeFiles/milltask.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/bin/milltask/CMakeFiles/milltask.dir/build.make src/bin/milltask/CMakeFiles/milltask.dir/clean
+.PHONY : src/bin/milltask/CMakeFiles/milltask.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -79,15 +79,15 @@ include src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axi
 src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.o: src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axis_extension.dir/flags.make
 src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.o: ../src/emc/usr_intf/axis/extensions/emcmodule.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/linuxcnc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.o -c /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/emcmodule.cc
+	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/linuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.o -c /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/emcmodule.cc
 
 src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/linuxcnc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/emcmodule.cc > CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.i
+	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/linuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/emcmodule.cc > CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.i
 
 src/emc/usr_intf/axis/extensions/python/linuxcnc/CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/linuxcnc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/emcmodule.cc -o CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.s
+	cd /home/user/linuxcnc/build/src/emc/usr_intf/axis/extensions/python/linuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/usr_intf/axis/extensions/emcmodule.cc -o CMakeFiles/linuxcnc_axis_extension.dir/__/__/emcmodule.cc.s
 
 # Object files for target linuxcnc_axis_extension
 linuxcnc_axis_extension_OBJECTS = \

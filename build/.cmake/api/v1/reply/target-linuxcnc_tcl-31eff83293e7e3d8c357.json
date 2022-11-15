@@ -334,11 +334,11 @@
 		[
 			{
 				"backtrace" : 2,
-				"path" : "/home/user/linuxcnc/src/emc/usr_intf/../../../lib/tcl"
+				"path" : "/home/user/linuxcnc/src/emc/usr_intf/../../../tcl"
 			},
 			{
 				"backtrace" : 2,
-				"path" : "/home/user/linuxcnc/src/emc/usr_intf/../../../lib/tcl"
+				"path" : "/home/user/linuxcnc/src/emc/usr_intf/../../../tcl"
 			}
 		],
 		"prefix" : 

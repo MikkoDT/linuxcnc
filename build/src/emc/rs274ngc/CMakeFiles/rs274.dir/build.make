@@ -79,392 +79,392 @@ include src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_arc.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_arc.cc.o: ../src/emc/rs274ngc/interp_arc.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_arc.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_arc.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_arc.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_arc.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_arc.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_arc.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_arc.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_arc.cc > CMakeFiles/rs274.dir/interp_arc.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_arc.cc > CMakeFiles/rs274.dir/interp_arc.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_arc.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_arc.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_arc.cc -o CMakeFiles/rs274.dir/interp_arc.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_arc.cc -o CMakeFiles/rs274.dir/interp_arc.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_array.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_array.cc.o: ../src/emc/rs274ngc/interp_array.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_array.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_array.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_array.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_array.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_array.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_array.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_array.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_array.cc > CMakeFiles/rs274.dir/interp_array.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_array.cc > CMakeFiles/rs274.dir/interp_array.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_array.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_array.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_array.cc -o CMakeFiles/rs274.dir/interp_array.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_array.cc -o CMakeFiles/rs274.dir/interp_array.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_base.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_base.cc.o: ../src/emc/rs274ngc/interp_base.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_base.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_base.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_base.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_base.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_base.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_base.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_base.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_base.cc > CMakeFiles/rs274.dir/interp_base.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_base.cc > CMakeFiles/rs274.dir/interp_base.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_base.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_base.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_base.cc -o CMakeFiles/rs274.dir/interp_base.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_base.cc -o CMakeFiles/rs274.dir/interp_base.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_check.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_check.cc.o: ../src/emc/rs274ngc/interp_check.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_check.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_check.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_check.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_check.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_check.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_check.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_check.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_check.cc > CMakeFiles/rs274.dir/interp_check.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_check.cc > CMakeFiles/rs274.dir/interp_check.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_check.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_check.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_check.cc -o CMakeFiles/rs274.dir/interp_check.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_check.cc -o CMakeFiles/rs274.dir/interp_check.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_convert.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_convert.cc.o: ../src/emc/rs274ngc/interp_convert.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_convert.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_convert.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_convert.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_convert.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_convert.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_convert.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_convert.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_convert.cc > CMakeFiles/rs274.dir/interp_convert.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_convert.cc > CMakeFiles/rs274.dir/interp_convert.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_convert.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_convert.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_convert.cc -o CMakeFiles/rs274.dir/interp_convert.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_convert.cc -o CMakeFiles/rs274.dir/interp_convert.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_queue.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_queue.cc.o: ../src/emc/rs274ngc/interp_queue.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_queue.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_queue.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_queue.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_queue.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_queue.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_queue.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_queue.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_queue.cc > CMakeFiles/rs274.dir/interp_queue.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_queue.cc > CMakeFiles/rs274.dir/interp_queue.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_queue.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_queue.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_queue.cc -o CMakeFiles/rs274.dir/interp_queue.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_queue.cc -o CMakeFiles/rs274.dir/interp_queue.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_cycles.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_cycles.cc.o: ../src/emc/rs274ngc/interp_cycles.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_cycles.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_cycles.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_cycles.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_cycles.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_cycles.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_cycles.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_cycles.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_cycles.cc > CMakeFiles/rs274.dir/interp_cycles.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_cycles.cc > CMakeFiles/rs274.dir/interp_cycles.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_cycles.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_cycles.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_cycles.cc -o CMakeFiles/rs274.dir/interp_cycles.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_cycles.cc -o CMakeFiles/rs274.dir/interp_cycles.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_execute.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_execute.cc.o: ../src/emc/rs274ngc/interp_execute.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_execute.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_execute.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_execute.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_execute.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_execute.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_execute.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_execute.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_execute.cc > CMakeFiles/rs274.dir/interp_execute.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_execute.cc > CMakeFiles/rs274.dir/interp_execute.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_execute.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_execute.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_execute.cc -o CMakeFiles/rs274.dir/interp_execute.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_execute.cc -o CMakeFiles/rs274.dir/interp_execute.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_find.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_find.cc.o: ../src/emc/rs274ngc/interp_find.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_find.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_find.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_find.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_find.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_find.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_find.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_find.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_find.cc > CMakeFiles/rs274.dir/interp_find.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_find.cc > CMakeFiles/rs274.dir/interp_find.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_find.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_find.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_find.cc -o CMakeFiles/rs274.dir/interp_find.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_find.cc -o CMakeFiles/rs274.dir/interp_find.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_internal.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_internal.cc.o: ../src/emc/rs274ngc/interp_internal.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_internal.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_internal.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_internal.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_internal.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_internal.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_internal.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_internal.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_internal.cc > CMakeFiles/rs274.dir/interp_internal.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_internal.cc > CMakeFiles/rs274.dir/interp_internal.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_internal.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_internal.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_internal.cc -o CMakeFiles/rs274.dir/interp_internal.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_internal.cc -o CMakeFiles/rs274.dir/interp_internal.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inverse.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inverse.cc.o: ../src/emc/rs274ngc/interp_inverse.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inverse.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_inverse.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_inverse.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_inverse.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_inverse.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inverse.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_inverse.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_inverse.cc > CMakeFiles/rs274.dir/interp_inverse.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_inverse.cc > CMakeFiles/rs274.dir/interp_inverse.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inverse.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_inverse.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_inverse.cc -o CMakeFiles/rs274.dir/interp_inverse.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_inverse.cc -o CMakeFiles/rs274.dir/interp_inverse.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_read.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_read.cc.o: ../src/emc/rs274ngc/interp_read.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_read.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_read.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_read.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_read.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_read.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_read.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_read.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_read.cc > CMakeFiles/rs274.dir/interp_read.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_read.cc > CMakeFiles/rs274.dir/interp_read.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_read.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_read.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_read.cc -o CMakeFiles/rs274.dir/interp_read.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_read.cc -o CMakeFiles/rs274.dir/interp_read.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_write.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_write.cc.o: ../src/emc/rs274ngc/interp_write.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_write.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_write.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_write.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_write.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_write.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_write.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_write.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_write.cc > CMakeFiles/rs274.dir/interp_write.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_write.cc > CMakeFiles/rs274.dir/interp_write.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_write.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_write.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_write.cc -o CMakeFiles/rs274.dir/interp_write.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_write.cc -o CMakeFiles/rs274.dir/interp_write.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_o_word.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_o_word.cc.o: ../src/emc/rs274ngc/interp_o_word.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_o_word.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_o_word.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_o_word.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_o_word.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_o_word.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_o_word.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_o_word.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_o_word.cc > CMakeFiles/rs274.dir/interp_o_word.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_o_word.cc > CMakeFiles/rs274.dir/interp_o_word.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_o_word.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_o_word.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_o_word.cc -o CMakeFiles/rs274.dir/interp_o_word.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_o_word.cc -o CMakeFiles/rs274.dir/interp_o_word.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_g7x.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_g7x.cc.o: ../src/emc/rs274ngc/interp_g7x.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_g7x.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_g7x.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_g7x.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_g7x.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_g7x.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_g7x.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_g7x.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_g7x.cc > CMakeFiles/rs274.dir/interp_g7x.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_g7x.cc > CMakeFiles/rs274.dir/interp_g7x.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_g7x.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_g7x.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_g7x.cc -o CMakeFiles/rs274.dir/interp_g7x.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_g7x.cc -o CMakeFiles/rs274.dir/interp_g7x.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/modal_state.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/modal_state.cc.o: ../src/emc/rs274ngc/modal_state.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/modal_state.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/modal_state.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/modal_state.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/modal_state.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/modal_state.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/modal_state.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/modal_state.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/modal_state.cc > CMakeFiles/rs274.dir/modal_state.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/modal_state.cc > CMakeFiles/rs274.dir/modal_state.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/modal_state.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/modal_state.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/modal_state.cc -o CMakeFiles/rs274.dir/modal_state.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/modal_state.cc -o CMakeFiles/rs274.dir/modal_state.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/nurbs_additional_functions.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/nurbs_additional_functions.cc.o: ../src/emc/rs274ngc/nurbs_additional_functions.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/nurbs_additional_functions.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/nurbs_additional_functions.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/nurbs_additional_functions.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/nurbs_additional_functions.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/nurbs_additional_functions.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/nurbs_additional_functions.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/nurbs_additional_functions.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/nurbs_additional_functions.cc > CMakeFiles/rs274.dir/nurbs_additional_functions.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/nurbs_additional_functions.cc > CMakeFiles/rs274.dir/nurbs_additional_functions.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/nurbs_additional_functions.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/nurbs_additional_functions.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/nurbs_additional_functions.cc -o CMakeFiles/rs274.dir/nurbs_additional_functions.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/nurbs_additional_functions.cc -o CMakeFiles/rs274.dir/nurbs_additional_functions.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_namedparams.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_namedparams.cc.o: ../src/emc/rs274ngc/interp_namedparams.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_namedparams.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_namedparams.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_namedparams.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_namedparams.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_namedparams.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_namedparams.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_namedparams.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_namedparams.cc > CMakeFiles/rs274.dir/interp_namedparams.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_namedparams.cc > CMakeFiles/rs274.dir/interp_namedparams.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_namedparams.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_namedparams.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_namedparams.cc -o CMakeFiles/rs274.dir/interp_namedparams.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_namedparams.cc -o CMakeFiles/rs274.dir/interp_namedparams.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_python.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_python.cc.o: ../src/emc/rs274ngc/interp_python.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_python.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_python.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_python.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_python.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_python.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_python.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_python.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_python.cc > CMakeFiles/rs274.dir/interp_python.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_python.cc > CMakeFiles/rs274.dir/interp_python.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_python.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_python.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_python.cc -o CMakeFiles/rs274.dir/interp_python.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_python.cc -o CMakeFiles/rs274.dir/interp_python.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_remap.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_remap.cc.o: ../src/emc/rs274ngc/interp_remap.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_remap.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_remap.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_remap.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_remap.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_remap.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_remap.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_remap.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_remap.cc > CMakeFiles/rs274.dir/interp_remap.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_remap.cc > CMakeFiles/rs274.dir/interp_remap.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_remap.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_remap.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_remap.cc -o CMakeFiles/rs274.dir/interp_remap.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_remap.cc -o CMakeFiles/rs274.dir/interp_remap.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_setup.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_setup.cc.o: ../src/emc/rs274ngc/interp_setup.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_setup.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_setup.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_setup.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_setup.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_setup.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_setup.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_setup.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_setup.cc > CMakeFiles/rs274.dir/interp_setup.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_setup.cc > CMakeFiles/rs274.dir/interp_setup.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_setup.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_setup.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_setup.cc -o CMakeFiles/rs274.dir/interp_setup.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_setup.cc -o CMakeFiles/rs274.dir/interp_setup.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/canonmodule.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/canonmodule.cc.o: ../src/emc/rs274ngc/canonmodule.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/canonmodule.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/canonmodule.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/canonmodule.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/canonmodule.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/canonmodule.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/canonmodule.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/canonmodule.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/canonmodule.cc > CMakeFiles/rs274.dir/canonmodule.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/canonmodule.cc > CMakeFiles/rs274.dir/canonmodule.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/canonmodule.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/canonmodule.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/canonmodule.cc -o CMakeFiles/rs274.dir/canonmodule.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/canonmodule.cc -o CMakeFiles/rs274.dir/canonmodule.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyparamclass.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyparamclass.cc.o: ../src/emc/rs274ngc/pyparamclass.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/pyparamclass.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyparamclass.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyparamclass.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyparamclass.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyparamclass.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyparamclass.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/pyparamclass.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyparamclass.cc > CMakeFiles/rs274.dir/pyparamclass.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyparamclass.cc > CMakeFiles/rs274.dir/pyparamclass.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyparamclass.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/pyparamclass.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyparamclass.cc -o CMakeFiles/rs274.dir/pyparamclass.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyparamclass.cc -o CMakeFiles/rs274.dir/pyparamclass.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyemctypes.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyemctypes.cc.o: ../src/emc/rs274ngc/pyemctypes.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/pyemctypes.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyemctypes.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyemctypes.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyemctypes.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyemctypes.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyemctypes.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/pyemctypes.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyemctypes.cc > CMakeFiles/rs274.dir/pyemctypes.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyemctypes.cc > CMakeFiles/rs274.dir/pyemctypes.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyemctypes.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/pyemctypes.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyemctypes.cc -o CMakeFiles/rs274.dir/pyemctypes.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyemctypes.cc -o CMakeFiles/rs274.dir/pyemctypes.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyinterp1.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyinterp1.cc.o: ../src/emc/rs274ngc/pyinterp1.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/pyinterp1.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyinterp1.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyinterp1.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyinterp1.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyinterp1.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyinterp1.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/pyinterp1.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyinterp1.cc > CMakeFiles/rs274.dir/pyinterp1.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyinterp1.cc > CMakeFiles/rs274.dir/pyinterp1.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyinterp1.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/pyinterp1.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyinterp1.cc -o CMakeFiles/rs274.dir/pyinterp1.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyinterp1.cc -o CMakeFiles/rs274.dir/pyinterp1.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyblock.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyblock.cc.o: ../src/emc/rs274ngc/pyblock.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/pyblock.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyblock.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyblock.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyblock.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyblock.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyblock.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/pyblock.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyblock.cc > CMakeFiles/rs274.dir/pyblock.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyblock.cc > CMakeFiles/rs274.dir/pyblock.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyblock.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/pyblock.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyblock.cc -o CMakeFiles/rs274.dir/pyblock.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyblock.cc -o CMakeFiles/rs274.dir/pyblock.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyarrays.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyarrays.cc.o: ../src/emc/rs274ngc/pyarrays.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/pyarrays.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyarrays.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyarrays.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/pyarrays.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/pyarrays.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyarrays.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/pyarrays.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyarrays.cc > CMakeFiles/rs274.dir/pyarrays.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/pyarrays.cc > CMakeFiles/rs274.dir/pyarrays.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/pyarrays.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/pyarrays.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyarrays.cc -o CMakeFiles/rs274.dir/pyarrays.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/pyarrays.cc -o CMakeFiles/rs274.dir/pyarrays.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interpmodule.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interpmodule.cc.o: ../src/emc/rs274ngc/interpmodule.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interpmodule.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interpmodule.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interpmodule.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interpmodule.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interpmodule.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interpmodule.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interpmodule.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interpmodule.cc > CMakeFiles/rs274.dir/interpmodule.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interpmodule.cc > CMakeFiles/rs274.dir/interpmodule.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interpmodule.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interpmodule.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interpmodule.cc -o CMakeFiles/rs274.dir/interpmodule.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interpmodule.cc -o CMakeFiles/rs274.dir/interpmodule.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/rs274ngc_pre.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/rs274ngc_pre.cc.o: ../src/emc/rs274ngc/rs274ngc_pre.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/rs274ngc_pre.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/rs274ngc_pre.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/rs274ngc_pre.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/rs274ngc_pre.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/rs274ngc_pre.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/rs274ngc_pre.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/rs274ngc_pre.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/rs274ngc_pre.cc > CMakeFiles/rs274.dir/rs274ngc_pre.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/rs274ngc_pre.cc > CMakeFiles/rs274.dir/rs274ngc_pre.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/rs274ngc_pre.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/rs274ngc_pre.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/rs274ngc_pre.cc -o CMakeFiles/rs274.dir/rs274ngc_pre.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/rs274ngc_pre.cc -o CMakeFiles/rs274.dir/rs274ngc_pre.cc.s
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inspection.cc.o: src/emc/rs274ngc/CMakeFiles/rs274.dir/flags.make
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inspection.cc.o: ../src/emc/rs274ngc/interp_inspection.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inspection.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_inspection.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_inspection.cc
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rs274.dir/interp_inspection.cc.o -c /home/user/linuxcnc/src/emc/rs274ngc/interp_inspection.cc
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inspection.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rs274.dir/interp_inspection.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_inspection.cc > CMakeFiles/rs274.dir/interp_inspection.cc.i
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/rs274ngc/interp_inspection.cc > CMakeFiles/rs274.dir/interp_inspection.cc.i
 
 src/emc/rs274ngc/CMakeFiles/rs274.dir/interp_inspection.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rs274.dir/interp_inspection.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_inspection.cc -o CMakeFiles/rs274.dir/interp_inspection.cc.s
+	cd /home/user/linuxcnc/build/src/emc/rs274ngc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/rs274ngc/interp_inspection.cc -o CMakeFiles/rs274.dir/interp_inspection.cc.s
 
 # Object files for target rs274
 rs274_OBJECTS = \

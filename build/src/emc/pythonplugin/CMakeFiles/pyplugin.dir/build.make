@@ -79,15 +79,15 @@ include src/emc/pythonplugin/CMakeFiles/pyplugin.dir/flags.make
 src/emc/pythonplugin/CMakeFiles/pyplugin.dir/python_plugin.cc.o: src/emc/pythonplugin/CMakeFiles/pyplugin.dir/flags.make
 src/emc/pythonplugin/CMakeFiles/pyplugin.dir/python_plugin.cc.o: ../src/emc/pythonplugin/python_plugin.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/emc/pythonplugin/CMakeFiles/pyplugin.dir/python_plugin.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/pythonplugin && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pyplugin.dir/python_plugin.cc.o -c /home/user/linuxcnc/src/emc/pythonplugin/python_plugin.cc
+	cd /home/user/linuxcnc/build/src/emc/pythonplugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pyplugin.dir/python_plugin.cc.o -c /home/user/linuxcnc/src/emc/pythonplugin/python_plugin.cc
 
 src/emc/pythonplugin/CMakeFiles/pyplugin.dir/python_plugin.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pyplugin.dir/python_plugin.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/pythonplugin && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/pythonplugin/python_plugin.cc > CMakeFiles/pyplugin.dir/python_plugin.cc.i
+	cd /home/user/linuxcnc/build/src/emc/pythonplugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/pythonplugin/python_plugin.cc > CMakeFiles/pyplugin.dir/python_plugin.cc.i
 
 src/emc/pythonplugin/CMakeFiles/pyplugin.dir/python_plugin.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pyplugin.dir/python_plugin.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/pythonplugin && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/pythonplugin/python_plugin.cc -o CMakeFiles/pyplugin.dir/python_plugin.cc.s
+	cd /home/user/linuxcnc/build/src/emc/pythonplugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/pythonplugin/python_plugin.cc -o CMakeFiles/pyplugin.dir/python_plugin.cc.s
 
 # Object files for target pyplugin
 pyplugin_OBJECTS = \

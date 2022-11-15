@@ -79,28 +79,28 @@ include src/libnml/inifile/CMakeFiles/linuxcncini.dir/flags.make
 src/libnml/inifile/CMakeFiles/linuxcncini.dir/inifile.cc.o: src/libnml/inifile/CMakeFiles/linuxcncini.dir/flags.make
 src/libnml/inifile/CMakeFiles/linuxcncini.dir/inifile.cc.o: ../src/libnml/inifile/inifile.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/libnml/inifile/CMakeFiles/linuxcncini.dir/inifile.cc.o"
-	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcncini.dir/inifile.cc.o -c /home/user/linuxcnc/src/libnml/inifile/inifile.cc
+	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcncini.dir/inifile.cc.o -c /home/user/linuxcnc/src/libnml/inifile/inifile.cc
 
 src/libnml/inifile/CMakeFiles/linuxcncini.dir/inifile.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcncini.dir/inifile.cc.i"
-	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/libnml/inifile/inifile.cc > CMakeFiles/linuxcncini.dir/inifile.cc.i
+	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/libnml/inifile/inifile.cc > CMakeFiles/linuxcncini.dir/inifile.cc.i
 
 src/libnml/inifile/CMakeFiles/linuxcncini.dir/inifile.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcncini.dir/inifile.cc.s"
-	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/libnml/inifile/inifile.cc -o CMakeFiles/linuxcncini.dir/inifile.cc.s
+	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/libnml/inifile/inifile.cc -o CMakeFiles/linuxcncini.dir/inifile.cc.s
 
 src/libnml/inifile/CMakeFiles/linuxcncini.dir/inivar.cc.o: src/libnml/inifile/CMakeFiles/linuxcncini.dir/flags.make
 src/libnml/inifile/CMakeFiles/linuxcncini.dir/inivar.cc.o: ../src/libnml/inifile/inivar.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/libnml/inifile/CMakeFiles/linuxcncini.dir/inivar.cc.o"
-	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcncini.dir/inivar.cc.o -c /home/user/linuxcnc/src/libnml/inifile/inivar.cc
+	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcncini.dir/inivar.cc.o -c /home/user/linuxcnc/src/libnml/inifile/inivar.cc
 
 src/libnml/inifile/CMakeFiles/linuxcncini.dir/inivar.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcncini.dir/inivar.cc.i"
-	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/libnml/inifile/inivar.cc > CMakeFiles/linuxcncini.dir/inivar.cc.i
+	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/libnml/inifile/inivar.cc > CMakeFiles/linuxcncini.dir/inivar.cc.i
 
 src/libnml/inifile/CMakeFiles/linuxcncini.dir/inivar.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcncini.dir/inivar.cc.s"
-	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/libnml/inifile/inivar.cc -o CMakeFiles/linuxcncini.dir/inivar.cc.s
+	cd /home/user/linuxcnc/build/src/libnml/inifile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/libnml/inifile/inivar.cc -o CMakeFiles/linuxcncini.dir/inivar.cc.s
 
 # Object files for target linuxcncini
 linuxcncini_OBJECTS = \

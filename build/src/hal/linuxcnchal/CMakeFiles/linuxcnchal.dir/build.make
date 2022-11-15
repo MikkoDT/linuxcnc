@@ -79,28 +79,28 @@ include src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/flags.make
 src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.o: src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/flags.make
 src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.o: ../src/rtapi/uspace_ulapi.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.o"
-	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.o -c /home/user/linuxcnc/src/rtapi/uspace_ulapi.c
+	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.o -c /home/user/linuxcnc/src/rtapi/uspace_ulapi.c
 
 src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.i"
-	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/rtapi/uspace_ulapi.c > CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.i
+	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/rtapi/uspace_ulapi.c > CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.i
 
 src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.s"
-	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/rtapi/uspace_ulapi.c -o CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.s
+	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/rtapi/uspace_ulapi.c -o CMakeFiles/linuxcnchal.dir/__/__/rtapi/uspace_ulapi.c.s
 
 src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/hal_lib.c.o: src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/flags.make
 src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/hal_lib.c.o: ../src/hal/hal_lib.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/hal_lib.c.o"
-	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linuxcnchal.dir/__/hal_lib.c.o -c /home/user/linuxcnc/src/hal/hal_lib.c
+	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linuxcnchal.dir/__/hal_lib.c.o -c /home/user/linuxcnc/src/hal/hal_lib.c
 
 src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/hal_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/linuxcnchal.dir/__/hal_lib.c.i"
-	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/hal_lib.c > CMakeFiles/linuxcnchal.dir/__/hal_lib.c.i
+	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/hal_lib.c > CMakeFiles/linuxcnchal.dir/__/hal_lib.c.i
 
 src/hal/linuxcnchal/CMakeFiles/linuxcnchal.dir/__/hal_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/linuxcnchal.dir/__/hal_lib.c.s"
-	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/hal_lib.c -o CMakeFiles/linuxcnchal.dir/__/hal_lib.c.s
+	cd /home/user/linuxcnc/build/src/hal/linuxcnchal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/hal_lib.c -o CMakeFiles/linuxcnchal.dir/__/hal_lib.c.s
 
 # Object files for target linuxcnchal
 linuxcnchal_OBJECTS = \

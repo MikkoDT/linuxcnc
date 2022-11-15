@@ -19,6 +19,11 @@
 # Tip: For reverse engineering, by just deleting one .so lib, then invoke "make BUILD_VERBOSE=1"
 # It shows how its build and linked.
 
+# Note :
+# To test if something is working after "make install" it can be you have to do a "sudo ldconfig ~/linuxcnc lib"
+# so system know's where to find libs.
+
+
 cmake_minimum_required(VERSION 3.0)
 # Project name.
 set(PROJECT "_linuxcnc_axis") # The name of the file excluding .c or .h
@@ -66,8 +71,6 @@ add_subdirectory(${SRC_DIR}/src/emc/usr_intf)
 add_subdirectory(${SRC_DIR}/src/emc/usr_intf/axis/extensions/python/linuxcnc)
 # _togl.so axis extension.l
 add_subdirectory(${SRC_DIR}/src/emc/usr_intf/axis/extensions/python/togl)
-# milltask, ~/linuxcnc/src/emc/task
-add_subdirectory(${SRC_DIR}/src/bin/milltask)
 # hal.so src: ~/linuxcnc/src/hal/utils install: ~/linuxcnc/tcl/
 add_subdirectory(${SRC_DIR}/src/hal/utils/hal)
 # halcmd src: ~/linuxcnc/src/hal/utils install: ~/linuxcnc/bin/
@@ -86,7 +89,9 @@ add_subdirectory(${SRC_DIR}/src/bin/pci_read)
 # Error..
 # add_subdirectory(${SRC_DIR}/src/bin/classicladder)
 
-
+# Error install.
+# milltask, ~/linuxcnc/src/emc/task
+add_subdirectory(${SRC_DIR}/src/bin/milltask)
 
 
 

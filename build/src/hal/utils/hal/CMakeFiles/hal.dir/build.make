@@ -79,41 +79,41 @@ include src/hal/utils/hal/CMakeFiles/hal.dir/flags.make
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd.c.o: src/hal/utils/hal/CMakeFiles/hal.dir/flags.make
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd.c.o: ../src/hal/utils/halcmd.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd.c.o"
-	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hal.dir/__/halcmd.c.o -c /home/user/linuxcnc/src/hal/utils/halcmd.c
+	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hal.dir/__/halcmd.c.o -c /home/user/linuxcnc/src/hal/utils/halcmd.c
 
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hal.dir/__/halcmd.c.i"
-	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/halcmd.c > CMakeFiles/hal.dir/__/halcmd.c.i
+	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/halcmd.c > CMakeFiles/hal.dir/__/halcmd.c.i
 
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hal.dir/__/halcmd.c.s"
-	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/halcmd.c -o CMakeFiles/hal.dir/__/halcmd.c.s
+	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/halcmd.c -o CMakeFiles/hal.dir/__/halcmd.c.s
 
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd_commands.cc.o: src/hal/utils/hal/CMakeFiles/hal.dir/flags.make
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd_commands.cc.o: ../src/hal/utils/halcmd_commands.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd_commands.cc.o"
-	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hal.dir/__/halcmd_commands.cc.o -c /home/user/linuxcnc/src/hal/utils/halcmd_commands.cc
+	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hal.dir/__/halcmd_commands.cc.o -c /home/user/linuxcnc/src/hal/utils/halcmd_commands.cc
 
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd_commands.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hal.dir/__/halcmd_commands.cc.i"
-	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/hal/utils/halcmd_commands.cc > CMakeFiles/hal.dir/__/halcmd_commands.cc.i
+	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/hal/utils/halcmd_commands.cc > CMakeFiles/hal.dir/__/halcmd_commands.cc.i
 
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halcmd_commands.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hal.dir/__/halcmd_commands.cc.s"
-	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/hal/utils/halcmd_commands.cc -o CMakeFiles/hal.dir/__/halcmd_commands.cc.s
+	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/hal/utils/halcmd_commands.cc -o CMakeFiles/hal.dir/__/halcmd_commands.cc.s
 
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halsh.c.o: src/hal/utils/hal/CMakeFiles/hal.dir/flags.make
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halsh.c.o: ../src/hal/utils/halsh.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/hal/utils/hal/CMakeFiles/hal.dir/__/halsh.c.o"
-	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hal.dir/__/halsh.c.o -c /home/user/linuxcnc/src/hal/utils/halsh.c
+	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hal.dir/__/halsh.c.o -c /home/user/linuxcnc/src/hal/utils/halsh.c
 
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halsh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hal.dir/__/halsh.c.i"
-	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/halsh.c > CMakeFiles/hal.dir/__/halsh.c.i
+	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/halsh.c > CMakeFiles/hal.dir/__/halsh.c.i
 
 src/hal/utils/hal/CMakeFiles/hal.dir/__/halsh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hal.dir/__/halsh.c.s"
-	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/halsh.c -o CMakeFiles/hal.dir/__/halsh.c.s
+	cd /home/user/linuxcnc/build/src/hal/utils/hal && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/halsh.c -o CMakeFiles/hal.dir/__/halsh.c.s
 
 # Object files for target hal
 hal_OBJECTS = \

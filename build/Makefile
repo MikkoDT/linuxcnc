@@ -423,19 +423,6 @@ togl/fast:
 .PHONY : togl/fast
 
 #=============================================================================
-# Target rules for targets named milltask
-
-# Build rule for target.
-milltask: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 milltask
-.PHONY : milltask
-
-# fast build rule for target.
-milltask/fast:
-	$(MAKE) $(MAKESILENT) -f src/bin/milltask/CMakeFiles/milltask.dir/build.make src/bin/milltask/CMakeFiles/milltask.dir/build
-.PHONY : milltask/fast
-
-#=============================================================================
 # Target rules for targets named hal
 
 # Build rule for target.
@@ -525,6 +512,19 @@ pci_read: cmake_check_build_system
 pci_read/fast:
 	$(MAKE) $(MAKESILENT) -f src/bin/pci_read/CMakeFiles/pci_read.dir/build.make src/bin/pci_read/CMakeFiles/pci_read.dir/build
 .PHONY : pci_read/fast
+
+#=============================================================================
+# Target rules for targets named milltask
+
+# Build rule for target.
+milltask: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 milltask
+.PHONY : milltask
+
+# fast build rule for target.
+milltask/fast:
+	$(MAKE) $(MAKESILENT) -f src/bin/milltask/CMakeFiles/milltask.dir/build.make src/bin/milltask/CMakeFiles/milltask.dir/build
+.PHONY : milltask/fast
 
 # Help Target
 help:

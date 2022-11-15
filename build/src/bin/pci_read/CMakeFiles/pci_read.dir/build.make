@@ -79,28 +79,28 @@ include src/bin/pci_read/CMakeFiles/pci_read.dir/flags.make
 src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.o: src/bin/pci_read/CMakeFiles/pci_read.dir/flags.make
 src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.o: ../src/hal/utils/pci_read.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.o"
-	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.o -c /home/user/linuxcnc/src/hal/utils/pci_read.c
+	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.o -c /home/user/linuxcnc/src/hal/utils/pci_read.c
 
 src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.i"
-	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/pci_read.c > CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.i
+	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/pci_read.c > CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.i
 
 src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.s"
-	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/pci_read.c -o CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.s
+	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/pci_read.c -o CMakeFiles/pci_read.dir/__/__/hal/utils/pci_read.c.s
 
 src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.o: src/bin/pci_read/CMakeFiles/pci_read.dir/flags.make
 src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.o: ../src/hal/utils/upci.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.o"
-	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.o -c /home/user/linuxcnc/src/hal/utils/upci.c
+	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.o -c /home/user/linuxcnc/src/hal/utils/upci.c
 
 src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.i"
-	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/upci.c > CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.i
+	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/upci.c > CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.i
 
 src/bin/pci_read/CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.s"
-	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/upci.c -o CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.s
+	cd /home/user/linuxcnc/build/src/bin/pci_read && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/upci.c -o CMakeFiles/pci_read.dir/__/__/hal/utils/upci.c.s
 
 # Object files for target pci_read
 pci_read_OBJECTS = \

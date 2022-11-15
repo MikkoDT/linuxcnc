@@ -1,1 +1,1 @@
-/usr/bin/g++ -fPIC -shared -Wl,-soname,rotarydeltakins.so -o rotarydeltakins.so CMakeFiles/rotarydeltakins.dir/__/__/rotarydeltakins.cc.o  -fPIC -lboost_python39 
+/usr/bin/c++ -fPIC -shared -Wl,-soname,rotarydeltakins.so -o rotarydeltakins.so CMakeFiles/rotarydeltakins.dir/__/__/rotarydeltakins.cc.o  -fPIC -lboost_python39 

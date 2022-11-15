@@ -6,3 +6,9 @@
 
 #IncludeRegexTransform: 
 
+/home/user/linuxcnc/src/libnml/posemath/posemath.cc
+posemath.h
+/home/user/linuxcnc/src/libnml/posemath/posemath.h
+
+/home/user/linuxcnc/src/libnml/posemath/posemath.h
+

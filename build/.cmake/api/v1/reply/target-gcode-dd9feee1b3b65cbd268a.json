@@ -265,11 +265,11 @@
 		[
 			{
 				"backtrace" : 2,
-				"path" : "lib"
+				"path" : "/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python"
 			},
 			{
 				"backtrace" : 2,
-				"path" : "lib"
+				"path" : "/home/user/linuxcnc/src/emc/rs274ngc/python/../../../../lib/python"
 			}
 		],
 		"prefix" : 

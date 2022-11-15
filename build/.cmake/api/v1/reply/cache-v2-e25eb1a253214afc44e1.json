@@ -39,11 +39,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
-			"value" : "Build"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -155,11 +155,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/bin/g++"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/c++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -204,22 +204,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Flags used by the CXX compiler during all build types."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_CXX_FLAGS_BUILD",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags used by the CXX compiler during BUILD builds."
 				}
 			],
 			"type" : "STRING",
@@ -299,11 +283,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/bin/gcc"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -348,22 +332,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Flags used by the C compiler during all build types."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_C_FLAGS_BUILD",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags used by the C compiler during BUILD builds."
 				}
 			],
 			"type" : "STRING",
@@ -472,22 +440,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Flags used by the linker during all build types."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_EXE_LINKER_FLAGS_BUILD",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during BUILD builds."
 				}
 			],
 			"type" : "STRING",
@@ -718,22 +670,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "CMAKE_MODULE_LINKER_FLAGS_BUILD",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of modules during BUILD builds."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS_DEBUG",
 			"properties" : 
 			[
@@ -870,18 +806,6 @@
 			"value" : "1"
 		},
 		{
-			"name" : "CMAKE_PREFIX_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
-				}
-			],
-			"type" : "STRING",
-			"value" : "/opt/qt-creator/5.15.1/gcc_64"
-		},
-		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
 			"properties" : 
 			[
@@ -927,7 +851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "0.1.4"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
@@ -951,7 +875,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "1"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_PATCH",
@@ -963,7 +887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "4"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_TWEAK",
@@ -1032,22 +956,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Flags used by the linker during the creation of shared libraries during all build types."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_SHARED_LINKER_FLAGS_BUILD",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of shared libraries during BUILD builds."
 				}
 			],
 			"type" : "STRING",
@@ -1166,22 +1074,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "CMAKE_STATIC_LINKER_FLAGS_BUILD",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of static libraries during BUILD builds."
-				}
-			],
-			"type" : "STRING",
-			"value" : ""
-		},
-		{
 			"name" : "CMAKE_STATIC_LINKER_FLAGS_DEBUG",
 			"properties" : 
 			[
@@ -1290,18 +1182,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "QT_QMAKE_EXECUTABLE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
-				}
-			],
-			"type" : "STRING",
-			"value" : "/opt/qt-creator/5.15.1/gcc_64/bin/qmake"
-		},
-		{
 			"name" : "_hal_BINARY_DIR",
 			"properties" : 
 			[
@@ -1396,30 +1276,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/user/linuxcnc/src/emc/canterp"
-		},
-		{
-			"name" : "classicladder_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/user/linuxcnc/build/src/bin/classicladder"
-		},
-		{
-			"name" : "classicladder_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/user/linuxcnc/src/bin/classicladder"
 		},
 		{
 			"name" : "gcode_BINARY_DIR",
@@ -1759,42 +1615,6 @@
 		},
 		{
 			"name" : "linuxcnc_tcl_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/user/linuxcnc/src/emc/usr_intf"
-		},
-		{
-			"name" : "linuxcnc_tcl_lib_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/user/linuxcnc/build/src/emc/usr_intf"
-		},
-		{
-			"name" : "linuxcnc_tcl_lib_LIB_DEPENDS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Dependencies for the target"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "general;-fPIC;general;linuxcncini;general;nml;general;linuxcnc;general;-ltclstub8.6;general;-lX11;general;-lXss;general;-lXext;general;-lXft;general;-lfontconfig;general;-lfreetype;general;-lfontconfig;general;-lpthread;general;-ldl;general;-lz;general;-lpthread;general;-lm;general;-ltk8.6;general;-fPIC;"
-		},
-		{
-			"name" : "linuxcnc_tcl_lib_SOURCE_DIR",
 			"properties" : 
 			[
 				{

@@ -83,7 +83,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal linuxcncini linuxcnc n
 )
 
 # make install
-install(TARGETS ${PROJECT} DESTINATION ${SCR_DIR}/../../../bin)
+install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR}/../../../bin)
 
 # Notes: No ULAPIE is defined in original make process.
 #

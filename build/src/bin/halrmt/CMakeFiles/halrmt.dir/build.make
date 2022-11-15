@@ -79,15 +79,15 @@ include src/bin/halrmt/CMakeFiles/halrmt.dir/flags.make
 src/bin/halrmt/CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.o: src/bin/halrmt/CMakeFiles/halrmt.dir/flags.make
 src/bin/halrmt/CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.o: ../src/hal/utils/halrmt.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/bin/halrmt/CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.o"
-	cd /home/user/linuxcnc/build/src/bin/halrmt && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.o -c /home/user/linuxcnc/src/hal/utils/halrmt.c
+	cd /home/user/linuxcnc/build/src/bin/halrmt && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.o -c /home/user/linuxcnc/src/hal/utils/halrmt.c
 
 src/bin/halrmt/CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.i"
-	cd /home/user/linuxcnc/build/src/bin/halrmt && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/halrmt.c > CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.i
+	cd /home/user/linuxcnc/build/src/bin/halrmt && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/hal/utils/halrmt.c > CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.i
 
 src/bin/halrmt/CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.s"
-	cd /home/user/linuxcnc/build/src/bin/halrmt && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/halrmt.c -o CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.s
+	cd /home/user/linuxcnc/build/src/bin/halrmt && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/hal/utils/halrmt.c -o CMakeFiles/halrmt.dir/__/__/hal/utils/halrmt.c.s
 
 # Object files for target halrmt
 halrmt_OBJECTS = \

@@ -79,15 +79,15 @@ include src/emc/canterp/CMakeFiles/canterp.dir/flags.make
 src/emc/canterp/CMakeFiles/canterp.dir/canterp.cc.o: src/emc/canterp/CMakeFiles/canterp.dir/flags.make
 src/emc/canterp/CMakeFiles/canterp.dir/canterp.cc.o: ../src/emc/canterp/canterp.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/emc/canterp/CMakeFiles/canterp.dir/canterp.cc.o"
-	cd /home/user/linuxcnc/build/src/emc/canterp && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/canterp.dir/canterp.cc.o -c /home/user/linuxcnc/src/emc/canterp/canterp.cc
+	cd /home/user/linuxcnc/build/src/emc/canterp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/canterp.dir/canterp.cc.o -c /home/user/linuxcnc/src/emc/canterp/canterp.cc
 
 src/emc/canterp/CMakeFiles/canterp.dir/canterp.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/canterp.dir/canterp.cc.i"
-	cd /home/user/linuxcnc/build/src/emc/canterp && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/canterp/canterp.cc > CMakeFiles/canterp.dir/canterp.cc.i
+	cd /home/user/linuxcnc/build/src/emc/canterp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/src/emc/canterp/canterp.cc > CMakeFiles/canterp.dir/canterp.cc.i
 
 src/emc/canterp/CMakeFiles/canterp.dir/canterp.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/canterp.dir/canterp.cc.s"
-	cd /home/user/linuxcnc/build/src/emc/canterp && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/canterp/canterp.cc -o CMakeFiles/canterp.dir/canterp.cc.s
+	cd /home/user/linuxcnc/build/src/emc/canterp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/src/emc/canterp/canterp.cc -o CMakeFiles/canterp.dir/canterp.cc.s
 
 # Object files for target canterp
 canterp_OBJECTS = \

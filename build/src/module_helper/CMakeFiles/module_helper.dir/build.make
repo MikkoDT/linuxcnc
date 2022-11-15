@@ -79,15 +79,15 @@ include src/module_helper/CMakeFiles/module_helper.dir/flags.make
 src/module_helper/CMakeFiles/module_helper.dir/module_helper.c.o: src/module_helper/CMakeFiles/module_helper.dir/flags.make
 src/module_helper/CMakeFiles/module_helper.dir/module_helper.c.o: ../src/module_helper/module_helper.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/module_helper/CMakeFiles/module_helper.dir/module_helper.c.o"
-	cd /home/user/linuxcnc/build/src/module_helper && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/module_helper.dir/module_helper.c.o -c /home/user/linuxcnc/src/module_helper/module_helper.c
+	cd /home/user/linuxcnc/build/src/module_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/module_helper.dir/module_helper.c.o -c /home/user/linuxcnc/src/module_helper/module_helper.c
 
 src/module_helper/CMakeFiles/module_helper.dir/module_helper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/module_helper.dir/module_helper.c.i"
-	cd /home/user/linuxcnc/build/src/module_helper && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/module_helper/module_helper.c > CMakeFiles/module_helper.dir/module_helper.c.i
+	cd /home/user/linuxcnc/build/src/module_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/src/module_helper/module_helper.c > CMakeFiles/module_helper.dir/module_helper.c.i
 
 src/module_helper/CMakeFiles/module_helper.dir/module_helper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/module_helper.dir/module_helper.c.s"
-	cd /home/user/linuxcnc/build/src/module_helper && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/module_helper/module_helper.c -o CMakeFiles/module_helper.dir/module_helper.c.s
+	cd /home/user/linuxcnc/build/src/module_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/src/module_helper/module_helper.c -o CMakeFiles/module_helper.dir/module_helper.c.s
 
 # Object files for target module_helper
 module_helper_OBJECTS = \
