@@ -2,12 +2,12 @@ IOSRCS := emc/iotask/ioControl.cc
 IOV2SRCS := emc/iotask/ioControl_v2.cc
 USERSRCS += $(IOSRCS) $(IOV2SRCS)
 
-../bin/io: $(call TOOBJS, $(IOSRCS)) ../lib/liblinuxcnc.a ../lib/libnml.so.0 \
+../bin/io: $(call TOOBJS, $(IOSRCS)) ../lib/liblinuxcnc.so ../lib/libnml.so.0 \
            ../lib/liblinuxcnchal.so.0 ../lib/liblinuxcncini.so.0 ../lib/libtooldata.so.0
 	$(ECHO) Linking $(notdir $@)
 	@$(CXX) -o $@ $^ $(LDFLAGS)
 
-../bin/iov2: $(call TOOBJS, $(IOV2SRCS)) ../lib/liblinuxcnc.a ../lib/libnml.so.0 \
+../bin/iov2: $(call TOOBJS, $(IOV2SRCS)) ../lib/liblinuxcnc.so ../lib/libnml.so.0 \
            ../lib/liblinuxcnchal.so.0 ../lib/liblinuxcncini.so.0 ../lib/libtooldata.so.0
 	$(ECHO) Linking $(notdir $@)
 	@$(CXX) -o $@ $^ $(LDFLAGS)

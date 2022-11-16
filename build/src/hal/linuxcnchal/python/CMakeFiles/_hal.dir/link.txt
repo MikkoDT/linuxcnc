@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,_hal.so -o _hal.so CMakeFiles/_hal.dir/__/__/halmodule.cc.o  -Wl,-rpath,/home/user/linuxcnc/build/src/hal/linuxcnchal: -pthread -lrt -fPIC ../liblinuxcnchal.so.0 -pthread -lrt -fPIC 

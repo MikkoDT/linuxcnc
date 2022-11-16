@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,threads.so -o threads.so CMakeFiles/threads.dir/__/__/src/threads.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/build/liblinuxcnchal: ../../liblinuxcnchal/liblinuxcnchal.so.0 

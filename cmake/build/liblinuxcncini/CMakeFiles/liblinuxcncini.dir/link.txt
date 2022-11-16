@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,liblinuxcncini.so.0 -o liblinuxcncini.so.0 CMakeFiles/liblinuxcncini.dir/__/src/inifile.cc.o  -fPIC 

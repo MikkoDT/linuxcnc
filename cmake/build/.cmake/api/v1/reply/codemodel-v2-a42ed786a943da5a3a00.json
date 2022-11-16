@@ -1,0 +1,528 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "rtapi",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "rtapi",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "module_helper",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "module_helper",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "liblinuxcnchal",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "liblinuxcnchal",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "hal_lib",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "hal_lib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "halcmd",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "halcmd",
+					"targetIndexes" : 
+					[
+						2,
+						5
+					]
+				},
+				{
+					"build" : "halmeter",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "halmeter",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "halscope",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "halscope",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "liblinuxcncini",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "liblinuxcncini",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "libnml",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 9,
+					"source" : "libnml",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "liblinuxcnc",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 10,
+					"source" : "liblinuxcnc",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "components/threads",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 11,
+					"source" : "components/threads",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "libtooldata",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 12,
+					"source" : "libtooldata",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "classicladder",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 13,
+					"source" : "classicladder",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "- LINUX_CNC -"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "rtapi",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "module_helper",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "liblinuxcnchal",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "hal_lib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "libhalcmd",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "halmeter",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "halscope",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "liblinuxcncini",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "libnml",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "liblinuxcnc",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						11
+					],
+					"name" : "threads",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "libtooldata",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "classicladder",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 13,
+					"id" : "classicladder::@2d96e050c8962f15af59",
+					"jsonFile" : "target-classicladder-42d17fddbe67a0a8a284.json",
+					"name" : "classicladder",
+					"projectIndex" : 13
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "hal_lib::@181654c82d08f5f64193",
+					"jsonFile" : "target-hal_lib-4713e5477dcb92ae949e.json",
+					"name" : "hal_lib",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "halcmd::@1f17e775d1a3e64320df",
+					"jsonFile" : "target-halcmd-3058e7a6339176cd25be.json",
+					"name" : "halcmd",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "halmeter::@dbcfe65feedfd999f5aa",
+					"jsonFile" : "target-halmeter-9e99ab5275e39292d50e.json",
+					"name" : "halmeter",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "halscope::@db8ca3555d5edd4af2bb",
+					"jsonFile" : "target-halscope-96e0d3a662a2ce5c1fc3.json",
+					"name" : "halscope",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "libhalcmd::@1f17e775d1a3e64320df",
+					"jsonFile" : "target-libhalcmd-fe2dd35d64d7ed87113d.json",
+					"name" : "libhalcmd",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "liblinuxcnc::@c4f5def545515268f0d4",
+					"jsonFile" : "target-liblinuxcnc-cc97b849370a743164ed.json",
+					"name" : "liblinuxcnc",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "liblinuxcnchal::@c1030ccdc925b6471c51",
+					"jsonFile" : "target-liblinuxcnchal-6881221dc2e22e07b980.json",
+					"name" : "liblinuxcnchal",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "liblinuxcncini::@aecb313196f168a34936",
+					"jsonFile" : "target-liblinuxcncini-e86a5be767f9f2611115.json",
+					"name" : "liblinuxcncini",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "libnml::@9aff2b4a67a23bc21e7f",
+					"jsonFile" : "target-libnml-cd910bd7516e5196aa84.json",
+					"name" : "libnml",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "libtooldata::@dde462fa742d24151126",
+					"jsonFile" : "target-libtooldata-b7142c77bf8f9383dc82.json",
+					"name" : "libtooldata",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "module_helper::@15a7d57ce7957ab45719",
+					"jsonFile" : "target-module_helper-8e2cfd0991fdf98af44e.json",
+					"name" : "module_helper",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rtapi::@d7ee44f6a91619cc980f",
+					"jsonFile" : "target-rtapi-dc795ddc6b622746b861.json",
+					"name" : "rtapi",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "threads::@1f49283c08ef6884d1e1",
+					"jsonFile" : "target-threads-7d72af59d944933c0cd6.json",
+					"name" : "threads",
+					"projectIndex" : 11
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/linuxcnc/cmake/build",
+		"source" : "/home/user/linuxcnc/cmake"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

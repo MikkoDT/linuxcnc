@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,module_helper.so -o module_helper.so CMakeFiles/module_helper.dir/__/src/module_helper.c.o 
