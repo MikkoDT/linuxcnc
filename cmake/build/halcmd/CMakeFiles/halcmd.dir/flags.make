@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DULAPI
 
-C_INCLUDES = -I/home/user/lcncladdertest/cmake/halcmd -I/home/user/lcncladdertest/cmake/halcmd/../common_src -I/home/user/lcncladdertest/cmake/halcmd/../rtapi_src -I/home/user/lcncladdertest/cmake/halcmd/../liblinuxcnchal_src -I/home/user/lcncladdertest/cmake/halcmd/../libnml_src
+C_INCLUDES = -I/home/user/linuxcnc/cmake/halcmd -I/home/user/linuxcnc/cmake/halcmd/../common_src -I/home/user/linuxcnc/cmake/halcmd/../rtapi_src -I/home/user/linuxcnc/cmake/halcmd/../liblinuxcnchal_src -isystem /home/user/linuxcnc/cmake/halcmd/../libnml_src -isystem /home/user/linuxcnc/cmake/halcmd/../../include
 
 C_FLAGS = 
 
 CXX_DEFINES = -DULAPI
 
-CXX_INCLUDES = -I/home/user/lcncladdertest/cmake/halcmd -I/home/user/lcncladdertest/cmake/halcmd/../common_src -I/home/user/lcncladdertest/cmake/halcmd/../rtapi_src -I/home/user/lcncladdertest/cmake/halcmd/../liblinuxcnchal_src -I/home/user/lcncladdertest/cmake/halcmd/../libnml_src
+CXX_INCLUDES = -I/home/user/linuxcnc/cmake/halcmd -I/home/user/linuxcnc/cmake/halcmd/../common_src -I/home/user/linuxcnc/cmake/halcmd/../rtapi_src -I/home/user/linuxcnc/cmake/halcmd/../liblinuxcnchal_src -isystem /home/user/linuxcnc/cmake/halcmd/../libnml_src -isystem /home/user/linuxcnc/cmake/halcmd/../../include
 
 CXX_FLAGS = 
 

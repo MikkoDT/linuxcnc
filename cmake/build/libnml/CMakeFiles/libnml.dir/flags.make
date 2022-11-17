@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DULAPI -Dlibnml_EXPORTS
 
-C_INCLUDES = -I/home/user/lcncladdertest/cmake/libnml -I/home/user/lcncladdertest/cmake/libnml/../common_src -I/home/user/lcncladdertest/cmake/libnml/../rtapi_src -I/home/user/lcncladdertest/cmake/libnml/../libnml_src -isystem /home/user/lcncladdertest/include
+C_INCLUDES = -I/home/user/linuxcnc/cmake/libnml -I/home/user/linuxcnc/cmake/libnml/../common_src -I/home/user/linuxcnc/cmake/libnml/../rtapi_src -I/home/user/linuxcnc/cmake/libnml/../libnml_src -isystem /home/user/linuxcnc/cmake/libnml/../liblinuxcnchal
 
 C_FLAGS = -fPIC
 
 CXX_DEFINES = -DULAPI -Dlibnml_EXPORTS
 
-CXX_INCLUDES = -I/home/user/lcncladdertest/cmake/libnml -I/home/user/lcncladdertest/cmake/libnml/../common_src -I/home/user/lcncladdertest/cmake/libnml/../rtapi_src -I/home/user/lcncladdertest/cmake/libnml/../libnml_src -isystem /home/user/lcncladdertest/include
+CXX_INCLUDES = -I/home/user/linuxcnc/cmake/libnml -I/home/user/linuxcnc/cmake/libnml/../common_src -I/home/user/linuxcnc/cmake/libnml/../rtapi_src -I/home/user/linuxcnc/cmake/libnml/../libnml_src -isystem /home/user/linuxcnc/cmake/libnml/../liblinuxcnchal
 
 CXX_FLAGS = -fPIC
 

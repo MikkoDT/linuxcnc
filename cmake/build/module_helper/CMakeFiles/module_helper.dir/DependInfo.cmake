@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/lcncladdertest/cmake/module_helper_src/module_helper.c" "/home/user/lcncladdertest/cmake/build/module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o"
+  "/home/user/linuxcnc/cmake/module_helper_src/module_helper.c" "/home/user/linuxcnc/cmake/build/module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

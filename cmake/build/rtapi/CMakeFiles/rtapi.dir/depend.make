@@ -8,6 +8,7 @@ rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o: ../rtapi_src/rt
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o: ../rtapi_src/rtapi_string.h
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o: ../rtapi_src/uspace_rtapi_string.c
 
+rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o: ../common_src/config.h
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o: ../rtapi_src/rtapi.h
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o: ../rtapi_src/rtapi_firmware.h
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o: ../rtapi_src/rtapi_pci.h

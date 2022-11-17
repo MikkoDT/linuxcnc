@@ -57,6 +57,7 @@ halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o: ../liblinuxcncha
 halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o: ../liblinuxcnchal_src/hal_lib.c
 halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o: ../liblinuxcnchal_src/hal_priv.h
 
+halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o: ../common_src/config.h
 halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o: ../rtapi_src/rtapi_bitops.h
 halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o: ../rtapi_src/rtapi_errno.h
 halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o: ../rtapi_src/rtapi_mutex.h

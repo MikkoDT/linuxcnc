@@ -12,6 +12,6 @@ hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o
  ../rtapi_src/rtapi_mutex.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal.h
- /home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_lib.c
- /home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_priv.h
+ /home/user/linuxcnc/cmake/liblinuxcnchal_src/hal.h
+ /home/user/linuxcnc/cmake/liblinuxcnchal_src/hal_lib.c
+ /home/user/linuxcnc/cmake/liblinuxcnchal_src/hal_priv.h

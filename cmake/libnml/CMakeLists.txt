@@ -59,8 +59,8 @@ add_definitions(-DULAPI)
 
 add_library(linuxcnchal SHARED IMPORTED) # or STATIC instead of SHARED
 set_target_properties(linuxcnchal PROPERTIES
-  IMPORTED_LOCATION "/home/user/lcncladdertest/lib/liblinuxcnchal.so"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/user/lcncladdertest/include"
+  IMPORTED_LOCATION "${SRC_DIR}/../build/liblinuxcnchal/liblinuxcnchal.so"
+  INTERFACE_INCLUDE_DIRECTORIES "${SRC_DIR}/../liblinuxcnchal/"
 )
 
 # Link to libraries.

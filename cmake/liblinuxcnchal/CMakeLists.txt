@@ -38,15 +38,3 @@ target_link_libraries(${PROJECT_NAME} PRIVATE -pthread -lrt -fPIC)
 install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
 
 # Notes.
-# Compiling hal/hal_lib.c
-# gcc -c -I. -Ilibnml/linklist -Iemc -Ilibnml/cms -Ilibnml/rcs -Ilibnml/inifile -Ilibnml/os_intf -Ilibnml/nml
-# -Ilibnml/buffer -Ilibnml/posemath -Irtapi -Ihal -Iemc -Iemc/nml_intf -Iemc/kinematics -Iemc/tp -Iemc/motion
-# -Iemc/ini -Iemc -Iemc/rs274ngc -Iemc/sai -Iemc/pythonplugin -Iemc/tooldata -Iemc -I/home/user/linuxcnc/src/include
-# -I/usr/include/python3.9 -Os -fwrapv  -g -Wall -Wno-stringop-truncation -D_FORTIFY_SOURCE=2  -DULAPI -std=gnu11
-# -Werror=implicit-function-declaration -g -O2  -fPIC  \
-#        -MP -MD -MF "objects/hal/hal_lib.d" -MT "objects/hal/hal_lib.o" \
-#        hal/hal_lib.c -o objects/hal/hal_lib.o
-# Creating shared library liblinuxcnchal.so.0
-# gcc -L/home/user/linuxcnc/lib -Wl,-rpath,/home/user/linuxcnc/lib   -Wl,-soname,liblinuxcnchal.so.0 -shared -o
-# ../lib/liblinuxcnchal.so.0 objects/hal/hal_lib.o objects/rtapi/uspace_ulapi.o -pthread -lrt
-# ln -sf liblinuxcnchal.so.0 ../lib/liblinuxcnchal.so

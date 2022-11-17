@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 # Include any dependencies generated for this target.
 include halui/CMakeFiles/halui.dir/depend.make
@@ -78,16 +78,16 @@ include halui/CMakeFiles/halui.dir/flags.make
 
 halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.o: halui/CMakeFiles/halui.dir/flags.make
 halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.o: ../halui_src/halui.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/halui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/halui.dir/__/halui_src/halui.cc.o -c /home/user/lcncladdertest/cmake/halui_src/halui.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.o"
+	cd /home/user/linuxcnc/cmake/build/halui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/halui.dir/__/halui_src/halui.cc.o -c /home/user/linuxcnc/cmake/halui_src/halui.cc
 
 halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/halui.dir/__/halui_src/halui.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/halui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/halui_src/halui.cc > CMakeFiles/halui.dir/__/halui_src/halui.cc.i
+	cd /home/user/linuxcnc/cmake/build/halui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/halui_src/halui.cc > CMakeFiles/halui.dir/__/halui_src/halui.cc.i
 
 halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/halui.dir/__/halui_src/halui.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/halui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/halui_src/halui.cc -o CMakeFiles/halui.dir/__/halui_src/halui.cc.s
+	cd /home/user/linuxcnc/cmake/build/halui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/halui_src/halui.cc -o CMakeFiles/halui.dir/__/halui_src/halui.cc.s
 
 # Object files for target halui
 halui_OBJECTS = \
@@ -104,9 +104,9 @@ halui/halui-0: ../halui/../build/liblinuxcncini/liblinuxcncini.so
 halui/halui-0: ../halui/../build/liblinuxcnc/liblinuxcnc.a
 halui/halui-0: ../halui/../build/libtooldata/libtooldata.so
 halui/halui-0: halui/CMakeFiles/halui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable halui"
-	cd /home/user/lcncladdertest/cmake/build/halui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/halui.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/user/lcncladdertest/cmake/build/halui && $(CMAKE_COMMAND) -E cmake_symlink_executable halui-0 halui
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable halui"
+	cd /home/user/linuxcnc/cmake/build/halui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/halui.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/user/linuxcnc/cmake/build/halui && $(CMAKE_COMMAND) -E cmake_symlink_executable halui-0 halui
 
 halui/halui: halui/halui-0
 
@@ -117,10 +117,10 @@ halui/CMakeFiles/halui.dir/build: halui/halui
 .PHONY : halui/CMakeFiles/halui.dir/build
 
 halui/CMakeFiles/halui.dir/clean:
-	cd /home/user/lcncladdertest/cmake/build/halui && $(CMAKE_COMMAND) -P CMakeFiles/halui.dir/cmake_clean.cmake
+	cd /home/user/linuxcnc/cmake/build/halui && $(CMAKE_COMMAND) -P CMakeFiles/halui.dir/cmake_clean.cmake
 .PHONY : halui/CMakeFiles/halui.dir/clean
 
 halui/CMakeFiles/halui.dir/depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/halui /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/halui /home/user/lcncladdertest/cmake/build/halui/CMakeFiles/halui.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/halui /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/halui /home/user/linuxcnc/cmake/build/halui/CMakeFiles/halui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : halui/CMakeFiles/halui.dir/depend
 

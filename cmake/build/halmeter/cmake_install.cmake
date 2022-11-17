@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/lcncladdertest/cmake/halmeter
+# Install script for directory: /home/user/linuxcnc/cmake/halmeter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,29 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halmeter/halmeter" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halmeter/halmeter")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halmeter/halmeter" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halmeter/halmeter")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halmeter/halmeter"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halmeter/halmeter"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/lcncladdertest/cmake/halmeter/halmeter")
+   "/home/user/linuxcnc/cmake/halmeter/halmeter")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/lcncladdertest/cmake/halmeter" TYPE EXECUTABLE FILES "/home/user/lcncladdertest/cmake/build/halmeter/halmeter")
-  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halmeter/halmeter" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halmeter/halmeter")
+file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/halmeter" TYPE EXECUTABLE FILES "/home/user/linuxcnc/cmake/build/halmeter/halmeter")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halmeter/halmeter" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halmeter/halmeter")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halmeter/halmeter"
-         OLD_RPATH "/home/user/lcncladdertest/cmake/build/liblinuxcnchal:"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halmeter/halmeter"
+         OLD_RPATH "/home/user/linuxcnc/cmake/build/liblinuxcnchal:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halmeter/halmeter")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halmeter/halmeter")
     endif()
   endif()
 endif()

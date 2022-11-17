@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/halui//CMakeFiles/progress.marks
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/halui//CMakeFiles/progress.marks
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/clean
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 halui/CMakeFiles/halui.dir/rule:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/CMakeFiles/halui.dir/rule
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/CMakeFiles/halui.dir/rule
 .PHONY : halui/CMakeFiles/halui.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ halui: halui/CMakeFiles/halui.dir/rule
 
 # fast build rule for target.
 halui/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/build
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/build
 .PHONY : halui/fast
 
 __/halui_src/halui.o: __/halui_src/halui.cc.o
@@ -196,7 +196,7 @@ __/halui_src/halui.o: __/halui_src/halui.cc.o
 
 # target to build an object file
 __/halui_src/halui.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.o
 .PHONY : __/halui_src/halui.cc.o
 
 __/halui_src/halui.i: __/halui_src/halui.cc.i
@@ -205,7 +205,7 @@ __/halui_src/halui.i: __/halui_src/halui.cc.i
 
 # target to preprocess a source file
 __/halui_src/halui.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.i
 .PHONY : __/halui_src/halui.cc.i
 
 __/halui_src/halui.s: __/halui_src/halui.cc.s
@@ -214,7 +214,7 @@ __/halui_src/halui.s: __/halui_src/halui.cc.s
 
 # target to generate assembly for a file
 __/halui_src/halui.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.s
 .PHONY : __/halui_src/halui.cc.s
 
 # Help Target
@@ -244,6 +244,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/classicladder//CMakeFiles/progress.marks
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/classicladder//CMakeFiles/progress.marks
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/clean
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 classicladder/CMakeFiles/classicladder.dir/rule:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/CMakeFiles/classicladder.dir/rule
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/CMakeFiles/classicladder.dir/rule
 .PHONY : classicladder/CMakeFiles/classicladder.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ classicladder: classicladder/CMakeFiles/classicladder.dir/rule
 
 # fast build rule for target.
 classicladder/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/build
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/build
 .PHONY : classicladder/fast
 
 __/classicladder_src/arithm_eval.o: __/classicladder_src/arithm_eval.c.o
@@ -196,7 +196,7 @@ __/classicladder_src/arithm_eval.o: __/classicladder_src/arithm_eval.c.o
 
 # target to build an object file
 __/classicladder_src/arithm_eval.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.o
 .PHONY : __/classicladder_src/arithm_eval.c.o
 
 __/classicladder_src/arithm_eval.i: __/classicladder_src/arithm_eval.c.i
@@ -205,7 +205,7 @@ __/classicladder_src/arithm_eval.i: __/classicladder_src/arithm_eval.c.i
 
 # target to preprocess a source file
 __/classicladder_src/arithm_eval.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.i
 .PHONY : __/classicladder_src/arithm_eval.c.i
 
 __/classicladder_src/arithm_eval.s: __/classicladder_src/arithm_eval.c.s
@@ -214,7 +214,7 @@ __/classicladder_src/arithm_eval.s: __/classicladder_src/arithm_eval.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/arithm_eval.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.s
 .PHONY : __/classicladder_src/arithm_eval.c.s
 
 __/classicladder_src/arrays.o: __/classicladder_src/arrays.c.o
@@ -223,7 +223,7 @@ __/classicladder_src/arrays.o: __/classicladder_src/arrays.c.o
 
 # target to build an object file
 __/classicladder_src/arrays.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o
 .PHONY : __/classicladder_src/arrays.c.o
 
 __/classicladder_src/arrays.i: __/classicladder_src/arrays.c.i
@@ -232,7 +232,7 @@ __/classicladder_src/arrays.i: __/classicladder_src/arrays.c.i
 
 # target to preprocess a source file
 __/classicladder_src/arrays.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.i
 .PHONY : __/classicladder_src/arrays.c.i
 
 __/classicladder_src/arrays.s: __/classicladder_src/arrays.c.s
@@ -241,7 +241,7 @@ __/classicladder_src/arrays.s: __/classicladder_src/arrays.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/arrays.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.s
 .PHONY : __/classicladder_src/arrays.c.s
 
 __/classicladder_src/calc.o: __/classicladder_src/calc.c.o
@@ -250,7 +250,7 @@ __/classicladder_src/calc.o: __/classicladder_src/calc.c.o
 
 # target to build an object file
 __/classicladder_src/calc.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o
 .PHONY : __/classicladder_src/calc.c.o
 
 __/classicladder_src/calc.i: __/classicladder_src/calc.c.i
@@ -259,7 +259,7 @@ __/classicladder_src/calc.i: __/classicladder_src/calc.c.i
 
 # target to preprocess a source file
 __/classicladder_src/calc.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.i
 .PHONY : __/classicladder_src/calc.c.i
 
 __/classicladder_src/calc.s: __/classicladder_src/calc.c.s
@@ -268,7 +268,7 @@ __/classicladder_src/calc.s: __/classicladder_src/calc.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/calc.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.s
 .PHONY : __/classicladder_src/calc.c.s
 
 __/classicladder_src/calc_sequential.o: __/classicladder_src/calc_sequential.c.o
@@ -277,7 +277,7 @@ __/classicladder_src/calc_sequential.o: __/classicladder_src/calc_sequential.c.o
 
 # target to build an object file
 __/classicladder_src/calc_sequential.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.o
 .PHONY : __/classicladder_src/calc_sequential.c.o
 
 __/classicladder_src/calc_sequential.i: __/classicladder_src/calc_sequential.c.i
@@ -286,7 +286,7 @@ __/classicladder_src/calc_sequential.i: __/classicladder_src/calc_sequential.c.i
 
 # target to preprocess a source file
 __/classicladder_src/calc_sequential.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.i
 .PHONY : __/classicladder_src/calc_sequential.c.i
 
 __/classicladder_src/calc_sequential.s: __/classicladder_src/calc_sequential.c.s
@@ -295,7 +295,7 @@ __/classicladder_src/calc_sequential.s: __/classicladder_src/calc_sequential.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/calc_sequential.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.s
 .PHONY : __/classicladder_src/calc_sequential.c.s
 
 __/classicladder_src/classicladder.o: __/classicladder_src/classicladder.c.o
@@ -304,7 +304,7 @@ __/classicladder_src/classicladder.o: __/classicladder_src/classicladder.c.o
 
 # target to build an object file
 __/classicladder_src/classicladder.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.o
 .PHONY : __/classicladder_src/classicladder.c.o
 
 __/classicladder_src/classicladder.i: __/classicladder_src/classicladder.c.i
@@ -313,7 +313,7 @@ __/classicladder_src/classicladder.i: __/classicladder_src/classicladder.c.i
 
 # target to preprocess a source file
 __/classicladder_src/classicladder.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.i
 .PHONY : __/classicladder_src/classicladder.c.i
 
 __/classicladder_src/classicladder.s: __/classicladder_src/classicladder.c.s
@@ -322,7 +322,7 @@ __/classicladder_src/classicladder.s: __/classicladder_src/classicladder.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/classicladder.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.s
 .PHONY : __/classicladder_src/classicladder.c.s
 
 __/classicladder_src/classicladder_gtk.o: __/classicladder_src/classicladder_gtk.c.o
@@ -331,7 +331,7 @@ __/classicladder_src/classicladder_gtk.o: __/classicladder_src/classicladder_gtk
 
 # target to build an object file
 __/classicladder_src/classicladder_gtk.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.o
 .PHONY : __/classicladder_src/classicladder_gtk.c.o
 
 __/classicladder_src/classicladder_gtk.i: __/classicladder_src/classicladder_gtk.c.i
@@ -340,7 +340,7 @@ __/classicladder_src/classicladder_gtk.i: __/classicladder_src/classicladder_gtk
 
 # target to preprocess a source file
 __/classicladder_src/classicladder_gtk.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.i
 .PHONY : __/classicladder_src/classicladder_gtk.c.i
 
 __/classicladder_src/classicladder_gtk.s: __/classicladder_src/classicladder_gtk.c.s
@@ -349,7 +349,7 @@ __/classicladder_src/classicladder_gtk.s: __/classicladder_src/classicladder_gtk
 
 # target to generate assembly for a file
 __/classicladder_src/classicladder_gtk.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.s
 .PHONY : __/classicladder_src/classicladder_gtk.c.s
 
 __/classicladder_src/config.o: __/classicladder_src/config.c.o
@@ -358,7 +358,7 @@ __/classicladder_src/config.o: __/classicladder_src/config.c.o
 
 # target to build an object file
 __/classicladder_src/config.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.o
 .PHONY : __/classicladder_src/config.c.o
 
 __/classicladder_src/config.i: __/classicladder_src/config.c.i
@@ -367,7 +367,7 @@ __/classicladder_src/config.i: __/classicladder_src/config.c.i
 
 # target to preprocess a source file
 __/classicladder_src/config.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.i
 .PHONY : __/classicladder_src/config.c.i
 
 __/classicladder_src/config.s: __/classicladder_src/config.c.s
@@ -376,7 +376,7 @@ __/classicladder_src/config.s: __/classicladder_src/config.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/config.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.s
 .PHONY : __/classicladder_src/config.c.s
 
 __/classicladder_src/config_gtk.o: __/classicladder_src/config_gtk.c.o
@@ -385,7 +385,7 @@ __/classicladder_src/config_gtk.o: __/classicladder_src/config_gtk.c.o
 
 # target to build an object file
 __/classicladder_src/config_gtk.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o
 .PHONY : __/classicladder_src/config_gtk.c.o
 
 __/classicladder_src/config_gtk.i: __/classicladder_src/config_gtk.c.i
@@ -394,7 +394,7 @@ __/classicladder_src/config_gtk.i: __/classicladder_src/config_gtk.c.i
 
 # target to preprocess a source file
 __/classicladder_src/config_gtk.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.i
 .PHONY : __/classicladder_src/config_gtk.c.i
 
 __/classicladder_src/config_gtk.s: __/classicladder_src/config_gtk.c.s
@@ -403,7 +403,7 @@ __/classicladder_src/config_gtk.s: __/classicladder_src/config_gtk.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/config_gtk.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.s
 .PHONY : __/classicladder_src/config_gtk.c.s
 
 __/classicladder_src/drawing.o: __/classicladder_src/drawing.c.o
@@ -412,7 +412,7 @@ __/classicladder_src/drawing.o: __/classicladder_src/drawing.c.o
 
 # target to build an object file
 __/classicladder_src/drawing.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.o
 .PHONY : __/classicladder_src/drawing.c.o
 
 __/classicladder_src/drawing.i: __/classicladder_src/drawing.c.i
@@ -421,7 +421,7 @@ __/classicladder_src/drawing.i: __/classicladder_src/drawing.c.i
 
 # target to preprocess a source file
 __/classicladder_src/drawing.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.i
 .PHONY : __/classicladder_src/drawing.c.i
 
 __/classicladder_src/drawing.s: __/classicladder_src/drawing.c.s
@@ -430,7 +430,7 @@ __/classicladder_src/drawing.s: __/classicladder_src/drawing.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/drawing.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.s
 .PHONY : __/classicladder_src/drawing.c.s
 
 __/classicladder_src/drawing_sequential.o: __/classicladder_src/drawing_sequential.c.o
@@ -439,7 +439,7 @@ __/classicladder_src/drawing_sequential.o: __/classicladder_src/drawing_sequenti
 
 # target to build an object file
 __/classicladder_src/drawing_sequential.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.o
 .PHONY : __/classicladder_src/drawing_sequential.c.o
 
 __/classicladder_src/drawing_sequential.i: __/classicladder_src/drawing_sequential.c.i
@@ -448,7 +448,7 @@ __/classicladder_src/drawing_sequential.i: __/classicladder_src/drawing_sequenti
 
 # target to preprocess a source file
 __/classicladder_src/drawing_sequential.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.i
 .PHONY : __/classicladder_src/drawing_sequential.c.i
 
 __/classicladder_src/drawing_sequential.s: __/classicladder_src/drawing_sequential.c.s
@@ -457,7 +457,7 @@ __/classicladder_src/drawing_sequential.s: __/classicladder_src/drawing_sequenti
 
 # target to generate assembly for a file
 __/classicladder_src/drawing_sequential.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.s
 .PHONY : __/classicladder_src/drawing_sequential.c.s
 
 __/classicladder_src/edit.o: __/classicladder_src/edit.c.o
@@ -466,7 +466,7 @@ __/classicladder_src/edit.o: __/classicladder_src/edit.c.o
 
 # target to build an object file
 __/classicladder_src/edit.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.o
 .PHONY : __/classicladder_src/edit.c.o
 
 __/classicladder_src/edit.i: __/classicladder_src/edit.c.i
@@ -475,7 +475,7 @@ __/classicladder_src/edit.i: __/classicladder_src/edit.c.i
 
 # target to preprocess a source file
 __/classicladder_src/edit.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.i
 .PHONY : __/classicladder_src/edit.c.i
 
 __/classicladder_src/edit.s: __/classicladder_src/edit.c.s
@@ -484,7 +484,7 @@ __/classicladder_src/edit.s: __/classicladder_src/edit.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/edit.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.s
 .PHONY : __/classicladder_src/edit.c.s
 
 __/classicladder_src/edit_gtk.o: __/classicladder_src/edit_gtk.c.o
@@ -493,7 +493,7 @@ __/classicladder_src/edit_gtk.o: __/classicladder_src/edit_gtk.c.o
 
 # target to build an object file
 __/classicladder_src/edit_gtk.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.o
 .PHONY : __/classicladder_src/edit_gtk.c.o
 
 __/classicladder_src/edit_gtk.i: __/classicladder_src/edit_gtk.c.i
@@ -502,7 +502,7 @@ __/classicladder_src/edit_gtk.i: __/classicladder_src/edit_gtk.c.i
 
 # target to preprocess a source file
 __/classicladder_src/edit_gtk.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.i
 .PHONY : __/classicladder_src/edit_gtk.c.i
 
 __/classicladder_src/edit_gtk.s: __/classicladder_src/edit_gtk.c.s
@@ -511,7 +511,7 @@ __/classicladder_src/edit_gtk.s: __/classicladder_src/edit_gtk.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/edit_gtk.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.s
 .PHONY : __/classicladder_src/edit_gtk.c.s
 
 __/classicladder_src/edit_sequential.o: __/classicladder_src/edit_sequential.c.o
@@ -520,7 +520,7 @@ __/classicladder_src/edit_sequential.o: __/classicladder_src/edit_sequential.c.o
 
 # target to build an object file
 __/classicladder_src/edit_sequential.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.o
 .PHONY : __/classicladder_src/edit_sequential.c.o
 
 __/classicladder_src/edit_sequential.i: __/classicladder_src/edit_sequential.c.i
@@ -529,7 +529,7 @@ __/classicladder_src/edit_sequential.i: __/classicladder_src/edit_sequential.c.i
 
 # target to preprocess a source file
 __/classicladder_src/edit_sequential.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.i
 .PHONY : __/classicladder_src/edit_sequential.c.i
 
 __/classicladder_src/edit_sequential.s: __/classicladder_src/edit_sequential.c.s
@@ -538,7 +538,7 @@ __/classicladder_src/edit_sequential.s: __/classicladder_src/edit_sequential.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/edit_sequential.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.s
 .PHONY : __/classicladder_src/edit_sequential.c.s
 
 __/classicladder_src/editproperties_gtk.o: __/classicladder_src/editproperties_gtk.c.o
@@ -547,7 +547,7 @@ __/classicladder_src/editproperties_gtk.o: __/classicladder_src/editproperties_g
 
 # target to build an object file
 __/classicladder_src/editproperties_gtk.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.o
 .PHONY : __/classicladder_src/editproperties_gtk.c.o
 
 __/classicladder_src/editproperties_gtk.i: __/classicladder_src/editproperties_gtk.c.i
@@ -556,7 +556,7 @@ __/classicladder_src/editproperties_gtk.i: __/classicladder_src/editproperties_g
 
 # target to preprocess a source file
 __/classicladder_src/editproperties_gtk.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.i
 .PHONY : __/classicladder_src/editproperties_gtk.c.i
 
 __/classicladder_src/editproperties_gtk.s: __/classicladder_src/editproperties_gtk.c.s
@@ -565,7 +565,7 @@ __/classicladder_src/editproperties_gtk.s: __/classicladder_src/editproperties_g
 
 # target to generate assembly for a file
 __/classicladder_src/editproperties_gtk.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.s
 .PHONY : __/classicladder_src/editproperties_gtk.c.s
 
 __/classicladder_src/emc_mods.o: __/classicladder_src/emc_mods.c.o
@@ -574,7 +574,7 @@ __/classicladder_src/emc_mods.o: __/classicladder_src/emc_mods.c.o
 
 # target to build an object file
 __/classicladder_src/emc_mods.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.o
 .PHONY : __/classicladder_src/emc_mods.c.o
 
 __/classicladder_src/emc_mods.i: __/classicladder_src/emc_mods.c.i
@@ -583,7 +583,7 @@ __/classicladder_src/emc_mods.i: __/classicladder_src/emc_mods.c.i
 
 # target to preprocess a source file
 __/classicladder_src/emc_mods.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.i
 .PHONY : __/classicladder_src/emc_mods.c.i
 
 __/classicladder_src/emc_mods.s: __/classicladder_src/emc_mods.c.s
@@ -592,7 +592,7 @@ __/classicladder_src/emc_mods.s: __/classicladder_src/emc_mods.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/emc_mods.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.s
 .PHONY : __/classicladder_src/emc_mods.c.s
 
 __/classicladder_src/files.o: __/classicladder_src/files.c.o
@@ -601,7 +601,7 @@ __/classicladder_src/files.o: __/classicladder_src/files.c.o
 
 # target to build an object file
 __/classicladder_src/files.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o
 .PHONY : __/classicladder_src/files.c.o
 
 __/classicladder_src/files.i: __/classicladder_src/files.c.i
@@ -610,7 +610,7 @@ __/classicladder_src/files.i: __/classicladder_src/files.c.i
 
 # target to preprocess a source file
 __/classicladder_src/files.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.i
 .PHONY : __/classicladder_src/files.c.i
 
 __/classicladder_src/files.s: __/classicladder_src/files.c.s
@@ -619,7 +619,7 @@ __/classicladder_src/files.s: __/classicladder_src/files.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/files.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.s
 .PHONY : __/classicladder_src/files.c.s
 
 __/classicladder_src/files_project.o: __/classicladder_src/files_project.c.o
@@ -628,7 +628,7 @@ __/classicladder_src/files_project.o: __/classicladder_src/files_project.c.o
 
 # target to build an object file
 __/classicladder_src/files_project.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.o
 .PHONY : __/classicladder_src/files_project.c.o
 
 __/classicladder_src/files_project.i: __/classicladder_src/files_project.c.i
@@ -637,7 +637,7 @@ __/classicladder_src/files_project.i: __/classicladder_src/files_project.c.i
 
 # target to preprocess a source file
 __/classicladder_src/files_project.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.i
 .PHONY : __/classicladder_src/files_project.c.i
 
 __/classicladder_src/files_project.s: __/classicladder_src/files_project.c.s
@@ -646,7 +646,7 @@ __/classicladder_src/files_project.s: __/classicladder_src/files_project.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/files_project.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.s
 .PHONY : __/classicladder_src/files_project.c.s
 
 __/classicladder_src/files_sequential.o: __/classicladder_src/files_sequential.c.o
@@ -655,7 +655,7 @@ __/classicladder_src/files_sequential.o: __/classicladder_src/files_sequential.c
 
 # target to build an object file
 __/classicladder_src/files_sequential.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.o
 .PHONY : __/classicladder_src/files_sequential.c.o
 
 __/classicladder_src/files_sequential.i: __/classicladder_src/files_sequential.c.i
@@ -664,7 +664,7 @@ __/classicladder_src/files_sequential.i: __/classicladder_src/files_sequential.c
 
 # target to preprocess a source file
 __/classicladder_src/files_sequential.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.i
 .PHONY : __/classicladder_src/files_sequential.c.i
 
 __/classicladder_src/files_sequential.s: __/classicladder_src/files_sequential.c.s
@@ -673,7 +673,7 @@ __/classicladder_src/files_sequential.s: __/classicladder_src/files_sequential.c
 
 # target to generate assembly for a file
 __/classicladder_src/files_sequential.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.s
 .PHONY : __/classicladder_src/files_sequential.c.s
 
 __/classicladder_src/manager.o: __/classicladder_src/manager.c.o
@@ -682,7 +682,7 @@ __/classicladder_src/manager.o: __/classicladder_src/manager.c.o
 
 # target to build an object file
 __/classicladder_src/manager.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o
 .PHONY : __/classicladder_src/manager.c.o
 
 __/classicladder_src/manager.i: __/classicladder_src/manager.c.i
@@ -691,7 +691,7 @@ __/classicladder_src/manager.i: __/classicladder_src/manager.c.i
 
 # target to preprocess a source file
 __/classicladder_src/manager.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.i
 .PHONY : __/classicladder_src/manager.c.i
 
 __/classicladder_src/manager.s: __/classicladder_src/manager.c.s
@@ -700,7 +700,7 @@ __/classicladder_src/manager.s: __/classicladder_src/manager.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/manager.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.s
 .PHONY : __/classicladder_src/manager.c.s
 
 __/classicladder_src/manager_gtk.o: __/classicladder_src/manager_gtk.c.o
@@ -709,7 +709,7 @@ __/classicladder_src/manager_gtk.o: __/classicladder_src/manager_gtk.c.o
 
 # target to build an object file
 __/classicladder_src/manager_gtk.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o
 .PHONY : __/classicladder_src/manager_gtk.c.o
 
 __/classicladder_src/manager_gtk.i: __/classicladder_src/manager_gtk.c.i
@@ -718,7 +718,7 @@ __/classicladder_src/manager_gtk.i: __/classicladder_src/manager_gtk.c.i
 
 # target to preprocess a source file
 __/classicladder_src/manager_gtk.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.i
 .PHONY : __/classicladder_src/manager_gtk.c.i
 
 __/classicladder_src/manager_gtk.s: __/classicladder_src/manager_gtk.c.s
@@ -727,7 +727,7 @@ __/classicladder_src/manager_gtk.s: __/classicladder_src/manager_gtk.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/manager_gtk.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.s
 .PHONY : __/classicladder_src/manager_gtk.c.s
 
 __/classicladder_src/protocol_modbus_master.o: __/classicladder_src/protocol_modbus_master.c.o
@@ -736,7 +736,7 @@ __/classicladder_src/protocol_modbus_master.o: __/classicladder_src/protocol_mod
 
 # target to build an object file
 __/classicladder_src/protocol_modbus_master.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.o
 .PHONY : __/classicladder_src/protocol_modbus_master.c.o
 
 __/classicladder_src/protocol_modbus_master.i: __/classicladder_src/protocol_modbus_master.c.i
@@ -745,7 +745,7 @@ __/classicladder_src/protocol_modbus_master.i: __/classicladder_src/protocol_mod
 
 # target to preprocess a source file
 __/classicladder_src/protocol_modbus_master.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.i
 .PHONY : __/classicladder_src/protocol_modbus_master.c.i
 
 __/classicladder_src/protocol_modbus_master.s: __/classicladder_src/protocol_modbus_master.c.s
@@ -754,7 +754,7 @@ __/classicladder_src/protocol_modbus_master.s: __/classicladder_src/protocol_mod
 
 # target to generate assembly for a file
 __/classicladder_src/protocol_modbus_master.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.s
 .PHONY : __/classicladder_src/protocol_modbus_master.c.s
 
 __/classicladder_src/protocol_modbus_slave.o: __/classicladder_src/protocol_modbus_slave.c.o
@@ -763,7 +763,7 @@ __/classicladder_src/protocol_modbus_slave.o: __/classicladder_src/protocol_modb
 
 # target to build an object file
 __/classicladder_src/protocol_modbus_slave.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.o
 .PHONY : __/classicladder_src/protocol_modbus_slave.c.o
 
 __/classicladder_src/protocol_modbus_slave.i: __/classicladder_src/protocol_modbus_slave.c.i
@@ -772,7 +772,7 @@ __/classicladder_src/protocol_modbus_slave.i: __/classicladder_src/protocol_modb
 
 # target to preprocess a source file
 __/classicladder_src/protocol_modbus_slave.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.i
 .PHONY : __/classicladder_src/protocol_modbus_slave.c.i
 
 __/classicladder_src/protocol_modbus_slave.s: __/classicladder_src/protocol_modbus_slave.c.s
@@ -781,7 +781,7 @@ __/classicladder_src/protocol_modbus_slave.s: __/classicladder_src/protocol_modb
 
 # target to generate assembly for a file
 __/classicladder_src/protocol_modbus_slave.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.s
 .PHONY : __/classicladder_src/protocol_modbus_slave.c.s
 
 __/classicladder_src/serial_linux.o: __/classicladder_src/serial_linux.c.o
@@ -790,7 +790,7 @@ __/classicladder_src/serial_linux.o: __/classicladder_src/serial_linux.c.o
 
 # target to build an object file
 __/classicladder_src/serial_linux.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.o
 .PHONY : __/classicladder_src/serial_linux.c.o
 
 __/classicladder_src/serial_linux.i: __/classicladder_src/serial_linux.c.i
@@ -799,7 +799,7 @@ __/classicladder_src/serial_linux.i: __/classicladder_src/serial_linux.c.i
 
 # target to preprocess a source file
 __/classicladder_src/serial_linux.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.i
 .PHONY : __/classicladder_src/serial_linux.c.i
 
 __/classicladder_src/serial_linux.s: __/classicladder_src/serial_linux.c.s
@@ -808,7 +808,7 @@ __/classicladder_src/serial_linux.s: __/classicladder_src/serial_linux.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/serial_linux.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.s
 .PHONY : __/classicladder_src/serial_linux.c.s
 
 __/classicladder_src/socket_modbus_master.o: __/classicladder_src/socket_modbus_master.c.o
@@ -817,7 +817,7 @@ __/classicladder_src/socket_modbus_master.o: __/classicladder_src/socket_modbus_
 
 # target to build an object file
 __/classicladder_src/socket_modbus_master.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.o
 .PHONY : __/classicladder_src/socket_modbus_master.c.o
 
 __/classicladder_src/socket_modbus_master.i: __/classicladder_src/socket_modbus_master.c.i
@@ -826,7 +826,7 @@ __/classicladder_src/socket_modbus_master.i: __/classicladder_src/socket_modbus_
 
 # target to preprocess a source file
 __/classicladder_src/socket_modbus_master.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.i
 .PHONY : __/classicladder_src/socket_modbus_master.c.i
 
 __/classicladder_src/socket_modbus_master.s: __/classicladder_src/socket_modbus_master.c.s
@@ -835,7 +835,7 @@ __/classicladder_src/socket_modbus_master.s: __/classicladder_src/socket_modbus_
 
 # target to generate assembly for a file
 __/classicladder_src/socket_modbus_master.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.s
 .PHONY : __/classicladder_src/socket_modbus_master.c.s
 
 __/classicladder_src/socket_server.o: __/classicladder_src/socket_server.c.o
@@ -844,7 +844,7 @@ __/classicladder_src/socket_server.o: __/classicladder_src/socket_server.c.o
 
 # target to build an object file
 __/classicladder_src/socket_server.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.o
 .PHONY : __/classicladder_src/socket_server.c.o
 
 __/classicladder_src/socket_server.i: __/classicladder_src/socket_server.c.i
@@ -853,7 +853,7 @@ __/classicladder_src/socket_server.i: __/classicladder_src/socket_server.c.i
 
 # target to preprocess a source file
 __/classicladder_src/socket_server.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.i
 .PHONY : __/classicladder_src/socket_server.c.i
 
 __/classicladder_src/socket_server.s: __/classicladder_src/socket_server.c.s
@@ -862,7 +862,7 @@ __/classicladder_src/socket_server.s: __/classicladder_src/socket_server.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/socket_server.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.s
 .PHONY : __/classicladder_src/socket_server.c.s
 
 __/classicladder_src/spy_vars_gtk.o: __/classicladder_src/spy_vars_gtk.c.o
@@ -871,7 +871,7 @@ __/classicladder_src/spy_vars_gtk.o: __/classicladder_src/spy_vars_gtk.c.o
 
 # target to build an object file
 __/classicladder_src/spy_vars_gtk.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o
 .PHONY : __/classicladder_src/spy_vars_gtk.c.o
 
 __/classicladder_src/spy_vars_gtk.i: __/classicladder_src/spy_vars_gtk.c.i
@@ -880,7 +880,7 @@ __/classicladder_src/spy_vars_gtk.i: __/classicladder_src/spy_vars_gtk.c.i
 
 # target to preprocess a source file
 __/classicladder_src/spy_vars_gtk.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.i
 .PHONY : __/classicladder_src/spy_vars_gtk.c.i
 
 __/classicladder_src/spy_vars_gtk.s: __/classicladder_src/spy_vars_gtk.c.s
@@ -889,7 +889,7 @@ __/classicladder_src/spy_vars_gtk.s: __/classicladder_src/spy_vars_gtk.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/spy_vars_gtk.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.s
 .PHONY : __/classicladder_src/spy_vars_gtk.c.s
 
 __/classicladder_src/symbols.o: __/classicladder_src/symbols.c.o
@@ -898,7 +898,7 @@ __/classicladder_src/symbols.o: __/classicladder_src/symbols.c.o
 
 # target to build an object file
 __/classicladder_src/symbols.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.o
 .PHONY : __/classicladder_src/symbols.c.o
 
 __/classicladder_src/symbols.i: __/classicladder_src/symbols.c.i
@@ -907,7 +907,7 @@ __/classicladder_src/symbols.i: __/classicladder_src/symbols.c.i
 
 # target to preprocess a source file
 __/classicladder_src/symbols.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.i
 .PHONY : __/classicladder_src/symbols.c.i
 
 __/classicladder_src/symbols.s: __/classicladder_src/symbols.c.s
@@ -916,7 +916,7 @@ __/classicladder_src/symbols.s: __/classicladder_src/symbols.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/symbols.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.s
 .PHONY : __/classicladder_src/symbols.c.s
 
 __/classicladder_src/symbols_gtk.o: __/classicladder_src/symbols_gtk.c.o
@@ -925,7 +925,7 @@ __/classicladder_src/symbols_gtk.o: __/classicladder_src/symbols_gtk.c.o
 
 # target to build an object file
 __/classicladder_src/symbols_gtk.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o
 .PHONY : __/classicladder_src/symbols_gtk.c.o
 
 __/classicladder_src/symbols_gtk.i: __/classicladder_src/symbols_gtk.c.i
@@ -934,7 +934,7 @@ __/classicladder_src/symbols_gtk.i: __/classicladder_src/symbols_gtk.c.i
 
 # target to preprocess a source file
 __/classicladder_src/symbols_gtk.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.i
 .PHONY : __/classicladder_src/symbols_gtk.c.i
 
 __/classicladder_src/symbols_gtk.s: __/classicladder_src/symbols_gtk.c.s
@@ -943,7 +943,7 @@ __/classicladder_src/symbols_gtk.s: __/classicladder_src/symbols_gtk.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/symbols_gtk.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.s
 .PHONY : __/classicladder_src/symbols_gtk.c.s
 
 __/classicladder_src/vars_access.o: __/classicladder_src/vars_access.c.o
@@ -952,7 +952,7 @@ __/classicladder_src/vars_access.o: __/classicladder_src/vars_access.c.o
 
 # target to build an object file
 __/classicladder_src/vars_access.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.o
 .PHONY : __/classicladder_src/vars_access.c.o
 
 __/classicladder_src/vars_access.i: __/classicladder_src/vars_access.c.i
@@ -961,7 +961,7 @@ __/classicladder_src/vars_access.i: __/classicladder_src/vars_access.c.i
 
 # target to preprocess a source file
 __/classicladder_src/vars_access.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.i
 .PHONY : __/classicladder_src/vars_access.c.i
 
 __/classicladder_src/vars_access.s: __/classicladder_src/vars_access.c.s
@@ -970,7 +970,7 @@ __/classicladder_src/vars_access.s: __/classicladder_src/vars_access.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/vars_access.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.s
 .PHONY : __/classicladder_src/vars_access.c.s
 
 __/classicladder_src/vars_names.o: __/classicladder_src/vars_names.c.o
@@ -979,7 +979,7 @@ __/classicladder_src/vars_names.o: __/classicladder_src/vars_names.c.o
 
 # target to build an object file
 __/classicladder_src/vars_names.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.o
 .PHONY : __/classicladder_src/vars_names.c.o
 
 __/classicladder_src/vars_names.i: __/classicladder_src/vars_names.c.i
@@ -988,7 +988,7 @@ __/classicladder_src/vars_names.i: __/classicladder_src/vars_names.c.i
 
 # target to preprocess a source file
 __/classicladder_src/vars_names.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.i
 .PHONY : __/classicladder_src/vars_names.c.i
 
 __/classicladder_src/vars_names.s: __/classicladder_src/vars_names.c.s
@@ -997,7 +997,7 @@ __/classicladder_src/vars_names.s: __/classicladder_src/vars_names.c.s
 
 # target to generate assembly for a file
 __/classicladder_src/vars_names.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.s
 .PHONY : __/classicladder_src/vars_names.c.s
 
 # Help Target
@@ -1114,6 +1114,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

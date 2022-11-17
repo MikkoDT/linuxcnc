@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/lcncladdertest/cmake/halui
+# Install script for directory: /home/user/linuxcnc/cmake/halui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   foreach(file
-      "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halui/halui-0"
-      "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halui/halui"
+      "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halui/halui-0"
+      "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halui/halui"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -55,26 +55,26 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/lcncladdertest/cmake/halui/halui-0;/home/user/lcncladdertest/cmake/halui/halui")
+   "/home/user/linuxcnc/cmake/halui/halui-0;/home/user/linuxcnc/cmake/halui/halui")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/lcncladdertest/cmake/halui" TYPE EXECUTABLE FILES
-    "/home/user/lcncladdertest/cmake/build/halui/halui-0"
-    "/home/user/lcncladdertest/cmake/build/halui/halui"
+file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/halui" TYPE EXECUTABLE FILES
+    "/home/user/linuxcnc/cmake/build/halui/halui-0"
+    "/home/user/linuxcnc/cmake/build/halui/halui"
     )
   foreach(file
-      "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halui/halui-0"
-      "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halui/halui"
+      "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halui/halui-0"
+      "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halui/halui"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
       file(RPATH_CHANGE
            FILE "${file}"
-           OLD_RPATH "/home/user/lcncladdertest/cmake/halui/../build/libnml:/home/user/lcncladdertest/cmake/halui/../build/liblinuxcnchal:/home/user/lcncladdertest/cmake/halui/../build/liblinuxcncini:/home/user/lcncladdertest/cmake/halui/../build/libtooldata:"
+           OLD_RPATH "/home/user/linuxcnc/cmake/halui/../build/libnml:/home/user/linuxcnc/cmake/halui/../build/liblinuxcnchal:/home/user/linuxcnc/cmake/halui/../build/liblinuxcncini:/home/user/linuxcnc/cmake/halui/../build/libtooldata:"
            NEW_RPATH "")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/usr/bin/strip" "${file}")

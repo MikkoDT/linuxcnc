@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 # Include any dependencies generated for this target.
 include rtapi/CMakeFiles/rtapi.dir/depend.make
@@ -78,55 +78,55 @@ include rtapi/CMakeFiles/rtapi.dir/flags.make
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.o: rtapi/CMakeFiles/rtapi.dir/flags.make
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.o: ../rtapi_src/uspace_rtapi_app.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.o -c /home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_app.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.o"
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.o -c /home/user/linuxcnc/cmake/rtapi_src/uspace_rtapi_app.cc
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_app.cc > CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.i
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/rtapi_src/uspace_rtapi_app.cc > CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.i
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_app.cc -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.s
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/rtapi_src/uspace_rtapi_app.cc -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.s
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.o: rtapi/CMakeFiles/rtapi.dir/flags.make
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.o: ../rtapi_src/uspace_rtapi_parport.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.o -c /home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_parport.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.o"
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.o -c /home/user/linuxcnc/cmake/rtapi_src/uspace_rtapi_parport.cc
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_parport.cc > CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.i
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/rtapi_src/uspace_rtapi_parport.cc > CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.i
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_parport.cc -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.s
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/rtapi_src/uspace_rtapi_parport.cc -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.s
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o: rtapi/CMakeFiles/rtapi.dir/flags.make
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o: ../rtapi_src/uspace_rtapi_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o -c /home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o"
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o -c /home/user/linuxcnc/cmake/rtapi_src/uspace_rtapi_string.c
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.i"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_string.c > CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.i
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/rtapi_src/uspace_rtapi_string.c > CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.i
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.s"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_string.c -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.s
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/rtapi_src/uspace_rtapi_string.c -o CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.s
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o: rtapi/CMakeFiles/rtapi.dir/flags.make
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o: ../rtapi_src/rtapi_pci.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o -c /home/user/lcncladdertest/cmake/rtapi_src/rtapi_pci.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o"
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o -c /home/user/linuxcnc/cmake/rtapi_src/rtapi_pci.cc
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/rtapi_src/rtapi_pci.cc > CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.i
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/rtapi_src/rtapi_pci.cc > CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.i
 
 rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/rtapi_src/rtapi_pci.cc -o CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.s
+	cd /home/user/linuxcnc/cmake/build/rtapi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/rtapi_src/rtapi_pci.cc -o CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.s
 
 # Object files for target rtapi
 rtapi_OBJECTS = \
@@ -144,8 +144,8 @@ rtapi/rtapi: rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o
 rtapi/rtapi: rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o
 rtapi/rtapi: rtapi/CMakeFiles/rtapi.dir/build.make
 rtapi/rtapi: rtapi/CMakeFiles/rtapi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable rtapi"
-	cd /home/user/lcncladdertest/cmake/build/rtapi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rtapi.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable rtapi"
+	cd /home/user/linuxcnc/cmake/build/rtapi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rtapi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 rtapi/CMakeFiles/rtapi.dir/build: rtapi/rtapi
@@ -153,10 +153,10 @@ rtapi/CMakeFiles/rtapi.dir/build: rtapi/rtapi
 .PHONY : rtapi/CMakeFiles/rtapi.dir/build
 
 rtapi/CMakeFiles/rtapi.dir/clean:
-	cd /home/user/lcncladdertest/cmake/build/rtapi && $(CMAKE_COMMAND) -P CMakeFiles/rtapi.dir/cmake_clean.cmake
+	cd /home/user/linuxcnc/cmake/build/rtapi && $(CMAKE_COMMAND) -P CMakeFiles/rtapi.dir/cmake_clean.cmake
 .PHONY : rtapi/CMakeFiles/rtapi.dir/clean
 
 rtapi/CMakeFiles/rtapi.dir/depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/rtapi /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/rtapi /home/user/lcncladdertest/cmake/build/rtapi/CMakeFiles/rtapi.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/rtapi /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/rtapi /home/user/linuxcnc/cmake/build/rtapi/CMakeFiles/rtapi.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rtapi/CMakeFiles/rtapi.dir/depend
 

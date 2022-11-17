@@ -82,7 +82,7 @@ string.h
 rtapi_gfp.h
 -
 
-/home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal.h
+/home/user/linuxcnc/cmake/liblinuxcnchal_src/hal.h
 rtapi.h
 -
 signal.h
@@ -94,19 +94,19 @@ rtapi_bool.h
 rtapi_stdint.h
 -
 
-/home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_lib.c
+/home/user/linuxcnc/cmake/liblinuxcnchal_src/hal_lib.c
 rtapi.h
-/home/user/lcncladdertest/cmake/liblinuxcnchal_src/rtapi.h
+/home/user/linuxcnc/cmake/liblinuxcnchal_src/rtapi.h
 hal.h
-/home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal.h
+/home/user/linuxcnc/cmake/liblinuxcnchal_src/hal.h
 hal_priv.h
-/home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_priv.h
+/home/user/linuxcnc/cmake/liblinuxcnchal_src/hal_priv.h
 rtapi_string.h
-/home/user/lcncladdertest/cmake/liblinuxcnchal_src/rtapi_string.h
+/home/user/linuxcnc/cmake/liblinuxcnchal_src/rtapi_string.h
 rtapi_atomic.h
-/home/user/lcncladdertest/cmake/liblinuxcnchal_src/rtapi_atomic.h
+/home/user/linuxcnc/cmake/liblinuxcnchal_src/rtapi_atomic.h
 rtapi_app.h
-/home/user/lcncladdertest/cmake/liblinuxcnchal_src/rtapi_app.h
+/home/user/linuxcnc/cmake/liblinuxcnchal_src/rtapi_app.h
 sys/types.h
 -
 unistd.h
@@ -116,7 +116,7 @@ time.h
 linux/proc_fs.h
 -
 
-/home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_priv.h
+/home/user/linuxcnc/cmake/liblinuxcnchal_src/hal_priv.h
 rtapi.h
 -
 rtapi_mutex.h

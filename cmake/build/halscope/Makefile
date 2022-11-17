@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/halscope//CMakeFiles/progress.marks
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/halscope//CMakeFiles/progress.marks
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/clean
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 halscope/CMakeFiles/halscope.dir/rule:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/CMakeFiles/halscope.dir/rule
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halscope/CMakeFiles/halscope.dir/rule
 .PHONY : halscope/CMakeFiles/halscope.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ halscope: halscope/CMakeFiles/halscope.dir/rule
 
 # fast build rule for target.
 halscope/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/build
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/build
 .PHONY : halscope/fast
 
 __/common_src/miscgtk.o: __/common_src/miscgtk.c.o
@@ -196,7 +196,7 @@ __/common_src/miscgtk.o: __/common_src/miscgtk.c.o
 
 # target to build an object file
 __/common_src/miscgtk.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/common_src/miscgtk.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/common_src/miscgtk.c.o
 .PHONY : __/common_src/miscgtk.c.o
 
 __/common_src/miscgtk.i: __/common_src/miscgtk.c.i
@@ -205,7 +205,7 @@ __/common_src/miscgtk.i: __/common_src/miscgtk.c.i
 
 # target to preprocess a source file
 __/common_src/miscgtk.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/common_src/miscgtk.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/common_src/miscgtk.c.i
 .PHONY : __/common_src/miscgtk.c.i
 
 __/common_src/miscgtk.s: __/common_src/miscgtk.c.s
@@ -214,7 +214,7 @@ __/common_src/miscgtk.s: __/common_src/miscgtk.c.s
 
 # target to generate assembly for a file
 __/common_src/miscgtk.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/common_src/miscgtk.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/common_src/miscgtk.c.s
 .PHONY : __/common_src/miscgtk.c.s
 
 __/halscope_src/scope.o: __/halscope_src/scope.c.o
@@ -223,7 +223,7 @@ __/halscope_src/scope.o: __/halscope_src/scope.c.o
 
 # target to build an object file
 __/halscope_src/scope.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope.c.o
 .PHONY : __/halscope_src/scope.c.o
 
 __/halscope_src/scope.i: __/halscope_src/scope.c.i
@@ -232,7 +232,7 @@ __/halscope_src/scope.i: __/halscope_src/scope.c.i
 
 # target to preprocess a source file
 __/halscope_src/scope.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope.c.i
 .PHONY : __/halscope_src/scope.c.i
 
 __/halscope_src/scope.s: __/halscope_src/scope.c.s
@@ -241,7 +241,7 @@ __/halscope_src/scope.s: __/halscope_src/scope.c.s
 
 # target to generate assembly for a file
 __/halscope_src/scope.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope.c.s
 .PHONY : __/halscope_src/scope.c.s
 
 __/halscope_src/scope_disp.o: __/halscope_src/scope_disp.c.o
@@ -250,7 +250,7 @@ __/halscope_src/scope_disp.o: __/halscope_src/scope_disp.c.o
 
 # target to build an object file
 __/halscope_src/scope_disp.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.o
 .PHONY : __/halscope_src/scope_disp.c.o
 
 __/halscope_src/scope_disp.i: __/halscope_src/scope_disp.c.i
@@ -259,7 +259,7 @@ __/halscope_src/scope_disp.i: __/halscope_src/scope_disp.c.i
 
 # target to preprocess a source file
 __/halscope_src/scope_disp.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.i
 .PHONY : __/halscope_src/scope_disp.c.i
 
 __/halscope_src/scope_disp.s: __/halscope_src/scope_disp.c.s
@@ -268,7 +268,7 @@ __/halscope_src/scope_disp.s: __/halscope_src/scope_disp.c.s
 
 # target to generate assembly for a file
 __/halscope_src/scope_disp.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.s
 .PHONY : __/halscope_src/scope_disp.c.s
 
 __/halscope_src/scope_files.o: __/halscope_src/scope_files.c.o
@@ -277,7 +277,7 @@ __/halscope_src/scope_files.o: __/halscope_src/scope_files.c.o
 
 # target to build an object file
 __/halscope_src/scope_files.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o
 .PHONY : __/halscope_src/scope_files.c.o
 
 __/halscope_src/scope_files.i: __/halscope_src/scope_files.c.i
@@ -286,7 +286,7 @@ __/halscope_src/scope_files.i: __/halscope_src/scope_files.c.i
 
 # target to preprocess a source file
 __/halscope_src/scope_files.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.i
 .PHONY : __/halscope_src/scope_files.c.i
 
 __/halscope_src/scope_files.s: __/halscope_src/scope_files.c.s
@@ -295,7 +295,7 @@ __/halscope_src/scope_files.s: __/halscope_src/scope_files.c.s
 
 # target to generate assembly for a file
 __/halscope_src/scope_files.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.s
 .PHONY : __/halscope_src/scope_files.c.s
 
 __/halscope_src/scope_horiz.o: __/halscope_src/scope_horiz.c.o
@@ -304,7 +304,7 @@ __/halscope_src/scope_horiz.o: __/halscope_src/scope_horiz.c.o
 
 # target to build an object file
 __/halscope_src/scope_horiz.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_horiz.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_horiz.c.o
 .PHONY : __/halscope_src/scope_horiz.c.o
 
 __/halscope_src/scope_horiz.i: __/halscope_src/scope_horiz.c.i
@@ -313,7 +313,7 @@ __/halscope_src/scope_horiz.i: __/halscope_src/scope_horiz.c.i
 
 # target to preprocess a source file
 __/halscope_src/scope_horiz.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_horiz.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_horiz.c.i
 .PHONY : __/halscope_src/scope_horiz.c.i
 
 __/halscope_src/scope_horiz.s: __/halscope_src/scope_horiz.c.s
@@ -322,7 +322,7 @@ __/halscope_src/scope_horiz.s: __/halscope_src/scope_horiz.c.s
 
 # target to generate assembly for a file
 __/halscope_src/scope_horiz.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_horiz.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_horiz.c.s
 .PHONY : __/halscope_src/scope_horiz.c.s
 
 __/halscope_src/scope_trig.o: __/halscope_src/scope_trig.c.o
@@ -331,7 +331,7 @@ __/halscope_src/scope_trig.o: __/halscope_src/scope_trig.c.o
 
 # target to build an object file
 __/halscope_src/scope_trig.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_trig.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_trig.c.o
 .PHONY : __/halscope_src/scope_trig.c.o
 
 __/halscope_src/scope_trig.i: __/halscope_src/scope_trig.c.i
@@ -340,7 +340,7 @@ __/halscope_src/scope_trig.i: __/halscope_src/scope_trig.c.i
 
 # target to preprocess a source file
 __/halscope_src/scope_trig.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_trig.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_trig.c.i
 .PHONY : __/halscope_src/scope_trig.c.i
 
 __/halscope_src/scope_trig.s: __/halscope_src/scope_trig.c.s
@@ -349,7 +349,7 @@ __/halscope_src/scope_trig.s: __/halscope_src/scope_trig.c.s
 
 # target to generate assembly for a file
 __/halscope_src/scope_trig.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_trig.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_trig.c.s
 .PHONY : __/halscope_src/scope_trig.c.s
 
 __/halscope_src/scope_vert.o: __/halscope_src/scope_vert.c.o
@@ -358,7 +358,7 @@ __/halscope_src/scope_vert.o: __/halscope_src/scope_vert.c.o
 
 # target to build an object file
 __/halscope_src/scope_vert.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_vert.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_vert.c.o
 .PHONY : __/halscope_src/scope_vert.c.o
 
 __/halscope_src/scope_vert.i: __/halscope_src/scope_vert.c.i
@@ -367,7 +367,7 @@ __/halscope_src/scope_vert.i: __/halscope_src/scope_vert.c.i
 
 # target to preprocess a source file
 __/halscope_src/scope_vert.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_vert.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_vert.c.i
 .PHONY : __/halscope_src/scope_vert.c.i
 
 __/halscope_src/scope_vert.s: __/halscope_src/scope_vert.c.s
@@ -376,7 +376,7 @@ __/halscope_src/scope_vert.s: __/halscope_src/scope_vert.c.s
 
 # target to generate assembly for a file
 __/halscope_src/scope_vert.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_vert.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_vert.c.s
 .PHONY : __/halscope_src/scope_vert.c.s
 
 # Help Target
@@ -424,6 +424,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

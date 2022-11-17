@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/lcncladdertest/cmake/common_src/miscgtk.c" "/home/user/lcncladdertest/cmake/build/halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o"
-  "/home/user/lcncladdertest/cmake/halmeter_src/meter.c" "/home/user/lcncladdertest/cmake/build/halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o"
+  "/home/user/linuxcnc/cmake/common_src/miscgtk.c" "/home/user/linuxcnc/cmake/build/halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o"
+  "/home/user/linuxcnc/cmake/halmeter_src/meter.c" "/home/user/linuxcnc/cmake/build/halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -44,7 +44,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/user/lcncladdertest/cmake/build/liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/DependInfo.cmake"
+  "/home/user/linuxcnc/cmake/build/liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

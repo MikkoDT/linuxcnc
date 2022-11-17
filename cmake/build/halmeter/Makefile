@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/halmeter//CMakeFiles/progress.marks
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/halmeter//CMakeFiles/progress.marks
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/clean
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 halmeter/CMakeFiles/halmeter.dir/rule:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/CMakeFiles/halmeter.dir/rule
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/CMakeFiles/halmeter.dir/rule
 .PHONY : halmeter/CMakeFiles/halmeter.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ halmeter: halmeter/CMakeFiles/halmeter.dir/rule
 
 # fast build rule for target.
 halmeter/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/build
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/build
 .PHONY : halmeter/fast
 
 __/common_src/miscgtk.o: __/common_src/miscgtk.c.o
@@ -196,7 +196,7 @@ __/common_src/miscgtk.o: __/common_src/miscgtk.c.o
 
 # target to build an object file
 __/common_src/miscgtk.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o
 .PHONY : __/common_src/miscgtk.c.o
 
 __/common_src/miscgtk.i: __/common_src/miscgtk.c.i
@@ -205,7 +205,7 @@ __/common_src/miscgtk.i: __/common_src/miscgtk.c.i
 
 # target to preprocess a source file
 __/common_src/miscgtk.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.i
 .PHONY : __/common_src/miscgtk.c.i
 
 __/common_src/miscgtk.s: __/common_src/miscgtk.c.s
@@ -214,7 +214,7 @@ __/common_src/miscgtk.s: __/common_src/miscgtk.c.s
 
 # target to generate assembly for a file
 __/common_src/miscgtk.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.s
 .PHONY : __/common_src/miscgtk.c.s
 
 __/halmeter_src/meter.o: __/halmeter_src/meter.c.o
@@ -223,7 +223,7 @@ __/halmeter_src/meter.o: __/halmeter_src/meter.c.o
 
 # target to build an object file
 __/halmeter_src/meter.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o
 .PHONY : __/halmeter_src/meter.c.o
 
 __/halmeter_src/meter.i: __/halmeter_src/meter.c.i
@@ -232,7 +232,7 @@ __/halmeter_src/meter.i: __/halmeter_src/meter.c.i
 
 # target to preprocess a source file
 __/halmeter_src/meter.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.i
 .PHONY : __/halmeter_src/meter.c.i
 
 __/halmeter_src/meter.s: __/halmeter_src/meter.c.s
@@ -241,7 +241,7 @@ __/halmeter_src/meter.s: __/halmeter_src/meter.c.s
 
 # target to generate assembly for a file
 __/halmeter_src/meter.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.s
 .PHONY : __/halmeter_src/meter.c.s
 
 # Help Target
@@ -274,6 +274,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

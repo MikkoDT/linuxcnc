@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/lcncladdertest/cmake/emc_src/emcglb.c" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.o"
-  "/home/user/lcncladdertest/cmake/emc_src/emcpose.c" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.o"
+  "/home/user/linuxcnc/cmake/emc_src/emcglb.c" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.o"
+  "/home/user/linuxcnc/cmake/emc_src/emcpose.c" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -26,18 +26,18 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "liblinuxcnc"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/lcncladdertest/cmake/emc_src/canon_position.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/emc.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/emcIniFile.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/emcargs.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/emcops.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/iniaxis.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/inihal.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/inijoint.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/inispindle.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/initraj.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/interpl.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o"
-  "/home/user/lcncladdertest/cmake/emc_src/modal_state.cc" "/home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/canon_position.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/emc.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/emcIniFile.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/emcargs.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/emcops.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/iniaxis.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/inihal.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/inijoint.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/inispindle.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/initraj.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/interpl.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o"
+  "/home/user/linuxcnc/cmake/emc_src/modal_state.cc" "/home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

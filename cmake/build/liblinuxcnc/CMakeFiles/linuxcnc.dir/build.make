@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 # Include any dependencies generated for this target.
 include liblinuxcnc/CMakeFiles/linuxcnc.dir/depend.make
@@ -78,185 +78,185 @@ include liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.o: ../emc_src/emcglb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.o -c /home/user/lcncladdertest/cmake/emc_src/emcglb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.o -c /home/user/linuxcnc/cmake/emc_src/emcglb.c
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/emcglb.c > CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/emcglb.c > CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/emcglb.c -o CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/emcglb.c -o CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.o: ../emc_src/modal_state.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.o -c /home/user/lcncladdertest/cmake/emc_src/modal_state.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.o -c /home/user/linuxcnc/cmake/emc_src/modal_state.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/modal_state.cc > CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/modal_state.cc > CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/modal_state.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/modal_state.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.o: ../emc_src/emc.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.o -c /home/user/lcncladdertest/cmake/emc_src/emc.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.o -c /home/user/linuxcnc/cmake/emc_src/emc.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/emc.cc > CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/emc.cc > CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/emc.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/emc.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.o: ../emc_src/emcpose.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.o -c /home/user/lcncladdertest/cmake/emc_src/emcpose.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.o -c /home/user/linuxcnc/cmake/emc_src/emcpose.c
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/emcpose.c > CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/emcpose.c > CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/emcpose.c -o CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/emcpose.c -o CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.o: ../emc_src/emcargs.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.o -c /home/user/lcncladdertest/cmake/emc_src/emcargs.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.o -c /home/user/linuxcnc/cmake/emc_src/emcargs.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/emcargs.cc > CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/emcargs.cc > CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/emcargs.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/emcargs.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.o: ../emc_src/emcops.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.o -c /home/user/lcncladdertest/cmake/emc_src/emcops.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.o -c /home/user/linuxcnc/cmake/emc_src/emcops.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/emcops.cc > CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/emcops.cc > CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/emcops.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/emcops.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.o: ../emc_src/canon_position.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.o -c /home/user/lcncladdertest/cmake/emc_src/canon_position.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.o -c /home/user/linuxcnc/cmake/emc_src/canon_position.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/canon_position.cc > CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/canon_position.cc > CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/canon_position.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/canon_position.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.o: ../emc_src/emcIniFile.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.o -c /home/user/lcncladdertest/cmake/emc_src/emcIniFile.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.o -c /home/user/linuxcnc/cmake/emc_src/emcIniFile.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/emcIniFile.cc > CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/emcIniFile.cc > CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/emcIniFile.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/emcIniFile.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.o: ../emc_src/iniaxis.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.o -c /home/user/lcncladdertest/cmake/emc_src/iniaxis.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.o -c /home/user/linuxcnc/cmake/emc_src/iniaxis.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/iniaxis.cc > CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/iniaxis.cc > CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/iniaxis.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/iniaxis.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.o: ../emc_src/inijoint.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.o -c /home/user/lcncladdertest/cmake/emc_src/inijoint.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.o -c /home/user/linuxcnc/cmake/emc_src/inijoint.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/inijoint.cc > CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/inijoint.cc > CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/inijoint.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/inijoint.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.o: ../emc_src/inispindle.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.o -c /home/user/lcncladdertest/cmake/emc_src/inispindle.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.o -c /home/user/linuxcnc/cmake/emc_src/inispindle.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/inispindle.cc > CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/inispindle.cc > CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/inispindle.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/inispindle.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.o: ../emc_src/initraj.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.o -c /home/user/lcncladdertest/cmake/emc_src/initraj.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.o -c /home/user/linuxcnc/cmake/emc_src/initraj.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/initraj.cc > CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/initraj.cc > CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/initraj.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/initraj.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.o: ../emc_src/inihal.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.o -c /home/user/lcncladdertest/cmake/emc_src/inihal.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.o -c /home/user/linuxcnc/cmake/emc_src/inihal.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/inihal.cc > CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/inihal.cc > CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/inihal.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/inihal.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.s
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o: liblinuxcnc/CMakeFiles/linuxcnc.dir/flags.make
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o: ../emc_src/interpl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o -c /home/user/lcncladdertest/cmake/emc_src/interpl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o -c /home/user/linuxcnc/cmake/emc_src/interpl.cc
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.i"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/emc_src/interpl.cc > CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.i
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/emc_src/interpl.cc > CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.i
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.s"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/emc_src/interpl.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.s
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/emc_src/interpl.cc -o CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.s
 
 # Object files for target linuxcnc
 linuxcnc_OBJECTS = \
@@ -294,9 +294,9 @@ liblinuxcnc/liblinuxcnc.a: liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal
 liblinuxcnc/liblinuxcnc.a: liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o
 liblinuxcnc/liblinuxcnc.a: liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make
 liblinuxcnc/liblinuxcnc.a: liblinuxcnc/CMakeFiles/linuxcnc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library liblinuxcnc.a"
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && $(CMAKE_COMMAND) -P CMakeFiles/linuxcnc.dir/cmake_clean_target.cmake
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linuxcnc.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library liblinuxcnc.a"
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && $(CMAKE_COMMAND) -P CMakeFiles/linuxcnc.dir/cmake_clean_target.cmake
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linuxcnc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 liblinuxcnc/CMakeFiles/linuxcnc.dir/build: liblinuxcnc/liblinuxcnc.a
@@ -304,10 +304,10 @@ liblinuxcnc/CMakeFiles/linuxcnc.dir/build: liblinuxcnc/liblinuxcnc.a
 .PHONY : liblinuxcnc/CMakeFiles/linuxcnc.dir/build
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/clean:
-	cd /home/user/lcncladdertest/cmake/build/liblinuxcnc && $(CMAKE_COMMAND) -P CMakeFiles/linuxcnc.dir/cmake_clean.cmake
+	cd /home/user/linuxcnc/cmake/build/liblinuxcnc && $(CMAKE_COMMAND) -P CMakeFiles/linuxcnc.dir/cmake_clean.cmake
 .PHONY : liblinuxcnc/CMakeFiles/linuxcnc.dir/clean
 
 liblinuxcnc/CMakeFiles/linuxcnc.dir/depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/liblinuxcnc /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/liblinuxcnc /home/user/lcncladdertest/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/liblinuxcnc /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/liblinuxcnc /home/user/linuxcnc/cmake/build/liblinuxcnc/CMakeFiles/linuxcnc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : liblinuxcnc/CMakeFiles/linuxcnc.dir/depend
 

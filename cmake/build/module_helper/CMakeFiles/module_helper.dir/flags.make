@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DULAPI -Dmodule_helper_EXPORTS
 
-C_INCLUDES = -I/home/user/lcncladdertest/cmake/module_helper -I/home/user/lcncladdertest/cmake/module_helper/../common_src -I/home/user/lcncladdertest/cmake/module_helper/../module_helper_src -I/home/user/lcncladdertest/cmake/build/module_helper
+C_INCLUDES = -I/home/user/linuxcnc/cmake/module_helper -I/home/user/linuxcnc/cmake/module_helper/../common_src -I/home/user/linuxcnc/cmake/module_helper/../module_helper_src -I/home/user/linuxcnc/cmake/build/module_helper
 
 C_FLAGS = -fPIC
 

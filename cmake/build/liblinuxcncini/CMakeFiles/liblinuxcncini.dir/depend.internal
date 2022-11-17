@@ -4,6 +4,6 @@
 liblinuxcncini/CMakeFiles/liblinuxcncini.dir/__/liblinuxcncini_src/inifile.cc.o
  ../common_src/config.h
  ../liblinuxcncini_src/inifile.h
- /home/user/lcncladdertest/cmake/common_src/linuxcnc.h
- /home/user/lcncladdertest/cmake/liblinuxcncini_src/inifile.cc
- /home/user/lcncladdertest/cmake/liblinuxcncini_src/inifile.hh
+ /home/user/linuxcnc/cmake/common_src/linuxcnc.h
+ /home/user/linuxcnc/cmake/liblinuxcncini_src/inifile.cc
+ /home/user/linuxcnc/cmake/liblinuxcncini_src/inifile.hh

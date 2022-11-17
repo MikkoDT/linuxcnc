@@ -1953,6 +1953,11 @@ halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.o: /usr/include/pa
 halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.o: /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h
 
 halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o: ../common_src/miscgtk.h
+halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o: ../liblinuxcnchal_src/hal.h
+halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o: ../rtapi_src/rtapi.h
+halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o: ../rtapi_src/rtapi_bool.h
+halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o: ../rtapi_src/rtapi_errno.h
+halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o: ../rtapi_src/rtapi_stdint.h
 halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o: ../halscope_src/scope_files.c
 halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o: ../halscope_src/scope_shm.h
 halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o: ../halscope_src/scope_usr.h

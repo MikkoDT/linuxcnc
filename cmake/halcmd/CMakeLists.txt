@@ -29,10 +29,20 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 add_definitions(-DULAPI)
 
 # Set include paths for libraries to link.
-# target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR})
+add_library(linuxcncini SHARED IMPORTED) # or STATIC instead of SHARED
+set_target_properties(linuxcncini PROPERTIES
+  IMPORTED_LOCATION "${SRC_DIR}/../build/liblinuxcncini/liblinuxcncini.so"
+  INTERFACE_INCLUDE_DIRECTORIES "${SRC_DIR}/../../include"
+)
+
+add_library(nml SHARED IMPORTED) # or STATIC instead of SHARED
+set_target_properties(nml PROPERTIES
+  IMPORTED_LOCATION "${SRC_DIR}/../build/libnml/libnml.so"
+  INTERFACE_INCLUDE_DIRECTORIES "${SRC_DIR}/../libnml_src"
+)
 
 # Link to libraries.
-target_link_libraries(${PROJECT_NAME} PRIVATE readline libnml liblinuxcncini)
+target_link_libraries(${PROJECT_NAME} PRIVATE readline nml linuxcncini)
 
 # Set custom output name :
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)

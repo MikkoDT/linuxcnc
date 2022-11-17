@@ -12,9 +12,9 @@
 stdio.h
 -
 
-/home/user/lcncladdertest/cmake/common_src/linuxcnc.h
+/home/user/linuxcnc/cmake/common_src/linuxcnc.h
 
-/home/user/lcncladdertest/cmake/liblinuxcncini_src/inifile.cc
+/home/user/linuxcnc/cmake/liblinuxcncini_src/inifile.cc
 stdio.h
 -
 stdlib.h
@@ -26,13 +26,13 @@ ctype.h
 fcntl.h
 -
 config.h
-/home/user/lcncladdertest/cmake/liblinuxcncini_src/config.h
+/home/user/linuxcnc/cmake/liblinuxcncini_src/config.h
 ../common_src/linuxcnc.h
-/home/user/lcncladdertest/cmake/common_src/linuxcnc.h
+/home/user/linuxcnc/cmake/common_src/linuxcnc.h
 inifile.hh
-/home/user/lcncladdertest/cmake/liblinuxcncini_src/inifile.hh
+/home/user/linuxcnc/cmake/liblinuxcncini_src/inifile.hh
 
-/home/user/lcncladdertest/cmake/liblinuxcncini_src/inifile.hh
+/home/user/linuxcnc/cmake/liblinuxcncini_src/inifile.hh
 inifile.h
 -
 string

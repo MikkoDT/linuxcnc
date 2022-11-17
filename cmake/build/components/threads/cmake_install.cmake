@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/lcncladdertest/cmake/components/threads
+# Install script for directory: /home/user/linuxcnc/cmake/components/threads
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,29 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/components/threads/threads.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/components/threads/threads.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/components/threads/threads.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/components/threads/threads.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/components/threads/threads.so"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/components/threads/threads.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/lcncladdertest/cmake/components/threads/threads.so")
+   "/home/user/linuxcnc/cmake/components/threads/threads.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/lcncladdertest/cmake/components/threads" TYPE SHARED_LIBRARY FILES "/home/user/lcncladdertest/cmake/build/components/threads/threads.so")
-  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/components/threads/threads.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/components/threads/threads.so")
+file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/components/threads" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/cmake/build/components/threads/threads.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/components/threads/threads.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/components/threads/threads.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/components/threads/threads.so"
-         OLD_RPATH "/home/user/lcncladdertest/cmake/build/liblinuxcnchal:"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/components/threads/threads.so"
+         OLD_RPATH "/home/user/linuxcnc/cmake/components/threads/../../build/liblinuxcnchal:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/components/threads/threads.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/components/threads/threads.so")
     endif()
   endif()
 endif()

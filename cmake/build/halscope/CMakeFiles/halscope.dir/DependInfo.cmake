@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/lcncladdertest/cmake/common_src/miscgtk.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/common_src/miscgtk.c.o"
-  "/home/user/lcncladdertest/cmake/halscope_src/scope.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope.c.o"
-  "/home/user/lcncladdertest/cmake/halscope_src/scope_disp.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.o"
-  "/home/user/lcncladdertest/cmake/halscope_src/scope_files.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o"
-  "/home/user/lcncladdertest/cmake/halscope_src/scope_horiz.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_horiz.c.o"
-  "/home/user/lcncladdertest/cmake/halscope_src/scope_trig.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_trig.c.o"
-  "/home/user/lcncladdertest/cmake/halscope_src/scope_vert.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_vert.c.o"
+  "/home/user/linuxcnc/cmake/common_src/miscgtk.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/common_src/miscgtk.c.o"
+  "/home/user/linuxcnc/cmake/halscope_src/scope.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope.c.o"
+  "/home/user/linuxcnc/cmake/halscope_src/scope_disp.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.o"
+  "/home/user/linuxcnc/cmake/halscope_src/scope_files.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o"
+  "/home/user/linuxcnc/cmake/halscope_src/scope_horiz.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_horiz.c.o"
+  "/home/user/linuxcnc/cmake/halscope_src/scope_trig.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_trig.c.o"
+  "/home/user/linuxcnc/cmake/halscope_src/scope_vert.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_vert.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

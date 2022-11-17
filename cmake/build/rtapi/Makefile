@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/rtapi//CMakeFiles/progress.marks
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/rtapi//CMakeFiles/progress.marks
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/clean
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 rtapi/CMakeFiles/rtapi.dir/rule:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/CMakeFiles/rtapi.dir/rule
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rtapi/CMakeFiles/rtapi.dir/rule
 .PHONY : rtapi/CMakeFiles/rtapi.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ rtapi: rtapi/CMakeFiles/rtapi.dir/rule
 
 # fast build rule for target.
 rtapi/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/build
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/build
 .PHONY : rtapi/fast
 
 __/rtapi_src/rtapi_pci.o: __/rtapi_src/rtapi_pci.cc.o
@@ -196,7 +196,7 @@ __/rtapi_src/rtapi_pci.o: __/rtapi_src/rtapi_pci.cc.o
 
 # target to build an object file
 __/rtapi_src/rtapi_pci.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o
 .PHONY : __/rtapi_src/rtapi_pci.cc.o
 
 __/rtapi_src/rtapi_pci.i: __/rtapi_src/rtapi_pci.cc.i
@@ -205,7 +205,7 @@ __/rtapi_src/rtapi_pci.i: __/rtapi_src/rtapi_pci.cc.i
 
 # target to preprocess a source file
 __/rtapi_src/rtapi_pci.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.i
 .PHONY : __/rtapi_src/rtapi_pci.cc.i
 
 __/rtapi_src/rtapi_pci.s: __/rtapi_src/rtapi_pci.cc.s
@@ -214,7 +214,7 @@ __/rtapi_src/rtapi_pci.s: __/rtapi_src/rtapi_pci.cc.s
 
 # target to generate assembly for a file
 __/rtapi_src/rtapi_pci.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.s
 .PHONY : __/rtapi_src/rtapi_pci.cc.s
 
 __/rtapi_src/uspace_rtapi_app.o: __/rtapi_src/uspace_rtapi_app.cc.o
@@ -223,7 +223,7 @@ __/rtapi_src/uspace_rtapi_app.o: __/rtapi_src/uspace_rtapi_app.cc.o
 
 # target to build an object file
 __/rtapi_src/uspace_rtapi_app.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.o
 .PHONY : __/rtapi_src/uspace_rtapi_app.cc.o
 
 __/rtapi_src/uspace_rtapi_app.i: __/rtapi_src/uspace_rtapi_app.cc.i
@@ -232,7 +232,7 @@ __/rtapi_src/uspace_rtapi_app.i: __/rtapi_src/uspace_rtapi_app.cc.i
 
 # target to preprocess a source file
 __/rtapi_src/uspace_rtapi_app.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.i
 .PHONY : __/rtapi_src/uspace_rtapi_app.cc.i
 
 __/rtapi_src/uspace_rtapi_app.s: __/rtapi_src/uspace_rtapi_app.cc.s
@@ -241,7 +241,7 @@ __/rtapi_src/uspace_rtapi_app.s: __/rtapi_src/uspace_rtapi_app.cc.s
 
 # target to generate assembly for a file
 __/rtapi_src/uspace_rtapi_app.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.s
 .PHONY : __/rtapi_src/uspace_rtapi_app.cc.s
 
 __/rtapi_src/uspace_rtapi_parport.o: __/rtapi_src/uspace_rtapi_parport.cc.o
@@ -250,7 +250,7 @@ __/rtapi_src/uspace_rtapi_parport.o: __/rtapi_src/uspace_rtapi_parport.cc.o
 
 # target to build an object file
 __/rtapi_src/uspace_rtapi_parport.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.o
 .PHONY : __/rtapi_src/uspace_rtapi_parport.cc.o
 
 __/rtapi_src/uspace_rtapi_parport.i: __/rtapi_src/uspace_rtapi_parport.cc.i
@@ -259,7 +259,7 @@ __/rtapi_src/uspace_rtapi_parport.i: __/rtapi_src/uspace_rtapi_parport.cc.i
 
 # target to preprocess a source file
 __/rtapi_src/uspace_rtapi_parport.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.i
 .PHONY : __/rtapi_src/uspace_rtapi_parport.cc.i
 
 __/rtapi_src/uspace_rtapi_parport.s: __/rtapi_src/uspace_rtapi_parport.cc.s
@@ -268,7 +268,7 @@ __/rtapi_src/uspace_rtapi_parport.s: __/rtapi_src/uspace_rtapi_parport.cc.s
 
 # target to generate assembly for a file
 __/rtapi_src/uspace_rtapi_parport.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.s
 .PHONY : __/rtapi_src/uspace_rtapi_parport.cc.s
 
 __/rtapi_src/uspace_rtapi_string.o: __/rtapi_src/uspace_rtapi_string.c.o
@@ -277,7 +277,7 @@ __/rtapi_src/uspace_rtapi_string.o: __/rtapi_src/uspace_rtapi_string.c.o
 
 # target to build an object file
 __/rtapi_src/uspace_rtapi_string.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o
 .PHONY : __/rtapi_src/uspace_rtapi_string.c.o
 
 __/rtapi_src/uspace_rtapi_string.i: __/rtapi_src/uspace_rtapi_string.c.i
@@ -286,7 +286,7 @@ __/rtapi_src/uspace_rtapi_string.i: __/rtapi_src/uspace_rtapi_string.c.i
 
 # target to preprocess a source file
 __/rtapi_src/uspace_rtapi_string.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.i
 .PHONY : __/rtapi_src/uspace_rtapi_string.c.i
 
 __/rtapi_src/uspace_rtapi_string.s: __/rtapi_src/uspace_rtapi_string.c.s
@@ -295,7 +295,7 @@ __/rtapi_src/uspace_rtapi_string.s: __/rtapi_src/uspace_rtapi_string.c.s
 
 # target to generate assembly for a file
 __/rtapi_src/uspace_rtapi_string.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi.dir/build.make rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.s
 .PHONY : __/rtapi_src/uspace_rtapi_string.c.s
 
 # Help Target
@@ -334,6 +334,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

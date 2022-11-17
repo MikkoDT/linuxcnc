@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 # Include any dependencies generated for this target.
 include hal_lib/CMakeFiles/hal_lib.dir/depend.make
@@ -78,16 +78,16 @@ include hal_lib/CMakeFiles/hal_lib.dir/flags.make
 
 hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o: hal_lib/CMakeFiles/hal_lib.dir/flags.make
 hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o: ../liblinuxcnchal_src/hal_lib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o"
-	cd /home/user/lcncladdertest/cmake/build/hal_lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o -c /home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o"
+	cd /home/user/linuxcnc/cmake/build/hal_lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o -c /home/user/linuxcnc/cmake/liblinuxcnchal_src/hal_lib.c
 
 hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.i"
-	cd /home/user/lcncladdertest/cmake/build/hal_lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_lib.c > CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.i
+	cd /home/user/linuxcnc/cmake/build/hal_lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/liblinuxcnchal_src/hal_lib.c > CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.i
 
 hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.s"
-	cd /home/user/lcncladdertest/cmake/build/hal_lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_lib.c -o CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.s
+	cd /home/user/linuxcnc/cmake/build/hal_lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/liblinuxcnchal_src/hal_lib.c -o CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.s
 
 # Object files for target hal_lib
 hal_lib_OBJECTS = \
@@ -99,9 +99,9 @@ hal_lib_EXTERNAL_OBJECTS =
 hal_lib/hal_lib.so.0: hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o
 hal_lib/hal_lib.so.0: hal_lib/CMakeFiles/hal_lib.dir/build.make
 hal_lib/hal_lib.so.0: hal_lib/CMakeFiles/hal_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library hal_lib.so"
-	cd /home/user/lcncladdertest/cmake/build/hal_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hal_lib.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/user/lcncladdertest/cmake/build/hal_lib && $(CMAKE_COMMAND) -E cmake_symlink_library hal_lib.so.0 hal_lib.so.0 hal_lib.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library hal_lib.so"
+	cd /home/user/linuxcnc/cmake/build/hal_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hal_lib.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/user/linuxcnc/cmake/build/hal_lib && $(CMAKE_COMMAND) -E cmake_symlink_library hal_lib.so.0 hal_lib.so.0 hal_lib.so
 
 hal_lib/hal_lib.so: hal_lib/hal_lib.so.0
 	@$(CMAKE_COMMAND) -E touch_nocreate hal_lib/hal_lib.so
@@ -112,10 +112,10 @@ hal_lib/CMakeFiles/hal_lib.dir/build: hal_lib/hal_lib.so
 .PHONY : hal_lib/CMakeFiles/hal_lib.dir/build
 
 hal_lib/CMakeFiles/hal_lib.dir/clean:
-	cd /home/user/lcncladdertest/cmake/build/hal_lib && $(CMAKE_COMMAND) -P CMakeFiles/hal_lib.dir/cmake_clean.cmake
+	cd /home/user/linuxcnc/cmake/build/hal_lib && $(CMAKE_COMMAND) -P CMakeFiles/hal_lib.dir/cmake_clean.cmake
 .PHONY : hal_lib/CMakeFiles/hal_lib.dir/clean
 
 hal_lib/CMakeFiles/hal_lib.dir/depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/hal_lib /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/hal_lib /home/user/lcncladdertest/cmake/build/hal_lib/CMakeFiles/hal_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/hal_lib /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/hal_lib /home/user/linuxcnc/cmake/build/hal_lib/CMakeFiles/hal_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hal_lib/CMakeFiles/hal_lib.dir/depend
 

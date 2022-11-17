@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DULAPI
 
-CXX_INCLUDES = -I/home/user/lcncladdertest/cmake/halui -I/home/user/lcncladdertest/lib -I/home/user/lcncladdertest/src/emc/tooldata -I/home/user/lcncladdertest/cmake/build/halui -I/home/user/lcncladdertest/cmake/halui/../halui_src -isystem /home/user/lcncladdertest/include
+CXX_INCLUDES = -I/home/user/linuxcnc/cmake/halui -I/home/user/linuxcnc/lib -I/home/user/linuxcnc/include -I/home/user/linuxcnc/src/emc/tooldata -I/home/user/linuxcnc/cmake/build/halui -I/home/user/linuxcnc/cmake/halui/../halui_src -isystem /home/user/linuxcnc/cmake/halui/../libnml_src -isystem /home/user/linuxcnc/cmake/halui/../liblinuxcnchal_src -isystem /home/user/linuxcnc/cmake/halui/../liblinuxcncini_src -isystem /home/user/linuxcnc/cmake/halui/../liblinuxcnc_src -isystem /home/user/linuxcnc/cmake/halui/../libtooldata_src
 
 CXX_FLAGS = 
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/lcncladdertest/cmake/components/threads_src/threads.c" "/home/user/lcncladdertest/cmake/build/components/threads/CMakeFiles/threads.dir/__/threads_src/threads.c.o"
+  "/home/user/linuxcnc/cmake/components/threads_src/threads.c" "/home/user/linuxcnc/cmake/build/components/threads/CMakeFiles/threads.dir/__/threads_src/threads.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -23,12 +23,11 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../components/threads/../../rtapi_src"
   "../components/threads/../../liblinuxcnchal_src"
   "../components/threads/../components/threads_src"
-  "components/threads/lib/liblinuxcnchal"
+  "../components/threads/../../liblinuxcnchal"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/user/lcncladdertest/cmake/build/liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

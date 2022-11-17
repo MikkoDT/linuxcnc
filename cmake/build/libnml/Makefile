@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/libnml//CMakeFiles/progress.marks
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/libnml//CMakeFiles/progress.marks
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/clean
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libnml/CMakeFiles/libnml.dir/rule:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/CMakeFiles/libnml.dir/rule
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/CMakeFiles/libnml.dir/rule
 .PHONY : libnml/CMakeFiles/libnml.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ libnml: libnml/CMakeFiles/libnml.dir/rule
 
 # fast build rule for target.
 libnml/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/build
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/build
 .PHONY : libnml/fast
 
 __/libnml_src/_sem.o: __/libnml_src/_sem.c.o
@@ -196,7 +196,7 @@ __/libnml_src/_sem.o: __/libnml_src/_sem.c.o
 
 # target to build an object file
 __/libnml_src/_sem.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.o
 .PHONY : __/libnml_src/_sem.c.o
 
 __/libnml_src/_sem.i: __/libnml_src/_sem.c.i
@@ -205,7 +205,7 @@ __/libnml_src/_sem.i: __/libnml_src/_sem.c.i
 
 # target to preprocess a source file
 __/libnml_src/_sem.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.i
 .PHONY : __/libnml_src/_sem.c.i
 
 __/libnml_src/_sem.s: __/libnml_src/_sem.c.s
@@ -214,7 +214,7 @@ __/libnml_src/_sem.s: __/libnml_src/_sem.c.s
 
 # target to generate assembly for a file
 __/libnml_src/_sem.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.s
 .PHONY : __/libnml_src/_sem.c.s
 
 __/libnml_src/_shm.o: __/libnml_src/_shm.c.o
@@ -223,7 +223,7 @@ __/libnml_src/_shm.o: __/libnml_src/_shm.c.o
 
 # target to build an object file
 __/libnml_src/_shm.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.o
 .PHONY : __/libnml_src/_shm.c.o
 
 __/libnml_src/_shm.i: __/libnml_src/_shm.c.i
@@ -232,7 +232,7 @@ __/libnml_src/_shm.i: __/libnml_src/_shm.c.i
 
 # target to preprocess a source file
 __/libnml_src/_shm.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.i
 .PHONY : __/libnml_src/_shm.c.i
 
 __/libnml_src/_shm.s: __/libnml_src/_shm.c.s
@@ -241,7 +241,7 @@ __/libnml_src/_shm.s: __/libnml_src/_shm.c.s
 
 # target to generate assembly for a file
 __/libnml_src/_shm.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.s
 .PHONY : __/libnml_src/_shm.c.s
 
 __/libnml_src/_timer.o: __/libnml_src/_timer.c.o
@@ -250,7 +250,7 @@ __/libnml_src/_timer.o: __/libnml_src/_timer.c.o
 
 # target to build an object file
 __/libnml_src/_timer.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.o
 .PHONY : __/libnml_src/_timer.c.o
 
 __/libnml_src/_timer.i: __/libnml_src/_timer.c.i
@@ -259,7 +259,7 @@ __/libnml_src/_timer.i: __/libnml_src/_timer.c.i
 
 # target to preprocess a source file
 __/libnml_src/_timer.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.i
 .PHONY : __/libnml_src/_timer.c.i
 
 __/libnml_src/_timer.s: __/libnml_src/_timer.c.s
@@ -268,7 +268,7 @@ __/libnml_src/_timer.s: __/libnml_src/_timer.c.s
 
 # target to generate assembly for a file
 __/libnml_src/_timer.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.s
 .PHONY : __/libnml_src/_timer.c.s
 
 __/libnml_src/cmd_msg.o: __/libnml_src/cmd_msg.cc.o
@@ -277,7 +277,7 @@ __/libnml_src/cmd_msg.o: __/libnml_src/cmd_msg.cc.o
 
 # target to build an object file
 __/libnml_src/cmd_msg.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.o
 .PHONY : __/libnml_src/cmd_msg.cc.o
 
 __/libnml_src/cmd_msg.i: __/libnml_src/cmd_msg.cc.i
@@ -286,7 +286,7 @@ __/libnml_src/cmd_msg.i: __/libnml_src/cmd_msg.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cmd_msg.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.i
 .PHONY : __/libnml_src/cmd_msg.cc.i
 
 __/libnml_src/cmd_msg.s: __/libnml_src/cmd_msg.cc.s
@@ -295,7 +295,7 @@ __/libnml_src/cmd_msg.s: __/libnml_src/cmd_msg.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cmd_msg.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.s
 .PHONY : __/libnml_src/cmd_msg.cc.s
 
 __/libnml_src/cms.o: __/libnml_src/cms.cc.o
@@ -304,7 +304,7 @@ __/libnml_src/cms.o: __/libnml_src/cms.cc.o
 
 # target to build an object file
 __/libnml_src/cms.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.o
 .PHONY : __/libnml_src/cms.cc.o
 
 __/libnml_src/cms.i: __/libnml_src/cms.cc.i
@@ -313,7 +313,7 @@ __/libnml_src/cms.i: __/libnml_src/cms.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cms.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.i
 .PHONY : __/libnml_src/cms.cc.i
 
 __/libnml_src/cms.s: __/libnml_src/cms.cc.s
@@ -322,7 +322,7 @@ __/libnml_src/cms.s: __/libnml_src/cms.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cms.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.s
 .PHONY : __/libnml_src/cms.cc.s
 
 __/libnml_src/cms_aup.o: __/libnml_src/cms_aup.cc.o
@@ -331,7 +331,7 @@ __/libnml_src/cms_aup.o: __/libnml_src/cms_aup.cc.o
 
 # target to build an object file
 __/libnml_src/cms_aup.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.o
 .PHONY : __/libnml_src/cms_aup.cc.o
 
 __/libnml_src/cms_aup.i: __/libnml_src/cms_aup.cc.i
@@ -340,7 +340,7 @@ __/libnml_src/cms_aup.i: __/libnml_src/cms_aup.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cms_aup.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.i
 .PHONY : __/libnml_src/cms_aup.cc.i
 
 __/libnml_src/cms_aup.s: __/libnml_src/cms_aup.cc.s
@@ -349,7 +349,7 @@ __/libnml_src/cms_aup.s: __/libnml_src/cms_aup.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cms_aup.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.s
 .PHONY : __/libnml_src/cms_aup.cc.s
 
 __/libnml_src/cms_cfg.o: __/libnml_src/cms_cfg.cc.o
@@ -358,7 +358,7 @@ __/libnml_src/cms_cfg.o: __/libnml_src/cms_cfg.cc.o
 
 # target to build an object file
 __/libnml_src/cms_cfg.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.o
 .PHONY : __/libnml_src/cms_cfg.cc.o
 
 __/libnml_src/cms_cfg.i: __/libnml_src/cms_cfg.cc.i
@@ -367,7 +367,7 @@ __/libnml_src/cms_cfg.i: __/libnml_src/cms_cfg.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cms_cfg.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.i
 .PHONY : __/libnml_src/cms_cfg.cc.i
 
 __/libnml_src/cms_cfg.s: __/libnml_src/cms_cfg.cc.s
@@ -376,7 +376,7 @@ __/libnml_src/cms_cfg.s: __/libnml_src/cms_cfg.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cms_cfg.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.s
 .PHONY : __/libnml_src/cms_cfg.cc.s
 
 __/libnml_src/cms_dup.o: __/libnml_src/cms_dup.cc.o
@@ -385,7 +385,7 @@ __/libnml_src/cms_dup.o: __/libnml_src/cms_dup.cc.o
 
 # target to build an object file
 __/libnml_src/cms_dup.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.o
 .PHONY : __/libnml_src/cms_dup.cc.o
 
 __/libnml_src/cms_dup.i: __/libnml_src/cms_dup.cc.i
@@ -394,7 +394,7 @@ __/libnml_src/cms_dup.i: __/libnml_src/cms_dup.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cms_dup.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.i
 .PHONY : __/libnml_src/cms_dup.cc.i
 
 __/libnml_src/cms_dup.s: __/libnml_src/cms_dup.cc.s
@@ -403,7 +403,7 @@ __/libnml_src/cms_dup.s: __/libnml_src/cms_dup.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cms_dup.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.s
 .PHONY : __/libnml_src/cms_dup.cc.s
 
 __/libnml_src/cms_in.o: __/libnml_src/cms_in.cc.o
@@ -412,7 +412,7 @@ __/libnml_src/cms_in.o: __/libnml_src/cms_in.cc.o
 
 # target to build an object file
 __/libnml_src/cms_in.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.o
 .PHONY : __/libnml_src/cms_in.cc.o
 
 __/libnml_src/cms_in.i: __/libnml_src/cms_in.cc.i
@@ -421,7 +421,7 @@ __/libnml_src/cms_in.i: __/libnml_src/cms_in.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cms_in.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.i
 .PHONY : __/libnml_src/cms_in.cc.i
 
 __/libnml_src/cms_in.s: __/libnml_src/cms_in.cc.s
@@ -430,7 +430,7 @@ __/libnml_src/cms_in.s: __/libnml_src/cms_in.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cms_in.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.s
 .PHONY : __/libnml_src/cms_in.cc.s
 
 __/libnml_src/cms_pm.o: __/libnml_src/cms_pm.cc.o
@@ -439,7 +439,7 @@ __/libnml_src/cms_pm.o: __/libnml_src/cms_pm.cc.o
 
 # target to build an object file
 __/libnml_src/cms_pm.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.o
 .PHONY : __/libnml_src/cms_pm.cc.o
 
 __/libnml_src/cms_pm.i: __/libnml_src/cms_pm.cc.i
@@ -448,7 +448,7 @@ __/libnml_src/cms_pm.i: __/libnml_src/cms_pm.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cms_pm.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.i
 .PHONY : __/libnml_src/cms_pm.cc.i
 
 __/libnml_src/cms_pm.s: __/libnml_src/cms_pm.cc.s
@@ -457,7 +457,7 @@ __/libnml_src/cms_pm.s: __/libnml_src/cms_pm.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cms_pm.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.s
 .PHONY : __/libnml_src/cms_pm.cc.s
 
 __/libnml_src/cms_srv.o: __/libnml_src/cms_srv.cc.o
@@ -466,7 +466,7 @@ __/libnml_src/cms_srv.o: __/libnml_src/cms_srv.cc.o
 
 # target to build an object file
 __/libnml_src/cms_srv.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.o
 .PHONY : __/libnml_src/cms_srv.cc.o
 
 __/libnml_src/cms_srv.i: __/libnml_src/cms_srv.cc.i
@@ -475,7 +475,7 @@ __/libnml_src/cms_srv.i: __/libnml_src/cms_srv.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cms_srv.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.i
 .PHONY : __/libnml_src/cms_srv.cc.i
 
 __/libnml_src/cms_srv.s: __/libnml_src/cms_srv.cc.s
@@ -484,7 +484,7 @@ __/libnml_src/cms_srv.s: __/libnml_src/cms_srv.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cms_srv.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.s
 .PHONY : __/libnml_src/cms_srv.cc.s
 
 __/libnml_src/cms_up.o: __/libnml_src/cms_up.cc.o
@@ -493,7 +493,7 @@ __/libnml_src/cms_up.o: __/libnml_src/cms_up.cc.o
 
 # target to build an object file
 __/libnml_src/cms_up.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.o
 .PHONY : __/libnml_src/cms_up.cc.o
 
 __/libnml_src/cms_up.i: __/libnml_src/cms_up.cc.i
@@ -502,7 +502,7 @@ __/libnml_src/cms_up.i: __/libnml_src/cms_up.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cms_up.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.i
 .PHONY : __/libnml_src/cms_up.cc.i
 
 __/libnml_src/cms_up.s: __/libnml_src/cms_up.cc.s
@@ -511,7 +511,7 @@ __/libnml_src/cms_up.s: __/libnml_src/cms_up.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cms_up.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.s
 .PHONY : __/libnml_src/cms_up.cc.s
 
 __/libnml_src/cms_xup.o: __/libnml_src/cms_xup.cc.o
@@ -520,7 +520,7 @@ __/libnml_src/cms_xup.o: __/libnml_src/cms_xup.cc.o
 
 # target to build an object file
 __/libnml_src/cms_xup.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.o
 .PHONY : __/libnml_src/cms_xup.cc.o
 
 __/libnml_src/cms_xup.i: __/libnml_src/cms_xup.cc.i
@@ -529,7 +529,7 @@ __/libnml_src/cms_xup.i: __/libnml_src/cms_xup.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cms_xup.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.i
 .PHONY : __/libnml_src/cms_xup.cc.i
 
 __/libnml_src/cms_xup.s: __/libnml_src/cms_xup.cc.s
@@ -538,7 +538,7 @@ __/libnml_src/cms_xup.s: __/libnml_src/cms_xup.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cms_xup.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.s
 .PHONY : __/libnml_src/cms_xup.cc.s
 
 __/libnml_src/cmsdiag.o: __/libnml_src/cmsdiag.cc.o
@@ -547,7 +547,7 @@ __/libnml_src/cmsdiag.o: __/libnml_src/cmsdiag.cc.o
 
 # target to build an object file
 __/libnml_src/cmsdiag.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.o
 .PHONY : __/libnml_src/cmsdiag.cc.o
 
 __/libnml_src/cmsdiag.i: __/libnml_src/cmsdiag.cc.i
@@ -556,7 +556,7 @@ __/libnml_src/cmsdiag.i: __/libnml_src/cmsdiag.cc.i
 
 # target to preprocess a source file
 __/libnml_src/cmsdiag.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.i
 .PHONY : __/libnml_src/cmsdiag.cc.i
 
 __/libnml_src/cmsdiag.s: __/libnml_src/cmsdiag.cc.s
@@ -565,7 +565,7 @@ __/libnml_src/cmsdiag.s: __/libnml_src/cmsdiag.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/cmsdiag.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.s
 .PHONY : __/libnml_src/cmsdiag.cc.s
 
 __/libnml_src/linklist.o: __/libnml_src/linklist.cc.o
@@ -574,7 +574,7 @@ __/libnml_src/linklist.o: __/libnml_src/linklist.cc.o
 
 # target to build an object file
 __/libnml_src/linklist.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.o
 .PHONY : __/libnml_src/linklist.cc.o
 
 __/libnml_src/linklist.i: __/libnml_src/linklist.cc.i
@@ -583,7 +583,7 @@ __/libnml_src/linklist.i: __/libnml_src/linklist.cc.i
 
 # target to preprocess a source file
 __/libnml_src/linklist.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.i
 .PHONY : __/libnml_src/linklist.cc.i
 
 __/libnml_src/linklist.s: __/libnml_src/linklist.cc.s
@@ -592,7 +592,7 @@ __/libnml_src/linklist.s: __/libnml_src/linklist.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/linklist.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.s
 .PHONY : __/libnml_src/linklist.cc.s
 
 __/libnml_src/locmem.o: __/libnml_src/locmem.cc.o
@@ -601,7 +601,7 @@ __/libnml_src/locmem.o: __/libnml_src/locmem.cc.o
 
 # target to build an object file
 __/libnml_src/locmem.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.o
 .PHONY : __/libnml_src/locmem.cc.o
 
 __/libnml_src/locmem.i: __/libnml_src/locmem.cc.i
@@ -610,7 +610,7 @@ __/libnml_src/locmem.i: __/libnml_src/locmem.cc.i
 
 # target to preprocess a source file
 __/libnml_src/locmem.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.i
 .PHONY : __/libnml_src/locmem.cc.i
 
 __/libnml_src/locmem.s: __/libnml_src/locmem.cc.s
@@ -619,7 +619,7 @@ __/libnml_src/locmem.s: __/libnml_src/locmem.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/locmem.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.s
 .PHONY : __/libnml_src/locmem.cc.s
 
 __/libnml_src/memsem.o: __/libnml_src/memsem.cc.o
@@ -628,7 +628,7 @@ __/libnml_src/memsem.o: __/libnml_src/memsem.cc.o
 
 # target to build an object file
 __/libnml_src/memsem.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.o
 .PHONY : __/libnml_src/memsem.cc.o
 
 __/libnml_src/memsem.i: __/libnml_src/memsem.cc.i
@@ -637,7 +637,7 @@ __/libnml_src/memsem.i: __/libnml_src/memsem.cc.i
 
 # target to preprocess a source file
 __/libnml_src/memsem.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.i
 .PHONY : __/libnml_src/memsem.cc.i
 
 __/libnml_src/memsem.s: __/libnml_src/memsem.cc.s
@@ -646,7 +646,7 @@ __/libnml_src/memsem.s: __/libnml_src/memsem.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/memsem.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.s
 .PHONY : __/libnml_src/memsem.cc.s
 
 __/libnml_src/nml.o: __/libnml_src/nml.cc.o
@@ -655,7 +655,7 @@ __/libnml_src/nml.o: __/libnml_src/nml.cc.o
 
 # target to build an object file
 __/libnml_src/nml.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.o
 .PHONY : __/libnml_src/nml.cc.o
 
 __/libnml_src/nml.i: __/libnml_src/nml.cc.i
@@ -664,7 +664,7 @@ __/libnml_src/nml.i: __/libnml_src/nml.cc.i
 
 # target to preprocess a source file
 __/libnml_src/nml.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.i
 .PHONY : __/libnml_src/nml.cc.i
 
 __/libnml_src/nml.s: __/libnml_src/nml.cc.s
@@ -673,7 +673,7 @@ __/libnml_src/nml.s: __/libnml_src/nml.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/nml.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.s
 .PHONY : __/libnml_src/nml.cc.s
 
 __/libnml_src/nml_mod.o: __/libnml_src/nml_mod.cc.o
@@ -682,7 +682,7 @@ __/libnml_src/nml_mod.o: __/libnml_src/nml_mod.cc.o
 
 # target to build an object file
 __/libnml_src/nml_mod.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.o
 .PHONY : __/libnml_src/nml_mod.cc.o
 
 __/libnml_src/nml_mod.i: __/libnml_src/nml_mod.cc.i
@@ -691,7 +691,7 @@ __/libnml_src/nml_mod.i: __/libnml_src/nml_mod.cc.i
 
 # target to preprocess a source file
 __/libnml_src/nml_mod.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.i
 .PHONY : __/libnml_src/nml_mod.cc.i
 
 __/libnml_src/nml_mod.s: __/libnml_src/nml_mod.cc.s
@@ -700,7 +700,7 @@ __/libnml_src/nml_mod.s: __/libnml_src/nml_mod.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/nml_mod.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.s
 .PHONY : __/libnml_src/nml_mod.cc.s
 
 __/libnml_src/nml_oi.o: __/libnml_src/nml_oi.cc.o
@@ -709,7 +709,7 @@ __/libnml_src/nml_oi.o: __/libnml_src/nml_oi.cc.o
 
 # target to build an object file
 __/libnml_src/nml_oi.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.o
 .PHONY : __/libnml_src/nml_oi.cc.o
 
 __/libnml_src/nml_oi.i: __/libnml_src/nml_oi.cc.i
@@ -718,7 +718,7 @@ __/libnml_src/nml_oi.i: __/libnml_src/nml_oi.cc.i
 
 # target to preprocess a source file
 __/libnml_src/nml_oi.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.i
 .PHONY : __/libnml_src/nml_oi.cc.i
 
 __/libnml_src/nml_oi.s: __/libnml_src/nml_oi.cc.s
@@ -727,7 +727,7 @@ __/libnml_src/nml_oi.s: __/libnml_src/nml_oi.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/nml_oi.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.s
 .PHONY : __/libnml_src/nml_oi.cc.s
 
 __/libnml_src/nml_srv.o: __/libnml_src/nml_srv.cc.o
@@ -736,7 +736,7 @@ __/libnml_src/nml_srv.o: __/libnml_src/nml_srv.cc.o
 
 # target to build an object file
 __/libnml_src/nml_srv.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.o
 .PHONY : __/libnml_src/nml_srv.cc.o
 
 __/libnml_src/nml_srv.i: __/libnml_src/nml_srv.cc.i
@@ -745,7 +745,7 @@ __/libnml_src/nml_srv.i: __/libnml_src/nml_srv.cc.i
 
 # target to preprocess a source file
 __/libnml_src/nml_srv.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.i
 .PHONY : __/libnml_src/nml_srv.cc.i
 
 __/libnml_src/nml_srv.s: __/libnml_src/nml_srv.cc.s
@@ -754,7 +754,7 @@ __/libnml_src/nml_srv.s: __/libnml_src/nml_srv.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/nml_srv.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.s
 .PHONY : __/libnml_src/nml_srv.cc.s
 
 __/libnml_src/nmldiag.o: __/libnml_src/nmldiag.cc.o
@@ -763,7 +763,7 @@ __/libnml_src/nmldiag.o: __/libnml_src/nmldiag.cc.o
 
 # target to build an object file
 __/libnml_src/nmldiag.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.o
 .PHONY : __/libnml_src/nmldiag.cc.o
 
 __/libnml_src/nmldiag.i: __/libnml_src/nmldiag.cc.i
@@ -772,7 +772,7 @@ __/libnml_src/nmldiag.i: __/libnml_src/nmldiag.cc.i
 
 # target to preprocess a source file
 __/libnml_src/nmldiag.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.i
 .PHONY : __/libnml_src/nmldiag.cc.i
 
 __/libnml_src/nmldiag.s: __/libnml_src/nmldiag.cc.s
@@ -781,7 +781,7 @@ __/libnml_src/nmldiag.s: __/libnml_src/nmldiag.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/nmldiag.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.s
 .PHONY : __/libnml_src/nmldiag.cc.s
 
 __/libnml_src/nmlmsg.o: __/libnml_src/nmlmsg.cc.o
@@ -790,7 +790,7 @@ __/libnml_src/nmlmsg.o: __/libnml_src/nmlmsg.cc.o
 
 # target to build an object file
 __/libnml_src/nmlmsg.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.o
 .PHONY : __/libnml_src/nmlmsg.cc.o
 
 __/libnml_src/nmlmsg.i: __/libnml_src/nmlmsg.cc.i
@@ -799,7 +799,7 @@ __/libnml_src/nmlmsg.i: __/libnml_src/nmlmsg.cc.i
 
 # target to preprocess a source file
 __/libnml_src/nmlmsg.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.i
 .PHONY : __/libnml_src/nmlmsg.cc.i
 
 __/libnml_src/nmlmsg.s: __/libnml_src/nmlmsg.cc.s
@@ -808,7 +808,7 @@ __/libnml_src/nmlmsg.s: __/libnml_src/nmlmsg.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/nmlmsg.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.s
 .PHONY : __/libnml_src/nmlmsg.cc.s
 
 __/libnml_src/phantom.o: __/libnml_src/phantom.cc.o
@@ -817,7 +817,7 @@ __/libnml_src/phantom.o: __/libnml_src/phantom.cc.o
 
 # target to build an object file
 __/libnml_src/phantom.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.o
 .PHONY : __/libnml_src/phantom.cc.o
 
 __/libnml_src/phantom.i: __/libnml_src/phantom.cc.i
@@ -826,7 +826,7 @@ __/libnml_src/phantom.i: __/libnml_src/phantom.cc.i
 
 # target to preprocess a source file
 __/libnml_src/phantom.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.i
 .PHONY : __/libnml_src/phantom.cc.i
 
 __/libnml_src/phantom.s: __/libnml_src/phantom.cc.s
@@ -835,7 +835,7 @@ __/libnml_src/phantom.s: __/libnml_src/phantom.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/phantom.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.s
 .PHONY : __/libnml_src/phantom.cc.s
 
 __/libnml_src/physmem.o: __/libnml_src/physmem.cc.o
@@ -844,7 +844,7 @@ __/libnml_src/physmem.o: __/libnml_src/physmem.cc.o
 
 # target to build an object file
 __/libnml_src/physmem.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.o
 .PHONY : __/libnml_src/physmem.cc.o
 
 __/libnml_src/physmem.i: __/libnml_src/physmem.cc.i
@@ -853,7 +853,7 @@ __/libnml_src/physmem.i: __/libnml_src/physmem.cc.i
 
 # target to preprocess a source file
 __/libnml_src/physmem.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.i
 .PHONY : __/libnml_src/physmem.cc.i
 
 __/libnml_src/physmem.s: __/libnml_src/physmem.cc.s
@@ -862,7 +862,7 @@ __/libnml_src/physmem.s: __/libnml_src/physmem.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/physmem.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.s
 .PHONY : __/libnml_src/physmem.cc.s
 
 __/libnml_src/rcs_exit.o: __/libnml_src/rcs_exit.cc.o
@@ -871,7 +871,7 @@ __/libnml_src/rcs_exit.o: __/libnml_src/rcs_exit.cc.o
 
 # target to build an object file
 __/libnml_src/rcs_exit.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.o
 .PHONY : __/libnml_src/rcs_exit.cc.o
 
 __/libnml_src/rcs_exit.i: __/libnml_src/rcs_exit.cc.i
@@ -880,7 +880,7 @@ __/libnml_src/rcs_exit.i: __/libnml_src/rcs_exit.cc.i
 
 # target to preprocess a source file
 __/libnml_src/rcs_exit.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.i
 .PHONY : __/libnml_src/rcs_exit.cc.i
 
 __/libnml_src/rcs_exit.s: __/libnml_src/rcs_exit.cc.s
@@ -889,7 +889,7 @@ __/libnml_src/rcs_exit.s: __/libnml_src/rcs_exit.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/rcs_exit.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.s
 .PHONY : __/libnml_src/rcs_exit.cc.s
 
 __/libnml_src/rcs_print.o: __/libnml_src/rcs_print.cc.o
@@ -898,7 +898,7 @@ __/libnml_src/rcs_print.o: __/libnml_src/rcs_print.cc.o
 
 # target to build an object file
 __/libnml_src/rcs_print.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.o
 .PHONY : __/libnml_src/rcs_print.cc.o
 
 __/libnml_src/rcs_print.i: __/libnml_src/rcs_print.cc.i
@@ -907,7 +907,7 @@ __/libnml_src/rcs_print.i: __/libnml_src/rcs_print.cc.i
 
 # target to preprocess a source file
 __/libnml_src/rcs_print.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.i
 .PHONY : __/libnml_src/rcs_print.cc.i
 
 __/libnml_src/rcs_print.s: __/libnml_src/rcs_print.cc.s
@@ -916,7 +916,7 @@ __/libnml_src/rcs_print.s: __/libnml_src/rcs_print.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/rcs_print.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.s
 .PHONY : __/libnml_src/rcs_print.cc.s
 
 __/libnml_src/recvn.o: __/libnml_src/recvn.c.o
@@ -925,7 +925,7 @@ __/libnml_src/recvn.o: __/libnml_src/recvn.c.o
 
 # target to build an object file
 __/libnml_src/recvn.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.o
 .PHONY : __/libnml_src/recvn.c.o
 
 __/libnml_src/recvn.i: __/libnml_src/recvn.c.i
@@ -934,7 +934,7 @@ __/libnml_src/recvn.i: __/libnml_src/recvn.c.i
 
 # target to preprocess a source file
 __/libnml_src/recvn.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.i
 .PHONY : __/libnml_src/recvn.c.i
 
 __/libnml_src/recvn.s: __/libnml_src/recvn.c.s
@@ -943,7 +943,7 @@ __/libnml_src/recvn.s: __/libnml_src/recvn.c.s
 
 # target to generate assembly for a file
 __/libnml_src/recvn.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.s
 .PHONY : __/libnml_src/recvn.c.s
 
 __/libnml_src/sem.o: __/libnml_src/sem.cc.o
@@ -952,7 +952,7 @@ __/libnml_src/sem.o: __/libnml_src/sem.cc.o
 
 # target to build an object file
 __/libnml_src/sem.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.o
 .PHONY : __/libnml_src/sem.cc.o
 
 __/libnml_src/sem.i: __/libnml_src/sem.cc.i
@@ -961,7 +961,7 @@ __/libnml_src/sem.i: __/libnml_src/sem.cc.i
 
 # target to preprocess a source file
 __/libnml_src/sem.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.i
 .PHONY : __/libnml_src/sem.cc.i
 
 __/libnml_src/sem.s: __/libnml_src/sem.cc.s
@@ -970,7 +970,7 @@ __/libnml_src/sem.s: __/libnml_src/sem.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/sem.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.s
 .PHONY : __/libnml_src/sem.cc.s
 
 __/libnml_src/sendn.o: __/libnml_src/sendn.c.o
@@ -979,7 +979,7 @@ __/libnml_src/sendn.o: __/libnml_src/sendn.c.o
 
 # target to build an object file
 __/libnml_src/sendn.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.o
 .PHONY : __/libnml_src/sendn.c.o
 
 __/libnml_src/sendn.i: __/libnml_src/sendn.c.i
@@ -988,7 +988,7 @@ __/libnml_src/sendn.i: __/libnml_src/sendn.c.i
 
 # target to preprocess a source file
 __/libnml_src/sendn.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.i
 .PHONY : __/libnml_src/sendn.c.i
 
 __/libnml_src/sendn.s: __/libnml_src/sendn.c.s
@@ -997,7 +997,7 @@ __/libnml_src/sendn.s: __/libnml_src/sendn.c.s
 
 # target to generate assembly for a file
 __/libnml_src/sendn.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.s
 .PHONY : __/libnml_src/sendn.c.s
 
 __/libnml_src/shm.o: __/libnml_src/shm.cc.o
@@ -1006,7 +1006,7 @@ __/libnml_src/shm.o: __/libnml_src/shm.cc.o
 
 # target to build an object file
 __/libnml_src/shm.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.o
 .PHONY : __/libnml_src/shm.cc.o
 
 __/libnml_src/shm.i: __/libnml_src/shm.cc.i
@@ -1015,7 +1015,7 @@ __/libnml_src/shm.i: __/libnml_src/shm.cc.i
 
 # target to preprocess a source file
 __/libnml_src/shm.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.i
 .PHONY : __/libnml_src/shm.cc.i
 
 __/libnml_src/shm.s: __/libnml_src/shm.cc.s
@@ -1024,7 +1024,7 @@ __/libnml_src/shm.s: __/libnml_src/shm.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/shm.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.s
 .PHONY : __/libnml_src/shm.cc.s
 
 __/libnml_src/shmem.o: __/libnml_src/shmem.cc.o
@@ -1033,7 +1033,7 @@ __/libnml_src/shmem.o: __/libnml_src/shmem.cc.o
 
 # target to build an object file
 __/libnml_src/shmem.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.o
 .PHONY : __/libnml_src/shmem.cc.o
 
 __/libnml_src/shmem.i: __/libnml_src/shmem.cc.i
@@ -1042,7 +1042,7 @@ __/libnml_src/shmem.i: __/libnml_src/shmem.cc.i
 
 # target to preprocess a source file
 __/libnml_src/shmem.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.i
 .PHONY : __/libnml_src/shmem.cc.i
 
 __/libnml_src/shmem.s: __/libnml_src/shmem.cc.s
@@ -1051,7 +1051,7 @@ __/libnml_src/shmem.s: __/libnml_src/shmem.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/shmem.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.s
 .PHONY : __/libnml_src/shmem.cc.s
 
 __/libnml_src/stat_msg.o: __/libnml_src/stat_msg.cc.o
@@ -1060,7 +1060,7 @@ __/libnml_src/stat_msg.o: __/libnml_src/stat_msg.cc.o
 
 # target to build an object file
 __/libnml_src/stat_msg.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.o
 .PHONY : __/libnml_src/stat_msg.cc.o
 
 __/libnml_src/stat_msg.i: __/libnml_src/stat_msg.cc.i
@@ -1069,7 +1069,7 @@ __/libnml_src/stat_msg.i: __/libnml_src/stat_msg.cc.i
 
 # target to preprocess a source file
 __/libnml_src/stat_msg.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.i
 .PHONY : __/libnml_src/stat_msg.cc.i
 
 __/libnml_src/stat_msg.s: __/libnml_src/stat_msg.cc.s
@@ -1078,7 +1078,7 @@ __/libnml_src/stat_msg.s: __/libnml_src/stat_msg.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/stat_msg.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.s
 .PHONY : __/libnml_src/stat_msg.cc.s
 
 __/libnml_src/tcp_opts.o: __/libnml_src/tcp_opts.cc.o
@@ -1087,7 +1087,7 @@ __/libnml_src/tcp_opts.o: __/libnml_src/tcp_opts.cc.o
 
 # target to build an object file
 __/libnml_src/tcp_opts.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.o
 .PHONY : __/libnml_src/tcp_opts.cc.o
 
 __/libnml_src/tcp_opts.i: __/libnml_src/tcp_opts.cc.i
@@ -1096,7 +1096,7 @@ __/libnml_src/tcp_opts.i: __/libnml_src/tcp_opts.cc.i
 
 # target to preprocess a source file
 __/libnml_src/tcp_opts.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.i
 .PHONY : __/libnml_src/tcp_opts.cc.i
 
 __/libnml_src/tcp_opts.s: __/libnml_src/tcp_opts.cc.s
@@ -1105,7 +1105,7 @@ __/libnml_src/tcp_opts.s: __/libnml_src/tcp_opts.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/tcp_opts.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.s
 .PHONY : __/libnml_src/tcp_opts.cc.s
 
 __/libnml_src/tcp_srv.o: __/libnml_src/tcp_srv.cc.o
@@ -1114,7 +1114,7 @@ __/libnml_src/tcp_srv.o: __/libnml_src/tcp_srv.cc.o
 
 # target to build an object file
 __/libnml_src/tcp_srv.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.o
 .PHONY : __/libnml_src/tcp_srv.cc.o
 
 __/libnml_src/tcp_srv.i: __/libnml_src/tcp_srv.cc.i
@@ -1123,7 +1123,7 @@ __/libnml_src/tcp_srv.i: __/libnml_src/tcp_srv.cc.i
 
 # target to preprocess a source file
 __/libnml_src/tcp_srv.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.i
 .PHONY : __/libnml_src/tcp_srv.cc.i
 
 __/libnml_src/tcp_srv.s: __/libnml_src/tcp_srv.cc.s
@@ -1132,7 +1132,7 @@ __/libnml_src/tcp_srv.s: __/libnml_src/tcp_srv.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/tcp_srv.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.s
 .PHONY : __/libnml_src/tcp_srv.cc.s
 
 __/libnml_src/tcpmem.o: __/libnml_src/tcpmem.cc.o
@@ -1141,7 +1141,7 @@ __/libnml_src/tcpmem.o: __/libnml_src/tcpmem.cc.o
 
 # target to build an object file
 __/libnml_src/tcpmem.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.o
 .PHONY : __/libnml_src/tcpmem.cc.o
 
 __/libnml_src/tcpmem.i: __/libnml_src/tcpmem.cc.i
@@ -1150,7 +1150,7 @@ __/libnml_src/tcpmem.i: __/libnml_src/tcpmem.cc.i
 
 # target to preprocess a source file
 __/libnml_src/tcpmem.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.i
 .PHONY : __/libnml_src/tcpmem.cc.i
 
 __/libnml_src/tcpmem.s: __/libnml_src/tcpmem.cc.s
@@ -1159,7 +1159,7 @@ __/libnml_src/tcpmem.s: __/libnml_src/tcpmem.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/tcpmem.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.s
 .PHONY : __/libnml_src/tcpmem.cc.s
 
 __/libnml_src/timer.o: __/libnml_src/timer.cc.o
@@ -1168,7 +1168,7 @@ __/libnml_src/timer.o: __/libnml_src/timer.cc.o
 
 # target to build an object file
 __/libnml_src/timer.cc.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.o
 .PHONY : __/libnml_src/timer.cc.o
 
 __/libnml_src/timer.i: __/libnml_src/timer.cc.i
@@ -1177,7 +1177,7 @@ __/libnml_src/timer.i: __/libnml_src/timer.cc.i
 
 # target to preprocess a source file
 __/libnml_src/timer.cc.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.i
 .PHONY : __/libnml_src/timer.cc.i
 
 __/libnml_src/timer.s: __/libnml_src/timer.cc.s
@@ -1186,7 +1186,7 @@ __/libnml_src/timer.s: __/libnml_src/timer.cc.s
 
 # target to generate assembly for a file
 __/libnml_src/timer.cc.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.s
 .PHONY : __/libnml_src/timer.cc.s
 
 # Help Target
@@ -1324,6 +1324,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

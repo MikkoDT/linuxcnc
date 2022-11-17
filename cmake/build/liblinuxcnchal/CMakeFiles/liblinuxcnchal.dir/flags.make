@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DULAPI -Dliblinuxcnchal_EXPORTS
 
-C_INCLUDES = -I/home/user/lcncladdertest/cmake/liblinuxcnchal -I/home/user/lcncladdertest/cmake/liblinuxcnchal/../common_src -I/home/user/lcncladdertest/cmake/liblinuxcnchal/../rtapi_src -I/home/user/lcncladdertest/cmake/liblinuxcnchal/../liblinuxcnchal_src -I/home/user/lcncladdertest/cmake/build/liblinuxcnchal
+C_INCLUDES = -I/home/user/linuxcnc/cmake/liblinuxcnchal -I/home/user/linuxcnc/cmake/liblinuxcnchal/../common_src -I/home/user/linuxcnc/cmake/liblinuxcnchal/../rtapi_src -I/home/user/linuxcnc/cmake/liblinuxcnchal/../liblinuxcnchal_src -I/home/user/linuxcnc/cmake/build/liblinuxcnchal
 
 C_FLAGS = -fPIC
 

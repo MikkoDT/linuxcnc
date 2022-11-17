@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/lcncladdertest/cmake/liblinuxcnc
+# Install script for directory: /home/user/linuxcnc/cmake/liblinuxcnc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,13 +44,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/lcncladdertest/cmake/liblinuxcnc/liblinuxcnc.a")
+   "/home/user/linuxcnc/cmake/liblinuxcnc/liblinuxcnc.a")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/lcncladdertest/cmake/liblinuxcnc" TYPE STATIC_LIBRARY FILES "/home/user/lcncladdertest/cmake/build/liblinuxcnc/liblinuxcnc.a")
+file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/liblinuxcnc" TYPE STATIC_LIBRARY FILES "/home/user/linuxcnc/cmake/build/liblinuxcnc/liblinuxcnc.a")
 endif()
 

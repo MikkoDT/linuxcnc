@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/hal_lib//CMakeFiles/progress.marks
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/hal_lib//CMakeFiles/progress.marks
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/clean
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 hal_lib/CMakeFiles/hal_lib.dir/rule:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/CMakeFiles/hal_lib.dir/rule
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal_lib/CMakeFiles/hal_lib.dir/rule
 .PHONY : hal_lib/CMakeFiles/hal_lib.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ hal_lib: hal_lib/CMakeFiles/hal_lib.dir/rule
 
 # fast build rule for target.
 hal_lib/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/build
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/build
 .PHONY : hal_lib/fast
 
 __/liblinuxcnchal_src/hal_lib.o: __/liblinuxcnchal_src/hal_lib.c.o
@@ -196,7 +196,7 @@ __/liblinuxcnchal_src/hal_lib.o: __/liblinuxcnchal_src/hal_lib.c.o
 
 # target to build an object file
 __/liblinuxcnchal_src/hal_lib.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.o
 .PHONY : __/liblinuxcnchal_src/hal_lib.c.o
 
 __/liblinuxcnchal_src/hal_lib.i: __/liblinuxcnchal_src/hal_lib.c.i
@@ -205,7 +205,7 @@ __/liblinuxcnchal_src/hal_lib.i: __/liblinuxcnchal_src/hal_lib.c.i
 
 # target to preprocess a source file
 __/liblinuxcnchal_src/hal_lib.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.i
 .PHONY : __/liblinuxcnchal_src/hal_lib.c.i
 
 __/liblinuxcnchal_src/hal_lib.s: __/liblinuxcnchal_src/hal_lib.c.s
@@ -214,7 +214,7 @@ __/liblinuxcnchal_src/hal_lib.s: __/liblinuxcnchal_src/hal_lib.c.s
 
 # target to generate assembly for a file
 __/liblinuxcnchal_src/hal_lib.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/__/liblinuxcnchal_src/hal_lib.c.s
 .PHONY : __/liblinuxcnchal_src/hal_lib.c.s
 
 # Help Target
@@ -244,6 +244,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

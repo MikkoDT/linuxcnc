@@ -16,7 +16,6 @@ set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED 
     ${SRC_DIR}/../liblinuxcncini_src/inifile.cc
-    # ${SRC_DIR}/../src/inivar.cc # I think this was a wrong input, belong to : Linking mb2hal
 )
 
 add_definitions()

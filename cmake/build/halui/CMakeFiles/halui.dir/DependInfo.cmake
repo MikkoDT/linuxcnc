@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/lcncladdertest/cmake/halui_src/halui.cc" "/home/user/lcncladdertest/cmake/build/halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.o"
+  "/home/user/linuxcnc/cmake/halui_src/halui.cc" "/home/user/linuxcnc/cmake/build/halui/CMakeFiles/halui.dir/__/halui_src/halui.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,11 +16,16 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../halui"
-  "/home/user/lcncladdertest/lib"
-  "/home/user/lcncladdertest/src/emc/tooldata"
+  "/home/user/linuxcnc/lib"
+  "/home/user/linuxcnc/include"
+  "/home/user/linuxcnc/src/emc/tooldata"
   "halui"
   "../halui/../halui_src"
-  "/home/user/lcncladdertest/include"
+  "../halui/../libnml_src"
+  "../halui/../liblinuxcnchal_src"
+  "../halui/../liblinuxcncini_src"
+  "../halui/../liblinuxcnc_src"
+  "../halui/../libtooldata_src"
   )
 
 # Targets to which this target links.

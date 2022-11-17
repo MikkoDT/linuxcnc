@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
+CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
+CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/module_helper//CMakeFiles/progress.marks
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/module_helper//CMakeFiles/progress.marks
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/clean
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 module_helper/CMakeFiles/module_helper.dir/rule:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/CMakeFiles/module_helper.dir/rule
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/CMakeFiles/module_helper.dir/rule
 .PHONY : module_helper/CMakeFiles/module_helper.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ module_helper: module_helper/CMakeFiles/module_helper.dir/rule
 
 # fast build rule for target.
 module_helper/fast:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/module_helper.dir/build.make module_helper/CMakeFiles/module_helper.dir/build
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/module_helper.dir/build.make module_helper/CMakeFiles/module_helper.dir/build
 .PHONY : module_helper/fast
 
 __/module_helper_src/module_helper.o: __/module_helper_src/module_helper.c.o
@@ -196,7 +196,7 @@ __/module_helper_src/module_helper.o: __/module_helper_src/module_helper.c.o
 
 # target to build an object file
 __/module_helper_src/module_helper.c.o:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/module_helper.dir/build.make module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/module_helper.dir/build.make module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o
 .PHONY : __/module_helper_src/module_helper.c.o
 
 __/module_helper_src/module_helper.i: __/module_helper_src/module_helper.c.i
@@ -205,7 +205,7 @@ __/module_helper_src/module_helper.i: __/module_helper_src/module_helper.c.i
 
 # target to preprocess a source file
 __/module_helper_src/module_helper.c.i:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/module_helper.dir/build.make module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.i
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/module_helper.dir/build.make module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.i
 .PHONY : __/module_helper_src/module_helper.c.i
 
 __/module_helper_src/module_helper.s: __/module_helper_src/module_helper.c.s
@@ -214,7 +214,7 @@ __/module_helper_src/module_helper.s: __/module_helper_src/module_helper.c.s
 
 # target to generate assembly for a file
 __/module_helper_src/module_helper.c.s:
-	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/module_helper.dir/build.make module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.s
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/module_helper.dir/build.make module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.s
 .PHONY : __/module_helper_src/module_helper.c.s
 
 # Help Target
@@ -244,6 +244,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

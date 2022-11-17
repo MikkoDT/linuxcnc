@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dliblinuxcncini_EXPORTS
 
-CXX_INCLUDES = -I/home/user/lcncladdertest/cmake/liblinuxcncini -I/home/user/lcncladdertest/cmake/liblinuxcncini/../common_src -I/home/user/lcncladdertest/cmake/liblinuxcncini/../liblinuxcncini_src -I/home/user/lcncladdertest/cmake/build/liblinuxcncini
+CXX_INCLUDES = -I/home/user/linuxcnc/cmake/liblinuxcncini -I/home/user/linuxcnc/cmake/liblinuxcncini/../common_src -I/home/user/linuxcnc/cmake/liblinuxcncini/../liblinuxcncini_src -I/home/user/linuxcnc/cmake/build/liblinuxcncini
 
 CXX_FLAGS = -fPIC
 

@@ -9,14 +9,14 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/arithm_eval.c
- /home/user/lcncladdertest/cmake/classicladder_src/arithm_eval.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/arithm_eval.c
+ /home/user/linuxcnc/cmake/classicladder_src/arithm_eval.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -25,19 +25,19 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/arrays.c
- /home/user/lcncladdertest/cmake/classicladder_src/calc.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/files.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/arrays.c
+ /home/user/linuxcnc/cmake/classicladder_src/calc.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/files.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -46,29 +46,29 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/arithm_eval.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc.c
- /home/user/lcncladdertest/cmake/classicladder_src/calc.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/arithm_eval.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc.c
+ /home/user/linuxcnc/cmake/classicladder_src/calc.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
  ../rtapi_src/rtapi_bool.h
  ../rtapi_src/rtapi_errno.h
  ../rtapi_src/rtapi_stdint.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.c
- /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.c
+ /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -77,22 +77,22 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.c
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/config.h
- /home/user/lcncladdertest/cmake/classicladder_src/files_project.h
- /home/user/lcncladdertest/cmake/classicladder_src/files_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/socket_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/socket_server.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.c
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/config.h
+ /home/user/linuxcnc/cmake/classicladder_src/files_project.h
+ /home/user/linuxcnc/cmake/classicladder_src/files_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/socket_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/socket_server.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -683,27 +683,27 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gt
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.c
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/config_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/editproperties_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/files_project.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/print_gnome.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/socket_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/socket_server.h
- /home/user/lcncladdertest/cmake/classicladder_src/spy_vars_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.c
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/config_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/editproperties_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/files_project.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/print_gnome.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/socket_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/socket_server.h
+ /home/user/linuxcnc/cmake/classicladder_src/spy_vars_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -1294,11 +1294,11 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/config.c
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/config.c
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -1307,15 +1307,15 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/config_gtk.c
- /home/user/lcncladdertest/cmake/classicladder_src/config_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/config_gtk.c
+ /home/user/linuxcnc/cmake/classicladder_src/config_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -1906,18 +1906,18 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/arithm_eval.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing.c
- /home/user/lcncladdertest/cmake/classicladder_src/drawing.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/arithm_eval.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing.c
+ /home/user/linuxcnc/cmake/classicladder_src/drawing.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -2508,14 +2508,14 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequenti
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing_sequential.c
- /home/user/lcncladdertest/cmake/classicladder_src/drawing_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing_sequential.c
+ /home/user/linuxcnc/cmake/classicladder_src/drawing_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -3106,22 +3106,22 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/arithm_eval.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.c
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/editproperties_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/files.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/arithm_eval.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.c
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/editproperties_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/files.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -3710,18 +3710,18 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.o
  ../rtapi_src/rtapi_bool.h
  ../rtapi_src/rtapi_errno.h
  ../rtapi_src/rtapi_stdint.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit_gtk.c
- /home/user/lcncladdertest/cmake/classicladder_src/edit_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/editproperties_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit_gtk.c
+ /home/user/linuxcnc/cmake/classicladder_src/edit_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/editproperties_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -4312,18 +4312,18 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit_sequential.c
- /home/user/lcncladdertest/cmake/classicladder_src/edit_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/editproperties_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit_sequential.c
+ /home/user/linuxcnc/cmake/classicladder_src/edit_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/editproperties_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -4914,13 +4914,13 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_g
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/editproperties_gtk.c
- /home/user/lcncladdertest/cmake/classicladder_src/editproperties_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/editproperties_gtk.c
+ /home/user/linuxcnc/cmake/classicladder_src/editproperties_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -5514,14 +5514,14 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.o
  ../rtapi_src/rtapi_mutex.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/emc_mods.c
- /home/user/lcncladdertest/cmake/classicladder_src/emc_mods.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/emc_mods.c
+ /home/user/linuxcnc/cmake/classicladder_src/emc_mods.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -5530,17 +5530,17 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/emc_mods.h
- /home/user/lcncladdertest/cmake/classicladder_src/files.c
- /home/user/lcncladdertest/cmake/classicladder_src/files.h
- /home/user/lcncladdertest/cmake/classicladder_src/files_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/emc_mods.h
+ /home/user/linuxcnc/cmake/classicladder_src/files.c
+ /home/user/linuxcnc/cmake/classicladder_src/files.h
+ /home/user/linuxcnc/cmake/classicladder_src/files_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -5549,17 +5549,17 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc.h
- /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/files.h
- /home/user/lcncladdertest/cmake/classicladder_src/files_project.c
- /home/user/lcncladdertest/cmake/classicladder_src/files_project.h
- /home/user/lcncladdertest/cmake/classicladder_src/files_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc.h
+ /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/files.h
+ /home/user/linuxcnc/cmake/classicladder_src/files_project.c
+ /home/user/linuxcnc/cmake/classicladder_src/files_project.h
+ /home/user/linuxcnc/cmake/classicladder_src/files_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -5568,13 +5568,13 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/files.h
- /home/user/lcncladdertest/cmake/classicladder_src/files_sequential.c
- /home/user/lcncladdertest/cmake/classicladder_src/files_sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/files.h
+ /home/user/linuxcnc/cmake/classicladder_src/files_sequential.c
+ /home/user/linuxcnc/cmake/classicladder_src/files_sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -5583,13 +5583,13 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager.c
- /home/user/lcncladdertest/cmake/classicladder_src/manager.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager.c
+ /home/user/linuxcnc/cmake/classicladder_src/manager.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -5598,15 +5598,15 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager.h
- /home/user/lcncladdertest/cmake/classicladder_src/manager_gtk.c
- /home/user/lcncladdertest/cmake/classicladder_src/manager_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager.h
+ /home/user/linuxcnc/cmake/classicladder_src/manager_gtk.c
+ /home/user/linuxcnc/cmake/classicladder_src/manager_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -6197,29 +6197,29 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.c
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/socket_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.c
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/socket_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
  ../rtapi_src/rtapi_bool.h
  ../rtapi_src/rtapi_errno.h
  ../rtapi_src/rtapi_stdint.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_slave.c
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_slave.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_slave.c
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_slave.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.o
- /home/user/lcncladdertest/cmake/classicladder_src/serial_common.h
- /home/user/lcncladdertest/cmake/classicladder_src/serial_linux.c
+ /home/user/linuxcnc/cmake/classicladder_src/serial_common.h
+ /home/user/linuxcnc/cmake/classicladder_src/serial_linux.c
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -6228,26 +6228,26 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_ma
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/serial_common.h
- /home/user/lcncladdertest/cmake/classicladder_src/socket_modbus_master.c
- /home/user/lcncladdertest/cmake/classicladder_src/socket_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/serial_common.h
+ /home/user/linuxcnc/cmake/classicladder_src/socket_modbus_master.c
+ /home/user/linuxcnc/cmake/classicladder_src/socket_modbus_master.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
  ../rtapi_src/rtapi_bool.h
  ../rtapi_src/rtapi_errno.h
  ../rtapi_src/rtapi_stdint.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_slave.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/socket_server.c
- /home/user/lcncladdertest/cmake/classicladder_src/socket_server.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_slave.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/socket_server.c
+ /home/user/linuxcnc/cmake/classicladder_src/socket_server.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -6256,18 +6256,18 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/drawing.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/spy_vars_gtk.c
- /home/user/lcncladdertest/cmake/classicladder_src/spy_vars_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/drawing.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/spy_vars_gtk.c
+ /home/user/linuxcnc/cmake/classicladder_src/spy_vars_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -6858,12 +6858,12 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols.c
- /home/user/lcncladdertest/cmake/classicladder_src/symbols.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols.c
+ /home/user/linuxcnc/cmake/classicladder_src/symbols.h
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o
  ../liblinuxcnchal_src/hal.h
  ../rtapi_src/rtapi.h
@@ -6872,15 +6872,15 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/edit.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols_gtk.c
- /home/user/lcncladdertest/cmake/classicladder_src/symbols_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/edit.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols_gtk.c
+ /home/user/linuxcnc/cmake/classicladder_src/symbols_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -7469,12 +7469,12 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.o
  ../rtapi_src/rtapi_bool.h
  ../rtapi_src/rtapi_errno.h
  ../rtapi_src/rtapi_stdint.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_access.c
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_access.c
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -8065,11 +8065,11 @@ classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.o
  ../rtapi_src/rtapi_gfp.h
  ../rtapi_src/rtapi_stdint.h
  ../rtapi_src/rtapi_string.h
- /home/user/lcncladdertest/cmake/classicladder_src/classicladder.h
- /home/user/lcncladdertest/cmake/classicladder_src/global.h
- /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.h
- /home/user/lcncladdertest/cmake/classicladder_src/sequential.h
- /home/user/lcncladdertest/cmake/classicladder_src/symbols.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.c
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names.h
- /home/user/lcncladdertest/cmake/classicladder_src/vars_names_list.c
+ /home/user/linuxcnc/cmake/classicladder_src/classicladder.h
+ /home/user/linuxcnc/cmake/classicladder_src/global.h
+ /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.h
+ /home/user/linuxcnc/cmake/classicladder_src/sequential.h
+ /home/user/linuxcnc/cmake/classicladder_src/symbols.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.c
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names.h
+ /home/user/linuxcnc/cmake/classicladder_src/vars_names_list.c
