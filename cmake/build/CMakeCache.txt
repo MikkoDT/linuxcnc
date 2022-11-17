@@ -237,6 +237,15 @@ classicladder_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/classicladder
 classicladder_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/classicladder
 
 //Value Computed by CMake
+hal_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/halshow
+
+//Dependencies for the target
+hal_LIB_DEPENDS:STATIC=general;linuxcnchal;general;linuxcncini;general;-lX11;general;-lXss;general;-lXext;general;-lXft;general;-lfontconfig;general;-lfreetype;general;-lfontconfig;general;-lpthread;general;-ldl;general;-lz;general;-lpthread;general;-lm;general;-ltk8.6;general;-lXinerama;
+
+//Value Computed by CMake
+hal_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/halshow
+
+//Value Computed by CMake
 hal_lib_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/hal_lib
 
 //Dependencies for the target
@@ -256,6 +265,15 @@ halmeter_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/halmeter
 
 //Value Computed by CMake
 halmeter_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/halmeter
+
+//Value Computed by CMake
+halrmt_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/halrmt
+
+//Dependencies for the target
+halrmt_LIB_DEPENDS:STATIC=general;linuxcnchal;general;linuxcncini;general;-lX11;general;-lXss;general;-lXext;general;-lXft;general;-lfontconfig;general;-lfreetype;general;-lfontconfig;general;-lpthread;general;-ldl;general;-lz;general;-lpthread;general;-lm;general;-ltk8.6;general;-lXinerama;
+
+//Value Computed by CMake
+halrmt_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/halrmt
 
 //Value Computed by CMake
 halscope_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/halscope
@@ -319,6 +337,18 @@ module_helper_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/module_helper
 
 //Value Computed by CMake
 module_helper_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/module_helper
+
+//Value Computed by CMake
+pci_read_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/pci_read
+
+//Value Computed by CMake
+pci_read_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/pci_read
+
+//Value Computed by CMake
+pci_write_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/pci_write
+
+//Value Computed by CMake
+pci_write_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/pci_write
 
 //Value Computed by CMake
 rtapi_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/rtapi
@@ -440,7 +470,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -22,7 +22,11 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16,
+						17,
+						18,
+						19
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -44,7 +48,7 @@
 					"source" : "rtapi",
 					"targetIndexes" : 
 					[
-						13
+						17
 					]
 				},
 				{
@@ -59,7 +63,7 @@
 					"source" : "module_helper",
 					"targetIndexes" : 
 					[
-						12
+						14
 					]
 				},
 				{
@@ -74,7 +78,7 @@
 					"source" : "liblinuxcnchal",
 					"targetIndexes" : 
 					[
-						6
+						8
 					]
 				},
 				{
@@ -89,7 +93,7 @@
 					"source" : "liblinuxcncini",
 					"targetIndexes" : 
 					[
-						7
+						9
 					]
 				},
 				{
@@ -104,7 +108,7 @@
 					"source" : "liblinuxcnc",
 					"targetIndexes" : 
 					[
-						11
+						13
 					]
 				},
 				{
@@ -119,7 +123,7 @@
 					"source" : "libtooldata",
 					"targetIndexes" : 
 					[
-						10
+						12
 					]
 				},
 				{
@@ -134,7 +138,7 @@
 					"source" : "libnml",
 					"targetIndexes" : 
 					[
-						8
+						10
 					]
 				},
 				{
@@ -149,7 +153,7 @@
 					"source" : "hal_lib",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -164,7 +168,7 @@
 					"source" : "halcmd",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -179,7 +183,7 @@
 					"source" : "halmeter",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -194,7 +198,7 @@
 					"source" : "halscope",
 					"targetIndexes" : 
 					[
-						4
+						6
 					]
 				},
 				{
@@ -209,7 +213,7 @@
 					"source" : "components/threads",
 					"targetIndexes" : 
 					[
-						14
+						18
 					]
 				},
 				{
@@ -239,7 +243,7 @@
 					"source" : "halui",
 					"targetIndexes" : 
 					[
-						5
+						7
 					]
 				},
 				{
@@ -254,7 +258,67 @@
 					"source" : "libposemath",
 					"targetIndexes" : 
 					[
-						9
+						11
+					]
+				},
+				{
+					"build" : "halshow",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 16,
+					"source" : "halshow",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "halrmt",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 17,
+					"source" : "halrmt",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "pci_write",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 18,
+					"source" : "pci_write",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "pci_read",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 19,
+					"source" : "pci_read",
+					"targetIndexes" : 
+					[
+						15
 					]
 				}
 			],
@@ -278,7 +342,11 @@
 						12,
 						13,
 						14,
-						15
+						15,
+						16,
+						17,
+						18,
+						19
 					],
 					"directoryIndexes" : 
 					[
@@ -295,7 +363,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						13
+						17
 					]
 				},
 				{
@@ -307,7 +375,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						12
+						14
 					]
 				},
 				{
@@ -319,7 +387,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						6
+						8
 					]
 				},
 				{
@@ -331,7 +399,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						7
+						9
 					]
 				},
 				{
@@ -343,7 +411,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						11
+						13
 					]
 				},
 				{
@@ -355,7 +423,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						10
+						12
 					]
 				},
 				{
@@ -367,7 +435,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						8
+						10
 					]
 				},
 				{
@@ -379,7 +447,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -391,7 +459,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -403,7 +471,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -415,7 +483,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						4
+						6
 					]
 				},
 				{
@@ -427,7 +495,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						14
+						18
 					]
 				},
 				{
@@ -451,7 +519,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						5
+						7
 					]
 				},
 				{
@@ -463,7 +531,55 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						9
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						16
+					],
+					"name" : "hal",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						17
+					],
+					"name" : "halrmt",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						18
+					],
+					"name" : "pci_write",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						19
+					],
+					"name" : "pci_read",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						15
 					]
 				}
 			],
@@ -475,6 +591,13 @@
 					"jsonFile" : "target-classicladder-00b554fef3ceef1f50a2.json",
 					"name" : "classicladder",
 					"projectIndex" : 13
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "hal::@35916cdaa71e1f70a702",
+					"jsonFile" : "target-hal-85ad1619de2bfb1c596e.json",
+					"name" : "hal",
+					"projectIndex" : 16
 				},
 				{
 					"directoryIndex" : 8,
@@ -496,6 +619,13 @@
 					"jsonFile" : "target-halmeter-f3db95063409f65be8ef.json",
 					"name" : "halmeter",
 					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "halrmt::@ee8516805f4176e9cc3a",
+					"jsonFile" : "target-halrmt-33f942979e7874998ae8.json",
+					"name" : "halrmt",
+					"projectIndex" : 17
 				},
 				{
 					"directoryIndex" : 11,
@@ -559,6 +689,20 @@
 					"jsonFile" : "target-module_helper-5eeda1dee193fc84da63.json",
 					"name" : "module_helper",
 					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "pci_read::@5b0c03e0d211115f05b6",
+					"jsonFile" : "target-pci_read-cb65014ad7c8a984a9ee.json",
+					"name" : "pci_read",
+					"projectIndex" : 19
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "pci_write::@d2246b2c7127254f5297",
+					"jsonFile" : "target-pci_write-3d9706f42376dbbf146e.json",
+					"name" : "pci_write",
+					"projectIndex" : 18
 				},
 				{
 					"directoryIndex" : 1,

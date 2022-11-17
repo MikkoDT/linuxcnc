@@ -59,6 +59,10 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/user/linuxcnc/cmake/build/classicladder/cmake_install.cmake")
   include("/home/user/linuxcnc/cmake/build/halui/cmake_install.cmake")
   include("/home/user/linuxcnc/cmake/build/libposemath/cmake_install.cmake")
+  include("/home/user/linuxcnc/cmake/build/halshow/cmake_install.cmake")
+  include("/home/user/linuxcnc/cmake/build/halrmt/cmake_install.cmake")
+  include("/home/user/linuxcnc/cmake/build/pci_write/cmake_install.cmake")
+  include("/home/user/linuxcnc/cmake/build/pci_read/cmake_install.cmake")
 
 endif()
 

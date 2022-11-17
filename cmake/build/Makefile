@@ -370,6 +370,58 @@ libposemath/fast:
 	$(MAKE) $(MAKESILENT) -f libposemath/CMakeFiles/libposemath.dir/build.make libposemath/CMakeFiles/libposemath.dir/build
 .PHONY : libposemath/fast
 
+#=============================================================================
+# Target rules for targets named hal
+
+# Build rule for target.
+hal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal
+.PHONY : hal
+
+# fast build rule for target.
+hal/fast:
+	$(MAKE) $(MAKESILENT) -f halshow/CMakeFiles/hal.dir/build.make halshow/CMakeFiles/hal.dir/build
+.PHONY : hal/fast
+
+#=============================================================================
+# Target rules for targets named halrmt
+
+# Build rule for target.
+halrmt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halrmt
+.PHONY : halrmt
+
+# fast build rule for target.
+halrmt/fast:
+	$(MAKE) $(MAKESILENT) -f halrmt/CMakeFiles/halrmt.dir/build.make halrmt/CMakeFiles/halrmt.dir/build
+.PHONY : halrmt/fast
+
+#=============================================================================
+# Target rules for targets named pci_write
+
+# Build rule for target.
+pci_write: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pci_write
+.PHONY : pci_write
+
+# fast build rule for target.
+pci_write/fast:
+	$(MAKE) $(MAKESILENT) -f pci_write/CMakeFiles/pci_write.dir/build.make pci_write/CMakeFiles/pci_write.dir/build
+.PHONY : pci_write/fast
+
+#=============================================================================
+# Target rules for targets named pci_read
+
+# Build rule for target.
+pci_read: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pci_read
+.PHONY : pci_read
+
+# fast build rule for target.
+pci_read/fast:
+	$(MAKE) $(MAKESILENT) -f pci_read/CMakeFiles/pci_read.dir/build.make pci_read/CMakeFiles/pci_read.dir/build
+.PHONY : pci_read/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -383,9 +435,11 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... classicladder"
+	@echo "... hal"
 	@echo "... hal_lib"
 	@echo "... halcmd"
 	@echo "... halmeter"
+	@echo "... halrmt"
 	@echo "... halscope"
 	@echo "... halui"
 	@echo "... liblinuxcnchal"
@@ -395,6 +449,8 @@ help:
 	@echo "... libtooldata"
 	@echo "... linuxcnc"
 	@echo "... module_helper"
+	@echo "... pci_read"
+	@echo "... pci_write"
 	@echo "... rtapi"
 	@echo "... threads"
 .PHONY : help

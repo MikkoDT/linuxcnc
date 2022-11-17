@@ -16,7 +16,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../hal_lib/CMakeLists.txt"
   "../halcmd/CMakeLists.txt"
   "../halmeter/CMakeLists.txt"
+  "../halrmt/CMakeLists.txt"
   "../halscope/CMakeLists.txt"
+  "../halshow/CMakeLists.txt"
   "../halui/CMakeLists.txt"
   "../liblinuxcnc/CMakeLists.txt"
   "../liblinuxcnchal/CMakeLists.txt"
@@ -25,6 +27,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../libposemath/CMakeLists.txt"
   "../libtooldata/CMakeLists.txt"
   "../module_helper/CMakeLists.txt"
+  "../pci_read/CMakeLists.txt"
+  "../pci_write/CMakeLists.txt"
   "../rtapi/CMakeLists.txt"
   "/usr/share/cmake-3.18/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake"
@@ -71,6 +75,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "classicladder/CMakeFiles/CMakeDirectoryInformation.cmake"
   "halui/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libposemath/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "halshow/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "halrmt/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "pci_write/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "pci_read/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -90,4 +98,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "classicladder/CMakeFiles/classicladder.dir/DependInfo.cmake"
   "halui/CMakeFiles/halui.dir/DependInfo.cmake"
   "libposemath/CMakeFiles/libposemath.dir/DependInfo.cmake"
+  "halshow/CMakeFiles/hal.dir/DependInfo.cmake"
+  "halrmt/CMakeFiles/halrmt.dir/DependInfo.cmake"
+  "pci_write/CMakeFiles/pci_write.dir/DependInfo.cmake"
+  "pci_read/CMakeFiles/pci_read.dir/DependInfo.cmake"
   )

@@ -783,7 +783,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "16"
+			"value" : "20"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1230,6 +1230,42 @@
 			"value" : "/home/user/linuxcnc/cmake/classicladder"
 		},
 		{
+			"name" : "hal_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/build/halshow"
+		},
+		{
+			"name" : "hal_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;linuxcnchal;general;linuxcncini;general;-lX11;general;-lXss;general;-lXext;general;-lXft;general;-lfontconfig;general;-lfreetype;general;-lfontconfig;general;-lpthread;general;-ldl;general;-lz;general;-lpthread;general;-lm;general;-ltk8.6;general;-lXinerama;"
+		},
+		{
+			"name" : "hal_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/halshow"
+		},
+		{
 			"name" : "hal_lib_BINARY_DIR",
 			"properties" : 
 			[
@@ -1312,6 +1348,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/user/linuxcnc/cmake/halmeter"
+		},
+		{
+			"name" : "halrmt_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/build/halrmt"
+		},
+		{
+			"name" : "halrmt_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;linuxcnchal;general;linuxcncini;general;-lX11;general;-lXss;general;-lXext;general;-lXft;general;-lfontconfig;general;-lfreetype;general;-lfontconfig;general;-lpthread;general;-ldl;general;-lz;general;-lpthread;general;-lm;general;-ltk8.6;general;-lXinerama;"
+		},
+		{
+			"name" : "halrmt_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/halrmt"
 		},
 		{
 			"name" : "halscope_BINARY_DIR",
@@ -1564,6 +1636,54 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/user/linuxcnc/cmake/module_helper"
+		},
+		{
+			"name" : "pci_read_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/build/pci_read"
+		},
+		{
+			"name" : "pci_read_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/pci_read"
+		},
+		{
+			"name" : "pci_write_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/build/pci_write"
+		},
+		{
+			"name" : "pci_write_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/pci_write"
 		},
 		{
 			"name" : "rtapi_BINARY_DIR",

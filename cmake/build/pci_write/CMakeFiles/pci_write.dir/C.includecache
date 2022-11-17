@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/linuxcnc/cmake/common_src/upci.c
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+string.h
+-
+fcntl.h
+-
+errno.h
+-
+sys/types.h
+-
+unistd.h
+-
+sys/io.h
+-
+sys/mman.h
+-
+linux/types.h
+-
+upci.h
+/home/user/linuxcnc/cmake/common_src/upci.h
+
+/home/user/linuxcnc/cmake/common_src/upci.h
+linux/types.h
+-
+

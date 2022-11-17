@@ -175,6 +175,18 @@
 		},
 		{
 			"path" : "libposemath/CMakeLists.txt"
+		},
+		{
+			"path" : "halshow/CMakeLists.txt"
+		},
+		{
+			"path" : "halrmt/CMakeLists.txt"
+		},
+		{
+			"path" : "pci_write/CMakeLists.txt"
+		},
+		{
+			"path" : "pci_read/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
