@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 # Include any dependencies generated for this target.
 include module_helper/CMakeFiles/module_helper.dir/depend.make
@@ -76,31 +76,31 @@ include module_helper/CMakeFiles/module_helper.dir/progress.make
 # Include the compile flags for this target's objects.
 include module_helper/CMakeFiles/module_helper.dir/flags.make
 
-module_helper/CMakeFiles/module_helper.dir/__/src/module_helper.c.o: module_helper/CMakeFiles/module_helper.dir/flags.make
-module_helper/CMakeFiles/module_helper.dir/__/src/module_helper.c.o: ../src/module_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object module_helper/CMakeFiles/module_helper.dir/__/src/module_helper.c.o"
-	cd /home/user/linuxcnc/cmake/build/module_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/module_helper.dir/__/src/module_helper.c.o -c /home/user/linuxcnc/cmake/src/module_helper.c
+module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o: module_helper/CMakeFiles/module_helper.dir/flags.make
+module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o: ../module_helper_src/module_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o"
+	cd /home/user/lcncladdertest/cmake/build/module_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o -c /home/user/lcncladdertest/cmake/module_helper_src/module_helper.c
 
-module_helper/CMakeFiles/module_helper.dir/__/src/module_helper.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/module_helper.dir/__/src/module_helper.c.i"
-	cd /home/user/linuxcnc/cmake/build/module_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/module_helper.c > CMakeFiles/module_helper.dir/__/src/module_helper.c.i
+module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.i"
+	cd /home/user/lcncladdertest/cmake/build/module_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/module_helper_src/module_helper.c > CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.i
 
-module_helper/CMakeFiles/module_helper.dir/__/src/module_helper.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/module_helper.dir/__/src/module_helper.c.s"
-	cd /home/user/linuxcnc/cmake/build/module_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/module_helper.c -o CMakeFiles/module_helper.dir/__/src/module_helper.c.s
+module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.s"
+	cd /home/user/lcncladdertest/cmake/build/module_helper && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/module_helper_src/module_helper.c -o CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.s
 
 # Object files for target module_helper
 module_helper_OBJECTS = \
-"CMakeFiles/module_helper.dir/__/src/module_helper.c.o"
+"CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o"
 
 # External object files for target module_helper
 module_helper_EXTERNAL_OBJECTS =
 
-module_helper/module_helper.so: module_helper/CMakeFiles/module_helper.dir/__/src/module_helper.c.o
+module_helper/module_helper.so: module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o
 module_helper/module_helper.so: module_helper/CMakeFiles/module_helper.dir/build.make
 module_helper/module_helper.so: module_helper/CMakeFiles/module_helper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library module_helper.so"
-	cd /home/user/linuxcnc/cmake/build/module_helper && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/module_helper.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library module_helper.so"
+	cd /home/user/lcncladdertest/cmake/build/module_helper && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/module_helper.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 module_helper/CMakeFiles/module_helper.dir/build: module_helper/module_helper.so
@@ -108,10 +108,10 @@ module_helper/CMakeFiles/module_helper.dir/build: module_helper/module_helper.so
 .PHONY : module_helper/CMakeFiles/module_helper.dir/build
 
 module_helper/CMakeFiles/module_helper.dir/clean:
-	cd /home/user/linuxcnc/cmake/build/module_helper && $(CMAKE_COMMAND) -P CMakeFiles/module_helper.dir/cmake_clean.cmake
+	cd /home/user/lcncladdertest/cmake/build/module_helper && $(CMAKE_COMMAND) -P CMakeFiles/module_helper.dir/cmake_clean.cmake
 .PHONY : module_helper/CMakeFiles/module_helper.dir/clean
 
 module_helper/CMakeFiles/module_helper.dir/depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/module_helper /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/module_helper /home/user/linuxcnc/cmake/build/module_helper/CMakeFiles/module_helper.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/module_helper /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/module_helper /home/user/lcncladdertest/cmake/build/module_helper/CMakeFiles/module_helper.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : module_helper/CMakeFiles/module_helper.dir/depend
 

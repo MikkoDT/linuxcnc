@@ -8,7 +8,9 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(${SRC_DIR}/../rtapi_src)
+include_directories(${SRC_DIR}/../liblinuxcnchal_src)
+include_directories(${SRC_DIR}/../common_src)
 
 # Gtk include dirs.
 include_directories(/usr/local/include/freetype2)
@@ -38,8 +40,8 @@ include_directories(/usr/lib/x86_64-linux-gnu/glib-2.0/include)
 # set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 set(SOURCES
-    ${SRC_DIR}/../src/meter.c
-    ${SRC_DIR}/../src/miscgtk.c
+    ${SRC_DIR}/../halmeter_src/meter.c
+    ${SRC_DIR}/../common_src/miscgtk.c
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})

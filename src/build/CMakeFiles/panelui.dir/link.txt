@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,panelui.so -o panelui.so CMakeFiles/panelui.dir/hal/components/panelui.c.o  -lpthread -lrt -llinuxcnchal 

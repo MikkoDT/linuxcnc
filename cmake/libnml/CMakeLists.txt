@@ -8,58 +8,63 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(${SRC_DIR}/../common_src)
+include_directories(${SRC_DIR}/../rtapi_src)
+include_directories(${SRC_DIR}/../libnml_src)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED 
-    ${SRC_DIR}/../src/rcs_print.cc
-    ${SRC_DIR}/../src/rcs_exit.cc
-    ${SRC_DIR}/../src/_sem.c
-    ${SRC_DIR}/../src/_shm.c
-    ${SRC_DIR}/../src/_timer.c
-    ${SRC_DIR}/../src/sem.cc
-    ${SRC_DIR}/../src/shm.cc
-    ${SRC_DIR}/../src/timer.cc
-    ${SRC_DIR}/../src/locmem.cc
-    ${SRC_DIR}/../src/memsem.cc
-    ${SRC_DIR}/../src/phantom.cc
-    ${SRC_DIR}/../src/physmem.cc
-    ${SRC_DIR}/../src/recvn.c
-    ${SRC_DIR}/../src/sendn.c
-    ${SRC_DIR}/../src/shmem.cc
-    ${SRC_DIR}/../src/tcpmem.cc
-    ${SRC_DIR}/../src/cms.cc
-    ${SRC_DIR}/../src/cms_aup.cc
-    ${SRC_DIR}/../src/cms_cfg.cc
-    ${SRC_DIR}/../src/cms_in.cc
-    ${SRC_DIR}/../src/cms_dup.cc
-    ${SRC_DIR}/../src/cms_pm.cc
-    ${SRC_DIR}/../src/cms_srv.cc
-    ${SRC_DIR}/../src/cms_up.cc
-    ${SRC_DIR}/../src/cms_xup.cc
-    ${SRC_DIR}/../src/cmsdiag.cc
-    ${SRC_DIR}/../src/tcp_opts.cc
-    ${SRC_DIR}/../src/tcp_srv.cc
-    ${SRC_DIR}/../src/cmd_msg.cc
-    ${SRC_DIR}/../src/nml_mod.cc
-    ${SRC_DIR}/../src/nml_oi.cc
-    ${SRC_DIR}/../src/nml_srv.cc
-    ${SRC_DIR}/../src/nml.cc
-    ${SRC_DIR}/../src/nmldiag.cc
-    ${SRC_DIR}/../src/nmlmsg.cc
-    ${SRC_DIR}/../src/stat_msg.cc
-    ${SRC_DIR}/../src/linklist.cc
+    ${SRC_DIR}/../libnml_src/rcs_print.cc
+    ${SRC_DIR}/../libnml_src/rcs_exit.cc
+    ${SRC_DIR}/../libnml_src/_sem.c
+    ${SRC_DIR}/../libnml_src/_shm.c
+    ${SRC_DIR}/../libnml_src/_timer.c
+    ${SRC_DIR}/../libnml_src/sem.cc
+    ${SRC_DIR}/../libnml_src/shm.cc
+    ${SRC_DIR}/../libnml_src/timer.cc
+    ${SRC_DIR}/../libnml_src/locmem.cc
+    ${SRC_DIR}/../libnml_src/memsem.cc
+    ${SRC_DIR}/../libnml_src/phantom.cc
+    ${SRC_DIR}/../libnml_src/physmem.cc
+    ${SRC_DIR}/../libnml_src/recvn.c
+    ${SRC_DIR}/../libnml_src/sendn.c
+    ${SRC_DIR}/../libnml_src/shmem.cc
+    ${SRC_DIR}/../libnml_src/tcpmem.cc
+    ${SRC_DIR}/../libnml_src/cms.cc
+    ${SRC_DIR}/../libnml_src/cms_aup.cc
+    ${SRC_DIR}/../libnml_src/cms_cfg.cc
+    ${SRC_DIR}/../libnml_src/cms_in.cc
+    ${SRC_DIR}/../libnml_src/cms_dup.cc
+    ${SRC_DIR}/../libnml_src/cms_pm.cc
+    ${SRC_DIR}/../libnml_src/cms_srv.cc
+    ${SRC_DIR}/../libnml_src/cms_up.cc
+    ${SRC_DIR}/../libnml_src/cms_xup.cc
+    ${SRC_DIR}/../libnml_src/cmsdiag.cc
+    ${SRC_DIR}/../libnml_src/tcp_opts.cc
+    ${SRC_DIR}/../libnml_src/tcp_srv.cc
+    ${SRC_DIR}/../libnml_src/cmd_msg.cc
+    ${SRC_DIR}/../libnml_src/nml_mod.cc
+    ${SRC_DIR}/../libnml_src/nml_oi.cc
+    ${SRC_DIR}/../libnml_src/nml_srv.cc
+    ${SRC_DIR}/../libnml_src/nml.cc
+    ${SRC_DIR}/../libnml_src/nmldiag.cc
+    ${SRC_DIR}/../libnml_src/nmlmsg.cc
+    ${SRC_DIR}/../libnml_src/stat_msg.cc
+    ${SRC_DIR}/../libnml_src/linklist.cc
 )
 
 add_definitions(-DULAPI)
 
-# Set include paths for libraries to link.
-target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/liblinuxcnchal)
+add_library(linuxcnchal SHARED IMPORTED) # or STATIC instead of SHARED
+set_target_properties(linuxcnchal PROPERTIES
+  IMPORTED_LOCATION "/home/user/lcncladdertest/lib/liblinuxcnchal.so"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/user/lcncladdertest/include"
+)
 
 # Link to libraries.
-target_link_libraries(${PROJECT_NAME} PRIVATE liblinuxcnchal)
+target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal)
 
 # Set custom output name :
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)

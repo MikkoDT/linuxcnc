@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/halmeter.dir/__/src/meter.c.o"
-  "CMakeFiles/halmeter.dir/__/src/miscgtk.c.o"
+  "CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o"
+  "CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o"
   "halmeter"
   "halmeter.pdb"
 )

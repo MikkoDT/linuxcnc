@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/linuxcnc/cmake/src/module_helper.c" "/home/user/linuxcnc/cmake/build/module_helper/CMakeFiles/module_helper.dir/__/src/module_helper.c.o"
+  "/home/user/lcncladdertest/cmake/module_helper_src/module_helper.c" "/home/user/lcncladdertest/cmake/build/module_helper/CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -17,7 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../module_helper"
-  "../module_helper/../src"
+  "../module_helper/../common_src"
+  "../module_helper/../module_helper_src"
   "module_helper"
   )
 

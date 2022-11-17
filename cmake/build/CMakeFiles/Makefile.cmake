@@ -17,6 +17,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../halcmd/CMakeLists.txt"
   "../halmeter/CMakeLists.txt"
   "../halscope/CMakeLists.txt"
+  "../halui/CMakeLists.txt"
   "../liblinuxcnc/CMakeLists.txt"
   "../liblinuxcnchal/CMakeLists.txt"
   "../liblinuxcncini/CMakeLists.txt"
@@ -67,6 +68,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "components/threads/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libtooldata/CMakeFiles/CMakeDirectoryInformation.cmake"
   "classicladder/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "halui/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -75,14 +77,14 @@ set(CMAKE_DEPEND_INFO_FILES
   "module_helper/CMakeFiles/module_helper.dir/DependInfo.cmake"
   "liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/DependInfo.cmake"
   "hal_lib/CMakeFiles/hal_lib.dir/DependInfo.cmake"
-  "halcmd/CMakeFiles/libhalcmd.dir/DependInfo.cmake"
   "halcmd/CMakeFiles/halcmd.dir/DependInfo.cmake"
   "halmeter/CMakeFiles/halmeter.dir/DependInfo.cmake"
   "halscope/CMakeFiles/halscope.dir/DependInfo.cmake"
   "liblinuxcncini/CMakeFiles/liblinuxcncini.dir/DependInfo.cmake"
   "libnml/CMakeFiles/libnml.dir/DependInfo.cmake"
-  "liblinuxcnc/CMakeFiles/liblinuxcnc.dir/DependInfo.cmake"
+  "liblinuxcnc/CMakeFiles/linuxcnc.dir/DependInfo.cmake"
   "components/threads/CMakeFiles/threads.dir/DependInfo.cmake"
   "libtooldata/CMakeFiles/libtooldata.dir/DependInfo.cmake"
   "classicladder/CMakeFiles/classicladder.dir/DependInfo.cmake"
+  "halui/CMakeFiles/halui.dir/DependInfo.cmake"
   )

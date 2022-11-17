@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 # Include any dependencies generated for this target.
 include libnml/CMakeFiles/libnml.dir/depend.make
@@ -76,573 +76,573 @@ include libnml/CMakeFiles/libnml.dir/progress.make
 # Include the compile flags for this target's objects.
 include libnml/CMakeFiles/libnml.dir/flags.make
 
-libnml/CMakeFiles/libnml.dir/__/src/rcs_print.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/rcs_print.cc.o: ../src/rcs_print.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/rcs_print.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/rcs_print.cc.o -c /home/user/linuxcnc/cmake/src/rcs_print.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/rcs_print.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/rcs_print.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/rcs_print.cc > CMakeFiles/libnml.dir/__/src/rcs_print.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/rcs_print.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/rcs_print.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/rcs_print.cc -o CMakeFiles/libnml.dir/__/src/rcs_print.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/rcs_exit.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/rcs_exit.cc.o: ../src/rcs_exit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/rcs_exit.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/rcs_exit.cc.o -c /home/user/linuxcnc/cmake/src/rcs_exit.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/rcs_exit.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/rcs_exit.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/rcs_exit.cc > CMakeFiles/libnml.dir/__/src/rcs_exit.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/rcs_exit.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/rcs_exit.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/rcs_exit.cc -o CMakeFiles/libnml.dir/__/src/rcs_exit.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/_sem.c.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/_sem.c.o: ../src/_sem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libnml/CMakeFiles/libnml.dir/__/src/_sem.c.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/src/_sem.c.o -c /home/user/linuxcnc/cmake/src/_sem.c
-
-libnml/CMakeFiles/libnml.dir/__/src/_sem.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/src/_sem.c.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/_sem.c > CMakeFiles/libnml.dir/__/src/_sem.c.i
-
-libnml/CMakeFiles/libnml.dir/__/src/_sem.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/src/_sem.c.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/_sem.c -o CMakeFiles/libnml.dir/__/src/_sem.c.s
-
-libnml/CMakeFiles/libnml.dir/__/src/_shm.c.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/_shm.c.o: ../src/_shm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libnml/CMakeFiles/libnml.dir/__/src/_shm.c.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/src/_shm.c.o -c /home/user/linuxcnc/cmake/src/_shm.c
-
-libnml/CMakeFiles/libnml.dir/__/src/_shm.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/src/_shm.c.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/_shm.c > CMakeFiles/libnml.dir/__/src/_shm.c.i
-
-libnml/CMakeFiles/libnml.dir/__/src/_shm.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/src/_shm.c.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/_shm.c -o CMakeFiles/libnml.dir/__/src/_shm.c.s
-
-libnml/CMakeFiles/libnml.dir/__/src/_timer.c.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/_timer.c.o: ../src/_timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libnml/CMakeFiles/libnml.dir/__/src/_timer.c.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/src/_timer.c.o -c /home/user/linuxcnc/cmake/src/_timer.c
-
-libnml/CMakeFiles/libnml.dir/__/src/_timer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/src/_timer.c.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/_timer.c > CMakeFiles/libnml.dir/__/src/_timer.c.i
-
-libnml/CMakeFiles/libnml.dir/__/src/_timer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/src/_timer.c.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/_timer.c -o CMakeFiles/libnml.dir/__/src/_timer.c.s
-
-libnml/CMakeFiles/libnml.dir/__/src/sem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/sem.cc.o: ../src/sem.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/sem.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/sem.cc.o -c /home/user/linuxcnc/cmake/src/sem.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/sem.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/sem.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/sem.cc > CMakeFiles/libnml.dir/__/src/sem.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/sem.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/sem.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/sem.cc -o CMakeFiles/libnml.dir/__/src/sem.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/shm.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/shm.cc.o: ../src/shm.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/shm.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/shm.cc.o -c /home/user/linuxcnc/cmake/src/shm.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/shm.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/shm.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/shm.cc > CMakeFiles/libnml.dir/__/src/shm.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/shm.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/shm.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/shm.cc -o CMakeFiles/libnml.dir/__/src/shm.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/timer.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/timer.cc.o: ../src/timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/timer.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/timer.cc.o -c /home/user/linuxcnc/cmake/src/timer.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/timer.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/timer.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/timer.cc > CMakeFiles/libnml.dir/__/src/timer.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/timer.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/timer.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/timer.cc -o CMakeFiles/libnml.dir/__/src/timer.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/locmem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/locmem.cc.o: ../src/locmem.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/locmem.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/locmem.cc.o -c /home/user/linuxcnc/cmake/src/locmem.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/locmem.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/locmem.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/locmem.cc > CMakeFiles/libnml.dir/__/src/locmem.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/locmem.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/locmem.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/locmem.cc -o CMakeFiles/libnml.dir/__/src/locmem.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/memsem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/memsem.cc.o: ../src/memsem.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/memsem.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/memsem.cc.o -c /home/user/linuxcnc/cmake/src/memsem.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/memsem.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/memsem.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/memsem.cc > CMakeFiles/libnml.dir/__/src/memsem.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/memsem.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/memsem.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/memsem.cc -o CMakeFiles/libnml.dir/__/src/memsem.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/phantom.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/phantom.cc.o: ../src/phantom.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/phantom.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/phantom.cc.o -c /home/user/linuxcnc/cmake/src/phantom.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/phantom.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/phantom.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/phantom.cc > CMakeFiles/libnml.dir/__/src/phantom.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/phantom.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/phantom.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/phantom.cc -o CMakeFiles/libnml.dir/__/src/phantom.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/physmem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/physmem.cc.o: ../src/physmem.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/physmem.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/physmem.cc.o -c /home/user/linuxcnc/cmake/src/physmem.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/physmem.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/physmem.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/physmem.cc > CMakeFiles/libnml.dir/__/src/physmem.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/physmem.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/physmem.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/physmem.cc -o CMakeFiles/libnml.dir/__/src/physmem.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/recvn.c.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/recvn.c.o: ../src/recvn.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libnml/CMakeFiles/libnml.dir/__/src/recvn.c.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/src/recvn.c.o -c /home/user/linuxcnc/cmake/src/recvn.c
-
-libnml/CMakeFiles/libnml.dir/__/src/recvn.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/src/recvn.c.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/recvn.c > CMakeFiles/libnml.dir/__/src/recvn.c.i
-
-libnml/CMakeFiles/libnml.dir/__/src/recvn.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/src/recvn.c.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/recvn.c -o CMakeFiles/libnml.dir/__/src/recvn.c.s
-
-libnml/CMakeFiles/libnml.dir/__/src/sendn.c.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/sendn.c.o: ../src/sendn.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libnml/CMakeFiles/libnml.dir/__/src/sendn.c.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/src/sendn.c.o -c /home/user/linuxcnc/cmake/src/sendn.c
-
-libnml/CMakeFiles/libnml.dir/__/src/sendn.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/src/sendn.c.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/sendn.c > CMakeFiles/libnml.dir/__/src/sendn.c.i
-
-libnml/CMakeFiles/libnml.dir/__/src/sendn.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/src/sendn.c.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/sendn.c -o CMakeFiles/libnml.dir/__/src/sendn.c.s
-
-libnml/CMakeFiles/libnml.dir/__/src/shmem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/shmem.cc.o: ../src/shmem.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/shmem.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/shmem.cc.o -c /home/user/linuxcnc/cmake/src/shmem.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/shmem.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/shmem.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/shmem.cc > CMakeFiles/libnml.dir/__/src/shmem.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/shmem.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/shmem.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/shmem.cc -o CMakeFiles/libnml.dir/__/src/shmem.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/tcpmem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/tcpmem.cc.o: ../src/tcpmem.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/tcpmem.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/tcpmem.cc.o -c /home/user/linuxcnc/cmake/src/tcpmem.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/tcpmem.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/tcpmem.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/tcpmem.cc > CMakeFiles/libnml.dir/__/src/tcpmem.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/tcpmem.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/tcpmem.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/tcpmem.cc -o CMakeFiles/libnml.dir/__/src/tcpmem.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cms.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cms.cc.o: ../src/cms.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cms.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cms.cc.o -c /home/user/linuxcnc/cmake/src/cms.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cms.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cms.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cms.cc > CMakeFiles/libnml.dir/__/src/cms.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cms.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cms.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cms.cc -o CMakeFiles/libnml.dir/__/src/cms.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_aup.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cms_aup.cc.o: ../src/cms_aup.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cms_aup.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cms_aup.cc.o -c /home/user/linuxcnc/cmake/src/cms_aup.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_aup.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cms_aup.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cms_aup.cc > CMakeFiles/libnml.dir/__/src/cms_aup.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_aup.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cms_aup.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cms_aup.cc -o CMakeFiles/libnml.dir/__/src/cms_aup.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_cfg.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cms_cfg.cc.o: ../src/cms_cfg.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cms_cfg.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cms_cfg.cc.o -c /home/user/linuxcnc/cmake/src/cms_cfg.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_cfg.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cms_cfg.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cms_cfg.cc > CMakeFiles/libnml.dir/__/src/cms_cfg.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_cfg.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cms_cfg.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cms_cfg.cc -o CMakeFiles/libnml.dir/__/src/cms_cfg.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_in.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cms_in.cc.o: ../src/cms_in.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cms_in.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cms_in.cc.o -c /home/user/linuxcnc/cmake/src/cms_in.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_in.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cms_in.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cms_in.cc > CMakeFiles/libnml.dir/__/src/cms_in.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_in.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cms_in.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cms_in.cc -o CMakeFiles/libnml.dir/__/src/cms_in.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_dup.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cms_dup.cc.o: ../src/cms_dup.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cms_dup.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cms_dup.cc.o -c /home/user/linuxcnc/cmake/src/cms_dup.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_dup.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cms_dup.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cms_dup.cc > CMakeFiles/libnml.dir/__/src/cms_dup.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_dup.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cms_dup.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cms_dup.cc -o CMakeFiles/libnml.dir/__/src/cms_dup.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_pm.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cms_pm.cc.o: ../src/cms_pm.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cms_pm.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cms_pm.cc.o -c /home/user/linuxcnc/cmake/src/cms_pm.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_pm.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cms_pm.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cms_pm.cc > CMakeFiles/libnml.dir/__/src/cms_pm.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_pm.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cms_pm.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cms_pm.cc -o CMakeFiles/libnml.dir/__/src/cms_pm.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_srv.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cms_srv.cc.o: ../src/cms_srv.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cms_srv.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cms_srv.cc.o -c /home/user/linuxcnc/cmake/src/cms_srv.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_srv.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cms_srv.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cms_srv.cc > CMakeFiles/libnml.dir/__/src/cms_srv.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_srv.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cms_srv.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cms_srv.cc -o CMakeFiles/libnml.dir/__/src/cms_srv.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_up.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cms_up.cc.o: ../src/cms_up.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cms_up.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cms_up.cc.o -c /home/user/linuxcnc/cmake/src/cms_up.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_up.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cms_up.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cms_up.cc > CMakeFiles/libnml.dir/__/src/cms_up.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_up.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cms_up.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cms_up.cc -o CMakeFiles/libnml.dir/__/src/cms_up.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_xup.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cms_xup.cc.o: ../src/cms_xup.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cms_xup.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cms_xup.cc.o -c /home/user/linuxcnc/cmake/src/cms_xup.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_xup.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cms_xup.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cms_xup.cc > CMakeFiles/libnml.dir/__/src/cms_xup.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cms_xup.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cms_xup.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cms_xup.cc -o CMakeFiles/libnml.dir/__/src/cms_xup.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cmsdiag.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cmsdiag.cc.o: ../src/cmsdiag.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cmsdiag.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cmsdiag.cc.o -c /home/user/linuxcnc/cmake/src/cmsdiag.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cmsdiag.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cmsdiag.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cmsdiag.cc > CMakeFiles/libnml.dir/__/src/cmsdiag.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cmsdiag.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cmsdiag.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cmsdiag.cc -o CMakeFiles/libnml.dir/__/src/cmsdiag.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/tcp_opts.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/tcp_opts.cc.o: ../src/tcp_opts.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/tcp_opts.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/tcp_opts.cc.o -c /home/user/linuxcnc/cmake/src/tcp_opts.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/tcp_opts.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/tcp_opts.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/tcp_opts.cc > CMakeFiles/libnml.dir/__/src/tcp_opts.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/tcp_opts.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/tcp_opts.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/tcp_opts.cc -o CMakeFiles/libnml.dir/__/src/tcp_opts.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/tcp_srv.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/tcp_srv.cc.o: ../src/tcp_srv.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/tcp_srv.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/tcp_srv.cc.o -c /home/user/linuxcnc/cmake/src/tcp_srv.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/tcp_srv.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/tcp_srv.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/tcp_srv.cc > CMakeFiles/libnml.dir/__/src/tcp_srv.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/tcp_srv.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/tcp_srv.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/tcp_srv.cc -o CMakeFiles/libnml.dir/__/src/tcp_srv.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/cmd_msg.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/cmd_msg.cc.o: ../src/cmd_msg.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/cmd_msg.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/cmd_msg.cc.o -c /home/user/linuxcnc/cmake/src/cmd_msg.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/cmd_msg.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/cmd_msg.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/cmd_msg.cc > CMakeFiles/libnml.dir/__/src/cmd_msg.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/cmd_msg.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/cmd_msg.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/cmd_msg.cc -o CMakeFiles/libnml.dir/__/src/cmd_msg.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/nml_mod.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/nml_mod.cc.o: ../src/nml_mod.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/nml_mod.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/nml_mod.cc.o -c /home/user/linuxcnc/cmake/src/nml_mod.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/nml_mod.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/nml_mod.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/nml_mod.cc > CMakeFiles/libnml.dir/__/src/nml_mod.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/nml_mod.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/nml_mod.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/nml_mod.cc -o CMakeFiles/libnml.dir/__/src/nml_mod.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/nml_oi.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/nml_oi.cc.o: ../src/nml_oi.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/nml_oi.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/nml_oi.cc.o -c /home/user/linuxcnc/cmake/src/nml_oi.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/nml_oi.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/nml_oi.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/nml_oi.cc > CMakeFiles/libnml.dir/__/src/nml_oi.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/nml_oi.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/nml_oi.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/nml_oi.cc -o CMakeFiles/libnml.dir/__/src/nml_oi.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/nml_srv.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/nml_srv.cc.o: ../src/nml_srv.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/nml_srv.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/nml_srv.cc.o -c /home/user/linuxcnc/cmake/src/nml_srv.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/nml_srv.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/nml_srv.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/nml_srv.cc > CMakeFiles/libnml.dir/__/src/nml_srv.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/nml_srv.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/nml_srv.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/nml_srv.cc -o CMakeFiles/libnml.dir/__/src/nml_srv.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/nml.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/nml.cc.o: ../src/nml.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/nml.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/nml.cc.o -c /home/user/linuxcnc/cmake/src/nml.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/nml.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/nml.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/nml.cc > CMakeFiles/libnml.dir/__/src/nml.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/nml.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/nml.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/nml.cc -o CMakeFiles/libnml.dir/__/src/nml.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/nmldiag.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/nmldiag.cc.o: ../src/nmldiag.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/nmldiag.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/nmldiag.cc.o -c /home/user/linuxcnc/cmake/src/nmldiag.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/nmldiag.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/nmldiag.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/nmldiag.cc > CMakeFiles/libnml.dir/__/src/nmldiag.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/nmldiag.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/nmldiag.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/nmldiag.cc -o CMakeFiles/libnml.dir/__/src/nmldiag.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/nmlmsg.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/nmlmsg.cc.o: ../src/nmlmsg.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/nmlmsg.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/nmlmsg.cc.o -c /home/user/linuxcnc/cmake/src/nmlmsg.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/nmlmsg.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/nmlmsg.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/nmlmsg.cc > CMakeFiles/libnml.dir/__/src/nmlmsg.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/nmlmsg.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/nmlmsg.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/nmlmsg.cc -o CMakeFiles/libnml.dir/__/src/nmlmsg.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/stat_msg.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/stat_msg.cc.o: ../src/stat_msg.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/stat_msg.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/stat_msg.cc.o -c /home/user/linuxcnc/cmake/src/stat_msg.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/stat_msg.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/stat_msg.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/stat_msg.cc > CMakeFiles/libnml.dir/__/src/stat_msg.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/stat_msg.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/stat_msg.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/stat_msg.cc -o CMakeFiles/libnml.dir/__/src/stat_msg.cc.s
-
-libnml/CMakeFiles/libnml.dir/__/src/linklist.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
-libnml/CMakeFiles/libnml.dir/__/src/linklist.cc.o: ../src/linklist.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object libnml/CMakeFiles/libnml.dir/__/src/linklist.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/src/linklist.cc.o -c /home/user/linuxcnc/cmake/src/linklist.cc
-
-libnml/CMakeFiles/libnml.dir/__/src/linklist.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/src/linklist.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/linklist.cc > CMakeFiles/libnml.dir/__/src/linklist.cc.i
-
-libnml/CMakeFiles/libnml.dir/__/src/linklist.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/src/linklist.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/linklist.cc -o CMakeFiles/libnml.dir/__/src/linklist.cc.s
+libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.o: ../libnml_src/rcs_print.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/rcs_print.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/rcs_print.cc > CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/rcs_print.cc -o CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.o: ../libnml_src/rcs_exit.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/rcs_exit.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/rcs_exit.cc > CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/rcs_exit.cc -o CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.o: ../libnml_src/_sem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/_sem.c.o -c /home/user/lcncladdertest/cmake/libnml_src/_sem.c
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/libnml_src/_sem.c.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/_sem.c > CMakeFiles/libnml.dir/__/libnml_src/_sem.c.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/libnml_src/_sem.c.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/_sem.c -o CMakeFiles/libnml.dir/__/libnml_src/_sem.c.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.o: ../libnml_src/_shm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/_shm.c.o -c /home/user/lcncladdertest/cmake/libnml_src/_shm.c
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/libnml_src/_shm.c.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/_shm.c > CMakeFiles/libnml.dir/__/libnml_src/_shm.c.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/libnml_src/_shm.c.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/_shm.c -o CMakeFiles/libnml.dir/__/libnml_src/_shm.c.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.o: ../libnml_src/_timer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/_timer.c.o -c /home/user/lcncladdertest/cmake/libnml_src/_timer.c
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/libnml_src/_timer.c.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/_timer.c > CMakeFiles/libnml.dir/__/libnml_src/_timer.c.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/libnml_src/_timer.c.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/_timer.c -o CMakeFiles/libnml.dir/__/libnml_src/_timer.c.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.o: ../libnml_src/sem.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/sem.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/sem.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/sem.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/sem.cc > CMakeFiles/libnml.dir/__/libnml_src/sem.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/sem.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/sem.cc -o CMakeFiles/libnml.dir/__/libnml_src/sem.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.o: ../libnml_src/shm.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/shm.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/shm.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/shm.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/shm.cc > CMakeFiles/libnml.dir/__/libnml_src/shm.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/shm.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/shm.cc -o CMakeFiles/libnml.dir/__/libnml_src/shm.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.o: ../libnml_src/timer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/timer.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/timer.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/timer.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/timer.cc > CMakeFiles/libnml.dir/__/libnml_src/timer.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/timer.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/timer.cc -o CMakeFiles/libnml.dir/__/libnml_src/timer.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.o: ../libnml_src/locmem.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/locmem.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/locmem.cc > CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/locmem.cc -o CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.o: ../libnml_src/memsem.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/memsem.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/memsem.cc > CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/memsem.cc -o CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.o: ../libnml_src/phantom.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/phantom.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/phantom.cc > CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/phantom.cc -o CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.o: ../libnml_src/physmem.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/physmem.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/physmem.cc > CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/physmem.cc -o CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.o: ../libnml_src/recvn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/recvn.c.o -c /home/user/lcncladdertest/cmake/libnml_src/recvn.c
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/libnml_src/recvn.c.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/recvn.c > CMakeFiles/libnml.dir/__/libnml_src/recvn.c.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/libnml_src/recvn.c.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/recvn.c -o CMakeFiles/libnml.dir/__/libnml_src/recvn.c.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.o: ../libnml_src/sendn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/sendn.c.o -c /home/user/lcncladdertest/cmake/libnml_src/sendn.c
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnml.dir/__/libnml_src/sendn.c.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/sendn.c > CMakeFiles/libnml.dir/__/libnml_src/sendn.c.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnml.dir/__/libnml_src/sendn.c.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/sendn.c -o CMakeFiles/libnml.dir/__/libnml_src/sendn.c.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.o: ../libnml_src/shmem.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/shmem.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/shmem.cc > CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/shmem.cc -o CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.o: ../libnml_src/tcpmem.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/tcpmem.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/tcpmem.cc > CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/tcpmem.cc -o CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.o: ../libnml_src/cms.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cms.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cms.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cms.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cms.cc > CMakeFiles/libnml.dir/__/libnml_src/cms.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cms.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cms.cc -o CMakeFiles/libnml.dir/__/libnml_src/cms.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.o: ../libnml_src/cms_aup.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cms_aup.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cms_aup.cc > CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cms_aup.cc -o CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.o: ../libnml_src/cms_cfg.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cms_cfg.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cms_cfg.cc > CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cms_cfg.cc -o CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.o: ../libnml_src/cms_in.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cms_in.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cms_in.cc > CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cms_in.cc -o CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.o: ../libnml_src/cms_dup.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cms_dup.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cms_dup.cc > CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cms_dup.cc -o CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.o: ../libnml_src/cms_pm.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cms_pm.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cms_pm.cc > CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cms_pm.cc -o CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.o: ../libnml_src/cms_srv.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cms_srv.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cms_srv.cc > CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cms_srv.cc -o CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.o: ../libnml_src/cms_up.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cms_up.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cms_up.cc > CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cms_up.cc -o CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.o: ../libnml_src/cms_xup.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cms_xup.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cms_xup.cc > CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cms_xup.cc -o CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.o: ../libnml_src/cmsdiag.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cmsdiag.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cmsdiag.cc > CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cmsdiag.cc -o CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.o: ../libnml_src/tcp_opts.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/tcp_opts.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/tcp_opts.cc > CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/tcp_opts.cc -o CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.o: ../libnml_src/tcp_srv.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/tcp_srv.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/tcp_srv.cc > CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/tcp_srv.cc -o CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.o: ../libnml_src/cmd_msg.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/cmd_msg.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/cmd_msg.cc > CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/cmd_msg.cc -o CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.o: ../libnml_src/nml_mod.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/nml_mod.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/nml_mod.cc > CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/nml_mod.cc -o CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.o: ../libnml_src/nml_oi.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/nml_oi.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/nml_oi.cc > CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/nml_oi.cc -o CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.o: ../libnml_src/nml_srv.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/nml_srv.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/nml_srv.cc > CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/nml_srv.cc -o CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.o: ../libnml_src/nml.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/nml.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/nml.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/nml.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/nml.cc > CMakeFiles/libnml.dir/__/libnml_src/nml.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/nml.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/nml.cc -o CMakeFiles/libnml.dir/__/libnml_src/nml.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.o: ../libnml_src/nmldiag.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/nmldiag.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/nmldiag.cc > CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/nmldiag.cc -o CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.o: ../libnml_src/nmlmsg.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/nmlmsg.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/nmlmsg.cc > CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/nmlmsg.cc -o CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.o: ../libnml_src/stat_msg.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/stat_msg.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/stat_msg.cc > CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/stat_msg.cc -o CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.s
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.o: libnml/CMakeFiles/libnml.dir/flags.make
+libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.o: ../libnml_src/linklist.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.o -c /home/user/lcncladdertest/cmake/libnml_src/linklist.cc
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libnml_src/linklist.cc > CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.i
+
+libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libnml && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libnml_src/linklist.cc -o CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.s
 
 # Object files for target libnml
 libnml_OBJECTS = \
-"CMakeFiles/libnml.dir/__/src/rcs_print.cc.o" \
-"CMakeFiles/libnml.dir/__/src/rcs_exit.cc.o" \
-"CMakeFiles/libnml.dir/__/src/_sem.c.o" \
-"CMakeFiles/libnml.dir/__/src/_shm.c.o" \
-"CMakeFiles/libnml.dir/__/src/_timer.c.o" \
-"CMakeFiles/libnml.dir/__/src/sem.cc.o" \
-"CMakeFiles/libnml.dir/__/src/shm.cc.o" \
-"CMakeFiles/libnml.dir/__/src/timer.cc.o" \
-"CMakeFiles/libnml.dir/__/src/locmem.cc.o" \
-"CMakeFiles/libnml.dir/__/src/memsem.cc.o" \
-"CMakeFiles/libnml.dir/__/src/phantom.cc.o" \
-"CMakeFiles/libnml.dir/__/src/physmem.cc.o" \
-"CMakeFiles/libnml.dir/__/src/recvn.c.o" \
-"CMakeFiles/libnml.dir/__/src/sendn.c.o" \
-"CMakeFiles/libnml.dir/__/src/shmem.cc.o" \
-"CMakeFiles/libnml.dir/__/src/tcpmem.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cms.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cms_aup.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cms_cfg.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cms_in.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cms_dup.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cms_pm.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cms_srv.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cms_up.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cms_xup.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cmsdiag.cc.o" \
-"CMakeFiles/libnml.dir/__/src/tcp_opts.cc.o" \
-"CMakeFiles/libnml.dir/__/src/tcp_srv.cc.o" \
-"CMakeFiles/libnml.dir/__/src/cmd_msg.cc.o" \
-"CMakeFiles/libnml.dir/__/src/nml_mod.cc.o" \
-"CMakeFiles/libnml.dir/__/src/nml_oi.cc.o" \
-"CMakeFiles/libnml.dir/__/src/nml_srv.cc.o" \
-"CMakeFiles/libnml.dir/__/src/nml.cc.o" \
-"CMakeFiles/libnml.dir/__/src/nmldiag.cc.o" \
-"CMakeFiles/libnml.dir/__/src/nmlmsg.cc.o" \
-"CMakeFiles/libnml.dir/__/src/stat_msg.cc.o" \
-"CMakeFiles/libnml.dir/__/src/linklist.cc.o"
+"CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/_sem.c.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/_shm.c.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/_timer.c.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/sem.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/shm.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/timer.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/recvn.c.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/sendn.c.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cms.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/nml.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.o" \
+"CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.o"
 
 # External object files for target libnml
 libnml_EXTERNAL_OBJECTS =
 
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/rcs_print.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/rcs_exit.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/_sem.c.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/_shm.c.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/_timer.c.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/sem.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/shm.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/timer.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/locmem.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/memsem.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/phantom.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/physmem.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/recvn.c.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/sendn.c.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/shmem.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/tcpmem.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cms.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cms_aup.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cms_cfg.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cms_in.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cms_dup.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cms_pm.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cms_srv.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cms_up.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cms_xup.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cmsdiag.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/tcp_opts.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/tcp_srv.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/cmd_msg.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/nml_mod.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/nml_oi.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/nml_srv.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/nml.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/nmldiag.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/nmlmsg.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/stat_msg.cc.o
-libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/src/linklist.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_print.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/rcs_exit.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/_sem.c.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/_shm.c.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/_timer.c.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/sem.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/shm.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/timer.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/locmem.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/memsem.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/phantom.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/physmem.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/recvn.c.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/sendn.c.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/shmem.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/tcpmem.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cms.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_aup.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_cfg.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_in.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_dup.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_pm.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_srv.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_up.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cms_xup.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cmsdiag.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_opts.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/tcp_srv.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/cmd_msg.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_mod.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_oi.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/nml_srv.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/nml.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/nmldiag.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/nmlmsg.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/stat_msg.cc.o
+libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/__/libnml_src/linklist.cc.o
 libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/build.make
-libnml/libnml.so.0: liblinuxcnchal/liblinuxcnchal.so.0
+libnml/libnml.so.0: /home/user/lcncladdertest/lib/liblinuxcnchal.so
 libnml/libnml.so.0: libnml/CMakeFiles/libnml.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX shared library libnml.so"
-	cd /home/user/linuxcnc/cmake/build/libnml && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libnml.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/user/linuxcnc/cmake/build/libnml && $(CMAKE_COMMAND) -E cmake_symlink_library libnml.so.0 libnml.so.0 libnml.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX shared library libnml.so"
+	cd /home/user/lcncladdertest/cmake/build/libnml && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libnml.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/user/lcncladdertest/cmake/build/libnml && $(CMAKE_COMMAND) -E cmake_symlink_library libnml.so.0 libnml.so.0 libnml.so
 
 libnml/libnml.so: libnml/libnml.so.0
 	@$(CMAKE_COMMAND) -E touch_nocreate libnml/libnml.so
@@ -653,10 +653,10 @@ libnml/CMakeFiles/libnml.dir/build: libnml/libnml.so
 .PHONY : libnml/CMakeFiles/libnml.dir/build
 
 libnml/CMakeFiles/libnml.dir/clean:
-	cd /home/user/linuxcnc/cmake/build/libnml && $(CMAKE_COMMAND) -P CMakeFiles/libnml.dir/cmake_clean.cmake
+	cd /home/user/lcncladdertest/cmake/build/libnml && $(CMAKE_COMMAND) -P CMakeFiles/libnml.dir/cmake_clean.cmake
 .PHONY : libnml/CMakeFiles/libnml.dir/clean
 
 libnml/CMakeFiles/libnml.dir/depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/libnml /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/libnml /home/user/linuxcnc/cmake/build/libnml/CMakeFiles/libnml.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/libnml /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/libnml /home/user/lcncladdertest/cmake/build/libnml/CMakeFiles/libnml.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libnml/CMakeFiles/libnml.dir/depend
 

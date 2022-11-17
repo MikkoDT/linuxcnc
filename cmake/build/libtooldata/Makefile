@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/libtooldata//CMakeFiles/progress.marks
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/libtooldata//CMakeFiles/progress.marks
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/clean
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/preinstall
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/preinstall
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libtooldata/CMakeFiles/libtooldata.dir/rule:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/CMakeFiles/libtooldata.dir/rule
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libtooldata/CMakeFiles/libtooldata.dir/rule
 .PHONY : libtooldata/CMakeFiles/libtooldata.dir/rule
 
 # Convenience name for target.
@@ -187,89 +187,89 @@ libtooldata: libtooldata/CMakeFiles/libtooldata.dir/rule
 
 # fast build rule for target.
 libtooldata/fast:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/build
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/build
 .PHONY : libtooldata/fast
 
-__/src/tooldata_common.o: __/src/tooldata_common.cc.o
+__/libtooldata_src/tooldata_common.o: __/libtooldata_src/tooldata_common.cc.o
 
-.PHONY : __/src/tooldata_common.o
-
-# target to build an object file
-__/src/tooldata_common.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.o
-.PHONY : __/src/tooldata_common.cc.o
-
-__/src/tooldata_common.i: __/src/tooldata_common.cc.i
-
-.PHONY : __/src/tooldata_common.i
-
-# target to preprocess a source file
-__/src/tooldata_common.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.i
-.PHONY : __/src/tooldata_common.cc.i
-
-__/src/tooldata_common.s: __/src/tooldata_common.cc.s
-
-.PHONY : __/src/tooldata_common.s
-
-# target to generate assembly for a file
-__/src/tooldata_common.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.s
-.PHONY : __/src/tooldata_common.cc.s
-
-__/src/tooldata_db.o: __/src/tooldata_db.cc.o
-
-.PHONY : __/src/tooldata_db.o
+.PHONY : __/libtooldata_src/tooldata_common.o
 
 # target to build an object file
-__/src/tooldata_db.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.o
-.PHONY : __/src/tooldata_db.cc.o
+__/libtooldata_src/tooldata_common.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.o
+.PHONY : __/libtooldata_src/tooldata_common.cc.o
 
-__/src/tooldata_db.i: __/src/tooldata_db.cc.i
+__/libtooldata_src/tooldata_common.i: __/libtooldata_src/tooldata_common.cc.i
 
-.PHONY : __/src/tooldata_db.i
+.PHONY : __/libtooldata_src/tooldata_common.i
 
 # target to preprocess a source file
-__/src/tooldata_db.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.i
-.PHONY : __/src/tooldata_db.cc.i
+__/libtooldata_src/tooldata_common.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.i
+.PHONY : __/libtooldata_src/tooldata_common.cc.i
 
-__/src/tooldata_db.s: __/src/tooldata_db.cc.s
+__/libtooldata_src/tooldata_common.s: __/libtooldata_src/tooldata_common.cc.s
 
-.PHONY : __/src/tooldata_db.s
+.PHONY : __/libtooldata_src/tooldata_common.s
 
 # target to generate assembly for a file
-__/src/tooldata_db.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.s
-.PHONY : __/src/tooldata_db.cc.s
+__/libtooldata_src/tooldata_common.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.s
+.PHONY : __/libtooldata_src/tooldata_common.cc.s
 
-__/src/tooldata_mmap.o: __/src/tooldata_mmap.cc.o
+__/libtooldata_src/tooldata_db.o: __/libtooldata_src/tooldata_db.cc.o
 
-.PHONY : __/src/tooldata_mmap.o
+.PHONY : __/libtooldata_src/tooldata_db.o
 
 # target to build an object file
-__/src/tooldata_mmap.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.o
-.PHONY : __/src/tooldata_mmap.cc.o
+__/libtooldata_src/tooldata_db.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.o
+.PHONY : __/libtooldata_src/tooldata_db.cc.o
 
-__/src/tooldata_mmap.i: __/src/tooldata_mmap.cc.i
+__/libtooldata_src/tooldata_db.i: __/libtooldata_src/tooldata_db.cc.i
 
-.PHONY : __/src/tooldata_mmap.i
+.PHONY : __/libtooldata_src/tooldata_db.i
 
 # target to preprocess a source file
-__/src/tooldata_mmap.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.i
-.PHONY : __/src/tooldata_mmap.cc.i
+__/libtooldata_src/tooldata_db.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.i
+.PHONY : __/libtooldata_src/tooldata_db.cc.i
 
-__/src/tooldata_mmap.s: __/src/tooldata_mmap.cc.s
+__/libtooldata_src/tooldata_db.s: __/libtooldata_src/tooldata_db.cc.s
 
-.PHONY : __/src/tooldata_mmap.s
+.PHONY : __/libtooldata_src/tooldata_db.s
 
 # target to generate assembly for a file
-__/src/tooldata_mmap.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.s
-.PHONY : __/src/tooldata_mmap.cc.s
+__/libtooldata_src/tooldata_db.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.s
+.PHONY : __/libtooldata_src/tooldata_db.cc.s
+
+__/libtooldata_src/tooldata_mmap.o: __/libtooldata_src/tooldata_mmap.cc.o
+
+.PHONY : __/libtooldata_src/tooldata_mmap.o
+
+# target to build an object file
+__/libtooldata_src/tooldata_mmap.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.o
+.PHONY : __/libtooldata_src/tooldata_mmap.cc.o
+
+__/libtooldata_src/tooldata_mmap.i: __/libtooldata_src/tooldata_mmap.cc.i
+
+.PHONY : __/libtooldata_src/tooldata_mmap.i
+
+# target to preprocess a source file
+__/libtooldata_src/tooldata_mmap.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.i
+.PHONY : __/libtooldata_src/tooldata_mmap.cc.i
+
+__/libtooldata_src/tooldata_mmap.s: __/libtooldata_src/tooldata_mmap.cc.s
+
+.PHONY : __/libtooldata_src/tooldata_mmap.s
+
+# target to generate assembly for a file
+__/libtooldata_src/tooldata_mmap.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.s
+.PHONY : __/libtooldata_src/tooldata_mmap.cc.s
 
 # Help Target
 help:
@@ -284,15 +284,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... libtooldata"
-	@echo "... __/src/tooldata_common.o"
-	@echo "... __/src/tooldata_common.i"
-	@echo "... __/src/tooldata_common.s"
-	@echo "... __/src/tooldata_db.o"
-	@echo "... __/src/tooldata_db.i"
-	@echo "... __/src/tooldata_db.s"
-	@echo "... __/src/tooldata_mmap.o"
-	@echo "... __/src/tooldata_mmap.i"
-	@echo "... __/src/tooldata_mmap.s"
+	@echo "... __/libtooldata_src/tooldata_common.o"
+	@echo "... __/libtooldata_src/tooldata_common.i"
+	@echo "... __/libtooldata_src/tooldata_common.s"
+	@echo "... __/libtooldata_src/tooldata_db.o"
+	@echo "... __/libtooldata_src/tooldata_db.i"
+	@echo "... __/libtooldata_src/tooldata_db.s"
+	@echo "... __/libtooldata_src/tooldata_mmap.o"
+	@echo "... __/libtooldata_src/tooldata_mmap.i"
+	@echo "... __/libtooldata_src/tooldata_mmap.s"
 .PHONY : help
 
 
@@ -304,6 +304,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

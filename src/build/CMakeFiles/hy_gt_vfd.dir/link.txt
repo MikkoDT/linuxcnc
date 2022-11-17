@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,hy_gt_vfd.so -o hy_gt_vfd.so CMakeFiles/hy_gt_vfd.dir/hal/user_comps/hy_gt_vfd.c.o  -lpthread -lrt -llinuxcnchal 

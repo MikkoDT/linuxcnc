@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
-set(PROJECT "halui")
-project(${PROJECT} LANGUAGES CXX)
+set(PROJECT "halui") # ~/linuxcnc/src/emc/nml_inft
+project(${PROJECT} VERSION 0 LANGUAGES CXX)
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -8,28 +8,57 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(/home/user/lcncladdertest/lib)
+include_directories(/home/user/lcncladdertest/include)
+include_directories(/home/user/lcncladdertest/src/emc/tooldata)
+include_directories(${BUILD_DIR})
 
+include_directories(${SRC_DIR}/../halui_src)
 # Set prefix.
-# set(CMAKE_SHARED_LIBRARY_PREFIX "")
+set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 set(SOURCES
-    ${SRC_DIR}/../src/halui.cc
-)
+    ${SRC_DIR}/../halui_src/halui.cc
+    )
 add_executable(${PROJECT_NAME} ${SOURCES})
-
 add_definitions(-DULAPI)
 
-# Set include paths for libraries to link.
-# target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/liblinuxcnc)
-# target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/liblinuxcnchal)
-# target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/liblinuxcncini)
-# target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/libnml)
-# target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/libtooldata)
-
-# Link to libraries.
-target_link_libraries(${PROJECT_NAME} PRIVATE liblinuxcnc liblinuxcncini libnml liblinuxcnchal libtooldata
+add_library(nml SHARED IMPORTED) # or STATIC instead of SHARED
+set_target_properties(nml PROPERTIES
+  IMPORTED_LOCATION "${SRC_DIR}/../build/libnml/libnml.so"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/user/lcncladdertest/include"
 )
+
+add_library(linuxcnchal SHARED IMPORTED) # or STATIC instead of SHARED
+set_target_properties(linuxcnchal PROPERTIES
+  IMPORTED_LOCATION "${SRC_DIR}/../build/liblinuxcnchal/liblinuxcnchal.so"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/user/lcncladdertest/include"
+)
+
+add_library(linuxcncini SHARED IMPORTED) # or STATIC instead of SHARED
+set_target_properties(linuxcncini PROPERTIES
+  IMPORTED_LOCATION "${SRC_DIR}/../build/liblinuxcncini/liblinuxcncini.so"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/user/lcncladdertest/include"
+)
+
+add_library(tooldata SHARED IMPORTED) # or STATIC instead of SHARED
+set_target_properties(tooldata PROPERTIES
+  # IMPORTED_LOCATION "/home/user/lcncladdertest/lib/libtooldata.so"
+  IMPORTED_LOCATION "${SRC_DIR}/../build/libtooldata/libtooldata.so"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/user/lcncladdertest/include"
+)
+
+add_library(linuxcnc_a STATIC IMPORTED) # or STATIC instead of SHARED
+set_target_properties(linuxcnc_a PROPERTIES
+  # IMPORTED_LOCATION "/home/user/lcncladdertest/lib/liblinuxcnc.a"
+  IMPORTED_LOCATION "${SRC_DIR}/../build/liblinuxcnc/liblinuxcnc.a"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/user/lcncladdertest/include"
+)
+
+target_link_libraries(${PROJECT_NAME} nml linuxcnchal linuxcncini  linuxcnc_a tooldata)
+
+# Add verion nr. .so.0.0.0
+set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
 
 # Set custom output name :
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
@@ -38,24 +67,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE liblinuxcnc liblinuxcncini libnml 
 install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
 
 # Notes.
-# Compiling emc/usr_intf/halui.cc
-# g++ -std=gnu++17 -c -I. -Ilibnml/linklist -Iemc -Ilibnml/cms -Ilibnml/rcs -Ilibnml/inifile -Ilibnml/os_intf
-# -Ilibnml/nml -Ilibnml/buffer -Ilibnml/posemath -Irtapi -Ihal -Iemc -Iemc/nml_intf -Iemc/kinematics
-# -Iemc/tp -Iemc/motion -Iemc/ini -Iemc -Iemc/rs274ngc -Iemc/sai -Iemc/pythonplugin -Iemc/tooldata
-# -Iemc -I/home/user/linuxcnc/src/include -I/usr/include/python3.9  -DULAPI  -g -Wall -Wno-stringop-truncation
-# -D_FORTIFY_SOURCE=2 -Os -fwrapv -Werror=overloaded-virtual -g -O2  -std=gnu++17  \
-#         -MP -MD -MF "objects/emc/usr_intf/halui.d" -MT "objects/emc/usr_intf/halui.o" \
-#         emc/usr_intf/halui.cc -o objects/emc/usr_intf/halui.o
-# Linking halui
-# g++ -std=gnu++17 -I. -Ilibnml/linklist -Iemc -Ilibnml/cms -Ilibnml/rcs -Ilibnml/inifile -Ilibnml/os_intf -
-# Ilibnml/nml -Ilibnml/buffer -Ilibnml/posemath -Irtapi -Ihal -Iemc -Iemc/nml_intf -Iemc/kinematics -Iemc/tp
-# -Iemc/motion -Iemc/ini -Iemc -Iemc/rs274ngc -Iemc/sai -Iemc/pythonplugin -Iemc/tooldata -Iemc
-# -I/home/user/linuxcnc/src/include -I/usr/include/python3.9  -DULAPI  -g -Wall -Wno-stringop-truncation
-# -D_FORTIFY_SOURCE=2 -Os -fwrapv -Werror=overloaded-virtual -g -O2  -std=gnu++17 -o ../bin/halui -Wall -g -I.
-# -I/home/user/linuxcnc/src/include -DULAPI -D_GNU_SOURCE -Os -DLOCALE_DIR=\"/usr/share/locale\" -DPACKAGE=\"linuxcnc\"
-# objects/emc/usr_intf/halui.o ../lib/liblinuxcnc.so ../lib/liblinuxcncini.so.0 ../lib/libnml.so.0 ../lib/liblinuxcnchal.so.0
-# ../lib/libtooldata.so.0 -L/home/user/linuxcnc/lib -Wl,-rpath,/home/user/linuxcnc/lib
-# You now need to run 'sudo make setuid' in order to run in place with access to hardware.
+
+
 
 
 

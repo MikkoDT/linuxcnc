@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,tooldata.so -o tooldata.so CMakeFiles/tooldata.dir/emc/usr_intf/halui.cc.o CMakeFiles/tooldata.dir/emc/tooldata/tooldata_mmap.cc.o CMakeFiles/tooldata.dir/emc/tooldata/tooldata_common.cc.o CMakeFiles/tooldata.dir/emc/tooldata/tooldata_db.cc.o 

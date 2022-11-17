@@ -38,5 +38,5 @@ TOOL_MMAP_READ_SRCS = emc/tooldata/tool_mmap_read.cc
 endif
 
 TOOL_WATCH_SRCS = emc/tooldata/tool_watch.cc
-../bin/tool_watch: $(TOOL_WATCH_SRCS) ../lib/liblinuxcnc.so ../lib/libnml.so.0
-	@$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS) ../lib/liblinuxcnc.so ../lib/libnml.so.0
+../bin/tool_watch: $(TOOL_WATCH_SRCS) ../lib/liblinuxcnc.a ../lib/libnml.so.0
+	@$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS) ../lib/liblinuxcnc.a ../lib/libnml.so.0

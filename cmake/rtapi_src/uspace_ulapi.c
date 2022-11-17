@@ -23,7 +23,7 @@
 #include "rtapi.h"
 #include <unistd.h>
 #include <rtapi_errno.h>
-#include "rtapi/uspace_common.h"
+#include "uspace_common.h"
 
 
 /* FIXME - no support for fifos */

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/module_helper.dir/__/src/module_helper.c.o"
+  "CMakeFiles/module_helper.dir/__/module_helper_src/module_helper.c.o"
   "module_helper.pdb"
   "module_helper.so"
 )

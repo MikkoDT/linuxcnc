@@ -8,16 +8,18 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(${SRC_DIR}/../common_src)
+include_directories(${SRC_DIR}/../liblinuxcnchal_src)
+include_directories(${SRC_DIR}/../rtapi_src)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 set(SOURCES
-    ${SRC_DIR}/../src/uspace_rtapi_app.cc
-    ${SRC_DIR}/../src/uspace_rtapi_parport.cc
-    ${SRC_DIR}/../src/uspace_rtapi_string.c
-    ${SRC_DIR}/../src/rtapi_pci.cc
+    ${SRC_DIR}/../rtapi_src/uspace_rtapi_app.cc
+    ${SRC_DIR}/../rtapi_src/uspace_rtapi_parport.cc
+    ${SRC_DIR}/../rtapi_src/uspace_rtapi_string.c
+    ${SRC_DIR}/../rtapi_src/rtapi_pci.cc
     )
 add_executable(${PROJECT_NAME} ${SOURCES})
 

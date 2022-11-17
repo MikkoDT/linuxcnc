@@ -8,13 +8,14 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(${SRC_DIR}/../common_src)
+include_directories(${SRC_DIR}/../module_helper_src)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED 
-    ${SRC_DIR}/../src/module_helper.c
+    ${SRC_DIR}/../module_helper_src/module_helper.c
 )
 
 add_definitions(-DULAPI)

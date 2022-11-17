@@ -5,11 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/linuxcnc/cmake/src/hal_lib.c" "/home/user/linuxcnc/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.o"
-  "/home/user/linuxcnc/cmake/src/halcmd.c" "/home/user/linuxcnc/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.o"
-  "/home/user/linuxcnc/cmake/src/halcmd_completion.c" "/home/user/linuxcnc/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.o"
-  "/home/user/linuxcnc/cmake/src/halcmd_main.c" "/home/user/linuxcnc/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.o"
-  "/home/user/linuxcnc/cmake/src/uspace_ulapi.c" "/home/user/linuxcnc/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.o"
+  "/home/user/lcncladdertest/cmake/halcmd_src/halcmd.c" "/home/user/lcncladdertest/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.o"
+  "/home/user/lcncladdertest/cmake/halcmd_src/halcmd_completion.c" "/home/user/lcncladdertest/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.o"
+  "/home/user/lcncladdertest/cmake/halcmd_src/halcmd_main.c" "/home/user/lcncladdertest/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.o"
+  "/home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_lib.c" "/home/user/lcncladdertest/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o"
+  "/home/user/lcncladdertest/cmake/rtapi_src/uspace_ulapi.c" "/home/user/lcncladdertest/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -21,10 +21,13 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../halcmd"
-  "../halcmd/../src"
+  "../halcmd/../common_src"
+  "../halcmd/../rtapi_src"
+  "../halcmd/../liblinuxcnchal_src"
+  "../halcmd/../libnml_src"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/linuxcnc/cmake/src/halcmd_commands.cc" "/home/user/linuxcnc/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.o"
+  "/home/user/lcncladdertest/cmake/halcmd_src/halcmd_commands.cc" "/home/user/lcncladdertest/cmake/build/halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -36,13 +39,16 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../halcmd"
-  "../halcmd/../src"
+  "../halcmd/../common_src"
+  "../halcmd/../rtapi_src"
+  "../halcmd/../liblinuxcnchal_src"
+  "../halcmd/../libnml_src"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/user/linuxcnc/cmake/build/libnml/CMakeFiles/libnml.dir/DependInfo.cmake"
-  "/home/user/linuxcnc/cmake/build/liblinuxcncini/CMakeFiles/liblinuxcncini.dir/DependInfo.cmake"
+  "/home/user/lcncladdertest/cmake/build/libnml/CMakeFiles/libnml.dir/DependInfo.cmake"
+  "/home/user/lcncladdertest/cmake/build/liblinuxcncini/CMakeFiles/liblinuxcncini.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,mb2hal.so -o mb2hal.so CMakeFiles/mb2hal.dir/hal/user_comps/mb2hal/mb2hal.c.o CMakeFiles/mb2hal.dir/hal/user_comps/mb2hal/mb2hal_init.c.o CMakeFiles/mb2hal.dir/hal/user_comps/mb2hal/mb2hal_modbus.c.o CMakeFiles/mb2hal.dir/hal/user_comps/mb2hal/mb2hal_hal.c.o  -lpthread -lrt -llinuxcnchal 

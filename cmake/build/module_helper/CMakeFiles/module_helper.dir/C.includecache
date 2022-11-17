@@ -6,25 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/user/linuxcnc/cmake/src/config.h
-
-/home/user/linuxcnc/cmake/src/module_helper.c
-limits.h
--
-stdlib.h
--
-stdio.h
--
-string.h
--
-unistd.h
--
-sys/utsname.h
--
-config.h
-/home/user/linuxcnc/cmake/src/config.h
-sys/types.h
--
-dirent.h
--
-

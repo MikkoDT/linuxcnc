@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../src/inifile.h
+../common_src/config.h
+
+../liblinuxcncini_src/inifile.h
 stdio.h
 -
 
-/home/user/linuxcnc/cmake/src/config.h
+/home/user/lcncladdertest/cmake/common_src/linuxcnc.h
 
-/home/user/linuxcnc/cmake/src/inifile.cc
+/home/user/lcncladdertest/cmake/liblinuxcncini_src/inifile.cc
 stdio.h
 -
 stdlib.h
@@ -24,13 +26,13 @@ ctype.h
 fcntl.h
 -
 config.h
-/home/user/linuxcnc/cmake/src/config.h
-linuxcnc.h
-/home/user/linuxcnc/cmake/src/linuxcnc.h
+/home/user/lcncladdertest/cmake/liblinuxcncini_src/config.h
+../common_src/linuxcnc.h
+/home/user/lcncladdertest/cmake/common_src/linuxcnc.h
 inifile.hh
-/home/user/linuxcnc/cmake/src/inifile.hh
+/home/user/lcncladdertest/cmake/liblinuxcncini_src/inifile.hh
 
-/home/user/linuxcnc/cmake/src/inifile.hh
+/home/user/lcncladdertest/cmake/liblinuxcncini_src/inifile.hh
 inifile.h
 -
 string
@@ -39,6 +41,4 @@ boost/lexical_cast.hpp
 -
 fcntl.h
 -
-
-/home/user/linuxcnc/cmake/src/linuxcnc.h
 

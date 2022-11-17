@@ -8,14 +8,16 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(${SRC_DIR}/../common_src)
+include_directories(${SRC_DIR}/../rtapi_src)
+include_directories(${SRC_DIR}/../liblinuxcnchal_src)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED 
-    ${SRC_DIR}/../src/uspace_ulapi.c
-    ${SRC_DIR}/../src/hal_lib.c
+    ${SRC_DIR}/../rtapi_src/uspace_ulapi.c
+    ${SRC_DIR}/../liblinuxcnchal_src/hal_lib.c
 )
 
 add_definitions(-DULAPI)

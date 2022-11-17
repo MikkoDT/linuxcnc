@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 # Include any dependencies generated for this target.
 include halcmd/CMakeFiles/halcmd.dir/depend.make
@@ -76,108 +76,108 @@ include halcmd/CMakeFiles/halcmd.dir/progress.make
 # Include the compile flags for this target's objects.
 include halcmd/CMakeFiles/halcmd.dir/flags.make
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.o: ../src/halcmd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.o"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/src/halcmd.c.o -c /home/user/linuxcnc/cmake/src/halcmd.c
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.o: ../halcmd_src/halcmd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.o"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.o -c /home/user/lcncladdertest/cmake/halcmd_src/halcmd.c
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/src/halcmd.c.i"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/halcmd.c > CMakeFiles/halcmd.dir/__/src/halcmd.c.i
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.i"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/halcmd_src/halcmd.c > CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.i
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/src/halcmd.c.s"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/halcmd.c -o CMakeFiles/halcmd.dir/__/src/halcmd.c.s
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.s"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/halcmd_src/halcmd.c -o CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.s
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.o: halcmd/CMakeFiles/halcmd.dir/flags.make
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.o: ../src/halcmd_commands.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.o"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.o -c /home/user/linuxcnc/cmake/src/halcmd_commands.cc
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.o: halcmd/CMakeFiles/halcmd.dir/flags.make
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.o: ../halcmd_src/halcmd_commands.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.o -c /home/user/lcncladdertest/cmake/halcmd_src/halcmd_commands.cc
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.i"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/halcmd_commands.cc > CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.i
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/halcmd_src/halcmd_commands.cc > CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.i
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.s"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/halcmd_commands.cc -o CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.s
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/halcmd_src/halcmd_commands.cc -o CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.s
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.o: ../src/halcmd_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.o"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/src/halcmd_main.c.o -c /home/user/linuxcnc/cmake/src/halcmd_main.c
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.o: ../halcmd_src/halcmd_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.o"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.o -c /home/user/lcncladdertest/cmake/halcmd_src/halcmd_main.c
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/src/halcmd_main.c.i"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/halcmd_main.c > CMakeFiles/halcmd.dir/__/src/halcmd_main.c.i
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.i"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/halcmd_src/halcmd_main.c > CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.i
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/src/halcmd_main.c.s"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/halcmd_main.c -o CMakeFiles/halcmd.dir/__/src/halcmd_main.c.s
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.s"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/halcmd_src/halcmd_main.c -o CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.s
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.o: ../src/halcmd_completion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.o"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.o -c /home/user/linuxcnc/cmake/src/halcmd_completion.c
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.o: ../halcmd_src/halcmd_completion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.o"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.o -c /home/user/lcncladdertest/cmake/halcmd_src/halcmd_completion.c
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.i"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/halcmd_completion.c > CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.i
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.i"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/halcmd_src/halcmd_completion.c > CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.i
 
-halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.s"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/halcmd_completion.c -o CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.s
+halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.s"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/halcmd_src/halcmd_completion.c -o CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.s
 
-halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
-halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.o: ../src/hal_lib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.o"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/src/hal_lib.c.o -c /home/user/linuxcnc/cmake/src/hal_lib.c
+halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
+halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o: ../liblinuxcnchal_src/hal_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o -c /home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_lib.c
 
-halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/src/hal_lib.c.i"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/hal_lib.c > CMakeFiles/halcmd.dir/__/src/hal_lib.c.i
+halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.i"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_lib.c > CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.i
 
-halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/src/hal_lib.c.s"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/hal_lib.c -o CMakeFiles/halcmd.dir/__/src/hal_lib.c.s
+halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.s"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/liblinuxcnchal_src/hal_lib.c -o CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.s
 
-halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
-halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.o: ../src/uspace_ulapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.o"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.o -c /home/user/linuxcnc/cmake/src/uspace_ulapi.c
+halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o: halcmd/CMakeFiles/halcmd.dir/flags.make
+halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o: ../rtapi_src/uspace_ulapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o -c /home/user/lcncladdertest/cmake/rtapi_src/uspace_ulapi.c
 
-halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.i"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/uspace_ulapi.c > CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.i
+halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.i"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/rtapi_src/uspace_ulapi.c > CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.i
 
-halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.s"
-	cd /home/user/linuxcnc/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/uspace_ulapi.c -o CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.s
+halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.s"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/rtapi_src/uspace_ulapi.c -o CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.s
 
 # Object files for target halcmd
 halcmd_OBJECTS = \
-"CMakeFiles/halcmd.dir/__/src/halcmd.c.o" \
-"CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.o" \
-"CMakeFiles/halcmd.dir/__/src/halcmd_main.c.o" \
-"CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.o" \
-"CMakeFiles/halcmd.dir/__/src/hal_lib.c.o" \
-"CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.o"
+"CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.o" \
+"CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.o" \
+"CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.o" \
+"CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.o" \
+"CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o" \
+"CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o"
 
 # External object files for target halcmd
 halcmd_EXTERNAL_OBJECTS =
 
-halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.o
-halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.o
-halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.o
-halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.o
-halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.o
-halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.o
+halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.o
+halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.o
+halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.o
+halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.o
+halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o
+halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o
 halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/build.make
 halcmd/halcmd: libnml/libnml.so.0
 halcmd/halcmd: liblinuxcncini/liblinuxcncini.so.0
 halcmd/halcmd: halcmd/CMakeFiles/halcmd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable halcmd"
-	cd /home/user/linuxcnc/cmake/build/halcmd && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/halcmd.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable halcmd"
+	cd /home/user/lcncladdertest/cmake/build/halcmd && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/halcmd.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 halcmd/CMakeFiles/halcmd.dir/build: halcmd/halcmd
@@ -185,10 +185,10 @@ halcmd/CMakeFiles/halcmd.dir/build: halcmd/halcmd
 .PHONY : halcmd/CMakeFiles/halcmd.dir/build
 
 halcmd/CMakeFiles/halcmd.dir/clean:
-	cd /home/user/linuxcnc/cmake/build/halcmd && $(CMAKE_COMMAND) -P CMakeFiles/halcmd.dir/cmake_clean.cmake
+	cd /home/user/lcncladdertest/cmake/build/halcmd && $(CMAKE_COMMAND) -P CMakeFiles/halcmd.dir/cmake_clean.cmake
 .PHONY : halcmd/CMakeFiles/halcmd.dir/clean
 
 halcmd/CMakeFiles/halcmd.dir/depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/halcmd /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/halcmd /home/user/linuxcnc/cmake/build/halcmd/CMakeFiles/halcmd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/halcmd /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/halcmd /home/user/lcncladdertest/cmake/build/halcmd/CMakeFiles/halcmd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : halcmd/CMakeFiles/halcmd.dir/depend
 

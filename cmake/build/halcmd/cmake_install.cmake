@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/linuxcnc/cmake/halcmd
+# Install script for directory: /home/user/lcncladdertest/cmake/halcmd
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,85 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/halcmd" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/halcmd")
+  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halcmd/halcmd" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halcmd/halcmd")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/halcmd"
+         FILE "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halcmd/halcmd"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/linuxcnc/cmake/halcmd/halcmd")
+   "/home/user/lcncladdertest/cmake/halcmd/halcmd")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/halcmd" TYPE EXECUTABLE FILES "/home/user/linuxcnc/cmake/build/halcmd/halcmd")
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/halcmd" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/halcmd")
+file(INSTALL DESTINATION "/home/user/lcncladdertest/cmake/halcmd" TYPE EXECUTABLE FILES "/home/user/lcncladdertest/cmake/build/halcmd/halcmd")
+  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halcmd/halcmd" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halcmd/halcmd")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/halcmd"
-         OLD_RPATH "/home/user/linuxcnc/cmake/build/libnml:/home/user/linuxcnc/cmake/build/liblinuxcncini:/home/user/linuxcnc/cmake/build/liblinuxcnchal:"
+         FILE "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halcmd/halcmd"
+         OLD_RPATH "/home/user/lcncladdertest/cmake/build/libnml:/home/user/lcncladdertest/cmake/build/liblinuxcncini:/home/user/lcncladdertest/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/halcmd")
-    endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so.0" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so.0")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so.0"
-         RPATH "")
-  endif()
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so.0")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/halcmd" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/cmake/build/halcmd/liblibhalcmd.so.0")
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so.0" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so.0")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so.0"
-         OLD_RPATH "/home/user/linuxcnc/cmake/build/libnml:/home/user/linuxcnc/cmake/build/liblinuxcncini:/home/user/linuxcnc/cmake/build/liblinuxcnchal:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so.0")
-    endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so"
-         RPATH "")
-  endif()
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/halcmd" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/cmake/build/halcmd/liblibhalcmd.so")
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so"
-         OLD_RPATH "/home/user/linuxcnc/cmake/build/libnml:/home/user/linuxcnc/cmake/build/liblinuxcncini:/home/user/linuxcnc/cmake/build/liblinuxcnchal:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/halcmd/liblibhalcmd.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/halcmd/halcmd")
     endif()
   endif()
 endif()

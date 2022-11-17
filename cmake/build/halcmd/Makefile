@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/halcmd//CMakeFiles/progress.marks
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/halcmd//CMakeFiles/progress.marks
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/clean
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,37 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/preinstall
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/preinstall
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-halcmd/CMakeFiles/libhalcmd.dir/rule:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/CMakeFiles/libhalcmd.dir/rule
-.PHONY : halcmd/CMakeFiles/libhalcmd.dir/rule
-
-# Convenience name for target.
-libhalcmd: halcmd/CMakeFiles/libhalcmd.dir/rule
-
-.PHONY : libhalcmd
-
-# fast build rule for target.
-libhalcmd/fast:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/build
-.PHONY : libhalcmd/fast
-
-# Convenience name for target.
 halcmd/CMakeFiles/halcmd.dir/rule:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/CMakeFiles/halcmd.dir/rule
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halcmd/CMakeFiles/halcmd.dir/rule
 .PHONY : halcmd/CMakeFiles/halcmd.dir/rule
 
 # Convenience name for target.
@@ -202,188 +187,170 @@ halcmd: halcmd/CMakeFiles/halcmd.dir/rule
 
 # fast build rule for target.
 halcmd/fast:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/build
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/build
 .PHONY : halcmd/fast
 
-__/src/hal_lib.o: __/src/hal_lib.c.o
+__/halcmd_src/halcmd.o: __/halcmd_src/halcmd.c.o
 
-.PHONY : __/src/hal_lib.o
-
-# target to build an object file
-__/src/hal_lib.c.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/hal_lib.c.o
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.o
-.PHONY : __/src/hal_lib.c.o
-
-__/src/hal_lib.i: __/src/hal_lib.c.i
-
-.PHONY : __/src/hal_lib.i
-
-# target to preprocess a source file
-__/src/hal_lib.c.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/hal_lib.c.i
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.i
-.PHONY : __/src/hal_lib.c.i
-
-__/src/hal_lib.s: __/src/hal_lib.c.s
-
-.PHONY : __/src/hal_lib.s
-
-# target to generate assembly for a file
-__/src/hal_lib.c.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/hal_lib.c.s
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/hal_lib.c.s
-.PHONY : __/src/hal_lib.c.s
-
-__/src/halcmd.o: __/src/halcmd.c.o
-
-.PHONY : __/src/halcmd.o
+.PHONY : __/halcmd_src/halcmd.o
 
 # target to build an object file
-__/src/halcmd.c.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd.c.o
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.o
-.PHONY : __/src/halcmd.c.o
+__/halcmd_src/halcmd.c.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.o
+.PHONY : __/halcmd_src/halcmd.c.o
 
-__/src/halcmd.i: __/src/halcmd.c.i
+__/halcmd_src/halcmd.i: __/halcmd_src/halcmd.c.i
 
-.PHONY : __/src/halcmd.i
+.PHONY : __/halcmd_src/halcmd.i
 
 # target to preprocess a source file
-__/src/halcmd.c.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd.c.i
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.i
-.PHONY : __/src/halcmd.c.i
+__/halcmd_src/halcmd.c.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.i
+.PHONY : __/halcmd_src/halcmd.c.i
 
-__/src/halcmd.s: __/src/halcmd.c.s
+__/halcmd_src/halcmd.s: __/halcmd_src/halcmd.c.s
 
-.PHONY : __/src/halcmd.s
+.PHONY : __/halcmd_src/halcmd.s
 
 # target to generate assembly for a file
-__/src/halcmd.c.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd.c.s
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd.c.s
-.PHONY : __/src/halcmd.c.s
+__/halcmd_src/halcmd.c.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd.c.s
+.PHONY : __/halcmd_src/halcmd.c.s
 
-__/src/halcmd_commands.o: __/src/halcmd_commands.cc.o
+__/halcmd_src/halcmd_commands.o: __/halcmd_src/halcmd_commands.cc.o
 
-.PHONY : __/src/halcmd_commands.o
+.PHONY : __/halcmd_src/halcmd_commands.o
 
 # target to build an object file
-__/src/halcmd_commands.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd_commands.cc.o
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.o
-.PHONY : __/src/halcmd_commands.cc.o
+__/halcmd_src/halcmd_commands.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.o
+.PHONY : __/halcmd_src/halcmd_commands.cc.o
 
-__/src/halcmd_commands.i: __/src/halcmd_commands.cc.i
+__/halcmd_src/halcmd_commands.i: __/halcmd_src/halcmd_commands.cc.i
 
-.PHONY : __/src/halcmd_commands.i
+.PHONY : __/halcmd_src/halcmd_commands.i
 
 # target to preprocess a source file
-__/src/halcmd_commands.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd_commands.cc.i
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.i
-.PHONY : __/src/halcmd_commands.cc.i
+__/halcmd_src/halcmd_commands.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.i
+.PHONY : __/halcmd_src/halcmd_commands.cc.i
 
-__/src/halcmd_commands.s: __/src/halcmd_commands.cc.s
+__/halcmd_src/halcmd_commands.s: __/halcmd_src/halcmd_commands.cc.s
 
-.PHONY : __/src/halcmd_commands.s
+.PHONY : __/halcmd_src/halcmd_commands.s
 
 # target to generate assembly for a file
-__/src/halcmd_commands.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd_commands.cc.s
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_commands.cc.s
-.PHONY : __/src/halcmd_commands.cc.s
+__/halcmd_src/halcmd_commands.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_commands.cc.s
+.PHONY : __/halcmd_src/halcmd_commands.cc.s
 
-__/src/halcmd_completion.o: __/src/halcmd_completion.c.o
+__/halcmd_src/halcmd_completion.o: __/halcmd_src/halcmd_completion.c.o
 
-.PHONY : __/src/halcmd_completion.o
+.PHONY : __/halcmd_src/halcmd_completion.o
 
 # target to build an object file
-__/src/halcmd_completion.c.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd_completion.c.o
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.o
-.PHONY : __/src/halcmd_completion.c.o
+__/halcmd_src/halcmd_completion.c.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.o
+.PHONY : __/halcmd_src/halcmd_completion.c.o
 
-__/src/halcmd_completion.i: __/src/halcmd_completion.c.i
+__/halcmd_src/halcmd_completion.i: __/halcmd_src/halcmd_completion.c.i
 
-.PHONY : __/src/halcmd_completion.i
+.PHONY : __/halcmd_src/halcmd_completion.i
 
 # target to preprocess a source file
-__/src/halcmd_completion.c.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd_completion.c.i
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.i
-.PHONY : __/src/halcmd_completion.c.i
+__/halcmd_src/halcmd_completion.c.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.i
+.PHONY : __/halcmd_src/halcmd_completion.c.i
 
-__/src/halcmd_completion.s: __/src/halcmd_completion.c.s
+__/halcmd_src/halcmd_completion.s: __/halcmd_src/halcmd_completion.c.s
 
-.PHONY : __/src/halcmd_completion.s
+.PHONY : __/halcmd_src/halcmd_completion.s
 
 # target to generate assembly for a file
-__/src/halcmd_completion.c.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd_completion.c.s
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_completion.c.s
-.PHONY : __/src/halcmd_completion.c.s
+__/halcmd_src/halcmd_completion.c.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_completion.c.s
+.PHONY : __/halcmd_src/halcmd_completion.c.s
 
-__/src/halcmd_main.o: __/src/halcmd_main.c.o
+__/halcmd_src/halcmd_main.o: __/halcmd_src/halcmd_main.c.o
 
-.PHONY : __/src/halcmd_main.o
+.PHONY : __/halcmd_src/halcmd_main.o
 
 # target to build an object file
-__/src/halcmd_main.c.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd_main.c.o
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.o
-.PHONY : __/src/halcmd_main.c.o
+__/halcmd_src/halcmd_main.c.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.o
+.PHONY : __/halcmd_src/halcmd_main.c.o
 
-__/src/halcmd_main.i: __/src/halcmd_main.c.i
+__/halcmd_src/halcmd_main.i: __/halcmd_src/halcmd_main.c.i
 
-.PHONY : __/src/halcmd_main.i
+.PHONY : __/halcmd_src/halcmd_main.i
 
 # target to preprocess a source file
-__/src/halcmd_main.c.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd_main.c.i
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.i
-.PHONY : __/src/halcmd_main.c.i
+__/halcmd_src/halcmd_main.c.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.i
+.PHONY : __/halcmd_src/halcmd_main.c.i
 
-__/src/halcmd_main.s: __/src/halcmd_main.c.s
+__/halcmd_src/halcmd_main.s: __/halcmd_src/halcmd_main.c.s
 
-.PHONY : __/src/halcmd_main.s
+.PHONY : __/halcmd_src/halcmd_main.s
 
 # target to generate assembly for a file
-__/src/halcmd_main.c.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/halcmd_main.c.s
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/halcmd_main.c.s
-.PHONY : __/src/halcmd_main.c.s
+__/halcmd_src/halcmd_main.c.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/halcmd_src/halcmd_main.c.s
+.PHONY : __/halcmd_src/halcmd_main.c.s
 
-__/src/uspace_ulapi.o: __/src/uspace_ulapi.c.o
+__/liblinuxcnchal_src/hal_lib.o: __/liblinuxcnchal_src/hal_lib.c.o
 
-.PHONY : __/src/uspace_ulapi.o
+.PHONY : __/liblinuxcnchal_src/hal_lib.o
 
 # target to build an object file
-__/src/uspace_ulapi.c.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/uspace_ulapi.c.o
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.o
-.PHONY : __/src/uspace_ulapi.c.o
+__/liblinuxcnchal_src/hal_lib.c.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.o
+.PHONY : __/liblinuxcnchal_src/hal_lib.c.o
 
-__/src/uspace_ulapi.i: __/src/uspace_ulapi.c.i
+__/liblinuxcnchal_src/hal_lib.i: __/liblinuxcnchal_src/hal_lib.c.i
 
-.PHONY : __/src/uspace_ulapi.i
+.PHONY : __/liblinuxcnchal_src/hal_lib.i
 
 # target to preprocess a source file
-__/src/uspace_ulapi.c.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/uspace_ulapi.c.i
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.i
-.PHONY : __/src/uspace_ulapi.c.i
+__/liblinuxcnchal_src/hal_lib.c.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.i
+.PHONY : __/liblinuxcnchal_src/hal_lib.c.i
 
-__/src/uspace_ulapi.s: __/src/uspace_ulapi.c.s
+__/liblinuxcnchal_src/hal_lib.s: __/liblinuxcnchal_src/hal_lib.c.s
 
-.PHONY : __/src/uspace_ulapi.s
+.PHONY : __/liblinuxcnchal_src/hal_lib.s
 
 # target to generate assembly for a file
-__/src/uspace_ulapi.c.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/libhalcmd.dir/build.make halcmd/CMakeFiles/libhalcmd.dir/__/src/uspace_ulapi.c.s
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/src/uspace_ulapi.c.s
-.PHONY : __/src/uspace_ulapi.c.s
+__/liblinuxcnchal_src/hal_lib.c.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/liblinuxcnchal_src/hal_lib.c.s
+.PHONY : __/liblinuxcnchal_src/hal_lib.c.s
+
+__/rtapi_src/uspace_ulapi.o: __/rtapi_src/uspace_ulapi.c.o
+
+.PHONY : __/rtapi_src/uspace_ulapi.o
+
+# target to build an object file
+__/rtapi_src/uspace_ulapi.c.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.o
+.PHONY : __/rtapi_src/uspace_ulapi.c.o
+
+__/rtapi_src/uspace_ulapi.i: __/rtapi_src/uspace_ulapi.c.i
+
+.PHONY : __/rtapi_src/uspace_ulapi.i
+
+# target to preprocess a source file
+__/rtapi_src/uspace_ulapi.c.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.i
+.PHONY : __/rtapi_src/uspace_ulapi.c.i
+
+__/rtapi_src/uspace_ulapi.s: __/rtapi_src/uspace_ulapi.c.s
+
+.PHONY : __/rtapi_src/uspace_ulapi.s
+
+# target to generate assembly for a file
+__/rtapi_src/uspace_ulapi.c.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/__/rtapi_src/uspace_ulapi.c.s
+.PHONY : __/rtapi_src/uspace_ulapi.c.s
 
 # Help Target
 help:
@@ -398,25 +365,24 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... halcmd"
-	@echo "... libhalcmd"
-	@echo "... __/src/hal_lib.o"
-	@echo "... __/src/hal_lib.i"
-	@echo "... __/src/hal_lib.s"
-	@echo "... __/src/halcmd.o"
-	@echo "... __/src/halcmd.i"
-	@echo "... __/src/halcmd.s"
-	@echo "... __/src/halcmd_commands.o"
-	@echo "... __/src/halcmd_commands.i"
-	@echo "... __/src/halcmd_commands.s"
-	@echo "... __/src/halcmd_completion.o"
-	@echo "... __/src/halcmd_completion.i"
-	@echo "... __/src/halcmd_completion.s"
-	@echo "... __/src/halcmd_main.o"
-	@echo "... __/src/halcmd_main.i"
-	@echo "... __/src/halcmd_main.s"
-	@echo "... __/src/uspace_ulapi.o"
-	@echo "... __/src/uspace_ulapi.i"
-	@echo "... __/src/uspace_ulapi.s"
+	@echo "... __/halcmd_src/halcmd.o"
+	@echo "... __/halcmd_src/halcmd.i"
+	@echo "... __/halcmd_src/halcmd.s"
+	@echo "... __/halcmd_src/halcmd_commands.o"
+	@echo "... __/halcmd_src/halcmd_commands.i"
+	@echo "... __/halcmd_src/halcmd_commands.s"
+	@echo "... __/halcmd_src/halcmd_completion.o"
+	@echo "... __/halcmd_src/halcmd_completion.i"
+	@echo "... __/halcmd_src/halcmd_completion.s"
+	@echo "... __/halcmd_src/halcmd_main.o"
+	@echo "... __/halcmd_src/halcmd_main.i"
+	@echo "... __/halcmd_src/halcmd_main.s"
+	@echo "... __/liblinuxcnchal_src/hal_lib.o"
+	@echo "... __/liblinuxcnchal_src/hal_lib.i"
+	@echo "... __/liblinuxcnchal_src/hal_lib.s"
+	@echo "... __/rtapi_src/uspace_ulapi.o"
+	@echo "... __/rtapi_src/uspace_ulapi.i"
+	@echo "... __/rtapi_src/uspace_ulapi.s"
 .PHONY : help
 
 
@@ -428,6 +394,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

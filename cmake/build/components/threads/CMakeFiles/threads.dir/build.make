@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 # Include any dependencies generated for this target.
 include components/threads/CMakeFiles/threads.dir/depend.make
@@ -76,32 +76,32 @@ include components/threads/CMakeFiles/threads.dir/progress.make
 # Include the compile flags for this target's objects.
 include components/threads/CMakeFiles/threads.dir/flags.make
 
-components/threads/CMakeFiles/threads.dir/__/__/src/threads.c.o: components/threads/CMakeFiles/threads.dir/flags.make
-components/threads/CMakeFiles/threads.dir/__/__/src/threads.c.o: ../src/threads.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object components/threads/CMakeFiles/threads.dir/__/__/src/threads.c.o"
-	cd /home/user/linuxcnc/cmake/build/components/threads && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/threads.dir/__/__/src/threads.c.o -c /home/user/linuxcnc/cmake/src/threads.c
+components/threads/CMakeFiles/threads.dir/__/threads_src/threads.c.o: components/threads/CMakeFiles/threads.dir/flags.make
+components/threads/CMakeFiles/threads.dir/__/threads_src/threads.c.o: ../components/threads_src/threads.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object components/threads/CMakeFiles/threads.dir/__/threads_src/threads.c.o"
+	cd /home/user/lcncladdertest/cmake/build/components/threads && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/threads.dir/__/threads_src/threads.c.o -c /home/user/lcncladdertest/cmake/components/threads_src/threads.c
 
-components/threads/CMakeFiles/threads.dir/__/__/src/threads.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/threads.dir/__/__/src/threads.c.i"
-	cd /home/user/linuxcnc/cmake/build/components/threads && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/threads.c > CMakeFiles/threads.dir/__/__/src/threads.c.i
+components/threads/CMakeFiles/threads.dir/__/threads_src/threads.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/threads.dir/__/threads_src/threads.c.i"
+	cd /home/user/lcncladdertest/cmake/build/components/threads && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/components/threads_src/threads.c > CMakeFiles/threads.dir/__/threads_src/threads.c.i
 
-components/threads/CMakeFiles/threads.dir/__/__/src/threads.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/threads.dir/__/__/src/threads.c.s"
-	cd /home/user/linuxcnc/cmake/build/components/threads && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/threads.c -o CMakeFiles/threads.dir/__/__/src/threads.c.s
+components/threads/CMakeFiles/threads.dir/__/threads_src/threads.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/threads.dir/__/threads_src/threads.c.s"
+	cd /home/user/lcncladdertest/cmake/build/components/threads && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/components/threads_src/threads.c -o CMakeFiles/threads.dir/__/threads_src/threads.c.s
 
 # Object files for target threads
 threads_OBJECTS = \
-"CMakeFiles/threads.dir/__/__/src/threads.c.o"
+"CMakeFiles/threads.dir/__/threads_src/threads.c.o"
 
 # External object files for target threads
 threads_EXTERNAL_OBJECTS =
 
-components/threads/threads.so: components/threads/CMakeFiles/threads.dir/__/__/src/threads.c.o
+components/threads/threads.so: components/threads/CMakeFiles/threads.dir/__/threads_src/threads.c.o
 components/threads/threads.so: components/threads/CMakeFiles/threads.dir/build.make
 components/threads/threads.so: liblinuxcnchal/liblinuxcnchal.so.0
 components/threads/threads.so: components/threads/CMakeFiles/threads.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library threads.so"
-	cd /home/user/linuxcnc/cmake/build/components/threads && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threads.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library threads.so"
+	cd /home/user/lcncladdertest/cmake/build/components/threads && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threads.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 components/threads/CMakeFiles/threads.dir/build: components/threads/threads.so
@@ -109,10 +109,10 @@ components/threads/CMakeFiles/threads.dir/build: components/threads/threads.so
 .PHONY : components/threads/CMakeFiles/threads.dir/build
 
 components/threads/CMakeFiles/threads.dir/clean:
-	cd /home/user/linuxcnc/cmake/build/components/threads && $(CMAKE_COMMAND) -P CMakeFiles/threads.dir/cmake_clean.cmake
+	cd /home/user/lcncladdertest/cmake/build/components/threads && $(CMAKE_COMMAND) -P CMakeFiles/threads.dir/cmake_clean.cmake
 .PHONY : components/threads/CMakeFiles/threads.dir/clean
 
 components/threads/CMakeFiles/threads.dir/depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/components/threads /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/components/threads /home/user/linuxcnc/cmake/build/components/threads/CMakeFiles/threads.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/components/threads /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/components/threads /home/user/lcncladdertest/cmake/build/components/threads/CMakeFiles/threads.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : components/threads/CMakeFiles/threads.dir/depend
 

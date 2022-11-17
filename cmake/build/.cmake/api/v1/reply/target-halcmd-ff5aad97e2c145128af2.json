@@ -1,0 +1,287 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "halcmd/halcmd"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"halcmd/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "ULAPI"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd/../common_src"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd/../rtapi_src"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd/../liblinuxcnchal_src"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd/../libnml_src"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "ULAPI"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd/../common_src"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd/../rtapi_src"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd/../liblinuxcnchal_src"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/user/lcncladdertest/cmake/halcmd/../libnml_src"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "liblinuxcncini::@aecb313196f168a34936"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "libnml::@9aff2b4a67a23bc21e7f"
+		}
+	],
+	"id" : "halcmd::@1f17e775d1a3e64320df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "/home/user/lcncladdertest/cmake/halcmd"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/user/lcncladdertest/cmake/build/libnml:/home/user/lcncladdertest/cmake/build/liblinuxcncini:/home/user/lcncladdertest/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lreadline",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../libnml/libnml.so.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../liblinuxcncini/liblinuxcncini.so.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-rpath-link,/home/user/lcncladdertest/lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "halcmd",
+	"nameOnDisk" : "halcmd",
+	"paths" : 
+	{
+		"build" : "halcmd",
+		"source" : "halcmd"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "halcmd_src/halcmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "halcmd_src/halcmd_commands.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "halcmd_src/halcmd_main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "halcmd_src/halcmd_completion.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "liblinuxcnchal_src/hal_lib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "rtapi_src/uspace_ulapi.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

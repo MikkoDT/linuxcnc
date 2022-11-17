@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRTAPI -DUSPACE -D_GNU_SOURCE -D__MODULE__ -Dthreads_EXPORTS
 
-C_INCLUDES = -I/home/user/linuxcnc/cmake/components/threads -I/home/user/linuxcnc/cmake/components/threads/../src -I/home/user/linuxcnc/cmake/build/components/threads/lib/liblinuxcnchal
+C_INCLUDES = -I/home/user/lcncladdertest/cmake/components/threads -I/home/user/lcncladdertest/cmake/components/threads/../../rtapi_src -I/home/user/lcncladdertest/cmake/components/threads/../../liblinuxcnchal_src -I/home/user/lcncladdertest/cmake/components/threads/../components/threads_src -I/home/user/lcncladdertest/cmake/build/components/threads/lib/liblinuxcnchal
 
 C_FLAGS = -fPIC
 

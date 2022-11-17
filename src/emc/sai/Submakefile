@@ -6,7 +6,7 @@ USERSRCS += $(SAISRCS)
 
 INCLUDES += emc/sai
 
-../bin/rs274: $(call TOOBJS, $(SAISRCS)) ../lib/librs274.so.0 ../lib/liblinuxcnc.so ../lib/libnml.so.0 \
+../bin/rs274: $(call TOOBJS, $(SAISRCS)) ../lib/librs274.so.0 ../lib/liblinuxcnc.a ../lib/libnml.so.0 \
 	../lib/liblinuxcnchal.so.0 ../lib/liblinuxcncini.so.0 ../lib/libpyplugin.so.0 ../lib/libtooldata.so.0
 	$(ECHO) Linking $(notdir $@)
 	$(Q)$(CXX) $(PYTHON_EXTRA_LDFLAGS) -o $@ $^ $(ULFLAGS) $(BOOST_PYTHON_LIB) $(PYTHON_LIBS) $(PYTHON_EXTRA_LIBS) $(READLINE_LIBS) $(LDFLAGS)

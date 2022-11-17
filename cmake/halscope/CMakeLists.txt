@@ -8,7 +8,10 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(${SRC_DIR}/../common_src)
+include_directories(${SRC_DIR}/../rtapi_src)
+include_directories(${SRC_DIR}/../liblinuxcnchal_src)
+include_directories(${SRC_DIR}/../halscope_src)
 
 # Gtk include dirs.
 include_directories(/usr/local/include/freetype2)
@@ -38,13 +41,13 @@ include_directories(/usr/include/x86_64-linux-gnu)
 # set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 set(SOURCES
-    ${SRC_DIR}/../src/scope.c
-    ${SRC_DIR}/../src/scope_horiz.c
-    ${SRC_DIR}/../src/scope_vert.c
-    ${SRC_DIR}/../src/scope_trig.c
-    ${SRC_DIR}/../src/scope_disp.c
-    ${SRC_DIR}/../src/scope_files.c
-    ${SRC_DIR}/../src/miscgtk.c
+    ${SRC_DIR}/../halscope_src/scope.c
+    ${SRC_DIR}/../halscope_src/scope_horiz.c
+    ${SRC_DIR}/../halscope_src/scope_vert.c
+    ${SRC_DIR}/../halscope_src/scope_trig.c
+    ${SRC_DIR}/../halscope_src/scope_disp.c
+    ${SRC_DIR}/../halscope_src/scope_files.c
+    ${SRC_DIR}/../common_src/miscgtk.c
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -52,10 +55,14 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 add_definitions(-DULAPI)
 
 # Set include paths for libraries to link.
-#target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR}/libnml)
+add_library(linuxcnchal SHARED IMPORTED) # or STATIC instead of SHARED
+set_target_properties(linuxcnchal PROPERTIES
+  IMPORTED_LOCATION "${SRC_DIR}/../build/liblinuxcnchal/liblinuxcnchal.so"
+  INTERFACE_INCLUDE_DIRECTORIES "${SRC_DIR}/../liblinuxcnchal_src"
+)
 
 # Link to libraries.
-target_link_libraries(${PROJECT_NAME} PRIVATE liblinuxcnchal -pthread
+target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal -pthread
     -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0
     -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0
     -lglib-2.0 -lm

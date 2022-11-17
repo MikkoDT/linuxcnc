@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/linuxcnc/cmake/src/uspace_rtapi_string.c" "/home/user/linuxcnc/cmake/build/rtapi/CMakeFiles/rtapi.dir/__/src/uspace_rtapi_string.c.o"
+  "/home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_string.c" "/home/user/lcncladdertest/cmake/build/rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_string.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -19,13 +19,15 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../rtapi"
-  "../rtapi/../src"
+  "../rtapi/../common_src"
+  "../rtapi/../liblinuxcnchal_src"
+  "../rtapi/../rtapi_src"
   "rtapi"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/linuxcnc/cmake/src/rtapi_pci.cc" "/home/user/linuxcnc/cmake/build/rtapi/CMakeFiles/rtapi.dir/__/src/rtapi_pci.cc.o"
-  "/home/user/linuxcnc/cmake/src/uspace_rtapi_app.cc" "/home/user/linuxcnc/cmake/build/rtapi/CMakeFiles/rtapi.dir/__/src/uspace_rtapi_app.cc.o"
-  "/home/user/linuxcnc/cmake/src/uspace_rtapi_parport.cc" "/home/user/linuxcnc/cmake/build/rtapi/CMakeFiles/rtapi.dir/__/src/uspace_rtapi_parport.cc.o"
+  "/home/user/lcncladdertest/cmake/rtapi_src/rtapi_pci.cc" "/home/user/lcncladdertest/cmake/build/rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/rtapi_pci.cc.o"
+  "/home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_app.cc" "/home/user/lcncladdertest/cmake/build/rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_app.cc.o"
+  "/home/user/lcncladdertest/cmake/rtapi_src/uspace_rtapi_parport.cc" "/home/user/lcncladdertest/cmake/build/rtapi/CMakeFiles/rtapi.dir/__/rtapi_src/uspace_rtapi_parport.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -39,7 +41,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../rtapi"
-  "../rtapi/../src"
+  "../rtapi/../common_src"
+  "../rtapi/../liblinuxcnchal_src"
+  "../rtapi/../rtapi_src"
   "rtapi"
   )
 

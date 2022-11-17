@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/liblinuxcnc//CMakeFiles/progress.marks
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles /home/user/lcncladdertest/cmake/build/liblinuxcnc//CMakeFiles/progress.marks
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/lcncladdertest/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/clean
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,411 +162,411 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/preinstall
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/preinstall
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-liblinuxcnc/CMakeFiles/liblinuxcnc.dir/rule:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/CMakeFiles/liblinuxcnc.dir/rule
-.PHONY : liblinuxcnc/CMakeFiles/liblinuxcnc.dir/rule
+liblinuxcnc/CMakeFiles/linuxcnc.dir/rule:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnc/CMakeFiles/linuxcnc.dir/rule
+.PHONY : liblinuxcnc/CMakeFiles/linuxcnc.dir/rule
 
 # Convenience name for target.
-liblinuxcnc: liblinuxcnc/CMakeFiles/liblinuxcnc.dir/rule
+linuxcnc: liblinuxcnc/CMakeFiles/linuxcnc.dir/rule
 
-.PHONY : liblinuxcnc
+.PHONY : linuxcnc
 
 # fast build rule for target.
-liblinuxcnc/fast:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build
-.PHONY : liblinuxcnc/fast
+linuxcnc/fast:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/build
+.PHONY : linuxcnc/fast
 
-__/src/canon_position.o: __/src/canon_position.cc.o
+__/emc_src/canon_position.o: __/emc_src/canon_position.cc.o
 
-.PHONY : __/src/canon_position.o
-
-# target to build an object file
-__/src/canon_position.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/canon_position.cc.o
-.PHONY : __/src/canon_position.cc.o
-
-__/src/canon_position.i: __/src/canon_position.cc.i
-
-.PHONY : __/src/canon_position.i
-
-# target to preprocess a source file
-__/src/canon_position.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/canon_position.cc.i
-.PHONY : __/src/canon_position.cc.i
-
-__/src/canon_position.s: __/src/canon_position.cc.s
-
-.PHONY : __/src/canon_position.s
-
-# target to generate assembly for a file
-__/src/canon_position.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/canon_position.cc.s
-.PHONY : __/src/canon_position.cc.s
-
-__/src/emc.o: __/src/emc.cc.o
-
-.PHONY : __/src/emc.o
+.PHONY : __/emc_src/canon_position.o
 
 # target to build an object file
-__/src/emc.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emc.cc.o
-.PHONY : __/src/emc.cc.o
+__/emc_src/canon_position.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.o
+.PHONY : __/emc_src/canon_position.cc.o
 
-__/src/emc.i: __/src/emc.cc.i
+__/emc_src/canon_position.i: __/emc_src/canon_position.cc.i
 
-.PHONY : __/src/emc.i
+.PHONY : __/emc_src/canon_position.i
 
 # target to preprocess a source file
-__/src/emc.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emc.cc.i
-.PHONY : __/src/emc.cc.i
+__/emc_src/canon_position.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.i
+.PHONY : __/emc_src/canon_position.cc.i
 
-__/src/emc.s: __/src/emc.cc.s
+__/emc_src/canon_position.s: __/emc_src/canon_position.cc.s
 
-.PHONY : __/src/emc.s
+.PHONY : __/emc_src/canon_position.s
 
 # target to generate assembly for a file
-__/src/emc.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emc.cc.s
-.PHONY : __/src/emc.cc.s
+__/emc_src/canon_position.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/canon_position.cc.s
+.PHONY : __/emc_src/canon_position.cc.s
 
-__/src/emcIniFile.o: __/src/emcIniFile.cc.o
+__/emc_src/emc.o: __/emc_src/emc.cc.o
 
-.PHONY : __/src/emcIniFile.o
+.PHONY : __/emc_src/emc.o
 
 # target to build an object file
-__/src/emcIniFile.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcIniFile.cc.o
-.PHONY : __/src/emcIniFile.cc.o
+__/emc_src/emc.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.o
+.PHONY : __/emc_src/emc.cc.o
 
-__/src/emcIniFile.i: __/src/emcIniFile.cc.i
+__/emc_src/emc.i: __/emc_src/emc.cc.i
 
-.PHONY : __/src/emcIniFile.i
+.PHONY : __/emc_src/emc.i
 
 # target to preprocess a source file
-__/src/emcIniFile.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcIniFile.cc.i
-.PHONY : __/src/emcIniFile.cc.i
+__/emc_src/emc.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.i
+.PHONY : __/emc_src/emc.cc.i
 
-__/src/emcIniFile.s: __/src/emcIniFile.cc.s
+__/emc_src/emc.s: __/emc_src/emc.cc.s
 
-.PHONY : __/src/emcIniFile.s
+.PHONY : __/emc_src/emc.s
 
 # target to generate assembly for a file
-__/src/emcIniFile.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcIniFile.cc.s
-.PHONY : __/src/emcIniFile.cc.s
+__/emc_src/emc.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emc.cc.s
+.PHONY : __/emc_src/emc.cc.s
 
-__/src/emcargs.o: __/src/emcargs.cc.o
+__/emc_src/emcIniFile.o: __/emc_src/emcIniFile.cc.o
 
-.PHONY : __/src/emcargs.o
+.PHONY : __/emc_src/emcIniFile.o
 
 # target to build an object file
-__/src/emcargs.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcargs.cc.o
-.PHONY : __/src/emcargs.cc.o
+__/emc_src/emcIniFile.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.o
+.PHONY : __/emc_src/emcIniFile.cc.o
 
-__/src/emcargs.i: __/src/emcargs.cc.i
+__/emc_src/emcIniFile.i: __/emc_src/emcIniFile.cc.i
 
-.PHONY : __/src/emcargs.i
+.PHONY : __/emc_src/emcIniFile.i
 
 # target to preprocess a source file
-__/src/emcargs.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcargs.cc.i
-.PHONY : __/src/emcargs.cc.i
+__/emc_src/emcIniFile.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.i
+.PHONY : __/emc_src/emcIniFile.cc.i
 
-__/src/emcargs.s: __/src/emcargs.cc.s
+__/emc_src/emcIniFile.s: __/emc_src/emcIniFile.cc.s
 
-.PHONY : __/src/emcargs.s
+.PHONY : __/emc_src/emcIniFile.s
 
 # target to generate assembly for a file
-__/src/emcargs.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcargs.cc.s
-.PHONY : __/src/emcargs.cc.s
+__/emc_src/emcIniFile.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcIniFile.cc.s
+.PHONY : __/emc_src/emcIniFile.cc.s
 
-__/src/emcglb.o: __/src/emcglb.c.o
+__/emc_src/emcargs.o: __/emc_src/emcargs.cc.o
 
-.PHONY : __/src/emcglb.o
+.PHONY : __/emc_src/emcargs.o
 
 # target to build an object file
-__/src/emcglb.c.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcglb.c.o
-.PHONY : __/src/emcglb.c.o
+__/emc_src/emcargs.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.o
+.PHONY : __/emc_src/emcargs.cc.o
 
-__/src/emcglb.i: __/src/emcglb.c.i
+__/emc_src/emcargs.i: __/emc_src/emcargs.cc.i
 
-.PHONY : __/src/emcglb.i
+.PHONY : __/emc_src/emcargs.i
 
 # target to preprocess a source file
-__/src/emcglb.c.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcglb.c.i
-.PHONY : __/src/emcglb.c.i
+__/emc_src/emcargs.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.i
+.PHONY : __/emc_src/emcargs.cc.i
 
-__/src/emcglb.s: __/src/emcglb.c.s
+__/emc_src/emcargs.s: __/emc_src/emcargs.cc.s
 
-.PHONY : __/src/emcglb.s
+.PHONY : __/emc_src/emcargs.s
 
 # target to generate assembly for a file
-__/src/emcglb.c.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcglb.c.s
-.PHONY : __/src/emcglb.c.s
+__/emc_src/emcargs.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcargs.cc.s
+.PHONY : __/emc_src/emcargs.cc.s
 
-__/src/emcops.o: __/src/emcops.cc.o
+__/emc_src/emcglb.o: __/emc_src/emcglb.c.o
 
-.PHONY : __/src/emcops.o
+.PHONY : __/emc_src/emcglb.o
 
 # target to build an object file
-__/src/emcops.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcops.cc.o
-.PHONY : __/src/emcops.cc.o
+__/emc_src/emcglb.c.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.o
+.PHONY : __/emc_src/emcglb.c.o
 
-__/src/emcops.i: __/src/emcops.cc.i
+__/emc_src/emcglb.i: __/emc_src/emcglb.c.i
 
-.PHONY : __/src/emcops.i
+.PHONY : __/emc_src/emcglb.i
 
 # target to preprocess a source file
-__/src/emcops.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcops.cc.i
-.PHONY : __/src/emcops.cc.i
+__/emc_src/emcglb.c.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.i
+.PHONY : __/emc_src/emcglb.c.i
 
-__/src/emcops.s: __/src/emcops.cc.s
+__/emc_src/emcglb.s: __/emc_src/emcglb.c.s
 
-.PHONY : __/src/emcops.s
+.PHONY : __/emc_src/emcglb.s
 
 # target to generate assembly for a file
-__/src/emcops.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcops.cc.s
-.PHONY : __/src/emcops.cc.s
+__/emc_src/emcglb.c.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcglb.c.s
+.PHONY : __/emc_src/emcglb.c.s
 
-__/src/emcpose.o: __/src/emcpose.c.o
+__/emc_src/emcops.o: __/emc_src/emcops.cc.o
 
-.PHONY : __/src/emcpose.o
+.PHONY : __/emc_src/emcops.o
 
 # target to build an object file
-__/src/emcpose.c.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcpose.c.o
-.PHONY : __/src/emcpose.c.o
+__/emc_src/emcops.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.o
+.PHONY : __/emc_src/emcops.cc.o
 
-__/src/emcpose.i: __/src/emcpose.c.i
+__/emc_src/emcops.i: __/emc_src/emcops.cc.i
 
-.PHONY : __/src/emcpose.i
+.PHONY : __/emc_src/emcops.i
 
 # target to preprocess a source file
-__/src/emcpose.c.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcpose.c.i
-.PHONY : __/src/emcpose.c.i
+__/emc_src/emcops.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.i
+.PHONY : __/emc_src/emcops.cc.i
 
-__/src/emcpose.s: __/src/emcpose.c.s
+__/emc_src/emcops.s: __/emc_src/emcops.cc.s
 
-.PHONY : __/src/emcpose.s
+.PHONY : __/emc_src/emcops.s
 
 # target to generate assembly for a file
-__/src/emcpose.c.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/emcpose.c.s
-.PHONY : __/src/emcpose.c.s
+__/emc_src/emcops.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcops.cc.s
+.PHONY : __/emc_src/emcops.cc.s
 
-__/src/iniaxis.o: __/src/iniaxis.cc.o
+__/emc_src/emcpose.o: __/emc_src/emcpose.c.o
 
-.PHONY : __/src/iniaxis.o
+.PHONY : __/emc_src/emcpose.o
 
 # target to build an object file
-__/src/iniaxis.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/iniaxis.cc.o
-.PHONY : __/src/iniaxis.cc.o
+__/emc_src/emcpose.c.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.o
+.PHONY : __/emc_src/emcpose.c.o
 
-__/src/iniaxis.i: __/src/iniaxis.cc.i
+__/emc_src/emcpose.i: __/emc_src/emcpose.c.i
 
-.PHONY : __/src/iniaxis.i
+.PHONY : __/emc_src/emcpose.i
 
 # target to preprocess a source file
-__/src/iniaxis.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/iniaxis.cc.i
-.PHONY : __/src/iniaxis.cc.i
+__/emc_src/emcpose.c.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.i
+.PHONY : __/emc_src/emcpose.c.i
 
-__/src/iniaxis.s: __/src/iniaxis.cc.s
+__/emc_src/emcpose.s: __/emc_src/emcpose.c.s
 
-.PHONY : __/src/iniaxis.s
+.PHONY : __/emc_src/emcpose.s
 
 # target to generate assembly for a file
-__/src/iniaxis.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/iniaxis.cc.s
-.PHONY : __/src/iniaxis.cc.s
+__/emc_src/emcpose.c.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/emcpose.c.s
+.PHONY : __/emc_src/emcpose.c.s
 
-__/src/inihal.o: __/src/inihal.cc.o
+__/emc_src/iniaxis.o: __/emc_src/iniaxis.cc.o
 
-.PHONY : __/src/inihal.o
+.PHONY : __/emc_src/iniaxis.o
 
 # target to build an object file
-__/src/inihal.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/inihal.cc.o
-.PHONY : __/src/inihal.cc.o
+__/emc_src/iniaxis.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.o
+.PHONY : __/emc_src/iniaxis.cc.o
 
-__/src/inihal.i: __/src/inihal.cc.i
+__/emc_src/iniaxis.i: __/emc_src/iniaxis.cc.i
 
-.PHONY : __/src/inihal.i
+.PHONY : __/emc_src/iniaxis.i
 
 # target to preprocess a source file
-__/src/inihal.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/inihal.cc.i
-.PHONY : __/src/inihal.cc.i
+__/emc_src/iniaxis.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.i
+.PHONY : __/emc_src/iniaxis.cc.i
 
-__/src/inihal.s: __/src/inihal.cc.s
+__/emc_src/iniaxis.s: __/emc_src/iniaxis.cc.s
 
-.PHONY : __/src/inihal.s
+.PHONY : __/emc_src/iniaxis.s
 
 # target to generate assembly for a file
-__/src/inihal.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/inihal.cc.s
-.PHONY : __/src/inihal.cc.s
+__/emc_src/iniaxis.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/iniaxis.cc.s
+.PHONY : __/emc_src/iniaxis.cc.s
 
-__/src/inijoint.o: __/src/inijoint.cc.o
+__/emc_src/inihal.o: __/emc_src/inihal.cc.o
 
-.PHONY : __/src/inijoint.o
+.PHONY : __/emc_src/inihal.o
 
 # target to build an object file
-__/src/inijoint.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/inijoint.cc.o
-.PHONY : __/src/inijoint.cc.o
+__/emc_src/inihal.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.o
+.PHONY : __/emc_src/inihal.cc.o
 
-__/src/inijoint.i: __/src/inijoint.cc.i
+__/emc_src/inihal.i: __/emc_src/inihal.cc.i
 
-.PHONY : __/src/inijoint.i
+.PHONY : __/emc_src/inihal.i
 
 # target to preprocess a source file
-__/src/inijoint.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/inijoint.cc.i
-.PHONY : __/src/inijoint.cc.i
+__/emc_src/inihal.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.i
+.PHONY : __/emc_src/inihal.cc.i
 
-__/src/inijoint.s: __/src/inijoint.cc.s
+__/emc_src/inihal.s: __/emc_src/inihal.cc.s
 
-.PHONY : __/src/inijoint.s
+.PHONY : __/emc_src/inihal.s
 
 # target to generate assembly for a file
-__/src/inijoint.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/inijoint.cc.s
-.PHONY : __/src/inijoint.cc.s
+__/emc_src/inihal.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inihal.cc.s
+.PHONY : __/emc_src/inihal.cc.s
 
-__/src/inispindle.o: __/src/inispindle.cc.o
+__/emc_src/inijoint.o: __/emc_src/inijoint.cc.o
 
-.PHONY : __/src/inispindle.o
+.PHONY : __/emc_src/inijoint.o
 
 # target to build an object file
-__/src/inispindle.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/inispindle.cc.o
-.PHONY : __/src/inispindle.cc.o
+__/emc_src/inijoint.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.o
+.PHONY : __/emc_src/inijoint.cc.o
 
-__/src/inispindle.i: __/src/inispindle.cc.i
+__/emc_src/inijoint.i: __/emc_src/inijoint.cc.i
 
-.PHONY : __/src/inispindle.i
+.PHONY : __/emc_src/inijoint.i
 
 # target to preprocess a source file
-__/src/inispindle.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/inispindle.cc.i
-.PHONY : __/src/inispindle.cc.i
+__/emc_src/inijoint.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.i
+.PHONY : __/emc_src/inijoint.cc.i
 
-__/src/inispindle.s: __/src/inispindle.cc.s
+__/emc_src/inijoint.s: __/emc_src/inijoint.cc.s
 
-.PHONY : __/src/inispindle.s
+.PHONY : __/emc_src/inijoint.s
 
 # target to generate assembly for a file
-__/src/inispindle.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/inispindle.cc.s
-.PHONY : __/src/inispindle.cc.s
+__/emc_src/inijoint.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inijoint.cc.s
+.PHONY : __/emc_src/inijoint.cc.s
 
-__/src/initraj.o: __/src/initraj.cc.o
+__/emc_src/inispindle.o: __/emc_src/inispindle.cc.o
 
-.PHONY : __/src/initraj.o
+.PHONY : __/emc_src/inispindle.o
 
 # target to build an object file
-__/src/initraj.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/initraj.cc.o
-.PHONY : __/src/initraj.cc.o
+__/emc_src/inispindle.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.o
+.PHONY : __/emc_src/inispindle.cc.o
 
-__/src/initraj.i: __/src/initraj.cc.i
+__/emc_src/inispindle.i: __/emc_src/inispindle.cc.i
 
-.PHONY : __/src/initraj.i
+.PHONY : __/emc_src/inispindle.i
 
 # target to preprocess a source file
-__/src/initraj.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/initraj.cc.i
-.PHONY : __/src/initraj.cc.i
+__/emc_src/inispindle.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.i
+.PHONY : __/emc_src/inispindle.cc.i
 
-__/src/initraj.s: __/src/initraj.cc.s
+__/emc_src/inispindle.s: __/emc_src/inispindle.cc.s
 
-.PHONY : __/src/initraj.s
+.PHONY : __/emc_src/inispindle.s
 
 # target to generate assembly for a file
-__/src/initraj.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/initraj.cc.s
-.PHONY : __/src/initraj.cc.s
+__/emc_src/inispindle.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/inispindle.cc.s
+.PHONY : __/emc_src/inispindle.cc.s
 
-__/src/interpl.o: __/src/interpl.cc.o
+__/emc_src/initraj.o: __/emc_src/initraj.cc.o
 
-.PHONY : __/src/interpl.o
+.PHONY : __/emc_src/initraj.o
 
 # target to build an object file
-__/src/interpl.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/interpl.cc.o
-.PHONY : __/src/interpl.cc.o
+__/emc_src/initraj.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.o
+.PHONY : __/emc_src/initraj.cc.o
 
-__/src/interpl.i: __/src/interpl.cc.i
+__/emc_src/initraj.i: __/emc_src/initraj.cc.i
 
-.PHONY : __/src/interpl.i
+.PHONY : __/emc_src/initraj.i
 
 # target to preprocess a source file
-__/src/interpl.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/interpl.cc.i
-.PHONY : __/src/interpl.cc.i
+__/emc_src/initraj.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.i
+.PHONY : __/emc_src/initraj.cc.i
 
-__/src/interpl.s: __/src/interpl.cc.s
+__/emc_src/initraj.s: __/emc_src/initraj.cc.s
 
-.PHONY : __/src/interpl.s
+.PHONY : __/emc_src/initraj.s
 
 # target to generate assembly for a file
-__/src/interpl.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/interpl.cc.s
-.PHONY : __/src/interpl.cc.s
+__/emc_src/initraj.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/initraj.cc.s
+.PHONY : __/emc_src/initraj.cc.s
 
-__/src/modal_state.o: __/src/modal_state.cc.o
+__/emc_src/interpl.o: __/emc_src/interpl.cc.o
 
-.PHONY : __/src/modal_state.o
+.PHONY : __/emc_src/interpl.o
 
 # target to build an object file
-__/src/modal_state.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/modal_state.cc.o
-.PHONY : __/src/modal_state.cc.o
+__/emc_src/interpl.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.o
+.PHONY : __/emc_src/interpl.cc.o
 
-__/src/modal_state.i: __/src/modal_state.cc.i
+__/emc_src/interpl.i: __/emc_src/interpl.cc.i
 
-.PHONY : __/src/modal_state.i
+.PHONY : __/emc_src/interpl.i
 
 # target to preprocess a source file
-__/src/modal_state.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/modal_state.cc.i
-.PHONY : __/src/modal_state.cc.i
+__/emc_src/interpl.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.i
+.PHONY : __/emc_src/interpl.cc.i
 
-__/src/modal_state.s: __/src/modal_state.cc.s
+__/emc_src/interpl.s: __/emc_src/interpl.cc.s
 
-.PHONY : __/src/modal_state.s
+.PHONY : __/emc_src/interpl.s
 
 # target to generate assembly for a file
-__/src/modal_state.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/liblinuxcnc.dir/build.make liblinuxcnc/CMakeFiles/liblinuxcnc.dir/__/src/modal_state.cc.s
-.PHONY : __/src/modal_state.cc.s
+__/emc_src/interpl.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/interpl.cc.s
+.PHONY : __/emc_src/interpl.cc.s
+
+__/emc_src/modal_state.o: __/emc_src/modal_state.cc.o
+
+.PHONY : __/emc_src/modal_state.o
+
+# target to build an object file
+__/emc_src/modal_state.cc.o:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.o
+.PHONY : __/emc_src/modal_state.cc.o
+
+__/emc_src/modal_state.i: __/emc_src/modal_state.cc.i
+
+.PHONY : __/emc_src/modal_state.i
+
+# target to preprocess a source file
+__/emc_src/modal_state.cc.i:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.i
+.PHONY : __/emc_src/modal_state.cc.i
+
+__/emc_src/modal_state.s: __/emc_src/modal_state.cc.s
+
+.PHONY : __/emc_src/modal_state.s
+
+# target to generate assembly for a file
+__/emc_src/modal_state.cc.s:
+	cd /home/user/lcncladdertest/cmake/build && $(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/__/emc_src/modal_state.cc.s
+.PHONY : __/emc_src/modal_state.cc.s
 
 # Help Target
 help:
@@ -580,49 +580,49 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... liblinuxcnc"
-	@echo "... __/src/canon_position.o"
-	@echo "... __/src/canon_position.i"
-	@echo "... __/src/canon_position.s"
-	@echo "... __/src/emc.o"
-	@echo "... __/src/emc.i"
-	@echo "... __/src/emc.s"
-	@echo "... __/src/emcIniFile.o"
-	@echo "... __/src/emcIniFile.i"
-	@echo "... __/src/emcIniFile.s"
-	@echo "... __/src/emcargs.o"
-	@echo "... __/src/emcargs.i"
-	@echo "... __/src/emcargs.s"
-	@echo "... __/src/emcglb.o"
-	@echo "... __/src/emcglb.i"
-	@echo "... __/src/emcglb.s"
-	@echo "... __/src/emcops.o"
-	@echo "... __/src/emcops.i"
-	@echo "... __/src/emcops.s"
-	@echo "... __/src/emcpose.o"
-	@echo "... __/src/emcpose.i"
-	@echo "... __/src/emcpose.s"
-	@echo "... __/src/iniaxis.o"
-	@echo "... __/src/iniaxis.i"
-	@echo "... __/src/iniaxis.s"
-	@echo "... __/src/inihal.o"
-	@echo "... __/src/inihal.i"
-	@echo "... __/src/inihal.s"
-	@echo "... __/src/inijoint.o"
-	@echo "... __/src/inijoint.i"
-	@echo "... __/src/inijoint.s"
-	@echo "... __/src/inispindle.o"
-	@echo "... __/src/inispindle.i"
-	@echo "... __/src/inispindle.s"
-	@echo "... __/src/initraj.o"
-	@echo "... __/src/initraj.i"
-	@echo "... __/src/initraj.s"
-	@echo "... __/src/interpl.o"
-	@echo "... __/src/interpl.i"
-	@echo "... __/src/interpl.s"
-	@echo "... __/src/modal_state.o"
-	@echo "... __/src/modal_state.i"
-	@echo "... __/src/modal_state.s"
+	@echo "... linuxcnc"
+	@echo "... __/emc_src/canon_position.o"
+	@echo "... __/emc_src/canon_position.i"
+	@echo "... __/emc_src/canon_position.s"
+	@echo "... __/emc_src/emc.o"
+	@echo "... __/emc_src/emc.i"
+	@echo "... __/emc_src/emc.s"
+	@echo "... __/emc_src/emcIniFile.o"
+	@echo "... __/emc_src/emcIniFile.i"
+	@echo "... __/emc_src/emcIniFile.s"
+	@echo "... __/emc_src/emcargs.o"
+	@echo "... __/emc_src/emcargs.i"
+	@echo "... __/emc_src/emcargs.s"
+	@echo "... __/emc_src/emcglb.o"
+	@echo "... __/emc_src/emcglb.i"
+	@echo "... __/emc_src/emcglb.s"
+	@echo "... __/emc_src/emcops.o"
+	@echo "... __/emc_src/emcops.i"
+	@echo "... __/emc_src/emcops.s"
+	@echo "... __/emc_src/emcpose.o"
+	@echo "... __/emc_src/emcpose.i"
+	@echo "... __/emc_src/emcpose.s"
+	@echo "... __/emc_src/iniaxis.o"
+	@echo "... __/emc_src/iniaxis.i"
+	@echo "... __/emc_src/iniaxis.s"
+	@echo "... __/emc_src/inihal.o"
+	@echo "... __/emc_src/inihal.i"
+	@echo "... __/emc_src/inihal.s"
+	@echo "... __/emc_src/inijoint.o"
+	@echo "... __/emc_src/inijoint.i"
+	@echo "... __/emc_src/inijoint.s"
+	@echo "... __/emc_src/inispindle.o"
+	@echo "... __/emc_src/inispindle.i"
+	@echo "... __/emc_src/inispindle.s"
+	@echo "... __/emc_src/initraj.o"
+	@echo "... __/emc_src/initraj.i"
+	@echo "... __/emc_src/initraj.s"
+	@echo "... __/emc_src/interpl.o"
+	@echo "... __/emc_src/interpl.i"
+	@echo "... __/emc_src/interpl.s"
+	@echo "... __/emc_src/modal_state.o"
+	@echo "... __/emc_src/modal_state.i"
+	@echo "... __/emc_src/modal_state.s"
 .PHONY : help
 
 
@@ -634,6 +634,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

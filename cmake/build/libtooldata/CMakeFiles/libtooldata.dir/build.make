@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 # Include any dependencies generated for this target.
 include libtooldata/CMakeFiles/libtooldata.dir/depend.make
@@ -76,62 +76,62 @@ include libtooldata/CMakeFiles/libtooldata.dir/progress.make
 # Include the compile flags for this target's objects.
 include libtooldata/CMakeFiles/libtooldata.dir/flags.make
 
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.o: libtooldata/CMakeFiles/libtooldata.dir/flags.make
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.o: ../src/tooldata_mmap.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.o -c /home/user/linuxcnc/cmake/src/tooldata_mmap.cc
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.o: libtooldata/CMakeFiles/libtooldata.dir/flags.make
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.o: ../libtooldata_src/tooldata_mmap.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.o -c /home/user/lcncladdertest/cmake/libtooldata_src/tooldata_mmap.cc
 
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/tooldata_mmap.cc > CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.i
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libtooldata_src/tooldata_mmap.cc > CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.i
 
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/tooldata_mmap.cc -o CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.s
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libtooldata_src/tooldata_mmap.cc -o CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.s
 
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.o: libtooldata/CMakeFiles/libtooldata.dir/flags.make
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.o: ../src/tooldata_common.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.o -c /home/user/linuxcnc/cmake/src/tooldata_common.cc
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.o: libtooldata/CMakeFiles/libtooldata.dir/flags.make
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.o: ../libtooldata_src/tooldata_common.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.o -c /home/user/lcncladdertest/cmake/libtooldata_src/tooldata_common.cc
 
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/tooldata_common.cc > CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.i
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libtooldata_src/tooldata_common.cc > CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.i
 
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/tooldata_common.cc -o CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.s
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libtooldata_src/tooldata_common.cc -o CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.s
 
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.o: libtooldata/CMakeFiles/libtooldata.dir/flags.make
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.o: ../src/tooldata_db.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.o"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.o -c /home/user/linuxcnc/cmake/src/tooldata_db.cc
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.o: libtooldata/CMakeFiles/libtooldata.dir/flags.make
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.o: ../libtooldata_src/tooldata_db.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.o"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.o -c /home/user/lcncladdertest/cmake/libtooldata_src/tooldata_db.cc
 
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.i"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/src/tooldata_db.cc > CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.i
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.i"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/lcncladdertest/cmake/libtooldata_src/tooldata_db.cc > CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.i
 
-libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.s"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/src/tooldata_db.cc -o CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.s
+libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.s"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/lcncladdertest/cmake/libtooldata_src/tooldata_db.cc -o CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.s
 
 # Object files for target libtooldata
 libtooldata_OBJECTS = \
-"CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.o" \
-"CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.o" \
-"CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.o"
+"CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.o" \
+"CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.o" \
+"CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.o"
 
 # External object files for target libtooldata
 libtooldata_EXTERNAL_OBJECTS =
 
-libtooldata/libtooldata.so.0: libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_mmap.cc.o
-libtooldata/libtooldata.so.0: libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_common.cc.o
-libtooldata/libtooldata.so.0: libtooldata/CMakeFiles/libtooldata.dir/__/src/tooldata_db.cc.o
+libtooldata/libtooldata.so.0: libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_mmap.cc.o
+libtooldata/libtooldata.so.0: libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_common.cc.o
+libtooldata/libtooldata.so.0: libtooldata/CMakeFiles/libtooldata.dir/__/libtooldata_src/tooldata_db.cc.o
 libtooldata/libtooldata.so.0: libtooldata/CMakeFiles/libtooldata.dir/build.make
 libtooldata/libtooldata.so.0: libtooldata/CMakeFiles/libtooldata.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libtooldata.so"
-	cd /home/user/linuxcnc/cmake/build/libtooldata && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libtooldata.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/user/linuxcnc/cmake/build/libtooldata && $(CMAKE_COMMAND) -E cmake_symlink_library libtooldata.so.0 libtooldata.so.0 libtooldata.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libtooldata.so"
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libtooldata.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && $(CMAKE_COMMAND) -E cmake_symlink_library libtooldata.so.0 libtooldata.so.0 libtooldata.so
 
 libtooldata/libtooldata.so: libtooldata/libtooldata.so.0
 	@$(CMAKE_COMMAND) -E touch_nocreate libtooldata/libtooldata.so
@@ -142,10 +142,10 @@ libtooldata/CMakeFiles/libtooldata.dir/build: libtooldata/libtooldata.so
 .PHONY : libtooldata/CMakeFiles/libtooldata.dir/build
 
 libtooldata/CMakeFiles/libtooldata.dir/clean:
-	cd /home/user/linuxcnc/cmake/build/libtooldata && $(CMAKE_COMMAND) -P CMakeFiles/libtooldata.dir/cmake_clean.cmake
+	cd /home/user/lcncladdertest/cmake/build/libtooldata && $(CMAKE_COMMAND) -P CMakeFiles/libtooldata.dir/cmake_clean.cmake
 .PHONY : libtooldata/CMakeFiles/libtooldata.dir/clean
 
 libtooldata/CMakeFiles/libtooldata.dir/depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/libtooldata /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/libtooldata /home/user/linuxcnc/cmake/build/libtooldata/CMakeFiles/libtooldata.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/libtooldata /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/libtooldata /home/user/lcncladdertest/cmake/build/libtooldata/CMakeFiles/libtooldata.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libtooldata/CMakeFiles/libtooldata.dir/depend
 

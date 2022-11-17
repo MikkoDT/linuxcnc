@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DULAPI -Dlibtooldata_EXPORTS
 
-CXX_INCLUDES = -I/home/user/linuxcnc/cmake/libtooldata -I/home/user/linuxcnc/cmake/libtooldata/../src -I/home/user/linuxcnc/cmake/build/libtooldata
+CXX_INCLUDES = -I/home/user/lcncladdertest/cmake/libtooldata -I/home/user/lcncladdertest/cmake/libtooldata/../rtapi_src -I/home/user/lcncladdertest/cmake/libtooldata/../emc_src -I/home/user/lcncladdertest/cmake/libtooldata/../libnml_src -I/home/user/lcncladdertest/cmake/libtooldata/../libtooldata_src -I/home/user/lcncladdertest/cmake/build/libtooldata
 
 CXX_FLAGS = -fPIC
 

@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/user/linuxcnc/cmake/src/miscgtk.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/src/miscgtk.c.o"
-  "/home/user/linuxcnc/cmake/src/scope.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/src/scope.c.o"
-  "/home/user/linuxcnc/cmake/src/scope_disp.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/src/scope_disp.c.o"
-  "/home/user/linuxcnc/cmake/src/scope_files.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/src/scope_files.c.o"
-  "/home/user/linuxcnc/cmake/src/scope_horiz.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/src/scope_horiz.c.o"
-  "/home/user/linuxcnc/cmake/src/scope_trig.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/src/scope_trig.c.o"
-  "/home/user/linuxcnc/cmake/src/scope_vert.c" "/home/user/linuxcnc/cmake/build/halscope/CMakeFiles/halscope.dir/__/src/scope_vert.c.o"
+  "/home/user/lcncladdertest/cmake/common_src/miscgtk.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/common_src/miscgtk.c.o"
+  "/home/user/lcncladdertest/cmake/halscope_src/scope.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope.c.o"
+  "/home/user/lcncladdertest/cmake/halscope_src/scope_disp.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_disp.c.o"
+  "/home/user/lcncladdertest/cmake/halscope_src/scope_files.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_files.c.o"
+  "/home/user/lcncladdertest/cmake/halscope_src/scope_horiz.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_horiz.c.o"
+  "/home/user/lcncladdertest/cmake/halscope_src/scope_trig.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_trig.c.o"
+  "/home/user/lcncladdertest/cmake/halscope_src/scope_vert.c" "/home/user/lcncladdertest/cmake/build/halscope/CMakeFiles/halscope.dir/__/halscope_src/scope_vert.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -22,7 +22,9 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../halscope"
-  "../halscope/../src"
+  "../halscope/../common_src"
+  "../halscope/../rtapi_src"
+  "../halscope/../halscope_src"
   "/usr/local/include/freetype2"
   "/usr/include/gtk-3.0"
   "/usr/include/at-spi2-atk/2.0"
@@ -43,11 +45,11 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/blkid"
   "/usr/include/glib-2.0"
   "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+  "../halscope/../liblinuxcnchal_src"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/user/linuxcnc/cmake/build/liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

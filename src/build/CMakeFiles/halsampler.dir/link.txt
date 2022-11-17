@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,halsampler.so -o halsampler.so CMakeFiles/halsampler.dir/hal/components/sampler_usr.c.o  -lpthread -lrt -llinuxcnchal 

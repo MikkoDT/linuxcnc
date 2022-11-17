@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/linuxcnc/cmake/liblinuxcncini
+# Install script for directory: /home/user/lcncladdertest/cmake/liblinuxcncini
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,49 +43,49 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so.0" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so.0")
+  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so.0" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so.0")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so.0"
+         FILE "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so.0"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so.0")
+   "/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so.0")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/liblinuxcncini" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/cmake/build/liblinuxcncini/liblinuxcncini.so.0")
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so.0" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so.0")
+file(INSTALL DESTINATION "/home/user/lcncladdertest/cmake/liblinuxcncini" TYPE SHARED_LIBRARY FILES "/home/user/lcncladdertest/cmake/build/liblinuxcncini/liblinuxcncini.so.0")
+  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so.0" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so.0")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so.0")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so.0")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so"
+         FILE "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so")
+   "/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/liblinuxcncini" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/cmake/build/liblinuxcncini/liblinuxcncini.so")
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so")
+file(INSTALL DESTINATION "/home/user/lcncladdertest/cmake/liblinuxcncini" TYPE SHARED_LIBRARY FILES "/home/user/lcncladdertest/cmake/build/liblinuxcncini/liblinuxcncini.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/liblinuxcncini/liblinuxcncini.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/lcncladdertest/cmake/liblinuxcncini/liblinuxcncini.so")
     endif()
   endif()
 endif()

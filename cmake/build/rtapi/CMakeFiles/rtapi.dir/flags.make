@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DRTAPI -DSIM -DULAPI
 
-C_INCLUDES = -I/home/user/linuxcnc/cmake/rtapi -I/home/user/linuxcnc/cmake/rtapi/../src -I/home/user/linuxcnc/cmake/build/rtapi
+C_INCLUDES = -I/home/user/lcncladdertest/cmake/rtapi -I/home/user/lcncladdertest/cmake/rtapi/../common_src -I/home/user/lcncladdertest/cmake/rtapi/../liblinuxcnchal_src -I/home/user/lcncladdertest/cmake/rtapi/../rtapi_src -I/home/user/lcncladdertest/cmake/build/rtapi
 
 C_FLAGS =   -UULAPI
 
 CXX_DEFINES = -DRTAPI -DSIM -DULAPI
 
-CXX_INCLUDES = -I/home/user/linuxcnc/cmake/rtapi -I/home/user/linuxcnc/cmake/rtapi/../src -I/home/user/linuxcnc/cmake/build/rtapi
+CXX_INCLUDES = -I/home/user/lcncladdertest/cmake/rtapi -I/home/user/lcncladdertest/cmake/rtapi/../common_src -I/home/user/lcncladdertest/cmake/rtapi/../liblinuxcnchal_src -I/home/user/lcncladdertest/cmake/rtapi/../rtapi_src -I/home/user/lcncladdertest/cmake/build/rtapi
 
 CXX_FLAGS =   -UULAPI
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/liblinuxcnchal.dir/__/src/hal_lib.c.o"
-  "CMakeFiles/liblinuxcnchal.dir/__/src/uspace_ulapi.c.o"
+  "CMakeFiles/liblinuxcnchal.dir/__/liblinuxcnchal_src/hal_lib.c.o"
+  "CMakeFiles/liblinuxcnchal.dir/__/rtapi_src/uspace_ulapi.c.o"
   "liblinuxcnchal.pdb"
   "liblinuxcnchal.so"
   "liblinuxcnchal.so.0"

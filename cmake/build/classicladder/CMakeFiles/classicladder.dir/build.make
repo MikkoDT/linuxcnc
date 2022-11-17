@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 # Include any dependencies generated for this target.
 include classicladder/CMakeFiles/classicladder.dir/depend.make
@@ -78,393 +78,393 @@ include classicladder/CMakeFiles/classicladder.dir/flags.make
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.o: ../classicladder_src/arithm_eval.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.o -c /home/user/linuxcnc/cmake/classicladder_src/arithm_eval.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/arithm_eval.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/arithm_eval.c > CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/arithm_eval.c > CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/arithm_eval.c -o CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/arithm_eval.c -o CMakeFiles/classicladder.dir/__/classicladder_src/arithm_eval.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o: ../classicladder_src/arrays.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o -c /home/user/linuxcnc/cmake/classicladder_src/arrays.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/arrays.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/arrays.c > CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/arrays.c > CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/arrays.c -o CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/arrays.c -o CMakeFiles/classicladder.dir/__/classicladder_src/arrays.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o: ../classicladder_src/calc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o -c /home/user/linuxcnc/cmake/classicladder_src/calc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/calc.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/calc.c > CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/calc.c > CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/calc.c -o CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/calc.c -o CMakeFiles/classicladder.dir/__/classicladder_src/calc.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.o: ../classicladder_src/calc_sequential.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.o -c /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.c > CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.c > CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/calc_sequential.c -o CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/calc_sequential.c -o CMakeFiles/classicladder.dir/__/classicladder_src/calc_sequential.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.o: ../classicladder_src/classicladder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.o -c /home/user/linuxcnc/cmake/classicladder_src/classicladder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/classicladder.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/classicladder.c > CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/classicladder.c > CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/classicladder.c -o CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/classicladder.c -o CMakeFiles/classicladder.dir/__/classicladder_src/classicladder.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.o: ../classicladder_src/classicladder_gtk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.o -c /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/classicladder_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/classicladder_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/classicladder_gtk.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.o: ../classicladder_src/config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/config.c.o -c /home/user/linuxcnc/cmake/classicladder_src/config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/config.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/config.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/config.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/config.c > CMakeFiles/classicladder.dir/__/classicladder_src/config.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/config.c > CMakeFiles/classicladder.dir/__/classicladder_src/config.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/config.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/config.c -o CMakeFiles/classicladder.dir/__/classicladder_src/config.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/config.c -o CMakeFiles/classicladder.dir/__/classicladder_src/config.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o: ../classicladder_src/config_gtk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o -c /home/user/linuxcnc/cmake/classicladder_src/config_gtk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/config_gtk.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/config_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/config_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/config_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/config_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/config_gtk.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.o: ../classicladder_src/drawing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.o -c /home/user/linuxcnc/cmake/classicladder_src/drawing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/drawing.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/drawing.c > CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/drawing.c > CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/drawing.c -o CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/drawing.c -o CMakeFiles/classicladder.dir/__/classicladder_src/drawing.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.o: ../classicladder_src/drawing_sequential.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.o -c /home/user/linuxcnc/cmake/classicladder_src/drawing_sequential.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/drawing_sequential.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/drawing_sequential.c > CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/drawing_sequential.c > CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/drawing_sequential.c -o CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/drawing_sequential.c -o CMakeFiles/classicladder.dir/__/classicladder_src/drawing_sequential.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.o: ../classicladder_src/edit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.o -c /home/user/linuxcnc/cmake/classicladder_src/edit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/edit.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/edit.c > CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/edit.c > CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/edit.c -o CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/edit.c -o CMakeFiles/classicladder.dir/__/classicladder_src/edit.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.o: ../classicladder_src/edit_gtk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.o -c /home/user/linuxcnc/cmake/classicladder_src/edit_gtk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/edit_gtk.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/edit_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/edit_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/edit_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/edit_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/edit_gtk.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.o: ../classicladder_src/edit_sequential.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.o -c /home/user/linuxcnc/cmake/classicladder_src/edit_sequential.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/edit_sequential.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/edit_sequential.c > CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/edit_sequential.c > CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/edit_sequential.c -o CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/edit_sequential.c -o CMakeFiles/classicladder.dir/__/classicladder_src/edit_sequential.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.o: ../classicladder_src/editproperties_gtk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.o -c /home/user/linuxcnc/cmake/classicladder_src/editproperties_gtk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/editproperties_gtk.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/editproperties_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/editproperties_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/editproperties_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/editproperties_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/editproperties_gtk.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.o: ../classicladder_src/emc_mods.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.o -c /home/user/linuxcnc/cmake/classicladder_src/emc_mods.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/emc_mods.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/emc_mods.c > CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/emc_mods.c > CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/emc_mods.c -o CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/emc_mods.c -o CMakeFiles/classicladder.dir/__/classicladder_src/emc_mods.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o: ../classicladder_src/files.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o -c /home/user/linuxcnc/cmake/classicladder_src/files.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/files.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/files.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/files.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/files.c > CMakeFiles/classicladder.dir/__/classicladder_src/files.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/files.c > CMakeFiles/classicladder.dir/__/classicladder_src/files.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/files.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/files.c -o CMakeFiles/classicladder.dir/__/classicladder_src/files.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/files.c -o CMakeFiles/classicladder.dir/__/classicladder_src/files.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.o: ../classicladder_src/files_project.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.o -c /home/user/linuxcnc/cmake/classicladder_src/files_project.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/files_project.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/files_project.c > CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/files_project.c > CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/files_project.c -o CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/files_project.c -o CMakeFiles/classicladder.dir/__/classicladder_src/files_project.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.o: ../classicladder_src/files_sequential.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.o -c /home/user/linuxcnc/cmake/classicladder_src/files_sequential.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/files_sequential.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/files_sequential.c > CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/files_sequential.c > CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/files_sequential.c -o CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/files_sequential.c -o CMakeFiles/classicladder.dir/__/classicladder_src/files_sequential.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o: ../classicladder_src/manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o -c /home/user/linuxcnc/cmake/classicladder_src/manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/manager.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/manager.c > CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/manager.c > CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/manager.c -o CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/manager.c -o CMakeFiles/classicladder.dir/__/classicladder_src/manager.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o: ../classicladder_src/manager_gtk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o -c /home/user/linuxcnc/cmake/classicladder_src/manager_gtk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/manager_gtk.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/manager_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/manager_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/manager_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/manager_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/manager_gtk.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.o: ../classicladder_src/protocol_modbus_master.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.o -c /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.c > CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.c > CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_master.c -o CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_master.c -o CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_master.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.o: ../classicladder_src/protocol_modbus_slave.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.o -c /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_slave.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_slave.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_slave.c > CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_slave.c > CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/protocol_modbus_slave.c -o CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/protocol_modbus_slave.c -o CMakeFiles/classicladder.dir/__/classicladder_src/protocol_modbus_slave.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.o: ../classicladder_src/serial_linux.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.o -c /home/user/linuxcnc/cmake/classicladder_src/serial_linux.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/serial_linux.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/serial_linux.c > CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/serial_linux.c > CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/serial_linux.c -o CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/serial_linux.c -o CMakeFiles/classicladder.dir/__/classicladder_src/serial_linux.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.o: ../classicladder_src/socket_modbus_master.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.o -c /home/user/linuxcnc/cmake/classicladder_src/socket_modbus_master.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/socket_modbus_master.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/socket_modbus_master.c > CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/socket_modbus_master.c > CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/socket_modbus_master.c -o CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/socket_modbus_master.c -o CMakeFiles/classicladder.dir/__/classicladder_src/socket_modbus_master.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.o: ../classicladder_src/socket_server.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.o -c /home/user/linuxcnc/cmake/classicladder_src/socket_server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/socket_server.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/socket_server.c > CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/socket_server.c > CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/socket_server.c -o CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/socket_server.c -o CMakeFiles/classicladder.dir/__/classicladder_src/socket_server.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o: ../classicladder_src/spy_vars_gtk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o -c /home/user/linuxcnc/cmake/classicladder_src/spy_vars_gtk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/spy_vars_gtk.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/spy_vars_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/spy_vars_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/spy_vars_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/spy_vars_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/spy_vars_gtk.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.o: ../classicladder_src/symbols.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.o -c /home/user/linuxcnc/cmake/classicladder_src/symbols.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/symbols.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/symbols.c > CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/symbols.c > CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/symbols.c -o CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/symbols.c -o CMakeFiles/classicladder.dir/__/classicladder_src/symbols.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o: ../classicladder_src/symbols_gtk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o -c /home/user/linuxcnc/cmake/classicladder_src/symbols_gtk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/symbols_gtk.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/symbols_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/symbols_gtk.c > CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/symbols_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/symbols_gtk.c -o CMakeFiles/classicladder.dir/__/classicladder_src/symbols_gtk.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.o: ../classicladder_src/vars_names.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.o -c /home/user/linuxcnc/cmake/classicladder_src/vars_names.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/vars_names.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/vars_names.c > CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/vars_names.c > CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/vars_names.c -o CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/vars_names.c -o CMakeFiles/classicladder.dir/__/classicladder_src/vars_names.c.s
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.o: classicladder/CMakeFiles/classicladder.dir/flags.make
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.o: ../classicladder_src/vars_access.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.o"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.o -c /home/user/linuxcnc/cmake/classicladder_src/vars_access.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.o"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.o -c /home/user/lcncladdertest/cmake/classicladder_src/vars_access.c
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.i"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/classicladder_src/vars_access.c > CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.i
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/classicladder_src/vars_access.c > CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.i
 
 classicladder/CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.s"
-	cd /home/user/linuxcnc/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/classicladder_src/vars_access.c -o CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.s
+	cd /home/user/lcncladdertest/cmake/build/classicladder && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/classicladder_src/vars_access.c -o CMakeFiles/classicladder.dir/__/classicladder_src/vars_access.c.s
 
 # Object files for target classicladder
 classicladder_OBJECTS = \
@@ -535,8 +535,8 @@ classicladder/classicladder: classicladder/CMakeFiles/classicladder.dir/__/class
 classicladder/classicladder: classicladder/CMakeFiles/classicladder.dir/build.make
 classicladder/classicladder: liblinuxcnchal/liblinuxcnchal.so.0
 classicladder/classicladder: classicladder/CMakeFiles/classicladder.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking C executable classicladder"
-	cd /home/user/linuxcnc/cmake/build/classicladder && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/classicladder.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking C executable classicladder"
+	cd /home/user/lcncladdertest/cmake/build/classicladder && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/classicladder.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 classicladder/CMakeFiles/classicladder.dir/build: classicladder/classicladder
@@ -544,10 +544,10 @@ classicladder/CMakeFiles/classicladder.dir/build: classicladder/classicladder
 .PHONY : classicladder/CMakeFiles/classicladder.dir/build
 
 classicladder/CMakeFiles/classicladder.dir/clean:
-	cd /home/user/linuxcnc/cmake/build/classicladder && $(CMAKE_COMMAND) -P CMakeFiles/classicladder.dir/cmake_clean.cmake
+	cd /home/user/lcncladdertest/cmake/build/classicladder && $(CMAKE_COMMAND) -P CMakeFiles/classicladder.dir/cmake_clean.cmake
 .PHONY : classicladder/CMakeFiles/classicladder.dir/clean
 
 classicladder/CMakeFiles/classicladder.dir/depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/classicladder /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/classicladder /home/user/linuxcnc/cmake/build/classicladder/CMakeFiles/classicladder.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/classicladder /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/classicladder /home/user/lcncladdertest/cmake/build/classicladder/CMakeFiles/classicladder.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : classicladder/CMakeFiles/classicladder.dir/depend
 

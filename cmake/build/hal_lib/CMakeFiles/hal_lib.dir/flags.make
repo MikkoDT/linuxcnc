@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DDYNAMIC_PLCSIZE -DHAL_SUPPORT -DMODBUS_IO_MASTER -DOLD_TIMERS_MONOS_SUPPORT -DRTAPI -DRT_SUPPORT -DSEQUENTIAL_SUPPORT -DUSPACE -D_GNU_SOURCE -D__MODULE__ -Dhal_lib_EXPORTS -Drealtime
 
-C_INCLUDES = -I/home/user/linuxcnc/cmake/hal_lib -I/home/user/linuxcnc/cmake/hal_lib/../src -I/home/user/linuxcnc/cmake/build/hal_lib
+C_INCLUDES = -I/home/user/lcncladdertest/cmake/hal_lib -I/home/user/lcncladdertest/cmake/hal_lib/../rtapi_src -I/home/user/lcncladdertest/cmake/hal_lib/../liblinuxcnchal_src -I/home/user/lcncladdertest/cmake/build/hal_lib
 
 C_FLAGS = -fPIC
 

@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/linuxcnc/cmake
+CMAKE_SOURCE_DIR = /home/user/lcncladdertest/cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/linuxcnc/cmake/build
+CMAKE_BINARY_DIR = /home/user/lcncladdertest/cmake/build
 
 # Include any dependencies generated for this target.
 include halmeter/CMakeFiles/halmeter.dir/depend.make
@@ -76,47 +76,47 @@ include halmeter/CMakeFiles/halmeter.dir/progress.make
 # Include the compile flags for this target's objects.
 include halmeter/CMakeFiles/halmeter.dir/flags.make
 
-halmeter/CMakeFiles/halmeter.dir/__/src/meter.c.o: halmeter/CMakeFiles/halmeter.dir/flags.make
-halmeter/CMakeFiles/halmeter.dir/__/src/meter.c.o: ../src/meter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object halmeter/CMakeFiles/halmeter.dir/__/src/meter.c.o"
-	cd /home/user/linuxcnc/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halmeter.dir/__/src/meter.c.o -c /home/user/linuxcnc/cmake/src/meter.c
+halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o: halmeter/CMakeFiles/halmeter.dir/flags.make
+halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o: ../halmeter_src/meter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o"
+	cd /home/user/lcncladdertest/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o -c /home/user/lcncladdertest/cmake/halmeter_src/meter.c
 
-halmeter/CMakeFiles/halmeter.dir/__/src/meter.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halmeter.dir/__/src/meter.c.i"
-	cd /home/user/linuxcnc/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/meter.c > CMakeFiles/halmeter.dir/__/src/meter.c.i
+halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.i"
+	cd /home/user/lcncladdertest/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/halmeter_src/meter.c > CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.i
 
-halmeter/CMakeFiles/halmeter.dir/__/src/meter.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halmeter.dir/__/src/meter.c.s"
-	cd /home/user/linuxcnc/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/meter.c -o CMakeFiles/halmeter.dir/__/src/meter.c.s
+halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.s"
+	cd /home/user/lcncladdertest/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/halmeter_src/meter.c -o CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.s
 
-halmeter/CMakeFiles/halmeter.dir/__/src/miscgtk.c.o: halmeter/CMakeFiles/halmeter.dir/flags.make
-halmeter/CMakeFiles/halmeter.dir/__/src/miscgtk.c.o: ../src/miscgtk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object halmeter/CMakeFiles/halmeter.dir/__/src/miscgtk.c.o"
-	cd /home/user/linuxcnc/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halmeter.dir/__/src/miscgtk.c.o -c /home/user/linuxcnc/cmake/src/miscgtk.c
+halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o: halmeter/CMakeFiles/halmeter.dir/flags.make
+halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o: ../common_src/miscgtk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o"
+	cd /home/user/lcncladdertest/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o -c /home/user/lcncladdertest/cmake/common_src/miscgtk.c
 
-halmeter/CMakeFiles/halmeter.dir/__/src/miscgtk.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halmeter.dir/__/src/miscgtk.c.i"
-	cd /home/user/linuxcnc/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/src/miscgtk.c > CMakeFiles/halmeter.dir/__/src/miscgtk.c.i
+halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.i"
+	cd /home/user/lcncladdertest/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/lcncladdertest/cmake/common_src/miscgtk.c > CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.i
 
-halmeter/CMakeFiles/halmeter.dir/__/src/miscgtk.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halmeter.dir/__/src/miscgtk.c.s"
-	cd /home/user/linuxcnc/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/src/miscgtk.c -o CMakeFiles/halmeter.dir/__/src/miscgtk.c.s
+halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.s"
+	cd /home/user/lcncladdertest/cmake/build/halmeter && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/lcncladdertest/cmake/common_src/miscgtk.c -o CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.s
 
 # Object files for target halmeter
 halmeter_OBJECTS = \
-"CMakeFiles/halmeter.dir/__/src/meter.c.o" \
-"CMakeFiles/halmeter.dir/__/src/miscgtk.c.o"
+"CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o" \
+"CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o"
 
 # External object files for target halmeter
 halmeter_EXTERNAL_OBJECTS =
 
-halmeter/halmeter: halmeter/CMakeFiles/halmeter.dir/__/src/meter.c.o
-halmeter/halmeter: halmeter/CMakeFiles/halmeter.dir/__/src/miscgtk.c.o
+halmeter/halmeter: halmeter/CMakeFiles/halmeter.dir/__/halmeter_src/meter.c.o
+halmeter/halmeter: halmeter/CMakeFiles/halmeter.dir/__/common_src/miscgtk.c.o
 halmeter/halmeter: halmeter/CMakeFiles/halmeter.dir/build.make
 halmeter/halmeter: liblinuxcnchal/liblinuxcnchal.so.0
 halmeter/halmeter: halmeter/CMakeFiles/halmeter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable halmeter"
-	cd /home/user/linuxcnc/cmake/build/halmeter && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/halmeter.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/lcncladdertest/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable halmeter"
+	cd /home/user/lcncladdertest/cmake/build/halmeter && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/halmeter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 halmeter/CMakeFiles/halmeter.dir/build: halmeter/halmeter
@@ -124,10 +124,10 @@ halmeter/CMakeFiles/halmeter.dir/build: halmeter/halmeter
 .PHONY : halmeter/CMakeFiles/halmeter.dir/build
 
 halmeter/CMakeFiles/halmeter.dir/clean:
-	cd /home/user/linuxcnc/cmake/build/halmeter && $(CMAKE_COMMAND) -P CMakeFiles/halmeter.dir/cmake_clean.cmake
+	cd /home/user/lcncladdertest/cmake/build/halmeter && $(CMAKE_COMMAND) -P CMakeFiles/halmeter.dir/cmake_clean.cmake
 .PHONY : halmeter/CMakeFiles/halmeter.dir/clean
 
 halmeter/CMakeFiles/halmeter.dir/depend:
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/linuxcnc/cmake /home/user/linuxcnc/cmake/halmeter /home/user/linuxcnc/cmake/build /home/user/linuxcnc/cmake/build/halmeter /home/user/linuxcnc/cmake/build/halmeter/CMakeFiles/halmeter.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/lcncladdertest/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/lcncladdertest/cmake /home/user/lcncladdertest/cmake/halmeter /home/user/lcncladdertest/cmake/build /home/user/lcncladdertest/cmake/build/halmeter /home/user/lcncladdertest/cmake/build/halmeter/CMakeFiles/halmeter.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : halmeter/CMakeFiles/halmeter.dir/depend
 

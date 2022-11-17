@@ -9,7 +9,9 @@ set(RTLINK "liblinuxcnchal")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(${SRC_DIR}/../../rtapi_src)
+include_directories(${SRC_DIR}/../../liblinuxcnchal_src)
+include_directories(${SRC_DIR}/../components/threads_src)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
@@ -21,7 +23,7 @@ SET(GCC_COVERAGE_COMPILE_FLAGS "-I. -I${RTAPI_DIR} -I${HAL_DIR} \
 add_definitions(-DRTAPI -DUSPACE -D_GNU_SOURCE -D__MODULE__ )
     
 ADD_LIBRARY(${PROJECT} SHARED 
-    ${SRC_DIR}/../../src/threads.c
+    ${SRC_DIR}/../threads_src/threads.c
 )
 
 # Set include paths for libraries to link.

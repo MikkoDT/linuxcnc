@@ -7,9 +7,7 @@
 <br>
   
 # LinuxCNC
-
-*Partially forged into a cmake project.
-*Forge process still going on.
+  
 *Controlling CNC Machines*
 
 <br>
@@ -87,4 +85,3 @@ for such compliance.
 [Ｉｎｓｔａｌｌ]: http://linuxcnc.org/docs/stable/html/getting-started/getting-linuxcnc.html
 [Ｂｕｉｌｄ]: http://linuxcnc.org/docs/stable/html/code/building-linuxcnc.html
 [License]: COPYING
-# linuxcnc

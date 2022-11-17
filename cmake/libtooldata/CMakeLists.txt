@@ -8,15 +8,18 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(${SRC_DIR}/../rtapi_src)
+include_directories(${SRC_DIR}/../emc_src)
+include_directories(${SRC_DIR}/../libnml_src)
+include_directories(${SRC_DIR}/../libtooldata_src)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED 
-    ${SRC_DIR}/../src/tooldata_mmap.cc
-    ${SRC_DIR}/../src/tooldata_common.cc
-    ${SRC_DIR}/../src/tooldata_db.cc
+    ${SRC_DIR}/../libtooldata_src/tooldata_mmap.cc
+    ${SRC_DIR}/../libtooldata_src/tooldata_common.cc
+    ${SRC_DIR}/../libtooldata_src/tooldata_db.cc
 )
 
 add_definitions(-DULAPI)

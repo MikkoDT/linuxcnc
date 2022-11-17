@@ -14,6 +14,10 @@
 # ~/linuxcnc/tcl/linuxcnc.so is duplicate.
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME linuxcnc)
 
+# Tip :
+# If you have problems with solving compile errors. What worked for me is when problems occur, include the original lcnc compiled libs first
+# in your project, unitl the build finishes ok. Then switch out libs step by step with your own compiled libs. Use full filepath's to be sure.
+
 cmake_minimum_required(VERSION 3.0)
 # Project name.
 set(PROJECT "- LINUX_CNC -") # The name of the file excluding .c or .h
@@ -30,15 +34,10 @@ add_subdirectory(${SRC_DIR}/hal_lib)
 add_subdirectory(${SRC_DIR}/halcmd)
 add_subdirectory(${SRC_DIR}/halmeter)
 add_subdirectory(${SRC_DIR}/halscope)
-
 add_subdirectory(${SRC_DIR}/liblinuxcncini)
-
 add_subdirectory(${SRC_DIR}/libnml)
-
 add_subdirectory(${SRC_DIR}/liblinuxcnc)
 add_subdirectory(${SRC_DIR}/components/threads)
-
 add_subdirectory(${SRC_DIR}/libtooldata)
-
 add_subdirectory(${SRC_DIR}/classicladder)
-# add_subdirectory(${SRC_DIR}/halui)
+add_subdirectory(${SRC_DIR}/halui)

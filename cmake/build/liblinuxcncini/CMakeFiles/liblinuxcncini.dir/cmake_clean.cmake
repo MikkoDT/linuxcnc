@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/liblinuxcncini.dir/__/src/inifile.cc.o"
+  "CMakeFiles/liblinuxcncini.dir/__/liblinuxcncini_src/inifile.cc.o"
   "liblinuxcncini.pdb"
   "liblinuxcncini.so"
   "liblinuxcncini.so.0"

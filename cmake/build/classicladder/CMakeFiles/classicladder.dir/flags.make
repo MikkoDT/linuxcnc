@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DDYNAMIC_PLCSIZE -DGTK2 -DGTK_INTERFACE -DHAL_SUPPORT -DMODBUS_IO_MASTER -DOLD_TIMERS_MONOS_SUPPORT -DRT_SUPPORT -DSEQUENTIAL_SUPPORT -DULAPI
 
-C_INCLUDES = -I/home/user/linuxcnc/cmake/classicladder -I/home/user/linuxcnc/cmake/classicladder/../rtapi_src -I/home/user/linuxcnc/cmake/classicladder/../liblinuxcnchal_src -I/usr/local/include/freetype2 -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/libpng16 -I/home/user/linuxcnc/cmake/build/classicladder/liblinuxcnchal
+C_INCLUDES = -I/home/user/lcncladdertest/cmake/classicladder -I/home/user/lcncladdertest/cmake/classicladder/../rtapi_src -I/home/user/lcncladdertest/cmake/classicladder/../liblinuxcnchal_src -I/usr/local/include/freetype2 -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/libpng16 -I/home/user/lcncladdertest/cmake/build/classicladder/liblinuxcnchal
 
 C_FLAGS =   -Wno-deprecated-declarations
 

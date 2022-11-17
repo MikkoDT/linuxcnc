@@ -55,7 +55,7 @@
 
 #include "rtapi.h"
 #include "hal.h"
-#include "hal/hal_priv.h"
+#include "hal_priv.h"
 #include "rtapi_uspace.hh"
 
 #include <boost/lockfree/queue.hpp>
@@ -63,7 +63,7 @@
 std::atomic<int> WithRoot::level;
 static uid_t euid, ruid;
 
-#include "rtapi/uspace_common.h"
+#include "uspace_common.h"
 
 WithRoot::WithRoot() {
     if(!level++) {

@@ -8,13 +8,14 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(${SRC_DIR}/../src)
+include_directories(${SRC_DIR}/../common_src)
+include_directories(${SRC_DIR}/../liblinuxcncini_src)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED 
-    ${SRC_DIR}/../src/inifile.cc
+    ${SRC_DIR}/../liblinuxcncini_src/inifile.cc
     # ${SRC_DIR}/../src/inivar.cc # I think this was a wrong input, belong to : Linking mb2hal
 )
 
