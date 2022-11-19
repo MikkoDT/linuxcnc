@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-set(PROJECT "module_helper") 
+set(PROJECT "linuxcnc_module_helper")
 project(${PROJECT} C)
 
 # Set variables.
@@ -9,13 +9,13 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 # Set includepaths.
 include_directories(${SRC_DIR})
 include_directories(${SRC_DIR}/../common_src)
-include_directories(${SRC_DIR}/../module_helper_src)
+include_directories(${SRC_DIR}/../linuxcnc_module_helper_src)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED 
-    ${SRC_DIR}/../module_helper_src/module_helper.c
+    ${SRC_DIR}/../linuxcnc_module_helper_src/module_helper.c
 )
 
 add_definitions(-DULAPI)

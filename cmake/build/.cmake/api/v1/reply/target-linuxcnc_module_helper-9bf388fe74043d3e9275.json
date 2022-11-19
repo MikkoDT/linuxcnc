@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "module_helper/module_helper.so"
+			"path" : "linuxcnc_module_helper/linuxcnc_module_helper.so"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,7 @@
 		],
 		"files" : 
 		[
-			"module_helper/CMakeLists.txt"
+			"linuxcnc_module_helper/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -85,26 +85,26 @@
 					"define" : "ULAPI"
 				},
 				{
-					"define" : "module_helper_EXPORTS"
+					"define" : "linuxcnc_module_helper_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/home/user/linuxcnc/cmake/module_helper"
+					"path" : "/home/user/linuxcnc/cmake/linuxcnc_module_helper"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/user/linuxcnc/cmake/module_helper/../common_src"
+					"path" : "/home/user/linuxcnc/cmake/linuxcnc_module_helper/../common_src"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/user/linuxcnc/cmake/module_helper/../module_helper_src"
+					"path" : "/home/user/linuxcnc/cmake/linuxcnc_module_helper/../linuxcnc_module_helper_src"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/user/linuxcnc/cmake/build/module_helper"
+					"path" : "/home/user/linuxcnc/cmake/build/linuxcnc_module_helper"
 				}
 			],
 			"language" : "C",
@@ -114,18 +114,18 @@
 			]
 		}
 	],
-	"id" : "module_helper::@15a7d57ce7957ab45719",
+	"id" : "linuxcnc_module_helper::@3983c76584e3407a53a6",
 	"install" : 
 	{
 		"destinations" : 
 		[
 			{
 				"backtrace" : 2,
-				"path" : "/home/user/linuxcnc/cmake/build/module_helper/../../../bin"
+				"path" : "/home/user/linuxcnc/cmake/build/linuxcnc_module_helper/../../../bin"
 			},
 			{
 				"backtrace" : 2,
-				"path" : "/home/user/linuxcnc/cmake/build/module_helper/../../../bin"
+				"path" : "/home/user/linuxcnc/cmake/build/linuxcnc_module_helper/../../../bin"
 			}
 		],
 		"prefix" : 
@@ -144,12 +144,12 @@
 		],
 		"language" : "C"
 	},
-	"name" : "module_helper",
-	"nameOnDisk" : "module_helper.so",
+	"name" : "linuxcnc_module_helper",
+	"nameOnDisk" : "linuxcnc_module_helper.so",
 	"paths" : 
 	{
-		"build" : "module_helper",
-		"source" : "module_helper"
+		"build" : "linuxcnc_module_helper",
+		"source" : "linuxcnc_module_helper"
 	},
 	"sourceGroups" : 
 	[
@@ -166,7 +166,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "module_helper_src/module_helper.c",
+			"path" : "linuxcnc_module_helper_src/module_helper.c",
 			"sourceGroupIndex" : 0
 		}
 	],

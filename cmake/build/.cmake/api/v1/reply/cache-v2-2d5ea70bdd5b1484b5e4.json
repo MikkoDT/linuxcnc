@@ -1890,6 +1890,30 @@
 			"value" : "/home/user/linuxcnc/cmake/liblinuxcnc"
 		},
 		{
+			"name" : "linuxcnc_module_helper_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/build/linuxcnc_module_helper"
+		},
+		{
+			"name" : "linuxcnc_module_helper_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/user/linuxcnc/cmake/linuxcnc_module_helper"
+		},
+		{
 			"name" : "linuxcnc_py_BINARY_DIR",
 			"properties" : 
 			[

@@ -135,7 +135,7 @@
 			"path" : "rtapi/CMakeLists.txt"
 		},
 		{
-			"path" : "module_helper/CMakeLists.txt"
+			"path" : "linuxcnc_module_helper/CMakeLists.txt"
 		},
 		{
 			"path" : "liblinuxcnchal/CMakeLists.txt"

@@ -71,7 +71,7 @@
 					]
 				},
 				{
-					"build" : "module_helper",
+					"build" : "linuxcnc_module_helper",
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
@@ -79,10 +79,10 @@
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 2,
-					"source" : "module_helper",
+					"source" : "linuxcnc_module_helper",
 					"targetIndexes" : 
 					[
-						29
+						23
 					]
 				},
 				{
@@ -442,7 +442,7 @@
 					"source" : "linuxcncsrv",
 					"targetIndexes" : 
 					[
-						27
+						28
 					]
 				},
 				{
@@ -457,7 +457,7 @@
 					"source" : "milltask",
 					"targetIndexes" : 
 					[
-						28
+						29
 					]
 				},
 				{
@@ -472,7 +472,7 @@
 					"source" : "linuxcncrsh",
 					"targetIndexes" : 
 					[
-						26
+						27
 					]
 				},
 				{
@@ -502,7 +502,7 @@
 					"source" : "linuxcnclcd",
 					"targetIndexes" : 
 					[
-						25
+						26
 					]
 				},
 				{
@@ -517,7 +517,7 @@
 					"source" : "linuxcnc_tlc",
 					"targetIndexes" : 
 					[
-						24
+						25
 					]
 				},
 				{
@@ -607,7 +607,7 @@
 					"source" : "linuxcnc_py",
 					"targetIndexes" : 
 					[
-						23
+						24
 					]
 				},
 				{
@@ -694,11 +694,11 @@
 					[
 						2
 					],
-					"name" : "module_helper",
+					"name" : "linuxcnc_module_helper",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						29
+						23
 					]
 				},
 				{
@@ -986,7 +986,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						27
+						28
 					]
 				},
 				{
@@ -998,7 +998,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						28
+						29
 					]
 				},
 				{
@@ -1010,7 +1010,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						26
+						27
 					]
 				},
 				{
@@ -1034,7 +1034,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						25
+						26
 					]
 				},
 				{
@@ -1046,7 +1046,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						24
+						25
 					]
 				},
 				{
@@ -1118,7 +1118,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						23
+						24
 					]
 				},
 				{
@@ -1298,6 +1298,13 @@
 					"projectIndex" : 7
 				},
 				{
+					"directoryIndex" : 2,
+					"id" : "linuxcnc_module_helper::@3983c76584e3407a53a6",
+					"jsonFile" : "target-linuxcnc_module_helper-9bf388fe74043d3e9275.json",
+					"name" : "linuxcnc_module_helper",
+					"projectIndex" : 2
+				},
+				{
 					"directoryIndex" : 37,
 					"id" : "linuxcnc_py::@0f1b16824e0a2a39bd82",
 					"jsonFile" : "target-linuxcnc_py-cc9f97091e5dcf283d6d.json",
@@ -1338,13 +1345,6 @@
 					"jsonFile" : "target-milltask-521ef3a5796acd3aacd9.json",
 					"name" : "milltask",
 					"projectIndex" : 27
-				},
-				{
-					"directoryIndex" : 2,
-					"id" : "module_helper::@15a7d57ce7957ab45719",
-					"jsonFile" : "target-module_helper-14178c3ad6bf0e3740e7.json",
-					"name" : "module_helper",
-					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 24,

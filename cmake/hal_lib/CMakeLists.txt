@@ -21,7 +21,7 @@ ADD_LIBRARY(${PROJECT} SHARED
 )
 
 # Set compile flags.
-SET(GCC_COVERAGE_COMPILE_FLAGS "
+SET(GCC_COVERAGE_COMPILE_FLAGS "-I. -I${RTAPI_DIR} -I${HAL_DIR} \
     -DUSPACE -fno-fast-math -fno-unsafe-math-optimizations -DRTAPI -D_GNU_SOURCE
     -Drealtime -D__MODULE__ -DSIM -fPIC -Os")
 add_definitions(-DRTAPI -DUSPACE -D_GNU_SOURCE -D__MODULE__ )

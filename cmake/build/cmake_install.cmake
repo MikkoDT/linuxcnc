@@ -45,7 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/user/linuxcnc/cmake/build/rtapi/cmake_install.cmake")
-  include("/home/user/linuxcnc/cmake/build/module_helper/cmake_install.cmake")
+  include("/home/user/linuxcnc/cmake/build/linuxcnc_module_helper/cmake_install.cmake")
   include("/home/user/linuxcnc/cmake/build/liblinuxcnchal/cmake_install.cmake")
   include("/home/user/linuxcnc/cmake/build/liblinuxcncini/cmake_install.cmake")
   include("/home/user/linuxcnc/cmake/build/libtooldata/cmake_install.cmake")

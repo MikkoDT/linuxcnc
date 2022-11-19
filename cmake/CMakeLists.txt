@@ -34,7 +34,7 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # ~/bin
 add_subdirectory(${SRC_DIR}/rtapi)
-add_subdirectory(${SRC_DIR}/module_helper)
+add_subdirectory(${SRC_DIR}/linuxcnc_module_helper)
 # ~/lib
 
 add_subdirectory(${SRC_DIR}/liblinuxcnchal)
@@ -65,7 +65,6 @@ add_subdirectory(${SRC_DIR}/io)
 add_subdirectory(${SRC_DIR}/iov2)
 add_subdirectory(${SRC_DIR}/motion_logger)
 add_subdirectory(${SRC_DIR}/sai)
-
 add_subdirectory(${SRC_DIR}/linuxcncsrv)
 add_subdirectory(${SRC_DIR}/milltask)
 add_subdirectory(${SRC_DIR}/linuxcncrsh)

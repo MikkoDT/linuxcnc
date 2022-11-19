@@ -34,13 +34,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../librs274/CMakeLists.txt"
   "../libtooldata/CMakeLists.txt"
   "../lineardeltakins_py/CMakeLists.txt"
+  "../linuxcnc_module_helper/CMakeLists.txt"
   "../linuxcnc_py/CMakeLists.txt"
   "../linuxcnc_tlc/CMakeLists.txt"
   "../linuxcnclcd/CMakeLists.txt"
   "../linuxcncrsh/CMakeLists.txt"
   "../linuxcncsrv/CMakeLists.txt"
   "../milltask/CMakeLists.txt"
-  "../module_helper/CMakeLists.txt"
   "../motion_logger/CMakeLists.txt"
   "../pci_read/CMakeLists.txt"
   "../pci_write/CMakeLists.txt"
@@ -80,7 +80,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "rtapi/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "module_helper/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "linuxcnc_module_helper/CMakeFiles/CMakeDirectoryInformation.cmake"
   "liblinuxcnchal/CMakeFiles/CMakeDirectoryInformation.cmake"
   "liblinuxcncini/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libtooldata/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -122,7 +122,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "rtapi/CMakeFiles/rtapi_app.dir/DependInfo.cmake"
-  "module_helper/CMakeFiles/module_helper.dir/DependInfo.cmake"
+  "linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/DependInfo.cmake"
   "liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/DependInfo.cmake"
   "liblinuxcncini/CMakeFiles/liblinuxcncini.dir/DependInfo.cmake"
   "libtooldata/CMakeFiles/libtooldata.dir/DependInfo.cmake"

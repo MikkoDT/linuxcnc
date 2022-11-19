@@ -402,6 +402,12 @@ linuxcnc_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/liblinuxcnc
 linuxcnc_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/liblinuxcnc
 
 //Value Computed by CMake
+linuxcnc_module_helper_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/linuxcnc_module_helper
+
+//Value Computed by CMake
+linuxcnc_module_helper_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/linuxcnc_module_helper
+
+//Value Computed by CMake
 linuxcnc_py_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/linuxcnc_py
 
 //Dependencies for the target

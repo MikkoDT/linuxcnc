@@ -189,17 +189,17 @@ rtapi_app/fast:
 .PHONY : rtapi_app/fast
 
 #=============================================================================
-# Target rules for targets named module_helper
+# Target rules for targets named linuxcnc_module_helper
 
 # Build rule for target.
-module_helper: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper
-.PHONY : module_helper
+linuxcnc_module_helper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_module_helper
+.PHONY : linuxcnc_module_helper
 
 # fast build rule for target.
-module_helper/fast:
-	$(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/module_helper.dir/build.make module_helper/CMakeFiles/module_helper.dir/build
-.PHONY : module_helper/fast
+linuxcnc_module_helper/fast:
+	$(MAKE) $(MAKESILENT) -f linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build
+.PHONY : linuxcnc_module_helper/fast
 
 #=============================================================================
 # Target rules for targets named liblinuxcnchal
@@ -704,13 +704,13 @@ help:
 	@echo "... libtooldata"
 	@echo "... lineardeltakins"
 	@echo "... linuxcnc"
+	@echo "... linuxcnc_module_helper"
 	@echo "... linuxcnc_py"
 	@echo "... linuxcnc_tlc"
 	@echo "... linuxcnclcd"
 	@echo "... linuxcncrsh"
 	@echo "... linuxcncsrv"
 	@echo "... milltask"
-	@echo "... module_helper"
 	@echo "... motion-logger"
 	@echo "... pci_read"
 	@echo "... pci_write"

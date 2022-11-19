@@ -61,13 +61,13 @@
 #include "rtapi_atomic.h"
 
 //! Modified by skynet. We don't need the module info.
-// #ifdef RTAPI
+#ifdef RTAPI
 #include "rtapi_app.h"
 /* module information */
-// MODULE_AUTHOR("John Kasunich");
-// MODULE_DESCRIPTION("Hardware Abstraction Layer for EMC");
-// MODULE_LICENSE("GPL");
-// #endif /* RTAPI */
+MODULE_AUTHOR("John Kasunich");
+MODULE_DESCRIPTION("Hardware Abstraction Layer for EMC");
+MODULE_LICENSE("GPL");
+#endif /* RTAPI */
 
 #if defined(ULAPI)
 #include <sys/types.h>		/* pid_t */

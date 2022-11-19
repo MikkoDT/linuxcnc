@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/module_helper//CMakeFiles/progress.marks
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/all
+	cd /home/user/linuxcnc/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles /home/user/linuxcnc/cmake/build/linuxcnc_module_helper//CMakeFiles/progress.marks
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_module_helper/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/clean
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_module_helper/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,12 +162,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_module_helper/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/preinstall
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_module_helper/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -176,46 +176,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-module_helper/CMakeFiles/linuxcnc_module_helper.dir/rule:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_helper/CMakeFiles/linuxcnc_module_helper.dir/rule
-.PHONY : module_helper/CMakeFiles/linuxcnc_module_helper.dir/rule
+linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/rule:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/rule
+.PHONY : linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/rule
 
 # Convenience name for target.
-linuxcnc_module_helper: module_helper/CMakeFiles/linuxcnc_module_helper.dir/rule
+linuxcnc_module_helper: linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/rule
 
 .PHONY : linuxcnc_module_helper
 
 # fast build rule for target.
 linuxcnc_module_helper/fast:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make module_helper/CMakeFiles/linuxcnc_module_helper.dir/build
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build
 .PHONY : linuxcnc_module_helper/fast
 
-__/module_helper_src/module_helper.o: __/module_helper_src/module_helper.c.o
+__/linuxcnc_module_helper_src/module_helper.o: __/linuxcnc_module_helper_src/module_helper.c.o
 
-.PHONY : __/module_helper_src/module_helper.o
+.PHONY : __/linuxcnc_module_helper_src/module_helper.o
 
 # target to build an object file
-__/module_helper_src/module_helper.c.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make module_helper/CMakeFiles/linuxcnc_module_helper.dir/__/module_helper_src/module_helper.c.o
-.PHONY : __/module_helper_src/module_helper.c.o
+__/linuxcnc_module_helper_src/module_helper.c.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/__/linuxcnc_module_helper_src/module_helper.c.o
+.PHONY : __/linuxcnc_module_helper_src/module_helper.c.o
 
-__/module_helper_src/module_helper.i: __/module_helper_src/module_helper.c.i
+__/linuxcnc_module_helper_src/module_helper.i: __/linuxcnc_module_helper_src/module_helper.c.i
 
-.PHONY : __/module_helper_src/module_helper.i
+.PHONY : __/linuxcnc_module_helper_src/module_helper.i
 
 # target to preprocess a source file
-__/module_helper_src/module_helper.c.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make module_helper/CMakeFiles/linuxcnc_module_helper.dir/__/module_helper_src/module_helper.c.i
-.PHONY : __/module_helper_src/module_helper.c.i
+__/linuxcnc_module_helper_src/module_helper.c.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/__/linuxcnc_module_helper_src/module_helper.c.i
+.PHONY : __/linuxcnc_module_helper_src/module_helper.c.i
 
-__/module_helper_src/module_helper.s: __/module_helper_src/module_helper.c.s
+__/linuxcnc_module_helper_src/module_helper.s: __/linuxcnc_module_helper_src/module_helper.c.s
 
-.PHONY : __/module_helper_src/module_helper.s
+.PHONY : __/linuxcnc_module_helper_src/module_helper.s
 
 # target to generate assembly for a file
-__/module_helper_src/module_helper.c.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make module_helper/CMakeFiles/linuxcnc_module_helper.dir/__/module_helper_src/module_helper.c.s
-.PHONY : __/module_helper_src/module_helper.c.s
+__/linuxcnc_module_helper_src/module_helper.c.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/__/linuxcnc_module_helper_src/module_helper.c.s
+.PHONY : __/linuxcnc_module_helper_src/module_helper.c.s
 
 # Help Target
 help:
@@ -230,9 +230,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... linuxcnc_module_helper"
-	@echo "... __/module_helper_src/module_helper.o"
-	@echo "... __/module_helper_src/module_helper.i"
-	@echo "... __/module_helper_src/module_helper.s"
+	@echo "... __/linuxcnc_module_helper_src/module_helper.o"
+	@echo "... __/linuxcnc_module_helper_src/module_helper.i"
+	@echo "... __/linuxcnc_module_helper_src/module_helper.s"
 .PHONY : help
 
 

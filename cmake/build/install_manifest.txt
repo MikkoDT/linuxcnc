@@ -1,5 +1,5 @@
 /home/user/linuxcnc/cmake/build/rtapi/../../../bin/rtapi_app
-/home/user/linuxcnc/cmake/build/module_helper/../../../bin/module_helper.so
+/home/user/linuxcnc/cmake/build/module_helper/../../../bin/linuxcnc_module_helper.so
 /home/user/linuxcnc/cmake/build/liblinuxcnchal/../../../lib/liblinuxcnchal.so.0
 /home/user/linuxcnc/cmake/build/liblinuxcnchal/../../../lib/liblinuxcnchal.so
 /home/user/linuxcnc/cmake/build/liblinuxcncini/../../../lib/liblinuxcncini.so.0

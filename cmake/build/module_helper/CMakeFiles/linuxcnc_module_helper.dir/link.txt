@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,linuxcnc_module_helper.so -o linuxcnc_module_helper.so CMakeFiles/linuxcnc_module_helper.dir/__/module_helper_src/module_helper.c.o 
