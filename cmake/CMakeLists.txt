@@ -1,4 +1,4 @@
-﻿# Tip: usefull debug when compiling source in it's original way : make BUILD_VERBOSE=1
+﻿## Tip: usefull debug when compiling source in it's original way : make BUILD_VERBOSE=1
 # Tip: For reverse engineering, by just deleting one .so lib, then invoke "make BUILD_VERBOSE=1"
 # It shows how its build and linked.
 
@@ -31,9 +31,9 @@ add_subdirectory(${SRC_DIR}/rtapi)
 add_subdirectory(${SRC_DIR}/module_helper)
 add_subdirectory(${SRC_DIR}/liblinuxcnchal)
 add_subdirectory(${SRC_DIR}/liblinuxcncini)
-add_subdirectory(${SRC_DIR}/liblinuxcnc)
 add_subdirectory(${SRC_DIR}/libtooldata)
 add_subdirectory(${SRC_DIR}/libnml)
+add_subdirectory(${SRC_DIR}/liblinuxcnc)
 add_subdirectory(${SRC_DIR}/hal_lib)
 add_subdirectory(${SRC_DIR}/halcmd)
 add_subdirectory(${SRC_DIR}/halmeter)
@@ -41,8 +41,30 @@ add_subdirectory(${SRC_DIR}/halscope)
 add_subdirectory(${SRC_DIR}/components/threads)
 add_subdirectory(${SRC_DIR}/classicladder)
 add_subdirectory(${SRC_DIR}/halui)
+
 add_subdirectory(${SRC_DIR}/libposemath)
 add_subdirectory(${SRC_DIR}/halshow)
 add_subdirectory(${SRC_DIR}/halrmt)
 add_subdirectory(${SRC_DIR}/pci_write)
 add_subdirectory(${SRC_DIR}/pci_read)
+add_subdirectory(${SRC_DIR}/io)
+add_subdirectory(${SRC_DIR}/iov2)
+add_subdirectory(${SRC_DIR}/libpyplugin)
+add_subdirectory(${SRC_DIR}/librs274)
+add_subdirectory(${SRC_DIR}/libcanterp)
+add_subdirectory(${SRC_DIR}/lineardeltakins)
+add_subdirectory(${SRC_DIR}/rotarydeltakins)
+add_subdirectory(${SRC_DIR}/motion_logger)
+add_subdirectory(${SRC_DIR}/sai)
+add_subdirectory(${SRC_DIR}/linuxcncsrv)
+add_subdirectory(${SRC_DIR}/milltask)
+add_subdirectory(${SRC_DIR}/linuxcnc_tlc) # tlc
+
+
+
+
+
+
+
+
+

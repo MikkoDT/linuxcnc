@@ -26,7 +26,7 @@
 #include <sys/types.h>
 #include <inttypes.h>
 
-#include "emc/linuxcnc.h"
+#include "linuxcnc.h"
 #include "rcs.hh"
 #include "posemath.h"		// PM_POSE, TO_RAD
 #include "emc.hh"		// EMC NML
@@ -39,7 +39,7 @@
 #include "rcs_print.hh"
 #include "timer.hh"             // esleep
 #include "shcom.hh"             // Common NML communications functions
-#include <rtapi_string.h>
+#include "rtapi_string.h"
 
 LINEAR_UNIT_CONVERSION linearUnitConversion;
 ANGULAR_UNIT_CONVERSION angularUnitConversion;

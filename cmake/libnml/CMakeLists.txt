@@ -64,7 +64,7 @@ set_target_properties(linuxcnchal PROPERTIES
 )
 
 # Link to libraries.
-target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal)
+target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal -fPIC)
 
 # Set custom output name :
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)

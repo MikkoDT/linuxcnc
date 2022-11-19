@@ -8,11 +8,9 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
-include_directories(/home/user/linuxcnc/lib)
-include_directories(/home/user/linuxcnc/include)
-include_directories(/home/user/linuxcnc/src/emc/tooldata)
-include_directories(${BUILD_DIR})
-
+include_directories(${SRC_DIR}/../rtapi_src)
+include_directories(${SRC_DIR}/../liblinuxcnchal_src)
+include_directories(${SRC_DIR}/../emc_src)
 include_directories(${SRC_DIR}/../halui_src)
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
@@ -48,14 +46,14 @@ set_target_properties(tooldata PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${SRC_DIR}/../libtooldata_src"
 )
 
-add_library(linuxcnc_a STATIC IMPORTED) # or STATIC instead of SHARED
-set_target_properties(linuxcnc_a PROPERTIES
+add_library(linuxcnc_ STATIC IMPORTED) # or STATIC instead of SHARED
+set_target_properties(linuxcnc_ PROPERTIES
   # IMPORTED_LOCATION "/home/user/lcncladdertest/lib/liblinuxcnc.a"
   IMPORTED_LOCATION "${SRC_DIR}/../build/liblinuxcnc/liblinuxcnc.a"
   INTERFACE_INCLUDE_DIRECTORIES "${SRC_DIR}/../liblinuxcnc_src"
 )
 
-target_link_libraries(${PROJECT_NAME} nml linuxcnchal linuxcncini  linuxcnc_a tooldata)
+target_link_libraries(${PROJECT_NAME} nml linuxcnchal linuxcncini linuxcnc_ tooldata)
 
 # Add verion nr. .so.0.0.0
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})

@@ -22,7 +22,7 @@
 #include <tcl.h>
 #include <tk.h>
 
-#include "emc/linuxcnc.h"
+#include "linuxcnc.h"
 #include "rcs.hh"
 #include "posemath.h"		// PM_POSE, TO_RAD
 #include "emc.hh"		// EMC NML
@@ -33,7 +33,7 @@
 #include "inifile.hh"		// INIFILE
 #include "rcs_print.hh"
 #include "timer.hh"
-#include <rtapi_string.h>
+#include "rtapi_string.h"
 
 #include "shcom.hh"
 

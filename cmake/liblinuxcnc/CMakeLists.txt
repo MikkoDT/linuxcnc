@@ -10,12 +10,12 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 include_directories(${SRC_DIR})
 include_directories(${SRC_DIR}/../common_src)
 include_directories(${SRC_DIR}/../rtapi_src)
-include_directories(${SRC_DIR}/../liblinuxcnchal_src)
+include_directories(${SRC_DIR}/../liblinuxcnchal_src) # hal.h
 include_directories(${SRC_DIR}/../emc_src)
 include_directories(${SRC_DIR}/../libnml_src)
 
 # Set prefix.
-set(CMAKE_SHARED_LIBRARY_PREFIX "")
+# set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} STATIC
     ${SRC_DIR}/../emc_src/emc.hh
@@ -43,8 +43,11 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR})
 # Add verion nr. .so.0.0.0
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
 
+# Solves compile error for /tcl/linuxcnc.so lib.
+set(CMAKE_CXX_FLAGS "-fPIC ${CMAKE_CXX_FLAGS}")
+
 # Link to libraries.
-target_link_libraries(${PROJECT_NAME} PRIVATE )
+target_link_libraries(${PROJECT_NAME} PRIVATE)
 
 # Set custom output name :
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)

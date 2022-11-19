@@ -123,7 +123,7 @@
 
 */
 
-#include <rtapi.h>
+#include "rtapi.h"
 RTAPI_BEGIN_DECLS
 
 #if ( !defined RTAPI ) && ( !defined ULAPI )

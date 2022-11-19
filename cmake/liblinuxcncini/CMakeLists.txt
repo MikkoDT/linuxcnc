@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-set(PROJECT "liblinuxcncini") 
+set(PROJECT "liblinuxcncini")
 project(${PROJECT} VERSION 0 LANGUAGES CXX)
 
 # Set variables.

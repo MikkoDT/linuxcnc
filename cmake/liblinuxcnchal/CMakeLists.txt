@@ -11,6 +11,9 @@ include_directories(${SRC_DIR})
 include_directories(${SRC_DIR}/../common_src)
 include_directories(${SRC_DIR}/../rtapi_src)
 include_directories(${SRC_DIR}/../liblinuxcnchal_src)
+include_directories(${SRC_DIR}/../libnml_src)
+include_directories(${SRC_DIR}/../emc_src)
+include_directories(${SRC_DIR}/../../include)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
@@ -20,7 +23,7 @@ ADD_LIBRARY(${PROJECT} SHARED
     ${SRC_DIR}/../liblinuxcnchal_src/hal_lib.c
 )
 
-add_definitions(-DULAPI)
+add_definitions(-DULAPI -DUSPACE -Drealtime -D__MODULE__ -DSEQUENTIAL_SUPPORT -DHAL_SUPPORT)
 
 # Add verion nr. .so.0.0.0
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
@@ -29,7 +32,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR})
 
 # Link to libraries.
-target_link_libraries(${PROJECT_NAME} PRIVATE -pthread -lrt -fPIC)
+target_link_libraries(${PROJECT_NAME} PRIVATE -pthread -lrt -lreadline -fPIC)
 
 # Set custom output name :
 # set_property(TARGET ${PROJECT} PROPERTY OUTPUT_NAME thename)

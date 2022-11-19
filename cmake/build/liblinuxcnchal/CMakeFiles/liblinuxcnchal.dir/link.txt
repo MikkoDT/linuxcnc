@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,liblinuxcnchal.so.0 -o liblinuxcnchal.so.0 CMakeFiles/liblinuxcnchal.dir/__/rtapi_src/uspace_ulapi.c.o CMakeFiles/liblinuxcnchal.dir/__/liblinuxcnchal_src/hal_lib.c.o  -pthread -lrt -fPIC 
