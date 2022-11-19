@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,_togl.so.0 -o _togl.so.0 CMakeFiles/_togl.dir/__/togl_py_src/_toglmodule.c.o  -ltcl8.6 -ltk8.6 

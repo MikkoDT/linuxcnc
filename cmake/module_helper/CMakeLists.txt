@@ -30,15 +30,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE)
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
-
-# Notes.
-# Compiling module_helper/module_helper.c
-# gcc -c -I. -Ilibnml/linklist -Iemc -Ilibnml/cms -Ilibnml/rcs -Ilibnml/inifile -Ilibnml/os_intf
-# -Ilibnml/nml -Ilibnml/buffer -Ilibnml/posemath -Irtapi -Ihal -Iemc -Iemc/nml_intf -Iemc/kinematics
-# -Iemc/tp -Iemc/motion -Iemc/ini -Iemc -Iemc/rs274ngc -Iemc/sai -Iemc/pythonplugin -Iemc/tooldata -Iemc
-# -I/home/user/linuxcnc/src/include -I/usr/include/python3.9 -Os -fwrapv  -g -Wall -Wno-stringop-truncation
-# -D_FORTIFY_SOURCE=2  -DULAPI -std=gnu11 -Werror=implicit-function-declaration -g -O2  -Wall -Werror \
-#         -MP -MD -MF "objects/module_helper/module_helper.d" -MT "objects/module_helper/module_helper.o" \
-#         module_helper/module_helper.c -o objects/module_helper/module_helper.o
-# Linking linuxcnc_module_helper
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../bin)

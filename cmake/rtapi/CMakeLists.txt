@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
-set(PROJECT "rtapi") 
-project(${PROJECT} CXX C) 
+set(PROJECT "rtapi_app")
+project(${PROJECT} C)
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -35,6 +35,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE pthread -pthread -lrt -ludev -ldl)
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../bin)
 
 # Notes.

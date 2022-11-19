@@ -62,7 +62,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../bin)
 
 # Notes.
 

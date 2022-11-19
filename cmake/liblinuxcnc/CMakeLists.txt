@@ -17,7 +17,7 @@ include_directories(${SRC_DIR}/../libnml_src)
 # Set prefix.
 # set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
-ADD_LIBRARY(${PROJECT} STATIC
+ADD_LIBRARY(${PROJECT} STATIC # Mention static.
     ${SRC_DIR}/../emc_src/emc.hh
     ${SRC_DIR}/../emc_src/emcglb.c
     ${SRC_DIR}/../emc_src/modal_state.cc
@@ -53,7 +53,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE)
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../lib)
 
 # Notes.
 

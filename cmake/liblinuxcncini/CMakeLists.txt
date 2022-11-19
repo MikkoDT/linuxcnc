@@ -33,23 +33,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE -fPIC)
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
-
-# Notes.
-# Compiling libnml/inifile/inifile.cc
-# g++ -std=gnu++17 -c -I. -Ilibnml/linklist -Iemc -Ilibnml/cms -Ilibnml/rcs -Ilibnml/inifile -Ilibnml/os_intf
-# -Ilibnml/nml -Ilibnml/buffer -Ilibnml/posemath -Irtapi -Ihal -Iemc -Iemc/nml_intf -Iemc/kinematics -Iemc/tp -Iemc/motion
-# -Iemc/ini -Iemc -Iemc/rs274ngc -Iemc/sai -Iemc/pythonplugin -Iemc/tooldata -Iemc -I/home/user/linuxcnc/src/include
-# -I/usr/include/python3.9  -DULAPI  -g -Wall -Wno-stringop-truncation -D_FORTIFY_SOURCE=2 -Os -fwrapv -Werror=overloaded-virtual
-# -g -O2  -std=gnu++17 -fPIC \
-# -MP -MD -MF "objects/libnml/inifile/inifile.d" -MT "objects/libnml/inifile/inifile.o" \
-# libnml/inifile/inifile.cc -o objects/libnml/inifile/inifile.o
-# Creating shared library liblinuxcncini.so.0
-# g++ -std=gnu++17 -L/home/user/linuxcnc/lib -Wl,-rpath,/home/user/linuxcnc/lib   -Wl,-soname,liblinuxcncini.so.0 -shared -o
-# ../lib/liblinuxcncini.so.0 objects/libnml/inifile/inifile.o
-# ln -sf liblinuxcncini.so.0 ../lib/liblinuxcncini.so
-
-
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../lib)
 
 
 

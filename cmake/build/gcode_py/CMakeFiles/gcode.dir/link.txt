@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,gcode.so.0 -o gcode.so.0 CMakeFiles/gcode.dir/__/gcode_py_src/gcodemodule.cc.o  -Wl,-rpath,/home/user/linuxcnc/cmake/gcode_py/../build/librs274: ../../gcode_py/../build/librs274/librs274.so -lpython3.9 

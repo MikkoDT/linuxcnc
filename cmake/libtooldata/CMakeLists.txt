@@ -37,32 +37,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE)
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
-
-# Notes.
-# Compiling emc/tooldata/tooldata_mmap.cc
-# g++ -std=gnu++17 -c -I. -Ilibnml/linklist -Iemc -Ilibnml/cms -Ilibnml/rcs -Ilibnml/inifile -Ilibnml/os_intf
-# -Ilibnml/nml -Ilibnml/buffer -Ilibnml/posemath -Irtapi -Ihal -Iemc -Iemc/nml_intf -Iemc/kinematics -Iemc/tp
-# -Iemc/motion -Iemc/ini -Iemc -Iemc/rs274ngc -Iemc/sai -Iemc/pythonplugin -Iemc/tooldata -Iemc
-# -I/home/user/linuxcnc/src/include -I/usr/include/python3.9  -DULAPI  -g -Wall -Wno-stringop-truncation
-# -D_FORTIFY_SOURCE=2 -Os -fwrapv -Werror=overloaded-virtual -g -O2  -std=gnu++17 -fPIC \
-#        -MP -MD -MF "objects/emc/tooldata/tooldata_mmap.d" -MT "objects/emc/tooldata/tooldata_mmap.o" \
-#        emc/tooldata/tooldata_mmap.cc -o objects/emc/tooldata/tooldata_mmap.o
-# Compiling emc/tooldata/tooldata_common.cc
-# g++ -std=gnu++17 -c -I. -Ilibnml/linklist -Iemc -Ilibnml/cms -Ilibnml/rcs -Ilibnml/inifile -Ilibnml/os_intf
-# -Ilibnml/nml -Ilibnml/buffer -Ilibnml/posemath -Irtapi -Ihal -Iemc -Iemc/nml_intf -Iemc/kinematics -Iemc/tp
-# -Iemc/motion -Iemc/ini -Iemc -Iemc/rs274ngc -Iemc/sai -Iemc/pythonplugin -Iemc/tooldata -Iemc
-# -I/home/user/linuxcnc/src/include -I/usr/include/python3.9  -DULAPI  -g -Wall -Wno-stringop-truncation
-# -D_FORTIFY_SOURCE=2 -Os -fwrapv -Werror=overloaded-virtual -g -O2  -std=gnu++17 -fPIC \
-#         -MP -MD -MF "objects/emc/tooldata/tooldata_common.d" -MT "objects/emc/tooldata/tooldata_common.o" \
-#         emc/tooldata/tooldata_common.cc -o objects/emc/tooldata/tooldata_common.o
-# Compiling emc/tooldata/tooldata_db.cc
-# g++ -std=gnu++17 -c -I. -Ilibnml/linklist -Iemc -Ilibnml/cms -Ilibnml/rcs -Ilibnml/inifile -Ilibnml/os_intf
-# -Ilibnml/nml -Ilibnml/buffer -Ilibnml/posemath -Irtapi -Ihal -Iemc -Iemc/nml_intf -Iemc/kinematics -Iemc/tp
-# -Iemc/motion -Iemc/ini -Iemc -Iemc/rs274ngc -Iemc/sai -Iemc/pythonplugin -Iemc/tooldata -Iemc
-# -I/home/user/linuxcnc/src/include -I/usr/include/python3.9  -DULAPI  -g -Wall -Wno-stringop-truncation
-#-D_FORTIFY_SOURCE=2 -Os -fwrapv -Werror=overloaded-virtual -g -O2  -std=gnu++17 -fPIC \
-#        -MP -MD -MF "objects/emc/tooldata/tooldata_db.d" -MT "objects/emc/tooldata/tooldata_db.o" \
-#        emc/tooldata/tooldata_db.cc -o objects/emc/tooldata/tooldata_db.o
-# tooldata: depends: objects/emc/tooldata/tooldata_mmap.o objects/emc/tooldata/tooldata_common.o objects/emc/tooldata/tooldata_db.o
-# tooldata: Linking: libtooldata.so.0
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../lib)

@@ -72,6 +72,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal -pthread
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../bin)
 
 # Notes.

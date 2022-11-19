@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/linuxcnc/cmake/libposemath_src/posemath.cc
+posemath.h
+/home/user/linuxcnc/cmake/libposemath_src/posemath.h
+
+/home/user/linuxcnc/cmake/libposemath_src/posemath.h
+

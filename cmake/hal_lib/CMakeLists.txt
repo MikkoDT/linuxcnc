@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 set(PROJECT "hal_lib") 
-project(${PROJECT} VERSION 0 LANGUAGES C)
+project(${PROJECT} LANGUAGES C)
 
 # Set variables.
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
@@ -8,8 +8,10 @@ set(BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Set includepaths.
 include_directories(${SRC_DIR})
+include_directories(${SRC_DIR}/../common_src)
 include_directories(${SRC_DIR}/../rtapi_src)
 include_directories(${SRC_DIR}/../liblinuxcnchal_src)
+include_directories(${SRC_DIR}/usr/include)
 
 # Set prefix.
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
@@ -18,27 +20,21 @@ ADD_LIBRARY(${PROJECT} SHARED
     ${SRC_DIR}/../liblinuxcnchal_src/hal_lib.c
 )
 
-add_definitions(
-    -DUSPACE -DULAPI -D_GNU_SOURCE -Drealtime -D__MODULE__ -DSEQUENTIAL_SUPPORT -DHAL_SUPPORT
-    # -DDYNAMIC_PLCSIZE -DRT_SUPPORT -DOLD_TIMERS_MONOS_SUPPORT -DMODBUS_IO_MASTER
-)
-
-# Add verion nr. .so.0.0.0
-set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
+# Set compile flags.
+SET(GCC_COVERAGE_COMPILE_FLAGS "
+    -DUSPACE -fno-fast-math -fno-unsafe-math-optimizations -DRTAPI -D_GNU_SOURCE
+    -Drealtime -D__MODULE__ -DSIM -fPIC -Os")
+add_definitions(-DRTAPI -DUSPACE -D_GNU_SOURCE -D__MODULE__ )
 
 # Set include paths for libraries to link.
 target_include_directories(${PROJECT_NAME} PRIVATE ${BUILD_DIR})
 
 # Link to libraries.
-target_link_libraries(${PROJECT_NAME} PRIVATE -fno-fast-math -mieee-fp -fno-unsafe-math-optimizations
-    -Werror=frame-larger-than=2560 -Wno-declaration-after-statement -fwrapv -fno-builtin-sin -fno-builtin-cos
-    -fno-builtin-sincos -fPIC -Os)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    -pthread -lrt
+    )
 
-# Set custom output name :
-# set_property(TARGET ${PROJECT} PROPERTY OUTPUT_NAME thename)
-
-# Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
+# Make install.
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../rtlib)
 
 # Notes.
-

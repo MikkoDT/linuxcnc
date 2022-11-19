@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,linuxcnc.so -o linuxcnc.so CMakeFiles/hal_tlc.dir/__/hal_tlc_src/halsh.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/hal_tlc/../build/liblinuxcncini:/home/user/linuxcnc/cmake/hal_tlc/../build/liblinuxcnchal: ../../hal_tlc/../build/liblinuxcncini/liblinuxcncini.so ../../hal_tlc/../build/liblinuxcnchal/liblinuxcnchal.so -ltcl8.6 -ltk8.6 

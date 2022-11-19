@@ -73,34 +73,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal -fPIC)
 set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION})
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
-
-# Notes.
-# Compiling libnml/nml/nml.cc
-# g++ -std=gnu++17 -c -I. -Ilibnml/linklist -Iemc -Ilibnml/cms -Ilibnml/rcs -Ilibnml/inifile -Ilibnml/os_intf
-# -Ilibnml/nml -Ilibnml/buffer -Ilibnml/posemath -Irtapi -Ihal -Iemc -Iemc/nml_intf -Iemc/kinematics
-# -Iemc/tp -Iemc/motion -Iemc/ini -Iemc -Iemc/rs274ngc -Iemc/sai -Iemc/pythonplugin -Iemc/tooldata -Iemc
-#-I/home/user/linuxcnc/src/include -I/usr/include/python3.9  -DULAPI  -g -Wall -Wno-stringop-truncation
-#-D_FORTIFY_SOURCE=2 -Os -fwrapv -Werror=overloaded-virtual -g -O2  -std=gnu++17 -fPIC \
-#        -MP -MD -MF "objects/libnml/nml/nml.d" -MT "objects/libnml/nml/nml.o" \
-#        libnml/nml/nml.cc -o objects/libnml/nml/nml.o
-# Creating shared library libnml.so.0
-# g++ -std=gnu++17 -Wl,-soname,libnml.so.0 -shared -o ../lib/libnml.so.0 objects/libnml/rcs/rcs_print.o
-# objects/libnml/rcs/rcs_exit.o objects/libnml/os_intf/_sem.o objects/libnml/os_intf/_shm.o
-# objects/libnml/os_intf/_timer.o objects/libnml/os_intf/sem.o objects/libnml/os_intf/shm.o objects/libnml/os_intf/timer.o
-# objects/libnml/buffer/locmem.o objects/libnml/buffer/memsem.o objects/libnml/buffer/phantom.o objects/libnml/buffer/physmem.o
-# objects/libnml/buffer/recvn.o objects/libnml/buffer/sendn.o objects/libnml/buffer/shmem.o
-# objects/libnml/buffer/tcpmem.o objects/libnml/cms/cms.o objects/libnml/cms/cms_aup.o objects/libnml/cms/cms_cfg.o
-# objects/libnml/cms/cms_in.o objects/libnml/cms/cms_dup.o objects/libnml/cms/cms_pm.o objects/libnml/cms/cms_srv.o
-# objects/libnml/cms/cms_up.o objects/libnml/cms/cms_xup.o objects/libnml/cms/cmsdiag.o objects/libnml/cms/tcp_opts.o
-# objects/libnml/cms/tcp_srv.o objects/libnml/nml/cmd_msg.o objects/libnml/nml/nml_mod.o objects/libnml/nml/nml_oi.o
-# objects/libnml/nml/nml_srv.o objects/libnml/nml/nml.o objects/libnml/nml/nmldiag.o objects/libnml/nml/nmlmsg.o
-# objects/libnml/nml/stat_msg.o objects/libnml/linklist/linklist.o
-# ../lib/liblinuxcnchal.so -L/home/user/linuxcnc/lib
-# -Wl,-rpath,/home/user/linuxcnc/lib
-# ln -sf libnml.so.0 ../lib/libnml.so
-
-
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../lib)
 
 
 

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-set(PROJECT "rs274")
+set(PROJECT "rs274") # ~/src/emc/sai/, install to ~/bin
 project(${PROJECT} LANGUAGES CXX)
 
 # Set variables.
@@ -88,9 +88,9 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 )
 
 # Set custom output name :
-# set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
+# set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME rs274)
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${SRC_DIR})
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../bin)
 
 # Notes.
