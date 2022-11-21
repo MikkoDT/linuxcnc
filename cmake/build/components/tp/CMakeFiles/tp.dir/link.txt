@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,tp.so -o tp.so CMakeFiles/tp.dir/__/tp_src/tp.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/tp/../../build/liblinuxcnchal ../../../components/tp/../../build/liblinuxcnchal/liblinuxcnchal.so 

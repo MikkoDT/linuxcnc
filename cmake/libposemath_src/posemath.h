@@ -975,7 +975,7 @@ extern "C" {
 
 #define toHom(src,dst) {toCart((src).tran, &((dst)->tran)); toMat((src).rot, &((dst)->rot));}
 
-#define toLine(src,dst) {toPose((src).start, &((dst)->start)); toPose((src).end, &((dst)->end)); toCart((src).uVec, &((dst)->uVec));}
+#define toLine_(src,dst) {toPose((src).start, &((dst)->start)); toPose((src).end, &((dst)->end)); toCart((src).uVec, &((dst)->uVec));}
 
 #define toCircle(src,dst) {toCart((src).center, &((dst)->center)); toCart((src).normal, &((dst)->normal)); toCart((src).rTan, &((dst)->rTan)); toCart((src).rPerp, &((dst)->rPerp)); toCart((src).rHelix, &((dst)->rHelix)); (dst)->radius = (src).radius; (dst)->angle = (src).angle; (dst)->spiral = (src).spiral;}
 

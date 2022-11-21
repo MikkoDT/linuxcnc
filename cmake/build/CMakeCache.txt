@@ -26,6 +26,32 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
+//ASM compiler
+CMAKE_ASM_COMPILER:FILEPATH=/usr/bin/cc
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
+
+//Flags used by the ASM compiler during all build types.
+CMAKE_ASM_FLAGS:STRING=
+
+//Flags used by the ASM compiler during DEBUG builds.
+CMAKE_ASM_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the ASM compiler during MINSIZEREL builds.
+CMAKE_ASM_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the ASM compiler during RELEASE builds.
+CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the ASM compiler during RELWITHDEBINFO builds.
+CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=
@@ -230,6 +256,69 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/share/eigen3/cmake
+
+//Path to a file.
+GLUT_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+GLUT_Xi_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libXi.so
+
+//Path to a library.
+GLUT_Xmu_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libXmu.so
+
+//Path to a library.
+GLUT_glut_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libglut.so
+
+//Path to a file.
+OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a file.
+OPENGL_GLX_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a file.
+OPENGL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+OPENGL_egl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libEGL.so
+
+//Path to a library.
+OPENGL_gl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGL.so
+
+//Path to a library.
+OPENGL_glu_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLU.so
+
+//Path to a library.
+OPENGL_glx_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLX.so
+
+//Path to a library.
+OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenGL.so
+
+//Path to a file.
+OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for OpenCASCADE.
+OpenCASCADE_DIR:PATH=/usr/local/lib/cmake/opencascade
+
+//The directory containing a CMake configuration file for QT.
+QT_DIR:PATH=/opt/qt-creator/5.15.1/gcc_64/lib/cmake/Qt5
+
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=/opt/qt-creator/5.15.1/gcc_64/lib/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=/opt/qt-creator/5.15.1/gcc_64/lib/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5OpenGL.
+Qt5OpenGL_DIR:PATH=/opt/qt-creator/5.15.1/gcc_64/lib/cmake/Qt5OpenGL
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=/opt/qt-creator/5.15.1/gcc_64/lib/cmake/Qt5Widgets
+
+//The directory containing a CMake configuration file for Qt5.
+Qt5_DIR:PATH=/opt/qt-creator/5.15.1/gcc_64/lib/cmake/Qt5
+
 //Value Computed by CMake
 _hal_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/hal_py
 
@@ -324,6 +413,21 @@ iov2_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/iov2
 iov2_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/iov2
 
 //Value Computed by CMake
+lcec_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/ethercat
+
+//Dependencies for the target
+lcec_LIB_DEPENDS:STATIC=general;pthread;general;rt;general;linuxcnchal;
+
+//Value Computed by CMake
+lcec_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/ethercat
+
+//Value Computed by CMake
+lcec_conf_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/ethercat
+
+//Value Computed by CMake
+lcec_conf_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/ethercat
+
+//Value Computed by CMake
 libcanterp_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/libcanterp
 
 //Dependencies for the target
@@ -331,6 +435,15 @@ libcanterp_LIB_DEPENDS:STATIC=general;linuxcncini;general;rs274;general;-fPIC;
 
 //Value Computed by CMake
 libcanterp_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/libcanterp
+
+//Value Computed by CMake
+libhalui_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/libhalui
+
+//Dependencies for the target
+libhalui_LIB_DEPENDS:STATIC=general;nml;general;linuxcnchal;general;linuxcncini;general;linuxcnc_;general;tooldata;
+
+//Value Computed by CMake
+libhalui_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/libhalui
 
 //Value Computed by CMake
 liblinuxcnchal_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/liblinuxcnchal
@@ -462,6 +575,12 @@ motion-logger_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/motion_logger
 motion-logger_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/motion_logger
 
 //Value Computed by CMake
+myApp_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/projects/qt_occt
+
+//Value Computed by CMake
+myApp_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/projects/qt_occt
+
+//Value Computed by CMake
 pci_read_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/pci_read
 
 //Value Computed by CMake
@@ -472,6 +591,18 @@ pci_write_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/pci_write
 
 //Value Computed by CMake
 pci_write_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/pci_write
+
+//Value Computed by CMake
+qt_nml_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/projects/qt_nml
+
+//Value Computed by CMake
+qt_nml_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/projects/qt_nml
+
+//Value Computed by CMake
+qt_occt_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/projects/qt_occt
+
+//Value Computed by CMake
+qt_occt_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/projects/qt_occt
 
 //Value Computed by CMake
 rotarydeltakins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/rotarydeltakins_py
@@ -498,6 +629,15 @@ schedrmt_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/schedrmt
 schedrmt_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/schedrmt
 
 //Value Computed by CMake
+test_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/test
+
+//Dependencies for the target
+test_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+test_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/test
+
+//Value Computed by CMake
 threads_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/threads
 
 //Dependencies for the target
@@ -505,6 +645,15 @@ threads_LIB_DEPENDS:STATIC=general;linuxcnchal;
 
 //Value Computed by CMake
 threads_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/threads
+
+//Value Computed by CMake
+tp_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/tp
+
+//Dependencies for the target
+tp_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+tp_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/tp
 
 
 ########################
@@ -515,6 +664,23 @@ threads_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/threads
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER
+CMAKE_ASM_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER_AR
+CMAKE_ASM_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_COMPILER_RANLIB
+CMAKE_ASM_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+CMAKE_ASM_COMPILER_WORKS:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS
+CMAKE_ASM_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_DEBUG
+CMAKE_ASM_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_MINSIZEREL
+CMAKE_ASM_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELEASE
+CMAKE_ASM_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_FLAGS_RELWITHDEBINFO
+CMAKE_ASM_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/home/user/linuxcnc/cmake/build
 //Major version of cmake used to create the current loaded cache
@@ -611,7 +777,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=39
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=45
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -654,4 +820,34 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding GLUT
+FIND_PACKAGE_MESSAGE_DETAILS_GLUT:INTERNAL=[/usr/lib/x86_64-linux-gnu/libglut.so][/usr/include][v()]
+//Details about finding OpenGL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
+//ADVANCED property for variable: GLUT_INCLUDE_DIR
+GLUT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLUT_Xi_LIBRARY
+GLUT_Xi_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLUT_Xmu_LIBRARY
+GLUT_Xmu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLUT_glut_LIBRARY
+GLUT_glut_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
+OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_GLX_INCLUDE_DIR
+OPENGL_GLX_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_INCLUDE_DIR
+OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_egl_LIBRARY
+OPENGL_egl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_gl_LIBRARY
+OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_glu_LIBRARY
+OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_glx_LIBRARY
+OPENGL_glx_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_opengl_LIBRARY
+OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_xmesa_INCLUDE_DIR
+OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
 

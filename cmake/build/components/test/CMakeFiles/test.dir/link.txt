@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,test.so -o test.so CMakeFiles/test.dir/__/test_src/test.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/test/../../build/liblinuxcnchal: ../../../components/test/../../build/liblinuxcnchal/liblinuxcnchal.so 

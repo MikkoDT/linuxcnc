@@ -319,6 +319,19 @@ libcanterp/fast:
 .PHONY : libcanterp/fast
 
 #=============================================================================
+# Target rules for targets named libhalui
+
+# Build rule for target.
+libhalui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libhalui
+.PHONY : libhalui
+
+# fast build rule for target.
+libhalui/fast:
+	$(MAKE) $(MAKESILENT) -f libhalui/CMakeFiles/libhalui.dir/build.make libhalui/CMakeFiles/libhalui.dir/build
+.PHONY : libhalui/fast
+
+#=============================================================================
 # Target rules for targets named hal_lib
 
 # Build rule for target.
@@ -332,6 +345,32 @@ hal_lib/fast:
 .PHONY : hal_lib/fast
 
 #=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f components/test/CMakeFiles/test.dir/build.make components/test/CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named tp
+
+# Build rule for target.
+tp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tp
+.PHONY : tp
+
+# fast build rule for target.
+tp/fast:
+	$(MAKE) $(MAKESILENT) -f components/tp/CMakeFiles/tp.dir/build.make components/tp/CMakeFiles/tp.dir/build
+.PHONY : tp/fast
+
+#=============================================================================
 # Target rules for targets named threads
 
 # Build rule for target.
@@ -343,6 +382,84 @@ threads: cmake_check_build_system
 threads/fast:
 	$(MAKE) $(MAKESILENT) -f components/threads/CMakeFiles/threads.dir/build.make components/threads/CMakeFiles/threads.dir/build
 .PHONY : threads/fast
+
+#=============================================================================
+# Target rules for targets named lcec_conf
+
+# Build rule for target.
+lcec_conf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lcec_conf
+.PHONY : lcec_conf
+
+# fast build rule for target.
+lcec_conf/fast:
+	$(MAKE) $(MAKESILENT) -f components/ethercat/CMakeFiles/lcec_conf.dir/build.make components/ethercat/CMakeFiles/lcec_conf.dir/build
+.PHONY : lcec_conf/fast
+
+#=============================================================================
+# Target rules for targets named lcec
+
+# Build rule for target.
+lcec: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lcec
+.PHONY : lcec
+
+# fast build rule for target.
+lcec/fast:
+	$(MAKE) $(MAKESILENT) -f components/ethercat/CMakeFiles/lcec.dir/build.make components/ethercat/CMakeFiles/lcec.dir/build
+.PHONY : lcec/fast
+
+#=============================================================================
+# Target rules for targets named qt_occt
+
+# Build rule for target.
+qt_occt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_occt
+.PHONY : qt_occt
+
+# fast build rule for target.
+qt_occt/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt.dir/build.make projects/qt_occt/CMakeFiles/qt_occt.dir/build
+.PHONY : qt_occt/fast
+
+#=============================================================================
+# Target rules for targets named qt_occt_autogen
+
+# Build rule for target.
+qt_occt_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_occt_autogen
+.PHONY : qt_occt_autogen
+
+# fast build rule for target.
+qt_occt_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/build.make projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/build
+.PHONY : qt_occt_autogen/fast
+
+#=============================================================================
+# Target rules for targets named qt_nml
+
+# Build rule for target.
+qt_nml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_nml
+.PHONY : qt_nml
+
+# fast build rule for target.
+qt_nml/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml.dir/build.make projects/qt_nml/CMakeFiles/qt_nml.dir/build
+.PHONY : qt_nml/fast
+
+#=============================================================================
+# Target rules for targets named qt_nml_autogen
+
+# Build rule for target.
+qt_nml_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_nml_autogen
+.PHONY : qt_nml_autogen
+
+# fast build rule for target.
+qt_nml_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/build.make projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/build
+.PHONY : qt_nml_autogen/fast
 
 #=============================================================================
 # Target rules for targets named halcmd
@@ -681,6 +798,8 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... qt_nml_autogen"
+	@echo "... qt_occt_autogen"
 	@echo "... _hal"
 	@echo "... _togl"
 	@echo "... classicladder"
@@ -694,7 +813,10 @@ help:
 	@echo "... halui"
 	@echo "... io"
 	@echo "... iov2"
+	@echo "... lcec"
+	@echo "... lcec_conf"
 	@echo "... libcanterp"
+	@echo "... libhalui"
 	@echo "... liblinuxcnchal"
 	@echo "... liblinuxcncini"
 	@echo "... libnml"
@@ -714,11 +836,15 @@ help:
 	@echo "... motion-logger"
 	@echo "... pci_read"
 	@echo "... pci_write"
+	@echo "... qt_nml"
+	@echo "... qt_occt"
 	@echo "... rotarydeltakins"
 	@echo "... rs274"
 	@echo "... rtapi_app"
 	@echo "... schedrmt"
+	@echo "... test"
 	@echo "... threads"
+	@echo "... tp"
 .PHONY : help
 
 
