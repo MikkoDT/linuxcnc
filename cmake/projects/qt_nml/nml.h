@@ -8,19 +8,54 @@
 #include <string.h>
 #include <iostream>
 
+//! For info about nml usage visit : ~/linuxcnc/cmake/halui_src/halui.cc
 class nml {
 public:
     nml(){}
 
     struct status {
         bool estop=0;
-        bool on=0;
+        bool machine_on=0;
         char task_active_gcodes_string[256];
         char task_active_mcodes_string[256];
         char task_active_fcodes_string[256];
         char task_active_scodes_string[256];
         //! 0=manual 1=mdi 2=auto.
         int mode;
+        //! Coordinates.
+        float x=0, y=0, z=0, a=0, b=0, c=0, u=0, v=0, w=0;
+        //! Feed override, jog override.
+        float feed_override=0;
+        float rapid_override=0;
+        float spindle_override=0;
+        float max_velocity=0;
+        float current_velocity=0;
+        float current_rpm=0;
+        float adatpive_feed=0;
+        //! Extra.
+        int spindle_direction=0;
+        bool spindle_brake=0;
+        int spindle_increasing=0;
+        bool spindle_enabled=0;
+        bool spindle_homed=0;
+        float spindle_scale=0;
+        float lube_level=0;
+        bool coolant=0;
+        bool mist=0;
+        bool lube=0;
+        //! Gcode.
+        int current_line=0;
+        int motion_line=0;
+
+        char command[256];
+        char inifile[256];
+        char file[256];
+
+        bool homed_x=0, homed_y=0, homed_z=0, homed_all=0;
+        bool run=0, pause=0, stop=0, idle=0;
+
+        bool adaptive_feed_enabled=0;
+
     } theStatus;
 
     void update(){
@@ -38,9 +73,9 @@ public:
         }
 
         if(emcStatus->task.state== EMC_TASK_STATE_ENUM::EMC_TASK_STATE_ON){
-            theStatus.on=true;
+            theStatus.machine_on=true;
         } else {
-            theStatus.on=false;
+            theStatus.machine_on=false;
         }
 
         if(emcStatus->task.mode==EMC_TASK_MODE_ENUM::EMC_TASK_MODE_MANUAL){
@@ -91,7 +126,59 @@ public:
         theStatus.task_active_scodes_string[0] = 0;
         strcat(theStatus.task_active_scodes_string, string);
 
+        theStatus.x=emcStatus->motion.traj.position.tran.x;
+        theStatus.y=emcStatus->motion.traj.position.tran.y;
+        theStatus.z=emcStatus->motion.traj.position.tran.z;
+        theStatus.a=emcStatus->motion.traj.position.a;
+        theStatus.b=emcStatus->motion.traj.position.b;
+        theStatus.c=emcStatus->motion.traj.position.c;
+        theStatus.u=emcStatus->motion.traj.position.u;
+        theStatus.v=emcStatus->motion.traj.position.v;
+        theStatus.w=emcStatus->motion.traj.position.w;
 
+        theStatus.feed_override=emcStatus->motion.traj.scale; //! Velocity override scale.
+        theStatus.rapid_override=emcStatus->motion.traj.rapid_scale; //! Rapic override scale.
+        theStatus.max_velocity=emcStatus->motion.traj.maxVelocity*60;
+        theStatus.current_velocity=emcStatus->motion.traj.current_vel*60;
+        theStatus.current_rpm=emcStatus->motion.spindle->speed;
+
+        //! Extra
+        theStatus.spindle_direction=emcStatus->motion.spindle->direction;
+        theStatus.spindle_brake=emcStatus->motion.spindle->brake;
+        theStatus.spindle_increasing=emcStatus->motion.spindle->increasing;
+        theStatus.spindle_enabled=emcStatus->motion.spindle->enabled;
+        theStatus.spindle_homed=emcStatus->motion.spindle->homed;
+        theStatus.spindle_scale=emcStatus->motion.spindle->spindle_scale;
+        theStatus.lube_level=emcStatus->io.lube.level;
+        theStatus.coolant=emcStatus->io.coolant.flood;
+        theStatus.mist=emcStatus->io.coolant.mist;
+        theStatus.lube=emcStatus->io.lube.on;
+
+        theStatus.current_line=emcStatus->task.currentLine;
+        theStatus.motion_line=emcStatus->task.motionLine; //! current executed gcode line
+
+        strcpy(theStatus.command,emcStatus->task.command);
+        strcpy(theStatus.inifile,emcStatus->task.ini_filename);
+        strcpy(theStatus.file,emcStatus->task.file);
+
+        theStatus.homed_x=emcStatus->motion.joint[0].homed;
+        theStatus.homed_y=emcStatus->motion.joint[1].homed;
+        theStatus.homed_z=emcStatus->motion.joint[2].homed;
+
+        if(theStatus.homed_x && theStatus.homed_y && theStatus.homed_z){
+            theStatus.homed_all=1;
+        } else {
+            theStatus.homed_all=0;
+        }
+
+        theStatus.pause = emcStatus->task.interpState == EMC_TASK_INTERP_PAUSED;
+        theStatus.run= emcStatus->task.interpState == EMC_TASK_INTERP_READING ||
+                                            emcStatus->task.interpState == EMC_TASK_INTERP_WAITING;
+        theStatus.idle= emcStatus->task.interpState == EMC_TASK_INTERP_IDLE;
+
+        theStatus.adaptive_feed_enabled=emcStatus->motion.traj.adaptive_feed_enabled;
+
+        //! Todo : theStatus.adatpive_feed
     }
     void machine_on(){
         EMC_TASK_SET_STATE s;
@@ -130,7 +217,7 @@ public:
     }
     void home_x(){
         EMC_JOINT_HOME m;
-        m.joint=0; //x
+        m.joint=0;
         cmd->write(&m);
     }
     void home_y(){
@@ -146,6 +233,21 @@ public:
     void home_all(){
         EMC_JOINT_HOME m;
         m.joint=-1;
+        cmd->write(&m);
+    }
+    void unhome_x(){
+        EMC_JOINT_UNHOME m;
+        m.joint=0;
+        cmd->write(&m);
+    }
+    void unhome_y(){
+        EMC_JOINT_UNHOME m;
+        m.joint=1;
+        cmd->write(&m);
+    }
+    void unhome_z(){
+        EMC_JOINT_UNHOME m;
+        m.joint=2;
         cmd->write(&m);
     }
     void unhome_all(){
@@ -168,8 +270,13 @@ public:
         m.mode=EMC_TASK_MODE_MANUAL;
         cmd->write(&m);
     }
-    void run(){
+    void run(int theLine){
         EMC_TASK_PLAN_RUN r;
+        r.line=theLine;
+        cmd->write(&r);
+    }
+    void run_step(){
+        EMC_TASK_PLAN_STEP r;
         cmd->write(&r);
     }
     void pause(){
@@ -184,6 +291,10 @@ public:
         EMC_TASK_PLAN_REVERSE r;
         cmd->write(&r);
     }
+    void forward(){
+        EMC_TASK_PLAN_FORWARD f;
+        cmd->write(&f);
+    }
     void end(){
         EMC_TASK_PLAN_END e;
         cmd->write(&e);
@@ -192,7 +303,7 @@ public:
         EMC_TASK_ABORT e;
         cmd->write(&e);
     }
-    void load(){
+    void load(std::string theFile){
         //! Mention, the drawing will not be displayed by a gui like axis. But the code is
         //! loaded and will run.
 
@@ -200,13 +311,24 @@ public:
         cmd->write(&m0);
 
         EMC_TASK_PLAN_OPEN o;
-        strcpy(o.file, "/home/user/linuxcnc/nc_files/test.ngc");
+        if(theFile.size()==0){
+            std::string str=EMC2_NCFILES_DIR; //!  "~/linuxcnc/nc_files"
+            str.append("/test.ngc");
+            strcpy(o.file, str.c_str());
+        } else {
+            strcpy(o.file, theFile.c_str());
+        }
         cmd->write(&o);
     }
-    void spindle(float spindlespeed){
+    void spindle_off(int theSpindle){
+        EMC_SPINDLE_OFF m;
+        m.spindle=theSpindle;
+        cmd->write(&m);
+    }
+    void spindle_on(int theSpindle, float theRpm){
         EMC_SPINDLE_ON m;
-        m.spindle=0;
-        m.speed=spindlespeed;
+        m.spindle=theSpindle;
+        m.speed=theRpm;
         cmd->write(&m);
     }
     void jog(int axis, float speed){
@@ -221,6 +343,33 @@ public:
         s.jjogmode = 0;
         s.joint_or_axis=axis;
         cmd->write(&s);
+    }
+    //! Factor 1.0 - ...
+    void setFeedOveride(float theScale){
+        EMC_TRAJ_SET_SCALE o;
+        o.scale=theScale;
+        cmd->write(&o);
+    }
+    void setMaxVelocity(float theVelocity){
+        EMC_TRAJ_SET_MAX_VELOCITY o;
+        o.velocity=theVelocity/60;
+        cmd->write(&o);
+    }
+    void setRapidOverride(float theScale){
+        EMC_TRAJ_SET_RAPID_SCALE o;
+        o.scale=theScale;
+        cmd->write(&o);
+    }
+    void setSpindleOverride(int theSpindle, int theScale){
+        EMC_TRAJ_SET_SPINDLE_SCALE s;
+        s.spindle=theSpindle;
+        s.scale=theScale;
+        cmd->write(&s);
+    }
+    void mdi(std::string theCommand){
+        EMC_TASK_PLAN_EXECUTE mdi;
+        strcpy(mdi.command,theCommand.c_str());
+        cmd->write(&mdi);
     }
 
 private:

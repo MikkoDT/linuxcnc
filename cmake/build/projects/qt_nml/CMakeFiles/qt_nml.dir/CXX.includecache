@@ -158,8 +158,6 @@ nml.hh
 nmlmsg.hh
 ../libnml_src/nmlmsg.hh
 
-../projects/qt_nml/halui.h
-
 ../projects/qt_nml/nml.h
 config.h
 -
@@ -184,8 +182,6 @@ QTimer
 QMainWindow
 -
 nml.h
--
-halui.h
 -
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QTimer
@@ -1148,6 +1144,14 @@ QtGui/qcolor.h
 QtGui/qbrush.h
 -
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtGui/qpen.h
+QtGui/qtguiglobal.h
+-
+QtGui/qcolor.h
+-
+QtGui/qbrush.h
+-
+
 /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qpixelformat.h
 QtGui/qtguiglobal.h
 -
@@ -1202,6 +1206,62 @@ QtCore/qprocessordetection.h
 QtGui/qtguiglobal.h
 -
 QtCore/qprocessordetection.h
+-
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextcursor.h
+QtGui/qtguiglobal.h
+-
+QtCore/qstring.h
+-
+QtCore/qshareddata.h
+-
+QtGui/qtextformat.h
+-
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextdocument.h
+QtGui/qtguiglobal.h
+-
+QtCore/qobject.h
+-
+QtCore/qsize.h
+-
+QtCore/qrect.h
+-
+QtCore/qvariant.h
+-
+QtGui/qfont.h
+-
+QtCore/qurl.h
+-
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextformat.h
+QtGui/qtguiglobal.h
+-
+QtGui/qcolor.h
+-
+QtGui/qfont.h
+-
+QtCore/qshareddata.h
+-
+QtCore/qvector.h
+-
+QtCore/qvariant.h
+-
+QtGui/qpen.h
+-
+QtGui/qbrush.h
+-
+QtGui/qtextoption.h
+-
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtextoption.h
+QtGui/qtguiglobal.h
+-
+QtCore/qnamespace.h
+-
+QtCore/qchar.h
+-
+QtCore/qmetatype.h
 -
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtGui/qtgui-config.h
@@ -1264,6 +1324,10 @@ QtGui/qtguiglobal.h
 qapplication.h
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qapplication.h
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QFrame
+qframe.h
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qframe.h
+
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QGridLayout
 qgridlayout.h
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qgridlayout.h
@@ -1271,6 +1335,10 @@ qgridlayout.h
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLabel
 qlabel.h
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlabel.h
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QLineEdit
+qlineedit.h
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlineedit.h
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QMainWindow
 qmainwindow.h
@@ -1296,6 +1364,10 @@ qlayoutitem.h
 qstatusbar.h
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qstatusbar.h
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QTextBrowser
+qtextbrowser.h
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtextbrowser.h
+
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/QWidget
 qwidget.h
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qwidget.h
@@ -1308,6 +1380,12 @@ QtGui/qicon.h
 QtGui/qkeysequence.h
 -
 QtWidgets/qwidget.h
+-
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractscrollarea.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qframe.h
 -
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qabstractslider.h
@@ -1424,6 +1502,18 @@ QtCore/qrect.h
 limits.h
 -
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qlineedit.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qframe.h
+-
+QtGui/qtextcursor.h
+-
+QtCore/qstring.h
+-
+QtCore/qmargins.h
+-
+
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qmainwindow.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1486,6 +1576,28 @@ QtWidgets/qwidget.h
 QtGui/qicon.h
 -
 
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtextbrowser.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qtextedit.h
+-
+QtCore/qurl.h
+-
+
+/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtextedit.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractscrollarea.h
+-
+QtGui/qtextdocument.h
+-
+QtGui/qtextoption.h
+-
+QtGui/qtextcursor.h
+-
+QtGui/qtextformat.h
+-
+
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtwidgets-config.h
 
 /opt/qt-creator/5.15.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h
@@ -1531,9 +1643,13 @@ QtCore/QVariant
 -
 QtWidgets/QApplication
 -
+QtWidgets/QFrame
+-
 QtWidgets/QGridLayout
 -
 QtWidgets/QLabel
+-
+QtWidgets/QLineEdit
 -
 QtWidgets/QMainWindow
 -
@@ -1546,6 +1662,8 @@ QtWidgets/QScrollBar
 QtWidgets/QSpacerItem
 -
 QtWidgets/QStatusBar
+-
+QtWidgets/QTextBrowser
 -
 QtWidgets/QWidget
 -

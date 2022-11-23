@@ -43,21 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/qt_occt" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/qt_occt")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/qt_occt"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/user/linuxcnc/cmake/build/projects/qt_occt/qt_occt")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/qt_occt" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/qt_occt")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin" TYPE EXECUTABLE FILES "/home/user/linuxcnc/cmake/build/projects/qt_occt/qt_occt")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/qt_occt"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt"
          OLD_RPATH "/home/user/linuxcnc/cmake/projects/qt_occt/../../vendor/orocos_kinematics_dynamics/orocos_kdl/build/src:/home/user/linuxcnc/cmake/projects/qt_occt/../../build/liblinuxcnchal:/usr/local/lib:/opt/qt-creator/5.15.1/gcc_64/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/qt_occt")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt")
     endif()
   endif()
 endif()

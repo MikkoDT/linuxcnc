@@ -319,19 +319,6 @@ libcanterp/fast:
 .PHONY : libcanterp/fast
 
 #=============================================================================
-# Target rules for targets named libhalui
-
-# Build rule for target.
-libhalui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libhalui
-.PHONY : libhalui
-
-# fast build rule for target.
-libhalui/fast:
-	$(MAKE) $(MAKESILENT) -f libhalui/CMakeFiles/libhalui.dir/build.make libhalui/CMakeFiles/libhalui.dir/build
-.PHONY : libhalui/fast
-
-#=============================================================================
 # Target rules for targets named hal_lib
 
 # Build rule for target.
@@ -816,7 +803,6 @@ help:
 	@echo "... lcec"
 	@echo "... lcec_conf"
 	@echo "... libcanterp"
-	@echo "... libhalui"
 	@echo "... liblinuxcnchal"
 	@echo "... liblinuxcncini"
 	@echo "... libnml"

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
-
-project(qt_nml LANGUAGES CXX)
+set(PROJECT "qt_nml")
+project(${PROJECT} LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -33,8 +33,6 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
         nml.h
-        halui.h
-        halui.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -122,3 +120,8 @@ add_definitions(-DULAPI)
 target_link_libraries(qt_nml PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
     linuxcnchal linuxcncini linuxcnc_a nml rs274_ tooldata halui_
     )
+
+# Make install
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../../bin)
+
+# Notes

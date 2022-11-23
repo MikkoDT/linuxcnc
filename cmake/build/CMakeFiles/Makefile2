@@ -83,7 +83,6 @@ all: libposemath/all
 all: libpyplugin/all
 all: librs274/all
 all: libcanterp/all
-all: libhalui/all
 all: hal_lib/all
 all: components/test/all
 all: components/tp/all
@@ -131,7 +130,6 @@ preinstall: libposemath/preinstall
 preinstall: libpyplugin/preinstall
 preinstall: librs274/preinstall
 preinstall: libcanterp/preinstall
-preinstall: libhalui/preinstall
 preinstall: hal_lib/preinstall
 preinstall: components/test/preinstall
 preinstall: components/tp/preinstall
@@ -179,7 +177,6 @@ clean: libposemath/clean
 clean: libpyplugin/clean
 clean: librs274/clean
 clean: libcanterp/clean
-clean: libhalui/clean
 clean: hal_lib/clean
 clean: components/test/clean
 clean: components/tp/clean
@@ -522,24 +519,6 @@ libcanterp/preinstall:
 libcanterp/clean: libcanterp/CMakeFiles/libcanterp.dir/clean
 
 .PHONY : libcanterp/clean
-
-#=============================================================================
-# Directory level rules for directory libhalui
-
-# Recursive "all" directory target.
-libhalui/all: libhalui/CMakeFiles/libhalui.dir/all
-
-.PHONY : libhalui/all
-
-# Recursive "preinstall" directory target.
-libhalui/preinstall:
-
-.PHONY : libhalui/preinstall
-
-# Recursive "clean" directory target.
-libhalui/clean: libhalui/CMakeFiles/libhalui.dir/clean
-
-.PHONY : libhalui/clean
 
 #=============================================================================
 # Directory level rules for directory liblinuxcnc
@@ -1072,7 +1051,7 @@ linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/clean:
 liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/all:
 	$(MAKE) $(MAKESILENT) -f liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/build.make liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/depend
 	$(MAKE) $(MAKESILENT) -f liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/build.make liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=36 "Built target liblinuxcnchal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=35 "Built target liblinuxcnchal"
 .PHONY : liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1099,12 +1078,12 @@ liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/clean:
 liblinuxcncini/CMakeFiles/liblinuxcncini.dir/all:
 	$(MAKE) $(MAKESILENT) -f liblinuxcncini/CMakeFiles/liblinuxcncini.dir/build.make liblinuxcncini/CMakeFiles/liblinuxcncini.dir/depend
 	$(MAKE) $(MAKESILENT) -f liblinuxcncini/CMakeFiles/liblinuxcncini.dir/build.make liblinuxcncini/CMakeFiles/liblinuxcncini.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target liblinuxcncini"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=36 "Built target liblinuxcncini"
 .PHONY : liblinuxcncini/CMakeFiles/liblinuxcncini.dir/all
 
 # Build rule for subdir invocation for target.
 liblinuxcncini/CMakeFiles/liblinuxcncini.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcncini/CMakeFiles/liblinuxcncini.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : liblinuxcncini/CMakeFiles/liblinuxcncini.dir/rule
@@ -1288,12 +1267,12 @@ librs274/CMakeFiles/librs274.dir/clean:
 libcanterp/CMakeFiles/libcanterp.dir/all:
 	$(MAKE) $(MAKESILENT) -f libcanterp/CMakeFiles/libcanterp.dir/build.make libcanterp/CMakeFiles/libcanterp.dir/depend
 	$(MAKE) $(MAKESILENT) -f libcanterp/CMakeFiles/libcanterp.dir/build.make libcanterp/CMakeFiles/libcanterp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=34 "Built target libcanterp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target libcanterp"
 .PHONY : libcanterp/CMakeFiles/libcanterp.dir/all
 
 # Build rule for subdir invocation for target.
 libcanterp/CMakeFiles/libcanterp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libcanterp/CMakeFiles/libcanterp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : libcanterp/CMakeFiles/libcanterp.dir/rule
@@ -1307,33 +1286,6 @@ libcanterp: libcanterp/CMakeFiles/libcanterp.dir/rule
 libcanterp/CMakeFiles/libcanterp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f libcanterp/CMakeFiles/libcanterp.dir/build.make libcanterp/CMakeFiles/libcanterp.dir/clean
 .PHONY : libcanterp/CMakeFiles/libcanterp.dir/clean
-
-#=============================================================================
-# Target rules for target libhalui/CMakeFiles/libhalui.dir
-
-# All Build rule for target.
-libhalui/CMakeFiles/libhalui.dir/all:
-	$(MAKE) $(MAKESILENT) -f libhalui/CMakeFiles/libhalui.dir/build.make libhalui/CMakeFiles/libhalui.dir/depend
-	$(MAKE) $(MAKESILENT) -f libhalui/CMakeFiles/libhalui.dir/build.make libhalui/CMakeFiles/libhalui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=35 "Built target libhalui"
-.PHONY : libhalui/CMakeFiles/libhalui.dir/all
-
-# Build rule for subdir invocation for target.
-libhalui/CMakeFiles/libhalui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libhalui/CMakeFiles/libhalui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
-.PHONY : libhalui/CMakeFiles/libhalui.dir/rule
-
-# Convenience name for target.
-libhalui: libhalui/CMakeFiles/libhalui.dir/rule
-
-.PHONY : libhalui
-
-# clean rule for target.
-libhalui/CMakeFiles/libhalui.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libhalui/CMakeFiles/libhalui.dir/build.make libhalui/CMakeFiles/libhalui.dir/clean
-.PHONY : libhalui/CMakeFiles/libhalui.dir/clean
 
 #=============================================================================
 # Target rules for target hal_lib/CMakeFiles/hal_lib.dir
@@ -1450,12 +1402,12 @@ components/threads/CMakeFiles/threads.dir/clean:
 components/ethercat/CMakeFiles/lcec_conf.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/ethercat/CMakeFiles/lcec_conf.dir/build.make components/ethercat/CMakeFiles/lcec_conf.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/ethercat/CMakeFiles/lcec_conf.dir/build.make components/ethercat/CMakeFiles/lcec_conf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=33 "Built target lcec_conf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=33,34 "Built target lcec_conf"
 .PHONY : components/ethercat/CMakeFiles/lcec_conf.dir/all
 
 # Build rule for subdir invocation for target.
 components/ethercat/CMakeFiles/lcec_conf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 components/ethercat/CMakeFiles/lcec_conf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : components/ethercat/CMakeFiles/lcec_conf.dir/rule
@@ -1639,12 +1591,12 @@ halcmd/CMakeFiles/halcmd.dir/clean:
 halmeter/CMakeFiles/halmeter.dir/all: liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/all
 	$(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/depend
 	$(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target halmeter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=16 "Built target halmeter"
 .PHONY : halmeter/CMakeFiles/halmeter.dir/all
 
 # Build rule for subdir invocation for target.
 halmeter/CMakeFiles/halmeter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/CMakeFiles/halmeter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : halmeter/CMakeFiles/halmeter.dir/rule
@@ -1693,12 +1645,12 @@ halscope/CMakeFiles/halscope.dir/clean:
 classicladder/CMakeFiles/classicladder.dir/all:
 	$(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/depend
 	$(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10 "Built target classicladder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11 "Built target classicladder"
 .PHONY : classicladder/CMakeFiles/classicladder.dir/all
 
 # Build rule for subdir invocation for target.
 classicladder/CMakeFiles/classicladder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/CMakeFiles/classicladder.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : classicladder/CMakeFiles/classicladder.dir/rule
@@ -1747,12 +1699,12 @@ halui/CMakeFiles/halui.dir/clean:
 halrmt/CMakeFiles/halrmt.dir/all:
 	$(MAKE) $(MAKESILENT) -f halrmt/CMakeFiles/halrmt.dir/build.make halrmt/CMakeFiles/halrmt.dir/depend
 	$(MAKE) $(MAKESILENT) -f halrmt/CMakeFiles/halrmt.dir/build.make halrmt/CMakeFiles/halrmt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=16 "Built target halrmt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target halrmt"
 .PHONY : halrmt/CMakeFiles/halrmt.dir/all
 
 # Build rule for subdir invocation for target.
 halrmt/CMakeFiles/halrmt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halrmt/CMakeFiles/halrmt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : halrmt/CMakeFiles/halrmt.dir/rule
@@ -2260,12 +2212,12 @@ linuxcnc_py/CMakeFiles/linuxcnc_py.dir/clean:
 gcode_py/CMakeFiles/gcode.dir/all:
 	$(MAKE) $(MAKESILENT) -f gcode_py/CMakeFiles/gcode.dir/build.make gcode_py/CMakeFiles/gcode.dir/depend
 	$(MAKE) $(MAKESILENT) -f gcode_py/CMakeFiles/gcode.dir/build.make gcode_py/CMakeFiles/gcode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=11 "Built target gcode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target gcode"
 .PHONY : gcode_py/CMakeFiles/gcode.dir/all
 
 # Build rule for subdir invocation for target.
 gcode_py/CMakeFiles/gcode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gcode_py/CMakeFiles/gcode.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : gcode_py/CMakeFiles/gcode.dir/rule

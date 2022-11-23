@@ -1,5 +1,17 @@
-g0 x0 y0 z0
-g0 x100 y0 z0
-g0 x100 y100 z0
-g0 x0 y100 z0
-g0 x0 y0 z0
+N0 (Intro)
+N1 G21 (unit:mm)
+N2 G40 (cutter compensation off)
+N3 G80 (cancel canned cycle modal motion)
+N4 G90  (absolute distance, no offsets)
+N5 G64P0.01 (path following accuracy)
+N6 F1 (initialize feedrate)
+N7 S1 (initialize spindle speed/power)
+N8 (Contour id:2)
+
+N13 G1 X40.000 Y62.000 F1400.000
+N14 G1 X60.000 Y62.000 F1400.000
+N15 G2 X62.000 Y60.000 I-0.000 J-2.000 F1400.000
+N16 G1 X62.000 Y40.000 Z0.000 F1400.000
+
+M5
+M30

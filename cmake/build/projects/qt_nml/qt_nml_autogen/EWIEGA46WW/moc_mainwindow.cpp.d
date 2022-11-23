@@ -24,7 +24,6 @@
   /home/user/linuxcnc/cmake/libnml_src/posemath.h \
   /home/user/linuxcnc/cmake/libnml_src/rcs.hh \
   /home/user/linuxcnc/cmake/libnml_src/stat_msg.hh \
-  /home/user/linuxcnc/cmake/projects/qt_nml/halui.h \
   /home/user/linuxcnc/cmake/projects/qt_nml/nml.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QTimer \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/qalgorithms.h \

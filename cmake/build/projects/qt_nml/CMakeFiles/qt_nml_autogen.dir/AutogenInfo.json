@@ -68,11 +68,6 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/user/linuxcnc/cmake/projects/qt_nml/halui.h",
-			"MU",
-			"EWIEGA46WW/moc_halui.cpp"
-		],
-		[
 			"/home/user/linuxcnc/cmake/projects/qt_nml/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp"
@@ -149,7 +144,6 @@
 	"SETTINGS_FILE" : "/home/user/linuxcnc/cmake/build/projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/user/linuxcnc/cmake/projects/qt_nml/halui.cpp", "MU" ],
 		[ "/home/user/linuxcnc/cmake/projects/qt_nml/main.cpp", "MU" ],
 		[ "/home/user/linuxcnc/cmake/projects/qt_nml/mainwindow.cpp", "MU" ]
 	],

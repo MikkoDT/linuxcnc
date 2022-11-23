@@ -205,33 +205,6 @@ qt_nml_autogen/fast:
 	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/build.make projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/build
 .PHONY : qt_nml_autogen/fast
 
-halui.o: halui.cpp.o
-
-.PHONY : halui.o
-
-# target to build an object file
-halui.cpp.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml.dir/build.make projects/qt_nml/CMakeFiles/qt_nml.dir/halui.cpp.o
-.PHONY : halui.cpp.o
-
-halui.i: halui.cpp.i
-
-.PHONY : halui.i
-
-# target to preprocess a source file
-halui.cpp.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml.dir/build.make projects/qt_nml/CMakeFiles/qt_nml.dir/halui.cpp.i
-.PHONY : halui.cpp.i
-
-halui.s: halui.cpp.s
-
-.PHONY : halui.s
-
-# target to generate assembly for a file
-halui.cpp.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml.dir/build.make projects/qt_nml/CMakeFiles/qt_nml.dir/halui.cpp.s
-.PHONY : halui.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -327,9 +300,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... qt_nml_autogen"
 	@echo "... qt_nml"
-	@echo "... halui.o"
-	@echo "... halui.i"
-	@echo "... halui.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

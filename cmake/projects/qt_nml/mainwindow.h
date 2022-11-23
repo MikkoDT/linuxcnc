@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <nml.h>
-#include <halui.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -90,9 +89,41 @@ private slots:
 
     void on_pushButton_unhome_all_pressed();
 
+    void on_horizontalScrollBar_feed_override_valueChanged(int value);
+
+    void on_horizontalScrollBar_max_velocity_valueChanged(int value);
+
+    void on_horizontalScrollBar_rapid_override_valueChanged(int value);
+
+    void on_horizontalScrollBar_spindle_rpm_valueChanged(int value);
+
+    void on_horizontalScrollBar_spindle_override_valueChanged(int value);
+
+    void on_lineEdit_mdi_input_returnPressed();
+
+    void on_pushButton_goto_zero_pressed();
+
+    void on_pushButton_unhome_x_pressed();
+
+    void on_pushButton_unhome_y_pressed();
+
+    void on_pushButton_unhome_z_pressed();
+
+    void on_pushButton_mdi_exec_pressed();
+
+
+    void on_pushButton_run_step_pressed();
+
+    void on_pushButton_forward_pressed();
+
 private:
     Ui::MainWindow *ui;
     nml *myNml=new nml();
-    halui *myHalui=new halui();
+
+    //! Stylesheet. ui->...->setStyleSheet(grey);
+    QString grey="background-color: rgb(51, 57, 59);\ncolor: rgb(255, 255, 255);\n";
+    QString green="color: rgb(0, 0, 0);\nbackground-color: rgb(0, 170, 0);";
+    QString red="color: rgb(0, 0, 0);\nbackground-color: rgb(242, 0, 0)";
+    QString orange="color: rgb(0, 0, 0);\nbackground-color: rgb(255, 170, 0)";
 };
 #endif

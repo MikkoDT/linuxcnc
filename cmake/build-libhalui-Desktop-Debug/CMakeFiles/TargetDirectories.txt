@@ -1,7 +1,0 @@
-/home/user/linuxcnc/cmake/build-libhalui-Desktop-Debug/CMakeFiles/install/strip.dir
-/home/user/linuxcnc/cmake/build-libhalui-Desktop-Debug/CMakeFiles/install/local.dir
-/home/user/linuxcnc/cmake/build-libhalui-Desktop-Debug/CMakeFiles/install.dir
-/home/user/linuxcnc/cmake/build-libhalui-Desktop-Debug/CMakeFiles/list_install_components.dir
-/home/user/linuxcnc/cmake/build-libhalui-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/user/linuxcnc/cmake/build-libhalui-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/user/linuxcnc/cmake/build-libhalui-Desktop-Debug/CMakeFiles/libhalui.dir

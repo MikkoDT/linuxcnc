@@ -42,3 +42,31 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin" TYPE EXECUTABLE FILES "/home/user/linuxcnc/cmake/build/projects/qt_nml/qt_nml")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml"
+         OLD_RPATH "/opt/qt-creator/5.15.1/gcc_64/lib:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcnchal:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcncini:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libnml:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/librs274:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libtooldata:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libhalui:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml")
+    endif()
+  endif()
+endif()
+

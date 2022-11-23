@@ -50,8 +50,7 @@
 						40,
 						41,
 						42,
-						43,
-						44
+						43
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -73,7 +72,7 @@
 					"source" : "rtapi",
 					"targetIndexes" : 
 					[
-						42
+						41
 					]
 				},
 				{
@@ -88,7 +87,7 @@
 					"source" : "linuxcnc_module_helper",
 					"targetIndexes" : 
 					[
-						26
+						25
 					]
 				},
 				{
@@ -103,7 +102,7 @@
 					"source" : "liblinuxcnchal",
 					"targetIndexes" : 
 					[
-						17
+						16
 					]
 				},
 				{
@@ -118,7 +117,7 @@
 					"source" : "liblinuxcncini",
 					"targetIndexes" : 
 					[
-						18
+						17
 					]
 				},
 				{
@@ -133,7 +132,7 @@
 					"source" : "libtooldata",
 					"targetIndexes" : 
 					[
-						23
+						22
 					]
 				},
 				{
@@ -148,7 +147,7 @@
 					"source" : "libnml",
 					"targetIndexes" : 
 					[
-						19
+						18
 					]
 				},
 				{
@@ -163,7 +162,7 @@
 					"source" : "liblinuxcnc",
 					"targetIndexes" : 
 					[
-						25
+						24
 					]
 				},
 				{
@@ -178,7 +177,7 @@
 					"source" : "libposemath",
 					"targetIndexes" : 
 					[
-						20
+						19
 					]
 				},
 				{
@@ -193,7 +192,7 @@
 					"source" : "libpyplugin",
 					"targetIndexes" : 
 					[
-						21
+						20
 					]
 				},
 				{
@@ -208,7 +207,7 @@
 					"source" : "librs274",
 					"targetIndexes" : 
 					[
-						22
+						21
 					]
 				},
 				{
@@ -227,21 +226,6 @@
 					]
 				},
 				{
-					"build" : "libhalui",
-					"hasInstallRule" : true,
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.0"
-					},
-					"parentIndex" : 0,
-					"projectIndex" : 12,
-					"source" : "libhalui",
-					"targetIndexes" : 
-					[
-						16
-					]
-				},
-				{
 					"build" : "hal_lib",
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -249,7 +233,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 13,
+					"projectIndex" : 12,
 					"source" : "hal_lib",
 					"targetIndexes" : 
 					[
@@ -264,11 +248,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 14,
+					"projectIndex" : 13,
 					"source" : "components/test",
 					"targetIndexes" : 
 					[
-						44
+						43
 					]
 				},
 				{
@@ -278,11 +262,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 15,
+					"projectIndex" : 14,
 					"source" : "components/tp",
 					"targetIndexes" : 
 					[
-						46
+						45
 					]
 				},
 				{
@@ -293,11 +277,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 16,
+					"projectIndex" : 15,
 					"source" : "components/threads",
 					"targetIndexes" : 
 					[
-						45
+						44
 					]
 				},
 				{
@@ -308,7 +292,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 17,
+					"projectIndex" : 16,
 					"source" : "components/ethercat",
 					"targetIndexes" : 
 					[
@@ -324,27 +308,28 @@
 						"string" : "3.5"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 18,
+					"projectIndex" : 17,
 					"source" : "projects/qt_occt",
 					"targetIndexes" : 
 					[
-						38,
-						39
+						37,
+						38
 					]
 				},
 				{
 					"build" : "projects/qt_nml",
+					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 19,
+					"projectIndex" : 18,
 					"source" : "projects/qt_nml",
 					"targetIndexes" : 
 					[
-						36,
-						37
+						35,
+						36
 					]
 				},
 				{
@@ -355,7 +340,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 20,
+					"projectIndex" : 19,
 					"source" : "halcmd",
 					"targetIndexes" : 
 					[
@@ -370,7 +355,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 21,
+					"projectIndex" : 20,
 					"source" : "halmeter",
 					"targetIndexes" : 
 					[
@@ -385,7 +370,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 22,
+					"projectIndex" : 21,
 					"source" : "halscope",
 					"targetIndexes" : 
 					[
@@ -400,7 +385,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 23,
+					"projectIndex" : 22,
 					"source" : "classicladder",
 					"targetIndexes" : 
 					[
@@ -415,7 +400,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 24,
+					"projectIndex" : 23,
 					"source" : "halui",
 					"targetIndexes" : 
 					[
@@ -430,7 +415,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 25,
+					"projectIndex" : 24,
 					"source" : "halrmt",
 					"targetIndexes" : 
 					[
@@ -445,11 +430,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 26,
+					"projectIndex" : 25,
 					"source" : "pci_write",
 					"targetIndexes" : 
 					[
-						35
+						34
 					]
 				},
 				{
@@ -460,11 +445,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 27,
+					"projectIndex" : 26,
 					"source" : "pci_read",
 					"targetIndexes" : 
 					[
-						34
+						33
 					]
 				},
 				{
@@ -475,7 +460,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 28,
+					"projectIndex" : 27,
 					"source" : "io",
 					"targetIndexes" : 
 					[
@@ -490,7 +475,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 29,
+					"projectIndex" : 28,
 					"source" : "iov2",
 					"targetIndexes" : 
 					[
@@ -505,11 +490,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 30,
+					"projectIndex" : 29,
 					"source" : "motion_logger",
 					"targetIndexes" : 
 					[
-						33
+						32
 					]
 				},
 				{
@@ -520,11 +505,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 31,
+					"projectIndex" : 30,
 					"source" : "sai",
 					"targetIndexes" : 
 					[
-						41
+						40
 					]
 				},
 				{
@@ -535,11 +520,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 32,
+					"projectIndex" : 31,
 					"source" : "linuxcncsrv",
 					"targetIndexes" : 
 					[
-						31
+						30
 					]
 				},
 				{
@@ -550,11 +535,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 33,
+					"projectIndex" : 32,
 					"source" : "milltask",
 					"targetIndexes" : 
 					[
-						32
+						31
 					]
 				},
 				{
@@ -565,11 +550,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 34,
+					"projectIndex" : 33,
 					"source" : "linuxcncrsh",
 					"targetIndexes" : 
 					[
-						30
+						29
 					]
 				},
 				{
@@ -580,11 +565,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 35,
+					"projectIndex" : 34,
 					"source" : "schedrmt",
 					"targetIndexes" : 
 					[
-						43
+						42
 					]
 				},
 				{
@@ -595,11 +580,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 36,
+					"projectIndex" : 35,
 					"source" : "linuxcnclcd",
 					"targetIndexes" : 
 					[
-						29
+						28
 					]
 				},
 				{
@@ -610,11 +595,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 37,
+					"projectIndex" : 36,
 					"source" : "linuxcnc_tlc",
 					"targetIndexes" : 
 					[
-						28
+						27
 					]
 				},
 				{
@@ -625,7 +610,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 38,
+					"projectIndex" : 37,
 					"source" : "hal_tlc",
 					"targetIndexes" : 
 					[
@@ -640,11 +625,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 39,
+					"projectIndex" : 38,
 					"source" : "lineardeltakins_py",
 					"targetIndexes" : 
 					[
-						24
+						23
 					]
 				},
 				{
@@ -655,11 +640,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 40,
+					"projectIndex" : 39,
 					"source" : "rotarydeltakins_py",
 					"targetIndexes" : 
 					[
-						40
+						39
 					]
 				},
 				{
@@ -670,7 +655,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 41,
+					"projectIndex" : 40,
 					"source" : "hal_py",
 					"targetIndexes" : 
 					[
@@ -685,7 +670,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 42,
+					"projectIndex" : 41,
 					"source" : "togl_py",
 					"targetIndexes" : 
 					[
@@ -700,11 +685,11 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 43,
+					"projectIndex" : 42,
 					"source" : "linuxcnc_py",
 					"targetIndexes" : 
 					[
-						27
+						26
 					]
 				},
 				{
@@ -715,7 +700,7 @@
 						"string" : "3.0"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 44,
+					"projectIndex" : 43,
 					"source" : "gcode_py",
 					"targetIndexes" : 
 					[
@@ -771,8 +756,7 @@
 						40,
 						41,
 						42,
-						43,
-						44
+						43
 					],
 					"directoryIndexes" : 
 					[
@@ -789,7 +773,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						42
+						41
 					]
 				},
 				{
@@ -801,7 +785,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						26
+						25
 					]
 				},
 				{
@@ -813,7 +797,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						17
+						16
 					]
 				},
 				{
@@ -825,7 +809,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						18
+						17
 					]
 				},
 				{
@@ -837,7 +821,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						23
+						22
 					]
 				},
 				{
@@ -849,7 +833,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						19
+						18
 					]
 				},
 				{
@@ -861,7 +845,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						25
+						24
 					]
 				},
 				{
@@ -873,7 +857,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						20
+						19
 					]
 				},
 				{
@@ -885,7 +869,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						21
+						20
 					]
 				},
 				{
@@ -897,7 +881,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						22
+						21
 					]
 				},
 				{
@@ -917,18 +901,6 @@
 					[
 						12
 					],
-					"name" : "libhalui",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						16
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						13
-					],
 					"name" : "hal_lib",
 					"parentIndex" : 0,
 					"targetIndexes" : 
@@ -939,33 +911,21 @@
 				{
 					"directoryIndexes" : 
 					[
-						14
+						13
 					],
 					"name" : "test",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						44
+						43
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						15
+						14
 					],
 					"name" : "tp",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						46
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						16
-					],
-					"name" : "threads",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -975,7 +935,19 @@
 				{
 					"directoryIndexes" : 
 					[
-						17
+						15
+					],
+					"name" : "threads",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						44
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						16
 					],
 					"name" : "lcec_conf",
 					"parentIndex" : 0,
@@ -988,33 +960,33 @@
 				{
 					"directoryIndexes" : 
 					[
-						18
+						17
 					],
 					"name" : "qt_occt",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						38,
-						39
+						37,
+						38
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						18
+					],
+					"name" : "qt_nml",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						35,
+						36
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
 						19
-					],
-					"name" : "qt_nml",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						36,
-						37
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						20
 					],
 					"name" : "halcmd",
 					"parentIndex" : 0,
@@ -1026,7 +998,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						21
+						20
 					],
 					"name" : "halmeter",
 					"parentIndex" : 0,
@@ -1038,7 +1010,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						22
+						21
 					],
 					"name" : "halscope",
 					"parentIndex" : 0,
@@ -1050,7 +1022,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						23
+						22
 					],
 					"name" : "classicladder",
 					"parentIndex" : 0,
@@ -1062,7 +1034,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						24
+						23
 					],
 					"name" : "halui",
 					"parentIndex" : 0,
@@ -1074,7 +1046,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						25
+						24
 					],
 					"name" : "halrmt",
 					"parentIndex" : 0,
@@ -1086,21 +1058,9 @@
 				{
 					"directoryIndexes" : 
 					[
-						26
+						25
 					],
 					"name" : "pci_write",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						35
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						27
-					],
-					"name" : "pci_read",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1110,7 +1070,19 @@
 				{
 					"directoryIndexes" : 
 					[
-						28
+						26
+					],
+					"name" : "pci_read",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						33
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						27
 					],
 					"name" : "io",
 					"parentIndex" : 0,
@@ -1122,7 +1094,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						29
+						28
 					],
 					"name" : "iov2",
 					"parentIndex" : 0,
@@ -1134,57 +1106,33 @@
 				{
 					"directoryIndexes" : 
 					[
-						30
+						29
 					],
 					"name" : "motion-logger",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						33
+						32
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						31
+						30
 					],
 					"name" : "rs274",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						41
+						40
 					]
 				},
 				{
 					"directoryIndexes" : 
-					[
-						32
-					],
-					"name" : "linuxcncsrv",
-					"parentIndex" : 0,
-					"targetIndexes" : 
 					[
 						31
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						33
 					],
-					"name" : "milltask",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						32
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						34
-					],
-					"name" : "linuxcncrsh",
+					"name" : "linuxcncsrv",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1194,21 +1142,21 @@
 				{
 					"directoryIndexes" : 
 					[
-						35
+						32
 					],
-					"name" : "schedrmt",
+					"name" : "milltask",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						43
+						31
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						36
+						33
 					],
-					"name" : "linuxcnclcd",
+					"name" : "linuxcncrsh",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1218,9 +1166,21 @@
 				{
 					"directoryIndexes" : 
 					[
-						37
+						34
 					],
-					"name" : "linuxcnc_tlc",
+					"name" : "schedrmt",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						42
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						35
+					],
+					"name" : "linuxcnclcd",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -1230,7 +1190,19 @@
 				{
 					"directoryIndexes" : 
 					[
-						38
+						36
+					],
+					"name" : "linuxcnc_tlc",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						27
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						37
 					],
 					"name" : "hal_tlc",
 					"parentIndex" : 0,
@@ -1242,31 +1214,31 @@
 				{
 					"directoryIndexes" : 
 					[
-						39
+						38
 					],
 					"name" : "lineardeltakins",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						24
+						23
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						40
+						39
 					],
 					"name" : "rotarydeltakins",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						40
+						39
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						41
+						40
 					],
 					"name" : "_hal",
 					"parentIndex" : 0,
@@ -1278,7 +1250,7 @@
 				{
 					"directoryIndexes" : 
 					[
-						42
+						41
 					],
 					"name" : "_togl",
 					"parentIndex" : 0,
@@ -1290,19 +1262,19 @@
 				{
 					"directoryIndexes" : 
 					[
-						43
+						42
 					],
 					"name" : "linuxcnc_py",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						27
+						26
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						44
+						43
 					],
 					"name" : "gcode",
 					"parentIndex" : 0,
@@ -1315,109 +1287,109 @@
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 41,
+					"directoryIndex" : 40,
 					"id" : "_hal::@ccead1037d4c58d5d3f3",
 					"jsonFile" : "target-_hal-31c50fcd693fda84080e.json",
 					"name" : "_hal",
-					"projectIndex" : 41
+					"projectIndex" : 40
 				},
 				{
-					"directoryIndex" : 42,
+					"directoryIndex" : 41,
 					"id" : "_togl::@86a052b3028c59544279",
 					"jsonFile" : "target-_togl-88454d43aca76d853ba0.json",
 					"name" : "_togl",
-					"projectIndex" : 42
-				},
-				{
-					"directoryIndex" : 23,
-					"id" : "classicladder::@2d96e050c8962f15af59",
-					"jsonFile" : "target-classicladder-29df802b479fcbb068ca.json",
-					"name" : "classicladder",
-					"projectIndex" : 23
-				},
-				{
-					"directoryIndex" : 44,
-					"id" : "gcode::@f4ad55f59c915f3a86cb",
-					"jsonFile" : "target-gcode-82430c59a844801dd64b.json",
-					"name" : "gcode",
-					"projectIndex" : 44
-				},
-				{
-					"directoryIndex" : 13,
-					"id" : "hal_lib::@181654c82d08f5f64193",
-					"jsonFile" : "target-hal_lib-36f5e7f2f6dc8967a3d4.json",
-					"name" : "hal_lib",
-					"projectIndex" : 13
-				},
-				{
-					"directoryIndex" : 38,
-					"id" : "hal_tlc::@df37c256dc006a2cee58",
-					"jsonFile" : "target-hal_tlc-250c33b5876b7277fbc2.json",
-					"name" : "hal_tlc",
-					"projectIndex" : 38
-				},
-				{
-					"directoryIndex" : 20,
-					"id" : "halcmd::@1f17e775d1a3e64320df",
-					"jsonFile" : "target-halcmd-b6258559fa7a31c79632.json",
-					"name" : "halcmd",
-					"projectIndex" : 20
-				},
-				{
-					"directoryIndex" : 21,
-					"id" : "halmeter::@dbcfe65feedfd999f5aa",
-					"jsonFile" : "target-halmeter-0d9965a2ffa99343ec65.json",
-					"name" : "halmeter",
-					"projectIndex" : 21
-				},
-				{
-					"directoryIndex" : 25,
-					"id" : "halrmt::@ee8516805f4176e9cc3a",
-					"jsonFile" : "target-halrmt-b7b0519317a8976c0cb9.json",
-					"name" : "halrmt",
-					"projectIndex" : 25
+					"projectIndex" : 41
 				},
 				{
 					"directoryIndex" : 22,
-					"id" : "halscope::@db8ca3555d5edd4af2bb",
-					"jsonFile" : "target-halscope-40894ae72efabd4ac492.json",
-					"name" : "halscope",
+					"id" : "classicladder::@2d96e050c8962f15af59",
+					"jsonFile" : "target-classicladder-29df802b479fcbb068ca.json",
+					"name" : "classicladder",
 					"projectIndex" : 22
 				},
 				{
+					"directoryIndex" : 43,
+					"id" : "gcode::@f4ad55f59c915f3a86cb",
+					"jsonFile" : "target-gcode-82430c59a844801dd64b.json",
+					"name" : "gcode",
+					"projectIndex" : 43
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "hal_lib::@181654c82d08f5f64193",
+					"jsonFile" : "target-hal_lib-36f5e7f2f6dc8967a3d4.json",
+					"name" : "hal_lib",
+					"projectIndex" : 12
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "hal_tlc::@df37c256dc006a2cee58",
+					"jsonFile" : "target-hal_tlc-250c33b5876b7277fbc2.json",
+					"name" : "hal_tlc",
+					"projectIndex" : 37
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "halcmd::@1f17e775d1a3e64320df",
+					"jsonFile" : "target-halcmd-b6258559fa7a31c79632.json",
+					"name" : "halcmd",
+					"projectIndex" : 19
+				},
+				{
+					"directoryIndex" : 20,
+					"id" : "halmeter::@dbcfe65feedfd999f5aa",
+					"jsonFile" : "target-halmeter-0d9965a2ffa99343ec65.json",
+					"name" : "halmeter",
+					"projectIndex" : 20
+				},
+				{
 					"directoryIndex" : 24,
-					"id" : "halui::@a4ea0616aca5dc723302",
-					"jsonFile" : "target-halui-6e02d55db86d095fd7f1.json",
-					"name" : "halui",
+					"id" : "halrmt::@ee8516805f4176e9cc3a",
+					"jsonFile" : "target-halrmt-b7b0519317a8976c0cb9.json",
+					"name" : "halrmt",
 					"projectIndex" : 24
 				},
 				{
-					"directoryIndex" : 28,
+					"directoryIndex" : 21,
+					"id" : "halscope::@db8ca3555d5edd4af2bb",
+					"jsonFile" : "target-halscope-40894ae72efabd4ac492.json",
+					"name" : "halscope",
+					"projectIndex" : 21
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "halui::@a4ea0616aca5dc723302",
+					"jsonFile" : "target-halui-6e02d55db86d095fd7f1.json",
+					"name" : "halui",
+					"projectIndex" : 23
+				},
+				{
+					"directoryIndex" : 27,
 					"id" : "io::@9998546b0f8df173ae92",
 					"jsonFile" : "target-io-7ad7453e17ed6b4220dd.json",
 					"name" : "io",
-					"projectIndex" : 28
+					"projectIndex" : 27
 				},
 				{
-					"directoryIndex" : 29,
+					"directoryIndex" : 28,
 					"id" : "iov2::@e2f7234e62c305b0c008",
 					"jsonFile" : "target-iov2-d426bf92ec2f4ec6b7ad.json",
 					"name" : "iov2",
-					"projectIndex" : 29
+					"projectIndex" : 28
 				},
 				{
-					"directoryIndex" : 17,
+					"directoryIndex" : 16,
 					"id" : "lcec::@c85adff63bc4f6832adc",
 					"jsonFile" : "target-lcec-502fc565ec3d5c48464b.json",
 					"name" : "lcec",
-					"projectIndex" : 17
+					"projectIndex" : 16
 				},
 				{
-					"directoryIndex" : 17,
+					"directoryIndex" : 16,
 					"id" : "lcec_conf::@c85adff63bc4f6832adc",
 					"jsonFile" : "target-lcec_conf-dbee38dc6255772e8c6d.json",
 					"name" : "lcec_conf",
-					"projectIndex" : 17
+					"projectIndex" : 16
 				},
 				{
 					"directoryIndex" : 11,
@@ -1425,13 +1397,6 @@
 					"jsonFile" : "target-libcanterp-efcb37eaf3bf6bf3512d.json",
 					"name" : "libcanterp",
 					"projectIndex" : 11
-				},
-				{
-					"directoryIndex" : 12,
-					"id" : "libhalui::@c34dcbde408434fe0799",
-					"jsonFile" : "target-libhalui-911b265f2971a3de2984.json",
-					"name" : "libhalui",
-					"projectIndex" : 12
 				},
 				{
 					"directoryIndex" : 3,
@@ -1483,11 +1448,11 @@
 					"projectIndex" : 5
 				},
 				{
-					"directoryIndex" : 39,
+					"directoryIndex" : 38,
 					"id" : "lineardeltakins::@a377f7f3ef850a26aae3",
 					"jsonFile" : "target-lineardeltakins-ba7a3ff47d7e719b2f28.json",
 					"name" : "lineardeltakins",
-					"projectIndex" : 39
+					"projectIndex" : 38
 				},
 				{
 					"directoryIndex" : 7,
@@ -1504,109 +1469,109 @@
 					"projectIndex" : 2
 				},
 				{
-					"directoryIndex" : 43,
+					"directoryIndex" : 42,
 					"id" : "linuxcnc_py::@0f1b16824e0a2a39bd82",
 					"jsonFile" : "target-linuxcnc_py-cc9f97091e5dcf283d6d.json",
 					"name" : "linuxcnc_py",
-					"projectIndex" : 43
-				},
-				{
-					"directoryIndex" : 37,
-					"id" : "linuxcnc_tlc::@da059d315ab2d4684b77",
-					"jsonFile" : "target-linuxcnc_tlc-b860b931cd547478e1de.json",
-					"name" : "linuxcnc_tlc",
-					"projectIndex" : 37
+					"projectIndex" : 42
 				},
 				{
 					"directoryIndex" : 36,
-					"id" : "linuxcnclcd::@3137aef15a868b1ad966",
-					"jsonFile" : "target-linuxcnclcd-21bdb5bc4033a7043397.json",
-					"name" : "linuxcnclcd",
+					"id" : "linuxcnc_tlc::@da059d315ab2d4684b77",
+					"jsonFile" : "target-linuxcnc_tlc-b860b931cd547478e1de.json",
+					"name" : "linuxcnc_tlc",
 					"projectIndex" : 36
 				},
 				{
-					"directoryIndex" : 34,
-					"id" : "linuxcncrsh::@e1dd18eaf175b37aa146",
-					"jsonFile" : "target-linuxcncrsh-be6aedef079c1239b41d.json",
-					"name" : "linuxcncrsh",
-					"projectIndex" : 34
-				},
-				{
-					"directoryIndex" : 32,
-					"id" : "linuxcncsrv::@81218ead9c597877762b",
-					"jsonFile" : "target-linuxcncsrv-28d7719bd070b0b382a1.json",
-					"name" : "linuxcncsrv",
-					"projectIndex" : 32
+					"directoryIndex" : 35,
+					"id" : "linuxcnclcd::@3137aef15a868b1ad966",
+					"jsonFile" : "target-linuxcnclcd-21bdb5bc4033a7043397.json",
+					"name" : "linuxcnclcd",
+					"projectIndex" : 35
 				},
 				{
 					"directoryIndex" : 33,
-					"id" : "milltask::@d1334ecc1d63caeb52f9",
-					"jsonFile" : "target-milltask-521ef3a5796acd3aacd9.json",
-					"name" : "milltask",
+					"id" : "linuxcncrsh::@e1dd18eaf175b37aa146",
+					"jsonFile" : "target-linuxcncrsh-be6aedef079c1239b41d.json",
+					"name" : "linuxcncrsh",
 					"projectIndex" : 33
 				},
 				{
-					"directoryIndex" : 30,
+					"directoryIndex" : 31,
+					"id" : "linuxcncsrv::@81218ead9c597877762b",
+					"jsonFile" : "target-linuxcncsrv-28d7719bd070b0b382a1.json",
+					"name" : "linuxcncsrv",
+					"projectIndex" : 31
+				},
+				{
+					"directoryIndex" : 32,
+					"id" : "milltask::@d1334ecc1d63caeb52f9",
+					"jsonFile" : "target-milltask-521ef3a5796acd3aacd9.json",
+					"name" : "milltask",
+					"projectIndex" : 32
+				},
+				{
+					"directoryIndex" : 29,
 					"id" : "motion-logger::@78056885ae24361b7255",
 					"jsonFile" : "target-motion-logger-ef821b8a68fbc023025f.json",
 					"name" : "motion-logger",
-					"projectIndex" : 30
-				},
-				{
-					"directoryIndex" : 27,
-					"id" : "pci_read::@5b0c03e0d211115f05b6",
-					"jsonFile" : "target-pci_read-cc0779b1d4e7759af4ff.json",
-					"name" : "pci_read",
-					"projectIndex" : 27
+					"projectIndex" : 29
 				},
 				{
 					"directoryIndex" : 26,
-					"id" : "pci_write::@d2246b2c7127254f5297",
-					"jsonFile" : "target-pci_write-d3549876488733f3d22f.json",
-					"name" : "pci_write",
+					"id" : "pci_read::@5b0c03e0d211115f05b6",
+					"jsonFile" : "target-pci_read-cc0779b1d4e7759af4ff.json",
+					"name" : "pci_read",
 					"projectIndex" : 26
 				},
 				{
-					"directoryIndex" : 19,
-					"id" : "qt_nml::@dc3d7d6e65226d651c42",
-					"jsonFile" : "target-qt_nml-21270a5a5c9a7e2380cb.json",
-					"name" : "qt_nml",
-					"projectIndex" : 19
+					"directoryIndex" : 25,
+					"id" : "pci_write::@d2246b2c7127254f5297",
+					"jsonFile" : "target-pci_write-d3549876488733f3d22f.json",
+					"name" : "pci_write",
+					"projectIndex" : 25
 				},
 				{
-					"directoryIndex" : 19,
+					"directoryIndex" : 18,
+					"id" : "qt_nml::@dc3d7d6e65226d651c42",
+					"jsonFile" : "target-qt_nml-3c5a5c53aaf9afdf25ad.json",
+					"name" : "qt_nml",
+					"projectIndex" : 18
+				},
+				{
+					"directoryIndex" : 18,
 					"id" : "qt_nml_autogen::@dc3d7d6e65226d651c42",
 					"jsonFile" : "target-qt_nml_autogen-281d4c14eedb98600590.json",
 					"name" : "qt_nml_autogen",
-					"projectIndex" : 19
-				},
-				{
-					"directoryIndex" : 18,
-					"id" : "qt_occt::@7b19580d1298fa632c9f",
-					"jsonFile" : "target-qt_occt-b7153456073f3c19ca19.json",
-					"name" : "qt_occt",
 					"projectIndex" : 18
 				},
 				{
-					"directoryIndex" : 18,
+					"directoryIndex" : 17,
+					"id" : "qt_occt::@7b19580d1298fa632c9f",
+					"jsonFile" : "target-qt_occt-ffc5be55671611d34964.json",
+					"name" : "qt_occt",
+					"projectIndex" : 17
+				},
+				{
+					"directoryIndex" : 17,
 					"id" : "qt_occt_autogen::@7b19580d1298fa632c9f",
 					"jsonFile" : "target-qt_occt_autogen-2af73fb59584282cd185.json",
 					"name" : "qt_occt_autogen",
-					"projectIndex" : 18
+					"projectIndex" : 17
 				},
 				{
-					"directoryIndex" : 40,
+					"directoryIndex" : 39,
 					"id" : "rotarydeltakins::@4994e271654b74d39745",
 					"jsonFile" : "target-rotarydeltakins-757a00e976fdf6151d87.json",
 					"name" : "rotarydeltakins",
-					"projectIndex" : 40
+					"projectIndex" : 39
 				},
 				{
-					"directoryIndex" : 31,
+					"directoryIndex" : 30,
 					"id" : "rs274::@c56801e398c33da3819a",
 					"jsonFile" : "target-rs274-b996d638c195eaca8116.json",
 					"name" : "rs274",
-					"projectIndex" : 31
+					"projectIndex" : 30
 				},
 				{
 					"directoryIndex" : 1,
@@ -1616,32 +1581,32 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 35,
+					"directoryIndex" : 34,
 					"id" : "schedrmt::@7ec6d298df89a6c9b520",
 					"jsonFile" : "target-schedrmt-fdd415ac6f6afa65875a.json",
 					"name" : "schedrmt",
-					"projectIndex" : 35
+					"projectIndex" : 34
 				},
 				{
-					"directoryIndex" : 14,
+					"directoryIndex" : 13,
 					"id" : "test::@ce0ba1ce342bc938eff1",
 					"jsonFile" : "target-test-e035bfa8fa7523296459.json",
 					"name" : "test",
-					"projectIndex" : 14
-				},
-				{
-					"directoryIndex" : 16,
-					"id" : "threads::@1f49283c08ef6884d1e1",
-					"jsonFile" : "target-threads-b2b885179758f42c71f3.json",
-					"name" : "threads",
-					"projectIndex" : 16
+					"projectIndex" : 13
 				},
 				{
 					"directoryIndex" : 15,
+					"id" : "threads::@1f49283c08ef6884d1e1",
+					"jsonFile" : "target-threads-b2b885179758f42c71f3.json",
+					"name" : "threads",
+					"projectIndex" : 15
+				},
+				{
+					"directoryIndex" : 14,
 					"id" : "tp::@6298070b9e5d668cbcd3",
 					"jsonFile" : "target-tp-c5b4eaad7f822755d6f4.json",
 					"name" : "tp",
-					"projectIndex" : 15
+					"projectIndex" : 14
 				}
 			]
 		}

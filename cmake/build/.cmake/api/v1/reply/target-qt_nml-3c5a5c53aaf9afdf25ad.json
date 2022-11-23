@@ -11,6 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"install",
 			"target_link_libraries",
 			"add_definitions",
 			"include_directories"
@@ -27,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 50,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 122,
+				"line" : 125,
 				"parent" : 0
 			},
 			{
@@ -45,61 +46,67 @@
 			{
 				"command" : 3,
 				"file" : 0,
+				"line" : 118,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
 				"line" : 62,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 0,
 				"line" : 63,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 0,
 				"line" : 64,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 65,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 0,
 				"line" : 66,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 68,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 71,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 67,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 0,
 				"line" : 69,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 0,
-				"line" : 70,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 68,
 				"parent" : 0
 			}
 		]
@@ -110,7 +117,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"fragment" : "-fPIC"
 				},
 				{
@@ -120,23 +127,23 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "QT_CORE_LIB"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "QT_GUI_LIB"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "QT_NO_DEBUG"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "QT_WIDGETS_LIB"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"define" : "ULAPI"
 				}
 			],
@@ -153,90 +160,90 @@
 					"path" : "/home/user/linuxcnc/cmake/build/projects/qt_nml/qt_nml_autogen/include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/.."
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../.."
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../common_src"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../qt_occt_src"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../rtapi_src"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../emc_src"
 				},
 				{
-					"backtrace" : 10,
-					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../libhalui_src"
-				},
-				{
 					"backtrace" : 11,
-					"isSystem" : true,
-					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../liblinuxcnchal_src"
+					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../libhalui_src"
 				},
 				{
 					"backtrace" : 12,
 					"isSystem" : true,
-					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../libnml_src"
+					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../liblinuxcnchal_src"
 				},
 				{
 					"backtrace" : 13,
 					"isSystem" : true,
+					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../libnml_src"
+				},
+				{
+					"backtrace" : 14,
+					"isSystem" : true,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../libtooldata_src"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/opt/qt-creator/5.15.1/gcc_64/include"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/opt/qt-creator/5.15.1/gcc_64/include/QtWidgets"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/opt/qt-creator/5.15.1/gcc_64/include/QtGui"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/opt/qt-creator/5.15.1/gcc_64/include/QtCore"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/opt/qt-creator/5.15.1/gcc_64/./mkspecs/linux-g++"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../liblinuxcncini_src"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../liblinuxcnc_src"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../librs274_src"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/home/user/linuxcnc/cmake/projects/qt_nml/../../halui_src"
 				}
@@ -246,8 +253,7 @@
 			[
 				0,
 				1,
-				2,
-				7
+				2
 			]
 		}
 	],
@@ -259,6 +265,20 @@
 		}
 	],
 	"id" : "qt_nml::@dc3d7d6e65226d651c42",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
 	"link" : 
 	{
 		"commandFragments" : 
@@ -268,46 +288,46 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/opt/qt-creator/5.15.1/gcc_64/lib:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcnchal:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcncini:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libnml:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/librs274:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libtooldata:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libhalui",
+				"fragment" : "-Wl,-rpath,/opt/qt-creator/5.15.1/gcc_64/lib:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcnchal:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcncini:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libnml:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/librs274:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libtooldata:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libhalui:",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "/opt/qt-creator/5.15.1/gcc_64/lib/libQt5Widgets.so.5.15.1",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "../../../projects/qt_nml/../../build/liblinuxcnchal/liblinuxcnchal.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "../../../projects/qt_nml/../../build/liblinuxcncini/liblinuxcncini.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "../../../projects/qt_nml/../../build/liblinuxcnc/liblinuxcnc.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "../../../projects/qt_nml/../../build/libnml/libnml.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "../../../projects/qt_nml/../../build/librs274/librs274.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "../../../projects/qt_nml/../../build/libtooldata/libtooldata.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "../../../projects/qt_nml/../../build/libhalui/libhalui.so",
 				"role" : "libraries"
 			},
@@ -337,8 +357,7 @@
 			[
 				0,
 				1,
-				2,
-				7
+				2
 			]
 		},
 		{
@@ -346,8 +365,7 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5,
-				6
+				5
 			]
 		},
 		{
@@ -393,17 +411,6 @@
 			"backtrace" : 1,
 			"path" : "projects/qt_nml/nml.h",
 			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "projects/qt_nml/halui.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "projects/qt_nml/halui.cpp",
-			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"

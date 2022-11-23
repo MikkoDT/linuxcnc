@@ -165,9 +165,6 @@
 			"path" : "libcanterp/CMakeLists.txt"
 		},
 		{
-			"path" : "libhalui/CMakeLists.txt"
-		},
-		{
 			"path" : "hal_lib/CMakeLists.txt"
 		},
 		{

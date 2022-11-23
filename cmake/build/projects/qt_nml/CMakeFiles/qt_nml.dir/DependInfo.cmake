@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/linuxcnc/cmake/projects/qt_nml/halui.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_nml/CMakeFiles/qt_nml.dir/halui.cpp.o"
   "/home/user/linuxcnc/cmake/projects/qt_nml/main.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_nml/CMakeFiles/qt_nml.dir/main.cpp.o"
   "/home/user/linuxcnc/cmake/projects/qt_nml/mainwindow.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_nml/CMakeFiles/qt_nml.dir/mainwindow.cpp.o"
   "/home/user/linuxcnc/cmake/build/projects/qt_nml/qt_nml_autogen/mocs_compilation.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_nml/CMakeFiles/qt_nml.dir/qt_nml_autogen/mocs_compilation.cpp.o"

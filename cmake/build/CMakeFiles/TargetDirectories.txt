@@ -81,13 +81,6 @@
 /home/user/linuxcnc/cmake/build/libcanterp/CMakeFiles/rebuild_cache.dir
 /home/user/linuxcnc/cmake/build/libcanterp/CMakeFiles/edit_cache.dir
 /home/user/linuxcnc/cmake/build/libcanterp/CMakeFiles/libcanterp.dir
-/home/user/linuxcnc/cmake/build/libhalui/CMakeFiles/install/strip.dir
-/home/user/linuxcnc/cmake/build/libhalui/CMakeFiles/install/local.dir
-/home/user/linuxcnc/cmake/build/libhalui/CMakeFiles/install.dir
-/home/user/linuxcnc/cmake/build/libhalui/CMakeFiles/list_install_components.dir
-/home/user/linuxcnc/cmake/build/libhalui/CMakeFiles/rebuild_cache.dir
-/home/user/linuxcnc/cmake/build/libhalui/CMakeFiles/edit_cache.dir
-/home/user/linuxcnc/cmake/build/libhalui/CMakeFiles/libhalui.dir
 /home/user/linuxcnc/cmake/build/hal_lib/CMakeFiles/install/strip.dir
 /home/user/linuxcnc/cmake/build/hal_lib/CMakeFiles/install/local.dir
 /home/user/linuxcnc/cmake/build/hal_lib/CMakeFiles/install.dir

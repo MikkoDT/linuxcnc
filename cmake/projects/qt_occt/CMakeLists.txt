@@ -233,5 +233,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE pthread rt
     ${OpenCASCADE_LIBS} Qt5::Widgets Qt5::OpenGL ${OPENGL_LIBRARIES} ${GLUT_LIBRARY}
     )
 
-# make install
-install(TARGETS ${PROJECT} DESTINATION ${RT_DIR})
+# Make install
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../../bin)

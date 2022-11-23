@@ -50,9 +50,6 @@ add_subdirectory(${SRC_DIR}/libpyplugin)
 add_subdirectory(${SRC_DIR}/librs274)
 add_subdirectory(${SRC_DIR}/libcanterp)
 
-# added by skynet, halui used as lib.
-add_subdirectory(${SRC_DIR}/libhalui)
-
 # ~/rtlib (realtime modules for real hardware or simulating)
 add_subdirectory(${SRC_DIR}/hal_lib)
 add_subdirectory(${SRC_DIR}/components/test)

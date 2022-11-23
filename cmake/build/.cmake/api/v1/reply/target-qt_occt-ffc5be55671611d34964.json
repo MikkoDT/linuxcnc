@@ -360,7 +360,7 @@
 		[
 			{
 				"backtrace" : 2,
-				"path" : "bin"
+				"path" : "/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin"
 			}
 		],
 		"prefix" : 

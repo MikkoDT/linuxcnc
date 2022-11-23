@@ -1,5 +1,5 @@
 /home/user/linuxcnc/cmake/build/rtapi/../../../bin/rtapi_app
-/home/user/linuxcnc/cmake/build/module_helper/../../../bin/linuxcnc_module_helper.so
+/home/user/linuxcnc/cmake/build/linuxcnc_module_helper/../../../bin/linuxcnc_module_helper.so
 /home/user/linuxcnc/cmake/build/liblinuxcnchal/../../../lib/liblinuxcnchal.so.0
 /home/user/linuxcnc/cmake/build/liblinuxcnchal/../../../lib/liblinuxcnchal.so
 /home/user/linuxcnc/cmake/build/liblinuxcncini/../../../lib/liblinuxcncini.so.0
@@ -18,7 +18,12 @@
 /home/user/linuxcnc/cmake/build/libcanterp/../../../lib/libcanterp.so.0
 /home/user/linuxcnc/cmake/build/libcanterp/../../../lib/libcanterp.so
 /home/user/linuxcnc/cmake/build/hal_lib/../../../rtlib/hal_lib.so
+/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so
 /home/user/linuxcnc/cmake/build/components/threads/../../../rtlib/threads.so
+/home/user/linuxcnc/cmake/build/components/ethercat/../../../rtlib/lcec.so
+/home/user/linuxcnc/cmake/build/components/ethercat/../../../rtlib/lcec_conf
+/home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt
+/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml
 /home/user/linuxcnc/cmake/build/halcmd/../../../bin/halcmd
 /home/user/linuxcnc/cmake/build/halmeter/../../../bin/halmeter
 /home/user/linuxcnc/cmake/build/halscope/../../../bin/halscope
