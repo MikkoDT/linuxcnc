@@ -62,7 +62,7 @@ file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/build/projects/qt_nml/../../
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml"
-         OLD_RPATH "/opt/qt-creator/5.15.1/gcc_64/lib:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcnchal:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcncini:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libnml:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/librs274:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libtooldata:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libhalui:"
+         OLD_RPATH "/opt/qt-creator/5.15.1/gcc_64/lib:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcnchal:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/liblinuxcncini:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libnml:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/librs274:/home/user/linuxcnc/cmake/projects/qt_nml/../../build/libtooldata:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml")

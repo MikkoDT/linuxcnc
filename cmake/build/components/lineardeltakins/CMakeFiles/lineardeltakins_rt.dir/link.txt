@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,lineardeltakins_rt.so -o lineardeltakins_rt.so CMakeFiles/lineardeltakins_rt.dir/__/lineardeltakins_src/lineardeltakins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/lineardeltakins/../../build/liblinuxcnchal: ../../../components/lineardeltakins/../../build/liblinuxcnchal/liblinuxcnchal.so 

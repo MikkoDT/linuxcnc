@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,lineardeltakins.so.0 -o lineardeltakins.so.0 CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.o 
+/usr/bin/c++ -fPIC -shared -Wl,-soname,lineardeltakins.so.0 -o lineardeltakins.so.0 CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.o 

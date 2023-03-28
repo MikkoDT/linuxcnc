@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,rosekins.so -o rosekins.so CMakeFiles/rosekins.dir/__/rosekins_src/rosekins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/rosekins/../../build/liblinuxcnchal: ../../../components/rosekins/../../build/liblinuxcnchal/liblinuxcnchal.so 

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,corexykins.so -o corexykins.so CMakeFiles/corexykins.dir/__/corexykins_src/corexykins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/corexykins/../../build/liblinuxcnchal: ../../../components/corexykins/../../build/liblinuxcnchal/liblinuxcnchal.so 

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,genhexkins.so -o genhexkins.so CMakeFiles/genhexkins.dir/__/genhexkins_src/genhexkins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/genhexkins/../../build/liblinuxcnchal: ../../../components/genhexkins/../../build/liblinuxcnchal/liblinuxcnchal.so 

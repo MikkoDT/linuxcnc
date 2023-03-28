@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,rotarydeltakins_rt.so -o rotarydeltakins_rt.so CMakeFiles/rotarydeltakins_rt.dir/__/rotarydeltakins_src/rotarydeltakins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/rotarydeltakins/../../build/liblinuxcnchal: ../../../components/rotarydeltakins/../../build/liblinuxcnchal/liblinuxcnchal.so 

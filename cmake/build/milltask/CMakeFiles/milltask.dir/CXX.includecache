@@ -186,6 +186,18 @@ type_traits
 iostream
 -
 
+/home/user/linuxcnc/cmake/emc_src/backtrace.cc
+stdio.h
+-
+stdlib.h
+-
+sys/wait.h
+-
+unistd.h
+-
+signal.h
+-
+
 /home/user/linuxcnc/cmake/emc_src/canon.hh
 stdio.h
 -

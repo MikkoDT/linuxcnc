@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,maxkins.so -o maxkins.so CMakeFiles/maxkins.dir/__/maxkins_src/maxkins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/maxkins/../../build/liblinuxcnchal: ../../../components/maxkins/../../build/liblinuxcnchal/liblinuxcnchal.so 

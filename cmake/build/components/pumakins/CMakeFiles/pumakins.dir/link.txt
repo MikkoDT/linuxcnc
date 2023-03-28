@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,pumakins.so -o pumakins.so CMakeFiles/pumakins.dir/__/pumakins_src/pumakins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/pumakins/../../build/liblinuxcnchal: ../../../components/pumakins/../../build/liblinuxcnchal/liblinuxcnchal.so 

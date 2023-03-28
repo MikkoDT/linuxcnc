@@ -42,7 +42,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../projects/qt_nml/../../liblinuxcncini_src"
   "../projects/qt_nml/../../liblinuxcnc_src"
   "../projects/qt_nml/../../librs274_src"
-  "../projects/qt_nml/../../halui_src"
   )
 
 # Targets to which this target links.

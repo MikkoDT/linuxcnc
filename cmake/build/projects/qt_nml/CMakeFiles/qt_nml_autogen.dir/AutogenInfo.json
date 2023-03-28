@@ -111,7 +111,6 @@
 		"/home/user/linuxcnc/cmake/liblinuxcncini_src",
 		"/home/user/linuxcnc/cmake/liblinuxcnc_src",
 		"/home/user/linuxcnc/cmake/librs274_src",
-		"/home/user/linuxcnc/cmake/halui_src",
 		"/usr/include",
 		"/usr/include/c++/10",
 		"/usr/include/x86_64-linux-gnu/c++/10",

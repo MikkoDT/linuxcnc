@@ -190,32 +190,32 @@ lineardeltakins/fast:
 	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build
 .PHONY : lineardeltakins/fast
 
-__/kinematic_src/lineardeltakins.o: __/kinematic_src/lineardeltakins.cc.o
+__/lineardeltakins_py_src/lineardeltakins.o: __/lineardeltakins_py_src/lineardeltakins.cc.o
 
-.PHONY : __/kinematic_src/lineardeltakins.o
+.PHONY : __/lineardeltakins_py_src/lineardeltakins.o
 
 # target to build an object file
-__/kinematic_src/lineardeltakins.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.o
-.PHONY : __/kinematic_src/lineardeltakins.cc.o
+__/lineardeltakins_py_src/lineardeltakins.cc.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.o
+.PHONY : __/lineardeltakins_py_src/lineardeltakins.cc.o
 
-__/kinematic_src/lineardeltakins.i: __/kinematic_src/lineardeltakins.cc.i
+__/lineardeltakins_py_src/lineardeltakins.i: __/lineardeltakins_py_src/lineardeltakins.cc.i
 
-.PHONY : __/kinematic_src/lineardeltakins.i
+.PHONY : __/lineardeltakins_py_src/lineardeltakins.i
 
 # target to preprocess a source file
-__/kinematic_src/lineardeltakins.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.i
-.PHONY : __/kinematic_src/lineardeltakins.cc.i
+__/lineardeltakins_py_src/lineardeltakins.cc.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.i
+.PHONY : __/lineardeltakins_py_src/lineardeltakins.cc.i
 
-__/kinematic_src/lineardeltakins.s: __/kinematic_src/lineardeltakins.cc.s
+__/lineardeltakins_py_src/lineardeltakins.s: __/lineardeltakins_py_src/lineardeltakins.cc.s
 
-.PHONY : __/kinematic_src/lineardeltakins.s
+.PHONY : __/lineardeltakins_py_src/lineardeltakins.s
 
 # target to generate assembly for a file
-__/kinematic_src/lineardeltakins.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.s
-.PHONY : __/kinematic_src/lineardeltakins.cc.s
+__/lineardeltakins_py_src/lineardeltakins.cc.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.s
+.PHONY : __/lineardeltakins_py_src/lineardeltakins.cc.s
 
 # Help Target
 help:
@@ -230,9 +230,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... lineardeltakins"
-	@echo "... __/kinematic_src/lineardeltakins.o"
-	@echo "... __/kinematic_src/lineardeltakins.i"
-	@echo "... __/kinematic_src/lineardeltakins.s"
+	@echo "... __/lineardeltakins_py_src/lineardeltakins.o"
+	@echo "... __/lineardeltakins_py_src/lineardeltakins.i"
+	@echo "... __/lineardeltakins_py_src/lineardeltakins.s"
 .PHONY : help
 
 

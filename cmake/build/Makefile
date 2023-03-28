@@ -397,56 +397,264 @@ lcec/fast:
 .PHONY : lcec/fast
 
 #=============================================================================
-# Target rules for targets named qt_occt
+# Target rules for targets named lineardeltakins_rt
 
 # Build rule for target.
-qt_occt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_occt
-.PHONY : qt_occt
+lineardeltakins_rt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lineardeltakins_rt
+.PHONY : lineardeltakins_rt
 
 # fast build rule for target.
-qt_occt/fast:
-	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt.dir/build.make projects/qt_occt/CMakeFiles/qt_occt.dir/build
-.PHONY : qt_occt/fast
+lineardeltakins_rt/fast:
+	$(MAKE) $(MAKESILENT) -f components/lineardeltakins/CMakeFiles/lineardeltakins_rt.dir/build.make components/lineardeltakins/CMakeFiles/lineardeltakins_rt.dir/build
+.PHONY : lineardeltakins_rt/fast
 
 #=============================================================================
-# Target rules for targets named qt_occt_autogen
+# Target rules for targets named rotarydeltakins_rt
 
 # Build rule for target.
-qt_occt_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_occt_autogen
-.PHONY : qt_occt_autogen
+rotarydeltakins_rt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotarydeltakins_rt
+.PHONY : rotarydeltakins_rt
 
 # fast build rule for target.
-qt_occt_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/build.make projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/build
-.PHONY : qt_occt_autogen/fast
+rotarydeltakins_rt/fast:
+	$(MAKE) $(MAKESILENT) -f components/rotarydeltakins/CMakeFiles/rotarydeltakins_rt.dir/build.make components/rotarydeltakins/CMakeFiles/rotarydeltakins_rt.dir/build
+.PHONY : rotarydeltakins_rt/fast
 
 #=============================================================================
-# Target rules for targets named qt_nml
+# Target rules for targets named pumakins
 
 # Build rule for target.
-qt_nml: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_nml
-.PHONY : qt_nml
+pumakins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pumakins
+.PHONY : pumakins
 
 # fast build rule for target.
-qt_nml/fast:
-	$(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml.dir/build.make projects/qt_nml/CMakeFiles/qt_nml.dir/build
-.PHONY : qt_nml/fast
+pumakins/fast:
+	$(MAKE) $(MAKESILENT) -f components/pumakins/CMakeFiles/pumakins.dir/build.make components/pumakins/CMakeFiles/pumakins.dir/build
+.PHONY : pumakins/fast
 
 #=============================================================================
-# Target rules for targets named qt_nml_autogen
+# Target rules for targets named genserkins
 
 # Build rule for target.
-qt_nml_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_nml_autogen
-.PHONY : qt_nml_autogen
+genserkins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 genserkins
+.PHONY : genserkins
 
 # fast build rule for target.
-qt_nml_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/build.make projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/build
-.PHONY : qt_nml_autogen/fast
+genserkins/fast:
+	$(MAKE) $(MAKESILENT) -f components/genserkins/CMakeFiles/genserkins.dir/build.make components/genserkins/CMakeFiles/genserkins.dir/build
+.PHONY : genserkins/fast
+
+#=============================================================================
+# Target rules for targets named 5axiskins
+
+# Build rule for target.
+5axiskins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 5axiskins
+.PHONY : 5axiskins
+
+# fast build rule for target.
+5axiskins/fast:
+	$(MAKE) $(MAKESILENT) -f components/5axiskins/CMakeFiles/5axiskins.dir/build.make components/5axiskins/CMakeFiles/5axiskins.dir/build
+.PHONY : 5axiskins/fast
+
+#=============================================================================
+# Target rules for targets named trivkins
+
+# Build rule for target.
+trivkins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trivkins
+.PHONY : trivkins
+
+# fast build rule for target.
+trivkins/fast:
+	$(MAKE) $(MAKESILENT) -f components/trivkins/CMakeFiles/trivkins.dir/build.make components/trivkins/CMakeFiles/trivkins.dir/build
+.PHONY : trivkins/fast
+
+#=============================================================================
+# Target rules for targets named rotatekins
+
+# Build rule for target.
+rotatekins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotatekins
+.PHONY : rotatekins
+
+# fast build rule for target.
+rotatekins/fast:
+	$(MAKE) $(MAKESILENT) -f components/rotatekins/CMakeFiles/rotatekins.dir/build.make components/rotatekins/CMakeFiles/rotatekins.dir/build
+.PHONY : rotatekins/fast
+
+#=============================================================================
+# Target rules for targets named xyzac-trt-kins
+
+# Build rule for target.
+xyzac-trt-kins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xyzac-trt-kins
+.PHONY : xyzac-trt-kins
+
+# fast build rule for target.
+xyzac-trt-kins/fast:
+	$(MAKE) $(MAKESILENT) -f components/xyzac-trt-kins/CMakeFiles/xyzac-trt-kins.dir/build.make components/xyzac-trt-kins/CMakeFiles/xyzac-trt-kins.dir/build
+.PHONY : xyzac-trt-kins/fast
+
+#=============================================================================
+# Target rules for targets named xyzbc-trt-kins
+
+# Build rule for target.
+xyzbc-trt-kins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xyzbc-trt-kins
+.PHONY : xyzbc-trt-kins
+
+# fast build rule for target.
+xyzbc-trt-kins/fast:
+	$(MAKE) $(MAKESILENT) -f components/xyzbc-trt-kins/CMakeFiles/xyzbc-trt-kins.dir/build.make components/xyzbc-trt-kins/CMakeFiles/xyzbc-trt-kins.dir/build
+.PHONY : xyzbc-trt-kins/fast
+
+#=============================================================================
+# Target rules for targets named switchkins
+
+# Build rule for target.
+switchkins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 switchkins
+.PHONY : switchkins
+
+# fast build rule for target.
+switchkins/fast:
+	$(MAKE) $(MAKESILENT) -f components/switchkins/CMakeFiles/switchkins.dir/build.make components/switchkins/CMakeFiles/switchkins.dir/build
+.PHONY : switchkins/fast
+
+#=============================================================================
+# Target rules for targets named pentakins
+
+# Build rule for target.
+pentakins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pentakins
+.PHONY : pentakins
+
+# fast build rule for target.
+pentakins/fast:
+	$(MAKE) $(MAKESILENT) -f components/pentakins/CMakeFiles/pentakins.dir/build.make components/pentakins/CMakeFiles/pentakins.dir/build
+.PHONY : pentakins/fast
+
+#=============================================================================
+# Target rules for targets named scorbotkins
+
+# Build rule for target.
+scorbotkins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scorbotkins
+.PHONY : scorbotkins
+
+# fast build rule for target.
+scorbotkins/fast:
+	$(MAKE) $(MAKESILENT) -f components/scorbotkins/CMakeFiles/scorbotkins.dir/build.make components/scorbotkins/CMakeFiles/scorbotkins.dir/build
+.PHONY : scorbotkins/fast
+
+#=============================================================================
+# Target rules for targets named tripodkins
+
+# Build rule for target.
+tripodkins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tripodkins
+.PHONY : tripodkins
+
+# fast build rule for target.
+tripodkins/fast:
+	$(MAKE) $(MAKESILENT) -f components/tripodkins/CMakeFiles/tripodkins.dir/build.make components/tripodkins/CMakeFiles/tripodkins.dir/build
+.PHONY : tripodkins/fast
+
+#=============================================================================
+# Target rules for targets named scarakins
+
+# Build rule for target.
+scarakins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scarakins
+.PHONY : scarakins
+
+# fast build rule for target.
+scarakins/fast:
+	$(MAKE) $(MAKESILENT) -f components/scarakins/CMakeFiles/scarakins.dir/build.make components/scarakins/CMakeFiles/scarakins.dir/build
+.PHONY : scarakins/fast
+
+#=============================================================================
+# Target rules for targets named maxkins
+
+# Build rule for target.
+maxkins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 maxkins
+.PHONY : maxkins
+
+# fast build rule for target.
+maxkins/fast:
+	$(MAKE) $(MAKESILENT) -f components/maxkins/CMakeFiles/maxkins.dir/build.make components/maxkins/CMakeFiles/maxkins.dir/build
+.PHONY : maxkins/fast
+
+#=============================================================================
+# Target rules for targets named corexykins
+
+# Build rule for target.
+corexykins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 corexykins
+.PHONY : corexykins
+
+# fast build rule for target.
+corexykins/fast:
+	$(MAKE) $(MAKESILENT) -f components/corexykins/CMakeFiles/corexykins.dir/build.make components/corexykins/CMakeFiles/corexykins.dir/build
+.PHONY : corexykins/fast
+
+#=============================================================================
+# Target rules for targets named genhexkins
+
+# Build rule for target.
+genhexkins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 genhexkins
+.PHONY : genhexkins
+
+# fast build rule for target.
+genhexkins/fast:
+	$(MAKE) $(MAKESILENT) -f components/genhexkins/CMakeFiles/genhexkins.dir/build.make components/genhexkins/CMakeFiles/genhexkins.dir/build
+.PHONY : genhexkins/fast
+
+#=============================================================================
+# Target rules for targets named rosekins
+
+# Build rule for target.
+rosekins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosekins
+.PHONY : rosekins
+
+# fast build rule for target.
+rosekins/fast:
+	$(MAKE) $(MAKESILENT) -f components/rosekins/CMakeFiles/rosekins.dir/build.make components/rosekins/CMakeFiles/rosekins.dir/build
+.PHONY : rosekins/fast
+
+#=============================================================================
+# Target rules for targets named ugenserkins
+
+# Build rule for target.
+ugenserkins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ugenserkins
+.PHONY : ugenserkins
+
+# fast build rule for target.
+ugenserkins/fast:
+	$(MAKE) $(MAKESILENT) -f components/ugenserkins/CMakeFiles/ugenserkins.dir/build.make components/ugenserkins/CMakeFiles/ugenserkins.dir/build
+.PHONY : ugenserkins/fast
+
+#=============================================================================
+# Target rules for targets named scurve
+
+# Build rule for target.
+scurve: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scurve
+.PHONY : scurve
+
+# fast build rule for target.
+scurve/fast:
+	$(MAKE) $(MAKESILENT) -f components/scurve/CMakeFiles/scurve.dir/build.make components/scurve/CMakeFiles/scurve.dir/build
+.PHONY : scurve/fast
 
 #=============================================================================
 # Target rules for targets named halcmd
@@ -773,6 +981,71 @@ gcode/fast:
 	$(MAKE) $(MAKESILENT) -f gcode_py/CMakeFiles/gcode.dir/build.make gcode_py/CMakeFiles/gcode.dir/build
 .PHONY : gcode/fast
 
+#=============================================================================
+# Target rules for targets named qt_occt
+
+# Build rule for target.
+qt_occt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_occt
+.PHONY : qt_occt
+
+# fast build rule for target.
+qt_occt/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt.dir/build.make projects/qt_occt/CMakeFiles/qt_occt.dir/build
+.PHONY : qt_occt/fast
+
+#=============================================================================
+# Target rules for targets named qt_occt_autogen
+
+# Build rule for target.
+qt_occt_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_occt_autogen
+.PHONY : qt_occt_autogen
+
+# fast build rule for target.
+qt_occt_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/build.make projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/build
+.PHONY : qt_occt_autogen/fast
+
+#=============================================================================
+# Target rules for targets named qt_nml
+
+# Build rule for target.
+qt_nml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_nml
+.PHONY : qt_nml
+
+# fast build rule for target.
+qt_nml/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml.dir/build.make projects/qt_nml/CMakeFiles/qt_nml.dir/build
+.PHONY : qt_nml/fast
+
+#=============================================================================
+# Target rules for targets named qt_nml_autogen
+
+# Build rule for target.
+qt_nml_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_nml_autogen
+.PHONY : qt_nml_autogen
+
+# fast build rule for target.
+qt_nml_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/build.make projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/build
+.PHONY : qt_nml_autogen/fast
+
+#=============================================================================
+# Target rules for targets named sc_tp
+
+# Build rule for target.
+sc_tp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sc_tp
+.PHONY : sc_tp
+
+# fast build rule for target.
+sc_tp/fast:
+	$(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/build
+.PHONY : sc_tp/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -787,10 +1060,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... qt_nml_autogen"
 	@echo "... qt_occt_autogen"
+	@echo "... 5axiskins"
 	@echo "... _hal"
 	@echo "... _togl"
 	@echo "... classicladder"
+	@echo "... corexykins"
 	@echo "... gcode"
+	@echo "... genhexkins"
+	@echo "... genserkins"
 	@echo "... hal_lib"
 	@echo "... hal_tlc"
 	@echo "... halcmd"
@@ -811,6 +1088,7 @@ help:
 	@echo "... librs274"
 	@echo "... libtooldata"
 	@echo "... lineardeltakins"
+	@echo "... lineardeltakins_rt"
 	@echo "... linuxcnc"
 	@echo "... linuxcnc_module_helper"
 	@echo "... linuxcnc_py"
@@ -818,19 +1096,35 @@ help:
 	@echo "... linuxcnclcd"
 	@echo "... linuxcncrsh"
 	@echo "... linuxcncsrv"
+	@echo "... maxkins"
 	@echo "... milltask"
 	@echo "... motion-logger"
 	@echo "... pci_read"
 	@echo "... pci_write"
+	@echo "... pentakins"
+	@echo "... pumakins"
 	@echo "... qt_nml"
 	@echo "... qt_occt"
+	@echo "... rosekins"
 	@echo "... rotarydeltakins"
+	@echo "... rotarydeltakins_rt"
+	@echo "... rotatekins"
 	@echo "... rs274"
 	@echo "... rtapi_app"
+	@echo "... sc_tp"
+	@echo "... scarakins"
 	@echo "... schedrmt"
+	@echo "... scorbotkins"
+	@echo "... scurve"
+	@echo "... switchkins"
 	@echo "... test"
 	@echo "... threads"
 	@echo "... tp"
+	@echo "... tripodkins"
+	@echo "... trivkins"
+	@echo "... ugenserkins"
+	@echo "... xyzac-trt-kins"
+	@echo "... xyzbc-trt-kins"
 .PHONY : help
 
 

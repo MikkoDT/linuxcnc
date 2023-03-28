@@ -76,27 +76,27 @@ include lineardeltakins_py/CMakeFiles/lineardeltakins.dir/progress.make
 # Include the compile flags for this target's objects.
 include lineardeltakins_py/CMakeFiles/lineardeltakins.dir/flags.make
 
-lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.o: lineardeltakins_py/CMakeFiles/lineardeltakins.dir/flags.make
-lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.o: ../kinematic_src/lineardeltakins.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.o"
-	cd /home/user/linuxcnc/cmake/build/lineardeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.o -c /home/user/linuxcnc/cmake/kinematic_src/lineardeltakins.cc
+lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.o: lineardeltakins_py/CMakeFiles/lineardeltakins.dir/flags.make
+lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.o: ../lineardeltakins_py_src/lineardeltakins.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.o"
+	cd /home/user/linuxcnc/cmake/build/lineardeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.o -c /home/user/linuxcnc/cmake/lineardeltakins_py_src/lineardeltakins.cc
 
-lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.i"
-	cd /home/user/linuxcnc/cmake/build/lineardeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/kinematic_src/lineardeltakins.cc > CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.i
+lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.i"
+	cd /home/user/linuxcnc/cmake/build/lineardeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/lineardeltakins_py_src/lineardeltakins.cc > CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.i
 
-lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.s"
-	cd /home/user/linuxcnc/cmake/build/lineardeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/kinematic_src/lineardeltakins.cc -o CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.s
+lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.s"
+	cd /home/user/linuxcnc/cmake/build/lineardeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/lineardeltakins_py_src/lineardeltakins.cc -o CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.s
 
 # Object files for target lineardeltakins
 lineardeltakins_OBJECTS = \
-"CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.o"
+"CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.o"
 
 # External object files for target lineardeltakins
 lineardeltakins_EXTERNAL_OBJECTS =
 
-lineardeltakins_py/lineardeltakins.so.0: lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.o
+lineardeltakins_py/lineardeltakins.so.0: lineardeltakins_py/CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.o
 lineardeltakins_py/lineardeltakins.so.0: lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make
 lineardeltakins_py/lineardeltakins.so.0: lineardeltakins_py/CMakeFiles/lineardeltakins.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library lineardeltakins.so"

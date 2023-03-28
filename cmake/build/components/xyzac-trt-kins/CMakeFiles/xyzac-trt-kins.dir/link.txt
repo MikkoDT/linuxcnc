@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,xyzac-trt-kins.so -o xyzac-trt-kins.so CMakeFiles/xyzac-trt-kins.dir/__/xyzac-trt-kins_src/xyzac-trt-kins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/xyzac-trt-kins/../../build/liblinuxcnchal: ../../../components/xyzac-trt-kins/../../build/liblinuxcnchal/liblinuxcnchal.so 

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,scorbotkins.so -o scorbotkins.so CMakeFiles/scorbotkins.dir/__/scorbotkins_src/scorbot-kins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/scorbotkins/../../build/liblinuxcnchal: ../../../components/scorbotkins/../../build/liblinuxcnchal/liblinuxcnchal.so 

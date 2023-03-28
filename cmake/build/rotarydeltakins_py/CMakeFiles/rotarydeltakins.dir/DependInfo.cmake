@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/linuxcnc/cmake/kinematic_src/rotarydeltakins.cc" "/home/user/linuxcnc/cmake/build/rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.o"
+  "/home/user/linuxcnc/cmake/rotarydeltakins_py_src/rotarydeltakins.cc" "/home/user/linuxcnc/cmake/build/rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,tripodkins.so -o tripodkins.so CMakeFiles/tripodkins.dir/__/tripodkins_src/tripodkins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/tripodkins/../../build/liblinuxcnchal: ../../../components/tripodkins/../../build/liblinuxcnchal/liblinuxcnchal.so 

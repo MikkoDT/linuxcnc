@@ -190,32 +190,32 @@ rotarydeltakins/fast:
 	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build
 .PHONY : rotarydeltakins/fast
 
-__/kinematic_src/rotarydeltakins.o: __/kinematic_src/rotarydeltakins.cc.o
+__/rotarydeltakins_py_src/rotarydeltakins.o: __/rotarydeltakins_py_src/rotarydeltakins.cc.o
 
-.PHONY : __/kinematic_src/rotarydeltakins.o
+.PHONY : __/rotarydeltakins_py_src/rotarydeltakins.o
 
 # target to build an object file
-__/kinematic_src/rotarydeltakins.cc.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.o
-.PHONY : __/kinematic_src/rotarydeltakins.cc.o
+__/rotarydeltakins_py_src/rotarydeltakins.cc.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.o
+.PHONY : __/rotarydeltakins_py_src/rotarydeltakins.cc.o
 
-__/kinematic_src/rotarydeltakins.i: __/kinematic_src/rotarydeltakins.cc.i
+__/rotarydeltakins_py_src/rotarydeltakins.i: __/rotarydeltakins_py_src/rotarydeltakins.cc.i
 
-.PHONY : __/kinematic_src/rotarydeltakins.i
+.PHONY : __/rotarydeltakins_py_src/rotarydeltakins.i
 
 # target to preprocess a source file
-__/kinematic_src/rotarydeltakins.cc.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.i
-.PHONY : __/kinematic_src/rotarydeltakins.cc.i
+__/rotarydeltakins_py_src/rotarydeltakins.cc.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.i
+.PHONY : __/rotarydeltakins_py_src/rotarydeltakins.cc.i
 
-__/kinematic_src/rotarydeltakins.s: __/kinematic_src/rotarydeltakins.cc.s
+__/rotarydeltakins_py_src/rotarydeltakins.s: __/rotarydeltakins_py_src/rotarydeltakins.cc.s
 
-.PHONY : __/kinematic_src/rotarydeltakins.s
+.PHONY : __/rotarydeltakins_py_src/rotarydeltakins.s
 
 # target to generate assembly for a file
-__/kinematic_src/rotarydeltakins.cc.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.s
-.PHONY : __/kinematic_src/rotarydeltakins.cc.s
+__/rotarydeltakins_py_src/rotarydeltakins.cc.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.s
+.PHONY : __/rotarydeltakins_py_src/rotarydeltakins.cc.s
 
 # Help Target
 help:
@@ -230,9 +230,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... rotarydeltakins"
-	@echo "... __/kinematic_src/rotarydeltakins.o"
-	@echo "... __/kinematic_src/rotarydeltakins.i"
-	@echo "... __/kinematic_src/rotarydeltakins.s"
+	@echo "... __/rotarydeltakins_py_src/rotarydeltakins.o"
+	@echo "... __/rotarydeltakins_py_src/rotarydeltakins.i"
+	@echo "... __/rotarydeltakins_py_src/rotarydeltakins.s"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.o"
+  "CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.o"
   "rotarydeltakins.pdb"
   "rotarydeltakins.so"
   "rotarydeltakins.so.0"

@@ -1,0 +1,31 @@
+# Halshow settings
+# This file is generated automatically.
+wm geometry . 700x475+58+153
+placeFrames 0.3
+set ::ratio 0.3
+set ::old_w_leftf 160
+set ::watchlist {
+    param+sc-tp.tc_active_depth
+    param+sc-tp.tc_canon_motiontype
+    param+sc-tp.tc_current_vel
+    param+sc-tp.tc_id
+    param+sc-tp.tc_motiontype
+    param+sc-tp.tc_progress
+    param+sc-tp.tc_remove
+    param+sc-tp.tc_reqeusted_vel
+    param+sc-tp.tc_target
+    param+sc-tp.tmax
+    param+sc-tp.tmax-increased
+    param+sc-tp.tp_done
+    param+sc-tp.tp_x
+    param+sc-tp.tp_y
+    param+sc-tp.tp_z
+    param+sc-tp.tp_exec_id
+}
+set ::workmode watchhal
+set ::watchInterval 100
+set ::col1_width 100
+set ::ffmts 
+set ::ifmts 
+set ::alwaysOnTop 0
+set ::autoSaveWatchlist 1

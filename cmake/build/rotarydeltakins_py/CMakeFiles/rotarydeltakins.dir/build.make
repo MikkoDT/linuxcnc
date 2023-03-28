@@ -76,27 +76,27 @@ include rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/progress.make
 # Include the compile flags for this target's objects.
 include rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/flags.make
 
-rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.o: rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/flags.make
-rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.o: ../kinematic_src/rotarydeltakins.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.o"
-	cd /home/user/linuxcnc/cmake/build/rotarydeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.o -c /home/user/linuxcnc/cmake/kinematic_src/rotarydeltakins.cc
+rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.o: rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/flags.make
+rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.o: ../rotarydeltakins_py_src/rotarydeltakins.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.o"
+	cd /home/user/linuxcnc/cmake/build/rotarydeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.o -c /home/user/linuxcnc/cmake/rotarydeltakins_py_src/rotarydeltakins.cc
 
-rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.i"
-	cd /home/user/linuxcnc/cmake/build/rotarydeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/kinematic_src/rotarydeltakins.cc > CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.i
+rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.i"
+	cd /home/user/linuxcnc/cmake/build/rotarydeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/rotarydeltakins_py_src/rotarydeltakins.cc > CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.i
 
-rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.s"
-	cd /home/user/linuxcnc/cmake/build/rotarydeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/kinematic_src/rotarydeltakins.cc -o CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.s
+rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.s"
+	cd /home/user/linuxcnc/cmake/build/rotarydeltakins_py && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/rotarydeltakins_py_src/rotarydeltakins.cc -o CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.s
 
 # Object files for target rotarydeltakins
 rotarydeltakins_OBJECTS = \
-"CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.o"
+"CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.o"
 
 # External object files for target rotarydeltakins
 rotarydeltakins_EXTERNAL_OBJECTS =
 
-rotarydeltakins_py/rotarydeltakins.so.0: rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/kinematic_src/rotarydeltakins.cc.o
+rotarydeltakins_py/rotarydeltakins.so.0: rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/__/rotarydeltakins_py_src/rotarydeltakins.cc.o
 rotarydeltakins_py/rotarydeltakins.so.0: rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make
 rotarydeltakins_py/rotarydeltakins.so.0: rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library rotarydeltakins.so"

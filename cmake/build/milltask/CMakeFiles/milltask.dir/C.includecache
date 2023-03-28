@@ -30,6 +30,12 @@ linux/types.h
 stdbool.h
 -
 
+../rtapi_src/rtapi_errno.h
+linux/errno.h
+-
+errno.h
+-
+
 ../rtapi_src/rtapi_gfp.h
 linux/gfp.h
 -
@@ -58,11 +64,29 @@ rtapi_gfp.h
 
 /home/user/linuxcnc/cmake/emc_src/cubic.h
 
+/home/user/linuxcnc/cmake/emc_src/dbuf.c
+stdlib.h
+-
+rtapi_string.h
+/home/user/linuxcnc/cmake/emc_src/rtapi_string.h
+rtapi_errno.h
+/home/user/linuxcnc/cmake/emc_src/rtapi_errno.h
+dbuf.h
+/home/user/linuxcnc/cmake/emc_src/dbuf.h
+
 /home/user/linuxcnc/cmake/emc_src/dbuf.h
 rtapi_string.h
 /home/user/linuxcnc/cmake/emc_src/rtapi_string.h
 
 /home/user/linuxcnc/cmake/emc_src/emcmotcfg.h
+
+/home/user/linuxcnc/cmake/emc_src/emcmotglb.c
+emcmotglb.h
+/home/user/linuxcnc/cmake/emc_src/emcmotglb.h
+emcmotcfg.h
+/home/user/linuxcnc/cmake/emc_src/emcmotcfg.h
+
+/home/user/linuxcnc/cmake/emc_src/emcmotglb.h
 
 /home/user/linuxcnc/cmake/emc_src/emcmotutil.c
 emcmotcfg.h
@@ -114,11 +138,37 @@ tp_types.h
 posemath.h
 /home/user/linuxcnc/cmake/emc_src/posemath.h
 
+/home/user/linuxcnc/cmake/emc_src/stashf.c
+stashf.h
+/home/user/linuxcnc/cmake/emc_src/stashf.h
+dbuf.h
+/home/user/linuxcnc/cmake/emc_src/dbuf.h
+rtapi_errno.h
+/home/user/linuxcnc/cmake/emc_src/rtapi_errno.h
+rtapi_string.h
+/home/user/linuxcnc/cmake/emc_src/rtapi_string.h
+stdarg.h
+-
+linux/kernel.h
+-
+stdio.h
+-
+libintl.h
+-
+stashf_wrap.h
+/home/user/linuxcnc/cmake/emc_src/stashf_wrap.h
+stashf_wrap.h
+/home/user/linuxcnc/cmake/emc_src/stashf_wrap.h
+stashf_wrap.h
+/home/user/linuxcnc/cmake/emc_src/stashf_wrap.h
+
 /home/user/linuxcnc/cmake/emc_src/stashf.h
 stdarg.h
 -
 stdio.h
 -
+
+/home/user/linuxcnc/cmake/emc_src/stashf_wrap.h
 
 /home/user/linuxcnc/cmake/emc_src/state_tag.h
 

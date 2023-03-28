@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,5axiskins.so -o 5axiskins.so CMakeFiles/5axiskins.dir/__/5axiskins_src/5axiskins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/5axiskins/../../build/liblinuxcnchal: ../../../components/5axiskins/../../build/liblinuxcnchal/liblinuxcnchal.so 

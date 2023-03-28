@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../common_src/config.h
+
 ../rtapi_src/rtapi.h
 stddef.h
 -
@@ -30,6 +32,10 @@ sys/endian.h
 endian.h
 -
 
+../rtapi_src/rtapi_gfp.h
+linux/gfp.h
+-
+
 ../rtapi_src/rtapi_math.h
 rtapi.h
 ../rtapi_src/rtapi.h
@@ -43,6 +49,22 @@ rtapi_byteorder.h
 ../rtapi_src/rtapi_byteorder.h
 
 ../rtapi_src/rtapi_math_i386.h
+
+../rtapi_src/rtapi_string.h
+rtapi.h
+-
+assert.h
+-
+type_traits
+-
+linux/string.h
+-
+linux/version.h
+-
+string.h
+-
+rtapi_gfp.h
+-
 
 /home/user/linuxcnc/cmake/libposemath_src/_posemath.c
 stdio.h
@@ -58,7 +80,45 @@ float.h
 sincos.h
 /home/user/linuxcnc/cmake/libposemath_src/sincos.h
 
+/home/user/linuxcnc/cmake/libposemath_src/gomath.c
+stddef.h
+-
+rtapi_string.h
+-
+rtapi_math.h
+/home/user/linuxcnc/cmake/libposemath_src/rtapi_math.h
+float.h
+-
+sincos.h
+/home/user/linuxcnc/cmake/libposemath_src/sincos.h
+config.h
+/home/user/linuxcnc/cmake/libposemath_src/config.h
+gotypes.h
+/home/user/linuxcnc/cmake/libposemath_src/gotypes.h
+gomath.h
+/home/user/linuxcnc/cmake/libposemath_src/gomath.h
+
+/home/user/linuxcnc/cmake/libposemath_src/gomath.h
+stddef.h
+-
+rtapi_math.h
+/home/user/linuxcnc/cmake/libposemath_src/rtapi_math.h
+float.h
+-
+gotypes.h
+/home/user/linuxcnc/cmake/libposemath_src/gotypes.h
+
+/home/user/linuxcnc/cmake/libposemath_src/gotypes.h
+float.h
+-
+
 /home/user/linuxcnc/cmake/libposemath_src/posemath.h
+
+/home/user/linuxcnc/cmake/libposemath_src/sincos.c
+rtapi_math.h
+/home/user/linuxcnc/cmake/libposemath_src/rtapi_math.h
+sincos.h
+/home/user/linuxcnc/cmake/libposemath_src/sincos.h
 
 /home/user/linuxcnc/cmake/libposemath_src/sincos.h
 

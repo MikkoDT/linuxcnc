@@ -1,4 +1,4 @@
-﻿## Tip: usefull debug when compiling source in it's original way : make BUILD_VERBOSE=1
+## Tip: usefull debug when compiling source in it's original way : make BUILD_VERBOSE=1
 # Tip: For reverse engineering, by just deleting one .so lib, then invoke "make BUILD_VERBOSE=1"
 # It shows how its build and linked.
 
@@ -56,10 +56,26 @@ add_subdirectory(${SRC_DIR}/components/test)
 add_subdirectory(${SRC_DIR}/components/tp)
 add_subdirectory(${SRC_DIR}/components/threads)
 add_subdirectory(${SRC_DIR}/components/ethercat)
-
-# ~/projects (c - c++ gui projects)
-add_subdirectory(${SRC_DIR}/projects/qt_occt) # Requires opencascade & kdl installed.
-add_subdirectory(${SRC_DIR}/projects/qt_nml) # Requires qt-designer installed
+add_subdirectory(${SRC_DIR}/components/lineardeltakins)
+add_subdirectory(${SRC_DIR}/components/rotarydeltakins)
+add_subdirectory(${SRC_DIR}/components/pumakins)
+add_subdirectory(${SRC_DIR}/components/genserkins) # robot
+add_subdirectory(${SRC_DIR}/components/5axiskins) # bridge mill 5 axis
+add_subdirectory(${SRC_DIR}/components/trivkins)
+add_subdirectory(${SRC_DIR}/components/rotatekins)
+add_subdirectory(${SRC_DIR}/components/xyzac-trt-kins)
+add_subdirectory(${SRC_DIR}/components/xyzbc-trt-kins)
+add_subdirectory(${SRC_DIR}/components/switchkins)
+add_subdirectory(${SRC_DIR}/components/pentakins)
+add_subdirectory(${SRC_DIR}/components/scorbotkins)
+add_subdirectory(${SRC_DIR}/components/tripodkins)
+add_subdirectory(${SRC_DIR}/components/scarakins)
+add_subdirectory(${SRC_DIR}/components/maxkins)
+add_subdirectory(${SRC_DIR}/components/corexykins)
+add_subdirectory(${SRC_DIR}/components/genhexkins)
+add_subdirectory(${SRC_DIR}/components/rosekins)
+add_subdirectory(${SRC_DIR}/components/ugenserkins)
+add_subdirectory(${SRC_DIR}/components/scurve)
 
 # ~/bin (executable commandline programs)
 add_subdirectory(${SRC_DIR}/halcmd)
@@ -91,5 +107,32 @@ add_subdirectory(${SRC_DIR}/hal_py)
 add_subdirectory(${SRC_DIR}/togl_py)
 add_subdirectory(${SRC_DIR}/linuxcnc_py)
 add_subdirectory(${SRC_DIR}/gcode_py)
+
+# ~/projects (c - c++ gui projects)
+add_subdirectory(${SRC_DIR}/projects/qt_occt) # Requires opencascade & kdl & qt installed.
+add_subdirectory(${SRC_DIR}/projects/qt_nml) # Requires qt installed
+
+# Experimental.
+add_subdirectory(${SRC_DIR}/components/sc_tp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

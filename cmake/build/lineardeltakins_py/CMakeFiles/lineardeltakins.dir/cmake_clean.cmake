@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lineardeltakins.dir/__/kinematic_src/lineardeltakins.cc.o"
+  "CMakeFiles/lineardeltakins.dir/__/lineardeltakins_py_src/lineardeltakins.cc.o"
   "lineardeltakins.pdb"
   "lineardeltakins.so"
   "lineardeltakins.so.0"

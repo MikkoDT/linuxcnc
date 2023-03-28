@@ -20,6 +20,15 @@
 //Value Computed by CMake
 - LINUX_CNC -_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake
 
+//Value Computed by CMake
+5axiskins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/5axiskins
+
+//Dependencies for the target
+5axiskins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+5axiskins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/5axiskins
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -344,6 +353,15 @@ classicladder_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/classicladder
 classicladder_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/classicladder
 
 //Value Computed by CMake
+corexykins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/corexykins
+
+//Dependencies for the target
+corexykins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+corexykins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/corexykins
+
+//Value Computed by CMake
 gcode_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/gcode_py
 
 //Dependencies for the target
@@ -351,6 +369,24 @@ gcode_LIB_DEPENDS:STATIC=general;rs274_;general;-lpython3.9;
 
 //Value Computed by CMake
 gcode_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/gcode_py
+
+//Value Computed by CMake
+genhexkins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/genhexkins
+
+//Dependencies for the target
+genhexkins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+genhexkins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/genhexkins
+
+//Value Computed by CMake
+genserkins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/genserkins
+
+//Dependencies for the target
+genserkins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+genserkins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/genserkins
 
 //Value Computed by CMake
 hal_lib_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/hal_lib
@@ -437,15 +473,6 @@ libcanterp_LIB_DEPENDS:STATIC=general;linuxcncini;general;rs274;general;-fPIC;
 libcanterp_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/libcanterp
 
 //Value Computed by CMake
-libhalui_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/libhalui
-
-//Dependencies for the target
-libhalui_LIB_DEPENDS:STATIC=general;nml;general;linuxcnchal;general;linuxcncini;general;linuxcnc_;general;tooldata;
-
-//Value Computed by CMake
-libhalui_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/libhalui
-
-//Value Computed by CMake
 liblinuxcnchal_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/liblinuxcnchal
 
 //Dependencies for the target
@@ -509,6 +536,15 @@ lineardeltakins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/lineardeltakin
 lineardeltakins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/lineardeltakins_py
 
 //Value Computed by CMake
+lineardeltakins_rt_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/lineardeltakins
+
+//Dependencies for the target
+lineardeltakins_rt_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+lineardeltakins_rt_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/lineardeltakins
+
+//Value Computed by CMake
 linuxcnc_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/liblinuxcnc
 
 //Value Computed by CMake
@@ -557,28 +593,25 @@ linuxcncsrv_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/linuxcncsrv
 linuxcncsrv_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/linuxcncsrv
 
 //Value Computed by CMake
+maxkins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/maxkins
+
+//Dependencies for the target
+maxkins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+maxkins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/maxkins
+
+//Value Computed by CMake
 milltask_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/milltask
 
 //Value Computed by CMake
 milltask_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/milltask
 
 //Value Computed by CMake
-module_helper_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/module_helper
-
-//Value Computed by CMake
-module_helper_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/module_helper
-
-//Value Computed by CMake
 motion-logger_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/motion_logger
 
 //Value Computed by CMake
 motion-logger_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/motion_logger
-
-//Value Computed by CMake
-myApp_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/projects/qt_occt
-
-//Value Computed by CMake
-myApp_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/projects/qt_occt
 
 //Value Computed by CMake
 pci_read_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/pci_read
@@ -593,6 +626,24 @@ pci_write_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/pci_write
 pci_write_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/pci_write
 
 //Value Computed by CMake
+pentakins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/pentakins
+
+//Dependencies for the target
+pentakins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+pentakins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/pentakins
+
+//Value Computed by CMake
+pumakins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/pumakins
+
+//Dependencies for the target
+pumakins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+pumakins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/pumakins
+
+//Value Computed by CMake
 qt_nml_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/projects/qt_nml
 
 //Value Computed by CMake
@@ -605,10 +656,37 @@ qt_occt_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/projects/qt_occt
 qt_occt_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/projects/qt_occt
 
 //Value Computed by CMake
+rosekins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/rosekins
+
+//Dependencies for the target
+rosekins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+rosekins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/rosekins
+
+//Value Computed by CMake
 rotarydeltakins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/rotarydeltakins_py
 
 //Value Computed by CMake
 rotarydeltakins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/rotarydeltakins_py
+
+//Value Computed by CMake
+rotarydeltakins_rt_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/rotarydeltakins
+
+//Dependencies for the target
+rotarydeltakins_rt_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+rotarydeltakins_rt_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/rotarydeltakins
+
+//Value Computed by CMake
+rotatekins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/rotatekins
+
+//Dependencies for the target
+rotatekins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+rotatekins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/rotatekins
 
 //Value Computed by CMake
 rs274_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/sai
@@ -623,10 +701,55 @@ rtapi_app_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/rtapi
 rtapi_app_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/rtapi
 
 //Value Computed by CMake
+sc_tp_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/sc_tp
+
+//Dependencies for the target
+sc_tp_LIB_DEPENDS:STATIC=general;linuxcnchal;general;posemath;
+
+//Value Computed by CMake
+sc_tp_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/sc_tp
+
+//Value Computed by CMake
+scarakins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/scarakins
+
+//Dependencies for the target
+scarakins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+scarakins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/scarakins
+
+//Value Computed by CMake
 schedrmt_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/schedrmt
 
 //Value Computed by CMake
 schedrmt_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/schedrmt
+
+//Value Computed by CMake
+scorbotkins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/scorbotkins
+
+//Dependencies for the target
+scorbotkins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+scorbotkins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/scorbotkins
+
+//Value Computed by CMake
+scurve_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/scurve
+
+//Dependencies for the target
+scurve_LIB_DEPENDS:STATIC=general;pthread;general;rt;general;linuxcnchal;
+
+//Value Computed by CMake
+scurve_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/scurve
+
+//Value Computed by CMake
+switchkins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/switchkins
+
+//Dependencies for the target
+switchkins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+switchkins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/switchkins
 
 //Value Computed by CMake
 test_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/test
@@ -654,6 +777,51 @@ tp_LIB_DEPENDS:STATIC=general;linuxcnchal;
 
 //Value Computed by CMake
 tp_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/tp
+
+//Value Computed by CMake
+tripodkins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/tripodkins
+
+//Dependencies for the target
+tripodkins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+tripodkins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/tripodkins
+
+//Value Computed by CMake
+trivkins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/trivkins
+
+//Dependencies for the target
+trivkins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+trivkins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/trivkins
+
+//Value Computed by CMake
+ugenserkins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/ugenserkins
+
+//Dependencies for the target
+ugenserkins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+ugenserkins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/ugenserkins
+
+//Value Computed by CMake
+xyzac-trt-kins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/xyzac-trt-kins
+
+//Dependencies for the target
+xyzac-trt-kins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+xyzac-trt-kins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/xyzac-trt-kins
+
+//Value Computed by CMake
+xyzbc-trt-kins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/xyzbc-trt-kins
+
+//Dependencies for the target
+xyzbc-trt-kins_LIB_DEPENDS:STATIC=general;linuxcnchal;
+
+//Value Computed by CMake
+xyzbc-trt-kins_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/xyzbc-trt-kins
 
 
 ########################
@@ -777,7 +945,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=44
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=65
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

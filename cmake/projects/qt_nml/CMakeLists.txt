@@ -41,11 +41,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     )
 else()
     if(ANDROID)
-        add_library(qt_nml SHARED
+        add_library(${PROJECT} SHARED
             ${PROJECT_SOURCES}
         )
     else()
-        add_executable(qt_nml
+        add_executable(${PROJECT}
             ${PROJECT_SOURCES}
         )
     endif()
@@ -101,13 +101,6 @@ set_target_properties(rs274_ PROPERTIES
     INTERFACE_INCLUDE_DIRECTORIES "${SRC_DIR}/../../librs274_src"
     )
 
-
-add_library(halui_ SHARED IMPORTED) # or STATIC instead of SHARED
-set_target_properties(halui_ PROPERTIES
-    IMPORTED_LOCATION "${SRC_DIR}/../../build/libhalui/libhalui.so"
-    INTERFACE_INCLUDE_DIRECTORIES "${SRC_DIR}/../../halui_src"
-    )
-
 add_library(tooldata SHARED IMPORTED) # or STATIC instead of SHARED
 set_target_properties(tooldata PROPERTIES
     # IMPORTED_LOCATION "/home/user/lcncladdertest/lib/libtooldata.so"
@@ -117,8 +110,8 @@ set_target_properties(tooldata PROPERTIES
 
 add_definitions(-DULAPI)
 
-target_link_libraries(qt_nml PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
-    linuxcnchal linuxcncini linuxcnc_a nml rs274_ tooldata halui_
+target_link_libraries(${PROJECT} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
+    linuxcnchal linuxcncini linuxcnc_a nml rs274_ tooldata
     )
 
 # Make install

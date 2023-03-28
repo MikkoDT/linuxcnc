@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,switchkins.so -o switchkins.so CMakeFiles/switchkins.dir/__/switchkins_src/switchkins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/switchkins/../../build/liblinuxcnchal: ../../../components/switchkins/../../build/liblinuxcnchal/liblinuxcnchal.so 

@@ -135,7 +135,6 @@ projects/qt_nml/qt_nml: ../projects/qt_nml/../../build/liblinuxcnc/liblinuxcnc.a
 projects/qt_nml/qt_nml: ../projects/qt_nml/../../build/libnml/libnml.so
 projects/qt_nml/qt_nml: ../projects/qt_nml/../../build/librs274/librs274.so
 projects/qt_nml/qt_nml: ../projects/qt_nml/../../build/libtooldata/libtooldata.so
-projects/qt_nml/qt_nml: ../projects/qt_nml/../../build/libhalui/libhalui.so
 projects/qt_nml/qt_nml: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Gui.so.5.15.1
 projects/qt_nml/qt_nml: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Core.so.5.15.1
 projects/qt_nml/qt_nml: projects/qt_nml/CMakeFiles/qt_nml.dir/link.txt

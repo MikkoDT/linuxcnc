@@ -21,7 +21,7 @@ include_directories(/usr/include/python3.9)
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED
-    ${SRC_DIR}/../kinematic_src/lineardeltakins.cc
+    ${SRC_DIR}/../lineardeltakins_py_src/lineardeltakins.cc
     )
 
 add_definitions(-DULAPI)

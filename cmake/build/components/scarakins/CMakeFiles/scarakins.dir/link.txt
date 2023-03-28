@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,scarakins.so -o scarakins.so CMakeFiles/scarakins.dir/__/scarakins_src/scarakins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/scarakins/../../build/liblinuxcnchal: ../../../components/scarakins/../../build/liblinuxcnchal/liblinuxcnchal.so 

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,trivkins.so -o trivkins.so CMakeFiles/trivkins.dir/__/trivkins_src/trivkins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/trivkins/../../build/liblinuxcnchal: ../../../components/trivkins/../../build/liblinuxcnchal/liblinuxcnchal.so 

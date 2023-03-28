@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,rotatekins.so -o rotatekins.so CMakeFiles/rotatekins.dir/__/rotatekins_src/rotatekins.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/rotatekins/../../build/liblinuxcnchal: ../../../components/rotatekins/../../build/liblinuxcnchal/liblinuxcnchal.so 

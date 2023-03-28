@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,genserkins.so -o genserkins.so CMakeFiles/genserkins.dir/__/genserkins_src/genserkins.c.o CMakeFiles/genserkins.dir/__/genserkins_src/genserfuncs.c.o  -Wl,-rpath,/home/user/linuxcnc/cmake/components/genserkins/../../build/liblinuxcnchal: ../../../components/genserkins/../../build/liblinuxcnchal/liblinuxcnchal.so 
