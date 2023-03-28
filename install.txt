@@ -1,0 +1,7 @@
+1. Install linuxcnc as usual.
+
+2. In cmake/build do the : cmake .. && make && make install
+
+3. To start lcnc in ~/script/ . ./rip-environment && linuxcnc
+
+4. To start expirimental, open the sc_sp.c file howto.
