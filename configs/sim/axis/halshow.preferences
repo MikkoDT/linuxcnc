@@ -1,16 +1,40 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 700x697+23+22
+wm geometry . 298x618+494+123
 placeFrames 0.34738372093023256
 set ::ratio 0.34738372093023256
 set ::old_w_leftf 160
 set ::watchlist {
-    param+servo-thread.tmax
-    pin+scurve.ai
-    pin+scurve.si
-    pin+scurve.vi
-    pin+scurve.enable
-    pin+scurve.tool_on
+    param+sc-tp.tp_depth->nr_total_queued_motions
+    param+sc-tp.tc_current_depth->nr_motions_blending
+    param+sc-tp.tc_current_vel
+    param+sc-tp.tc_id->current_gcodeline
+    param+sc-tp.tc_motiontype->1_lin->2_arc->3_tap
+    param+sc-tp.tc_progress
+    param+sc-tp.tc_remove
+    param+sc-tp.tc_reqeusted_vel
+    param+sc-tp.tc_target
+    param+sc-tp.tc_term_vel
+    param+sc-tp.tmax
+    param+sc-tp.tmax-increased
+    param+sc-tp.tp_aborting
+    param+sc-tp.tp_done
+    param+sc-tp.tp_exec_id->current_gcode_line_exec
+    param+sc-tp.tp_goalpos_x->eof_gcode_pos
+    param+sc-tp.tp_goalpos_y->eof_gcode_pos
+    param+sc-tp.tp_goalpos_z->eof_gcode_pos
+    param+sc-tp.tp_pausing
+    param+sc-tp.tp_queue_size->size_of_queue_vector
+    param+sc-tp.tp_reverse_run
+    param+sc-tp.tp_x
+    param+sc-tp.tp_y
+    param+sc-tp.tp_z
+    param+sc-tp.dtg
+    param+sc-tp.tc_canon_motiontype->arc_3->lin_2->GO_1
+    param+sc-tp.tc_is_blending
+    param+sc-tp.tc_target_vel
+    pin+sc-tp.is_module
+    pin+sc-tp.time
 }
 set ::workmode watchhal
 set ::watchInterval 100

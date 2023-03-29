@@ -34,6 +34,9 @@ MODULE_LICENSE("GPL2");
  *
  * Load custom this component at lcnc startup:
  *
+ * In ~/linuxcnc/cmake/components/sc_tp/$ ./runtest
+ *
+ * Or start lcnc with rip-environment, then:
  * In ~/linuxcnc/scripts/$ linuxcnc -t sc_tp /home/user/linuxcnc/configs/sim/axis/axis_mm.ini
  *
  *
@@ -56,13 +59,30 @@ typedef struct {
 } bit_data_t;
 bit_data_t *enable;
 
-typedef struct {
+typedef struct { //! Int.
     hal_s32_t *Pin;
 } s32_data_t;
 
-typedef struct {
+typedef struct { //! Param int.
+    hal_s32_t Pin;
+} param_s32_data_t;
+param_s32_data_t
+*tp_reverse_run,
+*tp_pausing,
+*tp_aborting,
+*tp_done,
+*tp_queue_size,
+*tp_depth,
+*tc_is_blending,
+*tc_current_depth;
+
+typedef struct { //! Uint.
     hal_u32_t *Pin;
 } u32_data_t;
+
+typedef struct { //! Param Uint.
+    hal_u32_t Pin;
+} param_u32_data_t;
 
 typedef struct {
     hal_port_t *Pin;
@@ -74,22 +94,28 @@ typedef struct {
     hal_float_t Pin;
 } param_float_data_t;
 param_float_data_t
-*param_tc_progress,
-*param_tc_target,
-*param_tc_motiontype,
-*param_tc_canon_motiontype,
-*param_tc_active_depth,
-*param_tc_id,
-*param_tp_exec_id,
+*tc_progress,             //! where are we in the segment?  0..target
+*tc_target,               //! actual segment length
+*tc_motiontype,
+*tc_canon_motiontype,
+*tc_id,                    //! segment's serial number
+*tp_exec_id,
 *tc_requested_vel,
 *tc_currentvel,
-*tp_done,
-*tp_x,*tp_y,*tp_z;
+*tc_target_vel,
+*tc_term_vel,            //! actual velocity at termination of segment
+*tc_final_vel,
+*tp_x,*tp_y,*tp_z,
+*tp_goalpos_x,
+*tp_goalpos_y,
+*tp_goalpos_z,
+*dtg;                           //! tc->target - tc->progress;
+
 
 typedef struct {
     hal_bit_t Pin;
 } param_bit_data_t;
-param_bit_data_t *param_tc_remove;
+param_bit_data_t *tc_remove;
 
 static int comp_idx; /* component ID */
 
@@ -130,29 +156,56 @@ static int setup_pins(){
     enable = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
     r+=hal_pin_bit_new("sc-tp.is_module",HAL_OUT,&(enable->Pin),comp_idx);
 
-    param_tc_remove = (param_bit_data_t*)hal_malloc(sizeof(param_bit_data_t));
-    r+=hal_param_bit_new("sc-tp.tc_remove",HAL_RW,&(param_tc_remove->Pin),comp_idx);
+    //! Param bit rw.
+    tc_remove = (param_bit_data_t*)hal_malloc(sizeof(param_bit_data_t));
+    r+=hal_param_bit_new("sc-tp.tc_remove",HAL_RW,&(tc_remove->Pin),comp_idx);
 
-    param_tc_progress = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.tc_progress",HAL_RW,&(param_tc_progress->Pin),comp_idx);
+    //! Param int rw.
+    tp_reverse_run = (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
+    r+=hal_param_s32_new("sc-tp.tp_reverse_run",HAL_RW,&(tp_reverse_run->Pin),comp_idx);
 
-    param_tc_target = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.tc_target",HAL_RW,&(param_tc_target->Pin),comp_idx);
+    tp_done = (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
+    r+=hal_param_s32_new("sc-tp.tp_done",HAL_RW,&(tp_done->Pin),comp_idx);
 
-    param_tc_motiontype = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.tc_motiontype",HAL_RW,&(param_tc_motiontype->Pin),comp_idx);
+    tp_pausing = (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
+    r+=hal_param_s32_new("sc-tp.tp_pausing",HAL_RW,&(tp_pausing->Pin),comp_idx);
 
-    param_tc_canon_motiontype = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.tc_canon_motiontype",HAL_RW,&(param_tc_canon_motiontype->Pin),comp_idx);
+    tp_aborting= (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
+    r+=hal_param_s32_new("sc-tp.tp_aborting",HAL_RW,&(tp_aborting->Pin),comp_idx);
 
-    param_tc_active_depth = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.tc_active_depth",HAL_RW,&(param_tc_active_depth->Pin),comp_idx);
+    tp_queue_size= (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
+    r+=hal_param_s32_new("sc-tp.tp_queue_size->size_of_queue_vector",HAL_RW,&(tp_queue_size->Pin),comp_idx);
 
-    param_tc_id = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.tc_id",HAL_RW,&(param_tc_id->Pin),comp_idx);
+    tp_depth= (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
+    r+=hal_param_s32_new("sc-tp.tp_depth->nr_total_queued_motions",HAL_RW,&(tp_depth->Pin),comp_idx);
 
-    param_tp_exec_id = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.tp_exec_id",HAL_RW,&(param_tp_exec_id->Pin),comp_idx);
+    tc_current_depth = (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
+    r+=hal_param_s32_new("sc-tp.tc_current_depth->nr_motions_blending",HAL_RW,&(tc_current_depth->Pin),comp_idx);
+
+    tc_is_blending = (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
+    r+=hal_param_s32_new("sc-tp.tc_is_blending",HAL_RW,&(tc_is_blending->Pin),comp_idx);
+
+
+
+    //! Param float rw.
+    tc_progress = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tc_progress",HAL_RW,&(tc_progress->Pin),comp_idx);
+
+    tc_target = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tc_target",HAL_RW,&(tc_target->Pin),comp_idx);
+
+    tc_motiontype = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tc_motiontype->1_lin->2_arc->3_tap",HAL_RW,&(tc_motiontype->Pin),comp_idx);
+
+    tc_canon_motiontype = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tc_canon_motiontype->arc_3->lin_2->GO_1",HAL_RW,&(tc_canon_motiontype->Pin),comp_idx);
+
+
+    tc_id = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tc_id->current_gcodeline",HAL_RW,&(tc_id->Pin),comp_idx);
+
+    tp_exec_id = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tp_exec_id->current_gcode_line_exec",HAL_RW,&(tp_exec_id->Pin),comp_idx);
 
     tc_requested_vel = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
     r+=hal_param_float_new("sc-tp.tc_reqeusted_vel",HAL_RW,&(tc_requested_vel->Pin),comp_idx);
@@ -160,8 +213,17 @@ static int setup_pins(){
     tc_currentvel = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
     r+=hal_param_float_new("sc-tp.tc_current_vel",HAL_RW,&(tc_currentvel->Pin),comp_idx);
 
-    tp_done = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.tp_done",HAL_RW,&(tp_done->Pin),comp_idx);
+    tc_term_vel = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tc_term_vel",HAL_RW,&(tc_term_vel->Pin),comp_idx);
+
+    tc_target_vel = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tc_target_vel",HAL_RW,&(tc_target_vel->Pin),comp_idx);
+
+    tc_final_vel = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tc_final_vel",HAL_RW,&(tc_final_vel->Pin),comp_idx);
+
+
+
 
     tp_x = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
     r+=hal_param_float_new("sc-tp.tp_x",HAL_RW,&(tp_x->Pin),comp_idx);
@@ -171,6 +233,18 @@ static int setup_pins(){
 
     tp_z = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
     r+=hal_param_float_new("sc-tp.tp_z",HAL_RW,&(tp_z->Pin),comp_idx);
+
+    tp_goalpos_x = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tp_goalpos_x->eof_gcode_pos",HAL_RW,&(tp_goalpos_x->Pin),comp_idx);
+
+    tp_goalpos_y = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tp_goalpos_y->eof_gcode_pos",HAL_RW,&(tp_goalpos_y->Pin),comp_idx);
+
+    tp_goalpos_z = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.tp_goalpos_z->eof_gcode_pos",HAL_RW,&(tp_goalpos_z->Pin),comp_idx);
+
+    dtg = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
+    r+=hal_param_float_new("sc-tp.dtg",HAL_RW,&(dtg->Pin),comp_idx);
 
     return r;
 }
@@ -326,7 +400,7 @@ STATIC int tcRotaryMotionCheck(TC_STRUCT const * const tc) {
     case TC_SPHERICAL:
         return true;
     default:
-        tp_debug_print("Unknown motion type!\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"Unknown motion type!\n");
         return false;
     }
 }
@@ -391,7 +465,7 @@ STATIC int tpGetMachineActiveLimit(double * const act_limit, PmCartesian const *
     if (bounds->z > 0) {
         *act_limit = fmin(*act_limit, bounds->z);
     }
-    tp_debug_print(" arc blending a_max=%f\n", *act_limit);
+    rtapi_print_msg(RTAPI_MSG_ERR," arc blending a_max=%f\n", *act_limit);
     return TP_ERR_OK;
 }
 
@@ -417,6 +491,7 @@ STATIC double tpGetFeedScale(TP_STRUCT const * const tp,
     } else if (tc->synchronized == TC_SYNC_POSITION ) {
         return 1.0;
     } else if (tc->is_blending) {
+        tc_is_blending->Pin=tc->is_blending;
         //KLUDGE: Don't allow feed override to keep blending from overruning max velocity
         return fmin(emcmotStatus->net_feed_scale, 1.0);
     } else {
@@ -596,6 +671,8 @@ int tpCreate(TP_STRUCT * const tp, int _queueSize,int id)
         return TP_ERR_FAIL;
     }
 #endif // }
+
+    tp_queue_size->Pin=tp->queueSize;
 
     /* init the rest of our data */
     return tpInit(tp);
@@ -1006,7 +1083,7 @@ STATIC int tpInitBlendArcFromPrev(TP_STRUCT const * const tp,
     // find "helix" length for target
     double length;
     arcLength(&blend_tc->coords.arc.xyz, &length);
-    tp_info_print("blend tc length = %f\n",length);
+    rtapi_print_msg(RTAPI_MSG_ERR,"blend tc length = %f\n",length);
     blend_tc->target = length;
     blend_tc->nominal_length = length;
 
@@ -1090,7 +1167,7 @@ STATIC tc_blend_type_t tpChooseBestBlend(TP_STRUCT const * const tp,
     double perf_tangent = prev_tc->kink_vel;
     double perf_arc_blend = blend_tc ? blend_tc->maxvel : 0.0;
 
-    tp_debug_print("Blend performance: parabolic %f, tangent %f, arc_blend %f, ",
+    rtapi_print_msg(RTAPI_MSG_ERR,"Blend performance: parabolic %f, tangent %f, arc_blend %f, ",
                    perf_parabolic,
                    perf_tangent,
                    perf_arc_blend);
@@ -1101,17 +1178,17 @@ STATIC tc_blend_type_t tpChooseBestBlend(TP_STRUCT const * const tp,
 
     switch (best_blend) {
     case PARABOLIC_BLEND: // parabolic
-        tp_debug_print("using parabolic blend\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"using parabolic blend\n");
         tcRemoveKinkProperties(prev_tc, tc);
         tcSetTermCond(prev_tc, tc, TC_TERM_COND_PARABOLIC);
         break;
     case TANGENT_SEGMENTS_BLEND: // tangent
-        tp_debug_print("using approximate tangent blend\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"using approximate tangent blend\n");
         // NOTE: acceleration / velocity reduction is done dynamically in functions that access TC_STRUCT properties
         tcSetTermCond(prev_tc, tc, TC_TERM_COND_TANGENT);
         break;
     case ARC_BLEND: // arc blend
-        tp_debug_print("using blend arc\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"using blend arc\n");
         tcRemoveKinkProperties(prev_tc, tc);
 
         break;
@@ -1124,7 +1201,7 @@ STATIC tc_blend_type_t tpChooseBestBlend(TP_STRUCT const * const tp,
 
 STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev_tc, TC_STRUCT * const tc, TC_STRUCT * const blend_tc)
 {
-    tp_debug_print("-- Starting LineArc blend arc --\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"-- Starting LineArc blend arc --\n");
 
     PmCartesian acc_bound, vel_bound;
 
@@ -1146,7 +1223,7 @@ STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
                                          emcmotConfig->maxFeedScale);
 
     if (res_init != TP_ERR_OK) {
-        tp_debug_print("blend init failed with code %d, aborting blend arc\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"blend init failed with code %d, aborting blend arc\n",
                        res_init);
         return res_init;
     }
@@ -1156,7 +1233,7 @@ STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
                                        &tc->coords.circle.xyz.normal);
 
     if (!coplanar) {
-        tp_debug_print("aborting arc, not coplanar\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"aborting arc, not coplanar\n");
         return TP_ERR_FAIL;
     }
 
@@ -1172,7 +1249,7 @@ STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
 
     //Catch errors in blend setup
     if (res_init || res_param || res_points || res_post) {
-        tp_debug_print("Got %d, %d, %d, %d for init, param, points, post, aborting arc\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"Got %d, %d, %d, %d for init, param, points, post, aborting arc\n",
                        res_init,
                        res_param,
                        res_points,
@@ -1185,7 +1262,7 @@ STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
      */
 
     if (points_exact.trim2 > param.phi2_max) {
-        tp_debug_print("trim2 %f > phi2_max %f, aborting arc...\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"trim2 %f > phi2_max %f, aborting arc...\n",
                        points_exact.trim2,
                        param.phi2_max);
         return TP_ERR_FAIL;
@@ -1204,13 +1281,13 @@ STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
 
     double phi2_new = tc->coords.circle.xyz.angle - points_exact.trim2;
 
-    tp_debug_print("phi2_new = %f\n",phi2_new);
+    rtapi_print_msg(RTAPI_MSG_ERR,"phi2_new = %f\n",phi2_new);
     int res_stretch2 = pmCircleStretch(&circ2_temp,
                                        phi2_new,
                                        true);
     //TODO create blends
     if (res_stretch1 || res_stretch2) {
-        tp_debug_print("segment resize failed, aborting arc\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"segment resize failed, aborting arc\n");
         return TP_ERR_FAIL;
     }
 
@@ -1229,7 +1306,7 @@ STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
                                       &geom,
                                       &param);
     if (res_arc < 0) {
-        tp_debug_print("arc creation failed, aborting arc\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"arc creation failed, aborting arc\n");
         return TP_ERR_FAIL;
     }
 
@@ -1250,7 +1327,7 @@ STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
                                         true);
 
     if (res_tangent < 0) {
-        tp_debug_print("failed tangent check, aborting arc...\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"failed tangent check, aborting arc...\n");
         return TP_ERR_FAIL;
     }
 
@@ -1258,13 +1335,13 @@ STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
         return TP_ERR_NO_ACTION;
     }
 
-    tp_debug_print("Passed all tests, updating segments\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"Passed all tests, updating segments\n");
     //TODO refactor to pass consume to connect function
     if (param.consume) {
         //Since we're consuming the previous segment, pop the last line off of the queue
         int res_pop = tcqPopBack(&tp->queue);
         if (res_pop) {
-            tp_debug_print("failed to pop segment, aborting arc\n");
+            rtapi_print_msg(RTAPI_MSG_ERR,"failed to pop segment, aborting arc\n");
             return TP_ERR_FAIL;
         }
     } else {
@@ -1283,7 +1360,7 @@ STATIC tp_err_t tpCreateLineArcBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
 STATIC tp_err_t tpCreateArcLineBlend(TP_STRUCT * const tp, TC_STRUCT * const prev_tc, TC_STRUCT * const tc, TC_STRUCT * const blend_tc)
 {
 
-    tp_debug_print("-- Starting ArcLine blend arc --\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"-- Starting ArcLine blend arc --\n");
     PmCartesian acc_bound, vel_bound;
 
     //Get machine limits
@@ -1304,7 +1381,7 @@ STATIC tp_err_t tpCreateArcLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
                                          &vel_bound,
                                          emcmotConfig->maxFeedScale);
     if (res_init != TP_ERR_OK) {
-        tp_debug_print("blend init failed with code %d, aborting blend arc\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"blend init failed with code %d, aborting blend arc\n",
                        res_init);
         return res_init;
     }
@@ -1314,7 +1391,7 @@ STATIC tp_err_t tpCreateArcLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
                                        &prev_tc->coords.circle.xyz.normal);
 
     if (!coplanar) {
-        tp_debug_print("aborting arc, not coplanar\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"aborting arc, not coplanar\n");
         return TP_ERR_FAIL;
     }
 
@@ -1330,7 +1407,7 @@ STATIC tp_err_t tpCreateArcLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
 
     //Catch errors in blend setup
     if (res_init || res_param || res_points || res_post) {
-        tp_debug_print("Got %d, %d, %d, %d for init, param, points, post\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"Got %d, %d, %d, %d for init, param, points, post\n",
                        res_init,
                        res_param,
                        res_points,
@@ -1352,7 +1429,7 @@ STATIC tp_err_t tpCreateArcLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
     double phi1_new = circ1_temp.angle - points_exact.trim1;
 
     if (points_exact.trim1 > param.phi1_max) {
-        tp_debug_print("trim1 %f > phi1_max %f, aborting arc...\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"trim1 %f > phi1_max %f, aborting arc...\n",
                        points_exact.trim1,
                        param.phi1_max);
         return TP_ERR_FAIL;
@@ -1371,7 +1448,7 @@ STATIC tp_err_t tpCreateArcLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
                                          true);
 
     if (res_stretch1 || res_stretch2) {
-        tp_debug_print("segment resize failed, aborting arc\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"segment resize failed, aborting arc\n");
         return TP_ERR_FAIL;
     }
 
@@ -1401,7 +1478,7 @@ STATIC tp_err_t tpCreateArcLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
 
     int res_tangent = checkTangentAngle(&circ1_temp, &blend_tc->coords.arc.xyz, &geom, &param, tp->cycleTime, false);
     if (res_tangent) {
-        tp_debug_print("failed tangent check, aborting arc...\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"failed tangent check, aborting arc...\n");
         return TP_ERR_FAIL;
     }
 
@@ -1409,7 +1486,7 @@ STATIC tp_err_t tpCreateArcLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
         return TP_ERR_NO_ACTION;
     }
 
-    tp_debug_print("Passed all tests, updating segments\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"Passed all tests, updating segments\n");
 
     tcSetCircleXYZ(prev_tc, &circ1_temp);
     tcSetLineXYZ(tc, &line2_temp);
@@ -1424,13 +1501,13 @@ STATIC tp_err_t tpCreateArcLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pre
 STATIC tp_err_t tpCreateArcArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev_tc, TC_STRUCT * const tc, TC_STRUCT * const blend_tc)
 {
 
-    tp_debug_print("-- Starting ArcArc blend arc --\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"-- Starting ArcArc blend arc --\n");
     //TODO type checks
     int colinear = pmUnitCartsColinear(&prev_tc->coords.circle.xyz.normal,
                                        &tc->coords.circle.xyz.normal);
     if (!colinear) {
         // Fail out if not collinear
-        tp_debug_print("arc abort: not coplanar\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"arc abort: not coplanar\n");
         return TP_ERR_FAIL;
     }
 
@@ -1454,7 +1531,7 @@ STATIC tp_err_t tpCreateArcArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev
                                         emcmotConfig->maxFeedScale);
 
     if (res_init != TP_ERR_OK) {
-        tp_debug_print("blend init failed with code %d, aborting blend arc\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"blend init failed with code %d, aborting blend arc\n",
                        res_init);
         return res_init;
     }
@@ -1463,14 +1540,14 @@ STATIC tp_err_t tpCreateArcArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev
                                         &prev_tc->coords.circle.xyz.normal);
 
     if (!coplanar1) {
-        tp_debug_print("aborting blend arc, arc id %d is not coplanar with binormal\n", prev_tc->id);
+        rtapi_print_msg(RTAPI_MSG_ERR,"aborting blend arc, arc id %d is not coplanar with binormal\n", prev_tc->id);
         return TP_ERR_FAIL;
     }
 
     int coplanar2 = pmUnitCartsColinear(&geom.binormal,
                                         &tc->coords.circle.xyz.normal);
     if (!coplanar2) {
-        tp_debug_print("aborting blend arc, arc id %d is not coplanar with binormal\n", tc->id);
+        rtapi_print_msg(RTAPI_MSG_ERR,"aborting blend arc, arc id %d is not coplanar with binormal\n", tc->id);
         return TP_ERR_FAIL;
     }
 
@@ -1487,7 +1564,7 @@ STATIC tp_err_t tpCreateArcArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev
 
     //Catch errors in blend setup
     if (res_init || res_param || res_points || res_post) {
-        tp_debug_print("Got %d, %d, %d, %d for init, param, points, post\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"Got %d, %d, %d, %d for init, param, points, post\n",
                        res_init,
                        res_param,
                        res_points,
@@ -1506,18 +1583,18 @@ STATIC tp_err_t tpCreateArcArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev
     double phi2_new = tc->coords.circle.xyz.angle - points_exact.trim2;
 
     // TODO pare down this debug output
-    tp_debug_print("phi1_new = %f, trim1 = %f\n", phi1_new, points_exact.trim1);
-    tp_debug_print("phi2_new = %f, trim2 = %f\n", phi2_new, points_exact.trim2);
+    rtapi_print_msg(RTAPI_MSG_ERR,"phi1_new = %f, trim1 = %f\n", phi1_new, points_exact.trim1);
+    rtapi_print_msg(RTAPI_MSG_ERR,"phi2_new = %f, trim2 = %f\n", phi2_new, points_exact.trim2);
 
     if (points_exact.trim1 > param.phi1_max) {
-        tp_debug_print("trim1 %f > phi1_max %f, aborting arc...\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"trim1 %f > phi1_max %f, aborting arc...\n",
                        points_exact.trim1,
                        param.phi1_max);
         return TP_ERR_FAIL;
     }
 
     if (points_exact.trim2 > param.phi2_max) {
-        tp_debug_print("trim2 %f > phi2_max %f, aborting arc...\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"trim2 %f > phi2_max %f, aborting arc...\n",
                        points_exact.trim2,
                        param.phi2_max);
         return TP_ERR_FAIL;
@@ -1538,7 +1615,7 @@ STATIC tp_err_t tpCreateArcArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev
                                        phi2_new,
                                        true);
     if (res_stretch1 || res_stretch2) {
-        tp_debug_print("segment resize failed, aborting arc\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"segment resize failed, aborting arc\n");
         return TP_ERR_FAIL;
     }
 
@@ -1550,7 +1627,7 @@ STATIC tp_err_t tpCreateArcArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev
                   0.0,
                   &points_exact.arc_end);
 
-    tp_debug_print("Modified arc points\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"Modified arc points\n");
     blendPoints3Print(&points_exact);
     int res_arc = arcFromBlendPoints3(&blend_tc->coords.arc.xyz, &points_exact, &geom, &param);
     if (res_arc < 0) {
@@ -1569,7 +1646,7 @@ STATIC tp_err_t tpCreateArcArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev
     int res_tangent1 = checkTangentAngle(&circ1_temp, &blend_tc->coords.arc.xyz, &geom, &param, tp->cycleTime, false);
     int res_tangent2 = checkTangentAngle(&circ2_temp, &blend_tc->coords.arc.xyz, &geom, &param, tp->cycleTime, true);
     if (res_tangent1 || res_tangent2) {
-        tp_debug_print("failed tangent check, aborting arc...\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"failed tangent check, aborting arc...\n");
         return TP_ERR_FAIL;
     }
 
@@ -1577,7 +1654,7 @@ STATIC tp_err_t tpCreateArcArcBlend(TP_STRUCT * const tp, TC_STRUCT * const prev
         return TP_ERR_NO_ACTION;
     }
 
-    tp_debug_print("Passed all tests, updating segments\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"Passed all tests, updating segments\n");
 
     tcSetCircleXYZ(prev_tc, &circ1_temp);
     tcSetCircleXYZ(tc, &circ2_temp);
@@ -1594,7 +1671,7 @@ STATIC tp_err_t tpCreateLineLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pr
                                       TC_STRUCT * const tc, TC_STRUCT * const blend_tc)
 {
 
-    tp_debug_print("-- Starting LineLine blend arc --\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"-- Starting LineLine blend arc --\n");
     PmCartesian acc_bound, vel_bound;
 
     //Get machine limits
@@ -1614,7 +1691,7 @@ STATIC tp_err_t tpCreateLineLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pr
                                           emcmotConfig->maxFeedScale);
 
     if (res_init != TP_ERR_OK) {
-        tp_debug_print("blend init failed with code %d, aborting blend arc\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"blend init failed with code %d, aborting blend arc\n",
                        res_init);
         return res_init;
     }
@@ -1643,7 +1720,7 @@ STATIC tp_err_t tpCreateLineLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pr
     tpInitBlendArcFromPrev(tp, prev_tc, blend_tc, param.v_req,
                            param.v_plan, param.a_max);
 
-    tp_debug_print("blend_tc target_vel = %g\n", blend_tc->target_vel);
+    rtapi_print_msg(RTAPI_MSG_ERR,"blend_tc target_vel = %g\n", blend_tc->target_vel);
 
     if (tpChooseBestBlend(tp, prev_tc, tc, blend_tc) != ARC_BLEND) {
         return TP_ERR_NO_ACTION;
@@ -1665,7 +1742,7 @@ STATIC tp_err_t tpCreateLineLineBlend(TP_STRUCT * const tp, TC_STRUCT * const pr
         retval = tcConnectBlendArc(NULL, tc, &points.arc_start, &points.arc_end);
     } else {
         //TODO refactor connect function to stretch lines and check for bad stretching
-        tp_debug_print("keeping previous line\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"keeping previous line\n");
         retval = tcConnectBlendArc(prev_tc, tc, &points.arc_start, &points.arc_end);
         blend_tc->atspeed=0;
     }
@@ -1693,11 +1770,15 @@ STATIC inline int tpAddSegmentToQueue(TP_STRUCT * const tp, TC_STRUCT * const tc
     // KLUDGE: endpoint is garbage for rigid tap since it's supposed to retract past the start point.
     if (tc->motion_type != TC_RIGIDTAP) {
         tcGetEndpoint(tc, &tp->goalPos);
+        tp_goalpos_x->Pin=tp->goalPos.tran.x;
+        tp_goalpos_y->Pin=tp->goalPos.tran.y;
+        tp_goalpos_z->Pin=tp->goalPos.tran.z;
     }
     tp->done = 0;
     tp->depth = tcqLen(&tp->queue);
+    tp_depth->Pin=tp->depth;
     //Fixing issue with duplicate id's?
-    tp_debug_print("Adding TC id %d of type %d, total length %0.08f\n",tc->id,tc->motion_type,tc->target);
+    rtapi_print_msg(RTAPI_MSG_ERR,"Adding TC id %d of type %d, total length %0.08f\n",tc->id,tc->motion_type,tc->target);
 
     return TP_ERR_OK;
 }
@@ -1709,12 +1790,12 @@ STATIC int handleModeChange(TC_STRUCT * const prev_tc, TC_STRUCT * const tc)
     }
     if ((prev_tc->canon_motion_type == EMC_MOTION_TYPE_TRAVERSE) ^
             (tc->canon_motion_type == EMC_MOTION_TYPE_TRAVERSE)) {
-        tp_debug_print("Blending disabled: can't blend between rapid and feed motions\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"Blending disabled: can't blend between rapid and feed motions\n");
         tcSetTermCond(prev_tc, tc, TC_TERM_COND_STOP);
     }
     if (prev_tc->synchronized != TC_SYNC_POSITION &&
             tc->synchronized == TC_SYNC_POSITION) {
-        tp_debug_print("Blending disabled: changing spindle sync mode from %d to %d\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"Blending disabled: changing spindle sync mode from %d to %d\n",
                        prev_tc->synchronized,
                        tc->synchronized);
         tcSetTermCond(prev_tc, tc, TC_TERM_COND_STOP);
@@ -1752,7 +1833,7 @@ int tpAddRigidTap(TP_STRUCT * const tp,
         return TP_ERR_FAIL;
     }
 
-    tp_info_print("== AddRigidTap ==\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"== AddRigidTap ==\n");
 
     if(!tp->synchronized) {
         rtapi_print_msg(RTAPI_MSG_ERR, "Cannot add unsynchronized rigid tap move.\n");
@@ -1809,28 +1890,28 @@ STATIC blend_type_t tpCheckBlendArcType(
         TC_STRUCT const * const tc) {
 
     if (!prev_tc || !tc) {
-        tp_debug_print("prev_tc or tc doesn't exist\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"prev_tc or tc doesn't exist\n");
         return BLEND_NONE;
     }
 
     //If exact stop, we don't compute the arc
     if (prev_tc->term_cond != TC_TERM_COND_PARABOLIC) {
-        tp_debug_print("Wrong term cond = %u\n", prev_tc->term_cond);
+        rtapi_print_msg(RTAPI_MSG_ERR,"Wrong term cond = %u\n", prev_tc->term_cond);
         return BLEND_NONE;
     }
 
     //If we have any rotary axis motion, then don't create a blend arc
     if (tcRotaryMotionCheck(tc) || tcRotaryMotionCheck(prev_tc)) {
-        tp_debug_print("One of the segments has rotary motion, aborting blend arc\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"One of the segments has rotary motion, aborting blend arc\n");
         return BLEND_NONE;
     }
 
     if (tc->finalized || prev_tc->finalized) {
-        tp_debug_print("Can't create blend when segment lengths are finalized\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"Can't create blend when segment lengths are finalized\n");
         return BLEND_NONE;
     }
 
-    tp_debug_print("Motion types: prev_tc = %u, tc = %u\n",
+    rtapi_print_msg(RTAPI_MSG_ERR,"Motion types: prev_tc = %u, tc = %u\n",
                    prev_tc->motion_type,tc->motion_type);
     //If not linear blends, we can't easily compute an arc
     if ((prev_tc->motion_type == TC_LINEAR) && (tc->motion_type == TC_LINEAR)) {
@@ -1876,7 +1957,7 @@ STATIC int tpComputeOptimalVelocity(TP_STRUCT const * const tp, TC_STRUCT * cons
         //If we've hit the requested velocity, then prev_tc is definitely a "peak"
         vs_back = vf_limit;
         prev1_tc->optimization_state = TC_OPTIM_AT_MAX;
-        tp_debug_print("found peak due to v_limit %f\n", vf_limit);
+        rtapi_print_msg(RTAPI_MSG_ERR,"found peak due to v_limit %f\n", vf_limit);
     }
 
     //Limit tc's target velocity to avoid creating "humps" in the velocity profile
@@ -1886,7 +1967,7 @@ STATIC int tpComputeOptimalVelocity(TP_STRUCT const * const tp, TC_STRUCT * cons
     double sample_maxvel = tc->target / (tp->cycleTime * TP_MIN_SEGMENT_CYCLES);
     tc->maxvel = fmin(tc->maxvel, sample_maxvel);
 
-    tp_info_print(" prev1_tc-> fv = %f, tc->fv = %f\n",
+    rtapi_print_msg(RTAPI_MSG_ERR," prev1_tc-> fv = %f, tc->fv = %f\n",
                   prev1_tc->finalvel, tc->finalvel);
 
     return TP_ERR_OK;
@@ -1922,7 +2003,7 @@ STATIC int tpRunOptimization(TP_STRUCT * const tp) {
      * length may change if a new line is added to the queue.*/
 
     for (x = 1; x < emcmotConfig->arcBlendOptDepth + 2; ++x) {
-        tp_info_print("==== Optimization step %d ====\n",x);
+        rtapi_print_msg(RTAPI_MSG_ERR,"==== Optimization step %d ====\n",x);
 
         // Update the pointers to the trajectory segments in use
         ind = len-x;
@@ -1930,7 +2011,7 @@ STATIC int tpRunOptimization(TP_STRUCT * const tp) {
         prev1_tc = tcqItem(&tp->queue, ind-1);
 
         if ( !prev1_tc || !tc) {
-            tp_debug_print(" Reached end of queue in optimization\n");
+            rtapi_print_msg(RTAPI_MSG_ERR," Reached end of queue in optimization\n");
             return TP_ERR_OK;
         }
 
@@ -1939,10 +2020,10 @@ STATIC int tpRunOptimization(TP_STRUCT * const tp) {
         if (prev1_tc->term_cond != TC_TERM_COND_TANGENT) {
             if (hit_non_tangent) {
                 // 2 or more non-tangent segments means we're past where the optimizer can help
-                tp_debug_print("Found 2nd non-tangent segment, stopping optimization\n");
+                rtapi_print_msg(RTAPI_MSG_ERR,"Found 2nd non-tangent segment, stopping optimization\n");
                 return TP_ERR_OK;
             } else  {
-                tp_debug_print("Found first non-tangent segment, contining\n");
+                rtapi_print_msg(RTAPI_MSG_ERR,"Found first non-tangent segment, contining\n");
                 hit_non_tangent = true;
                 continue;
             }
@@ -1953,32 +2034,32 @@ STATIC int tpRunOptimization(TP_STRUCT * const tp) {
         double cutoff_ratio = BLEND_DIST_FRACTION / 2.0;
 
         if (progress_ratio >= cutoff_ratio) {
-            tp_debug_print("segment %d has moved past %f percent progress, cannot blend safely!\n",
+            rtapi_print_msg(RTAPI_MSG_ERR,"segment %d has moved past %f percent progress, cannot blend safely!\n",
                            ind-1, cutoff_ratio * 100.0);
             return TP_ERR_OK;
         }
 
         //Somewhat pedantic check for other conditions that would make blending unsafe
         if (prev1_tc->splitting || prev1_tc->blending_next) {
-            tp_debug_print("segment %d is already blending, cannot optimize safely!\n",
+            rtapi_print_msg(RTAPI_MSG_ERR,"segment %d is already blending, cannot optimize safely!\n",
                            ind-1);
             return TP_ERR_OK;
         }
 
-        tp_info_print("  current term = %u, type = %u, id = %u, accel_mode = %d\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"  current term = %u, type = %u, id = %u, accel_mode = %d\n",
                       tc->term_cond, tc->motion_type, tc->id, tc->accel_mode);
-        tp_info_print("  prev term = %u, type = %u, id = %u, accel_mode = %d\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"  prev term = %u, type = %u, id = %u, accel_mode = %d\n",
                       prev1_tc->term_cond, prev1_tc->motion_type, prev1_tc->id, prev1_tc->accel_mode);
 
         if (tc->atspeed) {
             //Assume worst case that we have a stop at this point. This may cause a
             //slight hiccup, but the alternative is a sudden hard stop.
-            tp_debug_print("Found atspeed at id %d\n",tc->id);
+            rtapi_print_msg(RTAPI_MSG_ERR,"Found atspeed at id %d\n",tc->id);
             tc->finalvel = 0.0;
         }
 
         if (!tc->finalized) {
-            tp_debug_print("Segment %d, type %d not finalized, continuing\n",tc->id,tc->motion_type);
+            rtapi_print_msg(RTAPI_MSG_ERR,"Segment %d, type %d not finalized, continuing\n",tc->id,tc->motion_type);
             // use worst-case final velocity that allows for up to 1/2 of a segment to be consumed.
 
             prev1_tc->finalvel = fmin(prev1_tc->maxvel, tpCalculateOptimizationInitialVel(tp,tc));
@@ -2003,7 +2084,7 @@ STATIC int tpRunOptimization(TP_STRUCT * const tp) {
 #endif
 
     }
-    tp_debug_print("Reached optimization depth limit\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"Reached optimization depth limit\n");
     return TP_ERR_OK;
 }
 
@@ -2017,23 +2098,23 @@ STATIC int tpRunOptimization(TP_STRUCT * const tp) {
 STATIC int tpSetupTangent(TP_STRUCT const * const tp,
                           TC_STRUCT * const prev_tc, TC_STRUCT * const tc) {
     if (!tc || !prev_tc) {
-        tp_debug_print("missing tc or prev tc in tangent check\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"missing tc or prev tc in tangent check\n");
         return TP_ERR_FAIL;
     }
     //If we have ABCUVW movement, then don't check for tangency
     if (tcRotaryMotionCheck(tc) || tcRotaryMotionCheck(prev_tc)) {
-        tp_debug_print("found rotary axis motion\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"found rotary axis motion\n");
         return TP_ERR_FAIL;
     }
 
     if (emcmotConfig->arcBlendOptDepth < 2) {
-        tp_debug_print("Optimization depth %d too low for tangent optimization\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"Optimization depth %d too low for tangent optimization\n",
                        emcmotConfig->arcBlendOptDepth);
         return TP_ERR_FAIL;
     }
 
     if (prev_tc->term_cond == TC_TERM_COND_STOP) {
-        tp_debug_print("Found exact stop condition\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"Found exact stop condition\n");
         return TP_ERR_FAIL;
     }
 
@@ -2042,19 +2123,19 @@ STATIC int tpSetupTangent(TP_STRUCT const * const tp,
     int res_endtan = tcGetEndTangentUnitVector(prev_tc, &prev_tan);
     int res_starttan = tcGetStartTangentUnitVector(tc, &this_tan);
     if (res_endtan || res_starttan) {
-        tp_debug_print("Got %d and %d from tangent vector calc\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"Got %d and %d from tangent vector calc\n",
                        res_endtan, res_starttan);
     }
 
-    tp_debug_print("prev tangent vector: %f %f %f\n", prev_tan.x, prev_tan.y, prev_tan.z);
-    tp_debug_print("this tangent vector: %f %f %f\n", this_tan.x, this_tan.y, this_tan.z);
+    rtapi_print_msg(RTAPI_MSG_ERR,"prev tangent vector: %f %f %f\n", prev_tan.x, prev_tan.y, prev_tan.z);
+    rtapi_print_msg(RTAPI_MSG_ERR,"this tangent vector: %f %f %f\n", this_tan.x, this_tan.y, this_tan.z);
 
     // Assume small angle approximation here
     const double SHARP_CORNER_DEG = 2.0;
     const double SHARP_CORNER_EPSILON = pmSq(PM_PI * ( SHARP_CORNER_DEG / 180.0));
     if (pmCartCartAntiParallel(&prev_tan, &this_tan, SHARP_CORNER_EPSILON))
     {
-        tp_debug_print("Found sharp corner\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"Found sharp corner\n");
         tcSetTermCond(prev_tc, tc, TC_TERM_COND_STOP);
         return TP_ERR_FAIL;
     }
@@ -2066,7 +2147,7 @@ STATIC int tpSetupTangent(TP_STRUCT const * const tp,
     // Note that this is a minimum since the velocity at the intersection must
     // be the slower of the two segments not to violate constraints.
     double v_max = fmin(v_max1, v_max2);
-    tp_debug_print("tangent v_max = %f\n",v_max);
+    rtapi_print_msg(RTAPI_MSG_ERR,"tangent v_max = %f\n",v_max);
 
     // Account for acceleration past final velocity during a split cycle
     // (e.g. next segment starts accelerating again so the average velocity is higher at the end of the split cycle)
@@ -2086,11 +2167,11 @@ STATIC int tpSetupTangent(TP_STRUCT const * const tp,
 
     PmCartesian acc_scale;
     findAccelScale(&acc_diff,&acc_bound,&acc_scale);
-    tp_debug_print("acc_diff: %f %f %f\n",
+    rtapi_print_msg(RTAPI_MSG_ERR,"acc_diff: %f %f %f\n",
                    acc_diff.x,
                    acc_diff.y,
                    acc_diff.z);
-    tp_debug_print("acc_scale: %f %f %f\n",
+    rtapi_print_msg(RTAPI_MSG_ERR,"acc_scale: %f %f %f\n",
                    acc_scale.x,
                    acc_scale.y,
                    acc_scale.z);
@@ -2107,13 +2188,13 @@ STATIC int tpSetupTangent(TP_STRUCT const * const tp,
     const double kink_ratio = tpGetTangentKinkRatio();
 
     if (acc_scale_max < kink_ratio) {
-        tp_debug_print(" Kink acceleration within %g, using tangent blend\n", kink_ratio);
+        rtapi_print_msg(RTAPI_MSG_ERR," Kink acceleration within %g, using tangent blend\n", kink_ratio);
         tcSetTermCond(prev_tc, tc, TC_TERM_COND_TANGENT);
         tcSetKinkProperties(prev_tc, tc, v_max, acc_scale_max);
         return TP_ERR_OK;
     } else {
         tcSetKinkProperties(prev_tc, tc, v_max * kink_ratio / acc_scale_max, kink_ratio);
-        tp_debug_print("Kink acceleration scale %f above %f, kink vel = %f, blend arc may be faster\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"Kink acceleration scale %f above %f, kink vel = %f, blend arc may be faster\n",
                        acc_scale_max,
                        kink_ratio,
                        prev_tc->kink_vel);
@@ -2146,7 +2227,7 @@ static bool tpCreateBlendIfPossible(
         break;
     case BLEND_NONE:
     default:
-        tp_debug_print("intersection type not recognized, aborting arc\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"intersection type not recognized, aborting arc\n");
         res_create = TP_ERR_FAIL;
         break;
     }
@@ -2163,7 +2244,7 @@ static bool tpCreateBlendIfPossible(
  */
 STATIC tc_blend_type_t tpHandleBlendArc(TP_STRUCT * const tp, TC_STRUCT * const tc) {
 
-    tp_debug_print("*****************************************\n** Handle Blend Arc **\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"*****************************************\n** Handle Blend Arc **\n");
 
     TC_STRUCT *prev_tc;
     prev_tc = tcqLast(&tp->queue);
@@ -2173,11 +2254,13 @@ STATIC tc_blend_type_t tpHandleBlendArc(TP_STRUCT * const tp, TC_STRUCT * const 
     // TODO May be able to lift this restriction if we can ensure that we leave
     // 1 timestep's worth of distance in prev_tc
     if ( !prev_tc) {
-        tp_debug_print(" queue empty\n");
+        rtapi_print_msg(RTAPI_MSG_ERR," queue empty\n");
+
+         //rtapi_print_msg(RTAPI_MSG_ERR,"addline\n");
         return NO_BLEND;
     }
     if (prev_tc->progress > prev_tc->target / 2.0) {
-        tp_debug_print(" prev_tc progress (%f) is too large, aborting blend arc\n", prev_tc->progress);
+        rtapi_print_msg(RTAPI_MSG_ERR," prev_tc progress (%f) is too large, aborting blend arc\n", prev_tc->progress);
         return NO_BLEND;
     }
 
@@ -2187,7 +2270,7 @@ STATIC tc_blend_type_t tpHandleBlendArc(TP_STRUCT * const tp, TC_STRUCT * const 
     switch (res_tan) {
     // Abort blend arc creation in these cases
     case TP_ERR_FAIL:
-        tp_debug_print(" tpSetupTangent failed, aborting blend arc\n");
+        rtapi_print_msg(RTAPI_MSG_ERR," tpSetupTangent failed, aborting blend arc\n");
     case TP_ERR_OK:
         return res_tan;
     case TP_ERR_NO_ACTION:
@@ -2229,9 +2312,9 @@ int tpAddLine(TP_STRUCT * const tp, EmcPose end, int canon_motion_type,
     if (tpErrorCheck(tp) < 0) {
         return TP_ERR_FAIL;
     }
-    tp_info_print("== AddLine ==\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"== AddLine ==\n");
 
-    rtapi_print_msg(RTAPI_MSG_ERR,"addline\n");
+    //rtapi_print_msg(RTAPI_MSG_ERR,"addline\n");
 
     // Initialize new tc struct for the line segment
     TC_STRUCT tc = {0};
@@ -2260,7 +2343,7 @@ int tpAddLine(TP_STRUCT * const tp, EmcPose end, int canon_motion_type,
                 &end);
     tc.target = pmLine9Target(&tc.coords.line);
     if (tc.target < TP_POS_EPSILON) {
-        rtapi_print_msg(RTAPI_MSG_DBG,"failed to create line id %d, zero-length segment\n",tp->nextId);
+        rtapi_print_msg(RTAPI_MSG_ERR,"failed to create line id %d, zero-length segment\n",tp->nextId);
         return TP_ERR_ZERO_LENGTH;
     }
     tc.nominal_length = tc.target;
@@ -2314,10 +2397,10 @@ int tpAddCircle(TP_STRUCT * const tp,
         return TP_ERR_FAIL;
     }
 
-    tp_info_print("== AddCircle ==\n");
-    tp_debug_print("ini_maxvel = %f\n",ini_maxvel);
+    rtapi_print_msg(RTAPI_MSG_ERR,"== AddCircle ==\n");
+    rtapi_print_msg(RTAPI_MSG_ERR,"ini_maxvel = %f\n",ini_maxvel);
 
-    rtapi_print_msg(RTAPI_MSG_ERR,"addline\n");
+    //rtapi_print_msg(RTAPI_MSG_ERR,"addline\n");
 
     TC_STRUCT tc = {0};
 
@@ -2349,7 +2432,7 @@ int tpAddCircle(TP_STRUCT * const tp,
     if (tc.target < TP_POS_EPSILON) {
         return TP_ERR_ZERO_LENGTH;
     }
-    tp_debug_print("tc.target = %f\n",tc.target);
+    rtapi_print_msg(RTAPI_MSG_ERR,"tc.target = %f\n",tc.target);
     tc.nominal_length = tc.target;
 
     // Copy in motion parameters
@@ -2642,7 +2725,7 @@ STATIC int tpCalculateRampAccel(TP_STRUCT const * const tp,
 
     /* Check if the final velocity is too low to properly ramp up.*/
     if (vel_final < TP_VEL_EPSILON) {
-        tp_debug_print(" vel_final %f too low for velocity ramping\n", vel_final);
+        rtapi_print_msg(RTAPI_MSG_ERR," vel_final %f too low for velocity ramping\n", vel_final);
         return TP_ERR_FAIL;
     }
 
@@ -2726,11 +2809,11 @@ STATIC void tpUpdateRigidTapState(TP_STRUCT const * const tp,
             pmCartLinePoint(&tc->coords.rigidtap.xyz, tc->progress, &start);
             end = tc->coords.rigidtap.xyz.start;
             pmCartLineInit(aux, &start, &end);
-            rtapi_print_msg(RTAPI_MSG_DBG, "old target = %f", tc->target);
+            rtapi_print_msg(RTAPI_MSG_ERR, "old target = %f", tc->target);
             tc->coords.rigidtap.reversal_target = aux->tmag;
             tc->target = aux->tmag + 10. * tc->uu_per_rev;
             tc->progress = 0.0;
-            rtapi_print_msg(RTAPI_MSG_DBG, "new target = %f", tc->target);
+            rtapi_print_msg(RTAPI_MSG_ERR, "new target = %f", tc->target);
 
             tc->coords.rigidtap.state = RETRACTION;
         }
@@ -2803,24 +2886,25 @@ STATIC int tpUpdateMovementStatus(TP_STRUCT * const tp, TC_STRUCT const * const 
     tc_debug_print("tc id = %u canon_type = %u motion_type = %u\n",
                    tc->id, tc->canon_motion_type, tc->motion_type);
 
-    param_tc_id->Pin=tc->id;
-    param_tc_motiontype->Pin=tc->motion_type;
-    param_tc_canon_motiontype->Pin=tc->canon_motion_type;
+    tc_id->Pin=tc->id;
+    tc_motiontype->Pin=tc->motion_type;
+    tc_canon_motiontype->Pin=tc->canon_motion_type;
 
     tp->motionType = tc->canon_motion_type;
 
     tp->activeDepth = tc->active_depth;
-    param_tc_active_depth->Pin=tc->active_depth;
+    tc_current_depth->Pin=tc->active_depth;
 
     emcmotStatus->distance_to_go = tc->target - tc->progress;
 
-    param_tc_progress->Pin=tc->progress;
-    param_tc_target->Pin=tc->target;
+    tc_progress->Pin=tc->progress;
+    tc_target->Pin=tc->target;
+    dtg->Pin=tc->target - tc->progress;
 
     emcmotStatus->enables_queued = tc->enables;
     // report our line number to the guis
     tp->execId = tc->id;
-    param_tp_exec_id->Pin=tp->execId;
+    tp_exec_id->Pin=tp->execId;
 
     emcmotStatus->requested_vel = tc->reqvel;
     emcmotStatus->current_vel = tc->currentvel;
@@ -2855,6 +2939,7 @@ STATIC void tpUpdateBlend(TP_STRUCT * const tp, TC_STRUCT * const tc,
         nexttc->target_vel = blend_progress * nexttc->blend_vel * blend_scale;
         // Mark the segment as blending so we handle the new target velocity properly
         nexttc->is_blending = true;
+
     } else {
         // Drive the target velocity to zero since we're stopping
         nexttc->target_vel = 0.0;
@@ -2935,6 +3020,7 @@ STATIC int tpCompleteSegment(TP_STRUCT * const tp,
     tc->active = 0;
     tc->remove = 0;
     tc->is_blending = 0;
+    tc_is_blending=0;
     tc->splitting = 0;
     tc->cycle_time = tp->cycleTime;
     //Velocities are by definition zero for a non-active segment
@@ -2944,11 +3030,11 @@ STATIC int tpCompleteSegment(TP_STRUCT * const tp,
     // done with this move
     if (tp->reverse_run) {
         tcqBackStep(&tp->queue);
-        tp_debug_print("Finished reverse run of tc id %d\n", tc->id);
+        rtapi_print_msg(RTAPI_MSG_ERR,"Finished reverse run of tc id %d\n", tc->id);
     } else {
         int res_pop = tcqPop(&tp->queue);
         if (res_pop) rtapi_print_msg(RTAPI_MSG_ERR,"Got error %d from tcqPop!\n", res_pop);
-        tp_debug_print("Finished tc id %d\n", tc->id);
+        rtapi_print_msg(RTAPI_MSG_ERR,"Finished tc id %d\n", tc->id);
     }
 
     return TP_ERR_OK;
@@ -2975,6 +3061,7 @@ STATIC tp_err_t tpHandleAbort(TP_STRUCT * const tp, TC_STRUCT * const tc,
         tp->done = 1;
         tp->depth = tp->activeDepth = 0;
         tp->aborting = 0;
+        tp_aborting->Pin=0;
         tp->execId = 0;
         tp->motionType = 0;
         tp->synchronized = 0;
@@ -3031,7 +3118,7 @@ STATIC tp_err_t tpCheckAtSpeed(TP_STRUCT * const tp, TC_STRUCT * const tc)
             /* haven't passed index yet */
             return TP_ERR_WAITING;
         } else {
-            rtapi_print_msg(RTAPI_MSG_DBG, "Index seen on spindle %d\n", tp->spindle.spindle_num);
+            rtapi_print_msg(RTAPI_MSG_ERR, "Index seen on spindle %d\n", tp->spindle.spindle_num);
             /* passed index, start the move */
             emcmotStatus->spindleSync = 1;
             tp->spindle.waiting_for_index = MOTION_INVALID_ID;
@@ -3081,7 +3168,7 @@ STATIC tp_err_t tpActivateSegment(TP_STRUCT * const tp, TC_STRUCT * const tc) {
             tc->motion_type != TC_RIGIDTAP &&
             length != 0)
     {
-        tp_debug_print("segment_time = %f, cutoff_time = %f, ramping\n",
+        rtapi_print_msg(RTAPI_MSG_ERR,"segment_time = %f, cutoff_time = %f, ramping\n",
                        segment_time, cutoff_time);
         tc->accel_mode = TC_ACCEL_RAMP;
     }
@@ -3111,12 +3198,14 @@ STATIC tp_err_t tpActivateSegment(TP_STRUCT * const tp, TC_STRUCT * const tc) {
     }
 
     // Temporary debug message
-    tp_debug_print("Activate tc id = %d target_vel = %f req_vel = %f final_vel = %f length = %f\n",
+    rtapi_print_msg(RTAPI_MSG_ERR,"Activate tc id = %d target_vel = %f req_vel = %f final_vel = %f length = %f\n",
                    tc->id,
                    tc->target_vel,
                    tc->reqvel,
                    tc->finalvel,
                    tc->target);
+
+    tc_final_vel->Pin=tc->finalvel;
 
     tc->active = 1;
     //Do not change initial velocity here, since tangent blending already sets this up
@@ -3125,13 +3214,13 @@ STATIC tp_err_t tpActivateSegment(TP_STRUCT * const tp, TC_STRUCT * const tc) {
     tc->on_final_decel = 0;
 
     if (TC_SYNC_POSITION == tc->synchronized && !(emcmotStatus->spindleSync)) {
-        tp_debug_print("Setting up position sync\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"Setting up position sync\n");
         // if we aren't already synced, wait
         tp->spindle.waiting_for_index = tc->id;
         // ask for an index reset
         emcmotStatus->spindle_status[tp->spindle.spindle_num].spindle_index_enable = 1;
         tp->spindle.offset = 0.0;
-        rtapi_print_msg(RTAPI_MSG_DBG, "Waiting on sync. spindle_num %d..\n", tp->spindle.spindle_num);
+        rtapi_print_msg(RTAPI_MSG_ERR, "Waiting on sync. spindle_num %d..\n", tp->spindle.spindle_num);
         return TP_ERR_WAITING;
     }
 
@@ -3171,7 +3260,7 @@ STATIC void tpSyncPositionMode(TP_STRUCT * const tp, TC_STRUCT * const tc,
                                TC_STRUCT * const nexttc ) {
 
     double spindle_pos = tpGetSignedSpindlePosition(&emcmotStatus->spindle_status[tp->spindle.spindle_num]);
-    tp_debug_print("Spindle at %f\n",spindle_pos);
+    rtapi_print_msg(RTAPI_MSG_ERR,"Spindle at %f\n",spindle_pos);
     double spindle_vel, target_vel;
     double oldrevs = tp->spindle.revs;
 
@@ -3207,6 +3296,7 @@ STATIC void tpSyncPositionMode(TP_STRUCT * const tp, TC_STRUCT * const tc,
             tc_debug_print("accelerating in pos_sync\n");
             // beginning of move and we are behind: accel as fast as we can
             tc->target_vel = tc->maxvel;
+            tc_target_vel->Pin=tc->target_vel;
         }
     } else {
         // we have synced the beginning of the move as best we can -
@@ -3265,6 +3355,26 @@ STATIC int tpDoParabolicBlending(TP_STRUCT * const tp, TC_STRUCT * const tc,
     return TP_ERR_OK;
 }
 
+typedef double T;
+T netto_difference_of_2_values(T a, T b){
+
+    T diff=0;
+    if(a<0 && b<0){
+        a=fabs(a);
+        b=fabs(b);
+        diff=fabs(a-b);
+    }
+    if(a>=0 && b>=0){
+        diff=fabs(a-b);
+    }
+    if(a<=0 && b>=0){;
+        diff=fabs(a)+b;
+    }
+    if(a>=0 && b<=0){
+        diff=a+fabs(b);
+    }
+    return diff;
+}
 
 /**
  * Do a complete update on one segment.
@@ -3299,11 +3409,31 @@ STATIC int tpUpdateCycle(TP_STRUCT * const tp,
         tpCalculateTrapezoidalAccel(tp, tc, nexttc, &acc, &vel_desired);
     }
 
-    tcUpdateDistFromAccel(tc, acc, vel_desired, tp->reverse_run);
+
+
+
+
+    // tcUpdateDistFromAccel(tc, acc, vel_desired, tp->reverse_run);
+    if(tc->progress<tc->target){
+         tc->progress+=0.002;
+    }
+    if(tc->progress>tc->target){
+         tc->progress-=0.002;
+    }
+
+    //! If close, finish.
+    T diff=netto_difference_of_2_values(tc->progress,tc->target);
+    if(diff<0.1){
+        tc->progress=tc->target;
+        tc->remove=1;
+    }
+
+
+
     tpDebugCycleInfo(tp, tc, nexttc, acc);
 
     //Check if we're near the end of the cycle and set appropriate changes
-    tpCheckEndCondition(tp, tc, nexttc);
+    //tpCheckEndCondition(tp, tc, nexttc);
 
     EmcPose displacement;
 
@@ -3346,7 +3476,7 @@ STATIC int tpUpdateInitialStatus(TP_STRUCT const * const tp) {
 STATIC inline int tcSetSplitCycle(TC_STRUCT * const tc, double split_time,
                                   double v_f)
 {
-    tp_debug_print("split time for id %d is %.16g\n", tc->id, split_time);
+    rtapi_print_msg(RTAPI_MSG_ERR,"split time for id %d is %.16g\n", tc->id, split_time);
     if (tc->splitting != 0 && split_time > 0.0) {
         rtapi_print_msg(RTAPI_MSG_ERR,"already splitting on id %d with cycle time %.16g, dx = %.16g, split time %.12g\n",
                         tc->id,
@@ -3379,12 +3509,12 @@ STATIC int tpCheckEndCondition(TP_STRUCT const * const tp, TC_STRUCT * const tc,
 
     if (dx <= TP_POS_EPSILON) {
         //If the segment is close to the target position, then we assume that it's done.
-        tp_debug_print("close to target, dx = %.12f\n",dx);
+       // rtapi_print_msg(RTAPI_MSG_ERR,"close to target, dx = %.12f\n",dx);
         //Force progress to land exactly on the target to prevent numerical errors.
         tc->progress = tcGetTarget(tc, tp->reverse_run);
 
         if (!tp->reverse_run) {
-            tcSetSplitCycle(tc, 0.0, tc->currentvel);
+           tcSetSplitCycle(tc, 0.0, tc->currentvel);
         }
         if (tc->term_cond == TC_TERM_COND_STOP || tc->term_cond == TC_TERM_COND_EXACT || tp->reverse_run) {
             tc->remove = 1;
@@ -3463,10 +3593,10 @@ STATIC int tpCheckEndCondition(TP_STRUCT const * const tp, TC_STRUCT * const tc,
         //Close enough, call it done
         tc_debug_print("revised dt small, finishing tc\n");
         tc->progress = tcGetTarget(tc, tp->reverse_run);
-        tcSetSplitCycle(tc, 0.0, v_f);
+        //tcSetSplitCycle(tc, 0.0, v_f);
     } else if (dt < tp->cycleTime ) {
         tc_debug_print(" corrected v_f = %f, a = %f\n", v_f, a);
-        tcSetSplitCycle(tc, dt, v_f);
+        //tcSetSplitCycle(tc, dt, v_f);
     } else {
         tc_debug_print(" dt = %f, not at end yet\n",dt);
         return TP_ERR_NO_ACTION;
@@ -3487,7 +3617,7 @@ STATIC int tpHandleSplitCycle(TP_STRUCT * const tp, TC_STRUCT * const tc,
     EmcPose before;
     tcGetPos(tc, &before);
 
-    tp_debug_print("tc id %d splitting\n",tc->id);
+    rtapi_print_msg(RTAPI_MSG_ERR,"tc id %d splitting\n",tc->id);
     //Shortcut tc update by assuming we arrive at end
     tc->progress = tcGetTarget(tc,tp->reverse_run);
     //Get displacement from prev. position
@@ -3508,15 +3638,15 @@ STATIC int tpHandleSplitCycle(TP_STRUCT * const tp, TC_STRUCT * const tc,
     tc->remove = 1;
 
     if (!nexttc) {
-        tp_debug_print("no nexttc in split cycle\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"no nexttc in split cycle\n");
         return TP_ERR_OK;
     }
 
     switch (tc->term_cond) {
     case TC_TERM_COND_TANGENT:
-        nexttc->cycle_time = tp->cycleTime - tc->cycle_time;
-        nexttc->currentvel = tc->term_vel;
-        tp_debug_print("Doing tangent split\n");
+        //nexttc->cycle_time = tp->cycleTime - tc->cycle_time;
+        //nexttc->currentvel = tc->term_vel;
+        //rtapi_print_msg(RTAPI_MSG_ERR,"Doing tangent split\n");
         break;
     case TC_TERM_COND_PARABOLIC:
         break;
@@ -3664,15 +3794,15 @@ int tpRunCycle(TP_STRUCT * const tp, long period)
         emcmotStatus->spindleSync = 0;
         break;
     case TC_SYNC_VELOCITY:
-        tp_debug_print("sync velocity\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"sync velocity\n");
         tpSyncVelocityMode(tp, tc, nexttc);
         break;
     case TC_SYNC_POSITION:
-        tp_debug_print("sync position\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"sync position\n");
         tpSyncPositionMode(tp, tc, nexttc);
         break;
     default:
-        tp_debug_print("unrecognized spindle sync state!\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"unrecognized spindle sync state!\n");
         break;
     }
 
@@ -3709,10 +3839,10 @@ int tpRunCycle(TP_STRUCT * const tp, long period)
                    time_elapsed);
 #endif
 
-    if(param_tc_remove->Pin){
+    if(tc_remove->Pin){
         rtapi_print_msg(RTAPI_MSG_ERR,"new gcode line\n");
         tc->remove=1;
-        param_tc_remove->Pin=0;
+        tc_remove->Pin=0;
 
     }
 
@@ -3746,6 +3876,7 @@ int tpPause(TP_STRUCT * const tp)
         return TP_ERR_FAIL;
     }
     tp->pausing = 1;
+    tp_pausing->Pin=1;
     return TP_ERR_OK;
 }
 
@@ -3755,6 +3886,7 @@ int tpResume(TP_STRUCT * const tp)
         return TP_ERR_FAIL;
     }
     tp->pausing = 0;
+    tp_pausing->Pin=0;
     return TP_ERR_OK;
 }
 
@@ -3768,6 +3900,7 @@ int tpAbort(TP_STRUCT * const tp)
         /* const to abort, signal a pause and set our abort flag */
         tpPause(tp);
         tp->aborting = 1;
+        tp_aborting->Pin=1;
     }
     return tpClearDIOs(tp); //clears out any already cached DIOs
 }
@@ -3869,10 +4002,10 @@ int tpIsMoving(TP_STRUCT const * const tp)
 
     //TODO may be better to explicitly check velocities on the first 2 segments, but this is messy
     if (emcmotStatus->current_vel >= TP_VEL_EPSILON ) {
-        tp_debug_print("TP moving, current_vel = %.16g\n", emcmotStatus->current_vel);
+        rtapi_print_msg(RTAPI_MSG_ERR,"TP moving, current_vel = %.16g\n", emcmotStatus->current_vel);
         return true;
     } else if (tp->spindle.waiting_for_index != MOTION_INVALID_ID || tp->spindle.waiting_for_atspeed != MOTION_INVALID_ID) {
-        tp_debug_print("TP moving, waiting for index or atspeed\n");
+        rtapi_print_msg(RTAPI_MSG_ERR,"TP moving, waiting for index or atspeed\n");
         return true;
     }
     return false;

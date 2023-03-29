@@ -375,7 +375,7 @@ int tcGetPosReal(TC_STRUCT const * const tc, int of_point, EmcPose * const pos)
     PmCartesian uvw;
     double progress=0.0;
 
-    switch (of_point) {
+    switch (of_point) { // progress 0-1 = tc progress / tc target.
         case TC_GET_PROGRESS:
             progress = tc->progress;
             break;
@@ -392,7 +392,7 @@ int tcGetPosReal(TC_STRUCT const * const tc, int of_point, EmcPose * const pos)
     double angle = 0.0;
     int res_fit = TP_ERR_OK;
 
-    switch (tc->motion_type){
+    switch (tc->motion_type){ // TC_RIGIDTAP, TC_LINEAR, TC_CIRCULAR, TC_SPHERICAL
         case TC_RIGIDTAP:
             if(tc->coords.rigidtap.state > REVERSING) {
                 pmCartLinePoint(&tc->coords.rigidtap.aux_xyz, progress, &xyz);
@@ -404,9 +404,11 @@ int tcGetPosReal(TC_STRUCT const * const tc, int of_point, EmcPose * const pos)
             uvw = tc->coords.rigidtap.uvw;
             break;
         case TC_LINEAR:
+        //! Here the 9 axis interpolation for line is done.
             pmCartLinePoint(&tc->coords.line.xyz,
                     progress * tc->coords.line.xyz.tmag / tc->target,
                     &xyz);
+
             pmCartLinePoint(&tc->coords.line.uvw,
                     progress * tc->coords.line.uvw.tmag / tc->target,
                     &uvw);
@@ -415,6 +417,7 @@ int tcGetPosReal(TC_STRUCT const * const tc, int of_point, EmcPose * const pos)
                     &abc);
             break;
         case TC_CIRCULAR:
+        //! Here the 9 axis interpolation for arc is done.
             res_fit = pmCircleAngleFromProgress(&tc->coords.circle.xyz,
                     &tc->coords.circle.fit,
                     progress, &angle);

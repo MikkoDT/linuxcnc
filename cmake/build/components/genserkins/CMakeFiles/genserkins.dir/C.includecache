@@ -192,22 +192,6 @@ string.h
 rtapi_gfp.h
 -
 
-/home/user/linuxcnc/cmake/components/genserkins_src/genserfuncs.c
-rtapi_math.h
-/home/user/linuxcnc/cmake/components/genserkins_src/rtapi_math.h
-gotypes.h
-/home/user/linuxcnc/cmake/components/genserkins_src/gotypes.h
-gomath.h
-/home/user/linuxcnc/cmake/components/genserkins_src/gomath.h
-genserkins.h
-/home/user/linuxcnc/cmake/components/genserkins_src/genserkins.h
-kinematics.h
-/home/user/linuxcnc/cmake/components/genserkins_src/kinematics.h
-hal.h
-/home/user/linuxcnc/cmake/components/genserkins_src/hal.h
-rtapi.h
-/home/user/linuxcnc/cmake/components/genserkins_src/rtapi.h
-
 /home/user/linuxcnc/cmake/components/genserkins_src/genserkins.c
 rtapi.h
 /home/user/linuxcnc/cmake/components/genserkins_src/rtapi.h
