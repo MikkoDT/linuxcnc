@@ -43,29 +43,29 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib/test.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib/test.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib/test.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so")
+   "/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib/test.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/build/components/test/../../../rtlib" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/cmake/build/components/test/test.so")
-  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so")
+file(INSTALL DESTINATION "/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib" TYPE SHARED_LIBRARY FILES "/home/user/linuxcnc/cmake/build/components/test/test.so")
+  if(EXISTS "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib/test.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib/test.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so"
+         FILE "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib/test.so"
          OLD_RPATH "/home/user/linuxcnc/cmake/components/test/../../build/liblinuxcnchal:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib/test.so")
     endif()
   endif()
 endif()

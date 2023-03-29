@@ -23,9 +23,10 @@ I set_a_dv(T theA, T theDv){
 
 I check_a_as_jm_dv(){
     if(a==0 || as==0 || jm==0 || dv==0){
-        rtapi_print_msg(RTAPI_MSG_ERR,"scurve, check values for a,as,dv.");
+        rtapi_print_msg(RTAPI_MSG_ERR,"scurve, check values for a,as,dv.\n");
         return 1;
     }
+    rtapi_print_msg(RTAPI_MSG_ERR,"check: values for a,as,dv ok.\n");
     return 1;
 }
 
@@ -863,10 +864,13 @@ I interpolate_periods(T at_time,
 
     T t=0;
     T s=0;
+    *finished=0;
 
-    if(at_time>to_ttot_pvec(pvec,size)){
-        at_time=to_ttot_pvec(pvec,size);
+    T ttot=to_ttot_pvec(pvec,size);
+
+    if(at_time>ttot){
         *finished=1;
+        at_time=ttot;
     }
 
     for(uint i=0; i<size; i++){
@@ -1415,12 +1419,12 @@ I t3_t5_t6_t7_pid(struct sc_period p, struct sc_period **pvec, size_t *size){
 }
 
 I process_curve_simple(enum sc_period_id id,
-                 T vo,
-                 T ve,
-                 T acs,
-                 T ace,
-                 T ncs,
-                 T vm,
+                       T vo,
+                       T ve,
+                       T acs,
+                       T ace,
+                       T ncs,
+                       T vm,
                        struct sc_period **pvec, size_t size){
 
     struct sc_period p;
@@ -1438,6 +1442,24 @@ I process_curve(struct sc_period p,
                 T vm,
                 struct sc_period **pvec,
                 size_t *size){
+
+    if(p.id==id_pause || p.id==id_pause_resume || p.id==id_run){
+        // ok
+    } else {
+        rtapi_print_msg(RTAPI_MSG_ERR,"set process curve id.\n");
+    }
+
+    if(a>0 && dv>0){
+        // ok
+    } else {
+        rtapi_print_msg(RTAPI_MSG_ERR,"set a, dv.\n");
+    }
+
+    if(vm>0){
+        // ok
+    } else {
+        rtapi_print_msg(RTAPI_MSG_ERR,"vm is zero.\n");
+    }
 
     p.ncs=fabs(p.ncs); //! Ensure positive input.
 
@@ -1549,8 +1571,10 @@ I process_curve(struct sc_period p,
                 append_to_pvec(pvec,size,vec_1,size_vec_1);
                 append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                free(vec_1);
-                free(vec_3);
+                //free(vec_1);
+                //free(vec_3);
+                //cleanup_periods(&vec_1,&size_vec_1);
+                //cleanup_periods(&vec_3,&size_vec_3);
                 return 0;
             }
             if(p.ncs>stot){ //! Need t4.
@@ -1568,9 +1592,12 @@ I process_curve(struct sc_period p,
 
                 append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                free(vec_1);
-                free(vec_2);
-                free(vec_3);
+                //free(vec_1);
+               // free(vec_2);
+                //free(vec_3);
+               // cleanup_periods(&vec_1,&size_vec_1);
+                //cleanup_periods(&vec_2,&size_vec_2);
+                //cleanup_periods(&vec_3,&size_vec_3);
 
                 return 0;
             }
@@ -1610,9 +1637,12 @@ I process_curve(struct sc_period p,
 
                         append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                        free(vec_1);
-                        free(vec_2);
-                        free(vec_3);
+                        //free(vec_1);
+                        //free(vec_2);
+                        //free(vec_3);
+                       // cleanup_periods(&vec_1,&size_vec_1);
+                       // cleanup_periods(&vec_2,&size_vec_2);
+                        //cleanup_periods(&vec_3,&size_vec_3);
 
                         return 0;
                     }
@@ -1660,8 +1690,10 @@ I process_curve(struct sc_period p,
                 append_to_pvec(pvec,size,vec_1,size_vec_1);
                 append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                free(vec_1);
-                free(vec_3);
+               // free(vec_1);
+               // free(vec_3);
+               // cleanup_periods(&vec_1,&size_vec_1);
+               // cleanup_periods(&vec_3,&size_vec_3);
 
                 return 0;
             }
@@ -1680,9 +1712,12 @@ I process_curve(struct sc_period p,
 
                 append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                free(vec_1);
-                free(vec_2);
-                free(vec_3);
+                //free(vec_1);
+                //free(vec_2);
+                //free(vec_3);
+                //cleanup_periods(&vec_1,&size_vec_1);
+                //cleanup_periods(&vec_2,&size_vec_2);
+               // cleanup_periods(&vec_3,&size_vec_3);
 
                 return 0;
             }
@@ -1722,9 +1757,12 @@ I process_curve(struct sc_period p,
 
                         append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                        free(vec_1);
-                        free(vec_2);
-                        free(vec_3);
+                        //free(vec_1);
+                        //free(vec_2);
+                        //ree(vec_3);
+                       // cleanup_periods(&vec_1,&size_vec_1);
+                       // cleanup_periods(&vec_2,&size_vec_2);
+                       // cleanup_periods(&vec_3,&size_vec_3);
 
                         return 0;
                     }
@@ -1779,8 +1817,10 @@ I process_curve(struct sc_period p,
                 append_to_pvec(pvec,size,vec_1,size_vec_1);
                 append_to_pvec(pvec,size,vec_2,size_vec_2);
 
-                free(vec_1);
-                free(vec_2);
+                //free(vec_1);
+                //free(vec_2);
+               // cleanup_periods(&vec_1,&size_vec_1);
+               // cleanup_periods(&vec_2,&size_vec_2);
                 return 0;
             }
 
@@ -1788,8 +1828,10 @@ I process_curve(struct sc_period p,
             append_to_pvec(pvec,size,vec_1,size_vec_1);
             append_to_pvec(pvec,size,vec_2,size_vec_2);
 
-            free(vec_1);
-            free(vec_2);
+            //free(vec_1);
+            //free(vec_2);
+            //cleanup_periods(&vec_1,&size_vec_1);
+            //cleanup_periods(&vec_2,&size_vec_2);
 
             return 0;
         }
@@ -1829,8 +1871,10 @@ I process_curve(struct sc_period p,
                 append_to_pvec(pvec,size,vec_1,size_vec_1);
                 append_to_pvec(pvec,size,vec_2,size_vec_2);
 
-                free(vec_1);
-                free(vec_2);
+                //free(vec_1);
+                //free(vec_2);
+               // cleanup_periods(&vec_1,&size_vec_1);
+               // cleanup_periods(&vec_2,&size_vec_2);
                 return 0;
             }
 
@@ -1838,8 +1882,10 @@ I process_curve(struct sc_period p,
             append_to_pvec(pvec,size,vec_1,size_vec_1);
             append_to_pvec(pvec,size,vec_2,size_vec_2);
 
-            free(vec_1);
-            free(vec_2);
+           // free(vec_1);
+           // free(vec_2);
+           // cleanup_periods(&vec_1,&size_vec_1);
+           // cleanup_periods(&vec_2,&size_vec_2);
 
             return 0;
         }
@@ -1886,8 +1932,10 @@ I process_curve(struct sc_period p,
             append_to_pvec(pvec,size,vec_1,size_vec_1);
             append_to_pvec(pvec,size,vec_2,size_vec_2);
 
-            free(vec_1);
-            free(vec_2);
+            //free(vec_1);
+            //free(vec_2);
+           // cleanup_periods(&vec_1,&size_vec_1);
+            //cleanup_periods(&vec_2,&size_vec_2);
 
             return 0;
         }
@@ -1924,8 +1972,10 @@ I process_curve(struct sc_period p,
                 append_to_pvec(pvec,size,vec_1,size_vec_1);
                 append_to_pvec(pvec,size,vec_2,size_vec_2);
 
-                free(vec_1);
-                free(vec_2);
+                //free(vec_1);
+                //free(vec_2);
+               // cleanup_periods(&vec_1,&size_vec_1);
+               // cleanup_periods(&vec_2,&size_vec_2);
                 return 0;
             }
 
@@ -1933,8 +1983,10 @@ I process_curve(struct sc_period p,
             append_to_pvec(pvec,size,vec_1,size_vec_1);
             append_to_pvec(pvec,size,vec_2,size_vec_2);
 
-            free(vec_1);
-            free(vec_2);
+            //free(vec_1);
+            //free(vec_2);
+            //cleanup_periods(&vec_1,&size_vec_1);
+           // cleanup_periods(&vec_2,&size_vec_2);
 
             return 0;
         }
@@ -1966,8 +2018,11 @@ I process_curve(struct sc_period p,
                 append_to_pvec(pvec,size,vec_1,size_vec_1);
                 append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                free(vec_1);
-                free(vec_3);
+                //free(vec_1);
+                //free(vec_3);
+
+               // cleanup_periods(&vec_1,&size_vec_1);
+               // cleanup_periods(&vec_3,&size_vec_3);
 
                 return 0;
             }
@@ -1986,9 +2041,13 @@ I process_curve(struct sc_period p,
 
                 append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                free(vec_1);
-                free(vec_2);
-                free(vec_3);
+                // free(vec_1);
+                // free(vec_2);
+                // free(vec_3);
+
+               // cleanup_periods(&vec_1,&size_vec_1);
+               // cleanup_periods(&vec_2,&size_vec_2);
+               // cleanup_periods(&vec_3,&size_vec_3);
 
                 return 0;
             }
@@ -2027,9 +2086,12 @@ I process_curve(struct sc_period p,
 
                         append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                        free(vec_1);
-                        free(vec_2);
-                        free(vec_3);
+                        //free(vec_1);
+                        //free(vec_2);
+                        //free(vec_3);
+                        //cleanup_periods(&vec_1,&size_vec_1);
+                        //cleanup_periods(&vec_2,&size_vec_2);
+                        //cleanup_periods(&vec_3,&size_vec_3);
 
                         return 0;
                     }
@@ -2040,8 +2102,10 @@ I process_curve(struct sc_period p,
             append_to_pvec(pvec,size,vec_1,size_vec_1);
             append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-            free(vec_1);
-            free(vec_3);
+            //free(vec_1);
+            //free(vec_3);
+           // cleanup_periods(&vec_1,&size_vec_1);
+           // cleanup_periods(&vec_3,&size_vec_3);
 
             return 0;
         }
@@ -2073,8 +2137,10 @@ I process_curve(struct sc_period p,
                 append_to_pvec(pvec,size,vec_1,size_vec_1);
                 append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                free(vec_1);
-                free(vec_3);
+                //cleanup_periods(&vec_1,&size_vec_1);
+                //cleanup_periods(&vec_3,&size_vec_3);
+                //free(vec_1);
+                //free(vec_3);
 
                 return 0;
             }
@@ -2093,9 +2159,12 @@ I process_curve(struct sc_period p,
 
                 append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                free(vec_1);
-                free(vec_2);
-                free(vec_3);
+                //cleanup_periods(&vec_1,&size_vec_1);
+                //cleanup_periods(&vec_2,&size_vec_2);
+                //cleanup_periods(&vec_3,&size_vec_3);
+                // free(vec_1);
+                // free(vec_2);
+                // free(vec_3);
 
                 return 0;
             }
@@ -2134,9 +2203,12 @@ I process_curve(struct sc_period p,
 
                         append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-                        free(vec_1);
-                        free(vec_2);
-                        free(vec_3);
+                        //cleanup_periods(&vec_1,&size_vec_1);
+                        //cleanup_periods(&vec_2,&size_vec_2);
+                        //cleanup_periods(&vec_3,&size_vec_3);
+                        // free(vec_1);
+                        // free(vec_2);
+                        // free(vec_3);
 
                         return 0;
                     }
@@ -2147,8 +2219,10 @@ I process_curve(struct sc_period p,
             append_to_pvec(pvec,size,vec_1,size_vec_1);
             append_to_pvec(pvec,size,vec_3,size_vec_3);
 
-            free(vec_1);
-            free(vec_3);
+            // free(vec_1);
+            // free(vec_3);
+            ///cleanup_periods(&vec_1,&size_vec_1);
+            //cleanup_periods(&vec_3,&size_vec_3);
 
             return 0;
         }
@@ -2168,7 +2242,8 @@ I process_curve(struct sc_period p,
             (vec_1)[0]=pr;
             append_to_pvec(pvec,size,vec_1,size_vec_1);
 
-            free(vec_1);
+            //free(vec_1);
+            //cleanup_periods(&vec_1,&size_vec_1);
 
             return 0;
         }
@@ -2201,11 +2276,13 @@ int append_to_pvec(struct sc_period **pvec, size_t *size, struct sc_period *vec_
     return 0;
 }
 
-
-
-
-
-
+V cleanup_periods(struct sc_period **pvec, size_t size) {
+    for (size_t i = 0; i < size; i++) {
+        free(pvec[i]);
+    }
+    *pvec = NULL;
+    size = 0;
+}
 
 
 

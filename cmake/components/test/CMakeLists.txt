@@ -39,6 +39,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE linuxcnchal)
 # set_property(TARGET  ${PROJECT} PROPERTY OUTPUT_NAME thename)
 
 # Make install
-install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../rtlib)
+install(TARGETS ${PROJECT} DESTINATION ${BUILD_DIR}/../../../../rtlib)
 
 # Notes.

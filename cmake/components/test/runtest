@@ -1,8 +1,9 @@
 #!/usr/bin/bash
-cd ../../../../
+cd ../../../
 cd scripts 
 . ./rip-environment
-./halclean
+./halrun -U
+
 cd ..
 cd bin
 ./halcmd stop

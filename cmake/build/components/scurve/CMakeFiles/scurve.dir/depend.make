@@ -5,7 +5,6 @@ components/scurve/CMakeFiles/scurve.dir/sc_engine.c.o: ../rtapi_src/rtapi.h
 components/scurve/CMakeFiles/scurve.dir/sc_engine.c.o: ../components/scurve/sc_engine.c
 components/scurve/CMakeFiles/scurve.dir/sc_engine.c.o: ../components/scurve/sc_engine.h
 
-components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../components/scurve/common.h
 components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../liblinuxcnchal_src/hal.h
 components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../rtapi_src/rtapi.h
 components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../rtapi_src/rtapi_app.h
@@ -17,5 +16,6 @@ components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../rtapi_src/rtapi_io.h
 components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../rtapi_src/rtapi_math64.h
 components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../rtapi_src/rtapi_stdint.h
 components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../rtapi_src/rtapi_string.h
+components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../components/scurve/sc_engine.h
 components/scurve/CMakeFiles/scurve.dir/scurve.c.o: ../components/scurve/scurve.c
 

@@ -85,6 +85,8 @@ static void the_function(){
 
 
     }
+
+    rtapi_print_msg(RTAPI_MSG_ERR,"running!");
 }
 
 static int setup_pins(){

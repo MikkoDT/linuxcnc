@@ -1,168 +1,184 @@
-#include <common.h>
-//#include <scurve.h>
-//#include <sc_engine.h>
+#include "rtapi.h"
+#include "rtapi_ctype.h"
+#include "rtapi_app.h"
+#include "rtapi_string.h"
+#include "rtapi_errno.h"
+#include "rtapi_math64.h"
+#include <rtapi_io.h>
+#include "hal.h"
+
+#include "sc_engine.h"
 
 /* module information */
-MODULE_AUTHOR("Skynet_Cyberdyne");
-MODULE_DESCRIPTION("scurve");
+MODULE_AUTHOR("Skynet");
+MODULE_DESCRIPTION("Halmodule test");
 MODULE_LICENSE("GPL");
 
-static int component_id;
-static void servo_cycle_function();
+static int comp_idx;
+
+typedef struct {
+    bool ok;
+} skynet_t;
+skynet_t *skynet;
+
+typedef struct {
+    hal_float_t *Pin;
+} float_data_t;
+float_data_t *vi,*si,*ai;
+
+//! Pins
+typedef struct {
+    hal_bit_t *Pin;
+} bit_data_t;
+bit_data_t *enable, *tool_on;
+
+typedef struct {
+    hal_s32_t *Pin;
+} s32_data_t;
+
+typedef struct {
+    hal_u32_t *Pin;
+} u32_data_t;
+
+typedef struct {
+    hal_port_t *Pin;
+} port_data_t;
+port_data_t *port;
+
+//! Params
+typedef struct {
+    hal_float_t Pin;
+} param_float_data_t;
+
+typedef struct {
+    hal_bit_t Pin;
+} param_bit_data_t;
+
+static int comp_idx; /* component ID */
+
+static void the_function();
 static int setup_pins();
 
-//! Scurve flow functions.
-static int create_curve();
-static int interpolate_curve();
+struct sc_period p;
+size_t size;
+struct sc_period *pvec;
+int trigger=0;
+int finished_trigger=0;
+float ttot=0, stot=0;
+int finished=0;
+struct sc_vsa vsa;
+float at_time=0;
 
-//! Start the curve.
-param_bit_data_t *run;
-//! Create curve variables.
-param_float_data_t *a_, *dv_, *vm_, *vo, *ve, *acs, *ace, *ncs, *nct;
-//! Interpolated values.
-param_float_data_t *vi, *si, *ai, *at_time, *finished;
-
-//static struct sc_period p;
-//static struct sc_vsa vsa;
-//struct sc_period *pvec;
-//size_t size;
-
-float cycle_time=0.001;
-
-//! In general : Return 0=ok, return 1=error.
 
 int rtapi_app_main(void) {
 
     int r = 0;
-    component_id = hal_init("scurve");
-    if(component_id < 0) return component_id;
-    r = hal_export_funct("scurve_update", servo_cycle_function, &skynet,0,0,component_id);
+    comp_idx = hal_init("scurve");
+    if(comp_idx < 0) return comp_idx;
+    r = hal_export_funct("the_function", the_function, &skynet,0,0,comp_idx);
 
     r+=setup_pins();
 
     if(r) {
-        rtapi_print_msg(RTAPI_MSG_ERR,"scurve init error.");
-        hal_exit(component_id);
+        hal_exit(comp_idx);
     } else {
-        hal_ready(component_id);
+        hal_ready(comp_idx);
     }
     return 0;
 }
 
 void rtapi_app_exit(void){
-    hal_exit(component_id);
+    hal_exit(comp_idx);
 }
 
 //! Perforn's every ms.
-static void servo_cycle_function(){
+static void the_function(){
 
-//    T r=0;
+    at_time+=0.001;
 
-//    if(run->Pin==1){
-//        r+=create_curve();      //! Make sure you have set all values to construct a curve.
-//        at_time->Pin=0;         //! Reset time to zero.
-//        run->Pin=0;
-//    }
+    if(*enable->Pin==1){
 
-//    if(r){
-//        rtapi_print_msg(RTAPI_MSG_ERR,"scurve create fails.");
-//        r=0;
-//    }
 
-//    r+=interpolate_curve();     //! Update scurve each servo cycle.
-//    //! If curve is finished, finished->Pin=1.
+    }
 
-//    if(r){
-//        //! Curve finished ..
-//    }
-}
+    if(!trigger){
+        set_a_dv(2,10);
+        T vm=10;
+        p.vo=0;
+        p.ve=0;
+        p.acs=0;
+        p.ace=0;
+        p.ncs=50;
+        p.nct=0;
+        p.id=id_run;
 
-static int create_curve(){
+        process_curve(p,vm,&pvec,&size);
+        at_time=0;
 
-//    I r=0;
-//    r+=set_a_dv(a_->Pin,dv_->Pin);
-//    p.id=id_run;    //! Could use a id_pause for example.
-//    p.vo=vo->Pin;
-//    p.ve=ve->Pin;
-//    p.acs=acs->Pin;
-//    p.ace=ace->Pin;
-//    p.ncs=ncs->Pin;
+        // rtapi_print_msg(RTAPI_MSG_ERR,"pvec size: %zu \n",size);
+        ttot=to_ttot_pvec(pvec,size);
+        stot=to_stot_pvec(pvec,size);
+        // rtapi_print_msg(RTAPI_MSG_ERR,"ttot: %f \n",ttot);
+        // rtapi_print_msg(RTAPI_MSG_ERR,"stot: %f \n",stot);
 
-//    r+=process_curve(p,vm_->Pin,&pvec,&size);
+        finished_trigger=0;
+        trigger=1;
+    }
 
-//    //! Calculate total curve time, the sum of the periods time.
-//    nct->Pin=to_ttot_pvec(pvec,size);
+    interpolate_periods(at_time,pvec,size,&vsa,&finished);
+    *vi->Pin=vsa.v;
+    *si->Pin=vsa.s;
+    *ai->Pin=vsa.a;
 
-//    return r;
-}
+    if(at_time>ttot && !finished_trigger){
+        // rtapi_print_msg(RTAPI_MSG_ERR,"finished.\n");
 
-static int interpolate_curve(){
+        at_time=0;
+        vsa.s=0;
+        vsa.v=0;
+        vsa.a=0;
+        ttot=0;
+        stot=0;
 
-//    I ready;
-//    I r=0;
+        // cleanup_periods(&pvec,size);
+        size=0;
+        pvec=NULL;
 
-//    r+=interpolate_periods(at_time->Pin,pvec,size,&vsa,&ready);
-//    vi->Pin=vsa.v;
-//    si->Pin=vsa.s;
-//    ai->Pin=vsa.a;
-//    finished->Pin=ready;
+        // rtapi_print_msg(RTAPI_MSG_ERR,"pvec reset size: %zu \n",size);
+        trigger=0;
+        finished_trigger=1;
+    }
 
-//    at_time->Pin+=cycle_time;
-
-//    return r;
+    if(at_time<ttot){
+        // rtapi_print_msg(RTAPI_MSG_ERR,"si: %f \n",vsa.s);
+    }
 }
 
 static int setup_pins(){
     int r=0;
 
     //! Input pins, type bit.
-    run = (param_bit_data_t*)hal_malloc(sizeof(param_bit_data_t));
-    r+=hal_param_bit_new("scurve.run",HAL_RW,&(run->Pin),component_id);
+    enable = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
+    r+=hal_pin_bit_new("scurve.enable",HAL_IN,&(enable->Pin),comp_idx);
     
-    a_ = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.a",HAL_RW,&(a_->Pin),component_id);
+    //! Output pins, type bit.
+    tool_on = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
+    r+=hal_pin_bit_new("scurve.tool_on",HAL_OUT,&(tool_on->Pin),comp_idx);
+    
+    //! Output pins, type float.
+    vi = (float_data_t*)hal_malloc(sizeof(float_data_t));
+    r+=hal_pin_float_new("scurve.vi",HAL_OUT,&(vi->Pin),comp_idx);
 
-    dv_ = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.dv",HAL_RW,&(dv_->Pin),component_id);
+    si = (float_data_t*)hal_malloc(sizeof(float_data_t));
+    r+=hal_pin_float_new("scurve.si",HAL_OUT,&(si->Pin),comp_idx);
 
-    vm_ = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.vm",HAL_RW,&(vm_->Pin),component_id);
-
-    vo = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.vo",HAL_RW,&(vo->Pin),component_id);
-
-    ve = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.ve",HAL_RW,&(ve->Pin),component_id);
-
-    acs = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.acs",HAL_RW,&(acs->Pin),component_id);
-
-    ace = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.ace",HAL_RW,&(ace->Pin),component_id);
-
-    ncs = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.ncs",HAL_RW,&(ncs->Pin),component_id);
-
-    nct = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.nct",HAL_RW,&(nct->Pin),component_id);
-
-    vi = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.vi",HAL_RW,&(vi->Pin),component_id);
-
-    si = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.si",HAL_RW,&(si->Pin),component_id);
-
-    ai = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.ai",HAL_RW,&(ai->Pin),component_id);
-
-    at_time = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.at_time",HAL_RW,&(at_time->Pin),component_id);
-
-    finished = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("scurve.finished",HAL_RW,&(finished->Pin),component_id);
+    ai = (float_data_t*)hal_malloc(sizeof(float_data_t));
+    r+=hal_pin_float_new("scurve.ai",HAL_OUT,&(ai->Pin),comp_idx);
 
     return r;
 }
+
+
 
 
 

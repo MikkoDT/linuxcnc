@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../components/scurve/common.h
-rtapi.h
-../components/scurve/rtapi.h
-rtapi_ctype.h
-../components/scurve/rtapi_ctype.h
-rtapi_app.h
-../components/scurve/rtapi_app.h
-rtapi_string.h
-../components/scurve/rtapi_string.h
-rtapi_errno.h
-../components/scurve/rtapi_errno.h
-rtapi_math64.h
-../components/scurve/rtapi_math64.h
-rtapi_io.h
--
-hal.h
-../components/scurve/hal.h
-
 ../liblinuxcnchal_src/hal.h
 rtapi.h
 ../liblinuxcnchal_src/rtapi.h
@@ -114,12 +96,6 @@ string.h
 rtapi_gfp.h
 -
 
-/home/user/linuxcnc/cmake/components/scurve/sc_engine.c
-rtapi.h
-/home/user/linuxcnc/cmake/components/scurve/rtapi.h
-sc_engine.h
-/home/user/linuxcnc/cmake/components/scurve/sc_engine.h
-
 /home/user/linuxcnc/cmake/components/scurve/sc_engine.h
 stdio.h
 -
@@ -131,6 +107,22 @@ math.h
 -
 
 /home/user/linuxcnc/cmake/components/scurve/scurve.c
-common.h
+rtapi.h
+/home/user/linuxcnc/cmake/components/scurve/rtapi.h
+rtapi_ctype.h
+/home/user/linuxcnc/cmake/components/scurve/rtapi_ctype.h
+rtapi_app.h
+/home/user/linuxcnc/cmake/components/scurve/rtapi_app.h
+rtapi_string.h
+/home/user/linuxcnc/cmake/components/scurve/rtapi_string.h
+rtapi_errno.h
+/home/user/linuxcnc/cmake/components/scurve/rtapi_errno.h
+rtapi_math64.h
+/home/user/linuxcnc/cmake/components/scurve/rtapi_math64.h
+rtapi_io.h
 -
+hal.h
+/home/user/linuxcnc/cmake/components/scurve/hal.h
+sc_engine.h
+/home/user/linuxcnc/cmake/components/scurve/sc_engine.h
 

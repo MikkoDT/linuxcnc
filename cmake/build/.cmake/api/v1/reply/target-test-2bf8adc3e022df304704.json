@@ -144,11 +144,11 @@
 		[
 			{
 				"backtrace" : 2,
-				"path" : "/home/user/linuxcnc/cmake/build/components/test/../../../rtlib"
+				"path" : "/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib"
 			},
 			{
 				"backtrace" : 2,
-				"path" : "/home/user/linuxcnc/cmake/build/components/test/../../../rtlib"
+				"path" : "/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib"
 			}
 		],
 		"prefix" : 

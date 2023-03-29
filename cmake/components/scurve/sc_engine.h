@@ -246,8 +246,7 @@ I is_inbetween_2_values(T a, T b, T value);
 T to_vh_acc(T vo, T ve);
 T to_vh_dcc(T vo, T ve);
 
-
-
+V cleanup_periods(struct sc_period **pvec, size_t size);
 
 
 

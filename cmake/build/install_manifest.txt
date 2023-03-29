@@ -18,7 +18,7 @@
 /home/user/linuxcnc/cmake/build/libcanterp/../../../lib/libcanterp.so.0
 /home/user/linuxcnc/cmake/build/libcanterp/../../../lib/libcanterp.so
 /home/user/linuxcnc/cmake/build/hal_lib/../../../rtlib/hal_lib.so
-/home/user/linuxcnc/cmake/build/components/test/../../../rtlib/test.so
+/home/user/linuxcnc/cmake/build/components/test/../../../../rtlib/test.so
 /home/user/linuxcnc/cmake/build/components/threads/../../../rtlib/threads.so
 /home/user/linuxcnc/cmake/build/components/ethercat/../../../rtlib/lcec.so
 /home/user/linuxcnc/cmake/build/components/ethercat/../../../rtlib/lcec_conf

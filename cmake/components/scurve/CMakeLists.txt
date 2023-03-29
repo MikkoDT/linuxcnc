@@ -25,7 +25,6 @@ add_definitions(-DRTAPI -DUSPACE -DRTAPI -D_GNU_SOURCE -D__MODULE__ )
 set(CMAKE_SHARED_LIBRARY_PREFIX "")
 
 ADD_LIBRARY(${PROJECT} SHARED
-    ${SRC_DIR}/common.h
     ${SRC_DIR}/sc_engine.h
     ${SRC_DIR}/sc_engine.c
     ${SRC_DIR}/scurve.h
