@@ -1034,6 +1034,32 @@ qt_nml_autogen/fast:
 .PHONY : qt_nml_autogen/fast
 
 #=============================================================================
+# Target rules for targets named qt_ruckig_gui
+
+# Build rule for target.
+qt_ruckig_gui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_ruckig_gui
+.PHONY : qt_ruckig_gui
+
+# fast build rule for target.
+qt_ruckig_gui/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build
+.PHONY : qt_ruckig_gui/fast
+
+#=============================================================================
+# Target rules for targets named qt_ruckig_gui_autogen
+
+# Build rule for target.
+qt_ruckig_gui_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qt_ruckig_gui_autogen
+.PHONY : qt_ruckig_gui_autogen
+
+# fast build rule for target.
+qt_ruckig_gui_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/build
+.PHONY : qt_ruckig_gui_autogen/fast
+
+#=============================================================================
 # Target rules for targets named sc_tp
 
 # Build rule for target.
@@ -1060,6 +1086,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... qt_nml_autogen"
 	@echo "... qt_occt_autogen"
+	@echo "... qt_ruckig_gui_autogen"
 	@echo "... 5axiskins"
 	@echo "... _hal"
 	@echo "... _togl"
@@ -1105,6 +1132,7 @@ help:
 	@echo "... pumakins"
 	@echo "... qt_nml"
 	@echo "... qt_occt"
+	@echo "... qt_ruckig_gui"
 	@echo "... rosekins"
 	@echo "... rotarydeltakins"
 	@echo "... rotarydeltakins_rt"

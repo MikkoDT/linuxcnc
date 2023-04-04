@@ -71,6 +71,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../pci_write/CMakeLists.txt"
   "../projects/qt_nml/CMakeLists.txt"
   "../projects/qt_occt/CMakeLists.txt"
+  "../projects/qt_ruckig_gui/CMakeLists.txt"
   "../rotarydeltakins_py/CMakeLists.txt"
   "../rtapi/CMakeLists.txt"
   "../sai/CMakeLists.txt"
@@ -251,6 +252,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "projects/qt_occt/CMakeFiles/CMakeDirectoryInformation.cmake"
   "projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/AutogenInfo.json"
   "projects/qt_nml/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/AutogenInfo.json"
+  "projects/qt_ruckig_gui/CMakeFiles/CMakeDirectoryInformation.cmake"
   "components/sc_tp/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -322,5 +325,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/DependInfo.cmake"
   "projects/qt_nml/CMakeFiles/qt_nml.dir/DependInfo.cmake"
   "projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/DependInfo.cmake"
+  "projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/DependInfo.cmake"
+  "projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/DependInfo.cmake"
   "components/sc_tp/CMakeFiles/sc_tp.dir/DependInfo.cmake"
   )

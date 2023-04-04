@@ -28,7 +28,7 @@ typedef struct {
 typedef struct {
     hal_bit_t *Pin;
 } bit_data_t;
-bit_data_t *enable, *tool_on;
+bit_data_t *module, *tool_on;
 
 typedef struct {
     hal_s32_t *Pin;
@@ -81,7 +81,7 @@ void rtapi_app_exit(void){
 //! Perforn's every ms.
 static void the_function(){
 
-    if(*enable->Pin==1){
+    if(*module->Pin==1){
 
 
     }
@@ -93,8 +93,8 @@ static int setup_pins(){
     int r=0;
 
     //! Input pins, type bit.
-    enable = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
-    r+=hal_pin_bit_new("test.enable",HAL_IN,&(enable->Pin),comp_idx);
+    module = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
+    r+=hal_pin_bit_new("test.enable",HAL_IN,&(module->Pin),comp_idx);
     
     //! Output pins, type bit.
     tool_on = (bit_data_t*)hal_malloc(sizeof(bit_data_t));

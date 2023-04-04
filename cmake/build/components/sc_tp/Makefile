@@ -190,6 +190,384 @@ sc_tp/fast:
 	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/build
 .PHONY : sc_tp/fast
 
+__/sc_tp_src/ruckig/brake.o: __/sc_tp_src/ruckig/brake.cpp.o
+
+.PHONY : __/sc_tp_src/ruckig/brake.o
+
+# target to build an object file
+__/sc_tp_src/ruckig/brake.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.o
+.PHONY : __/sc_tp_src/ruckig/brake.cpp.o
+
+__/sc_tp_src/ruckig/brake.i: __/sc_tp_src/ruckig/brake.cpp.i
+
+.PHONY : __/sc_tp_src/ruckig/brake.i
+
+# target to preprocess a source file
+__/sc_tp_src/ruckig/brake.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.i
+.PHONY : __/sc_tp_src/ruckig/brake.cpp.i
+
+__/sc_tp_src/ruckig/brake.s: __/sc_tp_src/ruckig/brake.cpp.s
+
+.PHONY : __/sc_tp_src/ruckig/brake.s
+
+# target to generate assembly for a file
+__/sc_tp_src/ruckig/brake.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.s
+.PHONY : __/sc_tp_src/ruckig/brake.cpp.s
+
+__/sc_tp_src/ruckig/position-step1.o: __/sc_tp_src/ruckig/position-step1.cpp.o
+
+.PHONY : __/sc_tp_src/ruckig/position-step1.o
+
+# target to build an object file
+__/sc_tp_src/ruckig/position-step1.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.o
+.PHONY : __/sc_tp_src/ruckig/position-step1.cpp.o
+
+__/sc_tp_src/ruckig/position-step1.i: __/sc_tp_src/ruckig/position-step1.cpp.i
+
+.PHONY : __/sc_tp_src/ruckig/position-step1.i
+
+# target to preprocess a source file
+__/sc_tp_src/ruckig/position-step1.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.i
+.PHONY : __/sc_tp_src/ruckig/position-step1.cpp.i
+
+__/sc_tp_src/ruckig/position-step1.s: __/sc_tp_src/ruckig/position-step1.cpp.s
+
+.PHONY : __/sc_tp_src/ruckig/position-step1.s
+
+# target to generate assembly for a file
+__/sc_tp_src/ruckig/position-step1.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.s
+.PHONY : __/sc_tp_src/ruckig/position-step1.cpp.s
+
+__/sc_tp_src/ruckig/position-step2.o: __/sc_tp_src/ruckig/position-step2.cpp.o
+
+.PHONY : __/sc_tp_src/ruckig/position-step2.o
+
+# target to build an object file
+__/sc_tp_src/ruckig/position-step2.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.o
+.PHONY : __/sc_tp_src/ruckig/position-step2.cpp.o
+
+__/sc_tp_src/ruckig/position-step2.i: __/sc_tp_src/ruckig/position-step2.cpp.i
+
+.PHONY : __/sc_tp_src/ruckig/position-step2.i
+
+# target to preprocess a source file
+__/sc_tp_src/ruckig/position-step2.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.i
+.PHONY : __/sc_tp_src/ruckig/position-step2.cpp.i
+
+__/sc_tp_src/ruckig/position-step2.s: __/sc_tp_src/ruckig/position-step2.cpp.s
+
+.PHONY : __/sc_tp_src/ruckig/position-step2.s
+
+# target to generate assembly for a file
+__/sc_tp_src/ruckig/position-step2.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.s
+.PHONY : __/sc_tp_src/ruckig/position-step2.cpp.s
+
+__/sc_tp_src/ruckig/sc_ruckig.o: __/sc_tp_src/ruckig/sc_ruckig.cpp.o
+
+.PHONY : __/sc_tp_src/ruckig/sc_ruckig.o
+
+# target to build an object file
+__/sc_tp_src/ruckig/sc_ruckig.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/sc_ruckig.cpp.o
+.PHONY : __/sc_tp_src/ruckig/sc_ruckig.cpp.o
+
+__/sc_tp_src/ruckig/sc_ruckig.i: __/sc_tp_src/ruckig/sc_ruckig.cpp.i
+
+.PHONY : __/sc_tp_src/ruckig/sc_ruckig.i
+
+# target to preprocess a source file
+__/sc_tp_src/ruckig/sc_ruckig.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/sc_ruckig.cpp.i
+.PHONY : __/sc_tp_src/ruckig/sc_ruckig.cpp.i
+
+__/sc_tp_src/ruckig/sc_ruckig.s: __/sc_tp_src/ruckig/sc_ruckig.cpp.s
+
+.PHONY : __/sc_tp_src/ruckig/sc_ruckig.s
+
+# target to generate assembly for a file
+__/sc_tp_src/ruckig/sc_ruckig.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/sc_ruckig.cpp.s
+.PHONY : __/sc_tp_src/ruckig/sc_ruckig.cpp.s
+
+__/sc_tp_src/ruckig/velocity-step1.o: __/sc_tp_src/ruckig/velocity-step1.cpp.o
+
+.PHONY : __/sc_tp_src/ruckig/velocity-step1.o
+
+# target to build an object file
+__/sc_tp_src/ruckig/velocity-step1.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.o
+.PHONY : __/sc_tp_src/ruckig/velocity-step1.cpp.o
+
+__/sc_tp_src/ruckig/velocity-step1.i: __/sc_tp_src/ruckig/velocity-step1.cpp.i
+
+.PHONY : __/sc_tp_src/ruckig/velocity-step1.i
+
+# target to preprocess a source file
+__/sc_tp_src/ruckig/velocity-step1.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.i
+.PHONY : __/sc_tp_src/ruckig/velocity-step1.cpp.i
+
+__/sc_tp_src/ruckig/velocity-step1.s: __/sc_tp_src/ruckig/velocity-step1.cpp.s
+
+.PHONY : __/sc_tp_src/ruckig/velocity-step1.s
+
+# target to generate assembly for a file
+__/sc_tp_src/ruckig/velocity-step1.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.s
+.PHONY : __/sc_tp_src/ruckig/velocity-step1.cpp.s
+
+__/sc_tp_src/ruckig/velocity-step2.o: __/sc_tp_src/ruckig/velocity-step2.cpp.o
+
+.PHONY : __/sc_tp_src/ruckig/velocity-step2.o
+
+# target to build an object file
+__/sc_tp_src/ruckig/velocity-step2.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.o
+.PHONY : __/sc_tp_src/ruckig/velocity-step2.cpp.o
+
+__/sc_tp_src/ruckig/velocity-step2.i: __/sc_tp_src/ruckig/velocity-step2.cpp.i
+
+.PHONY : __/sc_tp_src/ruckig/velocity-step2.i
+
+# target to preprocess a source file
+__/sc_tp_src/ruckig/velocity-step2.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.i
+.PHONY : __/sc_tp_src/ruckig/velocity-step2.cpp.i
+
+__/sc_tp_src/ruckig/velocity-step2.s: __/sc_tp_src/ruckig/velocity-step2.cpp.s
+
+.PHONY : __/sc_tp_src/ruckig/velocity-step2.s
+
+# target to generate assembly for a file
+__/sc_tp_src/ruckig/velocity-step2.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.s
+.PHONY : __/sc_tp_src/ruckig/velocity-step2.cpp.s
+
+__/sc_tp_src/sc_arcs.o: __/sc_tp_src/sc_arcs.cpp.o
+
+.PHONY : __/sc_tp_src/sc_arcs.o
+
+# target to build an object file
+__/sc_tp_src/sc_arcs.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_arcs.cpp.o
+.PHONY : __/sc_tp_src/sc_arcs.cpp.o
+
+__/sc_tp_src/sc_arcs.i: __/sc_tp_src/sc_arcs.cpp.i
+
+.PHONY : __/sc_tp_src/sc_arcs.i
+
+# target to preprocess a source file
+__/sc_tp_src/sc_arcs.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_arcs.cpp.i
+.PHONY : __/sc_tp_src/sc_arcs.cpp.i
+
+__/sc_tp_src/sc_arcs.s: __/sc_tp_src/sc_arcs.cpp.s
+
+.PHONY : __/sc_tp_src/sc_arcs.s
+
+# target to generate assembly for a file
+__/sc_tp_src/sc_arcs.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_arcs.cpp.s
+.PHONY : __/sc_tp_src/sc_arcs.cpp.s
+
+__/sc_tp_src/sc_engine.o: __/sc_tp_src/sc_engine.cpp.o
+
+.PHONY : __/sc_tp_src/sc_engine.o
+
+# target to build an object file
+__/sc_tp_src/sc_engine.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.o
+.PHONY : __/sc_tp_src/sc_engine.cpp.o
+
+__/sc_tp_src/sc_engine.i: __/sc_tp_src/sc_engine.cpp.i
+
+.PHONY : __/sc_tp_src/sc_engine.i
+
+# target to preprocess a source file
+__/sc_tp_src/sc_engine.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.i
+.PHONY : __/sc_tp_src/sc_engine.cpp.i
+
+__/sc_tp_src/sc_engine.s: __/sc_tp_src/sc_engine.cpp.s
+
+.PHONY : __/sc_tp_src/sc_engine.s
+
+# target to generate assembly for a file
+__/sc_tp_src/sc_engine.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.s
+.PHONY : __/sc_tp_src/sc_engine.cpp.s
+
+__/sc_tp_src/sc_interpolate.o: __/sc_tp_src/sc_interpolate.cpp.o
+
+.PHONY : __/sc_tp_src/sc_interpolate.o
+
+# target to build an object file
+__/sc_tp_src/sc_interpolate.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.o
+.PHONY : __/sc_tp_src/sc_interpolate.cpp.o
+
+__/sc_tp_src/sc_interpolate.i: __/sc_tp_src/sc_interpolate.cpp.i
+
+.PHONY : __/sc_tp_src/sc_interpolate.i
+
+# target to preprocess a source file
+__/sc_tp_src/sc_interpolate.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.i
+.PHONY : __/sc_tp_src/sc_interpolate.cpp.i
+
+__/sc_tp_src/sc_interpolate.s: __/sc_tp_src/sc_interpolate.cpp.s
+
+.PHONY : __/sc_tp_src/sc_interpolate.s
+
+# target to generate assembly for a file
+__/sc_tp_src/sc_interpolate.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.s
+.PHONY : __/sc_tp_src/sc_interpolate.cpp.s
+
+__/sc_tp_src/sc_lines.o: __/sc_tp_src/sc_lines.cpp.o
+
+.PHONY : __/sc_tp_src/sc_lines.o
+
+# target to build an object file
+__/sc_tp_src/sc_lines.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_lines.cpp.o
+.PHONY : __/sc_tp_src/sc_lines.cpp.o
+
+__/sc_tp_src/sc_lines.i: __/sc_tp_src/sc_lines.cpp.i
+
+.PHONY : __/sc_tp_src/sc_lines.i
+
+# target to preprocess a source file
+__/sc_tp_src/sc_lines.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_lines.cpp.i
+.PHONY : __/sc_tp_src/sc_lines.cpp.i
+
+__/sc_tp_src/sc_lines.s: __/sc_tp_src/sc_lines.cpp.s
+
+.PHONY : __/sc_tp_src/sc_lines.s
+
+# target to generate assembly for a file
+__/sc_tp_src/sc_lines.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_lines.cpp.s
+.PHONY : __/sc_tp_src/sc_lines.cpp.s
+
+__/sc_tp_src/sc_optimizer.o: __/sc_tp_src/sc_optimizer.cpp.o
+
+.PHONY : __/sc_tp_src/sc_optimizer.o
+
+# target to build an object file
+__/sc_tp_src/sc_optimizer.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.o
+.PHONY : __/sc_tp_src/sc_optimizer.cpp.o
+
+__/sc_tp_src/sc_optimizer.i: __/sc_tp_src/sc_optimizer.cpp.i
+
+.PHONY : __/sc_tp_src/sc_optimizer.i
+
+# target to preprocess a source file
+__/sc_tp_src/sc_optimizer.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.i
+.PHONY : __/sc_tp_src/sc_optimizer.cpp.i
+
+__/sc_tp_src/sc_optimizer.s: __/sc_tp_src/sc_optimizer.cpp.s
+
+.PHONY : __/sc_tp_src/sc_optimizer.s
+
+# target to generate assembly for a file
+__/sc_tp_src/sc_optimizer.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.s
+.PHONY : __/sc_tp_src/sc_optimizer.cpp.s
+
+__/sc_tp_src/sc_pid.o: __/sc_tp_src/sc_pid.cpp.o
+
+.PHONY : __/sc_tp_src/sc_pid.o
+
+# target to build an object file
+__/sc_tp_src/sc_pid.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.o
+.PHONY : __/sc_tp_src/sc_pid.cpp.o
+
+__/sc_tp_src/sc_pid.i: __/sc_tp_src/sc_pid.cpp.i
+
+.PHONY : __/sc_tp_src/sc_pid.i
+
+# target to preprocess a source file
+__/sc_tp_src/sc_pid.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.i
+.PHONY : __/sc_tp_src/sc_pid.cpp.i
+
+__/sc_tp_src/sc_pid.s: __/sc_tp_src/sc_pid.cpp.s
+
+.PHONY : __/sc_tp_src/sc_pid.s
+
+# target to generate assembly for a file
+__/sc_tp_src/sc_pid.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.s
+.PHONY : __/sc_tp_src/sc_pid.cpp.s
+
+__/sc_tp_src/sc_planner.o: __/sc_tp_src/sc_planner.cpp.o
+
+.PHONY : __/sc_tp_src/sc_planner.o
+
+# target to build an object file
+__/sc_tp_src/sc_planner.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.o
+.PHONY : __/sc_tp_src/sc_planner.cpp.o
+
+__/sc_tp_src/sc_planner.i: __/sc_tp_src/sc_planner.cpp.i
+
+.PHONY : __/sc_tp_src/sc_planner.i
+
+# target to preprocess a source file
+__/sc_tp_src/sc_planner.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.i
+.PHONY : __/sc_tp_src/sc_planner.cpp.i
+
+__/sc_tp_src/sc_planner.s: __/sc_tp_src/sc_planner.cpp.s
+
+.PHONY : __/sc_tp_src/sc_planner.s
+
+# target to generate assembly for a file
+__/sc_tp_src/sc_planner.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.s
+.PHONY : __/sc_tp_src/sc_planner.cpp.s
+
+__/sc_tp_src/sc_struct.o: __/sc_tp_src/sc_struct.cpp.o
+
+.PHONY : __/sc_tp_src/sc_struct.o
+
+# target to build an object file
+__/sc_tp_src/sc_struct.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_struct.cpp.o
+.PHONY : __/sc_tp_src/sc_struct.cpp.o
+
+__/sc_tp_src/sc_struct.i: __/sc_tp_src/sc_struct.cpp.i
+
+.PHONY : __/sc_tp_src/sc_struct.i
+
+# target to preprocess a source file
+__/sc_tp_src/sc_struct.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_struct.cpp.i
+.PHONY : __/sc_tp_src/sc_struct.cpp.i
+
+__/sc_tp_src/sc_struct.s: __/sc_tp_src/sc_struct.cpp.s
+
+.PHONY : __/sc_tp_src/sc_struct.s
+
+# target to generate assembly for a file
+__/sc_tp_src/sc_struct.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_struct.cpp.s
+.PHONY : __/sc_tp_src/sc_struct.cpp.s
+
 __/sc_tp_src/sc_tp.o: __/sc_tp_src/sc_tp.c.o
 
 .PHONY : __/sc_tp_src/sc_tp.o
@@ -230,6 +608,48 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... sc_tp"
+	@echo "... __/sc_tp_src/ruckig/brake.o"
+	@echo "... __/sc_tp_src/ruckig/brake.i"
+	@echo "... __/sc_tp_src/ruckig/brake.s"
+	@echo "... __/sc_tp_src/ruckig/position-step1.o"
+	@echo "... __/sc_tp_src/ruckig/position-step1.i"
+	@echo "... __/sc_tp_src/ruckig/position-step1.s"
+	@echo "... __/sc_tp_src/ruckig/position-step2.o"
+	@echo "... __/sc_tp_src/ruckig/position-step2.i"
+	@echo "... __/sc_tp_src/ruckig/position-step2.s"
+	@echo "... __/sc_tp_src/ruckig/sc_ruckig.o"
+	@echo "... __/sc_tp_src/ruckig/sc_ruckig.i"
+	@echo "... __/sc_tp_src/ruckig/sc_ruckig.s"
+	@echo "... __/sc_tp_src/ruckig/velocity-step1.o"
+	@echo "... __/sc_tp_src/ruckig/velocity-step1.i"
+	@echo "... __/sc_tp_src/ruckig/velocity-step1.s"
+	@echo "... __/sc_tp_src/ruckig/velocity-step2.o"
+	@echo "... __/sc_tp_src/ruckig/velocity-step2.i"
+	@echo "... __/sc_tp_src/ruckig/velocity-step2.s"
+	@echo "... __/sc_tp_src/sc_arcs.o"
+	@echo "... __/sc_tp_src/sc_arcs.i"
+	@echo "... __/sc_tp_src/sc_arcs.s"
+	@echo "... __/sc_tp_src/sc_engine.o"
+	@echo "... __/sc_tp_src/sc_engine.i"
+	@echo "... __/sc_tp_src/sc_engine.s"
+	@echo "... __/sc_tp_src/sc_interpolate.o"
+	@echo "... __/sc_tp_src/sc_interpolate.i"
+	@echo "... __/sc_tp_src/sc_interpolate.s"
+	@echo "... __/sc_tp_src/sc_lines.o"
+	@echo "... __/sc_tp_src/sc_lines.i"
+	@echo "... __/sc_tp_src/sc_lines.s"
+	@echo "... __/sc_tp_src/sc_optimizer.o"
+	@echo "... __/sc_tp_src/sc_optimizer.i"
+	@echo "... __/sc_tp_src/sc_optimizer.s"
+	@echo "... __/sc_tp_src/sc_pid.o"
+	@echo "... __/sc_tp_src/sc_pid.i"
+	@echo "... __/sc_tp_src/sc_pid.s"
+	@echo "... __/sc_tp_src/sc_planner.o"
+	@echo "... __/sc_tp_src/sc_planner.i"
+	@echo "... __/sc_tp_src/sc_planner.s"
+	@echo "... __/sc_tp_src/sc_struct.o"
+	@echo "... __/sc_tp_src/sc_struct.i"
+	@echo "... __/sc_tp_src/sc_struct.s"
 	@echo "... __/sc_tp_src/sc_tp.o"
 	@echo "... __/sc_tp_src/sc_tp.i"
 	@echo "... __/sc_tp_src/sc_tp.s"

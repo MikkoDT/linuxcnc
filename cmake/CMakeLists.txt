@@ -111,6 +111,7 @@ add_subdirectory(${SRC_DIR}/gcode_py)
 # ~/projects (c - c++ gui projects)
 add_subdirectory(${SRC_DIR}/projects/qt_occt) # Requires opencascade & kdl & qt installed.
 add_subdirectory(${SRC_DIR}/projects/qt_nml) # Requires qt installed
+add_subdirectory(${SRC_DIR}/projects/qt_ruckig_gui) # Requires qt installed
 
 # Experimental.
 add_subdirectory(${SRC_DIR}/components/sc_tp)

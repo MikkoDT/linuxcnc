@@ -79,4 +79,5 @@
 /home/user/linuxcnc/cmake/gcode_py/gcode.so
 /home/user/linuxcnc/cmake/build/projects/qt_occt/../../../../bin/qt_occt
 /home/user/linuxcnc/cmake/build/projects/qt_nml/../../../../bin/qt_nml
+/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/bin/qt_ruckig_gui
 /home/user/linuxcnc/cmake/build/components/sc_tp/../../../../rtlib/sc_tp.so

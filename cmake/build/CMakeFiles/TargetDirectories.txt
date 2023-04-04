@@ -448,6 +448,14 @@
 /home/user/linuxcnc/cmake/build/projects/qt_nml/CMakeFiles/edit_cache.dir
 /home/user/linuxcnc/cmake/build/projects/qt_nml/CMakeFiles/qt_nml.dir
 /home/user/linuxcnc/cmake/build/projects/qt_nml/CMakeFiles/qt_nml_autogen.dir
+/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/install/strip.dir
+/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/install/local.dir
+/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/edit_cache.dir
+/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/install.dir
+/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/list_install_components.dir
+/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/rebuild_cache.dir
+/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir
+/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir
 /home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/install/strip.dir
 /home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/install/local.dir
 /home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/install.dir

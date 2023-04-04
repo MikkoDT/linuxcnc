@@ -101,7 +101,7 @@ struct sc_pnt {
     T x, y, z;
 };
 
-struct sc_dir {
+struct sc_direction {
     T a, b, c;
 };
 

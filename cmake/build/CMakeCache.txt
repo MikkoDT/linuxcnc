@@ -656,6 +656,12 @@ qt_occt_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/projects/qt_occt
 qt_occt_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/projects/qt_occt
 
 //Value Computed by CMake
+qt_ruckig_gui_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui
+
+//Value Computed by CMake
+qt_ruckig_gui_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/projects/qt_ruckig_gui
+
+//Value Computed by CMake
 rosekins_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/rosekins
 
 //Dependencies for the target
@@ -699,6 +705,18 @@ rtapi_app_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/rtapi
 
 //Value Computed by CMake
 rtapi_app_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/rtapi
+
+//Value Computed by CMake
+ruckig_envel_test_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/sc_tp_src/ruckig_endvel_test
+
+//Value Computed by CMake
+ruckig_envel_test_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/components/sc_tp_src/ruckig_endvel_test
+
+//Value Computed by CMake
+sc_pid_gui_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui
+
+//Value Computed by CMake
+sc_pid_gui_SOURCE_DIR:STATIC=/home/user/linuxcnc/cmake/projects/qt_ruckig_gui
 
 //Value Computed by CMake
 sc_tp_BINARY_DIR:STATIC=/home/user/linuxcnc/cmake/build/components/sc_tp
@@ -945,7 +963,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=65
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=66
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -135,6 +135,7 @@ all: linuxcnc_py/all
 all: gcode_py/all
 all: projects/qt_occt/all
 all: projects/qt_nml/all
+all: projects/qt_ruckig_gui/all
 all: components/sc_tp/all
 
 .PHONY : all
@@ -203,6 +204,7 @@ preinstall: linuxcnc_py/preinstall
 preinstall: gcode_py/preinstall
 preinstall: projects/qt_occt/preinstall
 preinstall: projects/qt_nml/preinstall
+preinstall: projects/qt_ruckig_gui/preinstall
 preinstall: components/sc_tp/preinstall
 
 .PHONY : preinstall
@@ -271,6 +273,7 @@ clean: linuxcnc_py/clean
 clean: gcode_py/clean
 clean: projects/qt_occt/clean
 clean: projects/qt_nml/clean
+clean: projects/qt_ruckig_gui/clean
 clean: components/sc_tp/clean
 
 .PHONY : clean
@@ -1342,6 +1345,25 @@ projects/qt_occt/clean: projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/clean
 .PHONY : projects/qt_occt/clean
 
 #=============================================================================
+# Directory level rules for directory projects/qt_ruckig_gui
+
+# Recursive "all" directory target.
+projects/qt_ruckig_gui/all: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/all
+
+.PHONY : projects/qt_ruckig_gui/all
+
+# Recursive "preinstall" directory target.
+projects/qt_ruckig_gui/preinstall:
+
+.PHONY : projects/qt_ruckig_gui/preinstall
+
+# Recursive "clean" directory target.
+projects/qt_ruckig_gui/clean: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/clean
+projects/qt_ruckig_gui/clean: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/clean
+
+.PHONY : projects/qt_ruckig_gui/clean
+
+#=============================================================================
 # Directory level rules for directory rotarydeltakins_py
 
 # Recursive "all" directory target.
@@ -1438,7 +1460,7 @@ togl_py/clean: togl_py/CMakeFiles/_togl.dir/clean
 rtapi/CMakeFiles/rtapi_app.dir/all:
 	$(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi_app.dir/build.make rtapi/CMakeFiles/rtapi_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f rtapi/CMakeFiles/rtapi_app.dir/build.make rtapi/CMakeFiles/rtapi_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=91 "Built target rtapi_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=88 "Built target rtapi_app"
 .PHONY : rtapi/CMakeFiles/rtapi_app.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1465,7 +1487,7 @@ rtapi/CMakeFiles/rtapi_app.dir/clean:
 linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/all:
 	$(MAKE) $(MAKESILENT) -f linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/depend
 	$(MAKE) $(MAKESILENT) -f linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build.make linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=62 "Built target linuxcnc_module_helper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=58 "Built target linuxcnc_module_helper"
 .PHONY : linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1492,12 +1514,12 @@ linuxcnc_module_helper/CMakeFiles/linuxcnc_module_helper.dir/clean:
 liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/all:
 	$(MAKE) $(MAKESILENT) -f liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/build.make liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/depend
 	$(MAKE) $(MAKESILENT) -f liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/build.make liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target liblinuxcnchal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=31 "Built target liblinuxcnchal"
 .PHONY : liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/all
 
 # Build rule for subdir invocation for target.
 liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/rule
@@ -1519,7 +1541,7 @@ liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/clean:
 liblinuxcncini/CMakeFiles/liblinuxcncini.dir/all:
 	$(MAKE) $(MAKESILENT) -f liblinuxcncini/CMakeFiles/liblinuxcncini.dir/build.make liblinuxcncini/CMakeFiles/liblinuxcncini.dir/depend
 	$(MAKE) $(MAKESILENT) -f liblinuxcncini/CMakeFiles/liblinuxcncini.dir/build.make liblinuxcncini/CMakeFiles/liblinuxcncini.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=34 "Built target liblinuxcncini"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=32 "Built target liblinuxcncini"
 .PHONY : liblinuxcncini/CMakeFiles/liblinuxcncini.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1546,7 +1568,7 @@ liblinuxcncini/CMakeFiles/liblinuxcncini.dir/clean:
 libtooldata/CMakeFiles/libtooldata.dir/all:
 	$(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/depend
 	$(MAKE) $(MAKESILENT) -f libtooldata/CMakeFiles/libtooldata.dir/build.make libtooldata/CMakeFiles/libtooldata.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=56 "Built target libtooldata"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=52 "Built target libtooldata"
 .PHONY : libtooldata/CMakeFiles/libtooldata.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1573,12 +1595,12 @@ libtooldata/CMakeFiles/libtooldata.dir/clean:
 libnml/CMakeFiles/libnml.dir/all:
 	$(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/depend
 	$(MAKE) $(MAKESILENT) -f libnml/CMakeFiles/libnml.dir/build.make libnml/CMakeFiles/libnml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43,44,45 "Built target libnml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=33,34,35,36,37,38,39,40,41 "Built target libnml"
 .PHONY : libnml/CMakeFiles/libnml.dir/all
 
 # Build rule for subdir invocation for target.
 libnml/CMakeFiles/libnml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libnml/CMakeFiles/libnml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : libnml/CMakeFiles/libnml.dir/rule
@@ -1600,7 +1622,7 @@ libnml/CMakeFiles/libnml.dir/clean:
 liblinuxcnc/CMakeFiles/linuxcnc.dir/all:
 	$(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/depend
 	$(MAKE) $(MAKESILENT) -f liblinuxcnc/CMakeFiles/linuxcnc.dir/build.make liblinuxcnc/CMakeFiles/linuxcnc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=58,59,60,61 "Built target linuxcnc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=54,55,56,57 "Built target linuxcnc"
 .PHONY : liblinuxcnc/CMakeFiles/linuxcnc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1627,12 +1649,12 @@ liblinuxcnc/CMakeFiles/linuxcnc.dir/clean:
 libposemath/CMakeFiles/libposemath.dir/all:
 	$(MAKE) $(MAKESILENT) -f libposemath/CMakeFiles/libposemath.dir/build.make libposemath/CMakeFiles/libposemath.dir/depend
 	$(MAKE) $(MAKESILENT) -f libposemath/CMakeFiles/libposemath.dir/build.make libposemath/CMakeFiles/libposemath.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=46 "Built target libposemath"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=42,43 "Built target libposemath"
 .PHONY : libposemath/CMakeFiles/libposemath.dir/all
 
 # Build rule for subdir invocation for target.
 libposemath/CMakeFiles/libposemath.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libposemath/CMakeFiles/libposemath.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : libposemath/CMakeFiles/libposemath.dir/rule
@@ -1681,12 +1703,12 @@ libpyplugin/CMakeFiles/libpyplugin.dir/clean:
 librs274/CMakeFiles/librs274.dir/all:
 	$(MAKE) $(MAKESILENT) -f librs274/CMakeFiles/librs274.dir/build.make librs274/CMakeFiles/librs274.dir/depend
 	$(MAKE) $(MAKESILENT) -f librs274/CMakeFiles/librs274.dir/build.make librs274/CMakeFiles/librs274.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=47,48,49,50,51,52,53,54,55 "Built target librs274"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=44,45,46,47,48,49,50,51 "Built target librs274"
 .PHONY : librs274/CMakeFiles/librs274.dir/all
 
 # Build rule for subdir invocation for target.
 librs274/CMakeFiles/librs274.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 librs274/CMakeFiles/librs274.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : librs274/CMakeFiles/librs274.dir/rule
@@ -1708,12 +1730,12 @@ librs274/CMakeFiles/librs274.dir/clean:
 libcanterp/CMakeFiles/libcanterp.dir/all:
 	$(MAKE) $(MAKESILENT) -f libcanterp/CMakeFiles/libcanterp.dir/build.make libcanterp/CMakeFiles/libcanterp.dir/depend
 	$(MAKE) $(MAKESILENT) -f libcanterp/CMakeFiles/libcanterp.dir/build.make libcanterp/CMakeFiles/libcanterp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=33 "Built target libcanterp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target libcanterp"
 .PHONY : libcanterp/CMakeFiles/libcanterp.dir/all
 
 # Build rule for subdir invocation for target.
 libcanterp/CMakeFiles/libcanterp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libcanterp/CMakeFiles/libcanterp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : libcanterp/CMakeFiles/libcanterp.dir/rule
@@ -1735,7 +1757,7 @@ libcanterp/CMakeFiles/libcanterp.dir/clean:
 hal_lib/CMakeFiles/hal_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f hal_lib/CMakeFiles/hal_lib.dir/build.make hal_lib/CMakeFiles/hal_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=13 "Built target hal_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=12 "Built target hal_lib"
 .PHONY : hal_lib/CMakeFiles/hal_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1843,7 +1865,7 @@ components/threads/CMakeFiles/threads.dir/clean:
 components/ethercat/CMakeFiles/lcec_conf.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/ethercat/CMakeFiles/lcec_conf.dir/build.make components/ethercat/CMakeFiles/lcec_conf.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/ethercat/CMakeFiles/lcec_conf.dir/build.make components/ethercat/CMakeFiles/lcec_conf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=32 "Built target lcec_conf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=30 "Built target lcec_conf"
 .PHONY : components/ethercat/CMakeFiles/lcec_conf.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1870,7 +1892,7 @@ components/ethercat/CMakeFiles/lcec_conf.dir/clean:
 components/ethercat/CMakeFiles/lcec.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/ethercat/CMakeFiles/lcec.dir/build.make components/ethercat/CMakeFiles/lcec.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/ethercat/CMakeFiles/lcec.dir/build.make components/ethercat/CMakeFiles/lcec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31 "Built target lcec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=20,21,22,23,24,25,26,27,28,29 "Built target lcec"
 .PHONY : components/ethercat/CMakeFiles/lcec.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1951,7 +1973,7 @@ components/rotarydeltakins/CMakeFiles/rotarydeltakins_rt.dir/clean:
 components/pumakins/CMakeFiles/pumakins.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/pumakins/CMakeFiles/pumakins.dir/build.make components/pumakins/CMakeFiles/pumakins.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/pumakins/CMakeFiles/pumakins.dir/build.make components/pumakins/CMakeFiles/pumakins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=74 "Built target pumakins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=69 "Built target pumakins"
 .PHONY : components/pumakins/CMakeFiles/pumakins.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1978,12 +2000,12 @@ components/pumakins/CMakeFiles/pumakins.dir/clean:
 components/genserkins/CMakeFiles/genserkins.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/genserkins/CMakeFiles/genserkins.dir/build.make components/genserkins/CMakeFiles/genserkins.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/genserkins/CMakeFiles/genserkins.dir/build.make components/genserkins/CMakeFiles/genserkins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=12 "Built target genserkins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target genserkins"
 .PHONY : components/genserkins/CMakeFiles/genserkins.dir/all
 
 # Build rule for subdir invocation for target.
 components/genserkins/CMakeFiles/genserkins.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 components/genserkins/CMakeFiles/genserkins.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : components/genserkins/CMakeFiles/genserkins.dir/rule
@@ -2059,7 +2081,7 @@ components/trivkins/CMakeFiles/trivkins.dir/clean:
 components/rotatekins/CMakeFiles/rotatekins.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/rotatekins/CMakeFiles/rotatekins.dir/build.make components/rotatekins/CMakeFiles/rotatekins.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/rotatekins/CMakeFiles/rotatekins.dir/build.make components/rotatekins/CMakeFiles/rotatekins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=88 "Built target rotatekins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=85 "Built target rotatekins"
 .PHONY : components/rotatekins/CMakeFiles/rotatekins.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2194,12 +2216,12 @@ components/pentakins/CMakeFiles/pentakins.dir/clean:
 components/scorbotkins/CMakeFiles/scorbotkins.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/scorbotkins/CMakeFiles/scorbotkins.dir/build.make components/scorbotkins/CMakeFiles/scorbotkins.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/scorbotkins/CMakeFiles/scorbotkins.dir/build.make components/scorbotkins/CMakeFiles/scorbotkins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=94 "Built target scorbotkins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target scorbotkins"
 .PHONY : components/scorbotkins/CMakeFiles/scorbotkins.dir/all
 
 # Build rule for subdir invocation for target.
 components/scorbotkins/CMakeFiles/scorbotkins.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 components/scorbotkins/CMakeFiles/scorbotkins.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : components/scorbotkins/CMakeFiles/scorbotkins.dir/rule
@@ -2248,7 +2270,7 @@ components/tripodkins/CMakeFiles/tripodkins.dir/clean:
 components/scarakins/CMakeFiles/scarakins.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/scarakins/CMakeFiles/scarakins.dir/build.make components/scarakins/CMakeFiles/scarakins.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/scarakins/CMakeFiles/scarakins.dir/build.make components/scarakins/CMakeFiles/scarakins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=92 "Built target scarakins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=93 "Built target scarakins"
 .PHONY : components/scarakins/CMakeFiles/scarakins.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2275,12 +2297,12 @@ components/scarakins/CMakeFiles/scarakins.dir/clean:
 components/maxkins/CMakeFiles/maxkins.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/maxkins/CMakeFiles/maxkins.dir/build.make components/maxkins/CMakeFiles/maxkins.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/maxkins/CMakeFiles/maxkins.dir/build.make components/maxkins/CMakeFiles/maxkins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target maxkins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=62 "Built target maxkins"
 .PHONY : components/maxkins/CMakeFiles/maxkins.dir/all
 
 # Build rule for subdir invocation for target.
 components/maxkins/CMakeFiles/maxkins.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 components/maxkins/CMakeFiles/maxkins.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : components/maxkins/CMakeFiles/maxkins.dir/rule
@@ -2302,12 +2324,12 @@ components/maxkins/CMakeFiles/maxkins.dir/clean:
 components/corexykins/CMakeFiles/corexykins.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/corexykins/CMakeFiles/corexykins.dir/build.make components/corexykins/CMakeFiles/corexykins.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/corexykins/CMakeFiles/corexykins.dir/build.make components/corexykins/CMakeFiles/corexykins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target corexykins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=10 "Built target corexykins"
 .PHONY : components/corexykins/CMakeFiles/corexykins.dir/all
 
 # Build rule for subdir invocation for target.
 components/corexykins/CMakeFiles/corexykins.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 components/corexykins/CMakeFiles/corexykins.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : components/corexykins/CMakeFiles/corexykins.dir/rule
@@ -2329,12 +2351,12 @@ components/corexykins/CMakeFiles/corexykins.dir/clean:
 components/genhexkins/CMakeFiles/genhexkins.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/genhexkins/CMakeFiles/genhexkins.dir/build.make components/genhexkins/CMakeFiles/genhexkins.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/genhexkins/CMakeFiles/genhexkins.dir/build.make components/genhexkins/CMakeFiles/genhexkins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target genhexkins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=11 "Built target genhexkins"
 .PHONY : components/genhexkins/CMakeFiles/genhexkins.dir/all
 
 # Build rule for subdir invocation for target.
 components/genhexkins/CMakeFiles/genhexkins.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 components/genhexkins/CMakeFiles/genhexkins.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : components/genhexkins/CMakeFiles/genhexkins.dir/rule
@@ -2437,7 +2459,7 @@ components/scurve/CMakeFiles/scurve.dir/clean:
 halcmd/CMakeFiles/halcmd.dir/all:
 	$(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/depend
 	$(MAKE) $(MAKESILENT) -f halcmd/CMakeFiles/halcmd.dir/build.make halcmd/CMakeFiles/halcmd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=14,15 "Built target halcmd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=13,14 "Built target halcmd"
 .PHONY : halcmd/CMakeFiles/halcmd.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2464,12 +2486,12 @@ halcmd/CMakeFiles/halcmd.dir/clean:
 halmeter/CMakeFiles/halmeter.dir/all: liblinuxcnchal/CMakeFiles/liblinuxcnchal.dir/all
 	$(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/depend
 	$(MAKE) $(MAKESILENT) -f halmeter/CMakeFiles/halmeter.dir/build.make halmeter/CMakeFiles/halmeter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=16 "Built target halmeter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=15 "Built target halmeter"
 .PHONY : halmeter/CMakeFiles/halmeter.dir/all
 
 # Build rule for subdir invocation for target.
 halmeter/CMakeFiles/halmeter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halmeter/CMakeFiles/halmeter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : halmeter/CMakeFiles/halmeter.dir/rule
@@ -2491,7 +2513,7 @@ halmeter/CMakeFiles/halmeter.dir/clean:
 halscope/CMakeFiles/halscope.dir/all:
 	$(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/depend
 	$(MAKE) $(MAKESILENT) -f halscope/CMakeFiles/halscope.dir/build.make halscope/CMakeFiles/halscope.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=18,19 "Built target halscope"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=17,18 "Built target halscope"
 .PHONY : halscope/CMakeFiles/halscope.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2518,12 +2540,12 @@ halscope/CMakeFiles/halscope.dir/clean:
 classicladder/CMakeFiles/classicladder.dir/all:
 	$(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/depend
 	$(MAKE) $(MAKESILENT) -f classicladder/CMakeFiles/classicladder.dir/build.make classicladder/CMakeFiles/classicladder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10 "Built target classicladder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9 "Built target classicladder"
 .PHONY : classicladder/CMakeFiles/classicladder.dir/all
 
 # Build rule for subdir invocation for target.
 classicladder/CMakeFiles/classicladder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 classicladder/CMakeFiles/classicladder.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : classicladder/CMakeFiles/classicladder.dir/rule
@@ -2545,12 +2567,12 @@ classicladder/CMakeFiles/classicladder.dir/clean:
 halui/CMakeFiles/halui.dir/all:
 	$(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/depend
 	$(MAKE) $(MAKESILENT) -f halui/CMakeFiles/halui.dir/build.make halui/CMakeFiles/halui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=20 "Built target halui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target halui"
 .PHONY : halui/CMakeFiles/halui.dir/all
 
 # Build rule for subdir invocation for target.
 halui/CMakeFiles/halui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 halui/CMakeFiles/halui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : halui/CMakeFiles/halui.dir/rule
@@ -2572,7 +2594,7 @@ halui/CMakeFiles/halui.dir/clean:
 halrmt/CMakeFiles/halrmt.dir/all:
 	$(MAKE) $(MAKESILENT) -f halrmt/CMakeFiles/halrmt.dir/build.make halrmt/CMakeFiles/halrmt.dir/depend
 	$(MAKE) $(MAKESILENT) -f halrmt/CMakeFiles/halrmt.dir/build.make halrmt/CMakeFiles/halrmt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=17 "Built target halrmt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=16 "Built target halrmt"
 .PHONY : halrmt/CMakeFiles/halrmt.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2599,7 +2621,7 @@ halrmt/CMakeFiles/halrmt.dir/clean:
 pci_write/CMakeFiles/pci_write.dir/all:
 	$(MAKE) $(MAKESILENT) -f pci_write/CMakeFiles/pci_write.dir/build.make pci_write/CMakeFiles/pci_write.dir/depend
 	$(MAKE) $(MAKESILENT) -f pci_write/CMakeFiles/pci_write.dir/build.make pci_write/CMakeFiles/pci_write.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=73 "Built target pci_write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=68 "Built target pci_write"
 .PHONY : pci_write/CMakeFiles/pci_write.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2626,7 +2648,7 @@ pci_write/CMakeFiles/pci_write.dir/clean:
 pci_read/CMakeFiles/pci_read.dir/all:
 	$(MAKE) $(MAKESILENT) -f pci_read/CMakeFiles/pci_read.dir/build.make pci_read/CMakeFiles/pci_read.dir/depend
 	$(MAKE) $(MAKESILENT) -f pci_read/CMakeFiles/pci_read.dir/build.make pci_read/CMakeFiles/pci_read.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=72 "Built target pci_read"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=67 "Built target pci_read"
 .PHONY : pci_read/CMakeFiles/pci_read.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2653,12 +2675,12 @@ pci_read/CMakeFiles/pci_read.dir/clean:
 io/CMakeFiles/io.dir/all:
 	$(MAKE) $(MAKESILENT) -f io/CMakeFiles/io.dir/build.make io/CMakeFiles/io.dir/depend
 	$(MAKE) $(MAKESILENT) -f io/CMakeFiles/io.dir/build.make io/CMakeFiles/io.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target io"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=19 "Built target io"
 .PHONY : io/CMakeFiles/io.dir/all
 
 # Build rule for subdir invocation for target.
 io/CMakeFiles/io.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 io/CMakeFiles/io.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : io/CMakeFiles/io.dir/rule
@@ -2680,12 +2702,12 @@ io/CMakeFiles/io.dir/clean:
 iov2/CMakeFiles/iov2.dir/all:
 	$(MAKE) $(MAKESILENT) -f iov2/CMakeFiles/iov2.dir/build.make iov2/CMakeFiles/iov2.dir/depend
 	$(MAKE) $(MAKESILENT) -f iov2/CMakeFiles/iov2.dir/build.make iov2/CMakeFiles/iov2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=21 "Built target iov2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target iov2"
 .PHONY : iov2/CMakeFiles/iov2.dir/all
 
 # Build rule for subdir invocation for target.
 iov2/CMakeFiles/iov2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 iov2/CMakeFiles/iov2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : iov2/CMakeFiles/iov2.dir/rule
@@ -2707,7 +2729,7 @@ iov2/CMakeFiles/iov2.dir/clean:
 motion_logger/CMakeFiles/motion-logger.dir/all:
 	$(MAKE) $(MAKESILENT) -f motion_logger/CMakeFiles/motion-logger.dir/build.make motion_logger/CMakeFiles/motion-logger.dir/depend
 	$(MAKE) $(MAKESILENT) -f motion_logger/CMakeFiles/motion-logger.dir/build.make motion_logger/CMakeFiles/motion-logger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=71 "Built target motion-logger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=66 "Built target motion-logger"
 .PHONY : motion_logger/CMakeFiles/motion-logger.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2734,7 +2756,7 @@ motion_logger/CMakeFiles/motion-logger.dir/clean:
 sai/CMakeFiles/rs274.dir/all:
 	$(MAKE) $(MAKESILENT) -f sai/CMakeFiles/rs274.dir/build.make sai/CMakeFiles/rs274.dir/depend
 	$(MAKE) $(MAKESILENT) -f sai/CMakeFiles/rs274.dir/build.make sai/CMakeFiles/rs274.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=89,90 "Built target rs274"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=86,87 "Built target rs274"
 .PHONY : sai/CMakeFiles/rs274.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2761,12 +2783,12 @@ sai/CMakeFiles/rs274.dir/clean:
 linuxcncsrv/CMakeFiles/linuxcncsrv.dir/all:
 	$(MAKE) $(MAKESILENT) -f linuxcncsrv/CMakeFiles/linuxcncsrv.dir/build.make linuxcncsrv/CMakeFiles/linuxcncsrv.dir/depend
 	$(MAKE) $(MAKESILENT) -f linuxcncsrv/CMakeFiles/linuxcncsrv.dir/build.make linuxcncsrv/CMakeFiles/linuxcncsrv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=66 "Built target linuxcncsrv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target linuxcncsrv"
 .PHONY : linuxcncsrv/CMakeFiles/linuxcncsrv.dir/all
 
 # Build rule for subdir invocation for target.
 linuxcncsrv/CMakeFiles/linuxcncsrv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcncsrv/CMakeFiles/linuxcncsrv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : linuxcncsrv/CMakeFiles/linuxcncsrv.dir/rule
@@ -2788,12 +2810,12 @@ linuxcncsrv/CMakeFiles/linuxcncsrv.dir/clean:
 milltask/CMakeFiles/milltask.dir/all:
 	$(MAKE) $(MAKESILENT) -f milltask/CMakeFiles/milltask.dir/build.make milltask/CMakeFiles/milltask.dir/depend
 	$(MAKE) $(MAKESILENT) -f milltask/CMakeFiles/milltask.dir/build.make milltask/CMakeFiles/milltask.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=67,68,69,70 "Built target milltask"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=63,64,65 "Built target milltask"
 .PHONY : milltask/CMakeFiles/milltask.dir/all
 
 # Build rule for subdir invocation for target.
 milltask/CMakeFiles/milltask.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 milltask/CMakeFiles/milltask.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : milltask/CMakeFiles/milltask.dir/rule
@@ -2815,12 +2837,12 @@ milltask/CMakeFiles/milltask.dir/clean:
 linuxcncrsh/CMakeFiles/linuxcncrsh.dir/all:
 	$(MAKE) $(MAKESILENT) -f linuxcncrsh/CMakeFiles/linuxcncrsh.dir/build.make linuxcncrsh/CMakeFiles/linuxcncrsh.dir/depend
 	$(MAKE) $(MAKESILENT) -f linuxcncrsh/CMakeFiles/linuxcncrsh.dir/build.make linuxcncrsh/CMakeFiles/linuxcncrsh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target linuxcncrsh"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=61 "Built target linuxcncrsh"
 .PHONY : linuxcncrsh/CMakeFiles/linuxcncrsh.dir/all
 
 # Build rule for subdir invocation for target.
 linuxcncrsh/CMakeFiles/linuxcncrsh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcncrsh/CMakeFiles/linuxcncrsh.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : linuxcncrsh/CMakeFiles/linuxcncrsh.dir/rule
@@ -2842,7 +2864,7 @@ linuxcncrsh/CMakeFiles/linuxcncrsh.dir/clean:
 schedrmt/CMakeFiles/schedrmt.dir/all:
 	$(MAKE) $(MAKESILENT) -f schedrmt/CMakeFiles/schedrmt.dir/build.make schedrmt/CMakeFiles/schedrmt.dir/depend
 	$(MAKE) $(MAKESILENT) -f schedrmt/CMakeFiles/schedrmt.dir/build.make schedrmt/CMakeFiles/schedrmt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=93 "Built target schedrmt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=94 "Built target schedrmt"
 .PHONY : schedrmt/CMakeFiles/schedrmt.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2869,12 +2891,12 @@ schedrmt/CMakeFiles/schedrmt.dir/clean:
 linuxcnclcd/CMakeFiles/linuxcnclcd.dir/all:
 	$(MAKE) $(MAKESILENT) -f linuxcnclcd/CMakeFiles/linuxcnclcd.dir/build.make linuxcnclcd/CMakeFiles/linuxcnclcd.dir/depend
 	$(MAKE) $(MAKESILENT) -f linuxcnclcd/CMakeFiles/linuxcnclcd.dir/build.make linuxcnclcd/CMakeFiles/linuxcnclcd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=64,65 "Built target linuxcnclcd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=60 "Built target linuxcnclcd"
 .PHONY : linuxcnclcd/CMakeFiles/linuxcnclcd.dir/all
 
 # Build rule for subdir invocation for target.
 linuxcnclcd/CMakeFiles/linuxcnclcd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnclcd/CMakeFiles/linuxcnclcd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : linuxcnclcd/CMakeFiles/linuxcnclcd.dir/rule
@@ -2896,12 +2918,12 @@ linuxcnclcd/CMakeFiles/linuxcnclcd.dir/clean:
 linuxcnc_tlc/CMakeFiles/linuxcnc_tlc.dir/all:
 	$(MAKE) $(MAKESILENT) -f linuxcnc_tlc/CMakeFiles/linuxcnc_tlc.dir/build.make linuxcnc_tlc/CMakeFiles/linuxcnc_tlc.dir/depend
 	$(MAKE) $(MAKESILENT) -f linuxcnc_tlc/CMakeFiles/linuxcnc_tlc.dir/build.make linuxcnc_tlc/CMakeFiles/linuxcnc_tlc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target linuxcnc_tlc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=59 "Built target linuxcnc_tlc"
 .PHONY : linuxcnc_tlc/CMakeFiles/linuxcnc_tlc.dir/all
 
 # Build rule for subdir invocation for target.
 linuxcnc_tlc/CMakeFiles/linuxcnc_tlc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_tlc/CMakeFiles/linuxcnc_tlc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : linuxcnc_tlc/CMakeFiles/linuxcnc_tlc.dir/rule
@@ -2950,7 +2972,7 @@ hal_tlc/CMakeFiles/hal_tlc.dir/clean:
 lineardeltakins_py/CMakeFiles/lineardeltakins.dir/all:
 	$(MAKE) $(MAKESILENT) -f lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make lineardeltakins_py/CMakeFiles/lineardeltakins.dir/depend
 	$(MAKE) $(MAKESILENT) -f lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build.make lineardeltakins_py/CMakeFiles/lineardeltakins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=57 "Built target lineardeltakins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=53 "Built target lineardeltakins"
 .PHONY : lineardeltakins_py/CMakeFiles/lineardeltakins.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2977,7 +2999,7 @@ lineardeltakins_py/CMakeFiles/lineardeltakins.dir/clean:
 rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/all:
 	$(MAKE) $(MAKESILENT) -f rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/depend
 	$(MAKE) $(MAKESILENT) -f rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build.make rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=87 "Built target rotarydeltakins"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=84 "Built target rotarydeltakins"
 .PHONY : rotarydeltakins_py/CMakeFiles/rotarydeltakins.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3058,12 +3080,12 @@ togl_py/CMakeFiles/_togl.dir/clean:
 linuxcnc_py/CMakeFiles/linuxcnc_py.dir/all:
 	$(MAKE) $(MAKESILENT) -f linuxcnc_py/CMakeFiles/linuxcnc_py.dir/build.make linuxcnc_py/CMakeFiles/linuxcnc_py.dir/depend
 	$(MAKE) $(MAKESILENT) -f linuxcnc_py/CMakeFiles/linuxcnc_py.dir/build.make linuxcnc_py/CMakeFiles/linuxcnc_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=63 "Built target linuxcnc_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target linuxcnc_py"
 .PHONY : linuxcnc_py/CMakeFiles/linuxcnc_py.dir/all
 
 # Build rule for subdir invocation for target.
 linuxcnc_py/CMakeFiles/linuxcnc_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linuxcnc_py/CMakeFiles/linuxcnc_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : linuxcnc_py/CMakeFiles/linuxcnc_py.dir/rule
@@ -3085,12 +3107,12 @@ linuxcnc_py/CMakeFiles/linuxcnc_py.dir/clean:
 gcode_py/CMakeFiles/gcode.dir/all:
 	$(MAKE) $(MAKESILENT) -f gcode_py/CMakeFiles/gcode.dir/build.make gcode_py/CMakeFiles/gcode.dir/depend
 	$(MAKE) $(MAKESILENT) -f gcode_py/CMakeFiles/gcode.dir/build.make gcode_py/CMakeFiles/gcode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=11 "Built target gcode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target gcode"
 .PHONY : gcode_py/CMakeFiles/gcode.dir/all
 
 # Build rule for subdir invocation for target.
 gcode_py/CMakeFiles/gcode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gcode_py/CMakeFiles/gcode.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : gcode_py/CMakeFiles/gcode.dir/rule
@@ -3112,12 +3134,12 @@ gcode_py/CMakeFiles/gcode.dir/clean:
 projects/qt_occt/CMakeFiles/qt_occt.dir/all: projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt.dir/build.make projects/qt_occt/CMakeFiles/qt_occt.dir/depend
 	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt.dir/build.make projects/qt_occt/CMakeFiles/qt_occt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=76,77,78,79,80,81,82,83,84,85 "Built target qt_occt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79,80 "Built target qt_occt"
 .PHONY : projects/qt_occt/CMakeFiles/qt_occt.dir/all
 
 # Build rule for subdir invocation for target.
 projects/qt_occt/CMakeFiles/qt_occt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projects/qt_occt/CMakeFiles/qt_occt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : projects/qt_occt/CMakeFiles/qt_occt.dir/rule
@@ -3139,12 +3161,12 @@ projects/qt_occt/CMakeFiles/qt_occt.dir/clean:
 projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/all:
 	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/build.make projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/build.make projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=86 "Built target qt_occt_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target qt_occt_autogen"
 .PHONY : projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/rule
@@ -3166,7 +3188,7 @@ projects/qt_occt/CMakeFiles/qt_occt_autogen.dir/clean:
 projects/qt_nml/CMakeFiles/qt_nml.dir/all: projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml.dir/build.make projects/qt_nml/CMakeFiles/qt_nml.dir/depend
 	$(MAKE) $(MAKESILENT) -f projects/qt_nml/CMakeFiles/qt_nml.dir/build.make projects/qt_nml/CMakeFiles/qt_nml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=75 "Built target qt_nml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=70 "Built target qt_nml"
 .PHONY : projects/qt_nml/CMakeFiles/qt_nml.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3214,18 +3236,72 @@ projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/clean:
 .PHONY : projects/qt_nml/CMakeFiles/qt_nml_autogen.dir/clean
 
 #=============================================================================
+# Target rules for target projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir
+
+# All Build rule for target.
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/all: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/depend
+	$(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=81,82,83 "Built target qt_ruckig_gui"
+.PHONY : projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/all
+
+# Build rule for subdir invocation for target.
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+.PHONY : projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/rule
+
+# Convenience name for target.
+qt_ruckig_gui: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/rule
+
+.PHONY : qt_ruckig_gui
+
+# clean rule for target.
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/clean
+.PHONY : projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/clean
+
+#=============================================================================
+# Target rules for target projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir
+
+# All Build rule for target.
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/all:
+	$(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target qt_ruckig_gui_autogen"
+.PHONY : projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+.PHONY : projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/rule
+
+# Convenience name for target.
+qt_ruckig_gui_autogen: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/rule
+
+.PHONY : qt_ruckig_gui_autogen
+
+# clean rule for target.
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/clean
+.PHONY : projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/clean
+
+#=============================================================================
 # Target rules for target components/sc_tp/CMakeFiles/sc_tp.dir
 
 # All Build rule for target.
 components/sc_tp/CMakeFiles/sc_tp.dir/all:
 	$(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/depend
 	$(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num= "Built target sc_tp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=89,90,91,92 "Built target sc_tp"
 .PHONY : components/sc_tp/CMakeFiles/sc_tp.dir/all
 
 # Build rule for subdir invocation for target.
 components/sc_tp/CMakeFiles/sc_tp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 components/sc_tp/CMakeFiles/sc_tp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/linuxcnc/cmake/build/CMakeFiles 0
 .PHONY : components/sc_tp/CMakeFiles/sc_tp.dir/rule

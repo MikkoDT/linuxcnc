@@ -107,6 +107,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/user/linuxcnc/cmake/build/gcode_py/cmake_install.cmake")
   include("/home/user/linuxcnc/cmake/build/projects/qt_occt/cmake_install.cmake")
   include("/home/user/linuxcnc/cmake/build/projects/qt_nml/cmake_install.cmake")
+  include("/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/cmake_install.cmake")
   include("/home/user/linuxcnc/cmake/build/components/sc_tp/cmake_install.cmake")
 
 endif()

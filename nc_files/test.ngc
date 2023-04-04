@@ -1,17 +1,18 @@
-N0 (Intro)
-N1 G21 (unit:mm)
-N2 G40 (cutter compensation off)
-N3 G80 (cancel canned cycle modal motion)
-N4 G90  (absolute distance, no offsets)
-N5 G64P0.01 (path following accuracy)
-N6 F1 (initialize feedrate)
-N7 S1 (initialize spindle speed/power)
-N8 (Contour id:2)
-
-N13 G1 X40.000 Y62.000 F1400.000
-N14 G1 X60.000 Y62.000 F1400.000
-N15 G2 X62.000 Y60.000 I-0.000 J-2.000 F1400.000
-N16 G1 X62.000 Y40.000 Z0.000 F1400.000
-
+#<depth>=1.0
+#<scale>=1.0
+G21 G90 G64 G40
+G0 Z3.0
+( engraving )
+G17
+M3 S10000
+G0 X[1.75781*#<scale>] Y[0.5*#<scale>]
+G1 F100.0 Z[-#<depth>]
+G1 F400.0 X[5.95508*#<scale>] Y[20.54297*#<scale>]
+G1 X[10.07031*#<scale>]
+G1 X[6.58398*#<scale>] Y[3.84961*#<scale>]
+G1 X[16.7832*#<scale>]
+G1 X[16.08594*#<scale>] Y[0.5*#<scale>]
+G1 X[1.75781*#<scale>]
+G0 Z3.0
 M5
-M30
+M2

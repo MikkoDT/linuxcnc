@@ -96,6 +96,12 @@ string.h
 rtapi_gfp.h
 -
 
+/home/user/linuxcnc/cmake/components/scurve/sc_engine.c
+rtapi.h
+/home/user/linuxcnc/cmake/components/scurve/rtapi.h
+sc_engine.h
+/home/user/linuxcnc/cmake/components/scurve/sc_engine.h
+
 /home/user/linuxcnc/cmake/components/scurve/sc_engine.h
 stdio.h
 -

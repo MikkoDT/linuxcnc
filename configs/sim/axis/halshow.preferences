@@ -1,40 +1,34 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 298x618+494+123
-placeFrames 0.34738372093023256
-set ::ratio 0.34738372093023256
+wm geometry . 740x780+344+22
+placeFrames 0.37362637362637363
+set ::ratio 0.37362637362637363
 set ::old_w_leftf 160
 set ::watchlist {
-    param+sc-tp.tp_depth->nr_total_queued_motions
-    param+sc-tp.tc_current_depth->nr_motions_blending
-    param+sc-tp.tc_current_vel
-    param+sc-tp.tc_id->current_gcodeline
-    param+sc-tp.tc_motiontype->1_lin->2_arc->3_tap
-    param+sc-tp.tc_progress
-    param+sc-tp.tc_remove
-    param+sc-tp.tc_reqeusted_vel
-    param+sc-tp.tc_target
-    param+sc-tp.tc_term_vel
-    param+sc-tp.tmax
-    param+sc-tp.tmax-increased
-    param+sc-tp.tp_aborting
-    param+sc-tp.tp_done
-    param+sc-tp.tp_exec_id->current_gcode_line_exec
-    param+sc-tp.tp_goalpos_x->eof_gcode_pos
-    param+sc-tp.tp_goalpos_y->eof_gcode_pos
-    param+sc-tp.tp_goalpos_z->eof_gcode_pos
-    param+sc-tp.tp_pausing
-    param+sc-tp.tp_queue_size->size_of_queue_vector
-    param+sc-tp.tp_reverse_run
-    param+sc-tp.tp_x
-    param+sc-tp.tp_y
-    param+sc-tp.tp_z
-    param+sc-tp.dtg
-    param+sc-tp.tc_canon_motiontype->arc_3->lin_2->GO_1
-    param+sc-tp.tc_is_blending
-    param+sc-tp.tc_target_vel
-    pin+sc-tp.is_module
+    pin+sc-tp.gcode_buffer_size
+    pin+sc-tp.module
+    pin+sc-tp.tp_gcode_loaded_lines
+    param+sc-tp.acceleration_max
+    param+sc-tp.curpos_x
+    param+sc-tp.curpos_y
+    param+sc-tp.curpos_z
+    param+sc-tp.done
+    param+sc-tp.pause
+    param+sc-tp.stop
+    param+sc-tp.tp_gcode_optimize
+    param+sc-tp.tp_gcode_print
+    param+sc-tp.tp_run
+    param+sc-tp.velocity_max
+    param+traj.active_tc
+    param+traj.pos_out
+    param+traj.vel_out
+    pin+comp_x.time
+    pin+comp_x.out
+    pin+comp_x.in1
+    pin+comp_x.in0
+    pin+comp_x.equal
     pin+sc-tp.time
+    param+sc-tp.gcode_current_line
 }
 set ::workmode watchhal
 set ::watchInterval 100
