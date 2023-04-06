@@ -411,6 +411,8 @@ sc_lines.h
 /home/user/linuxcnc/cmake/components/sc_tp_src/sc_lines.h
 sc_arcs.h
 /home/user/linuxcnc/cmake/components/sc_tp_src/sc_arcs.h
+ruckig/sc_ruckig.h
+/home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.h
 
 /home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.h
 sc_struct.h
@@ -459,8 +461,6 @@ sc_conversion.h
 /home/user/linuxcnc/cmake/components/sc_tp_src/sc_conversion.h
 sc_interpolate.h
 /home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.h
-ruckig/sc_ruckig.h
-/home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.h
 emcpose.h
 /home/user/linuxcnc/cmake/components/sc_tp_src/emcpose.h
 motion.h

@@ -30,6 +30,7 @@ add_definitions(-DRTAPI -DUSPACE -D_GNU_SOURCE -D__MODULE__ )
 
 ADD_LIBRARY(${PROJECT} SHARED 
     ${SRC_DIR}/../../emc_src/tp.h
+    ${SRC_DIR}/../../emc_src/motion.h
     ${SRC_DIR}/../sc_tp_src/sc_tp.c
 
     ${SRC_DIR}/../sc_tp_src/sc_struct.h

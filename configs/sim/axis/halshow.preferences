@@ -1,6 +1,6 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 740x780+87+347
+wm geometry . 743x725+131+36
 placeFrames 0.37362637362637363
 set ::ratio 0.37362637362637363
 set ::old_w_leftf 160
@@ -9,22 +9,21 @@ set ::watchlist {
     pin+sc-tp.state_run
     pin+sc-tp.state_stop
     pin+sc-tp.state_wait
+    pin+sc-tp.loaded_gcode_lines
+    pin+sc-tp.buffer_size
     param+sc-tp.done
     param+sc-tp.gcode_current_line
-    param+sc-tp.tp_gcode_optimize
-    param+sc-tp.tp_gcode_print
-    param+sc-tp.tp_run
-    param+sc-tp.array_counter
-    param+sc-tp.curpos_x
-    param+sc-tp.curpos_y
-    param+sc-tp.curpos_z
-    param+sc-tp.direction
-    param+sc-tp.tmax
-    param+sc-tp.tmax-increased
-    pin+sc-tp.gcode_buffer_size
-    pin+sc-tp.module
-    pin+sc-tp.time
-    pin+sc-tp.tp_gcode_loaded_lines
+    param+sc-tp.jm
+    param+sc-tp.optimize
+    param+sc-tp.print
+    param+sc-tp.run
+    pin+motion.adaptive-feed
+    pin+motion.enable
+    pin+motion.eoffset-active
+    pin+motion.eoffset-limited
+    pin+motion.tp-reverse
+    pin+motion.program-line
+    param+sc-tp.adaptive_feed
 }
 set ::workmode watchhal
 set ::watchInterval 100

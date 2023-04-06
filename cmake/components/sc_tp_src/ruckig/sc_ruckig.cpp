@@ -21,6 +21,10 @@ V sc_ruckig::set_a_jm(T maxacc, T jerkmax){
     myIn.enabled[0]=1;
 }
 
+V sc_ruckig::set_interval(T value){
+    myInterval=value;
+}
+
 T sc_ruckig::get_a(){
     return myIn.max_acceleration[0];
 }
@@ -42,8 +46,8 @@ V sc_ruckig::set_current(T curpos, T curvel, T curacc){
 }
 
 V sc_ruckig::set_vm(T maxvel){
-    myIn.max_velocity[0]=maxvel;
 
+    myIn.max_velocity[0]=maxvel;
     //! Set new run path from here.
     run();
 }
@@ -70,6 +74,7 @@ V sc_ruckig::run(){
 
     set_current(0,myVel[0],myAcc[0]);
 
+    ruckig::Ruckig<1> myOtg {myInterval}; //! Normally 0.001
     myResult=myOtg.update(myIn, myOut);
     myDuration=myOut.trajectory.get_duration();
 
@@ -91,6 +96,7 @@ V sc_ruckig::stop(){
 
     set_current(0,myVel[0],myAcc[0]);
 
+    ruckig::Ruckig<1> myOtg {myInterval}; //! Normally 0.001
     myResult=myOtg.update(myIn, myOut);
     myDuration=myOut.trajectory.get_duration();
 
@@ -157,6 +163,10 @@ extern "C" sc_ruckig* ruckig_init_ptr(){
 
 extern "C" V ruckig_set_a_jm(sc_ruckig *ptr, T maxacc, T jerkmax){
     ptr->set_a_jm(maxacc,jerkmax);
+}
+
+extern "C" V ruckig_set_interval(sc_ruckig *ptr, T value){
+    ptr->set_interval(value);
 }
 
 extern "C" V ruckig_set_vm(sc_ruckig *ptr, T velmax){

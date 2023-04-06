@@ -34,11 +34,13 @@ public:
 
     V set_a_jm(T maxacc, T jerkmax);
 
+    V set_interval(T value);
+
+    V set_vm(T maxvel);
+
     T get_a();
 
     T get_jm();
-
-    V set_vm(T maxvel);
 
     T get_vm();
 
@@ -63,7 +65,7 @@ private:
     ruckig::OutputParameter<1> myOut;
 
     std::array<double, 1> myVel, myAcc, myPos;
-    ruckig::Ruckig<1> myOtg {0.001};
+    // ruckig::Ruckig<1> myOtg {0.001};
     ruckig::Result myResult;
 
     T myDuration=0;
@@ -71,6 +73,8 @@ private:
 
     T myOldpos=0;
     T myMempos=0;
+
+    T myInterval=0.001;
 
     sc_ruckig_state myState=sc_ruckig_none;
 
