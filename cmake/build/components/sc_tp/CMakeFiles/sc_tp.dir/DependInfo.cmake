@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_block.c" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.o"
+  "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_conversion.c" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.o"
+  "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.c" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.o"
   "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_tp.c" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_tp.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
@@ -38,12 +41,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/velocity-step1.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.o"
   "/home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/velocity-step2.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.o"
   "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_arcs.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_arcs.cpp.o"
-  "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_engine.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.o"
-  "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.o"
   "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_lines.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_lines.cpp.o"
   "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_optimizer.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.o"
-  "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_pid.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.o"
-  "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_planner.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.o"
   "/home/user/linuxcnc/cmake/components/sc_tp_src/sc_struct.cpp" "/home/user/linuxcnc/cmake/build/components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_struct.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

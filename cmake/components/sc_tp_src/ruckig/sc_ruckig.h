@@ -16,33 +16,67 @@ typedef double T;
 typedef bool B;
 typedef void V;
 
+enum sc_ruckig_state {
+    sc_ruckig_none,
+    sc_ruckig_finished,
+    sc_ruckig_run,
+    sc_ruckig_stop,
+    sc_ruckig_pause,
+    sc_ruckig_pause_resume,
+    sc_ruckig_wait
+};
+
 class sc_ruckig
 {
 public:
     sc_ruckig();
 
+
     V set_a_jm(T maxacc, T jerkmax);
+
+    T get_a();
+
+    T get_jm();
 
     V set_vm(T maxvel);
 
-    V set_target(T tarpos, T tarvel, T taracc);
+    T get_vm();
 
-    V set_current(T curpos, T curvel, T curacc);
+    V run(T tarpos, T tarvel, T taracc);
 
-    V calculate();
+    V stop();
 
-    B update(T *newpos, T *newvel, T *newacc);
+    V pause();
+
+    V pause_resume();
+
+    //! For each cycle, incpos is the increment value to be added to your current position.
+    //! Add this function to a update thread.
+    B update(T &incpos, T &mempos, T &newpos, T &newvel, T &newacc);
+
+    sc_ruckig_state get_state();
+
+    V set_mem_pos(T value);
 
 private:
-    ruckig::InputParameter<1> in;
-    ruckig::OutputParameter<1> out;
-    // std::array<double, 1> vel, acc, pos;
+    ruckig::InputParameter<1> myIn;
+    ruckig::OutputParameter<1> myOut;
 
-    ruckig::Ruckig<1> otg {0.001};
-    ruckig::Result result;
+    std::array<double, 1> myVel, myAcc, myPos;
+    ruckig::Ruckig<1> myOtg {0.001};
+    ruckig::Result myResult;
 
-    T duration=0;
-    T at_time=0;
+    T myDuration=0;
+    T myAtTime=0;
+
+    T myOldpos=0;
+    T myMempos=0;
+
+    sc_ruckig_state myState=sc_ruckig_none;
+
+    V run();
+    V set_target(T tarpos, T tarvel, T taracc);
+    V set_current(T curpos, T curvel, T curacc);
 };
 
 //! Here it tells if this code is used in c, convert the class to a struct. This is handy!

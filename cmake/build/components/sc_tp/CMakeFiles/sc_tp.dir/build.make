@@ -128,9 +128,22 @@ components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_lines.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_lines.cpp.s"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/sc_lines.cpp -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_lines.cpp.s
 
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.o: ../components/sc_tp_src/sc_block.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.o"
+	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/sc_block.c
+
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.i"
+	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/components/sc_tp_src/sc_block.c > CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.i
+
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.s"
+	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/sc_block.c -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.s
+
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.o: ../components/sc_tp_src/sc_optimizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.o"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/sc_optimizer.cpp
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.i: cmake_force
@@ -141,61 +154,35 @@ components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.s"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/sc_optimizer.cpp -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.s
 
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.o: ../components/sc_tp_src/sc_interpolate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.o"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.cpp
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.o: ../components/sc_tp_src/sc_interpolate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.o"
+	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.c
 
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.i"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.cpp > CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.i
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.i"
+	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.c > CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.i
 
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.s"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.cpp -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.s
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.s"
+	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/sc_interpolate.c -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.s
 
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.o: ../components/sc_tp_src/sc_engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.o"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/sc_engine.cpp
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.o: ../components/sc_tp_src/sc_conversion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.o"
+	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/sc_conversion.c
 
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.i"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/components/sc_tp_src/sc_engine.cpp > CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.i
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.i"
+	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/linuxcnc/cmake/components/sc_tp_src/sc_conversion.c > CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.i
 
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.s"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/sc_engine.cpp -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.s
-
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.o: ../components/sc_tp_src/sc_planner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.o"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/sc_planner.cpp
-
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.i"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/components/sc_tp_src/sc_planner.cpp > CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.i
-
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.s"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/sc_planner.cpp -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.s
-
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.o: ../components/sc_tp_src/sc_pid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.o"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/sc_pid.cpp
-
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.i"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/components/sc_tp_src/sc_pid.cpp > CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.i
-
-components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.s"
-	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/sc_pid.cpp -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.s
+components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.s"
+	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/sc_conversion.c -o CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.s
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.o: ../components/sc_tp_src/ruckig/brake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.o"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/brake.cpp
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.i: cmake_force
@@ -208,7 +195,7 @@ components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.s: cmake_for
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.o: ../components/sc_tp_src/ruckig/position-step1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.o"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/position-step1.cpp
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.i: cmake_force
@@ -221,7 +208,7 @@ components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.s: 
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.o: ../components/sc_tp_src/ruckig/position-step2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.o"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/position-step2.cpp
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.i: cmake_force
@@ -234,7 +221,7 @@ components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.s: 
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.o: ../components/sc_tp_src/ruckig/velocity-step1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.o"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/velocity-step1.cpp
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.i: cmake_force
@@ -247,7 +234,7 @@ components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step1.cpp.s: 
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.o: ../components/sc_tp_src/ruckig/velocity-step2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.o"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/velocity-step2.cpp
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.i: cmake_force
@@ -260,7 +247,7 @@ components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/velocity-step2.cpp.s: 
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/sc_ruckig.cpp.o: components/sc_tp/CMakeFiles/sc_tp.dir/flags.make
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/sc_ruckig.cpp.o: ../components/sc_tp_src/ruckig/sc_ruckig.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/sc_ruckig.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/sc_ruckig.cpp.o"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/sc_ruckig.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.cpp
 
 components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/sc_ruckig.cpp.i: cmake_force
@@ -277,11 +264,10 @@ sc_tp_OBJECTS = \
 "CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_struct.cpp.o" \
 "CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_arcs.cpp.o" \
 "CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_lines.cpp.o" \
+"CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.o" \
 "CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.o" \
-"CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.o" \
-"CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.o" \
-"CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.o" \
-"CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.o" \
+"CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.o" \
+"CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.o" \
 "CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.o" \
 "CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.o" \
 "CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.o" \
@@ -296,11 +282,10 @@ components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc
 components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_struct.cpp.o
 components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_arcs.cpp.o
 components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_lines.cpp.o
+components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.o
 components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.o
-components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.o
-components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.o
-components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.o
-components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.o
+components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.o
+components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.o
 components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/brake.cpp.o
 components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step1.cpp.o
 components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/ruckig/position-step2.cpp.o
@@ -311,7 +296,7 @@ components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/build.make
 components/sc_tp/sc_tp.so: ../components/sc_tp/../../build/liblinuxcnchal/liblinuxcnchal.so
 components/sc_tp/sc_tp.so: ../components/sc_tp/../../build/libposemath/libposemath.so
 components/sc_tp/sc_tp.so: components/sc_tp/CMakeFiles/sc_tp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library sc_tp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library sc_tp.so"
 	cd /home/user/linuxcnc/cmake/build/components/sc_tp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sc_tp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

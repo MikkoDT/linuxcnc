@@ -379,59 +379,86 @@ __/sc_tp_src/sc_arcs.cpp.s:
 	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_arcs.cpp.s
 .PHONY : __/sc_tp_src/sc_arcs.cpp.s
 
-__/sc_tp_src/sc_engine.o: __/sc_tp_src/sc_engine.cpp.o
+__/sc_tp_src/sc_block.o: __/sc_tp_src/sc_block.c.o
 
-.PHONY : __/sc_tp_src/sc_engine.o
+.PHONY : __/sc_tp_src/sc_block.o
 
 # target to build an object file
-__/sc_tp_src/sc_engine.cpp.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.o
-.PHONY : __/sc_tp_src/sc_engine.cpp.o
+__/sc_tp_src/sc_block.c.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.o
+.PHONY : __/sc_tp_src/sc_block.c.o
 
-__/sc_tp_src/sc_engine.i: __/sc_tp_src/sc_engine.cpp.i
+__/sc_tp_src/sc_block.i: __/sc_tp_src/sc_block.c.i
 
-.PHONY : __/sc_tp_src/sc_engine.i
+.PHONY : __/sc_tp_src/sc_block.i
 
 # target to preprocess a source file
-__/sc_tp_src/sc_engine.cpp.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.i
-.PHONY : __/sc_tp_src/sc_engine.cpp.i
+__/sc_tp_src/sc_block.c.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.i
+.PHONY : __/sc_tp_src/sc_block.c.i
 
-__/sc_tp_src/sc_engine.s: __/sc_tp_src/sc_engine.cpp.s
+__/sc_tp_src/sc_block.s: __/sc_tp_src/sc_block.c.s
 
-.PHONY : __/sc_tp_src/sc_engine.s
+.PHONY : __/sc_tp_src/sc_block.s
 
 # target to generate assembly for a file
-__/sc_tp_src/sc_engine.cpp.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_engine.cpp.s
-.PHONY : __/sc_tp_src/sc_engine.cpp.s
+__/sc_tp_src/sc_block.c.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_block.c.s
+.PHONY : __/sc_tp_src/sc_block.c.s
 
-__/sc_tp_src/sc_interpolate.o: __/sc_tp_src/sc_interpolate.cpp.o
+__/sc_tp_src/sc_conversion.o: __/sc_tp_src/sc_conversion.c.o
+
+.PHONY : __/sc_tp_src/sc_conversion.o
+
+# target to build an object file
+__/sc_tp_src/sc_conversion.c.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.o
+.PHONY : __/sc_tp_src/sc_conversion.c.o
+
+__/sc_tp_src/sc_conversion.i: __/sc_tp_src/sc_conversion.c.i
+
+.PHONY : __/sc_tp_src/sc_conversion.i
+
+# target to preprocess a source file
+__/sc_tp_src/sc_conversion.c.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.i
+.PHONY : __/sc_tp_src/sc_conversion.c.i
+
+__/sc_tp_src/sc_conversion.s: __/sc_tp_src/sc_conversion.c.s
+
+.PHONY : __/sc_tp_src/sc_conversion.s
+
+# target to generate assembly for a file
+__/sc_tp_src/sc_conversion.c.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_conversion.c.s
+.PHONY : __/sc_tp_src/sc_conversion.c.s
+
+__/sc_tp_src/sc_interpolate.o: __/sc_tp_src/sc_interpolate.c.o
 
 .PHONY : __/sc_tp_src/sc_interpolate.o
 
 # target to build an object file
-__/sc_tp_src/sc_interpolate.cpp.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.o
-.PHONY : __/sc_tp_src/sc_interpolate.cpp.o
+__/sc_tp_src/sc_interpolate.c.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.o
+.PHONY : __/sc_tp_src/sc_interpolate.c.o
 
-__/sc_tp_src/sc_interpolate.i: __/sc_tp_src/sc_interpolate.cpp.i
+__/sc_tp_src/sc_interpolate.i: __/sc_tp_src/sc_interpolate.c.i
 
 .PHONY : __/sc_tp_src/sc_interpolate.i
 
 # target to preprocess a source file
-__/sc_tp_src/sc_interpolate.cpp.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.i
-.PHONY : __/sc_tp_src/sc_interpolate.cpp.i
+__/sc_tp_src/sc_interpolate.c.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.i
+.PHONY : __/sc_tp_src/sc_interpolate.c.i
 
-__/sc_tp_src/sc_interpolate.s: __/sc_tp_src/sc_interpolate.cpp.s
+__/sc_tp_src/sc_interpolate.s: __/sc_tp_src/sc_interpolate.c.s
 
 .PHONY : __/sc_tp_src/sc_interpolate.s
 
 # target to generate assembly for a file
-__/sc_tp_src/sc_interpolate.cpp.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.cpp.s
-.PHONY : __/sc_tp_src/sc_interpolate.cpp.s
+__/sc_tp_src/sc_interpolate.c.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_interpolate.c.s
+.PHONY : __/sc_tp_src/sc_interpolate.c.s
 
 __/sc_tp_src/sc_lines.o: __/sc_tp_src/sc_lines.cpp.o
 
@@ -486,60 +513,6 @@ __/sc_tp_src/sc_optimizer.s: __/sc_tp_src/sc_optimizer.cpp.s
 __/sc_tp_src/sc_optimizer.cpp.s:
 	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_optimizer.cpp.s
 .PHONY : __/sc_tp_src/sc_optimizer.cpp.s
-
-__/sc_tp_src/sc_pid.o: __/sc_tp_src/sc_pid.cpp.o
-
-.PHONY : __/sc_tp_src/sc_pid.o
-
-# target to build an object file
-__/sc_tp_src/sc_pid.cpp.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.o
-.PHONY : __/sc_tp_src/sc_pid.cpp.o
-
-__/sc_tp_src/sc_pid.i: __/sc_tp_src/sc_pid.cpp.i
-
-.PHONY : __/sc_tp_src/sc_pid.i
-
-# target to preprocess a source file
-__/sc_tp_src/sc_pid.cpp.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.i
-.PHONY : __/sc_tp_src/sc_pid.cpp.i
-
-__/sc_tp_src/sc_pid.s: __/sc_tp_src/sc_pid.cpp.s
-
-.PHONY : __/sc_tp_src/sc_pid.s
-
-# target to generate assembly for a file
-__/sc_tp_src/sc_pid.cpp.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_pid.cpp.s
-.PHONY : __/sc_tp_src/sc_pid.cpp.s
-
-__/sc_tp_src/sc_planner.o: __/sc_tp_src/sc_planner.cpp.o
-
-.PHONY : __/sc_tp_src/sc_planner.o
-
-# target to build an object file
-__/sc_tp_src/sc_planner.cpp.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.o
-.PHONY : __/sc_tp_src/sc_planner.cpp.o
-
-__/sc_tp_src/sc_planner.i: __/sc_tp_src/sc_planner.cpp.i
-
-.PHONY : __/sc_tp_src/sc_planner.i
-
-# target to preprocess a source file
-__/sc_tp_src/sc_planner.cpp.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.i
-.PHONY : __/sc_tp_src/sc_planner.cpp.i
-
-__/sc_tp_src/sc_planner.s: __/sc_tp_src/sc_planner.cpp.s
-
-.PHONY : __/sc_tp_src/sc_planner.s
-
-# target to generate assembly for a file
-__/sc_tp_src/sc_planner.cpp.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f components/sc_tp/CMakeFiles/sc_tp.dir/build.make components/sc_tp/CMakeFiles/sc_tp.dir/__/sc_tp_src/sc_planner.cpp.s
-.PHONY : __/sc_tp_src/sc_planner.cpp.s
 
 __/sc_tp_src/sc_struct.o: __/sc_tp_src/sc_struct.cpp.o
 
@@ -629,9 +602,12 @@ help:
 	@echo "... __/sc_tp_src/sc_arcs.o"
 	@echo "... __/sc_tp_src/sc_arcs.i"
 	@echo "... __/sc_tp_src/sc_arcs.s"
-	@echo "... __/sc_tp_src/sc_engine.o"
-	@echo "... __/sc_tp_src/sc_engine.i"
-	@echo "... __/sc_tp_src/sc_engine.s"
+	@echo "... __/sc_tp_src/sc_block.o"
+	@echo "... __/sc_tp_src/sc_block.i"
+	@echo "... __/sc_tp_src/sc_block.s"
+	@echo "... __/sc_tp_src/sc_conversion.o"
+	@echo "... __/sc_tp_src/sc_conversion.i"
+	@echo "... __/sc_tp_src/sc_conversion.s"
 	@echo "... __/sc_tp_src/sc_interpolate.o"
 	@echo "... __/sc_tp_src/sc_interpolate.i"
 	@echo "... __/sc_tp_src/sc_interpolate.s"
@@ -641,12 +617,6 @@ help:
 	@echo "... __/sc_tp_src/sc_optimizer.o"
 	@echo "... __/sc_tp_src/sc_optimizer.i"
 	@echo "... __/sc_tp_src/sc_optimizer.s"
-	@echo "... __/sc_tp_src/sc_pid.o"
-	@echo "... __/sc_tp_src/sc_pid.i"
-	@echo "... __/sc_tp_src/sc_pid.s"
-	@echo "... __/sc_tp_src/sc_planner.o"
-	@echo "... __/sc_tp_src/sc_planner.i"
-	@echo "... __/sc_tp_src/sc_planner.s"
 	@echo "... __/sc_tp_src/sc_struct.o"
 	@echo "... __/sc_tp_src/sc_struct.i"
 	@echo "... __/sc_tp_src/sc_struct.s"

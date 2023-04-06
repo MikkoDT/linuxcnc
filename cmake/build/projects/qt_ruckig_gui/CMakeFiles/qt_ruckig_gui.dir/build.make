@@ -193,18 +193,18 @@ projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/velocity-step2.cpp.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt_ruckig_gui.dir/ruckig/velocity-step2.cpp.s"
 	cd /home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/velocity-step2.cpp -o CMakeFiles/qt_ruckig_gui.dir/ruckig/velocity-step2.cpp.s
 
-projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.o: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/flags.make
-projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.o: ../projects/qt_ruckig_gui/ruckig/ruckig_traject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.o"
-	cd /home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.o -c /home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/ruckig_traject.cpp
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/flags.make
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o: ../components/sc_tp_src/ruckig/sc_ruckig.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/linuxcnc/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o"
+	cd /home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o -c /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.cpp
 
-projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.i"
-	cd /home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/ruckig_traject.cpp > CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.i
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.i"
+	cd /home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.cpp > CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.i
 
-projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.s"
-	cd /home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/ruckig_traject.cpp -o CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.s
+projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.s"
+	cd /home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.cpp -o CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.s
 
 # Object files for target qt_ruckig_gui
 qt_ruckig_gui_OBJECTS = \
@@ -217,7 +217,7 @@ qt_ruckig_gui_OBJECTS = \
 "CMakeFiles/qt_ruckig_gui.dir/ruckig/position-step2.cpp.o" \
 "CMakeFiles/qt_ruckig_gui.dir/ruckig/velocity-step1.cpp.o" \
 "CMakeFiles/qt_ruckig_gui.dir/ruckig/velocity-step2.cpp.o" \
-"CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.o"
+"CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o"
 
 # External object files for target qt_ruckig_gui
 qt_ruckig_gui_EXTERNAL_OBJECTS =
@@ -231,7 +231,7 @@ projects/qt_ruckig_gui/qt_ruckig_gui: projects/qt_ruckig_gui/CMakeFiles/qt_rucki
 projects/qt_ruckig_gui/qt_ruckig_gui: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/position-step2.cpp.o
 projects/qt_ruckig_gui/qt_ruckig_gui: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/velocity-step1.cpp.o
 projects/qt_ruckig_gui/qt_ruckig_gui: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/velocity-step2.cpp.o
-projects/qt_ruckig_gui/qt_ruckig_gui: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.o
+projects/qt_ruckig_gui/qt_ruckig_gui: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o
 projects/qt_ruckig_gui/qt_ruckig_gui: projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make
 projects/qt_ruckig_gui/qt_ruckig_gui: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Widgets.so.5.15.1
 projects/qt_ruckig_gui/qt_ruckig_gui: /opt/qt-creator/5.15.1/gcc_64/lib/libQt5Gui.so.5.15.1

@@ -11,10 +11,8 @@ extern "C" sc_optimizer* new_optimizer_c(){
 
 V sc_optimizer::sc_set_a_dv_gforce_velmax(T acceleration, T delta_v, T gforce_max, T velocity_max){
     a=acceleration;
-    dv=delta_v;
     gforcemax=gforce_max;
     vm=velocity_max;
-    engine->sc_set_a_dv(a,dv);
 }
 
 std::vector<sc_block> sc_optimizer::sc_optimize_all(std::vector<sc_block> blockvec){
@@ -27,8 +25,7 @@ std::vector<sc_block> sc_optimizer::sc_optimize_all(std::vector<sc_block> blockv
     blockvec=sc_optimize_block_angles_ve(blockvec);
     blockvec=sc_optimize_gforce_arcs(blockvec);
     blockvec=sc_optimize_G0_ve(blockvec);
-    blockvec=sc_optimize_G123_ve_backward(blockvec);
-    blockvec=sc_optimize_G123_ve_forward(blockvec);
+
     return blockvec;
 }
 
@@ -118,128 +115,6 @@ std::vector<sc_block> sc_optimizer::sc_optimize_G0_ve(std::vector<sc_block> bloc
             //! Set next block vo to 0.
             if(i<blockvec.size()-1){
                 blockvec.at(i+1).vo=0;
-            }
-        }
-    }
-    return blockvec;
-}
-
-std::vector<sc_block> sc_optimizer::sc_optimize_G123_ve_forward(std::vector<sc_block> blockvec){
-
-    T  vo=0, ve=0, vm=0, acs=0, ace=0, s=0, pvec_s=0, pvec_ve=0;
-
-    for(UI i=0; i<blockvec.size(); i++){
-
-        if(blockvec.at(i).type==sc_rapid){
-
-        }
-
-        if(blockvec.at(i).type==sc_linear || blockvec.at(i).type==sc_circle || blockvec.at(i).type==sc_G3){ //! End velocity=0 if motion is G0, rapid.
-
-            acs=0, ace=0; //! To keep it simple, can be used later on to improve this library.
-
-            vo=blockvec.at(i).vo;
-            ve=blockvec.at(i).ve;
-            vm=blockvec.at(i).vm;
-            s=blocklenght(blockvec.at(i));
-
-
-            //! Check if vo to ve fits s.
-            std::vector<sc_period> pvec;
-            engine->process_curve(id_run, vo, ve, acs, ace, s, vm, pvec);
-
-            pvec_s=engine->to_stot_pvec(pvec);
-            pvec_ve=pvec.back().ve;
-
-            if(pvec_s==s){
-                //! Current given ve is ok, do nothing.
-            } else {
-
-                for(T j=ve; j>=0; j-=0.1*ve){ //! Sample down ve until pvec_s=s
-                    std::vector<sc_period> pvec;
-                    engine->process_curve(id_run,
-                                          vo,
-                                          j /*sampled ve*/,
-                                          acs,
-                                          ace,
-                                          s,
-                                          vm,
-                                          pvec);
-
-                    pvec_s=engine->to_stot_pvec(pvec);
-                    pvec_ve=pvec.back().ve;
-
-                    if(pvec_s==s || j==0){
-                        blockvec.at(i).ve=j; //! Set lower ve.
-
-                        if(i<blockvec.size()-1){    //! Set next vo to this ve.
-                            blockvec.at(i+1).vo=j;
-                        }
-                        break;
-                    }
-                }
-            }
-        }
-    }
-    return blockvec;
-}
-
-std::vector<sc_block> sc_optimizer::sc_optimize_G123_ve_backward(std::vector<sc_block> blockvec){
-
-    T  vo=0, ve=0, vm=0, acs=0, ace=0, s=0, pvec_s=0, pvec_ve=0;
-
-    for(UI ii=blockvec.size(); ii>0; ii--){ //! Stupid counters when using unsigned int. Maybe use integer for this.
-        UI i=ii-1;
-
-        if(blockvec.at(i).type==sc_rapid){
-
-        }
-
-        if(blockvec.at(i).type==sc_linear || blockvec.at(i).type==sc_circle || blockvec.at(i).type==sc_G3){ //! End velocity=0 if motion is G0, rapid.
-
-            acs=0, ace=0; //! To keep it simple, can be used later on to improve this library.
-
-            //! Swap vo,ve.
-            ve=blockvec.at(i).vo;
-            vo=blockvec.at(i).ve;
-            vm=blockvec.at(i).vm;
-            s=blocklenght(blockvec.at(i));
-
-            //! Check if vo to ve fits s.
-            std::vector<sc_period> pvec;
-            engine->process_curve(id_run, vo, ve, acs, ace, s, vm, pvec);
-
-            pvec_s=engine->to_stot_pvec(pvec);
-            pvec_ve=pvec.back().ve;
-
-            if(pvec_s==s){
-                //! Current given ve is ok, do nothing.
-            } else {
-
-                for(T j=ve; j>=0; j-=0.1*ve){ //! Sample down ve until pvec_s=s
-
-                    std::vector<sc_period> pvec;
-                    engine->process_curve(id_run,
-                                          vo,
-                                          j /*sampled ve*/,
-                                          acs,
-                                          ace,
-                                          s,
-                                          vm,
-                                          pvec);
-
-                    pvec_s=engine->to_stot_pvec(pvec);
-                    pvec_ve=pvec.back().ve;
-
-                    if(pvec_s==s || j==0){
-                        blockvec.at(i).vo=j;
-
-                        if(i>1){
-                            blockvec.at(i-1).ve=j;
-                        }
-                        break;
-                    }
-                }
             }
         }
     }
@@ -529,14 +404,15 @@ void optimize_gcode(struct sc_block *pvec, int size, T vm, T **path_lenghts, int
         }
     }
 
-    // T *path_lenghts=NULL;
-
     //! To c style.
     *path_lenght_size=programlenght.size();
     *path_lenghts = (double*) malloc(*path_lenght_size * sizeof(double));
     //! Copy.
+    double old=0;
     for(int i=0; i<*path_lenght_size; i++){
-        (*path_lenghts)[i]=programlenght[i];
+        //! Save as absolute path values.
+        (*path_lenghts)[i]=programlenght[i]+old;
+        old+=programlenght[i];
     }
 }
 
@@ -544,19 +420,18 @@ extern "C" void optimize_gcode_c(struct sc_block *pvec, int size, T vm, T **path
     optimize_gcode(pvec,size,vm,path_lenghts,path_lenght_size,stot);
 }
 
+
+//! Test function.
+//! printf("%lf", (*path_lenghts)[0]);
 void test( double **path_lenghts, int size){
-
-
     *path_lenghts = (double*) malloc(size * sizeof(double));
     //! Copy.
     for(int i=0; i<size; i++){
         (*path_lenghts)[i]=10;
     }
-
-
 }
 
-//printf("%lf", (*path_lenghts)[0]);
+
 
 
 

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o"
   "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/main.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/main.cpp.o"
   "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/mainwindow.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/mainwindow.cpp.o"
   "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/opengl.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/opengl.cpp.o"
@@ -11,7 +12,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/brake.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/brake.cpp.o"
   "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/position-step1.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/position-step1.cpp.o"
   "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/position-step2.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/position-step2.cpp.o"
-  "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/ruckig_traject.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.o"
   "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/velocity-step1.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/velocity-step1.cpp.o"
   "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/velocity-step2.cpp" "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/velocity-step2.cpp.o"
   )

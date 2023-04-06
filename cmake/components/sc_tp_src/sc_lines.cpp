@@ -1,5 +1,4 @@
 #include "sc_lines.h"
-#include "sc_engine.h"
 
 sc_lines::sc_lines()
 {
@@ -45,11 +44,11 @@ extern "C" V interpolate_ext_c(struct sc_ext p0, struct sc_ext p1, T progress, s
 
 V sc_lines::sc_interpolate_lenght(T start, T end, T progress, T &li){
     if(start<end){
-        li=start+(progress*sc_engine().netto_difference_of_2_values(start,end));
+        li=start+(progress*netto_difference_of_2_values(start,end));
         return;
     }
     if(start>end){
-        li=start-(progress*sc_engine().netto_difference_of_2_values(start,end));
+        li=start-(progress*netto_difference_of_2_values(start,end));
         return;
     }
     if(start==end){

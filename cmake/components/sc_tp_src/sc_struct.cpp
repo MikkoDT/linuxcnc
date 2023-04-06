@@ -2,6 +2,26 @@
 #include "sc_lines.h"
 #include "sc_arcs.h"
 
+T netto_difference_of_2_values(T a, T b){
+
+    T diff=0;
+    if(a<0 && b<0){
+        a=fabs(a);
+        b=fabs(b);
+        diff=fabs(a-b);
+    }
+    if(a>=0 && b>=0){
+        diff=fabs(a-b);
+    }
+    if(a<=0 && b>=0){;
+        diff=fabs(a)+b;
+    }
+    if(a>=0 && b<=0){
+        diff=a+fabs(b);
+    }
+    return diff;
+}
+
 T blocklenght(struct sc_block b){
 
     if(b.primitive_id==sc_line){

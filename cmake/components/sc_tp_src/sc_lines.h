@@ -7,6 +7,7 @@
 
 #include "sc_struct.h"
 
+#ifdef __cplusplus
 class sc_lines
 {
 public:
@@ -39,5 +40,9 @@ public:
                           T progress,
                           sc_pnt &pnt);
 };
+//! Here it tells if this code is used in c, convert the class to a struct. This is handy!
+#else
+typedef struct sc_lines sc_lines;
+#endif //! cplusplus
 
 #endif

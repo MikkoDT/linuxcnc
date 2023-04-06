@@ -5,12 +5,14 @@
 //! Licence : MIT
 //! Date    : 2023
 
+#include "sc_struct.h"
+
+#ifdef __cplusplus
+
 #include <vector>
 #include <iostream>
 #include <Dense>
 #include <Geometry>
-
-#include "sc_struct.h"
 
 using namespace Eigen;
 
@@ -63,6 +65,9 @@ private:
                          Eigen::Vector3d p3,
                          T division);
 };
+#else
+typedef struct sc_arcs sc_arcs;
+#endif //! cplusplus
 
 #endif
 

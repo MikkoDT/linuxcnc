@@ -15,8 +15,6 @@
 
 #include "sc_struct.h"
 #include "sc_arcs.h"
-#include "sc_interpolate.h"
-#include "sc_engine.h"
 #include "sc_block.h"
 
 //! Make conversion's easy:
@@ -50,10 +48,6 @@ public:
     //! Sets vo=0, ve=0 when motion is of type: G0
     std::vector<sc_block> sc_optimize_G0_ve(std::vector<sc_block> blockvec);
 
-    //! Sets vo. ve when motions are of type: G0, G1, G2.
-    std::vector<sc_block> sc_optimize_G123_ve_backward(std::vector<sc_block> blockvec);
-    std::vector<sc_block> sc_optimize_G123_ve_forward(std::vector<sc_block> blockvec);
-
     //! Function that uses all above path rules.
     std::vector<sc_block> sc_optimize_all(std::vector<sc_block> blockvec);
 
@@ -72,8 +66,7 @@ public:
     V sc_set_gforce(T radius, T gforce, T &vel_mm_sec);
 
 private:
-    sc_engine *engine=new sc_engine();
-    T a=0, dv=0, gforcemax=0, vm=0;
+    T a=0, gforcemax=0, vm=0;
 
     //! Iterate over the gcode to get the corners.
     std::vector<sc_block> sc_get_blockangles(

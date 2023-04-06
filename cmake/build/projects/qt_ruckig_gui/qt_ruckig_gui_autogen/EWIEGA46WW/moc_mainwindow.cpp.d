@@ -1,5 +1,19 @@
 /home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/qt_ruckig_gui_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/user/linuxcnc/cmake/projects/qt_ruckig_gui/mainwindow.h \
   /home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/qt_ruckig_gui_autogen/moc_predefs.h \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/block.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/brake.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/calculator.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/calculator_target.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/input_parameter.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/output_parameter.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/position.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/profile.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/roots.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/ruckig.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.h \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/trajectory.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/utils.hpp \
+  /home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/velocity.hpp \
   /home/user/linuxcnc/cmake/projects/qt_ruckig_gui/mainwindow.h \
   /home/user/linuxcnc/cmake/projects/qt_ruckig_gui/opengl.h \
   /opt/qt-creator/5.15.1/gcc_64/include/QtCore/QDeadlineTimer \
@@ -495,6 +509,7 @@
   /usr/include/c++/10/bits/c++0x_warning.h \
   /usr/include/c++/10/bits/char_traits.h \
   /usr/include/c++/10/bits/charconv.h \
+  /usr/include/c++/10/bits/codecvt.h \
   /usr/include/c++/10/bits/concept_check.h \
   /usr/include/c++/10/bits/cpp_type_traits.h \
   /usr/include/c++/10/bits/cxxabi_forced.h \
@@ -514,8 +529,11 @@
   /usr/include/c++/10/bits/list.tcc \
   /usr/include/c++/10/bits/locale_classes.h \
   /usr/include/c++/10/bits/locale_classes.tcc \
+  /usr/include/c++/10/bits/locale_conv.h \
   /usr/include/c++/10/bits/locale_facets.h \
   /usr/include/c++/10/bits/locale_facets.tcc \
+  /usr/include/c++/10/bits/locale_facets_nonio.h \
+  /usr/include/c++/10/bits/locale_facets_nonio.tcc \
   /usr/include/c++/10/bits/localefwd.h \
   /usr/include/c++/10/bits/memoryfwd.h \
   /usr/include/c++/10/bits/move.h \
@@ -526,6 +544,7 @@
   /usr/include/c++/10/bits/postypes.h \
   /usr/include/c++/10/bits/predefined_ops.h \
   /usr/include/c++/10/bits/ptr_traits.h \
+  /usr/include/c++/10/bits/quoted_string.h \
   /usr/include/c++/10/bits/range_access.h \
   /usr/include/c++/10/bits/range_cmp.h \
   /usr/include/c++/10/bits/ranges_algo.h \
@@ -536,6 +555,7 @@
   /usr/include/c++/10/bits/shared_ptr_atomic.h \
   /usr/include/c++/10/bits/shared_ptr_base.h \
   /usr/include/c++/10/bits/specfun.h \
+  /usr/include/c++/10/bits/sstream.tcc \
   /usr/include/c++/10/bits/std_abs.h \
   /usr/include/c++/10/bits/std_function.h \
   /usr/include/c++/10/bits/stl_algo.h \
@@ -568,6 +588,8 @@
   /usr/include/c++/10/bits/uses_allocator.h \
   /usr/include/c++/10/bits/vector.tcc \
   /usr/include/c++/10/cctype \
+  /usr/include/c++/10/cfloat \
+  /usr/include/c++/10/chrono \
   /usr/include/c++/10/clocale \
   /usr/include/c++/10/cmath \
   /usr/include/c++/10/compare \
@@ -575,6 +597,7 @@
   /usr/include/c++/10/cstddef \
   /usr/include/c++/10/cstdint \
   /usr/include/c++/10/cstdlib \
+  /usr/include/c++/10/ctime \
   /usr/include/c++/10/cwchar \
   /usr/include/c++/10/cwctype \
   /usr/include/c++/10/debug/assertions.h \
@@ -591,6 +614,7 @@
   /usr/include/c++/10/functional \
   /usr/include/c++/10/future \
   /usr/include/c++/10/initializer_list \
+  /usr/include/c++/10/iomanip \
   /usr/include/c++/10/ios \
   /usr/include/c++/10/iosfwd \
   /usr/include/c++/10/iostream \
@@ -598,6 +622,7 @@
   /usr/include/c++/10/iterator \
   /usr/include/c++/10/limits \
   /usr/include/c++/10/list \
+  /usr/include/c++/10/locale \
   /usr/include/c++/10/map \
   /usr/include/c++/10/memory \
   /usr/include/c++/10/mutex \
@@ -611,6 +636,7 @@
   /usr/include/c++/10/pstl/glue_numeric_defs.h \
   /usr/include/c++/10/random \
   /usr/include/c++/10/ranges \
+  /usr/include/c++/10/sstream \
   /usr/include/c++/10/stdexcept \
   /usr/include/c++/10/streambuf \
   /usr/include/c++/10/string \
@@ -637,9 +663,11 @@
   /usr/include/endian.h \
   /usr/include/features.h \
   /usr/include/inttypes.h \
+  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -657,10 +685,19 @@
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -721,11 +758,14 @@
   /usr/include/x86_64-linux-gnu/c++/10/bits/ctype_inline.h \
   /usr/include/x86_64-linux-gnu/c++/10/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/10/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/10/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/10/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/10/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/10/include/float.h \
   /usr/lib/gcc/x86_64-linux-gnu/10/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/10/include/stddef.h

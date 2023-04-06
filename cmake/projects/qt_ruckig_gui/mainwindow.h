@@ -6,6 +6,8 @@ void on_doubleSpinBox_tarpos_valueChanged(double arg1);
 #include <iostream>
 #include <opengl.h>
 
+#include "../../components/sc_tp_src/ruckig/sc_ruckig.h"
+
 typedef double T;
 
 QT_BEGIN_NAMESPACE
@@ -30,11 +32,7 @@ private slots:
 
     void on_pushButton_run_pressed();
 
-    void on_pushButton_run_while_pressed();
-
-    void on_pushButton_thread_1_pressed();
-
-    void on_pushButton_thread_2_clicked();
+    void on_pushButton_pause_pressed();
 
     void on_doubleSpinBox_tarpos_valueChanged(double arg1);
 
@@ -54,11 +52,16 @@ private slots:
 
     void on_doubleSpinBox_ace_valueChanged(double arg1);
 
-    void on_pushButton_short_segment_pressed();
+
+
+
+    void on_pushButton_set_mempos_zero_pressed();
 
 private:
     Ui::MainWindow *ui;
     QTimer *timer;
     opengl *myOpenGl;
+
+    sc_ruckig *ruck=new sc_ruckig();
 };
 #endif

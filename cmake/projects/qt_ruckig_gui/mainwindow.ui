@@ -20,51 +20,17 @@ color: rgb(255, 255, 255);
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="2">
-     <widget class="QLabel" name="label_9">
+    <item row="0" column="2">
+     <widget class="QLabel" name="label">
       <property name="text">
-       <string>vo</string>
+       <string>s</string>
       </property>
      </widget>
     </item>
-    <item row="10" column="3">
-     <widget class="QPushButton" name="pushButton_run_while">
+    <item row="3" column="2">
+     <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>run_while</string>
-      </property>
-     </widget>
-    </item>
-    <item row="14" column="3">
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>181</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="2" column="3">
-     <widget class="QDoubleSpinBox" name="doubleSpinBox_ve">
-      <property name="minimum">
-       <double>-100.000000000000000</double>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="3">
-     <widget class="QDoubleSpinBox" name="doubleSpinBox_vo">
-      <property name="minimum">
-       <double>-100.000000000000000</double>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="2">
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>jm</string>
+       <string>a</string>
       </property>
      </widget>
     </item>
@@ -75,31 +41,39 @@ color: rgb(255, 255, 255);
       </property>
      </widget>
     </item>
-    <item row="8" column="2">
-     <widget class="QLabel" name="label_7">
-      <property name="text">
-       <string>ace</string>
+    <item row="0" column="3">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_s">
+      <property name="minimum">
+       <double>-10000.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>10000.000000000000000</double>
+      </property>
+      <property name="singleStep">
+       <double>0.010000000000000</double>
+      </property>
+      <property name="value">
+       <double>10.000000000000000</double>
       </property>
      </widget>
     </item>
-    <item row="2" column="2">
-     <widget class="QLabel" name="label_8">
-      <property name="text">
-       <string>ve</string>
+    <item row="1" column="3">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_vo">
+      <property name="minimum">
+       <double>-100.000000000000000</double>
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>s</string>
+    <item row="3" column="3">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_a">
+      <property name="maximum">
+       <double>10000.000000000000000</double>
       </property>
-     </widget>
-    </item>
-    <item row="11" column="3">
-     <widget class="QPushButton" name="pushButton_thread_1">
-      <property name="text">
-       <string>thread 1</string>
+      <property name="singleStep">
+       <double>0.100000000000000</double>
+      </property>
+      <property name="value">
+       <double>5.000000000000000</double>
       </property>
      </widget>
     </item>
@@ -113,77 +87,10 @@ color: rgb(255, 255, 255);
       </property>
      </widget>
     </item>
-    <item row="0" column="0" rowspan="15">
-     <widget class="opengl" name="openGLWidget">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="3">
-     <widget class="QDoubleSpinBox" name="doubleSpinBox_a">
-      <property name="singleStep">
-       <double>0.100000000000000</double>
-      </property>
-      <property name="value">
-       <double>1.000000000000000</double>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <widget class="QDoubleSpinBox" name="doubleSpinBox_s">
-      <property name="minimum">
-       <double>-10000.000000000000000</double>
-      </property>
-      <property name="maximum">
-       <double>10000.000000000000000</double>
-      </property>
-      <property name="singleStep">
-       <double>0.100000000000000</double>
-      </property>
-      <property name="value">
-       <double>10.000000000000000</double>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="2">
-     <widget class="QLabel" name="label_3">
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_9">
       <property name="text">
-       <string>a</string>
-      </property>
-     </widget>
-    </item>
-    <item row="12" column="3">
-     <widget class="QPushButton" name="pushButton_thread_2">
-      <property name="text">
-       <string>thread 2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="9" column="3">
-     <widget class="QPushButton" name="pushButton_run">
-      <property name="text">
-       <string>run</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="2">
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>acs</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="3">
-     <widget class="QDoubleSpinBox" name="doubleSpinBox_acs">
-      <property name="singleStep">
-       <double>1.000000000000000</double>
-      </property>
-      <property name="value">
-       <double>0.000000000000000</double>
+       <string>vo</string>
       </property>
      </widget>
     </item>
@@ -197,6 +104,61 @@ color: rgb(255, 255, 255);
       </property>
      </widget>
     </item>
+    <item row="0" column="0" rowspan="13">
+     <widget class="opengl" name="openGLWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>ace</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>jm</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="3">
+     <widget class="QPushButton" name="pushButton_run">
+      <property name="text">
+       <string>run</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="3">
+     <widget class="QPushButton" name="pushButton_pause">
+      <property name="text">
+       <string>pause</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_ve">
+      <property name="minimum">
+       <double>-100.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_acs">
+      <property name="singleStep">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.000000000000000</double>
+      </property>
+     </widget>
+    </item>
     <item row="4" column="3">
      <widget class="QDoubleSpinBox" name="doubleSpinBox_jm">
       <property name="minimum">
@@ -206,14 +168,41 @@ color: rgb(255, 255, 255);
        <double>0.100000000000000</double>
       </property>
       <property name="value">
-       <double>0.500000000000000</double>
+       <double>5.000000000000000</double>
       </property>
      </widget>
     </item>
-    <item row="13" column="3">
-     <widget class="QPushButton" name="pushButton_short_segment">
+    <item row="2" column="2">
+     <widget class="QLabel" name="label_8">
       <property name="text">
-       <string>short segment</string>
+       <string>ve</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="3">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>181</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="7" column="2">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>acs</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="3">
+     <widget class="QPushButton" name="pushButton_set_mempos_zero">
+      <property name="text">
+       <string>set mempos zero</string>
       </property>
      </widget>
     </item>

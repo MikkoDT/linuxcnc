@@ -10,6 +10,15 @@
 #include "stdio.h"
 
 #include "sc_struct.h"
+#include "sc_extern.h"
+#include "sc_block.h"
+#include "sc_conversion.h"
+#include "sc_interpolate.h"
+#include "ruckig/sc_ruckig.h"
+
+#include "emcpose.h"
+#include "motion.h"
+#include "tc.h"
 
 /*
 
@@ -24,6 +33,7 @@ Then open a hal viewer and set pins, params :
 1. done = 1.
 2. optimize = 1.
 3. run = 1.
+4. toggle pause.
 
 */
 
@@ -47,7 +57,12 @@ typedef struct {
 typedef struct {
     hal_bit_t *Pin;
 } bit_data_t;
-bit_data_t *module;
+bit_data_t
+*module,
+*state_stop,
+*state_run,
+*state_wait,
+*state_finished;
 
 typedef struct { //! Int.
     hal_s32_t *Pin;
@@ -60,8 +75,6 @@ typedef struct { //! Param int.
     hal_s32_t Pin;
 } param_s32_data_t;
 param_s32_data_t
-*tp_pause,
-*tp_stop,
 *tp_done,
 *tp_array_counter,
 *tp_direction,
@@ -90,11 +103,8 @@ param_float_data_t
 *tc_canon_motiontype,
 *tp_curpos_x,
 *tp_curpos_y,
-*tp_curpos_z,
-*tp_cycle_time,
-*tp_velocity_max,
-*tp_ini_velocity_max,
-*tp_acceleration_max;
+*tp_curpos_z;
+
 
 typedef struct {
     hal_bit_t Pin;
@@ -142,6 +152,20 @@ static int setup_pins(){
     module = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
     r+=hal_pin_bit_new("sc-tp.module",HAL_OUT,&(module->Pin),comp_idx);
 
+    state_run = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
+    r+=hal_pin_bit_new("sc-tp.state_run",HAL_OUT,&(state_run->Pin),comp_idx);
+
+    state_stop = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
+    r+=hal_pin_bit_new("sc-tp.state_stop",HAL_OUT,&(state_stop->Pin),comp_idx);
+
+    state_wait = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
+    r+=hal_pin_bit_new("sc-tp.state_wait",HAL_OUT,&(state_wait->Pin),comp_idx);
+
+    state_finished = (bit_data_t*)hal_malloc(sizeof(bit_data_t));
+    r+=hal_pin_bit_new("sc-tp.state_finished",HAL_OUT,&(state_finished->Pin),comp_idx);
+
+
+
 
     //! Output pins, type parameter bit.
     tp_gcode_print = (param_bit_data_t*)hal_malloc(sizeof(param_bit_data_t));
@@ -166,11 +190,6 @@ static int setup_pins(){
     tp_done = (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
     r+=hal_param_s32_new("sc-tp.done",HAL_RW,&(tp_done->Pin),comp_idx);
 
-    tp_pause = (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
-    r+=hal_param_s32_new("sc-tp.pause",HAL_RW,&(tp_pause->Pin),comp_idx);
-
-    tp_stop= (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
-    r+=hal_param_s32_new("sc-tp.stop",HAL_RW,&(tp_stop->Pin),comp_idx);
 
     tp_array_counter= (param_s32_data_t*)hal_malloc(sizeof(param_s32_data_t));
     r+=hal_param_s32_new("sc-tp.array_counter",HAL_RW,&(tp_array_counter->Pin),comp_idx);
@@ -191,27 +210,8 @@ static int setup_pins(){
     tp_curpos_z = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
     r+=hal_param_float_new("sc-tp.curpos_z",HAL_RW,&(tp_curpos_z->Pin),comp_idx);
 
-    tp_cycle_time = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.cycle_time",HAL_RW,&(tp_cycle_time->Pin),comp_idx);
-
-    tp_velocity_max = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.velocity_max",HAL_RW,&(tp_velocity_max->Pin),comp_idx);
-
-    tp_ini_velocity_max = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.ini_velocity_max",HAL_RW,&(tp_ini_velocity_max->Pin),comp_idx);
-
-    tp_acceleration_max = (param_float_data_t*)hal_malloc(sizeof(param_float_data_t));
-    r+=hal_param_float_new("sc-tp.acceleration_max",HAL_RW,&(tp_acceleration_max->Pin),comp_idx);
-
     return r;
 }
-
-#include "rtapi.h"
-#include "posemath.h"
-#include "emcpose.h"
-#include "rtapi_math.h"
-#include "motion.h"
-#include "tc.h"
 
 static emcmot_status_t *emcmotStatus;
 static emcmot_config_t *emcmotConfig;
@@ -255,18 +255,16 @@ EmcPose tp_current_emc_pose;
 EmcPose tp_gcode_last_pose;
 
 int gcode_last_loaded_line_nr;
-T vm=0;
-T a=2;
-T jm=4;
+T vm=15;
+T a=15;
+T jm=15;
 T cycle_time=0;
-T traject_progress=0;
+
 T traject_lenght=0;
 
-//! Ruckig vars.
-T curpos=0, curvel=0, curacc=0, newpos=0, newvel=0, newacc=0;
-B finished=0;
+B lcnc_pause_request=0;
 
-T *ptr_path;
+T *ptr_path_lenghts;
 int ptr_path_size;
 T traject_lenght;
 int ptr_path_exec;
@@ -275,94 +273,67 @@ struct sc_pnt xyz;
 struct sc_dir abc;
 struct sc_ext uvw;
 
-enum tp_gcode_primitive_id {
-    line,
-    arc
-};
-
 struct sc_block *pvec;
 int pvec_exec_nr;
 int pvec_size;
 
-//! C style vector functions thanks to chatgdp, not verified.
-void block_add(struct sc_block **blocks, int *num_blocks, struct sc_block new_block);
-void block_insert_front(struct sc_block **pvec, int *size, struct sc_block *block);
-void insert_at_index(struct sc_block **pvec, int *size, int index, struct sc_block *block);
-void block_delete(struct sc_block **pvec, int *size, int index);
-void block_pop_back(struct sc_block **pvec, int *size);
-void block_pop_front(struct sc_block **pvec, int *size);
-void block_print(struct sc_block *pvec, int size);
-
-struct sc_pnt emc_pose_to_sc_pnt(EmcPose pose);
-struct sc_dir emc_pose_to_sc_dir(EmcPose pose);
-struct sc_ext emc_pose_to_sc_ext(EmcPose pose);
-struct sc_pnt emc_cart_to_sc_pnt(PmCartesian pnt);
-PmCartesian sc_pnt_to_emc_cart(struct sc_pnt pnt);
-
-
-//! C++ source and header file compiled with this project.
-//! Function call to c++.
-extern V sc_arc_get_mid_waypoint_c(struct sc_pnt start,
-                                   struct sc_pnt center,
-                                   struct sc_pnt end,
-                                   struct sc_pnt *waypoint);
-
-//! Interpolation.
-extern T arc_lenght_c(struct sc_pnt start, struct sc_pnt way, struct sc_pnt end);
-extern T line_lenght_c(struct sc_pnt start, struct sc_pnt end);
-extern V interpolate_line_c(struct sc_pnt p0, struct sc_pnt p1, T progress, struct sc_pnt *pi);
-extern V interpolate_dir_c(struct sc_dir p0, struct sc_dir p1, T progress, struct sc_dir *pi);
-extern V interpolate_ext_c(struct sc_ext p0, struct sc_ext p1, T progress, struct sc_ext *pi);
-extern V interpolate_arc_c(struct sc_pnt p0, struct sc_pnt p1, struct sc_pnt p2, T progress, struct sc_pnt *pi);
-
-extern T blocklenght_c(struct sc_block b);
-
-//! Interpolates traject progress 0-1.
-void interpolate_traject(struct sc_block *blockvec, int size, T traject_progress, T traject_lenght, T *curve_progress, int *curve_nr){
-
-    T ltot=traject_lenght;
-    T l=0;
-    for(int i=0; i<size; i++){
-        T blocklenght=blockvec[i].path_lenght;
-        if(traject_progress>=l/ltot && traject_progress<(l+blocklenght)/ltot){
-
-            T low_pct=l/ltot;                                   //10%
-            T high_pct=(l+blocklenght)/ltot;                    //25%
-            T range=high_pct-low_pct;                           //25-10=15%
-            T offset_low=traject_progress-low_pct;              //12-10=2%
-            *curve_progress=offset_low/range;
-            *curve_nr=i;
-            return;
-        }
-        l+=blocklenght;
-    }
-}
-
-extern void optimize_gcode_c(struct sc_block *pvec, int size, T vm, T **path_lenghts, int *path_lenght_size, T *stot);
+bool gcode_optimized=0;
 
 //! Ruckig stuff.
-#include "ruckig/sc_ruckig.h"
-bool init_ruckig=0;
-sc_ruckig *ptr_ruckig;
+//! A nice ruckig gui example to test your stuff : ~/linuxcnc/cmake/projects/qt_ruckig_gui/mainwindow.cpp
+
+bool ruckig_init=0;
+sc_ruckig *ruckig_ptr;
+//! Ruckig vars.
+T curpos=0, curvel=0, curacc=0;
+T incpos=0, newvel=0, newacc=0;
+T newpos=0, oldpos=0;
+B finished=0;
 T sfront=0;
-extern sc_ruckig* ruckig_init_c();
-extern V ruckig_set_a_jm_c(sc_ruckig *ptr, T maxacc, T jerkmax);
-extern V ruckig_set_target_c(sc_ruckig *ptr, T tarpos, T tarvel, T taracc);
-extern V ruckig_set_current_c(sc_ruckig *ptr, T curpos, T curvel, T curacc);
-extern V ruckig_set_vm_c(sc_ruckig *ptr, T velmax);
-extern V ruckig_calculate(sc_ruckig *ptr);
-extern B ruckig_update(sc_ruckig *ptr, T *newpos, T *newvel, T *newacc);
+
+inline void update_gui();
+
+enum sc_ruckig_state {
+    sc_ruckig_none,
+    sc_ruckig_finished,
+    sc_ruckig_run,
+    sc_ruckig_stop,
+    sc_ruckig_pause,
+    sc_ruckig_pause_resume,
+    sc_ruckig_wait
+};
+
+extern sc_ruckig* ruckig_init_ptr();
+extern V ruckig_set_a_jm(sc_ruckig *ptr, T maxacc, T jerkmax);
+extern V ruckig_set_vm(sc_ruckig *ptr, T velmax);
+extern V ruckig_run(sc_ruckig *ptr, T tarpos, T tarvel, T taracc);
+extern V ruckig_stop(sc_ruckig *ptr);
+extern V ruckig_pause(sc_ruckig *ptr);
+extern V ruckig_pause_resume(sc_ruckig *ptr);
+extern V ruckig_set_mempos(sc_ruckig *ptr, T value);
+extern B ruckig_update(sc_ruckig *ptr, T *mempos, T *newvel, T *newacc);
+//! Status callback.
+extern enum sc_ruckig_state ruckig_get_state(sc_ruckig *ptr);
+enum sc_ruckig_state state;
+extern B ruckig_state_run(sc_ruckig *ptr);
+extern B ruckig_state_stop(sc_ruckig *ptr);
+extern B ruckig_state_pause(sc_ruckig *ptr);
+extern B ruckig_state_pause_resume(sc_ruckig *ptr);
+extern B ruckig_state_finished(sc_ruckig *ptr);
+
+extern T ruckig_get_a(sc_ruckig *ptr);
+extern T ruckig_get_jm(sc_ruckig *ptr);
+extern T ruckig_get_vm(sc_ruckig *ptr);
 
 //! Id was optional input, for setup hal pins.
 int tpCreate(TP_STRUCT * const tp, int _queueSize,int id)
 {
-
     //! Loads a gcode line to prevent slow down lcnc at startup.
     tp_done->Pin=1;
 
     traject_lenght=0;
 
-    ptr_ruckig=ruckig_init_c();
+    ruckig_ptr=ruckig_init_ptr();
 
     return 0;
 }
@@ -370,7 +341,6 @@ int tpCreate(TP_STRUCT * const tp, int _queueSize,int id)
 int tpClear(TP_STRUCT * const tp)
 {
     pvec=NULL;
-
     return 0;
 }
 
@@ -381,32 +351,26 @@ int tpInit(TP_STRUCT * const tp)
 
 int tpSetCycleTime(TP_STRUCT * const tp, double secs)
 {
-    cycle_time=secs;
-    tp_cycle_time->Pin=secs;
-
+    if(secs!=0.001){ //! Only check the cycle time. This time is fixed compiled in Ruckig.
+        rtapi_print_msg(RTAPI_MSG_ERR,"cycle time != 0.001 sec.");
+    }
     return 0;
 }
 
 int tpSetVmax(TP_STRUCT * const tp, double vMax, double ini_maxvel)
 {
-    tp_velocity_max->Pin=vMax;
-    tp_ini_velocity_max->Pin=ini_maxvel;
     return 0;
 }
 
 int tpSetVlimit(TP_STRUCT * const tp, double vLimit)
 {
     vm=vLimit;
-    tp_velocity_max->Pin=vLimit;
-
     return 0;
 }
 
 int tpSetAmax(TP_STRUCT * const tp, double aMax)
 {
     a=aMax;
-    tp_acceleration_max->Pin=aMax;
-
     return 0;
 }
 
@@ -430,13 +394,13 @@ int tpGetExecId(TP_STRUCT * const tp)
 
 int tpSetTermCond(TP_STRUCT * const tp, int cond, double tolerance)
 {
-    rtapi_print_msg(RTAPI_MSG_ERR,"set term cond\n");
+    // rtapi_print_msg(RTAPI_MSG_ERR,"set term cond\n");
     return 0;
 }
 
 int tpSetPos(TP_STRUCT * const tp, EmcPose const * const pos)
 {
-    rtapi_print_msg(RTAPI_MSG_ERR,"set pos\n");
+    // rtapi_print_msg(RTAPI_MSG_ERR,"set pos\n");
 
     //! For loading the gcode line by line, the startpoint of the
     //! first gcode line is *pos. From there the sequence is updated.
@@ -447,13 +411,13 @@ int tpSetPos(TP_STRUCT * const tp, EmcPose const * const pos)
 int tpSetCurrentPos(TP_STRUCT * const tp, EmcPose const * const pos)
 {
     tp_current_emc_pose=*pos;
-    rtapi_print_msg(RTAPI_MSG_ERR,"set current pos\n");
+    // rtapi_print_msg(RTAPI_MSG_ERR,"set current pos\n");
     return 0;
 }
 
 int tpAddCurrentPos(TP_STRUCT * const tp, EmcPose const * const disp)
 {
-    rtapi_print_msg(RTAPI_MSG_ERR,"add current pos\n");
+    // rtapi_print_msg(RTAPI_MSG_ERR,"add current pos\n");
     return 0;
 }
 
@@ -596,54 +560,110 @@ int tpRunCycle(TP_STRUCT * const tp, long period)
 
         traject_lenght=0;
         ptr_path_size=0;
-        //ptr_path=NULL;
         ptr_path_exec=0;
 
-        optimize_gcode_c(pvec,pvec_size,vm,&ptr_path,&ptr_path_size,&traject_lenght);
+        optimize_gcode_c(pvec,pvec_size,vm,&ptr_path_lenghts,&ptr_path_size,&traject_lenght);
 
         printf("total pathlenght: %f \n",traject_lenght);
         printf("ptr path size: %i \n",ptr_path_size);
-        printf("ptr path at 0: %f \n",ptr_path[0]);
+        printf("ptr path at 0: %f \n",ptr_path_lenghts[0]);
 
         tp_gcode_optimize->Pin=0; //! Reset.
+        gcode_optimized=1;
     }
 
-    if(tp_run->Pin){ //! Run from line pvec line 0.
+    state=ruckig_get_state(ruckig_ptr);
 
+    if(tp_run->Pin){
 
-        if(!init_ruckig){
+        ruckig_update(ruckig_ptr,&curpos,&newvel,&newacc);
 
-            ruckig_set_a_jm_c(ptr_ruckig, a, jm);
-            ruckig_set_vm_c(ptr_ruckig, vm);
+        switch (state) {
+        case sc_ruckig_finished:
+            *state_run->Pin=false;
+            *state_stop->Pin=false;
+            *state_wait->Pin=false;
+            *state_finished->Pin=true;
 
-            ruckig_set_current_c(ptr_ruckig, 0, 0, 0);
+            ruckig_set_a_jm(ruckig_ptr, a, jm);
+            ruckig_set_vm(ruckig_ptr,vm);
+            ruckig_run(ruckig_ptr,ptr_path_lenghts[ptr_path_exec],0,0);
 
-            T tarpos=ptr_path[ptr_path_exec];
-            // printf("tarpos: %f \n",tarpos);
-            ruckig_set_target_c(ptr_ruckig, tarpos, 0, 0);
+            if(ptr_path_exec<ptr_path_size){
+                ptr_path_exec++;
+            } else {
+                tp_done->Pin=1; //! Eof.
+                ptr_path_exec=0;
+            }
+            break;
+        case sc_ruckig_pause:
+            *state_run->Pin=false;
+            *state_stop->Pin=true;
+            *state_wait->Pin=false;
+            *state_finished->Pin=false;
+            break;
+        case sc_ruckig_pause_resume:
+            *state_run->Pin=true;
+            *state_stop->Pin=false;
+            *state_wait->Pin=false;
+            *state_finished->Pin=false;
+            break;
+        case sc_ruckig_run:
+            *state_run->Pin=true;
+            *state_stop->Pin=false;
+            *state_wait->Pin=false;
+            *state_finished->Pin=false;
 
-            //! Resets timer to zero.
-            ruckig_calculate(ptr_ruckig);
+            //! Only update ruckig if values are changed.
+            if(jm!=ruckig_get_jm(ruckig_ptr) || a!=ruckig_get_a(ruckig_ptr)){
+                ruckig_set_a_jm(ruckig_ptr, a, jm);
+            }
+            if(vm!=ruckig_get_vm(ruckig_ptr)){
+                ruckig_set_vm(ruckig_ptr,vm);
+            }
 
-            init_ruckig=1;
+            break;
+        case sc_ruckig_wait: //! If state stop or pause is at vel=0, state becomes wait.
+            *state_run->Pin=false;
+            *state_stop->Pin=false;
+            *state_wait->Pin=true;
+            *state_finished->Pin=false;
+            break;
+        case sc_ruckig_stop:
+            *state_run->Pin=false;
+            *state_stop->Pin=true;
+            *state_wait->Pin=false;
+            *state_finished->Pin=false;
+            break;
+        case sc_ruckig_none:
+            *state_run->Pin=false;
+            *state_stop->Pin=false;
+            *state_wait->Pin=false;
+            *state_finished->Pin=false;
+
+            //! Set run state, then will jump to finish state.
+            ruckig_run(ruckig_ptr,0,0,0);
+            break;
+        default:
+            break;
         }
+    }
 
-        B finished=ruckig_update(ptr_ruckig, &newpos, &newvel, &newacc);
+    update_gui();
 
-        if(finished){
-            init_ruckig=0;
-            printf("finished \n");
+    return 0;
+}
 
-            sfront+=newpos;
-            ptr_path_exec++;
-        }
+//! This functions only updates the gui preview path, and sets the current pose, cq 3d state of the machine.
+//! We use this as inline, that means it gets compiled into the main function, instead of a function call.
+//! Inline is little faster during runtime.
+inline void update_gui(){
 
+    T traject_progress=curpos/traject_lenght;
+    //! Test interpolate traject. For test just increment each cycle.
 
-        traject_progress=(newpos+sfront)/traject_lenght;
-
-
-        //! Test interpolate traject. For test just increment each cycle.
-        T curve_progress;
+    if(pvec_size>0){
+        T curve_progress=0;
         interpolate_traject(pvec,pvec_size,traject_progress,traject_lenght,&curve_progress,&pvec_exec_nr);
         //traject_progress+=0.00001;
 
@@ -681,8 +701,6 @@ int tpRunCycle(TP_STRUCT * const tp, long period)
         tp_current_emc_pose.v=uvw.v;
         tp_current_emc_pose.w=uvw.w;
     }
-
-    return 0;
 }
 
 int tpSetSpindleSync(TP_STRUCT * const tp, int spindle, double sync, int mode) {
@@ -691,19 +709,22 @@ int tpSetSpindleSync(TP_STRUCT * const tp, int spindle, double sync, int mode) {
 
 int tpPause(TP_STRUCT * const tp)
 {
-    tp_pause->Pin=1;
+    // printf("pause \n");
+    ruckig_pause(ruckig_ptr);
     return 0;
 }
 
 int tpResume(TP_STRUCT * const tp)
 {
-    tp_pause->Pin=0;
+    // printf("resume \n");
+    ruckig_pause_resume(ruckig_ptr);
     return 0;
 }
 
 int tpAbort(TP_STRUCT * const tp)
 {
-    tp_pause->Pin=1;
+    // printf("abort \n");
+    ruckig_stop(ruckig_ptr);
     return 0;
 }
 
@@ -758,169 +779,6 @@ struct state_tag_t tpGetExecTag(TP_STRUCT * const tp)
 int tcqFull(TC_QUEUE_STRUCT const * const tcq)
 {
     return 0;
-}
-
-void block_add(struct sc_block **blocks, int *num_blocks, struct sc_block new_block) {
-    (*num_blocks)++;
-    *blocks = realloc(*blocks, (*num_blocks) * sizeof(struct sc_block));
-    (*blocks)[(*num_blocks) - 1] = new_block;
-}
-
-// function to delete a block from an array
-void block_delete(struct sc_block **pvec, int *size, int index) {
-    if (index < 0 || index >= *size) {
-        printf("Error: invalid index\n");
-        return;
-    }
-
-    // free the memory for the block being deleted
-    free(pvec[index]);
-
-    // shift all the blocks after the deleted block to the left by one position
-    for (int i = index; i < *size-1; i++) {
-        pvec[i] = pvec[i+1];
-    }
-
-    // decrement the size of the array
-    (*size)--;
-}
-
-// function to add a block to the beginning of an array
-void block_insert_front(struct sc_block **pvec, int *size, struct sc_block *block) {
-    // allocate memory for a new block array
-    struct sc_block *temp = malloc((*size + 1) * sizeof(struct sc_block));
-
-    // assign the new block to the first position in the array
-    temp[0] = *block;
-
-    // copy the existing blocks to the remaining positions in the array
-    for (int i = 0; i < *size; i++) {
-        temp[i+1] = (*pvec)[i];
-    }
-
-    // free the memory allocated for the original block array
-    free(*pvec);
-
-    // assign the new block array to pvec and update the size
-    *pvec = temp;
-    (*size)++;
-}
-
-void insert_at_index(struct sc_block **pvec, int *size, int index, struct sc_block *block) {
-    // allocate memory for a new block array
-    struct sc_block *temp = malloc((*size + 1) * sizeof(struct sc_block));
-
-    // copy the existing blocks up to the insertion point
-    for (int i = 0; i < index; i++) {
-        temp[i] = (*pvec)[i];
-    }
-
-    // insert the new block
-    temp[index] = *block;
-
-    // copy the remaining blocks
-    for (int i = index+1; i < *size+1; i++) {
-        temp[i] = (*pvec)[i-1];
-    }
-
-    // free the memory allocated for the original block array
-    free(*pvec);
-
-    // assign the new block array to pvec and update the size
-    *pvec = temp;
-    (*size)++;
-}
-
-// function to delete the last element from an array
-void block_pop_back(struct sc_block **pvec, int *size) {
-    if (*size > 0) {
-        // decrement the size of the array
-        (*size)--;
-        // deallocate the memory for the last element
-        free(pvec[*size]);
-    }
-}
-
-// function to delete the first element from an array
-void block_pop_front(struct sc_block **pvec, int *size) {
-    if (*size > 0) {
-        // decrement the size of the array
-        (*size)--;
-        // shift all the elements to the left by one position
-        for (int i = 0; i < *size; i++) {
-            pvec[i] = pvec[i+1];
-        }
-        // deallocate the memory for the first element
-        free(pvec[0]);
-    }
-}
-
-void block_print(struct sc_block *pvec, int size) {
-    printf("Printing %d blocks:\n", size);
-    for (int i = 0; i < size; i++) {
-        printf("Block %d:\n", i+1);
-        printf("  G-code primitive ID: %d\n", pvec[i].primitive_id);
-        printf("  G-code line number: %d\n", pvec[i].gcode_line_nr);
-        printf("  Canonical motion type: %d\n", pvec[i].type);
-        printf("  Start position: (%f, %f, %f, %f, %f, %f, %f, %f, %f)\n",
-               pvec[i].pnt_s.x, pvec[i].pnt_s.y, pvec[i].pnt_s.z,
-               pvec[i].dir_s.a, pvec[i].dir_s.b, pvec[i].dir_s.c,
-               pvec[i].ext_s.u, pvec[i].ext_s.v, pvec[i].ext_s.w);
-        printf("  Way position: (%f, %f, %f)\n",
-               pvec[i].pnt_w.x, pvec[i].pnt_w.y, pvec[i].pnt_w.z);
-        printf("  End position: (%f, %f, %f, %f, %f, %f, %f, %f, %f)\n",
-               pvec[i].pnt_e.x, pvec[i].pnt_e.y, pvec[i].pnt_e.z,
-               pvec[i].dir_e.a, pvec[i].dir_e.b, pvec[i].dir_e.c,
-               pvec[i].ext_e.u, pvec[i].ext_e.v, pvec[i].ext_e.w);
-        printf("  Center point: (%f, %f, %f)\n", pvec[i].pnt_c.x, pvec[i].pnt_c.y, pvec[i].pnt_c.z);
-        //! Velcocity, acc.
-        printf("  vo: %f\n", pvec[i].vo);
-        printf("  ve: %f\n", pvec[i].ve);
-
-        printf("\n");
-    }
-    //! Reset.
-    tp_gcode_print->Pin=0;
-}
-
-struct sc_pnt emc_pose_to_sc_pnt(EmcPose pose){
-    struct sc_pnt pnt;
-    pnt.x=pose.tran.x;
-    pnt.y=pose.tran.y;
-    pnt.z=pose.tran.z;
-    return pnt;
-}
-
-struct sc_dir emc_pose_to_sc_dir(EmcPose pose){
-    struct sc_dir dir;
-    dir.a=pose.a;
-    dir.b=pose.b;
-    dir.c=pose.c;
-    return dir;
-}
-
-struct sc_ext emc_pose_to_sc_ext(EmcPose pose){
-    struct sc_ext ext;
-    ext.u=pose.u;
-    ext.v=pose.v;
-    ext.w=pose.w;
-    return ext;
-}
-
-struct sc_pnt emc_cart_to_sc_pnt(PmCartesian pnt){
-    struct sc_pnt p;
-    p.x=pnt.x;
-    p.y=pnt.y;
-    p.z=pnt.z;
-    return p;
-}
-
-PmCartesian sc_pnt_to_emc_cart(struct sc_pnt pnt){
-    PmCartesian p;
-    p.x=pnt.x;
-    p.y=pnt.y;
-    p.z=pnt.z;
-    return p;
 }
 
 EXPORT_SYMBOL(tpMotFunctions);

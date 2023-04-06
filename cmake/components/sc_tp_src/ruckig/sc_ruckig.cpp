@@ -6,102 +6,260 @@ sc_ruckig::sc_ruckig()
 }
 
 V sc_ruckig::set_a_jm(T maxacc, T jerkmax){
-    in.max_acceleration[0]=maxacc;
-    in.max_jerk[0]=jerkmax;
+    myIn.max_acceleration[0]=maxacc;
+    myIn.max_jerk[0]=jerkmax;
 
-    //! enum: position, velocity
-    in.control_interface=ruckig::ControlInterface::Position;
     //! Phase, ///< Phase synchronize the DoFs when possible, else fallback to "Time" strategy
     //! Time, ///< Always synchronize the DoFs to reach the target at the same time (Default)
     //! TimeIfNecessary, ///< Synchronize only when necessary (e.g. for non-zero target velocity or acceleration)
     //! None, ///< Calculate every DoF independently
-    in.synchronization=ruckig::Synchronization::None;
+    myIn.synchronization=ruckig::Synchronization::None;
     //! Continuous, ///< Every trajectory duration is allowed (Default), in lcnc this is called the split cycle.
     //! Discrete, ///< The trajectory duration must be a multiple of the control cycle
-    in.duration_discretization=ruckig::DurationDiscretization::Continuous;
+    myIn.duration_discretization=ruckig::DurationDiscretization::Continuous;
 
-    in.enabled[0]=1;
+    myIn.enabled[0]=1;
+}
+
+T sc_ruckig::get_a(){
+    return myIn.max_acceleration[0];
+}
+
+T sc_ruckig::get_jm(){
+    return myIn.max_jerk[0];
 }
 
 V sc_ruckig::set_target(T tarpos, T tarvel, T taracc){
-    in.target_position[0]=tarpos;
-    in.target_velocity[0]=tarvel;
-    in.target_acceleration[0]=taracc;
+    myIn.target_position[0]=tarpos-myMempos;
+    myIn.target_velocity[0]=tarvel;
+    myIn.target_acceleration[0]=taracc;
 }
 
 V sc_ruckig::set_current(T curpos, T curvel, T curacc){
-    in.current_position[0]=curpos;
-    in.current_velocity[0]=curvel;
-    in.current_acceleration[0]=curacc;
+    myIn.current_position[0]=curpos;
+    myIn.current_velocity[0]=curvel;
+    myIn.current_acceleration[0]=curacc;
 }
 
 V sc_ruckig::set_vm(T maxvel){
-    in.max_velocity[0]=maxvel;
+    myIn.max_velocity[0]=maxvel;
 
-     // std::cout<<"sc_ruckig maxvel:"<<maxvel<<std::endl;
+    //! Set new run path from here.
+    run();
 }
 
-V sc_ruckig::calculate(){
-    result=otg.update(in, out);
-    duration=out.trajectory.get_duration();
+T sc_ruckig::get_vm(){
+    return myIn.max_velocity[0];
+}
 
-    // std::cout<<"sc_ruckig calculated duration:"<<duration<<std::endl;
+V sc_ruckig::set_mem_pos(T value){
+    myMempos=value;
+}
 
-    at_time=0; //! Reset.
+V sc_ruckig::run(T tarpos, T tarvel, T taracc){
+    set_target(tarpos,tarvel,taracc);
+    run();
+}
+
+V sc_ruckig::run(){
+
+    myState=sc_ruckig_run;
+
+    //! enum: position, velocity
+    myIn.control_interface=ruckig::ControlInterface::Position;
+
+    set_current(0,myVel[0],myAcc[0]);
+
+    myResult=myOtg.update(myIn, myOut);
+    myDuration=myOut.trajectory.get_duration();
+
+    myAtTime=0; //! Reset.
+    myOldpos=0;
+}
+
+V sc_ruckig::stop(){
+
+    std::cout<<"ruckig stop request"<<std::endl;
+
+    myState=sc_ruckig_stop;
+
+    //! enum: position, velocity
+    myIn.control_interface=ruckig::ControlInterface::Velocity;
+
+    myIn.target_acceleration[0]=0;
+    myIn.target_velocity[0]=0;
+
+    set_current(0,myVel[0],myAcc[0]);
+
+    myResult=myOtg.update(myIn, myOut);
+    myDuration=myOut.trajectory.get_duration();
+
+    myAtTime=0; //! Reset.
+    myOldpos=0;
+}
+
+V sc_ruckig::pause(){
+    stop();
+}
+
+V sc_ruckig::pause_resume(){
+    run();
 }
 
 //! Finished returns 1.
-B sc_ruckig::update(T *newpos, T *newvel, T *newacc){
+B sc_ruckig::update(T &incpos, T &mempos, T &newpos, T &newvel, T &newacc){
 
-    std::array<double, 1> vel, acc, pos;
+    myOut.trajectory.at_time(std::min(myAtTime,myDuration),myPos, myVel, myAcc);
+    myAtTime+=0.001;
 
-    out.trajectory.at_time(std::min(at_time,duration),pos, vel, acc);
-    at_time+=0.001;
+    newpos=myPos[0];
+    incpos=myPos[0]-myOldpos;
+    newvel=myVel[0];
+    newacc=myAcc[0];
 
-    *newpos=pos[0];
-    *newvel=vel[0];
-    *newacc=acc[0];
+    myOldpos=myPos[0];
 
-
-    // std::cout<<"update at_time:"<<at_time<<std::endl;
-    // std::cout<<"newpos:"<<pos[0]<<std::endl;
+    myMempos+=incpos;
+    mempos=myMempos;
 
     //! Finished.
-    if(at_time>duration){
-        return 1;
+    if(myAtTime>myDuration){
+
+        //! If in pause, stay in pause state.
+        if(myState==sc_ruckig_wait){
+            return 1;
+        }
+
+        //! If stop complete, set wait state.
+        if(myState==sc_ruckig_stop){
+            myState=sc_ruckig_wait;
+            return 1;
+        }
+
+        //! If run complete, set finished state.
+        if(myState==sc_ruckig_run){
+            myState=sc_ruckig_finished;
+            return 1;
+        }
     }
     //! Not finished.
     return 0;
 }
 
+sc_ruckig_state sc_ruckig::get_state(){
+    return myState;
+}
+
 //! Create intance.
-extern "C" sc_ruckig* ruckig_init_c(){
+extern "C" sc_ruckig* ruckig_init_ptr(){
     return new sc_ruckig();
 }
 
-extern "C" V ruckig_set_a_jm_c(sc_ruckig *ptr, T maxacc, T jerkmax){
+extern "C" V ruckig_set_a_jm(sc_ruckig *ptr, T maxacc, T jerkmax){
     ptr->set_a_jm(maxacc,jerkmax);
 }
 
-extern "C" V ruckig_set_target_c(sc_ruckig *ptr, T tarpos, T tarvel, T taracc){
-    ptr->set_target(tarpos,tarvel,taracc);
-}
-
-extern "C" V ruckig_set_current_c(sc_ruckig *ptr, T curpos, T curvel, T curacc){
-    ptr->set_current(curpos,curvel,curacc);
-}
-
-extern "C" V ruckig_set_vm_c(sc_ruckig *ptr, T velmax){
+extern "C" V ruckig_set_vm(sc_ruckig *ptr, T velmax){
     ptr->set_vm(velmax);
 }
 
-extern "C" V ruckig_calculate(sc_ruckig *ptr){
-    ptr->calculate();
+extern "C" V ruckig_run(sc_ruckig *ptr, T tarpos, T tarvel, T taracc){
+    ptr->run(tarpos,tarvel,taracc);
 }
 
-extern "C" B ruckig_update(sc_ruckig *ptr, T *newpos, T *newvel, T *newacc){
-    return ptr->update(newpos,newvel,newacc);
+extern "C" V ruckig_stop(sc_ruckig *ptr){
+    ptr->stop();
 }
+
+extern "C" V ruckig_pause(sc_ruckig *ptr){
+    ptr->stop();
+}
+
+extern "C" V ruckig_pause_resume(sc_ruckig *ptr){
+    ptr->pause_resume();
+}
+
+extern "C" V ruckig_set_mempos(sc_ruckig *ptr, T value){
+    ptr->set_mem_pos(value);
+}
+
+extern "C" B ruckig_update(sc_ruckig *ptr, T *mempos, T *newvel, T *newacc){
+
+    //! Vars for converting c++ by reference to c pointer style.
+    T incpos_=0, mempos_=0, newpos_=0, newvel_=0, newacc_=0;
+
+    B finished=ptr->update(incpos_,mempos_,newpos_,newvel_,newacc_);
+
+    *mempos=mempos_;
+    *newvel=newvel_;
+    *newacc=newacc_;
+
+    return finished;
+}
+
+extern "C" T ruckig_get_vm(sc_ruckig *ptr){
+    return ptr->get_vm();
+}
+
+extern "C" T ruckig_get_a(sc_ruckig *ptr){
+    return ptr->get_a();
+}
+
+extern "C" T ruckig_get_jm(sc_ruckig *ptr){
+    return ptr->get_jm();
+}
+
+extern "C" enum sc_ruckig_state ruckig_get_state(sc_ruckig *ptr){
+    return ptr->get_state();
+}
+
+extern "C" B ruckig_state_run(sc_ruckig *ptr){
+    if(ptr->get_state()==sc_ruckig_run){
+        return 1;
+    }
+    return 0;
+}
+
+extern "C" B ruckig_state_pause(sc_ruckig *ptr){
+    if(ptr->get_state()==sc_ruckig_stop){
+        return 1;
+    }
+    return 0;
+}
+
+extern "C" B ruckig_state_stop(sc_ruckig *ptr){
+    if(ptr->get_state()==sc_ruckig_stop){
+        return 1;
+    }
+    return 0;
+}
+
+extern "C" B ruckig_state_pause_resume(sc_ruckig *ptr){
+    if(ptr->get_state()==sc_ruckig_run){
+        return 1;
+    }
+    return 0;
+}
+
+extern "C" B ruckig_state_finished(sc_ruckig *ptr){
+    if(ptr->get_state()==sc_ruckig_finished){
+        return 1;
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

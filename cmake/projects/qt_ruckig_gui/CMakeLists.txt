@@ -58,8 +58,8 @@ set(PROJECT_SOURCES
     ${SRC_DIR}/ruckig/velocity.hpp
     ${SRC_DIR}/ruckig/velocity-step1.cpp
     ${SRC_DIR}/ruckig/velocity-step2.cpp
-    ${SRC_DIR}/ruckig/ruckig_traject.h
-    ${SRC_DIR}/ruckig/ruckig_traject.cpp
+    ${SRC_DIR}/../../components/sc_tp_src/ruckig/sc_ruckig.h
+    ${SRC_DIR}/../../components/sc_tp_src/ruckig/sc_ruckig.cpp
     )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

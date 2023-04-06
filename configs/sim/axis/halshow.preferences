@@ -1,34 +1,30 @@
 # Halshow settings
 # This file is generated automatically.
-wm geometry . 740x780+344+22
+wm geometry . 740x780+87+347
 placeFrames 0.37362637362637363
 set ::ratio 0.37362637362637363
 set ::old_w_leftf 160
 set ::watchlist {
-    pin+sc-tp.gcode_buffer_size
-    pin+sc-tp.module
-    pin+sc-tp.tp_gcode_loaded_lines
-    param+sc-tp.acceleration_max
-    param+sc-tp.curpos_x
-    param+sc-tp.curpos_y
-    param+sc-tp.curpos_z
+    pin+sc-tp.state_finished
+    pin+sc-tp.state_run
+    pin+sc-tp.state_stop
+    pin+sc-tp.state_wait
     param+sc-tp.done
-    param+sc-tp.pause
-    param+sc-tp.stop
+    param+sc-tp.gcode_current_line
     param+sc-tp.tp_gcode_optimize
     param+sc-tp.tp_gcode_print
     param+sc-tp.tp_run
-    param+sc-tp.velocity_max
-    param+traj.active_tc
-    param+traj.pos_out
-    param+traj.vel_out
-    pin+comp_x.time
-    pin+comp_x.out
-    pin+comp_x.in1
-    pin+comp_x.in0
-    pin+comp_x.equal
+    param+sc-tp.array_counter
+    param+sc-tp.curpos_x
+    param+sc-tp.curpos_y
+    param+sc-tp.curpos_z
+    param+sc-tp.direction
+    param+sc-tp.tmax
+    param+sc-tp.tmax-increased
+    pin+sc-tp.gcode_buffer_size
+    pin+sc-tp.module
     pin+sc-tp.time
-    param+sc-tp.gcode_current_line
+    pin+sc-tp.tp_gcode_loaded_lines
 }
 set ::workmode watchhal
 set ::watchInterval 100

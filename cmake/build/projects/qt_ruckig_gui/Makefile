@@ -205,6 +205,33 @@ qt_ruckig_gui_autogen/fast:
 	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/build
 .PHONY : qt_ruckig_gui_autogen/fast
 
+__/__/components/sc_tp_src/ruckig/sc_ruckig.o: __/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o
+
+.PHONY : __/__/components/sc_tp_src/ruckig/sc_ruckig.o
+
+# target to build an object file
+__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o
+.PHONY : __/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.o
+
+__/__/components/sc_tp_src/ruckig/sc_ruckig.i: __/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.i
+
+.PHONY : __/__/components/sc_tp_src/ruckig/sc_ruckig.i
+
+# target to preprocess a source file
+__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.i:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.i
+.PHONY : __/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.i
+
+__/__/components/sc_tp_src/ruckig/sc_ruckig.s: __/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.s
+
+.PHONY : __/__/components/sc_tp_src/ruckig/sc_ruckig.s
+
+# target to generate assembly for a file
+__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.s:
+	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/__/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.s
+.PHONY : __/__/components/sc_tp_src/ruckig/sc_ruckig.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -394,33 +421,6 @@ ruckig/position-step2.cpp.s:
 	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/position-step2.cpp.s
 .PHONY : ruckig/position-step2.cpp.s
 
-ruckig/ruckig_traject.o: ruckig/ruckig_traject.cpp.o
-
-.PHONY : ruckig/ruckig_traject.o
-
-# target to build an object file
-ruckig/ruckig_traject.cpp.o:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.o
-.PHONY : ruckig/ruckig_traject.cpp.o
-
-ruckig/ruckig_traject.i: ruckig/ruckig_traject.cpp.i
-
-.PHONY : ruckig/ruckig_traject.i
-
-# target to preprocess a source file
-ruckig/ruckig_traject.cpp.i:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.i
-.PHONY : ruckig/ruckig_traject.cpp.i
-
-ruckig/ruckig_traject.s: ruckig/ruckig_traject.cpp.s
-
-.PHONY : ruckig/ruckig_traject.s
-
-# target to generate assembly for a file
-ruckig/ruckig_traject.cpp.s:
-	cd /home/user/linuxcnc/cmake/build && $(MAKE) $(MAKESILENT) -f projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/build.make projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui.dir/ruckig/ruckig_traject.cpp.s
-.PHONY : ruckig/ruckig_traject.cpp.s
-
 ruckig/velocity-step1.o: ruckig/velocity-step1.cpp.o
 
 .PHONY : ruckig/velocity-step1.o
@@ -489,6 +489,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... qt_ruckig_gui_autogen"
 	@echo "... qt_ruckig_gui"
+	@echo "... __/__/components/sc_tp_src/ruckig/sc_ruckig.o"
+	@echo "... __/__/components/sc_tp_src/ruckig/sc_ruckig.i"
+	@echo "... __/__/components/sc_tp_src/ruckig/sc_ruckig.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -510,9 +513,6 @@ help:
 	@echo "... ruckig/position-step2.o"
 	@echo "... ruckig/position-step2.i"
 	@echo "... ruckig/position-step2.s"
-	@echo "... ruckig/ruckig_traject.o"
-	@echo "... ruckig/ruckig_traject.i"
-	@echo "... ruckig/ruckig_traject.s"
 	@echo "... ruckig/velocity-step1.o"
 	@echo "... ruckig/velocity-step1.i"
 	@echo "... ruckig/velocity-step1.s"

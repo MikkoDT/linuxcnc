@@ -68,6 +68,11 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.h",
+			"MU",
+			"OLJ3TDWL2A/moc_sc_ruckig.cpp"
+		],
+		[
 			"/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp"
@@ -138,11 +143,6 @@
 			"VFC6BDZ2FD/moc_ruckig.cpp"
 		],
 		[
-			"/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/ruckig_traject.h",
-			"MU",
-			"VFC6BDZ2FD/moc_ruckig_traject.cpp"
-		],
-		[
 			"/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/trajectory.hpp",
 			"MU",
 			"VFC6BDZ2FD/moc_trajectory.cpp"
@@ -210,6 +210,10 @@
 	"SETTINGS_FILE" : "/home/user/linuxcnc/cmake/build/projects/qt_ruckig_gui/CMakeFiles/qt_ruckig_gui_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/user/linuxcnc/cmake/components/sc_tp_src/ruckig/sc_ruckig.cpp",
+			"MU"
+		],
 		[ "/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/main.cpp", "MU" ],
 		[
 			"/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/mainwindow.cpp",
@@ -226,10 +230,6 @@
 		],
 		[
 			"/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/position-step2.cpp",
-			"MU"
-		],
-		[
-			"/home/user/linuxcnc/cmake/projects/qt_ruckig_gui/ruckig/ruckig_traject.cpp",
 			"MU"
 		],
 		[

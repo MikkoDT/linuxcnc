@@ -33,22 +33,20 @@ ADD_LIBRARY(${PROJECT} SHARED
     ${SRC_DIR}/../sc_tp_src/sc_tp.c
 
     ${SRC_DIR}/../sc_tp_src/sc_struct.h
+    ${SRC_DIR}/../sc_tp_src/sc_extern.h
     ${SRC_DIR}/../sc_tp_src/sc_struct.cpp
     ${SRC_DIR}/../sc_tp_src/sc_arcs.h
     ${SRC_DIR}/../sc_tp_src/sc_arcs.cpp
     ${SRC_DIR}/../sc_tp_src/sc_lines.h
     ${SRC_DIR}/../sc_tp_src/sc_lines.cpp
     ${SRC_DIR}/../sc_tp_src/sc_block.h
+    ${SRC_DIR}/../sc_tp_src/sc_block.c
     ${SRC_DIR}/../sc_tp_src/sc_optimizer.h
     ${SRC_DIR}/../sc_tp_src/sc_optimizer.cpp
     ${SRC_DIR}/../sc_tp_src/sc_interpolate.h
-    ${SRC_DIR}/../sc_tp_src/sc_interpolate.cpp
-    ${SRC_DIR}/../sc_tp_src/sc_engine.h
-    ${SRC_DIR}/../sc_tp_src/sc_engine.cpp
-    ${SRC_DIR}/../sc_tp_src/sc_planner.h
-    ${SRC_DIR}/../sc_tp_src/sc_planner.cpp
-    ${SRC_DIR}/../sc_tp_src/sc_pid.h
-    ${SRC_DIR}/../sc_tp_src/sc_pid.cpp
+    ${SRC_DIR}/../sc_tp_src/sc_interpolate.c
+    ${SRC_DIR}/../sc_tp_src/sc_conversion.h
+    ${SRC_DIR}/../sc_tp_src/sc_conversion.c
 
     ${SRC_DIR}/../sc_tp_src/ruckig/block.hpp
     ${SRC_DIR}/../sc_tp_src/ruckig/brake.hpp

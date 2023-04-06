@@ -5,6 +5,11 @@
 //! Licence : MIT
 //! Date    : 2023
 
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
 //! Make conversion's easy:
 #define to_radians  M_PI/180.0
 #define to_degrees  (180.0/M_PI)
@@ -100,7 +105,7 @@ struct sc_block {
     T path_lenght;
 };
 
-
+T netto_difference_of_2_values(T a, T b);
 T blocklenght(struct sc_block b);
 
 enum sc_enum_program_status {
